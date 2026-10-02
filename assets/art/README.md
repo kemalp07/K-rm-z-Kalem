@@ -9,6 +9,19 @@ görsel varsa o kullanılır; yoksa Skia ile çizilen yer tutucu görünür.
 2. `npm run assets` çalıştır: `manifest.ts` yeniden üretilir.
 3. Uygulamayı yenile.
 
+## Bir sayfadan (sheet) eşya kesmek
+
+Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
+
+1. Sayfayı `source/` klasörüne koy.
+2. `python3 scripts/cut-sheet.py assets/art/source/sayfa.png assets/art lamba:x0,y0,x1,y1:glass ...`
+   ile her eşyayı kaba bir kutuyla kes. `:glass` cam kısımları saydamlaştırır, `:holes` kulp
+   halkası gibi boşlukları temizler. (Pillow, numpy, scipy gerekir; yalnızca geliştirme aracı.)
+3. `placement.ts` içinde eşyanın çapa noktasını (lambanın tabanı, kalemin ucu, merceğin
+   merkezi…) ve masadaki genişliğini yaz. Alev gibi kodla çizilen parçalar buradaki
+   noktalara yerleşir.
+4. `npm run assets`.
+
 ## Kurallar
 
 - **Işık görsele çizilmez.** Lamba ışığı, titreme, vinyet ve gece kodla eklenir. Görseller

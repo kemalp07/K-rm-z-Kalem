@@ -1,5 +1,6 @@
 import { Circle, Group, RadialGradient, Rect, vec } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
+import { LAMP_FLAME_Y } from './Lamp';
 import { LAYOUT, WORLD } from './world';
 
 interface Props {
@@ -13,7 +14,7 @@ interface Props {
 }
 
 // The pool is centred below-left of the lamp: that is where the chimney throws its light.
-const POOL = { x: LAYOUT.lamp.cx - 300, y: LAYOUT.lamp.flameY + 205 };
+const POOL = { x: LAYOUT.lamp.cx - 300, y: LAMP_FLAME_Y + 205 };
 
 /**
  * Light is subtracted, not added: everything is drawn at full colour, then the
@@ -45,7 +46,7 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
 
       <Group blendMode="screen" opacity={glowOpacity}>
         <Rect x={-400} y={0} width={WORLD.w + 800} height={WORLD.h}>
-          <RadialGradient c={vec(LAYOUT.lamp.cx - 120, LAYOUT.lamp.flameY + 125)} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
+          <RadialGradient c={vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125)} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
         </Rect>
       </Group>
 

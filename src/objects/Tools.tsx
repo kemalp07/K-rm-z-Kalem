@@ -1,15 +1,23 @@
-import { BlurMask, Circle, Group, LinearGradient, Oval, Path, RadialGradient, Rect, RoundedRect, Skia, vec, type SkPath } from '@shopify/react-native-skia';
+import { BlurMask, Circle, Group, LinearGradient, Oval, Path, RadialGradient, Rect, RoundedRect, Skia, vec, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
-import { ArtSlot } from '../art/ArtSlot';
+import { PlacedArt, placed } from '../art/ArtSlot';
 import { teardrop } from '../scene/Lamp';
 import { C } from '../scene/palette';
 import { blob } from '../scene/rough';
 
 export const PEN_LENGTH = 168;
 export const CANDLE_R = 30;
-export const LENS_R = 44;
+export const LENS_R = 38;
+const CANDLE_ART = placed('candle');
+const MAG_ART = placed('magnifier');
+
 /** Where the candle flame sits relative to the saucer centre the player holds. */
-export const CANDLE_FLAME = { dx: 0, dy: -50 };
+export const CANDLE_FLAME = CANDLE_ART
+  ? { dx: CANDLE_ART.point('flame')!.x, dy: CANDLE_ART.point('flame')!.y + 3 }
+  : { dx: 0, dy: -42 };
+
+/** Far end of the magnifier handle relative to the lens centre (for picking it up). */
+export const MAG_HANDLE_END = MAG_ART?.point('handleEnd') ?? { x: (LENS_R + 80) * Math.SQRT1_2, y: (LENS_R + 80) * Math.SQRT1_2 };
 
 interface Pose {
   x: SharedValue<number>;
@@ -69,7 +77,7 @@ export function RedPen({ x, y, angle, lift }: Pose & { angle: SharedValue<number
   const { L, W, cone } = PEN;
   const transform = useDerivedValue(() => [{ translateX: x.value }, { translateY: y.value }, { rotate: angle.value }]);
   // Shadow falls down-left in board space whatever way the pen is turned.
-  const shadow = useDerivedValue(() => {
+  const shadow = useDerivedValue<Transforms3d>(() => {
     const wx = -3 - lift.value * 12;
     const wy = 4 + lift.value * 16;
     const c = Math.cos(-angle.value);
@@ -81,7 +89,7 @@ export function RedPen({ x, y, angle, lift }: Pose & { angle: SharedValue<number
   const body = { y: -L + 3, h: L - cone - 3 };
   return (
     <Group transform={transform}>
-      <ArtSlot slot="pen" rect={{ x: -9, y: -L, w: 18, h: L }}>
+      <PlacedArt slot="pen" shadow={{ transform: shadow, opacity: shadowOpacity, blur: shadowBlur }}>
         <Group>
           <Group transform={shadow} opacity={shadowOpacity}>
             <RoundedRect x={-W + 1} y={-L + 2} width={W * 2 - 2} height={L - 4} r={3} color="#000">
@@ -129,7 +137,7 @@ export function RedPen({ x, y, angle, lift }: Pose & { angle: SharedValue<number
             <LinearGradient start={vec(-W, 0)} end={vec(W, 0)} colors={['#4a0d08', '#7a1912', '#a32a20']} />
           </RoundedRect>
         </Group>
-      </ArtSlot>
+      </PlacedArt>
     </Group>
   );
 }
@@ -152,17 +160,17 @@ const CANDLE = (() => {
 export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<number>; lift: SharedValue<number> }) {
   const { top } = CANDLE;
   const transform = useDerivedValue(() => [{ translateX: x.value }, { translateY: y.value }]);
-  const shadow = useDerivedValue(() => [{ translateX: -6 - lift.value * 12 }, { translateY: 4 + lift.value * 12 }]);
+  const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -6 - lift.value * 12 }, { translateY: 4 + lift.value * 12 }]);
   const flameT = useDerivedValue(() => [
-    { translateX: (flicker.value - 1) * 8 },
-    { translateY: top - 2 },
+    { translateX: CANDLE_FLAME.dx + (flicker.value - 1) * 8 },
+    { translateY: CANDLE_FLAME.dy },
     { scaleY: 0.85 + (flicker.value - 0.85) * 1.3 },
     { scaleX: 1.05 - (flicker.value - 1) * 0.8 },
   ]);
   const haloR = useDerivedValue(() => 18 * flicker.value);
   return (
     <Group transform={transform}>
-      <ArtSlot slot="candle" rect={{ x: -36, y: -66, w: 80, h: 90 }}>
+      <PlacedArt slot="candle" shadow={{ transform: shadow, opacity: 0.55, blur: 5 }}>
         <Group>
           {/* Shadow of saucer and stick */}
           <Group transform={shadow} opacity={0.6}>
@@ -208,9 +216,9 @@ export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<nu
           <Oval x={-5.5} y={top - 2} width={11} height={4} color="rgba(255,200,120,0.55)" />
           <Path path={CANDLE.wick} style="stroke" strokeWidth={1.2} strokeCap="round" color="#1d140c" />
         </Group>
-      </ArtSlot>
+      </PlacedArt>
 
-      <Circle cx={0} cy={top - 8} r={haloR} color={C.lamp} opacity={0.5}>
+      <Circle cx={CANDLE_FLAME.dx} cy={CANDLE_FLAME.dy - 6} r={haloR} color={C.lamp} opacity={0.5}>
         <BlurMask blur={10} style="normal" />
       </Circle>
       <Group transform={flameT}>
@@ -257,11 +265,11 @@ const MAG = (() => {
 export function MagnifierFrame({ x, y, lift }: Pose & { lift: SharedValue<number> }) {
   const { R } = MAG;
   const transform = useDerivedValue(() => [{ translateX: x.value }, { translateY: y.value }]);
-  const shadow = useDerivedValue(() => [{ translateX: -5 - lift.value * 14 }, { translateY: 7 + lift.value * 18 }]);
+  const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -5 - lift.value * 14 }, { translateY: 7 + lift.value * 18 }]);
   const shadowBlur = useDerivedValue(() => 4 + lift.value * 5);
   return (
     <Group transform={transform}>
-      <ArtSlot slot="magnifier" rect={{ x: -60, y: -60, w: 120, h: 120 }}>
+      <PlacedArt slot="magnifier" shadow={{ transform: shadow, opacity: 0.5, blur: shadowBlur }}>
         <Group>
           <Group transform={shadow} opacity={0.5}>
             <Circle cx={0} cy={0} r={R + 3} style="stroke" strokeWidth={8} color="#000">
@@ -298,7 +306,7 @@ export function MagnifierFrame({ x, y, lift }: Pose & { lift: SharedValue<number
             <BlurMask blur={0.6} style="solid" />
           </Path>
         </Group>
-      </ArtSlot>
+      </PlacedArt>
 
       {/* Glass: darker towards the edge where it thickens, a bright refraction ring, one reflection */}
       <Circle cx={0} cy={0} r={R - 1}>

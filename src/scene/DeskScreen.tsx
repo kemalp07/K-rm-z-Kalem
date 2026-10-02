@@ -26,7 +26,7 @@ import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
 import { Stamps, stampSlots } from '../objects/Stamps';
-import { Candle, CANDLE_FLAME, CANDLE_R, LENS_R, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
+import { Candle, CANDLE_FLAME, CANDLE_R, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { DeskBoard, useDeskTexture } from './DeskBoard';
 import { Fade } from './Fade';
@@ -311,8 +311,8 @@ export function DeskScreen() {
     }
 
     const lens = { x: magX.value, y: magY.value };
-    const handleEnd = { x: lens.x + (LENS_R + 72) * Math.SQRT1_2, y: lens.y + (LENS_R + 72) * Math.SQRT1_2 };
-    if (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 12) {
+    const handleEnd = { x: lens.x + MAG_HANDLE_END.x, y: lens.y + MAG_HANDLE_END.y };
+    if (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14) {
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
       magLift.value = withTiming(1, { duration: 160 });

@@ -37,13 +37,13 @@ export const LAYOUT = {
   stamps: { x: 296, y: 446, w: 368, h: 64 },
   items: { x: 196, y: 458, w: 100, h: 90 },
   /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
-  lamp: { cx: 905, baseY: 156, flameY: 58 },
+  lamp: { cx: 905, baseY: 186, flameY: 88 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 410, w: 120, h: 64 },
   ledger: { x: 240, y: 40, w: 520, h: 470 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },
-    magnifier: { x: 726, y: 428 },
+    magnifier: { x: 704, y: 384 },
   },
 } as const;

@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
-import { BlurMask, Circle, Group, Path, RadialGradient, Shadow, vec } from '@shopify/react-native-skia';
+import { BlurMask, Circle, Group, Path, RadialGradient, Shadow, vec, type Transforms3d } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
+import { PlacedArt, placed } from '../art/ArtSlot';
 import { t } from '../content/strings';
 import type { Decision } from '../content/types';
 import type { Rect } from '../logic/censor';
@@ -46,10 +47,35 @@ export function Stamps({ enabled, pressing, progress }: Props) {
   );
 }
 
-/** The wooden stamp seen from above, coming down as the finger holds. */
+const STAMP_ART = placed('stamp');
+
+/** The wooden stamp, lifted off the card and coming down as the finger holds. */
 function StampKnob({ rect, progress }: { rect: Rect; progress: SharedValue<number> }) {
   const cx = rect.x + rect.w / 2;
   const cy = rect.y + rect.h / 2;
+  if (STAMP_ART) return <StampArt cx={cx} cy={cy} progress={progress} />;
+  return <StampDisc cx={cx} cy={cy} progress={progress} />;
+}
+
+function StampArt({ cx, cy, progress }: { cx: number; cy: number; progress: SharedValue<number> }) {
+  // Starts raised above the card, settles onto it; the shadow tightens as it lands.
+  const transform = useDerivedValue<Transforms3d>(() => [
+    { translateX: cx },
+    { translateY: cy - (1 - progress.value) * 22 },
+    { scale: 1.12 - progress.value * 0.12 },
+  ]);
+  const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -6 - (1 - progress.value) * 10 }, { translateY: 4 + (1 - progress.value) * 18 }]);
+  const blur = useDerivedValue(() => 2 + (1 - progress.value) * 6);
+  return (
+    <Group transform={transform}>
+      <PlacedArt slot="stamp" shadow={{ transform: shadow, opacity: 0.55, blur }}>
+        {null}
+      </PlacedArt>
+    </Group>
+  );
+}
+
+function StampDisc({ cx, cy, progress }: { cx: number; cy: number; progress: SharedValue<number> }) {
   const transform = useDerivedValue(() => {
     const s = 1.35 - progress.value * 0.35;
     return [{ translateX: cx }, { translateY: cy }, { scale: s }];

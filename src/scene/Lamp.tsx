@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { BlurMask, Circle, Group, LinearGradient, Oval, Path, RadialGradient, Rect, Skia, vec, type SkPath } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
-import { ArtSlot } from '../art/ArtSlot';
+import { ArtSlot, PlacedArt, placed } from '../art/ArtSlot';
 import { C } from './palette';
 import { LAYOUT } from './world';
 
@@ -49,9 +49,15 @@ export function teardrop(w: number, h: number): SkPath {
     .build();
 }
 
+const LAMP_ART = placed('lamp');
+
+/** Where the lamp flame burns: from the illustration when there is one. */
+export const LAMP_FLAME_Y = LAMP_ART ? LAYOUT.lamp.baseY + LAMP_ART.point('flame')!.y : LAYOUT.lamp.flameY;
+
 /** Oil lamp in three-quarter view: brass font on the desk, glass chimney, the flame inside. */
 export function Lamp({ flicker, level }: Props) {
-  const { cx, baseY, flameY } = LAYOUT.lamp;
+  const { cx, baseY } = LAYOUT.lamp;
+  const flameY = LAMP_FLAME_Y;
   const parts = useMemo(
     () => ({
       font: lathe(cx, [
@@ -83,8 +89,8 @@ export function Lamp({ flicker, level }: Props) {
         [19, flameY + 18],
         [15, baseY - 84],
       ]),
-      flame: teardrop(7, 22),
-      core: teardrop(3.2, 10),
+      flame: LAMP_ART ? teardrop(5, 17) : teardrop(7, 22),
+      core: LAMP_ART ? teardrop(2.3, 8) : teardrop(3.2, 10),
     }),
     [cx, baseY, flameY],
   );
@@ -92,7 +98,7 @@ export function Lamp({ flicker, level }: Props) {
   const flameT = useDerivedValue(() => {
     const f = flicker.value;
     const l = 0.55 + 0.45 * level.value;
-    return [{ translateX: cx + (f - 1) * 6 }, { translateY: flameY + 8 }, { scaleX: l * (0.96 + (1 - f) * 0.6) }, { scaleY: l * (0.9 + (f - 0.9) * 1.2) }];
+    return [{ translateX: cx + (f - 1) * 6 }, { translateY: flameY + (LAMP_ART ? 0 : 8) }, { scaleX: l * (0.96 + (1 - f) * 0.6) }, { scaleY: l * (0.9 + (f - 0.9) * 1.2) }];
   });
   const flameOpacity = useDerivedValue(() => 0.35 + 0.65 * level.value);
   const halo = useDerivedValue(() => 34 * flicker.value * (0.4 + 0.6 * level.value));
@@ -108,6 +114,11 @@ export function Lamp({ flicker, level }: Props) {
         <BlurMask blur={10} style="normal" />
       </Oval>
 
+      {LAMP_ART ? (
+        <Group transform={[{ translateX: cx }, { translateY: baseY }]}>
+          <PlacedArt slot="lamp">{null}</PlacedArt>
+        </Group>
+      ) : (
       <ArtSlot slot="lamp" rect={{ x: cx - 75, y: flameY - 100, w: 150, h: baseY + 10 - (flameY - 100) }}>
         <Group>
           {/* Foot */}
@@ -140,6 +151,7 @@ export function Lamp({ flicker, level }: Props) {
           </Circle>
         </Group>
       </ArtSlot>
+      )}
 
       {/* Glow inside the chimney and the flame itself */}
       <Circle cx={cx} cy={flameY} r={halo} color={C.lamp} opacity={haloOpacity}>
@@ -155,14 +167,23 @@ export function Lamp({ flicker, level }: Props) {
         </Path>
       </Group>
 
-      {/* Chimney glass: nearly clear; edges, a long highlight, and the glow it holds */}
-      <Path path={parts.chimney} color="rgba(255,236,200,1)" opacity={glassGlow} blendMode="screen" />
-      <Path path={parts.chimney} style="stroke" strokeWidth={1.1} color="rgba(255,240,215,0.38)" />
-      <Path path={parts.chimney} style="stroke" strokeWidth={3} color="rgba(255,240,215,0.06)" />
-      <Rect x={cx - 15} y={flameY - 14} width={2.4} height={30} color="rgba(255,255,255,0.35)">
-        <BlurMask blur={1} style="normal" />
-      </Rect>
-      <Rect x={cx - 8} y={flameY - 88} width={1.6} height={40} color="rgba(255,255,255,0.22)" />
+      {LAMP_ART ? (
+        // The drawn chimney is see-through; fill it with the light it holds.
+        <Oval x={cx - 16} y={flameY - 40} width={32} height={64} color="rgba(255,226,170,1)" opacity={glassGlow} blendMode="screen">
+          <BlurMask blur={8} style="normal" />
+        </Oval>
+      ) : (
+        <>
+          {/* Chimney glass: nearly clear; edges, a long highlight, and the glow it holds */}
+          <Path path={parts.chimney} color="rgba(255,236,200,1)" opacity={glassGlow} blendMode="screen" />
+          <Path path={parts.chimney} style="stroke" strokeWidth={1.1} color="rgba(255,240,215,0.38)" />
+          <Path path={parts.chimney} style="stroke" strokeWidth={3} color="rgba(255,240,215,0.06)" />
+          <Rect x={cx - 15} y={flameY - 14} width={2.4} height={30} color="rgba(255,255,255,0.35)">
+            <BlurMask blur={1} style="normal" />
+          </Rect>
+          <Rect x={cx - 8} y={flameY - 88} width={1.6} height={40} color="rgba(255,255,255,0.22)" />
+        </>
+      )}
     </Group>
   );
 }
