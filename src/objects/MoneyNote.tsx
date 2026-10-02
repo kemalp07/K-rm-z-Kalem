@@ -15,11 +15,11 @@ export function MoneyNote({ purse }: { purse: Day['purse'] }) {
   const coins = useMemo(() => {
     const n = Math.min(5, Math.max(1, Math.round(purse.kurus / 10)));
     const spots = [
-      { dx: -22, dy: 52, r: 13, silver: true },
-      { dx: 4, dy: 78, r: 9, silver: false },
-      { dx: 24, dy: 84, r: 9, silver: false },
-      { dx: -12, dy: 80, r: 8, silver: false },
-      { dx: 44, dy: 80, r: 8, silver: false },
+      { dx: -24, dy: 62, r: 13, silver: true },
+      { dx: -2, dy: 84, r: 9, silver: false },
+      { dx: 18, dy: 88, r: 9, silver: false },
+      { dx: -22, dy: 86, r: 8, silver: false },
+      { dx: 38, dy: 86, r: 8, silver: false },
     ];
     return spots.slice(0, n);
   }, [purse.kurus]);
@@ -27,15 +27,15 @@ export function MoneyNote({ purse }: { purse: Day['purse'] }) {
   return (
     <Group>
       <Group transform={[{ rotate: 0.09 }]} origin={{ x: r.x + r.w / 2, y: r.y + r.h / 2 }}>
-        <ArtSlot slot="purse_note" rect={r}>
+        <ArtSlot slot="purse_note" rect={r} shadow>
           <Path path={shape} color="#e4d6b6">
             <Shadow dx={-3} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
           </Path>
         </ArtSlot>
-        <Para text={purse.line} x={r.x + 8} y={r.y + 10} width={r.w - 14} family="Caveat" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
+        <Para text={purse.line} x={r.x + 16} y={r.y + 14} width={r.w - 26} family="Caveat" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
       </Group>
       {coins.map((c, i) => (
-        <ArtSlot key={i} slot="coin" rect={{ x: r.x + c.dx - c.r, y: r.y + c.dy - c.r, w: c.r * 2, h: c.r * 2 }}>
+        <ArtSlot key={i} slot={c.silver ? 'coin_silver' : 'coin'} shadow rect={{ x: r.x + c.dx - c.r * 1.2, y: r.y + c.dy - c.r * 1.2, w: c.r * 2.4, h: c.r * 2.4 }}>
           <Group>
             <Circle cx={r.x + c.dx} cy={r.y + c.dy} r={c.r}>
               <RadialGradient

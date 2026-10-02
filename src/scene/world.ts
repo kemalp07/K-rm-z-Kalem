@@ -31,7 +31,7 @@ export const LAYOUT = {
   window: { x: 0, y: 0, w: 150, h: 235 },
   calendar: { x: 172, y: 26, w: 92, h: 118 },
   stack: { x: 34, y: 286, w: 200, h: 170 },
-  plate: { x: 806, y: 508, w: 170, h: 40 },
+  plate: { x: 816, y: 497, w: 150, h: 60 },
   letter: { x: 300, y: 22, w: 360, h: 410 },
   dropZone: { x: 270, y: 10, w: 420, h: 440 },
   stamps: { x: 296, y: 446, w: 368, h: 64 },
@@ -39,7 +39,7 @@ export const LAYOUT = {
   /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
   lamp: { cx: 905, baseY: 96, flameY: 96 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
-  purse: { x: 836, y: 410, w: 120, h: 64 },
+  purse: { x: 836, y: 398, w: 120, h: 93 },
   ledger: { x: 240, y: 40, w: 520, h: 470 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },

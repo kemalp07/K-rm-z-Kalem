@@ -39,9 +39,10 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 | `window.png` | 150×235 | 450×705 px | Sol üstte gece penceresi, çerçevesiyle. |
 | `lamp.png` | 150×260 | 450×780 px | Gaz lambası, tam tepeden. Alev ve ışık kodla çizilir; şişe ağzı boş kalsın. |
 | `calendar.png` | 92×118 | 276×354 px | Koparılmış takvim yaprağı, yazısız (tarih kodla yazılır). |
-| `purse_note.png` | 120×64 | 360×192 px | Para hesabı yazılan kâğıt parçası, yazısız. |
-| `coin.png` | 30×30 | 90×90 px | Tek madeni para; masada döndürülerek tekrarlanır. |
-| `brass_plate.png` | 170×40 | 510×120 px | Pirinç isim levhası, yazısız. |
+| `purse_note.png` | 120×93 | 360×279 px | Para hesabı yazılan kâğıt parçası, yazısız. |
+| `coin.png` | 30×30 | 90×90 px | Bakır madeni para; masada döndürülerek tekrarlanır. |
+| `coin_silver.png` | 30×30 | 90×90 px | Gümüş (büyük) madeni para. |
+| `brass_plate.png` | 150×60 | 450×180 px | Pirinç isim levhası, yazısız. |
 | `envelope.png` | 168×104 | 504×312 px | Mektup zarfı, adres alanı boş. |
 | `envelope_package.png` | 176×116 | 528×348 px | Kâğıda sarılmış, iple bağlanmış paket. |
 | `paper.png` | 360×410 | 1080×1230 px | Mektup kâğıdı. Yazısız; el yazısı kodla yerleşir. |

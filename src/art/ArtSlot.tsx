@@ -9,16 +9,25 @@ import type { Rect } from '../logic/censor';
 interface Props {
   slot: ArtSlotId;
   rect: Rect;
+  /** Give the illustration a soft drop shadow of its own silhouette. */
+  shadow?: boolean;
   /** Skia placeholder drawn while the slot has no illustration. */
   children: ReactNode;
 }
 
-export function ArtSlot({ slot, rect, children }: Props) {
+const RESTING_SHADOW: ArtShadowSpec = { transform: [{ translateX: -3 }, { translateY: 4 }], opacity: 0.55, blur: 3 };
+
+export function ArtSlot({ slot, rect, shadow, children }: Props) {
   const source = artFiles[slot] ?? null;
   const image = useImage(source);
   if (!source) return <>{children}</>;
   if (!image) return null; // brief gap while the file decodes; better than a flash of placeholder
-  return <Image image={image} x={rect.x} y={rect.y} width={rect.w} height={rect.h} fit="fill" />;
+  return (
+    <>
+      {shadow && <ArtShadow image={image} rect={rect} spec={RESTING_SHADOW} />}
+      <Image image={image} x={rect.x} y={rect.y} width={rect.w} height={rect.h} fit="fill" />
+    </>
+  );
 }
 
 export const hasArt = (slot: ArtSlotId) => artFiles[slot] !== undefined;

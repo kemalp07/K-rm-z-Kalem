@@ -16,7 +16,7 @@ export function LockedTray() {
   const disc = { cx: r.x + 118, cy: r.y + 44, r: 28 };
   return (
     <Group>
-      <ArtSlot slot="tray" rect={r}>
+      <ArtSlot slot="tray" rect={r} shadow>
         <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={5}>
           <LinearGradient start={vec(r.x, r.y)} end={vec(r.x, r.y + r.h)} colors={['#120c08', '#1b120b']} />
           <Shadow dx={-3} dy={4} blur={5} color="rgba(0,0,0,0.7)" />

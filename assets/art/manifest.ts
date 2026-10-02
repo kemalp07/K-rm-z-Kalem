@@ -2,9 +2,15 @@
 /* eslint-disable */
 
 export const artFiles: Partial<Record<string, number>> = {
+  "brass_plate": require('./brass_plate.png'),
+  "calendar": require('./calendar.png'),
   "candle": require('./candle.png'),
+  "coin": require('./coin.png'),
+  "coin_silver": require('./coin_silver.png'),
   "lamp": require('./lamp.png'),
   "magnifier": require('./magnifier.png'),
   "pen": require('./pen.png'),
+  "purse_note": require('./purse_note.png'),
   "stamp": require('./stamp.png'),
+  "tray": require('./tray.png'),
 };
