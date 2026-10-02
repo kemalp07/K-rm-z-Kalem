@@ -27,6 +27,7 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 - **Işık görsele çizilmez.** Lamba ışığı, titreme, vinyet ve gece kodla eklenir. Görseller
   düz, gölgesiz-nötr bir ışıkta çizilmeli, yoksa ışık iki kez uygulanır.
 - **Yazı görsele çizilmez.** Adresler, tarihler, levha yazısı, mühür yazısı kodla basılır (çeviri için).
+- **Kamera tam tepeden.** Eşyaların yan yüzü görünmez (tek istisna duvardaki pencere).
 - Ölçüler sahnenin 1000×560'lık "dünya" birimindedir; teslim ölçüsü 3 katıdır.
 - Kâğıt (`paper`) tek görsel olarak kullanılır; her mektubun rengi/yıpranması kodla üzerine eklenir.
 
@@ -34,9 +35,9 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 
 | Slot (dosya adı) | Dünya ölçüsü | Teslim ölçüsü (3×) | Not |
 |---|---|---|---|
-| `desk.png` | 1000×560 | 3000×1680 px | Masa yüzeyi, tüm sahne. Işık ve vinyet kodla eklenir; görselde ışık olmasın. |
+| `desk.png` | 1640×560 | 4920×1680 px | Masa yüzeyi; ortadaki 1000 birim oyun alanı, iki yanda 320 birim geniş ekranlar için taşma. Işık ve vinyet kodla eklenir. |
 | `window.png` | 150×235 | 450×705 px | Sol üstte gece penceresi, çerçevesiyle. |
-| `lamp.png` | 150×150 | 450×450 px | Gaz lambası, yukarıdan. Alev kodla çizilir; görselde camın içi boş kalsın. |
+| `lamp.png` | 150×260 | 450×780 px | Gaz lambası, tam tepeden. Alev ve ışık kodla çizilir; şişe ağzı boş kalsın. |
 | `calendar.png` | 92×118 | 276×354 px | Koparılmış takvim yaprağı, yazısız (tarih kodla yazılır). |
 | `purse_note.png` | 120×64 | 360×192 px | Para hesabı yazılan kâğıt parçası, yazısız. |
 | `coin.png` | 30×30 | 90×90 px | Tek madeni para; masada döndürülerek tekrarlanır. |
@@ -45,7 +46,7 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 | `envelope_package.png` | 176×116 | 528×348 px | Kâğıda sarılmış, iple bağlanmış paket. |
 | `paper.png` | 360×410 | 1080×1230 px | Mektup kâğıdı. Yazısız; el yazısı kodla yerleşir. |
 | `pen.png` | 18×170 | 54×510 px | Kırmızı sansür kalemi, uç aşağıda. |
-| `candle.png` | 56×56 | 168×168 px | Şamdandaki mum, yukarıdan. Alev kodla çizilir. |
+| `candle.png` | 80×90 | 240×270 px | Kulplu pirinç şamdanda mum, tam tepeden. Alev kodla çizilir. |
 | `magnifier.png` | 120×120 | 360×360 px | Büyüteç, sap sağ-aşağı. Cam kısmı saydam olsun. |
 | `stamp.png` | 86×52 | 258×156 px | Lastik mühür ıstampası. Yazı ve renk kodla basılır. |
 | `tray.png` | 180×120 | 540×360 px | Kilitli aletlerin karanlık tepsisi. |

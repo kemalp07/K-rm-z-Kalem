@@ -19,7 +19,7 @@ hazırlamak için yazıldı. Prompt'lar İngilizce; araçlar İngilizcede daha t
 - Sert **gölge** ya da parlak ışık lekesi var (oyun ışığı kendisi ekliyor).
 - Eşyalar **birbirine değiyor ya da üst üste** (kesmesi zorlaşır).
 - **Alev** var (oyun alevi kendisi çizip titretiyor).
-- Bakış açısı yanlış (aşağıdaki tabloya bak).
+- Eşyanın **yan yüzü görünüyor** (tam tepeden değil).
 
 ---
 
@@ -38,28 +38,45 @@ No text, no letters, no numbers, no logos, no watermark, no flames.
 
 ---
 
+## Kamera: her şey tam tepeden
+
+Oyuncu masaya **tam tepeden** bakıyor. Bütün görseller kuşbakışı, "flat lay" fotoğraf
+gibi çizilmeli; hiçbir eşyanın yan yüzü görünmemeli. Her prompt'a şunu da ekle:
+
+```
+Strict orthographic top-down view, camera directly above looking straight down,
+like a flat lay photograph. No side of any object is visible.
+```
+
 ## Sayfa 1 — Aletler
 
 ```
 [Üslup bloğu]
+[Kamera cümlesi]
 
-A single sheet of separate objects, evenly spaced on the background, none touching:
-1. A brass oil lamp with a tall clear glass chimney, seen from a slight three-quarter
-   view from above, the base at the bottom. The chimney is empty, no flame inside.
-2. A small brass chamberstick (saucer candle holder with a finger ring) holding a short
-   ivory tallow candle with a few wax drips, three-quarter view from above, no flame.
-3. A long red hexagonal censor's pencil, sharpened, lying flat, seen straight from above,
-   point at the bottom.
-4. A magnifying glass with a brass rim and a turned walnut handle, seen straight from
-   above, the glass completely clear and empty, the handle pointing down-right.
-5. Four wooden rubber stamps with round knob handles, seen straight from above, the
-   rubber face hidden underneath.
+A single sheet of separate objects, evenly spaced on the background, none touching,
+every object seen from directly above:
+1. A brass oil lamp seen from directly above: a round brass base, inside it the round
+   brass burner with a small wick-key knob sticking out to one side, and in the centre
+   the circular open mouth of the clear glass chimney. Concentric circles, no flame.
+2. A brass chamberstick seen from directly above: a round shallow saucer with a small
+   ring handle on one side, in the centre the round top of a short ivory candle with a
+   blackened wick and a few wax drips on the rim. No flame.
+3. A long red hexagonal censor's pencil, sharpened, lying flat, point at the bottom.
+4. A magnifying glass lying flat: brass rim, turned walnut handle pointing down-right,
+   the glass completely clear and empty.
+5. Four wooden rubber stamps seen from directly above: a round wooden knob in the
+   centre of a larger round wooden base, slightly worn.
 ```
+
+**Şu an yalnızca 1, 2 ve 5 gerekli.** Kalem ve büyüteç ilk sayfadan alındı, yeniden
+üretmene gerek yok. Tek tek de ürettirebilirsin, ama üslup bloğu aynı kalsın.
 
 ## Sayfa 2 — Masadaki bilgi eşyaları
 
 ```
 [Üslup bloğu]
+[Kamera cümlesi]
 
 A single sheet of separate objects, evenly spaced on the background, none touching:
 1. A single torn-off wall calendar page, blank, with a ragged top edge and two small
@@ -76,6 +93,7 @@ A single sheet of separate objects, evenly spaced on the background, none touchi
 
 ```
 [Üslup bloğu]
+[Kamera cümlesi]
 
 A single sheet of separate objects, evenly spaced on the background, none touching:
 1. A plain old paper envelope, front side, blank address area, a small postage stamp
@@ -100,7 +118,8 @@ a faint ring stain and a small old ink stain. Nothing lying on it. Evenly lit, n
 lamp glow, no vignette.
 ```
 
-**Pencere** — dikey (yaklaşık 2:3)
+**Pencere** — dikey (yaklaşık 2:3). Masanın kenarındaki duvarda durduğu için tek istisna
+bu: önden görünür.
 ```
 [Üslup bloğu — arka plan cümlesini SİL]
 
@@ -134,11 +153,11 @@ no writing.
 
 | Görsel | Slot | Bakış | Not |
 |---|---|---|---|
-| Gaz lambası | `lamp` | 3/4, taban altta | Alev ve şişe içi ışığı oyun çiziyor |
-| Şamdanlı mum | `candle` | 3/4 | Alevi oyun çiziyor |
+| Gaz lambası | `lamp` | Tepeden | Alevi ve ışığı oyun çiziyor; şişe ağzının merkezi ölçülecek |
+| Şamdanlı mum | `candle` | Tepeden | Alevi oyun çiziyor; fitilin yeri ölçülecek |
 | Kırmızı kalem | `pen` | Tepeden, uç aşağıda | |
 | Büyüteç | `magnifier` | Tepeden, sap sağ-aşağı | Cam tamamen boş olmalı; büyütmeyi oyun yapıyor |
-| Lastik mühürler | `stamp` | Tepeden | Gelince mühür sırasını bu görselle yeniden kuracağım |
+| Lastik mühürler | `stamp` | Tepeden | Basılırken inen mühür |
 | Takvim yaprağı | `calendar` | Tepeden | Tarihi oyun yazıyor |
 | Kâğıt parçası | `purse_note` | Tepeden | Para yazısını oyun yazıyor |
 | Madeni para | `coin` | Tepeden | Birini kullanırım, oyun çoğaltıp döndürür |
