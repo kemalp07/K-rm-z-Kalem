@@ -34,6 +34,21 @@ export const stickEnd = (nib: Point, angle: number, length: number): Point => ({
   y: nib.y - Math.cos(angle) * length,
 });
 
+/**
+ * Undo a block's handwriting transform (shear, then tilt, about its top-left) so a
+ * board point can be compared with the block's own, upright line boxes.
+ * The shear is horizontal: x' = x + tan(skew)·y. (In RN Skia that is the `skewY` key.)
+ */
+export function toLocalFrame(p: Point, origin: Point, tilt: number, skew: number): Point {
+  const dx = p.x - origin.x;
+  const dy = p.y - origin.y;
+  const c = Math.cos(-tilt);
+  const s = Math.sin(-tilt);
+  const rx = dx * c - dy * s;
+  const ry = dx * s + dy * c;
+  return { x: origin.x + rx - Math.tan(skew) * ry, y: origin.y + ry };
+}
+
 export const clampTo = (p: Point, r: Rect, margin = 0): Point => ({
   x: Math.min(r.x + r.w - margin, Math.max(r.x + margin, p.x)),
   y: Math.min(r.y + r.h - margin, Math.max(r.y + margin, p.y)),

@@ -18,12 +18,14 @@ export interface PaperStyle {
 interface HandStyle {
   text: TextSpec;
   hidden: TextSpec;
-  /** Horizontal shear of the writing; negative leans right. */
+  /** Horizontal shear of the writing, radians; negative leans the letters right. */
   skew: number;
   /** How far each line drifts from where it should start, in px. */
   drift: number;
   /** Max tilt per line, radians. */
   tilt: number;
+  /** Lean every line shares: hurried lines climb, slow dictation sags. */
+  rise: number;
   gap: number;
   paper: PaperStyle;
 }
@@ -36,7 +38,8 @@ const HANDS: Record<Hand, HandStyle> = {
     hidden: hiddenSpec(16),
     skew: -0.1,
     drift: 3,
-    tilt: 0.012,
+    tilt: 0.008,
+    rise: -0.018,
     gap: 5,
     paper: { color: '#e6dcc2', torn: true, wobble: 1.4, ruled: 'rgba(80,100,130,0.16)', grain: 0.22 },
   },
@@ -46,6 +49,7 @@ const HANDS: Record<Hand, HandStyle> = {
     skew: -0.18,
     drift: 0.8,
     tilt: 0.004,
+    rise: 0,
     gap: 7,
     paper: { color: '#f1e6cc', torn: false, wobble: 0.5, border: 'rgba(150,80,80,0.35)', grain: 0.14 },
   },
@@ -54,7 +58,8 @@ const HANDS: Record<Hand, HandStyle> = {
     hidden: hiddenSpec(16),
     skew: 0.05,
     drift: 4.5,
-    tilt: 0.022,
+    tilt: 0.016,
+    rise: 0.01,
     gap: 6,
     paper: { color: C.paperCheap, torn: false, wobble: 1.8, grain: 0.3 },
   },
@@ -64,6 +69,7 @@ const HANDS: Record<Hand, HandStyle> = {
     skew: -0.03,
     drift: 1.2,
     tilt: 0.006,
+    rise: -0.004,
     gap: 7,
     paper: { color: C.paper, torn: false, wobble: 1.0, grain: 0.18 },
   },
@@ -73,6 +79,7 @@ const HANDS: Record<Hand, HandStyle> = {
     skew: 0,
     drift: 0.3,
     tilt: 0,
+    rise: 0,
     gap: 8,
     paper: { color: '#f2ead8', torn: false, wobble: 0.35, grain: 0.1 },
   },
@@ -92,7 +99,10 @@ export interface Laid {
 
 export interface LaidSegment extends Laid {
   seg: Segment;
-  /** One rect per wrapped line, board coordinates. Used for censoring and heat. */
+  /**
+   * One rect per wrapped line, in the block's upright frame (before tilt and shear).
+   * Compare against points passed through toLocalFrame; draw inside the block transform.
+   */
   lines: Rect[];
 }
 
@@ -172,7 +182,7 @@ function attempt(
   }
 
   const headPara = makeParagraph(provider, letter.heading, { ...text, size: text.size + 1 }, width);
-  out.heading = { para: headPara, x: left + between(r, -2, 2), y, width, tilt: between(r, -hand.tilt, hand.tilt), skew: hand.skew };
+  out.heading = { para: headPara, x: left + between(r, -2, 2), y, width, tilt: hand.rise + between(r, -hand.tilt, hand.tilt), skew: hand.skew };
   y += headPara.getHeight() + hand.gap + 2;
 
   out.segments = segments.map((seg) => {
@@ -190,10 +200,9 @@ function attempt(
       x,
       y: top,
       width: w,
-      tilt: isHidden ? -0.006 : between(r, -hand.tilt, hand.tilt),
+      tilt: isHidden ? -0.006 : hand.rise + between(r, -hand.tilt, hand.tilt),
       skew,
-      // Follow the shear so the censor columns sit where the ink actually is.
-      lines: lineRects(para, seg.text.length, x, top).map((l) => ({ ...l, x: l.x + skew * (l.y + l.h / 2 - top) })),
+      lines: lineRects(para, seg.text.length, x, top),
     };
     y = top + para.getHeight() * (isHidden ? 0.82 : 1) + hand.gap;
     return laid;

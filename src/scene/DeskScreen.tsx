@@ -21,7 +21,7 @@ import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } fr
 import { InspectionSlip } from '../objects/InspectionSlip';
 import { Ledger } from '../objects/Ledger';
 import { Letter } from '../objects/Letter';
-import { inspectPoints, layoutLetter } from '../objects/letterLayout';
+import { inspectPoints, layoutLetter, type LaidSegment } from '../objects/letterLayout';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
@@ -31,7 +31,7 @@ import { Candle, CANDLE_R, LENS_R, MagnifierFrame, PEN_LENGTH, RedPen } from '..
 import { DeskBoard, useDeskTexture } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
-import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd } from './hit';
+import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd, toLocalFrame } from './hit';
 import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
@@ -138,7 +138,7 @@ export function DeskScreen() {
   const drag = useRef<Drag | null>(null);
   const penInHand = useRef(false);
   const exiting = useRef(false);
-  const coverage = useRef(new Map<string, LineCoverage[]>());
+  const coverage = useRef(new Map<string, { lines: LineCoverage[]; laid: LaidSegment }>());
   const heatLocal = useRef<Record<string, number>>({});
   const dwell = useRef<{ id: string; ms: number } | null>(null);
   const slipShownFor = useRef<string | null>(null);
@@ -147,7 +147,7 @@ export function DeskScreen() {
   // Fresh coverage and heat for each letter that lands on the desk.
   useEffect(() => {
     coverage.current = new Map(
-      (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, makeCoverage(s.lines)]),
+      (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
     heatLocal.current = {};
     heat.value = {};
@@ -202,7 +202,8 @@ export function DeskScreen() {
         let changed = false;
         const next = { ...heatLocal.current };
         for (const s of hidden) {
-          const d = Math.min(...s.lines.map((l) => distToRect(c, l)));
+          const local = toLocalFrame(c, s, s.tilt, s.skew);
+          const d = Math.min(...s.lines.map((l) => distToRect(local, l)));
           const before = next[s.seg.id] ?? 0;
           const after = stepHeat(before, heatTarget(d), TICK_MS / 1000);
           if (after !== before) {
@@ -408,8 +409,9 @@ export function DeskScreen() {
         livePath.value = d.path.build();
         penX.value = p.x;
         penY.value = p.y;
-        for (const [segId, lines] of coverage.current) {
-          if (!strokeOver(lines, d.last, p, 5)) continue;
+        for (const [segId, { lines, laid }] of coverage.current) {
+          const local = (q: Point) => toLocalFrame(q, laid, laid.tilt, laid.skew);
+          if (!strokeOver(lines, local(d.last), local(p), 5)) continue;
           const already = useGame.getState().state.letters[id]?.censored.includes(segId);
           if (!already && isBlackedOut(lines)) {
             useGame.getState().censor(id, segId);

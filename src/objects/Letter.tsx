@@ -48,7 +48,7 @@ export interface LetterProps {
 
 function Block({ laid }: { laid: Laid }) {
   return (
-    <Group transform={[{ rotate: laid.tilt }, { skewX: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
+    <Group transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
       <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
     </Group>
   );
@@ -67,7 +67,7 @@ function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedVal
     return h * h * 0.9;
   });
   return (
-    <Group transform={[{ rotate: laid.tilt }, { skewX: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
+    <Group transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
       <Group
         layer={
           <Paint opacity={glow}>
@@ -268,20 +268,27 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
 }
 
 function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored: string[] }) {
-  const bars = useMemo(
+  const blocks = useMemo(
     () =>
       segments
         .filter((s) => censored.includes(s.seg.id))
-        .flatMap((s) => s.lines.map((l, i) => roughRect({ x: l.x - 3, y: l.y + 1, w: l.w + 6, h: l.h - 2 }, `bar-${s.seg.id}-${i}`, 1.4))),
+        .map((s) => ({
+          laid: s,
+          bars: s.lines.map((l, i) => roughRect({ x: l.x - 3, y: l.y + 1, w: l.w + 6, h: l.h - 1 }, `bar-${s.seg.id}-${i}`, 1.4)),
+        })),
     [segments, censored],
   );
-  // Opaque: once a line counts as censored, nothing of it may show through.
+  // Opaque, and in the writing's own slant: once a line counts as censored, nothing of it shows.
   return (
     <Group>
-      {bars.map((b, i) => (
-        <Path key={i} path={b} color={C.censor}>
-          <DiscretePathEffect length={6} deviation={1.2} seed={i} />
-        </Path>
+      {blocks.map(({ laid, bars }) => (
+        <Group key={laid.seg.id} transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
+          {bars.map((b, i) => (
+            <Path key={i} path={b} color={C.censor}>
+              <DiscretePathEffect length={6} deviation={1.2} seed={i} />
+            </Path>
+          ))}
+        </Group>
       ))}
     </Group>
   );
