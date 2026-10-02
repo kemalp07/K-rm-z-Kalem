@@ -28,7 +28,7 @@ export const inRect = (p: { x: number; y: number }, r: Rect, pad = 0) =>
   p.x >= r.x - pad && p.x <= r.x + r.w + pad && p.y >= r.y - pad && p.y <= r.y + r.h + pad;
 
 export const LAYOUT = {
-  window: { x: 0, y: 0, w: 150, h: 235 },
+  window: { x: 0, y: 0, w: 150, h: 210 },
   calendar: { x: 172, y: 26, w: 92, h: 118 },
   stack: { x: 34, y: 286, w: 200, h: 170 },
   plate: { x: 816, y: 497, w: 150, h: 60 },
@@ -40,7 +40,7 @@ export const LAYOUT = {
   lamp: { cx: 905, baseY: 96, flameY: 96 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 398, w: 120, h: 93 },
-  ledger: { x: 240, y: 40, w: 520, h: 470 },
+  ledger: { x: 240, y: 28, w: 520, h: 512 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },

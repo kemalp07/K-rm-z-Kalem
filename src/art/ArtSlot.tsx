@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Blur, ColorMatrix, Group, Image, Paint, useImage, type SkImage, type Transforms3d } from '@shopify/react-native-skia';
+import { Blur, ColorMatrix, Group, Image, Paint, Rect as SkRect, useImage, type SkImage, type Transforms3d } from '@shopify/react-native-skia';
 import type { SharedValue } from 'react-native-reanimated';
 import { artFiles } from '../../assets/art/manifest';
 import { artPlacement } from '../../assets/art/placement';
@@ -87,5 +87,25 @@ function ArtShadow({ image, rect, spec }: { image: SkImage; rect: { x: number; y
     >
       <Image image={image} x={rect.x} y={rect.y} width={rect.w} height={rect.h} fit="fill" />
     </Group>
+  );
+}
+
+/**
+ * One illustration, many variants: multiply a tint into the image (keeping its own
+ * edges), so a single sheet of paper art can be cheap grey stock or cream bond.
+ */
+export function TintedArt({ slot, rect, tint, shadow }: { slot: ArtSlotId; rect: Rect; tint: string; shadow?: boolean }) {
+  const image = useImage(artFiles[slot] ?? null);
+  if (!image) return null;
+  const { x, y, w, h } = rect;
+  return (
+    <>
+      {shadow && <ArtShadow image={image} rect={rect} spec={{ transform: [{ translateX: -6 }, { translateY: 9 }], opacity: 0.6, blur: 8 }} />}
+      <Group layer>
+        <Image image={image} x={x} y={y} width={w} height={h} fit="fill" />
+        <SkRect x={x} y={y} width={w} height={h} color={tint} blendMode="multiply" />
+        <Image image={image} x={x} y={y} width={w} height={h} fit="fill" blendMode="dstIn" />
+      </Group>
+    </>
   );
 }

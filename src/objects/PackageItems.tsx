@@ -53,7 +53,7 @@ function Sock({ x, y }: { x: number; y: number }) {
     return { p, rows };
   }, [x, y]);
   return (
-    <ArtSlot slot="item_corap" rect={{ x, y, w: 96, h: 76 }}>
+    <ArtSlot slot="item_corap" rect={{ x: x - 8, y: y + 8, w: 112, h: 60 }} shadow>
       <Group>
         <Path path={parts.p} color="#8c7a64">
           <Shadow dx={-3} dy={4} blur={4} color="rgba(0,0,0,0.55)" />
@@ -75,7 +75,7 @@ function MulberryPouch({ x, y }: { x: number; y: number }) {
     return Array.from({ length: 6 }, (_, i) => ({ k: i, cx: x + between(r, -14, 18), cy: y + between(r, 18, 30), r: between(r, 2.4, 3.4) }));
   }, [x, y]);
   return (
-    <ArtSlot slot="item_dut" rect={{ x: x - 29, y: y - 26, w: 58, h: 52 }}>
+    <ArtSlot slot="item_dut" rect={{ x: x - 40, y: y - 26, w: 74, h: 52 }} shadow>
       <Group>
         <Path path={blob(x, y, 20, 'pouch', 0.18)} color="#c8b896">
           <Shadow dx={-3} dy={4} blur={4} color="rgba(0,0,0,0.55)" />

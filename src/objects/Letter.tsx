@@ -20,7 +20,7 @@ import {
   type SkPath,
 } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
-import { ArtSlot, hasArt } from '../art/ArtSlot';
+import { hasArt, TintedArt } from '../art/ArtSlot';
 import type { Decision, Letter as LetterData, PaperMark } from '../content/types';
 import { t } from '../content/strings';
 import type { Rect as R } from '../logic/censor';
@@ -85,7 +85,47 @@ function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedVal
   );
 }
 
+/** Printed or ruled furniture of a sheet: the same over drawn or illustrated paper. */
+function PaperPrint({ letter, rect }: { letter: LetterData; rect: R }) {
+  const style = paperStyleOf(letter.hand);
+  return (
+    <>
+      {style.ruled &&
+        Array.from({ length: Math.floor((rect.h - 50) / 23) }, (_, i) => (
+          <Line key={i} p1={vec(rect.x + 8, rect.y + 52 + i * 23)} p2={vec(rect.x + rect.w - 8, rect.y + 52 + i * 23)} strokeWidth={0.7} color={style.ruled!} />
+        ))}
+      {style.border && (
+        <Group style="stroke" color={style.border}>
+          <Rect x={rect.x + 12} y={rect.y + 12} width={rect.w - 24} height={rect.h - 24} strokeWidth={0.8} />
+          <Rect x={rect.x + 15} y={rect.y + 15} width={rect.w - 30} height={rect.h - 30} strokeWidth={0.5} />
+        </Group>
+      )}
+      {letter.letterhead && (
+        <Group color="rgba(58,47,42,0.75)">
+          <Line p1={vec(rect.x + 40, rect.y + 46)} p2={vec(rect.x + rect.w - 40, rect.y + 46)} strokeWidth={1} />
+          <Line p1={vec(rect.x + 40, rect.y + 49)} p2={vec(rect.x + rect.w - 40, rect.y + 49)} strokeWidth={0.5} />
+        </Group>
+      )}
+    </>
+  );
+}
+
+const PAPER_ART = hasArt('paper');
+
 function Paper({ letter, rect }: { letter: LetterData; rect: R }) {
+  if (PAPER_ART) {
+    // One illustrated sheet for every letter, tinted to each writer's paper.
+    return (
+      <Group>
+        <TintedArt slot="paper" rect={rect} tint={paperStyleOf(letter.hand).color} shadow />
+        <PaperPrint letter={letter} rect={rect} />
+      </Group>
+    );
+  }
+  return <DrawnPaper letter={letter} rect={rect} />;
+}
+
+function DrawnPaper({ letter, rect }: { letter: LetterData; rect: R }) {
   const style = paperStyleOf(letter.hand);
   const shape = useMemo(() => roughRect(rect, `paper-${letter.id}`, style.wobble, style.torn), [rect, letter.id, style.wobble, style.torn]);
   const folds = [rect.y + rect.h / 3, rect.y + (rect.h * 2) / 3];
@@ -95,11 +135,7 @@ function Paper({ letter, rect }: { letter: LetterData; rect: R }) {
         <Shadow dx={-6} dy={9} blur={10} color="rgba(0,0,0,0.6)" />
       </Path>
       <Group clip={shape}>
-        {hasArt('paper') ? (
-          <ArtSlot slot="paper" rect={rect}>
-            {null}
-          </ArtSlot>
-        ) : (
+        {(
           <Group blendMode="multiply">
             <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h} opacity={0.5 + style.grain}>
               <FractalNoise freqX={0.7} freqY={0.7} octaves={2} seed={Math.round(rect.x)} />
@@ -116,22 +152,7 @@ function Paper({ letter, rect }: { letter: LetterData; rect: R }) {
         <Path path={shape} style="stroke" strokeWidth={16} color="rgba(130,90,40,0.2)">
           <BlurMask blur={9} style="normal" />
         </Path>
-        {style.ruled &&
-          Array.from({ length: Math.floor((rect.h - 50) / 23) }, (_, i) => (
-            <Line key={i} p1={vec(rect.x, rect.y + 52 + i * 23)} p2={vec(rect.x + rect.w, rect.y + 52 + i * 23)} strokeWidth={0.7} color={style.ruled!} />
-          ))}
-        {style.border && (
-          <Group style="stroke" color={style.border}>
-            <Rect x={rect.x + 10} y={rect.y + 10} width={rect.w - 20} height={rect.h - 20} strokeWidth={0.8} />
-            <Rect x={rect.x + 13} y={rect.y + 13} width={rect.w - 26} height={rect.h - 26} strokeWidth={0.5} />
-          </Group>
-        )}
-        {letter.letterhead && (
-          <Group color="rgba(58,47,42,0.75)">
-            <Line p1={vec(rect.x + 40, rect.y + 46)} p2={vec(rect.x + rect.w - 40, rect.y + 46)} strokeWidth={1} />
-            <Line p1={vec(rect.x + 40, rect.y + 49)} p2={vec(rect.x + rect.w - 40, rect.y + 49)} strokeWidth={0.5} />
-          </Group>
-        )}
+        <PaperPrint letter={letter} rect={rect} />
         {/* Fold creases: a shadow line and a lit lip beside it */}
         {folds.map((fy) => (
           <Group key={fy}>

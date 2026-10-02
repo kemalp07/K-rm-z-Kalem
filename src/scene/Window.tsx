@@ -42,7 +42,10 @@ export function NightWindow() {
   const midY = inner.y + inner.h * 0.48;
 
   return (
-    <ArtSlot slot="window" rect={LAYOUT.window}>
+    <>
+    {/* The wall the window is set in runs on past the board, art or not */}
+    <Rect x={x - 340} y={y} width={w + 340} height={h} color="#120b07" />
+    <ArtSlot slot="window" rect={LAYOUT.window} shadow>
       <Group>
         {/* Wall and recess; the wall runs on past the board for wide screens */}
         <Rect x={x - 340} y={y} width={w + 340} height={h} color="#120b07" />
@@ -85,5 +88,6 @@ export function NightWindow() {
         </Path>
       </Group>
     </ArtSlot>
+    </>
   );
 }

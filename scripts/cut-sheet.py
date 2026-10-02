@@ -1,11 +1,12 @@
 """
 Cut separate objects out of an asset sheet drawn on a plain paper background.
 
-    python3 scripts/cut-sheet.py sheet.png out_dir name:x0,y0,x1,y1[:glass] ...
+    python3 scripts/cut-sheet.py sheet.png out_dir [bg=R,G,B] name:x0,y0,x1,y1[:glass] ...
 
 Each box is a rough crop around one object. The object is found as everything that
 differs from the background colour, holes filled. With `:glass`, pale areas *inside*
 the object (lamp chimney, lens) fade towards transparent instead of staying paper-white.
+With `:trim`, the result is cropped tight to the object.
 With `:holes`, enclosed patches that are plain background (a handle's ring) are cleared.
 Needs Pillow, numpy, scipy (dev tool only, not part of the app).
 """
@@ -16,9 +17,13 @@ from scipy import ndimage
 
 src, out_dir, *specs = sys.argv[1:]
 rgb = np.asarray(Image.open(src).convert('RGB')).astype(float)
-# Background: the most common light colour in the sheet.
-light = rgb[(rgb.sum(-1) > 600)]
-bg = np.median(light, axis=0)
+if specs and specs[0].startswith('bg='):
+    # Needed when the object itself is lighter than the background (a sheet of paper).
+    bg = np.array([float(v) for v in specs.pop(0)[3:].split(',')])
+else:
+    # Background: the most common light colour in the sheet.
+    light = rgb[(rgb.sum(-1) > 600)]
+    bg = np.median(light, axis=0)
 
 for spec in specs:
     parts = spec.split(':')
@@ -53,5 +58,9 @@ for spec in specs:
         inner = ndimage.binary_erosion(filled, iterations=4)
         alpha = np.where(inner, np.minimum(alpha, see_through), alpha)
     rgba = np.dstack([crop, alpha * 255]).clip(0, 255).astype(np.uint8)
-    Image.fromarray(rgba, 'RGBA').save(f'{out_dir}/{name}.png')
-    print(f'{name}: {x1 - x0}x{y1 - y0}')
+    out = Image.fromarray(rgba, 'RGBA')
+    if 'trim' in parts[2:]:
+        # Flush to the object's edges: for art drawn into a fixed rectangle (paper, envelope).
+        out = out.crop(out.getchannel('A').point(lambda v: 255 if v > 40 else 0).getbbox())
+    out.save(f'{out_dir}/{name}.png')
+    print(f'{name}: {out.width}x{out.height}')

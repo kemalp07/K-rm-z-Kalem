@@ -9,8 +9,8 @@ import { Para } from '../scene/Para';
 import { between, rng } from '../scene/rand';
 import { roughRect, shakyLine } from '../scene/rough';
 
-export const ENVELOPE = { w: 168, h: 104 };
-export const PACKAGE = { w: 176, h: 116 };
+export const ENVELOPE = { w: 168, h: 117 };
+export const PACKAGE = { w: 176, h: 117 };
 
 export const envelopeSize = (l: Letter) => (l.kind === 'paket' ? PACKAGE : ENVELOPE);
 
@@ -38,7 +38,7 @@ function EnvelopeImpl({ letter }: { letter: Letter }) {
   if (isPackage) {
     const label = roughRect({ x: 30, y: 30, w: 116, h: 54 }, `lbl-${letter.id}`, 0.8);
     return (
-      <ArtSlot slot="envelope_package" rect={{ x: 0, y: 0, w, h }}>
+      <ArtSlot slot="envelope_package" rect={{ x: 0, y: 0, w, h }} shadow>
         <Group>
           <Path path={body} color={C.paperBrown}>
             <Shadow dx={-4} dy={6} blur={6} color="rgba(0,0,0,0.6)" />
@@ -57,7 +57,7 @@ function EnvelopeImpl({ letter }: { letter: Letter }) {
   }
 
   return (
-    <ArtSlot slot="envelope" rect={{ x: 0, y: 0, w, h }}>
+    <ArtSlot slot="envelope" rect={{ x: 0, y: 0, w, h }} shadow>
       <Group>
         <Path path={body} color={fromFront ? '#d8cba8' : '#e7dcc2'}>
           <Shadow dx={-3} dy={5} blur={5} color="rgba(0,0,0,0.6)" />
