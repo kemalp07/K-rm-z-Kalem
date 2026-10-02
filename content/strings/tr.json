@@ -1,0 +1,30 @@
+{
+  "decision.delivered": "İLET",
+  "decision.held": "BEKLET",
+  "decision.stopped": "DURDUR",
+  "decision.reported": "İSTİHBARAT",
+
+  "ledger.delivered": "iletildi",
+  "ledger.held": "bekletildi",
+  "ledger.stopped": "durduruldu",
+  "ledger.reported": "istihbarata verildi",
+  "ledger.censored": "{n} satır karalandı",
+  "ledger.title": "Gün Defteri",
+  "ledger.dayLine": "{rumi} — {weekday}",
+  "ledger.close": "Defteri kapat",
+
+  "envelope.from": "Kimden",
+  "envelope.to": "Kime",
+  "envelope.package": "Paket",
+
+  "package.contents": "İçinden çıkanlar",
+
+  "inspect.seal.default": "Posta damgası. Mürekkebi düzgün, tarihi okunuyor.",
+  "inspect.seal.none": "Burada bir mühür yok.",
+
+  "tray.locked": "Henüz zimmetlenmedi",
+
+  "continue.day": "{day}. Gün",
+  "continue.text": "devam edecek",
+  "continue.restart": "Baştan başla"
+}
