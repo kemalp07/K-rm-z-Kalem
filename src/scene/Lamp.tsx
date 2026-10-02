@@ -101,6 +101,8 @@ export function Lamp({ flicker, level }: Props) {
     return [{ translateX: cx + (f - 1) * 6 }, { translateY: flameY + (LAMP_ART ? 0 : 8) }, { scaleX: l * (0.96 + (1 - f) * 0.6) }, { scaleY: l * (0.9 + (f - 0.9) * 1.2) }];
   });
   const flameOpacity = useDerivedValue(() => 0.35 + 0.65 * level.value);
+  const core = useDerivedValue(() => 9 * flicker.value * (0.5 + 0.5 * level.value));
+  const coreSmall = useDerivedValue(() => 3.2 * flicker.value * (0.6 + 0.4 * level.value));
   const halo = useDerivedValue(() => 34 * flicker.value * (0.4 + 0.6 * level.value));
   const haloOpacity = useDerivedValue(() => 0.6 * level.value);
   // Light caught by the glass from inside: brighter when the flame is up.
@@ -109,16 +111,18 @@ export function Lamp({ flicker, level }: Props) {
   const bw = 100;
   return (
     <Group>
+      {LAMP_ART ? (
+        <Group transform={[{ translateX: cx }, { translateY: baseY }]}>
+          <PlacedArt slot="lamp" shadow={{ transform: [{ translateX: -9 }, { translateY: 11 }], opacity: 0.6, blur: 8 }}>
+            {null}
+          </PlacedArt>
+        </Group>
+      ) : (
+        <>
       {/* Shadow thrown down-left across the desk by the window's cold light */}
       <Oval x={cx - 86} y={baseY - 6} width={120} height={30} color="rgba(0,0,0,0.55)">
         <BlurMask blur={10} style="normal" />
       </Oval>
-
-      {LAMP_ART ? (
-        <Group transform={[{ translateX: cx }, { translateY: baseY }]}>
-          <PlacedArt slot="lamp">{null}</PlacedArt>
-        </Group>
-      ) : (
       <ArtSlot slot="lamp" rect={{ x: cx - 75, y: flameY - 100, w: 150, h: baseY + 10 - (flameY - 100) }}>
         <Group>
           {/* Foot */}
@@ -151,12 +155,24 @@ export function Lamp({ flicker, level }: Props) {
           </Circle>
         </Group>
       </ArtSlot>
+        </>
       )}
 
       {/* Glow inside the chimney and the flame itself */}
       <Circle cx={cx} cy={flameY} r={halo} color={C.lamp} opacity={haloOpacity}>
         <BlurMask blur={16} style="normal" />
       </Circle>
+      {LAMP_ART ? (
+        // Seen from above, a flame is a bright knot of light down the chimney.
+        <Group opacity={flameOpacity}>
+          <Circle cx={cx} cy={flameY} r={core} color="#ffd27a">
+            <BlurMask blur={4} style="solid" />
+          </Circle>
+          <Circle cx={cx} cy={flameY} r={coreSmall} color={C.flameCore}>
+            <BlurMask blur={1.5} style="solid" />
+          </Circle>
+        </Group>
+      ) : (
       <Group transform={flameT} opacity={flameOpacity}>
         <Path path={parts.flame}>
           <LinearGradient start={vec(0, 0)} end={vec(0, -22)} colors={['rgba(90,120,255,0.55)', '#ffb347', '#ffd27a', 'rgba(255,240,200,0.6)']} positions={[0, 0.25, 0.7, 1]} />
@@ -166,12 +182,13 @@ export function Lamp({ flicker, level }: Props) {
           <BlurMask blur={1} style="solid" />
         </Path>
       </Group>
+      )}
 
       {LAMP_ART ? (
         // The drawn chimney is see-through; fill it with the light it holds.
-        <Oval x={cx - 16} y={flameY - 40} width={32} height={64} color="rgba(255,226,170,1)" opacity={glassGlow} blendMode="screen">
-          <BlurMask blur={8} style="normal" />
-        </Oval>
+        <Circle cx={cx} cy={flameY} r={30} color="rgba(255,226,170,1)" opacity={glassGlow} blendMode="screen">
+          <BlurMask blur={10} style="normal" />
+        </Circle>
       ) : (
         <>
           {/* Chimney glass: nearly clear; edges, a long highlight, and the glow it holds */}

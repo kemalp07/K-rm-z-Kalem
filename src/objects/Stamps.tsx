@@ -58,11 +58,11 @@ function StampKnob({ rect, progress }: { rect: Rect; progress: SharedValue<numbe
 }
 
 function StampArt({ cx, cy, progress }: { cx: number; cy: number; progress: SharedValue<number> }) {
-  // Starts raised above the card, settles onto it; the shadow tightens as it lands.
+  // Seen from above, a raised stamp is a larger one; it shrinks onto the card as it lands.
   const transform = useDerivedValue<Transforms3d>(() => [
     { translateX: cx },
-    { translateY: cy - (1 - progress.value) * 22 },
-    { scale: 1.12 - progress.value * 0.12 },
+    { translateY: cy },
+    { scale: 1.28 - progress.value * 0.28 },
   ]);
   const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -6 - (1 - progress.value) * 10 }, { translateY: 4 + (1 - progress.value) * 18 }]);
   const blur = useDerivedValue(() => 2 + (1 - progress.value) * 6);

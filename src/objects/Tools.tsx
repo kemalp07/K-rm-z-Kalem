@@ -13,7 +13,7 @@ const MAG_ART = placed('magnifier');
 
 /** Where the candle flame sits relative to the saucer centre the player holds. */
 export const CANDLE_FLAME = CANDLE_ART
-  ? { dx: CANDLE_ART.point('flame')!.x, dy: CANDLE_ART.point('flame')!.y + 3 }
+  ? { dx: CANDLE_ART.point('flame')!.x, dy: CANDLE_ART.point('flame')!.y }
   : { dx: 0, dy: -42 };
 
 /** Far end of the magnifier handle relative to the lens centre (for picking it up). */
@@ -168,6 +168,7 @@ export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<nu
     { scaleX: 1.05 - (flicker.value - 1) * 0.8 },
   ]);
   const haloR = useDerivedValue(() => 18 * flicker.value);
+  const dotR = useDerivedValue(() => 4.2 * flicker.value);
   return (
     <Group transform={transform}>
       <PlacedArt slot="candle" shadow={{ transform: shadow, opacity: 0.55, blur: 5 }}>
@@ -218,9 +219,19 @@ export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<nu
         </Group>
       </PlacedArt>
 
-      <Circle cx={CANDLE_FLAME.dx} cy={CANDLE_FLAME.dy - 6} r={haloR} color={C.lamp} opacity={0.5}>
+      <Circle cx={CANDLE_FLAME.dx} cy={CANDLE_FLAME.dy - (CANDLE_ART ? 0 : 6)} r={haloR} color={C.lamp} opacity={0.5}>
         <BlurMask blur={10} style="normal" />
       </Circle>
+      {CANDLE_ART ? (
+        <Group>
+          <Circle cx={CANDLE_FLAME.dx} cy={CANDLE_FLAME.dy} r={dotR} color="#ffc56a">
+            <BlurMask blur={3} style="solid" />
+          </Circle>
+          <Circle cx={CANDLE_FLAME.dx} cy={CANDLE_FLAME.dy} r={2.2} color={C.flameCore}>
+            <BlurMask blur={1} style="solid" />
+          </Circle>
+        </Group>
+      ) : (
       <Group transform={flameT}>
         <Path path={CANDLE.flame}>
           <LinearGradient start={vec(0, 0)} end={vec(0, -15)} colors={['rgba(80,110,255,0.6)', '#ff9f40', '#ffd27a', 'rgba(255,240,200,0.5)']} positions={[0, 0.22, 0.65, 1]} />
@@ -230,6 +241,7 @@ export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<nu
           <BlurMask blur={0.8} style="solid" />
         </Path>
       </Group>
+      )}
     </Group>
   );
 }

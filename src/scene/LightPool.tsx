@@ -26,7 +26,7 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
   const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
   const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
   const night = useDerivedValue(() => (1 - level.value) * 0.55);
-  const candleC = useDerivedValue(() => vec(candleX.value + candleOffset.dx, candleY.value + candleOffset.dy + 20));
+  const candleC = useDerivedValue(() => vec(candleX.value + candleOffset.dx, candleY.value + candleOffset.dy));
   const candleR = useDerivedValue(() => 120 * candleFlicker.value);
   const center = vec(POOL.x, POOL.y);
 
