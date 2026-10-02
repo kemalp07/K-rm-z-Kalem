@@ -4,7 +4,7 @@ import { ArtSlot } from '../art/ArtSlot';
 import { C } from './palette';
 import { between, rng } from './rand';
 import { blob, shakyLine } from './rough';
-import { WORLD } from './world';
+import { DESK_EXTENT as E, WORLD } from './world';
 
 // Greyscale with alpha kept — turns RGB noise into wood fibre.
 const MONO = [0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0, 0, 0, 0, 1];
@@ -20,7 +20,7 @@ export function Desk() {
   const marks = useMemo(() => {
     const r = rng('desk-marks');
     return {
-      seams: PLANKS.slice(1).map((p, i) => shakyLine(0, p.y, WORLD.w, p.y + between(r, -1.5, 1.5), `seam${i}`, 0.6)),
+      seams: PLANKS.slice(1).map((p, i) => shakyLine(E.x, p.y, E.x + E.w, p.y + between(r, -1.5, 1.5), `seam${i}`, 0.6)),
       knots: [
         { path: blob(612, 196, 9, 'knot1', 0.3), ring: blob(612, 196, 17, 'knot1r', 0.2) },
         { path: blob(118, 478, 6, 'knot2', 0.3), ring: blob(118, 478, 12, 'knot2r', 0.25) },
@@ -39,24 +39,24 @@ export function Desk() {
   }, []);
 
   return (
-    <ArtSlot slot="desk" rect={{ x: 0, y: 0, ...WORLD }}>
+    <ArtSlot slot="desk" rect={E}>
       <Group>
         {PLANKS.map((p, i) => (
-          <Rect key={i} x={0} y={p.y} width={WORLD.w} height={p.h}>
-            <LinearGradient start={vec(0, p.y)} end={vec(WORLD.w, p.y + p.h)} colors={[...p.tone]} />
+          <Rect key={i} x={E.x} y={p.y} width={E.w} height={p.h}>
+            <LinearGradient start={vec(E.x, p.y)} end={vec(E.x + E.w, p.y + p.h)} colors={[...p.tone]} />
           </Rect>
         ))}
         {/* Long fibres along each plank. Different seeds so planks don't repeat. */}
         {PLANKS.map((p, i) => (
           <Group key={`g${i}`} blendMode="multiply" opacity={0.55}>
-            <Rect x={0} y={p.y} width={WORLD.w} height={p.h}>
+            <Rect x={E.x} y={p.y} width={E.w} height={p.h}>
               <FractalNoise freqX={0.0035} freqY={0.11} octaves={4} seed={i * 7 + 3} />
               <ColorMatrix matrix={MONO} />
             </Rect>
           </Group>
         ))}
         <Group blendMode="softLight" opacity={0.35}>
-          <Rect x={0} y={0} width={WORLD.w} height={WORLD.h}>
+          <Rect x={E.x} y={0} width={E.w} height={WORLD.h}>
             <FractalNoise freqX={0.012} freqY={0.3} octaves={2} seed={41} />
             <ColorMatrix matrix={MONO} />
           </Rect>

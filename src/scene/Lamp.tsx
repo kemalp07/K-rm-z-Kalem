@@ -1,4 +1,5 @@
-import { BlurMask, Circle, Group, LinearGradient, RadialGradient, RoundedRect, Shadow, vec } from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import { BlurMask, Circle, Group, LinearGradient, Oval, Path, RadialGradient, Rect, Skia, vec, type SkPath } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { ArtSlot } from '../art/ArtSlot';
 import { C } from './palette';
@@ -9,52 +10,159 @@ interface Props {
   level: SharedValue<number>;
 }
 
-/** Oil lamp seen from above: brass font, glass chimney, the flame at the centre. */
-export function Lamp({ flicker, level }: Props) {
-  const { cx, cy, r } = LAYOUT.lamp;
-  const halo = useDerivedValue(() => 30 * flicker.value * (0.35 + 0.65 * level.value));
-  const haloOpacity = useDerivedValue(() => 0.55 * level.value);
-  const core = useDerivedValue(() => 6.5 * (0.5 + 0.5 * level.value) * (0.92 + (flicker.value - 0.92) * 1.6));
-  const coreOpacity = useDerivedValue(() => 0.25 + 0.75 * level.value);
-  // The flame leans away from the window draught a hair as it flickers.
-  const lean = useDerivedValue(() => [{ translateX: (flicker.value - 1) * 18 }]);
+/** Brass, lit from the flame above: dark at the edges, a hot vertical highlight off-centre. */
+const BRASS = ['#3b2a10', '#7a5a26', '#c9a35a', '#f2d896', '#b58a3e', '#5a4018', '#2c1f0b'];
+const BRASS_AT = [0, 0.18, 0.42, 0.55, 0.68, 0.86, 1];
 
+/** A shape symmetric about x = cx, from a list of (half-width, y) points, top to bottom. */
+function lathe(cx: number, profile: [number, number][]): SkPath {
+  const b = Skia.PathBuilder.Make();
+  const [w0, y0] = profile[0]!;
+  b.moveTo(cx - w0, y0);
+  // Left side down, smoothed through midpoints so the silhouette reads as turned metal.
+  for (let i = 1; i < profile.length; i++) {
+    const [pw, py] = profile[i - 1]!;
+    const [w, y] = profile[i]!;
+    b.quadTo(cx - pw, py, cx - (pw + w) / 2, (py + y) / 2);
+  }
+  const [wl, yl] = profile[profile.length - 1]!;
+  b.lineTo(cx - wl, yl);
+  b.lineTo(cx + wl, yl);
+  for (let i = profile.length - 1; i > 0; i--) {
+    const [pw, py] = profile[i]!;
+    const [w, y] = profile[i - 1]!;
+    b.quadTo(cx + pw, py, cx + (pw + w) / 2, (py + y) / 2);
+  }
+  b.lineTo(cx + w0, y0);
+  b.close();
+  return b.build();
+}
+
+/** Flame as a teardrop, tip up, base at (0,0) — scaled per frame by the flicker. */
+export function teardrop(w: number, h: number): SkPath {
+  return Skia.PathBuilder.Make()
+    .moveTo(0, -h)
+    .cubicTo(w * 0.35, -h * 0.62, w, -h * 0.3, w * 0.7, -h * 0.06)
+    .cubicTo(w * 0.45, h * 0.12, -w * 0.45, h * 0.12, -w * 0.7, -h * 0.06)
+    .cubicTo(-w, -h * 0.3, -w * 0.35, -h * 0.62, 0, -h)
+    .close()
+    .build();
+}
+
+/** Oil lamp in three-quarter view: brass font on the desk, glass chimney, the flame inside. */
+export function Lamp({ flicker, level }: Props) {
+  const { cx, baseY, flameY } = LAYOUT.lamp;
+  const parts = useMemo(
+    () => ({
+      font: lathe(cx, [
+        [17, baseY - 62],
+        [30, baseY - 56],
+        [44, baseY - 40],
+        [42, baseY - 24],
+        [26, baseY - 14],
+        [16, baseY - 8],
+      ]),
+      foot: lathe(cx, [
+        [18, baseY - 10],
+        [26, baseY - 4],
+        [46, baseY + 2],
+        [50, baseY + 8],
+      ]),
+      burner: lathe(cx, [
+        [15, baseY - 84],
+        [19, baseY - 76],
+        [21, baseY - 66],
+        [18, baseY - 60],
+      ]),
+      chimney: lathe(cx, [
+        [11, flameY - 92],
+        [10, flameY - 60],
+        [12, flameY - 40],
+        [21, flameY - 14],
+        [23, flameY + 4],
+        [19, flameY + 18],
+        [15, baseY - 84],
+      ]),
+      flame: teardrop(7, 22),
+      core: teardrop(3.2, 10),
+    }),
+    [cx, baseY, flameY],
+  );
+
+  const flameT = useDerivedValue(() => {
+    const f = flicker.value;
+    const l = 0.55 + 0.45 * level.value;
+    return [{ translateX: cx + (f - 1) * 6 }, { translateY: flameY + 8 }, { scaleX: l * (0.96 + (1 - f) * 0.6) }, { scaleY: l * (0.9 + (f - 0.9) * 1.2) }];
+  });
+  const flameOpacity = useDerivedValue(() => 0.35 + 0.65 * level.value);
+  const halo = useDerivedValue(() => 34 * flicker.value * (0.4 + 0.6 * level.value));
+  const haloOpacity = useDerivedValue(() => 0.6 * level.value);
+  // Light caught by the glass from inside: brighter when the flame is up.
+  const glassGlow = useDerivedValue(() => 0.1 + 0.25 * level.value * flicker.value);
+
+  const bw = 100;
   return (
     <Group>
-      <ArtSlot slot="lamp" rect={{ x: cx - 75, y: cy - 75, w: 150, h: 150 }}>
+      {/* Shadow thrown down-left across the desk by the window's cold light */}
+      <Oval x={cx - 86} y={baseY - 6} width={120} height={30} color="rgba(0,0,0,0.55)">
+        <BlurMask blur={10} style="normal" />
+      </Oval>
+
+      <ArtSlot slot="lamp" rect={{ x: cx - 75, y: flameY - 100, w: 150, h: baseY + 10 - (flameY - 100) }}>
         <Group>
-          {/* Wick key sticking out of the collar */}
-          <RoundedRect x={cx - r - 10} y={cy + 6} width={20} height={6} r={2} color={C.brassDark} />
-          <Circle cx={cx - r - 12} cy={cy + 9} r={6} color={C.brass}>
-            <Shadow dx={-2} dy={3} blur={2} color="rgba(0,0,0,0.6)" />
+          {/* Foot */}
+          <Path path={parts.foot}>
+            <LinearGradient start={vec(cx - 50, 0)} end={vec(cx + 50, 0)} colors={BRASS} positions={BRASS_AT} />
+          </Path>
+
+          {/* Font: the oil bowl, with an embossed band */}
+          <Path path={parts.font}>
+            <LinearGradient start={vec(cx - bw / 2, 0)} end={vec(cx + bw / 2, 0)} colors={BRASS} positions={BRASS_AT} />
+          </Path>
+          <Path path={parts.font} style="stroke" strokeWidth={0.8} color="rgba(40,25,5,0.6)" />
+          <Rect x={cx - 43} y={baseY - 38} width={86} height={2.2} color="rgba(50,32,8,0.55)" />
+          <Rect x={cx - 43} y={baseY - 35.6} width={86} height={1} color="rgba(255,236,180,0.35)" />
+          {/* Reflection of the flame on the shoulder */}
+          <Oval x={cx + 6} y={baseY - 56} width={18} height={6} color="rgba(255,244,210,0.55)">
+            <BlurMask blur={2.5} style="normal" />
+          </Oval>
+
+          {/* Collar and burner, with the wick key */}
+          <Path path={parts.burner}>
+            <LinearGradient start={vec(cx - 22, 0)} end={vec(cx + 22, 0)} colors={['#2c1f0b', '#8a6a30', '#e3c27e', '#7a5a26', '#2c1f0b']} />
+          </Path>
+          {Array.from({ length: 7 }, (_, i) => (
+            <Circle key={i} cx={cx - 13 + i * 4.3} cy={baseY - 71} r={0.9} color="rgba(20,12,4,0.8)" />
+          ))}
+          <Rect x={cx + 19} y={baseY - 74} width={9} height={3} color="#6f5424" />
+          <Circle cx={cx + 31} cy={baseY - 72.5} r={4.5}>
+            <RadialGradient c={vec(cx + 32, baseY - 74)} r={6} colors={['#f2d896', '#a8843f', '#4a3510']} />
           </Circle>
-          {/* Font */}
-          <Circle cx={cx} cy={cy} r={r}>
-            <RadialGradient c={vec(cx + 18, cy - 20)} r={r * 1.3} colors={[C.brassLight, C.brass, C.brassDark, '#3c2c12']} positions={[0, 0.3, 0.75, 1]} />
-            <Shadow dx={-8} dy={10} blur={12} color="rgba(0,0,0,0.75)" />
-          </Circle>
-          <Circle cx={cx} cy={cy} r={r - 7} style="stroke" strokeWidth={1.4} color="rgba(60,40,12,0.6)" />
-          {/* Burner gallery */}
-          <Circle cx={cx} cy={cy} r={r * 0.55}>
-            <LinearGradient start={vec(cx - 30, cy - 30)} end={vec(cx + 30, cy + 30)} colors={['#8a6a30', '#4f3a16']} />
-          </Circle>
-          {Array.from({ length: 18 }, (_, i) => {
-            const a = (i / 18) * Math.PI * 2;
-            return <Circle key={i} cx={cx + Math.cos(a) * r * 0.47} cy={cy + Math.sin(a) * r * 0.47} r={1.4} color="rgba(20,12,4,0.7)" />;
-          })}
-          {/* Glass chimney: mostly invisible, a rim and one highlight */}
-          <Circle cx={cx} cy={cy} r={r * 0.38} color="rgba(255,240,210,0.07)" />
-          <Circle cx={cx} cy={cy} r={r * 0.38} style="stroke" strokeWidth={1.6} color="rgba(255,236,200,0.28)" />
         </Group>
       </ArtSlot>
-      <Group transform={lean}>
-        <Circle cx={cx} cy={cy} r={halo} color={C.lamp} opacity={haloOpacity}>
-          <BlurMask blur={14} style="normal" />
-        </Circle>
-        <Circle cx={cx} cy={cy} r={core} color={C.flameCore} opacity={coreOpacity}>
-          <BlurMask blur={3} style="solid" />
-        </Circle>
+
+      {/* Glow inside the chimney and the flame itself */}
+      <Circle cx={cx} cy={flameY} r={halo} color={C.lamp} opacity={haloOpacity}>
+        <BlurMask blur={16} style="normal" />
+      </Circle>
+      <Group transform={flameT} opacity={flameOpacity}>
+        <Path path={parts.flame}>
+          <LinearGradient start={vec(0, 0)} end={vec(0, -22)} colors={['rgba(90,120,255,0.55)', '#ffb347', '#ffd27a', 'rgba(255,240,200,0.6)']} positions={[0, 0.25, 0.7, 1]} />
+          <BlurMask blur={1.2} style="solid" />
+        </Path>
+        <Path path={parts.core} color={C.flameCore} transform={[{ translateY: -2 }]}>
+          <BlurMask blur={1} style="solid" />
+        </Path>
       </Group>
+
+      {/* Chimney glass: nearly clear; edges, a long highlight, and the glow it holds */}
+      <Path path={parts.chimney} color="rgba(255,236,200,1)" opacity={glassGlow} blendMode="screen" />
+      <Path path={parts.chimney} style="stroke" strokeWidth={1.1} color="rgba(255,240,215,0.38)" />
+      <Path path={parts.chimney} style="stroke" strokeWidth={3} color="rgba(255,240,215,0.06)" />
+      <Rect x={cx - 15} y={flameY - 14} width={2.4} height={30} color="rgba(255,255,255,0.35)">
+        <BlurMask blur={1} style="normal" />
+      </Rect>
+      <Rect x={cx - 8} y={flameY - 88} width={1.6} height={40} color="rgba(255,255,255,0.22)" />
     </Group>
   );
 }

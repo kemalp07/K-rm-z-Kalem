@@ -4,7 +4,7 @@ import { PixelRatio } from 'react-native';
 import type { SharedValue } from 'react-native-reanimated';
 import { hasArt } from '../art/ArtSlot';
 import { Desk } from './Desk';
-import { WORLD } from './world';
+import { DESK_EXTENT as E } from './world';
 
 /**
  * The wood never changes, but its noise shaders are the most expensive thing on
@@ -13,10 +13,10 @@ import { WORLD } from './world';
 export function useDeskTexture(scale: number): SharedValue<SkImage | null> {
   const px = Math.min(3, scale * PixelRatio.get());
   // useTexture re-rasterises whenever `size` changes identity, so keep it stable.
-  const size = useMemo(() => ({ width: Math.ceil(WORLD.w * px), height: Math.ceil(WORLD.h * px) }), [px]);
+  const size = useMemo(() => ({ width: Math.ceil(E.w * px), height: Math.ceil(E.h * px) }), [px]);
   const element = useMemo(
     () => (
-      <Group transform={[{ scale: px }]}>
+      <Group transform={[{ scale: px }, { translateX: -E.x }]}>
         <Desk />
       </Group>
     ),
@@ -28,5 +28,5 @@ export function useDeskTexture(scale: number): SharedValue<SkImage | null> {
 export function DeskBoard({ texture }: { texture: SharedValue<SkImage | null> }) {
   // With real art the slot draws its own image and there is no noise to cache.
   if (hasArt('desk')) return <Desk />;
-  return <Image image={texture} x={0} y={0} width={WORLD.w} height={WORLD.h} fit="fill" />;
+  return <Image image={texture} x={E.x} y={E.y} width={E.w} height={E.h} fit="fill" />;
 }

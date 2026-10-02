@@ -4,6 +4,12 @@ import type { Rect } from '../logic/censor';
 
 export const WORLD = { w: 1000, h: 560 };
 
+/**
+ * The desk itself runs past the board on both sides, so phones wider than 16:9
+ * see more wood instead of a black edge. Nothing interactive lives out there.
+ */
+export const DESK_EXTENT = { x: -320, y: 0, w: 1640, h: 560 };
+
 export interface Fit {
   scale: number;
   ox: number;
@@ -30,7 +36,8 @@ export const LAYOUT = {
   dropZone: { x: 270, y: 10, w: 420, h: 440 },
   stamps: { x: 296, y: 446, w: 368, h: 64 },
   items: { x: 196, y: 458, w: 100, h: 90 },
-  lamp: { cx: 905, cy: 92, r: 62 },
+  /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
+  lamp: { cx: 905, baseY: 156, flameY: 58 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 410, w: 120, h: 64 },
   ledger: { x: 240, y: 40, w: 520, h: 470 },

@@ -44,8 +44,8 @@ export function NightWindow() {
   return (
     <ArtSlot slot="window" rect={LAYOUT.window}>
       <Group>
-        {/* Wall and recess */}
-        <Rect x={x} y={y} width={w} height={h} color="#120b07" />
+        {/* Wall and recess; the wall runs on past the board for wide screens */}
+        <Rect x={x - 340} y={y} width={w + 340} height={h} color="#120b07" />
         <Rect x={inner.x} y={inner.y} width={inner.w} height={inner.h}>
           <LinearGradient start={vec(0, inner.y)} end={vec(0, inner.y + inner.h)} colors={['#101a2e', '#1b2a44', '#2a3b58']} />
         </Rect>
@@ -78,9 +78,9 @@ export function NightWindow() {
           <Rect x={inner.x} y={midY - 3} width={inner.w} height={6} />
         </Group>
         {/* Sill — catches a little lamplight on its front edge */}
-        <Rect x={x} y={y + h - 16} width={w + 2} height={14} color="#4a2f1b" />
-        <Rect x={x} y={y + h - 4} width={w + 2} height={2} color="rgba(255,210,140,0.18)" />
-        <Path path={shakyLine(x, y + h - 2, x + w + 2, y + h - 2, 'sillshadow', 0.4)} style="stroke" strokeWidth={4} color="rgba(0,0,0,0.5)">
+        <Rect x={x - 340} y={y + h - 16} width={w + 342} height={14} color="#4a2f1b" />
+        <Rect x={x - 340} y={y + h - 4} width={w + 342} height={2} color="rgba(255,210,140,0.18)" />
+        <Path path={shakyLine(x - 340, y + h - 2, x + w + 2, y + h - 2, 'sillshadow', 0.4)} style="stroke" strokeWidth={4} color="rgba(0,0,0,0.5)">
           <BlurMask blur={3} style="normal" />
         </Path>
       </Group>

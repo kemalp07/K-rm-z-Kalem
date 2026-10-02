@@ -26,7 +26,7 @@ import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
 import { Stamps, stampSlots } from '../objects/Stamps';
-import { Candle, CANDLE_R, LENS_R, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
+import { Candle, CANDLE_FLAME, CANDLE_R, LENS_R, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { DeskBoard, useDeskTexture } from './DeskBoard';
 import { Fade } from './Fade';
@@ -198,7 +198,8 @@ export function DeskScreen() {
     const tick = setInterval(() => {
       if (exiting.current) return;
       if (hidden.length) {
-        const c = { x: candleX.value, y: candleY.value };
+        // Heat comes from the flame, which stands above the saucer the finger holds.
+        const c = { x: candleX.value + CANDLE_FLAME.dx, y: candleY.value + CANDLE_FLAME.dy };
         let changed = false;
         const next = { ...heatLocal.current };
         for (const s of hidden) {
@@ -299,7 +300,8 @@ export function DeskScreen() {
     }
     if (s.phase !== 'desk' || exiting.current) return;
 
-    if (dist(p, { x: candleX.value, y: candleY.value }) < CANDLE_R + 8) {
+    const saucer = { x: candleX.value, y: candleY.value };
+    if (dist(p, saucer) < CANDLE_R + 6 || (Math.abs(p.x - saucer.x) < 14 && p.y < saucer.y && p.y > saucer.y + CANDLE_FLAME.dy - 10)) {
       if (penInHand.current) penHome();
       drag.current = { kind: 'candle', ox: candleX.value - p.x, oy: candleY.value - p.y };
       candleLift.value = withTiming(1, { duration: 160 });
@@ -628,7 +630,7 @@ export function DeskScreen() {
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
-            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} />
+            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} />
             <Vignette />
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} opacity={continueOpacity} />}
           </Group>
