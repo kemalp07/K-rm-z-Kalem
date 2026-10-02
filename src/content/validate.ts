@@ -17,6 +17,11 @@ export function validateDay(day: Day, threads: Thread[]): string[] {
     if (letter.outcomes.length === 0) problems.push(`${where}: no outcomes`);
     if (letter.outcomes.at(-1)?.when) problems.push(`${where}: last outcome should be unconditional`);
 
+    for (const insp of letter.inspectables ?? []) {
+      if (insp.target === 'date' && !letter.dateLine) problems.push(`${where}: date inspectable without dateLine`);
+      if (insp.target === 'seal' && !letter.seal) problems.push(`${where}: seal inspectable without seal`);
+    }
+
     problems.push(...validateSegments(letter, where));
   }
   return problems;

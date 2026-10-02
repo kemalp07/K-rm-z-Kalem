@@ -1,0 +1,66 @@
+import { Circle, Group, RadialGradient, Rect, vec } from '@shopify/react-native-skia';
+import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
+import { LAYOUT, WORLD } from './world';
+
+interface Props {
+  flicker: SharedValue<number>;
+  level: SharedValue<number>;
+  candleX: SharedValue<number>;
+  candleY: SharedValue<number>;
+  candleFlicker: SharedValue<number>;
+}
+
+// The pool is centred below-left of the lamp: that is where the chimney throws its light.
+const POOL = { x: LAYOUT.lamp.cx - 300, y: LAYOUT.lamp.cy + 170 };
+
+/**
+ * Light is subtracted, not added: everything is drawn at full colour, then the
+ * dark is laid over it with a hole where the lamp reaches. A warm screen pass
+ * on top gives the paper its yellow.
+ */
+export function LightPool({ flicker, level, candleX, candleY, candleFlicker }: Props) {
+  const radius = useDerivedValue(() => 640 * (0.45 + 0.55 * level.value) * (0.985 + (flicker.value - 1) * 0.9));
+  const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
+  const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
+  const night = useDerivedValue(() => (1 - level.value) * 0.55);
+  const candleC = useDerivedValue(() => vec(candleX.value, candleY.value));
+  const candleR = useDerivedValue(() => 120 * candleFlicker.value);
+  const center = vec(POOL.x, POOL.y);
+
+  return (
+    <Group>
+      {/* Cold window spill on the left, under the dark so the lamp can still win */}
+      <Group blendMode="screen">
+        <Rect x={0} y={0} width={WORLD.w} height={WORLD.h}>
+          <RadialGradient c={vec(70, 250)} r={260} colors={['rgba(70,100,160,0.22)', 'rgba(40,60,110,0.08)', 'rgba(0,0,0,0)']} />
+        </Rect>
+      </Group>
+
+      <Rect x={-200} y={-200} width={WORLD.w + 400} height={WORLD.h + 400}>
+        <RadialGradient c={center} r={radius} colors={['rgba(0,0,0,0)', 'rgba(10,6,3,0.32)', 'rgba(6,4,3,0.78)', 'rgba(3,2,2,0.94)']} positions={[0, 0.42, 0.78, 1]} />
+      </Rect>
+      <Rect x={-200} y={-200} width={WORLD.w + 400} height={WORLD.h + 400} color="#05070c" opacity={night} />
+
+      <Group blendMode="screen" opacity={glowOpacity}>
+        <Rect x={0} y={0} width={WORLD.w} height={WORLD.h}>
+          <RadialGradient c={vec(LAYOUT.lamp.cx - 120, LAYOUT.lamp.cy + 90)} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
+        </Rect>
+      </Group>
+
+      {/* The candle carries its own small warm circle wherever it goes */}
+      <Group blendMode="screen">
+        <Circle c={candleC} r={candleR}>
+          <RadialGradient c={candleC} r={candleR} colors={['rgba(255,170,80,0.32)', 'rgba(255,140,60,0.1)', 'rgba(0,0,0,0)']} />
+        </Circle>
+      </Group>
+    </Group>
+  );
+}
+
+export function Vignette() {
+  return (
+    <Rect x={-200} y={-200} width={WORLD.w + 400} height={WORLD.h + 400}>
+      <RadialGradient c={vec(WORLD.w * 0.52, WORLD.h * 0.5)} r={680} colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0.55)', 'rgba(0,0,0,0.9)']} positions={[0, 0.5, 0.8, 1]} />
+    </Rect>
+  );
+}

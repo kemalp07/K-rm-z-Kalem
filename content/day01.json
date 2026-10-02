@@ -23,6 +23,7 @@
       "direction": "cepheden",
       "kind": "mektup",
       "hand": "hurried",
+      "dateLine": "9 Mayıs 331",
       "heading": "Muhterem validem,",
       "segments": [
         { "id": "s1", "kind": "normal", "text": "Gönderdiğiniz çorapları aldım. Ayaklarım ilk defa kuru, Allah razı olsun." },
@@ -36,6 +37,7 @@
       "inspectables": [
         { "id": "date", "target": "date", "note": "Tarih kurşun kalemle atılmış, sonra üstünden mürekkeple geçilmiş. Siperde mürekkep bulmak kolay değil." }
       ],
+      "marks": [{ "kind": "mud" }],
       "outcomes": [
         { "when": { "all": ["d1_mehmet:reported", "d1_mehmet:revealed:s4"] }, "text": "Mehmet'in mektubu Şube'ye gitti. Sabaha karşı bölüğe iki subay gelecek." },
         { "when": { "all": ["d1_mehmet:reported"] }, "text": "Mehmet'in mektubu Şube'ye gitti. Neden gittiğini Mehmet hiç öğrenmeyecek." },
@@ -57,6 +59,7 @@
       "direction": "cepheye",
       "kind": "mektup",
       "hand": "elegant",
+      "dateLine": "Pazar akşamı",
       "heading": "Nuri'ciğim,",
       "segments": [
         { "id": "s1", "kind": "normal", "text": "Kalbim, bu satırları yazarken pencereden körfeze bakıyorum." },
@@ -70,6 +73,7 @@
       "inspectables": [
         { "id": "date", "target": "date", "note": "Tarih yok. Yalnızca 'Pazar akşamı' yazılmış." }
       ],
+      "marks": [{ "kind": "jasmine" }],
       "outcomes": [
         { "when": { "all": ["d1_saadet:reported"] }, "text": "Bir aşk mektubu Şube'nin dosyalarına girdi. Ne aradığını kimse sormadı." },
         { "when": { "all": ["d1_saadet:stopped"] }, "text": "Saadet cevap gelmeyince bir mektup daha yazacak." },
@@ -77,7 +81,16 @@
         { "text": "Nuri Efendi mektubu göğüs cebinde taşıyacak." }
       ],
       "meta": {
-        "acrostic": { "segmentIds": ["s1", "s2", "s3", "s4", "s5"], "word": "KAYIK" }
+        "acrostic": {
+          "segmentIds": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "word": "KAYIK"
+        }
       }
     },
     {
@@ -91,6 +104,7 @@
       "direction": "cepheden",
       "kind": "mektup",
       "hand": "dictated",
+      "dateLine": "Mayıs 331",
       "heading": "Emine,",
       "segments": [
         { "id": "s1", "kind": "normal", "text": "Ben Rıza. Bu mektubu bölükten Hasan yazıyor, ben söylüyorum." },
@@ -100,6 +114,7 @@
         { "id": "s5", "kind": "normal", "text": "Ne zaman biter bilen yok. Sen dua et, gerisi Allah'ın." }
       ],
       "signature": "Rıza — Hasan eliyle",
+      "marks": [{ "kind": "thumb" }, { "kind": "thumb", "near": "s3" }],
       "outcomes": [
         { "when": { "all": ["d1_riza:reported"] }, "text": "Rıza'nın adı bir deftere yazıldı. Hasan'ın adı da." },
         { "when": { "all": ["d1_riza:stopped"] }, "text": "Emine Hanım kocasından haber alamayacak. Eyüp'te herkes bir şey söyleyecek." },
@@ -119,6 +134,7 @@
       "direction": "cepheye",
       "kind": "paket",
       "hand": "careful",
+      "dateLine": "12 Mayıs 1331",
       "heading": "Gözümün nuru Mehmet'im,",
       "items": [
         { "id": "corap", "name": "Yün çorap", "note": "İkinci çift. Topukları iki kat örülmüş." },
@@ -131,6 +147,7 @@
         { "id": "s4", "kind": "normal", "text": "Ayşe büyüdü, her akşam seni soruyor. Soğuk sudan uzak dur." }
       ],
       "signature": "Anan Hatice",
+      "marks": [{ "kind": "tear", "near": "s2" }],
       "outcomes": [
         { "when": { "all": ["d1_hatice:reported"] }, "text": "Bir annenin paketi Şube'ye gitti. Dutlar orada kuruyacak." },
         { "when": { "all": ["d1_hatice:stopped"] }, "text": "Mehmet çoraplarını bekleyecek. Babasını hâlâ sağ sanacak." },
@@ -150,6 +167,8 @@
       "direction": "cepheye",
       "kind": "mektup",
       "hand": "clerical",
+      "letterhead": "ŞARK TİCARET KUMPANYASI · GALATA",
+      "dateLine": "3 Mayıs 1331",
       "heading": "Halil Efendi,",
       "segments": [
         { "id": "s1", "kind": "normal", "text": "Siparişiniz olan on iki sandık kuru incir ile dört top bez hazırdır." },
@@ -157,7 +176,10 @@
         { "id": "s3", "kind": "normal", "text": "Mallar pazartesi akşamı yola çıkacaktır." },
         { "id": "s4", "kind": "normal", "text": "Hürmetlerimizle." }
       ],
-      "seal": { "legend": "ŞARK TİCARET · GALATA", "color": "#5b2e4a" },
+      "seal": {
+        "legend": "ŞARK TİCARET · GALATA",
+        "color": "#5b2e4a"
+      },
       "inspectables": [
         { "id": "seal", "target": "seal", "anomaly": true, "note": "Mühür halkasındaki yazı ters kazınmış; baskı ayna gibi okunuyor. Bir kumpanya kendi mührünü böyle yaptırmaz." },
         { "id": "date", "target": "date", "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış." }

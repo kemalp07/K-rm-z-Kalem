@@ -35,9 +35,18 @@ export interface Inspectable {
 }
 
 export interface Seal {
-  /** Text pressed into the wax / ink ring. */
+  /** Text pressed into the ink ring. */
   legend: string;
   color: string;
+  /** Cut the wrong way round, so the impression reads in a mirror. */
+  mirrored?: boolean;
+}
+
+/** Things on the paper that are not writing. Purely visual, but authored. */
+export interface PaperMark {
+  kind: 'tear' | 'thumb' | 'jasmine' | 'mud';
+  /** Segment the mark sits beside; omitted means the paper decides. */
+  near?: string;
 }
 
 /**
@@ -79,6 +88,10 @@ export interface Letter {
   to: string;
   direction: Direction;
   kind: LetterKind;
+  /** Printed header on business paper. */
+  letterhead?: string;
+  /** Date as the writer put it; the magnifier's "date" target. */
+  dateLine?: string;
   heading: string;
   hand: Hand;
   segments: Segment[];
@@ -86,6 +99,7 @@ export interface Letter {
   items?: PackageItem[];
   seal?: Seal;
   inspectables?: Inspectable[];
+  marks?: PaperMark[];
   variants?: Variant[];
   /** First matching entry is shown on the day-end ledger. */
   outcomes: Outcome[];
