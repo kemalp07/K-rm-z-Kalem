@@ -16,11 +16,11 @@ export interface ArtPlacement {
 }
 
 export const artPlacement: Record<string, ArtPlacement> = {
-  // Top-down sheet (source/sheet-topdown.jpg): the flame burns where the wick is.
-  lamp: { size: [269, 270], anchor: [134, 135], width: 133, points: { flame: [134, 135] } },
-  candle: { size: [260, 325], anchor: [129, 130], width: 67, points: { flame: [127, 128] } },
+  // Top-down sheet (source/sheet-topdown-detailed.jpg): the flame burns where the wick is.
+  lamp: { size: [279, 283], anchor: [139, 141], width: 133, points: { flame: [139, 141] } },
+  candle: { size: [281, 326], anchor: [140, 185], width: 66.5, points: { flame: [142, 196] } },
   pen: { size: [44, 289], anchor: [21.5, 279], width: 27.4 },
   // Glass radius in the image is ~49 px; drawn so it matches the game's LENS_R (38).
   magnifier: { size: [241, 295], anchor: [78, 72], width: 187, points: { handleEnd: [224, 284] } },
-  stamp: { size: [189, 191], anchor: [94, 94], width: 58 },
+  stamp: { size: [213, 215], anchor: [106, 107], width: 57 },
 };
