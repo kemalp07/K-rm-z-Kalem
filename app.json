@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "kk-tmp",
-    "slug": "kk-tmp",
+    "name": "Kırmızı Kalem",
+    "slug": "kirmizi-kalem",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "requireFullScreen": true
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +21,24 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "kirmizikalem",
+    "backgroundColor": "#141c2a",
+    "splash": {
+      "backgroundColor": "#141c2a",
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-audio",
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "LANDSCAPE"
+        }
+      ]
+    ]
   }
 }
