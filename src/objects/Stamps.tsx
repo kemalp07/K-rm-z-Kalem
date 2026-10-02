@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 import { BlurMask, Circle, Group, Path, RadialGradient, Shadow, vec, type Transforms3d } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
-import { PlacedArt, placed } from '../art/ArtSlot';
+import { ArtSlot, PlacedArt, placed } from '../art/ArtSlot';
+import type { ArtSlotId } from '../art/slots';
 import { t } from '../content/strings';
 import type { Decision } from '../content/types';
 import type { Rect } from '../logic/censor';
@@ -36,9 +37,11 @@ export function Stamps({ enabled, pressing, progress }: Props) {
     <Fade opacity={enabled ? 1 : 0.4}>
       {slots.map((s, i) => (
         <Group key={s.d} transform={[{ rotate: TILT[s.d] }]} origin={{ x: s.rect.x + s.rect.w / 2, y: s.rect.y + s.rect.h / 2 }}>
-          <Path path={cards[i]!} color="#e2d5b8">
-            <Shadow dx={-2} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
-          </Path>
+          <ArtSlot slot={`card_${i + 1}` as ArtSlotId} rect={{ x: s.rect.x - 4, y: s.rect.y - 3, w: s.rect.w + 8, h: s.rect.h + 6 }} shadow>
+            <Path path={cards[i]!} color="#e2d5b8">
+              <Shadow dx={-2} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
+            </Path>
+          </ArtSlot>
           <StampMark x={s.rect.x + 4} y={s.rect.y + 6} w={s.rect.w - 8} h={s.rect.h - 12} label={t(`decision.${s.d}`)} color={STAMP_INK[s.d]} rotate={0} seed={`sample-${s.d}`} size={s.d === 'reported' ? 10.5 : 13.5} opacity={0.8} />
         </Group>
       ))}

@@ -49,6 +49,10 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 | `pen.png` | 18×170 | 54×510 px | Kırmızı sansür kalemi, uç aşağıda. |
 | `candle.png` | 80×90 | 240×270 px | Kulplu pirinç şamdanda mum, tam tepeden. Alev kodla çizilir. |
 | `magnifier.png` | 120×120 | 360×360 px | Büyüteç, sap sağ-aşağı. Cam kısmı saydam olsun. |
+| `card_1.png` | 92×60 | 276×180 px | İLET kartı: boş, eski kalın kâğıt. Yazı ve baskı kodla. |
+| `card_2.png` | 92×60 | 276×180 px | BEKLET kartı. |
+| `card_3.png` | 92×60 | 276×180 px | DURDUR kartı. |
+| `card_4.png` | 92×60 | 276×180 px | İSTİHBARAT kartı. |
 | `stamp.png` | 86×52 | 258×156 px | Lastik mühür ıstampası. Yazı ve renk kodla basılır. |
 | `tray.png` | 180×120 | 540×360 px | Kilitli aletlerin karanlık tepsisi. |
 | `ledger.png` | 520×512 | 1560×1536 px | Gün sonu defteri, açık sayfa, yazısız. |
