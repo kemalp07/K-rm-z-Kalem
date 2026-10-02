@@ -1,175 +1,136 @@
 # Görsel üretim prompt'ları (Gemini vb.)
 
-Bu dosya, oyunun art slot'larını dolduracak görselleri bir görsel üretim aracıyla
-hazırlamak için yazıldı. Prompt'lar İngilizce; araçlar İngilizcede daha tutarlı sonuç veriyor.
+Her prompt **baştan sona tam**: kopyala, yapıştır, gönder. Birleştirme yok.
+Hepsini aynı sohbette sırayla istemek üslubu daha tutarlı tutar.
 
-## Nasıl kullanılır
+**Yeniden ürettir:** üstünde yazı/harf varsa · eşyanın yan yüzü görünüyorsa ·
+eşyalar birbirine değiyorsa · sert gölge ya da parlak ışık lekesi varsa.
 
-1. **Önce "Üslup" bloğunu sabitle.** Her prompt'un başına aynen yapıştır. Tutarlılığın
-   anahtarı bu blok; kelimesini değiştirme.
-2. **Eşyaları sayfa sayfa ürettir** (aşağıdaki Sayfa 1–3). Aynı sayfadaki eşyalar aynı
-   üslupta çıkar; ben sonra tek tek kesip boyutlandırırım.
-3. İlk beğendiğin sayfadan sonra diğerlerini **aynı sohbette** iste ve şunu ekle:
-   *"Use exactly the same style, palette and line quality as the previous image."*
-4. Mümkün olan en yüksek çözünürlükte indir. Dosya adı önemli değil, ben düzenlerim.
-5. Görselleri bu sohbete ekle ya da depoda `assets/art/incoming/` klasörüne yükle.
+Fazladan çizilen eşyalar sorun değil; kullanmayız. Gemini 1024 px veriyor; yeterli.
 
-### Reddetme listesi — bunlardan biri varsa yeniden ürettir
-- Üstünde **yazı, harf, sayı** var (uydurma Türkçe, anlamsız işaretler).
-- Sert **gölge** ya da parlak ışık lekesi var (oyun ışığı kendisi ekliyor).
-- Eşyalar **birbirine değiyor ya da üst üste** (kesmesi zorlaşır).
-- **Alev** var (oyun alevi kendisi çizip titretiyor).
-- Eşyanın **yan yüzü görünüyor** (tam tepeden değil).
+Durum: **1 tamam** (`source/sheet-topdown-detailed.jpg`). Kalem ve büyüteç ilk sayfadan
+geldi; tepeden ve aynı detayda istersen 8 numara.
 
 ---
 
-## Üslup (her prompt'un başına)
+## 1) Lamba, mum, mühürler — TAMAM
+
+## 2) Masadaki eşyalar
 
 ```
-Style: hand-drawn game asset illustration for a quiet historical drama set in 1915.
-Fine dark-brown ink linework with muted, slightly faded watercolour washes,
-like an illustration in an old Ottoman-era book. Warm, worn, real objects with
-small imperfections (scratches, tarnish, wear). Muted palette: dark walnut wood,
-aged cream paper (#efe2c4), dark brown-black ink (#2b2118), dull brass (#a8843f),
-a deep censor red (#a3241b). Flat, soft, even lighting with no cast shadows and no
-highlights from a light source. Plain flat light-grey background (#d0d0d0).
-No text, no letters, no numbers, no logos, no watermark, no flames.
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: brass tarnish and green patina in the creases, small dents, fine scratches, foxing and stains on old paper, softened torn edges. Muted palette: dull brass, dark walnut wood, aged cream paper, dark brown-black ink. Flat, soft, even lighting with no cast shadows and no shiny highlights. Plain flat light-grey background. No text, no letters, no numbers, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A single torn-off wall calendar page, completely blank, aged cream paper, a ragged torn top edge with two small round binding holes, a faint crease across the middle.
+2. A small irregular scrap of aged paper torn from a notebook, completely blank, one ragged edge, a small grease stain.
+3. Five old coins lying flat: one larger silver coin and four smaller worn copper coins, their faces worn smooth with only faint rim patterns, no writing, no portraits, different amounts of wear and patina.
+4. A blank rectangular brass desk name plate with bevelled edges and two small screws, tarnished, fine scratches, completely blank surface.
+5. A dark, empty wooden tray with low walls, lined with worn dark felt, scuffed corners.
+
+Very high resolution, fine crisp linework.
 ```
 
----
-
-## Kamera: her şey tam tepeden
-
-Oyuncu masaya **tam tepeden** bakıyor. Bütün görseller kuşbakışı, "flat lay" fotoğraf
-gibi çizilmeli; hiçbir eşyanın yan yüzü görünmemeli. Her prompt'a şunu da ekle:
+## 3) Zarflar ve paket
 
 ```
-Strict orthographic top-down view, camera directly above looking straight down,
-like a flat lay photograph. No side of any object is visible.
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: soiled and softened paper, creases, small tears, faded colours, frayed string. Muted palette: aged cream paper, brown wrapping paper, dull grey and brown wool, dark brown-black ink. Flat, soft, even lighting with no cast shadows. Plain flat light-grey background. No text, no letters, no numbers, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A plain old paper envelope seen from the front, lying flat, completely blank address area, a small postage stamp with a plain coloured pattern and no text in the top right corner, soft creases, a dirty thumb mark on one corner.
+2. A small parcel wrapped in brown paper, tied crosswise with thin frayed string knotted off-centre, a small blank paper label tucked under the string.
+3. A hand-knitted grey-brown wool sock lying flat, visible knitted stitches, the heel knitted thicker.
+4. A small rough cloth drawstring pouch lying flat, a few dark dried mulberries spilling out beside it.
+
+Very high resolution, fine crisp linework.
 ```
 
-## Sayfa 1 — Aletler
+## 4) Masa yüzeyi — geniş görsel (en az 3:1)
 
 ```
-[Üslup bloğu]
-[Kamera cümlesi]
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book.
 
-A single sheet of separate objects, evenly spaced on the background, none touching,
-every object seen from directly above:
-1. A brass oil lamp seen from directly above: a round brass base, inside it the round
-   brass burner with a small wick-key knob sticking out to one side, and in the centre
-   the circular open mouth of the clear glass chimney. Concentric circles, no flame.
-2. A brass chamberstick seen from directly above: a round shallow saucer with a small
-   ring handle on one side, in the centre the round top of a short ivory candle with a
-   blackened wick and a few wax drips on the rim. No flame.
-3. A long red hexagonal censor's pencil, sharpened, lying flat, point at the bottom.
-4. A magnifying glass lying flat: brass rim, turned walnut handle pointing down-right,
-   the glass completely clear and empty.
-5. Four wooden rubber stamps seen from directly above: a round wooden knob in the
-   centre of a larger round wooden base, slightly worn.
+Strict orthographic top-down view, camera directly above looking straight down.
+
+A wide, seamless dark walnut desk top filling the whole image from edge to edge, nothing lying on it: four long horizontal planks with thin dark seams between them, rich visible wood grain and a few knots, many fine old scratches, one faint pale ring stain from a tea glass, one small old ink stain half sanded away, edges worn by years of elbows. Colours: deep dark brown to warm walnut. Flat, even lighting: no lamp glow, no vignette, no shadows, no reflections. No text.
+
+Wide panoramic format, at least 3:1. Very high resolution, fine crisp linework.
 ```
 
-**Şu an yalnızca 1, 2 ve 5 gerekli.** Kalem ve büyüteç ilk sayfadan alındı, yeniden
-üretmene gerek yok. Tek tek de ürettirebilirsin, ama üslup bloğu aynı kalsın.
-
-## Sayfa 2 — Masadaki bilgi eşyaları
+## 5) Mektup kâğıdı
 
 ```
-[Üslup bloğu]
-[Kamera cümlesi]
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Plain flat light-grey background.
 
-A single sheet of separate objects, evenly spaced on the background, none touching:
-1. A single torn-off wall calendar page, blank, with a ragged top edge and two small
-   binding holes, seen straight from above.
-2. A small torn scrap of paper, blank, seen straight from above.
-3. Five old coins of different sizes: one larger silver coin and four worn copper coins,
-   each with a blank worn face (no writing, no portraits), seen straight from above.
-4. A blank rectangular brass desk name plate with two small screws, slightly tarnished,
-   seen straight from above.
-5. A dark, empty wooden tray lined with worn dark felt, seen straight from above.
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
+
+A single sheet of old blank writing paper lying flat: aged cream colour, slightly uneven hand-cut edges, two faint horizontal fold creases dividing it into thirds, light foxing spots and faint water staining near the edges, the corners a little softened. Completely blank: no writing, no ruled lines, no text, no letters. Flat, even lighting, no shadows.
+
+Portrait format, about 7:8. Very high resolution, fine crisp linework.
 ```
 
-## Sayfa 3 — Zarflar ve paket
+## 6) Gün sonu defteri
 
 ```
-[Üslup bloğu]
-[Kamera cümlesi]
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Plain flat light-grey background.
 
-A single sheet of separate objects, evenly spaced on the background, none touching:
-1. A plain old paper envelope, front side, blank address area, a small postage stamp
-   with a plain coloured pattern (no text) in the top right corner, slightly creased
-   and soiled, seen straight from above.
-2. A small parcel wrapped in brown paper and tied crosswise with thin string, with a
-   blank paper label, seen straight from above.
-3. A hand-knitted grey-brown wool sock, lying flat, seen straight from above.
-4. A small cloth drawstring pouch with a few dried mulberries spilling out,
-   seen straight from above.
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
+
+One single page of an old bound office register lying flat: aged yellowed paper, faint pale-blue printed ruled lines across the page, one thin faded red margin line down the left side, slight foxing, a softened corner. Completely empty: no writing, no text, no numbers, no letters. Flat, even lighting, no shadows.
+
+Nearly square format. Very high resolution, fine crisp linework.
 ```
 
-## Tekil görseller (her biri ayrı ürettirilir)
+## 7) Pencere — tek istisna: duvarda olduğu için önden görünür
 
-**Masa yüzeyi** — en-boy oranı olabildiğince geniş (en az 3:1)
 ```
-[Üslup bloğu — son cümledeki "Plain flat light-grey background" kısmını SİL]
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book.
 
-A wide, seamless dark walnut desk top seen straight from above, filling the whole
-image edge to edge: four long horizontal planks, visible grain, a few old scratches,
-a faint ring stain and a small old ink stain. Nothing lying on it. Evenly lit, no
-lamp glow, no vignette.
+A small old wooden window with four panes, seen straight from the front, at night: deep blue night sky, a thin crescent moon, a few faint stars, a dark distant hilly shoreline across calm dark water, one tiny warm faraway light on the shore. The frame is dark, worn, chipped painted wood with a narrow sill. Slightly uneven old glass. The image is cropped tightly to the window frame. No text.
+
+Portrait format, about 2:3. Very high resolution, fine crisp linework.
 ```
 
-**Pencere** — dikey (yaklaşık 2:3). Masanın kenarındaki duvarda durduğu için tek istisna
-bu: önden görünür.
-```
-[Üslup bloğu — arka plan cümlesini SİL]
+## 8) Kalem ve büyüteç — isteğe bağlı, tepeden ve detaylı hali
 
-A small old wooden window frame with four panes, seen from the front, at night:
-deep blue night sky, a thin crescent moon, a few stars, a dark distant shoreline
-across calm water, one tiny far-off light. The frame is dark, worn painted wood.
-The image is cropped to the frame.
 ```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: chipped paint, brass tarnish and green patina, fine scratches, wood grain worn smooth by hands. Muted palette: deep censor red, dull brass, dark walnut wood. Flat, soft, even lighting with no cast shadows and no shiny highlights. Plain flat light-grey background. No text, no letters, no numbers, no logos, no watermark.
 
-**Mektup kâğıdı** — dikey (yaklaşık 7:8)
-```
-[Üslup bloğu]
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
 
-A single sheet of old blank writing paper, aged cream, slightly uneven edges, two
-faint horizontal fold creases, a little foxing near the edges, seen straight from
-above. Completely blank, no writing, no lines.
-```
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A long red hexagonal censor's pencil lying flat and perfectly vertical, sharpened to a point at the bottom with knife-cut wood showing, chipped red paint near the top end, a thin worn gold band.
+2. A magnifying glass lying flat: a round brass rim with tarnish, a turned walnut handle pointing down-right at 45 degrees with a brass collar, the glass completely clear and empty so the background shows through.
 
-**Gün sonu defteri** — yataya yakın (yaklaşık 10:9)
-```
-[Üslup bloğu]
-
-One page of an old bound office register, seen straight from above: aged paper,
-faint blue ruled lines and a thin red margin line on the left, completely empty,
-no writing.
+Very high resolution, fine crisp linework.
 ```
 
 ---
 
-## Hangi görsel nereye gider (ben yerleştireceğim)
+## Hangi görsel nereye gider (ben yerleştiriyorum)
 
-| Görsel | Slot | Bakış | Not |
-|---|---|---|---|
-| Gaz lambası | `lamp` | Tepeden | Alevi ve ışığı oyun çiziyor; şişe ağzının merkezi ölçülecek |
-| Şamdanlı mum | `candle` | Tepeden | Alevi oyun çiziyor; fitilin yeri ölçülecek |
-| Kırmızı kalem | `pen` | Tepeden, uç aşağıda | |
-| Büyüteç | `magnifier` | Tepeden, sap sağ-aşağı | Cam tamamen boş olmalı; büyütmeyi oyun yapıyor |
-| Lastik mühürler | `stamp` | Tepeden | Basılırken inen mühür |
-| Takvim yaprağı | `calendar` | Tepeden | Tarihi oyun yazıyor |
-| Kâğıt parçası | `purse_note` | Tepeden | Para yazısını oyun yazıyor |
-| Madeni para | `coin` | Tepeden | Birini kullanırım, oyun çoğaltıp döndürür |
-| Pirinç levha | `brass_plate` | Tepeden | Yazıyı oyun kazıyor |
-| Tepsi | `tray` | Tepeden | Kilitli alet siluetlerini oyun çiziyor |
-| Zarf | `envelope` | Tepeden | Adresi oyun yazıyor |
-| Paket | `envelope_package` | Tepeden | |
-| Çorap | `item_corap` | Tepeden | |
-| Dut kesesi | `item_dut` | Tepeden | |
-| Masa | `desk` | Tepeden | |
-| Pencere | `window` | Önden | |
-| Mektup kâğıdı | `paper` | Tepeden | El yazısını oyun yazıyor |
-| Defter sayfası | `ledger` | Tepeden | |
+| Görsel | Slot | Not |
+|---|---|---|
+| Gaz lambası | `lamp` | Alevi ve ışığı oyun çiziyor |
+| Şamdanlı mum | `candle` | Alevi oyun çiziyor |
+| Lastik mühür | `stamp` | Basılırken inen mühür |
+| Kırmızı kalem | `pen` | |
+| Büyüteç | `magnifier` | Cam boş; büyütmeyi oyun yapıyor |
+| Takvim yaprağı | `calendar` | Tarihi oyun yazıyor |
+| Kâğıt parçası | `purse_note` | Para yazısını oyun yazıyor |
+| Madeni para | `coin` | Oyun çoğaltıp döndürüyor |
+| Pirinç levha | `brass_plate` | Yazıyı oyun kazıyor |
+| Tepsi | `tray` | Kilitli alet siluetlerini oyun çiziyor |
+| Zarf | `envelope` | Adresi oyun yazıyor |
+| Paket | `envelope_package` | |
+| Çorap | `item_corap` | |
+| Dut kesesi | `item_dut` | |
+| Masa | `desk` | |
+| Pencere | `window` | |
+| Mektup kâğıdı | `paper` | El yazısını oyun yazıyor |
+| Defter sayfası | `ledger` | |
 
-Ölçüler `README.md`'deki tabloda. Görsel tam o oranda gelmezse ben kırpar ve ölçeklerim.
+Ölçüler `README.md`'deki tabloda. Kesme, ölçekleme ve yerleştirme bende.
