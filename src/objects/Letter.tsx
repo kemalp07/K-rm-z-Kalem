@@ -30,8 +30,10 @@ import { between, rng } from '../scene/rand';
 import { blob, roughRect, shakyLine } from '../scene/rough';
 import { paperStyleOf, type Laid, type LaidSegment, type LetterLayout } from './letterLayout';
 import { StampMark } from './StampMark';
+import { Fade } from '../scene/Fade';
 
-const MONO = [0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0.33, 0.33, 0.33, 0, 0, 0, 0, 0, 0, 1];
+// Noise squeezed into a pale band, so multiplying it only dusts the paper.
+const PALE = [0.09, 0.09, 0.09, 0, 0.74, 0.09, 0.09, 0.09, 0, 0.74, 0.09, 0.09, 0.09, 0, 0.74, 0, 0, 0, 0, 1];
 
 export interface LetterProps {
   letter: LetterData;
@@ -60,13 +62,15 @@ function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedVal
     const h = heat.value[id] ?? 0;
     return Math.max(0.035, wasRead ? Math.max(h, 0.35) : h);
   });
-  const glow = useDerivedValue(() => (heat.value[id] ?? 0) * 0.9);
+  const glow = useDerivedValue(() => {
+    const h = heat.value[id] ?? 0;
+    return h * h * 0.9;
+  });
   return (
     <Group transform={[{ rotate: laid.tilt }, { skewX: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
       <Group
-        opacity={glow}
         layer={
-          <Paint>
+          <Paint opacity={glow}>
             <BlendColor color={C.hiddenGlow} mode="srcIn" />
             <Blur blur={4} />
           </Paint>
@@ -74,9 +78,9 @@ function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedVal
       >
         <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
       </Group>
-      <Group opacity={ink}>
+      <Fade opacity={ink}>
         <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
-      </Group>
+      </Fade>
     </Group>
   );
 }
@@ -96,15 +100,15 @@ function Paper({ letter, rect }: { letter: LetterData; rect: R }) {
             {null}
           </ArtSlot>
         ) : (
-          <Group blendMode="multiply" opacity={style.grain}>
-            <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h}>
-              <FractalNoise freqX={0.6} freqY={0.6} octaves={2} seed={Math.round(rect.x)} />
-              <ColorMatrix matrix={MONO} />
+          <Group blendMode="multiply">
+            <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h} opacity={0.5 + style.grain}>
+              <FractalNoise freqX={0.7} freqY={0.7} octaves={2} seed={Math.round(rect.x)} />
+              <ColorMatrix matrix={PALE} />
             </Rect>
             {/* Larger clouds: the paper was never quite even */}
-            <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h} opacity={0.6}>
-              <FractalNoise freqX={0.02} freqY={0.025} octaves={3} seed={7} />
-              <ColorMatrix matrix={MONO} />
+            <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h} opacity={style.grain * 1.6}>
+              <FractalNoise freqX={0.012} freqY={0.016} octaves={3} seed={7} />
+              <ColorMatrix matrix={PALE} />
             </Rect>
           </Group>
         )}
@@ -191,9 +195,9 @@ function Mark({ mark, layout, seed }: { mark: PaperMark; layout: LetterLayout; s
 function Jasmine({ x, y, seed }: { x: number; y: number; seed: string }) {
   const parts = useMemo(() => {
     const r = rng(seed);
-    const stem = Skia.Path.Make();
-    stem.moveTo(x - 30, y + 30);
-    stem.cubicTo(x - 10, y + 10, x + 10, y - 4, x + 44, y - 18);
+    const sb = Skia.PathBuilder.Make();
+    sb.moveTo(x - 30, y + 30).cubicTo(x - 10, y + 10, x + 10, y - 4, x + 44, y - 18);
+    const stem = sb.build();
     const leaves = [0.25, 0.45, 0.62, 0.8].map((t, i) => {
       const lx = x - 30 + 74 * t;
       const ly = y + 30 - 48 * t;
@@ -234,12 +238,10 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
   const { sealFont } = useSceneFonts();
   const seal = letter.seal!;
   const ring = useMemo(() => {
-    const p = Skia.Path.Make();
-    p.addCircle(at.cx, at.cy, at.r - 8);
-    return p;
+    return Skia.PathBuilder.Make().addCircle(at.cx, at.cy, at.r - 8).build();
   }, [at]);
   const star = useMemo(() => {
-    const p = Skia.Path.Make();
+    const p = Skia.PathBuilder.Make();
     for (let i = 0; i < 10; i++) {
       const a = -Math.PI / 2 + (i * Math.PI) / 5;
       const rr = i % 2 ? 4 : 9;
@@ -249,7 +251,7 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
       else p.lineTo(px, py);
     }
     p.close();
-    return p;
+    return p.build();
   }, [at]);
   return (
     <Group layer transform={[{ rotate: -0.18 }, { scaleX: seal.mirrored ? -1 : 1 }]} origin={{ x: at.cx, y: at.cy }} opacity={0.82}>
@@ -273,10 +275,11 @@ function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored:
         .flatMap((s) => s.lines.map((l, i) => roughRect({ x: l.x - 3, y: l.y + 1, w: l.w + 6, h: l.h - 2 }, `bar-${s.seg.id}-${i}`, 1.4))),
     [segments, censored],
   );
+  // Opaque: once a line counts as censored, nothing of it may show through.
   return (
-    <Group blendMode="multiply">
+    <Group>
       {bars.map((b, i) => (
-        <Path key={i} path={b} color={C.censor} opacity={0.92}>
+        <Path key={i} path={b} color={C.censor}>
           <DiscretePathEffect length={6} deviation={1.2} seed={i} />
         </Path>
       ))}

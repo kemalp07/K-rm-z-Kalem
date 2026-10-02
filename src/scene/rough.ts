@@ -8,7 +8,7 @@ import type { Rect } from '../logic/censor';
  */
 export function roughRect(r: Rect, seed: string, wobble = 1.2, torn = false): SkPath {
   const rand = rng(seed);
-  const p = Skia.Path.Make();
+  const p = Skia.PathBuilder.Make();
   const edge = (x0: number, y0: number, x1: number, y1: number, amp: number, step: number, first: boolean) => {
     const len = Math.hypot(x1 - x0, y1 - y0);
     const n = Math.max(2, Math.round(len / step));
@@ -29,13 +29,13 @@ export function roughRect(r: Rect, seed: string, wobble = 1.2, torn = false): Sk
   edge(x + w, y + h, x, y + h, wobble, 16, false);
   edge(x, y + h, x, y, wobble, 16, false);
   p.close();
-  return p;
+  return p.build();
 }
 
 /** A loose closed blob — stains, wax drips, felt. */
 export function blob(cx: number, cy: number, r: number, seed: string, irregularity = 0.25, points = 14): SkPath {
   const rand = rng(seed);
-  const p = Skia.Path.Make();
+  const p = Skia.PathBuilder.Make();
   const pts: [number, number][] = [];
   for (let i = 0; i < points; i++) {
     const a = (i / points) * Math.PI * 2;
@@ -53,18 +53,18 @@ export function blob(cx: number, cy: number, r: number, seed: string, irregulari
     p.quadTo(cur[0], cur[1], m[0], m[1]);
   }
   p.close();
-  return p;
+  return p.build();
 }
 
 /** A hand-drawn line: slight bow and drift, never ruler-straight. */
 export function shakyLine(x0: number, y0: number, x1: number, y1: number, seed: string, amp = 0.8): SkPath {
   const rand = rng(seed);
-  const p = Skia.Path.Make();
+  const p = Skia.PathBuilder.Make();
   p.moveTo(x0, y0);
   const n = Math.max(3, Math.round(Math.hypot(x1 - x0, y1 - y0) / 18));
   for (let i = 1; i <= n; i++) {
     const t = i / n;
     p.lineTo(x0 + (x1 - x0) * t + between(rand, -amp, amp), y0 + (y1 - y0) * t + between(rand, -amp, amp));
   }
-  return p;
+  return p.build();
 }

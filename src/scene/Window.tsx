@@ -21,16 +21,17 @@ export function NightWindow() {
       a: between(r, 0.25, 0.8),
     }));
     // Far shore: a low ridge line above the water.
-    const ridge = Skia.Path.Make();
+    const rb = Skia.PathBuilder.Make();
     const horizon = inner.y + inner.h * 0.7;
-    ridge.moveTo(inner.x, horizon);
+    rb.moveTo(inner.x, horizon);
     for (let i = 0; i <= 12; i++) {
       const px = inner.x + (inner.w * i) / 12;
-      ridge.lineTo(px, horizon - 6 - Math.sin(i * 0.9) * 4 - between(r, 0, 4));
+      rb.lineTo(px, horizon - 6 - Math.sin(i * 0.9) * 4 - between(r, 0, 4));
     }
-    ridge.lineTo(inner.x + inner.w, horizon + 2);
-    ridge.lineTo(inner.x, horizon + 2);
-    ridge.close();
+    rb.lineTo(inner.x + inner.w, horizon + 2);
+    rb.lineTo(inner.x, horizon + 2);
+    rb.close();
+    const ridge = rb.build();
     const ripples = Array.from({ length: 5 }, (_, i) =>
       shakyLine(inner.x + 10 + i * 9, horizon + 10 + i * 9, inner.x + 34 + i * 14, horizon + 10 + i * 9, `rip${i}`, 0.3),
     );
@@ -46,7 +47,7 @@ export function NightWindow() {
         {/* Wall and recess */}
         <Rect x={x} y={y} width={w} height={h} color="#120b07" />
         <Rect x={inner.x} y={inner.y} width={inner.w} height={inner.h}>
-          <LinearGradient start={vec(0, inner.y)} end={vec(0, inner.y + inner.h)} colors={[C.nightDeep, C.night, '#1d2a3e']} />
+          <LinearGradient start={vec(0, inner.y)} end={vec(0, inner.y + inner.h)} colors={['#101a2e', '#1b2a44', '#2a3b58']} />
         </Rect>
         {parts.stars.map((s) => (
           <Circle key={s.k} cx={s.cx} cy={s.cy} r={s.r} color={`rgba(220,228,255,${s.a})`} />
@@ -59,7 +60,7 @@ export function NightWindow() {
           <Circle cx={inner.x + inner.w - 22} cy={inner.y + 25} r={8.6} color={C.nightDeep} />
         </Group>
         <Path path={parts.ridge} color="#070a10" />
-        <Rect x={inner.x} y={parts.horizon + 2} width={inner.w} height={inner.y + inner.h - parts.horizon - 2} color="#0e1520" />
+        <Rect x={inner.x} y={parts.horizon + 2} width={inner.w} height={inner.y + inner.h - parts.horizon - 2} color="#142035" />
         {parts.ripples.map((p, i) => (
           <Path key={i} path={p} style="stroke" strokeWidth={0.6} color="rgba(190,205,235,0.18)" />
         ))}

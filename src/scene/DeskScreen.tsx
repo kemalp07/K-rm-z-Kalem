@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { Canvas, Circle, Group, Rect, Skia, type SkPath } from '@shopify/react-native-skia';
+import { Canvas, Circle, Group, Rect, Skia, type SkPath, type SkPathBuilder, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withSpring, withTiming } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
@@ -29,6 +29,7 @@ import { Stamps, stampSlots } from '../objects/Stamps';
 import { Candle, CANDLE_R, LENS_R, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { DeskBoard, useDeskTexture } from './DeskBoard';
+import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
 import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd } from './hit';
 import { Lamp } from './Lamp';
@@ -43,7 +44,7 @@ type Drag =
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'magnifier'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
-  | { kind: 'pen-stroke'; last: Point; path: SkPath }
+  | { kind: 'pen-stroke'; last: Point; path: SkPathBuilder }
   | { kind: 'stamp'; d: Decision; start: Point; timer: ReturnType<typeof setTimeout> }
   | { kind: 'ledger' }
   | { kind: 'restart' };
@@ -51,7 +52,7 @@ type Drag =
 const PEN_IN_HAND_ANGLE = 0.5;
 const STAMP_HOLD_MS = 450;
 const TICK_MS = 50;
-const INSPECT_RADIUS = 30;
+const INSPECT_RADIUS = 34;
 const INSPECT_DWELL_MS = 450;
 const BOARD = { x: 0, y: 0, w: WORLD.w, h: WORLD.h };
 
@@ -330,8 +331,7 @@ export function DeskScreen() {
 
     if (s.open && layout) {
       if (penInHand.current && inRect(p, LAYOUT.letter)) {
-        const path = Skia.Path.Make();
-        path.moveTo(p.x, p.y);
+        const path = Skia.PathBuilder.Make().moveTo(p.x, p.y);
         drag.current = { kind: 'pen-stroke', last: p, path };
         penX.value = p.x;
         penY.value = p.y;
@@ -405,7 +405,7 @@ export function DeskScreen() {
         const id = useGame.getState().state.open;
         if (!id) return;
         d.path.lineTo(p.x, p.y);
-        livePath.value = d.path.copy();
+        livePath.value = d.path.build();
         penX.value = p.x;
         penY.value = p.y;
         for (const [segId, lines] of coverage.current) {
@@ -485,7 +485,7 @@ export function DeskScreen() {
         break;
       case 'pen-stroke': {
         const id = g.state.open;
-        if (id && d.path.countPoints() > 2) g.addStroke(id, d.path.toSVGString());
+        if (id && d.path.countPoints() > 2) g.addStroke(id, d.path.build().toSVGString());
         livePath.value = Skia.Path.Make();
         break;
       }
@@ -514,7 +514,7 @@ export function DeskScreen() {
 
   // --- derived transforms ---------------------------------------------------------
   const boardTransform = [{ translateX: fit.ox }, { translateY: fit.oy }, { scale: fit.scale }];
-  const letterTransform = useDerivedValue(() => {
+  const letterTransform = useDerivedValue<Transforms3d>(() => {
     const o = { x: LAYOUT.letter.x + LAYOUT.letter.w / 2, y: LAYOUT.letter.y };
     const v = letterIn.value;
     const out = letterOut.value;
@@ -531,9 +531,7 @@ export function DeskScreen() {
   const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.6) * (1 - letterOut.value * 0.9));
   const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
-    const path = Skia.Path.Make();
-    path.addCircle(magX.value, magY.value, LENS_R - 2);
-    return path;
+    return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R - 2).build();
   });
   const lensTransform = useDerivedValue(() => [
     { translateX: magX.value },
@@ -550,7 +548,7 @@ export function DeskScreen() {
 
   const letterNode =
     openLetter && layout && progress ? (
-      <Group transform={letterTransform} opacity={letterOpacity}>
+      <Fade transform={letterTransform} opacity={letterOpacity}>
         <Letter
           letter={openLetter}
           layout={layout}
@@ -561,7 +559,7 @@ export function DeskScreen() {
           heat={heat}
           imprint={imprint ?? undefined}
         />
-      </Group>
+      </Fade>
     ) : null;
 
   const props = (

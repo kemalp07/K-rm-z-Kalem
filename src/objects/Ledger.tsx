@@ -56,7 +56,7 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         return (
           <Group key={letter.id}>
             <Para text={`${i + 1}.`} x={r.x + 16} y={y} width={26} family="Caveat" size={17} color={C.inkFaded} />
-            <Para text={`${letter.sender} → ${letter.recipient}`} x={r.x + 56} y={y} width={260} family="Caveat" size={18} color={C.ink} weight={FontWeight.Medium} />
+            <Para text={t('ledger.route', { from: letter.sender, to: letter.recipient })} x={r.x + 56} y={y} width={260} family="Caveat" size={18} color={C.ink} weight={FontWeight.Medium} />
             <Para text={`${t(`ledger.${decision}`)}${extra}`} x={r.x + r.w - 236} y={y + 2} width={210} family="Caveat" size={17} color={STAMP_INK[decision]} weight={FontWeight.Bold} align="right" />
             <Para text={pickOutcome(letter, flags)} x={r.x + 66} y={y + 24} width={r.w - 96} family="Cormorant" size={14.5} color="#4a3d30" italic />
           </Group>

@@ -8,6 +8,7 @@ import { STAMP_INK } from '../scene/palette';
 import { roughRect } from '../scene/rough';
 import { LAYOUT } from '../scene/world';
 import { StampMark } from './StampMark';
+import { Fade } from '../scene/Fade';
 
 export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'];
 const TILT: Record<Decision, number> = { delivered: -0.05, held: 0.035, stopped: -0.025, reported: 0.06 };
@@ -31,17 +32,17 @@ export function Stamps({ enabled, pressing, progress }: Props) {
   const slots = useMemo(stampSlots, []);
   const cards = useMemo(() => slots.map((s) => roughRect({ x: s.rect.x - 3, y: s.rect.y - 3, w: s.rect.w + 6, h: s.rect.h + 6 }, `card-${s.d}`, 0.9)), [slots]);
   return (
-    <Group opacity={enabled ? 1 : 0.4}>
+    <Fade opacity={enabled ? 1 : 0.4}>
       {slots.map((s, i) => (
         <Group key={s.d} transform={[{ rotate: TILT[s.d] }]} origin={{ x: s.rect.x + s.rect.w / 2, y: s.rect.y + s.rect.h / 2 }}>
           <Path path={cards[i]!} color="#e2d5b8">
             <Shadow dx={-2} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
           </Path>
-          <StampMark x={s.rect.x + 4} y={s.rect.y + 6} w={s.rect.w - 8} h={s.rect.h - 12} label={t(`decision.${s.d}`)} color={STAMP_INK[s.d]} rotate={0} seed={`sample-${s.d}`} size={s.d === 'reported' ? 11.5 : 13.5} opacity={0.8} />
+          <StampMark x={s.rect.x + 4} y={s.rect.y + 6} w={s.rect.w - 8} h={s.rect.h - 12} label={t(`decision.${s.d}`)} color={STAMP_INK[s.d]} rotate={0} seed={`sample-${s.d}`} size={s.d === 'reported' ? 10.5 : 13.5} opacity={0.8} />
         </Group>
       ))}
       {pressing && <StampKnob rect={slots.find((s) => s.d === pressing)!.rect} progress={progress} />}
-    </Group>
+    </Fade>
   );
 }
 

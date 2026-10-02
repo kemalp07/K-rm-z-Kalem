@@ -26,7 +26,7 @@ export function BrassPlate({ rank }: { rank: Desk['rank'] }) {
       {/* Engraving: dark fill with a lit lower lip, so the letters read as cut. */}
       <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x} y={r.y + 5.6} width={r.w} family="Cormorant" size={14} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={2.2} />
       <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x} y={r.y + 5} width={r.w} family="Cormorant" size={14} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={2.2} />
-      <Para text={rank.title} x={r.x} y={r.y + 22} width={r.w} family="Cormorant" size={9.5} color="#4a3510" align="center" italic letterSpacing={0.4} />
+      <Para text={rank.title} x={r.x} y={r.y + 22} width={r.w} family="Cormorant" size={10} color="#2e1f06" align="center" italic weight={FontWeight.SemiBold} letterSpacing={0.4} />
     </Group>
   );
 }

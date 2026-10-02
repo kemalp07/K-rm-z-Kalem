@@ -14,12 +14,12 @@ interface Pose {
 }
 
 const tri = (w: number, h: number) => {
-  const p = Skia.Path.Make();
+  const p = Skia.PathBuilder.Make();
   p.moveTo(0, 0);
   p.lineTo(-w, -h);
   p.lineTo(w, -h);
   p.close();
-  return p;
+  return p.build();
 };
 const cone = tri(5, 16);
 const lead = tri(1.8, 5.5);

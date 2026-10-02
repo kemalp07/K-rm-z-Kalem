@@ -1,5 +1,6 @@
 import { memo, useMemo } from 'react';
-import { BlurMask, Circle, FontWeight, Group, Line, Path, Rect, Shadow, vec } from '@shopify/react-native-skia';
+import { BlurMask, Circle, FontWeight, Group, Line, Paragraph, Path, Rect, Shadow, vec } from '@shopify/react-native-skia';
+import { makeParagraph, useSceneFonts } from '../scene/fonts';
 import { ArtSlot } from '../art/ArtSlot';
 import type { Letter } from '../content/types';
 import { t } from '../content/strings';
@@ -94,16 +95,23 @@ function EnvelopeImpl({ letter }: { letter: Letter }) {
 
 /** Address in the sender's hand. Separate so it can be skipped when art provides its own blank. */
 function AddressImpl({ letter }: { letter: Letter }) {
+  const { provider } = useSceneFonts();
   const { w, h } = envelopeSize(letter);
   const isPackage = letter.kind === 'paket';
   const ink = letter.hand === 'elegant' ? C.inkBlue : C.ink;
   const family = letter.hand === 'clerical' ? 'Cormorant' : 'Caveat';
-  const left = isPackage ? 36 : 22;
-  const top = isPackage ? 34 : h * 0.44;
+  const left = isPackage ? 36 : 18;
+  const top = isPackage ? 34 : h * 0.4;
+  const width = w - left - (isPackage ? 30 : 10);
+  // Measure the name so the place line sits under it however many lines it took.
+  const name = useMemo(
+    () => makeParagraph(provider, letter.recipient, { family, size: family === 'Caveat' ? 17 : 13, color: ink, weight: FontWeight.Medium, lineHeight: 0.95 }, width),
+    [provider, letter.recipient, family, ink, width],
+  );
   return (
     <Group>
-      <Para text={letter.recipient} x={left} y={top} width={w - left - 12} family={family} size={family === 'Caveat' ? 17 : 13.5} color={ink} weight={FontWeight.Medium} />
-      <Para text={letter.to} x={left + 10} y={top + 19} width={w - left - 20} family={family} size={family === 'Caveat' ? 14 : 11.5} color={ink} italic={family === 'Cormorant'} />
+      <Paragraph paragraph={name} x={left} y={top} width={width} />
+      <Para text={letter.to} x={left + 10} y={top + name.getHeight() - 1} width={width - 10} family={family} size={family === 'Caveat' ? 14 : 11} color={ink} italic={family === 'Cormorant'} />
       {isPackage && (
         <Para text={t('envelope.package')} x={4} y={h - 18} width={60} family="Cormorant" size={10} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1.4} />
       )}

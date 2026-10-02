@@ -33,22 +33,26 @@ export interface Fonts {
 
 const FontCtx = createContext<Fonts | null>(null);
 
+// Native bundles give asset ids; web bundles give URL strings, which Skia wants as { uri }.
+type FontModule = number | string;
+const src = (m: FontModule) => (typeof m === 'string' ? { uri: m } : m) as unknown as number;
+
 export function FontsProvider({ children, fallback }: { children: ReactNode; fallback?: ReactNode }) {
   const provider = useFonts({
     Caveat: [
-      require('@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf'),
-      require('@expo-google-fonts/caveat/500Medium/Caveat_500Medium.ttf'),
-      require('@expo-google-fonts/caveat/600SemiBold/Caveat_600SemiBold.ttf'),
-      require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf'),
+      src(require('@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf')),
+      src(require('@expo-google-fonts/caveat/500Medium/Caveat_500Medium.ttf')),
+      src(require('@expo-google-fonts/caveat/600SemiBold/Caveat_600SemiBold.ttf')),
+      src(require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf')),
     ],
     Cormorant: [
-      require('@expo-google-fonts/cormorant-garamond/400Regular/CormorantGaramond_400Regular.ttf'),
-      require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf'),
-      require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf'),
-      require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf'),
+      src(require('@expo-google-fonts/cormorant-garamond/400Regular/CormorantGaramond_400Regular.ttf')),
+      src(require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf')),
+      src(require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf')),
+      src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')),
     ],
   });
-  const sealFont = useFont(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf'), 9);
+  const sealFont = useFont(src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')), 9);
   if (!provider || !sealFont) return <>{fallback ?? null}</>;
   return <FontCtx.Provider value={{ provider, sealFont }}>{children}</FontCtx.Provider>;
 }

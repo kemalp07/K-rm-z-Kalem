@@ -14,7 +14,7 @@ export interface RevealTuning {
   readAt: number;
 }
 
-export const DEFAULT_REVEAL: RevealTuning = { near: 40, far: 190, rise: 0.55, fall: 0.12, readAt: 0.85 };
+export const DEFAULT_REVEAL: RevealTuning = { near: 24, far: 125, rise: 0.5, fall: 0.12, readAt: 0.85 };
 
 export function heatTarget(distance: number, tune: RevealTuning = DEFAULT_REVEAL): number {
   if (distance <= tune.near) return 1;

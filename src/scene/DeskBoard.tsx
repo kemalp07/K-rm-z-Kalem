@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { Group, Image, useTexture, type SkImage } from '@shopify/react-native-skia';
 import { PixelRatio } from 'react-native';
 import type { SharedValue } from 'react-native-reanimated';
@@ -11,13 +12,17 @@ import { WORLD } from './world';
  */
 export function useDeskTexture(scale: number): SharedValue<SkImage | null> {
   const px = Math.min(3, scale * PixelRatio.get());
-  return useTexture(
-    <Group transform={[{ scale: px }]}>
-      <Desk />
-    </Group>,
-    { width: Math.ceil(WORLD.w * px), height: Math.ceil(WORLD.h * px) },
+  // useTexture re-rasterises whenever `size` changes identity, so keep it stable.
+  const size = useMemo(() => ({ width: Math.ceil(WORLD.w * px), height: Math.ceil(WORLD.h * px) }), [px]);
+  const element = useMemo(
+    () => (
+      <Group transform={[{ scale: px }]}>
+        <Desk />
+      </Group>
+    ),
     [px],
   );
+  return useTexture(element, size, [px]);
 }
 
 export function DeskBoard({ texture }: { texture: SharedValue<SkImage | null> }) {

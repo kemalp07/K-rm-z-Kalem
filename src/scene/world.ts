@@ -25,7 +25,7 @@ export const LAYOUT = {
   window: { x: 0, y: 0, w: 150, h: 235 },
   calendar: { x: 172, y: 26, w: 92, h: 118 },
   stack: { x: 34, y: 286, w: 200, h: 170 },
-  plate: { x: 26, y: 500, w: 170, h: 40 },
+  plate: { x: 806, y: 508, w: 170, h: 40 },
   letter: { x: 300, y: 22, w: 360, h: 410 },
   dropZone: { x: 270, y: 10, w: 420, h: 440 },
   stamps: { x: 296, y: 446, w: 368, h: 64 },
@@ -36,7 +36,7 @@ export const LAYOUT = {
   ledger: { x: 240, y: 40, w: 520, h: 470 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
-    candle: { x: 760, y: 352 },
-    magnifier: { x: 735, y: 470 },
+    candle: { x: 790, y: 360 },
+    magnifier: { x: 726, y: 428 },
   },
 } as const;

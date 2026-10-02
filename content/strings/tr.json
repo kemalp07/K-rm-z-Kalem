@@ -10,6 +10,7 @@
   "ledger.reported": "istihbarata verildi",
   "ledger.censored": "{n} satır karalandı",
   "ledger.title": "Gün Defteri",
+  "ledger.route": "{from} — {to}",
   "ledger.dayLine": "{rumi} — {weekday}",
   "ledger.close": "Defteri kapat",
 

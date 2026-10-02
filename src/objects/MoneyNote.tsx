@@ -15,11 +15,11 @@ export function MoneyNote({ purse }: { purse: Day['purse'] }) {
   const coins = useMemo(() => {
     const n = Math.min(5, Math.max(1, Math.round(purse.kurus / 10)));
     const spots = [
-      { dx: 18, dy: 92, r: 13, silver: true },
-      { dx: 46, dy: 100, r: 9, silver: false },
-      { dx: 62, dy: 86, r: 9, silver: false },
-      { dx: 34, dy: 112, r: 8, silver: false },
-      { dx: 80, dy: 104, r: 8, silver: false },
+      { dx: -22, dy: 52, r: 13, silver: true },
+      { dx: 4, dy: 78, r: 9, silver: false },
+      { dx: 24, dy: 84, r: 9, silver: false },
+      { dx: -12, dy: 80, r: 8, silver: false },
+      { dx: 44, dy: 80, r: 8, silver: false },
     ];
     return spots.slice(0, n);
   }, [purse.kurus]);

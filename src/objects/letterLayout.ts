@@ -132,7 +132,7 @@ export function layoutLetter(provider: SkTypefaceFontProvider, letter: Letter, s
   for (let shrink = 0; shrink < 5; shrink++) {
     const result = attempt(provider, letter, segments, paper, hand, shrink);
     const bottom = result.signature ? result.signature.y + result.signature.para.getHeight() : 0;
-    if (bottom <= paper.y + paper.h - (letter.seal ? 64 : 14) || shrink === 4) return result;
+    if (bottom <= paper.y + paper.h - 80 || shrink === 4) return result;
   }
   throw new Error('unreachable');
 }
@@ -164,7 +164,9 @@ function attempt(
     const dw = 140;
     const para = makeParagraph(provider, letter.dateLine, { ...text, size: text.size - 3, align: 'right' }, dw);
     const dx = paper.x + paper.w - PAD - dw;
-    const box = lineRects(para, letter.dateLine.length, dx, y)[0] ?? { x: dx, y, w: dw, h: 20 };
+    // Right-aligned: the ink sits at the right end of the box, as wide as the longest line.
+    const inkW = Math.min(dw, para.getLongestLine());
+    const box = { x: dx + dw - inkW, y, w: inkW, h: para.getHeight() };
     out.date = { para, x: dx, y, width: dw, tilt: 0, skew: hand.skew, rect: box };
     y += para.getHeight() + 2;
   }
@@ -179,8 +181,8 @@ function attempt(
     const w = width - indent - (isHidden ? 10 : 0);
     const para = makeParagraph(provider, seg.text, isHidden ? hidden : text, w);
     const x = left + indent;
-    // Hidden ink is squeezed between lines, so it barely takes any room of its own.
-    const top = isHidden ? y - hand.gap - 3 : y + between(r, -hand.drift * 0.3, hand.drift * 0.3);
+    // Hidden ink is squeezed into the gap between lines; it barely takes any room of its own.
+    const top = isHidden ? y - hand.gap + 1 : y + between(r, -hand.drift * 0.3, hand.drift * 0.3);
     const skew = isHidden ? -0.12 : hand.skew;
     const laid: LaidSegment = {
       seg,
@@ -193,7 +195,7 @@ function attempt(
       // Follow the shear so the censor columns sit where the ink actually is.
       lines: lineRects(para, seg.text.length, x, top).map((l) => ({ ...l, x: l.x + skew * (l.y + l.h / 2 - top) })),
     };
-    y = top + para.getHeight() * (isHidden ? 0.72 : 1) + hand.gap;
+    y = top + para.getHeight() * (isHidden ? 0.82 : 1) + hand.gap;
     return laid;
   });
 
@@ -203,7 +205,11 @@ function attempt(
     out.signature = { para, x: paper.x + paper.w - PAD - sw + between(r, -6, 0), y: y + 6, width: sw, tilt: between(r, -0.03, 0.01), skew: hand.skew };
   }
 
-  if (letter.seal) out.seal = { cx: paper.x + paper.w - 66, cy: paper.y + paper.h - 50, r: 32 };
+  // Paper is as long as the writer needed, plus a foot for the seal and the clerk's stamp.
+  const end = out.signature ? out.signature.y + out.signature.para.getHeight() : y;
+  const h = Math.min(paper.h, Math.max(300, end - paper.y + 96));
+  out.paper = { ...paper, h };
+  if (letter.seal) out.seal = { cx: paper.x + paper.w - 66, cy: paper.y + h - 50, r: 32 };
   return out;
 }
 

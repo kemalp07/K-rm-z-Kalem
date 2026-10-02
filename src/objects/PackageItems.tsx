@@ -23,7 +23,7 @@ export function PackageItems({ items }: { items: PackageItem[] }) {
 }
 
 function ItemTag({ items }: { items: PackageItem[] }) {
-  const rect = { x: LAYOUT.items.x, y: LAYOUT.items.y + 70, w: 104, h: 22 };
+  const rect = { x: LAYOUT.items.x - 34, y: LAYOUT.items.y + 70, w: 140, h: 22 };
   const tag = useMemo(() => roughRect(rect, 'items-tag', 0.7), [rect.x, rect.y]);
   return (
     <Group transform={[{ rotate: 0.04 }]} origin={{ x: rect.x, y: rect.y }}>
@@ -38,16 +38,17 @@ function ItemTag({ items }: { items: PackageItem[] }) {
 /** Hand-knit wool sock, rows of stitches shown as soft ridges. */
 function Sock({ x, y }: { x: number; y: number }) {
   const parts = useMemo(() => {
-    const p = Skia.Path.Make();
-    p.moveTo(x, y);
-    p.lineTo(x + 30, y);
-    p.lineTo(x + 32, y + 40);
-    p.quadTo(x + 34, y + 52, x + 52, y + 54);
-    p.lineTo(x + 78, y + 56);
-    p.quadTo(x + 92, y + 62, x + 78, y + 74);
-    p.lineTo(x + 30, y + 72);
-    p.quadTo(x + 2, y + 70, x + 2, y + 44);
-    p.close();
+    const b = Skia.PathBuilder.Make();
+    b.moveTo(x, y);
+    b.lineTo(x + 30, y);
+    b.lineTo(x + 32, y + 40);
+    b.quadTo(x + 34, y + 52, x + 52, y + 54);
+    b.lineTo(x + 78, y + 56);
+    b.quadTo(x + 92, y + 62, x + 78, y + 74);
+    b.lineTo(x + 30, y + 72);
+    b.quadTo(x + 2, y + 70, x + 2, y + 44);
+    b.close();
+    const p = b.build();
     const rows = Array.from({ length: 12 }, (_, i) => shakyLine(x + 2, y + 6 + i * 5.5, x + 30, y + 6 + i * 5.5, `sock${i}`, 0.6));
     return { p, rows };
   }, [x, y]);
