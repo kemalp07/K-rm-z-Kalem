@@ -29,5 +29,9 @@
   "pool.to.front": "Ordu-yı Hümayun",
   "pool.woman": "{name} Hanım",
   "pool.note": "Not: {text}",
-  "pool.seal": "{name} (mühür)"
+  "pool.seal": "{name} (mühür)",
+  "ledger.marked": "{what} işaretlendi",
+  "ledger.wrongMark": "{what} işaretlendi, oysa doğruydu",
+  "target.seal": "mühür",
+  "target.date": "tarih"
 }

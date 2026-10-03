@@ -43,12 +43,15 @@ export const LAYOUT = {
   ledger: { x: 240, y: 28, w: 520, h: 512 },
   /** Instruction slips on the desk; the tool ones sit partly under their tool. */
   help: {
-    rules: { x: 182, y: 164, w: 88, h: 104, rot: -0.06 },
+    /** The Talimatname, closed, where the rules sheet used to lie. */
+    rules: { x: 190, y: 154, w: 70, h: 129, rot: -0.06 },
     pen: { x: 712, y: 238, w: 62, h: 30, rot: 0.08 },
     candle: { x: 738, y: 296, w: 62, h: 30, rot: -0.05 },
     magnifier: { x: 690, y: 434, w: 62, h: 30, rot: 0.04 },
     stamps: { x: 236, y: 412, w: 60, h: 30, rot: -0.07 },
   },
+  /** The Talimatname opened over the desk (booklet_open.png is 827×604). */
+  bookletOpen: { x: 137, y: 14, w: 726, h: 530 },
   /** The opened sheet, centred over the desk. */
   helpSheet: { x: 280, y: 60, w: 440, h: 430 },
   /** Rubber eraser, beside the pencil. */

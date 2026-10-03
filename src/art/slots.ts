@@ -25,6 +25,8 @@ export const ART_SLOTS = {
   stamp: { w: 86, h: 52, note: 'Lastik mühür ıstampası. Yazı ve renk kodla basılır.' },
   tray: { w: 180, h: 120, note: 'Kilitli aletlerin karanlık tepsisi.' },
   ledger: { w: 520, h: 512, note: 'Gün sonu defteri, açık sayfa, yazısız.' },
+  booklet: { w: 70, h: 129, note: 'Kapalı Talimatname: bordo cilt, boş kâğıt etiket (yazı kodla), kurdele.' },
+  booklet_open: { w: 726, h: 530, note: 'Açık Talimatname, iki boş sayfa, çerçeveli. Yazı ve resimler kodla.' },
   item_corap: { w: 112, h: 60, note: 'Paketten çıkan yün çorap.' },
   item_dut: { w: 74, h: 52, note: 'Bez kesede kuru dut.' },
 } as const;

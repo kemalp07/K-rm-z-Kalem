@@ -52,7 +52,8 @@ export interface PaperMark {
 /**
  * Flag expressions. Flags are plain strings such as
  *   "d1_mehmet:delivered", "d1_mehmet:censored", "d1_mehmet:censored:s3",
- *   "d1_mehmet:revealed:s5", "d1_imzasiz:inspected:seal".
+ *   "d1_mehmet:revealed:s5", "d1_imzasiz:marked:seal" (ringed in red),
+ *   "d1_mehmet:wrongmark:date" (ringed, but it was in order).
  */
 export interface Condition {
   all?: string[];
@@ -141,4 +142,43 @@ export interface HelpSheet {
   subtitle?: string;
   lines: string[];
   footer?: string;
+}
+
+/** One numbered or dashed line in the Talimatname; a line may arrive on a later day. */
+export type BookletItem = string | { text: string; day: number };
+
+export interface BookletSeal {
+  legend: string;
+  color: string;
+  /** Drawn in the middle; a postmark carries a date instead. */
+  symbol?: 'anchor' | 'wheat' | 'crescent';
+  center?: string;
+  double?: boolean;
+  caption: string;
+}
+
+export type BookletBlock =
+  | { t: 'p'; text: string }
+  | { t: 'num' | 'dash' | 'no'; items: BookletItem[] }
+  | { t: 'table'; rows: string[][]; head?: boolean }
+  | { t: 'seals'; items: BookletSeal[] };
+
+export interface BookletPage {
+  id: string;
+  /** Sort key; continuation pages sit at n + 0.5. */
+  n: number;
+  /** Shown instead of n when present ("6 (devamı)"). */
+  label?: string;
+  /** First day the page is pasted into the booklet. */
+  day: number;
+  title: string;
+  blocks: BookletBlock[];
+}
+
+export interface Booklet {
+  cover: { label: string; title: string; subtitle: string; lines: string[]; note: string };
+  noTitle: string;
+  pageLabel: string;
+  turnHint: string;
+  pages: BookletPage[];
 }

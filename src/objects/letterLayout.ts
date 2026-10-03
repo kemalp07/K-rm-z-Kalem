@@ -1,3 +1,4 @@
+import type { MarkTarget } from '../logic/marking';
 import { FontWeight, type SkParagraph, type SkTypefaceFontProvider } from '@shopify/react-native-skia';
 import type { Hand, Letter, Segment } from '../content/types';
 import type { Rect } from '../logic/censor';
@@ -220,6 +221,18 @@ function attempt(
   const h = Math.min(paper.h, Math.max(300, end - paper.y + 96));
   out.paper = { ...paper, h };
   if (letter.seal) out.seal = { cx: paper.x + paper.w - 66, cy: paper.y + h - 50, r: 32 };
+  return out;
+}
+
+/** What the red pencil can ring on this letter; `anomaly` from the letter's inspectables. */
+export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] {
+  const wrong = new Set((letter.inspectables ?? []).filter((i) => i.anomaly).map((i) => i.target));
+  const out: MarkTarget[] = [];
+  if (layout.date) {
+    const d = layout.date.rect;
+    out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date') });
+  }
+  if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal') });
   return out;
 }
 

@@ -6,6 +6,10 @@ export interface LetterProgress {
   censored: string[];
   revealed: string[];
   inspected: string[];
+  /** Places ringed in red pencil that are really wrong (seal, date…). */
+  marked?: string[];
+  /** Places ringed that were in order: the ledger says so. */
+  wrongMarked?: string[];
   decision?: Decision;
 }
 
@@ -14,6 +18,8 @@ export const emptyProgress = (): LetterProgress => ({
   censored: [],
   revealed: [],
   inspected: [],
+  marked: [],
+  wrongMarked: [],
 });
 
 export const flag = {
@@ -22,6 +28,8 @@ export const flag = {
   censored: (letterId: string, segId: string) => `${letterId}:censored:${segId}`,
   revealed: (letterId: string, segId: string) => `${letterId}:revealed:${segId}`,
   inspected: (letterId: string, inspId: string) => `${letterId}:inspected:${inspId}`,
+  marked: (letterId: string, target: string) => `${letterId}:marked:${target}`,
+  wrongMarked: (letterId: string, target: string) => `${letterId}:wrongmark:${target}`,
 };
 
 /** Flags only exist once a decision is stamped; half-read letters leave no trace. */
@@ -32,6 +40,8 @@ export function flagsForLetter(letterId: string, p: LetterProgress): string[] {
   for (const s of p.censored) out.push(flag.censored(letterId, s));
   for (const s of p.revealed) out.push(flag.revealed(letterId, s));
   for (const i of p.inspected) out.push(flag.inspected(letterId, i));
+  for (const m of p.marked ?? []) out.push(flag.marked(letterId, m));
+  for (const m of p.wrongMarked ?? []) out.push(flag.wrongMarked(letterId, m));
   return out;
 }
 

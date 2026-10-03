@@ -56,6 +56,8 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 | `stamp.png` | 86×52 | 258×156 px | Lastik mühür ıstampası. Yazı ve renk kodla basılır. |
 | `tray.png` | 180×120 | 540×360 px | Kilitli aletlerin karanlık tepsisi. |
 | `ledger.png` | 520×512 | 1560×1536 px | Gün sonu defteri, açık sayfa, yazısız. |
+| `booklet.png` | 70×129 | 210×387 px | Kapalı Talimatname: bordo cilt, boş kâğıt etiket (yazı kodla), kurdele. |
+| `booklet_open.png` | 726×530 | 2178×1590 px | Açık Talimatname, iki boş sayfa, çerçeveli. Yazı ve resimler kodla. |
 | `item_corap.png` | 112×60 | 336×180 px | Paketten çıkan yün çorap. |
 | `item_dut.png` | 74×52 | 222×156 px | Bez kesede kuru dut. |
 

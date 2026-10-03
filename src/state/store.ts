@@ -18,6 +18,8 @@ interface GameStore {
   censor: (letterId: string, segId: string) => void;
   reveal: (letterId: string, segId: string) => void;
   inspect: (letterId: string, inspId: string) => void;
+  /** A red ring around `target`; `wrong` places are recorded so the ledger can say so. */
+  mark: (letterId: string, target: string, isAnomaly: boolean) => void;
   addStroke: (letterId: string, svg: string) => void;
   /** Rub out the pen work on a letter still on the desk. */
   erase: (letterId: string) => void;
@@ -49,6 +51,7 @@ export const useGame = create<GameStore>()(
       censor: (id, seg) => set((g) => ({ state: addMark(g.state, id, 'censored', seg) })),
       reveal: (id, seg) => set((g) => ({ state: addMark(g.state, id, 'revealed', seg) })),
       inspect: (id, insp) => set((g) => ({ state: addMark(g.state, id, 'inspected', insp) })),
+      mark: (id, target, isAnomaly) => set((g) => ({ state: addMark(g.state, id, isAnomaly ? 'marked' : 'wrongMarked', target) })),
       addStroke: (id, svg) =>
         set((g) => ({ strokes: { ...g.strokes, [id]: [...(g.strokes[id] ?? []), svg] } })),
       erase: (id) =>

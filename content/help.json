@@ -22,6 +22,7 @@
       "lines": [
         "Kaleme dokun, eline al.",
         "Karalanacak satırın üzerinden parmağınla geç. Satır baştan sona kapanınca karalanmış sayılır.",
+        "Şüphelendiğin yeri (mühür, tarih) etrafına halka çizerek işaretle. Gün sonunda defter, işaretin doğru çıkıp çıkmadığını yazar.",
         "Kalemi bırakmak için ona yeniden dokun.",
         "Yanlış karaladıysan kalemin yanındaki silgiye dokun; o mektuptaki kırmızı kalem izlerinin hepsi silinir."
       ]
@@ -41,8 +42,9 @@
       "tag": "Büyüteç",
       "title": "Büyüteç",
       "lines": [
-        "Büyüteci sürükle; camın altı büyür.",
-        "Mührün ya da tarihin üstünde bir an tut. Dikkatini çeken bir şey varsa yanına not düşersin."
+        "Büyüteci sürükleyip mektubun üstünde gezdir; altındaki her şey büyür.",
+        "Mühür halkasındaki yazıya, tarihe, silinmiş izlere dikkatle bak.",
+        "Gördüğünü Talimatname'deki örneklerle karşılaştır. Neyin yanlış olduğuna sen karar verirsin."
       ]
     },
     {

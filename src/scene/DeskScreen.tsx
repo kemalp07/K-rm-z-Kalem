@@ -19,11 +19,13 @@ import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
 import { ContinueCard, RESTART_RECT } from '../objects/ContinueCard';
 import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
-import { InspectionSlip } from '../objects/InspectionSlip';
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
+import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
+import { bookletPages } from '../content/booklet';
 import { Letter, LetterMarks, LetterStill, letterRegion } from '../objects/Letter';
-import { inspectPoints, layoutLetter, type LaidSegment } from '../objects/letterLayout';
+import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
+import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
@@ -54,8 +56,6 @@ type Drag =
 const PEN_IN_HAND_ANGLE = 0.5;
 const STAMP_HOLD_MS = 450;
 const TICK_MS = 50;
-const INSPECT_RADIUS = 34;
-const INSPECT_DWELL_MS = 450;
 const BOARD = { x: 0, y: 0, w: WORLD.w, h: WORLD.h };
 
 /** Where a decided letter goes as it leaves the desk. */
@@ -154,7 +154,6 @@ export function DeskScreen() {
   const livePath = useSharedValue<SkPath>(Skia.Path.Make());
   const stampProgress = useSharedValue(0);
   const imprintIn = useSharedValue(0);
-  const slipOpacity = useSharedValue(0);
   const helpIn = useSharedValue(0);
   const eraserRub = useSharedValue(0);
   const eraserLift = useSharedValue(0);
@@ -167,13 +166,14 @@ export function DeskScreen() {
   const [pressing, setPressing] = useState<Decision | null>(null);
   const [imprint, setImprint] = useState<Decision | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
+  const [spread, setSpread] = useState(0);
+  const pages = useMemo(() => bookletPages(state.day), [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
   const [warm, setWarm] = useState(false);
   // While the eraser works the marks fade, which needs a layer; otherwise they draw plain.
   const [rubbing, setRubbing] = useState(false);
   const warmRef = useRef(false);
-  const [slip, setSlip] = useState<{ note: string; x: number; y: number } | null>(null);
 
   // --- mutable interaction state ----------------------------------------------
   const drag = useRef<Drag | null>(null);
@@ -181,9 +181,6 @@ export function DeskScreen() {
   const exiting = useRef(false);
   const coverage = useRef(new Map<string, { lines: LineCoverage[]; laid: LaidSegment }>());
   const heatLocal = useRef<Record<string, number>>({});
-  const dwell = useRef<{ id: string; ms: number } | null>(null);
-  const slipShownFor = useRef<string | null>(null);
-  const slipHideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const resetCoverage = useCallback(() => {
     coverage.current = new Map(
@@ -198,8 +195,6 @@ export function DeskScreen() {
     warmRef.current = false;
     setWarm(false);
     heat.value = {};
-    dwell.current = null;
-    slipShownFor.current = null;
   }, [resetCoverage, heat]);
 
   useEffect(() => {
@@ -236,11 +231,10 @@ export function DeskScreen() {
     };
   }, [state.phase, advance, lampLevel, ledgerY, continueOpacity]);
 
-  // --- candle heat and magnifier dwell: a slow 20 Hz tick on the JS side --------
+  // --- candle heat: a slow 20 Hz tick on the JS side --------
   useEffect(() => {
     if (!layout || !openLetter) return;
     const hidden = layout.segments.filter((s) => s.seg.kind === 'hiddenInk' && s.seg.revealBy === 'mum');
-    const points = inspectPoints(openLetter, layout);
     const id = openLetter.id;
     const tick = setInterval(() => {
       if (exiting.current) return;
@@ -274,32 +268,9 @@ export function DeskScreen() {
           }
         }
       }
-      if (points.length) {
-        const lens = { x: magX.value, y: magY.value };
-        const over = points.find((pt) => dist(lens, pt) < INSPECT_RADIUS);
-        if (over) {
-          dwell.current = dwell.current?.id === over.id ? { id: over.id, ms: dwell.current.ms + TICK_MS } : { id: over.id, ms: 0 };
-          if (dwell.current.ms >= INSPECT_DWELL_MS && slipShownFor.current !== over.id) {
-            slipShownFor.current = over.id;
-            if (slipHideTimer.current) clearTimeout(slipHideTimer.current);
-            setSlip({ note: over.note, x: lens.x, y: lens.y });
-            slipOpacity.value = withTiming(1, { duration: T.slipIn, easing: SETTLE });
-            useGame.getState().inspect(id, over.id);
-            haptic(Haptics.ImpactFeedbackStyle.Light);
-          }
-        } else if (dwell.current) {
-          dwell.current = null;
-          if (slipShownFor.current) {
-            slipShownFor.current = null;
-            slipHideTimer.current = setTimeout(() => {
-              slipOpacity.value = withTiming(0, { duration: T.slipOut, easing: GLIDE });
-            }, 2200);
-          }
-        }
-      }
     }, TICK_MS);
     return () => clearInterval(tick);
-  }, [layout, openLetter, candleX, candleY, magX, magY, heat, slipOpacity]);
+  }, [layout, openLetter, candleX, candleY, heat]);
 
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
@@ -323,7 +294,6 @@ export function DeskScreen() {
       imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
       stampProgress.value = withTiming(0, { duration: 380, easing: SETTLE });
       setTimeout(() => setPressing(null), 380);
-      slipOpacity.value = withTiming(0, { duration: 400 });
       exitDir.value = EXIT[d];
       setTimeout(() => {
         letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
@@ -333,11 +303,10 @@ export function DeskScreen() {
         letterOut.value = 0;
         letterIn.value = 0;
         setImprint(null);
-        setSlip(null);
         exiting.current = false;
       }, T.stampRest + T.leave + 50);
     },
-    [stampProgress, slipOpacity, exitDir, letterOut, letterIn, imprintIn],
+    [stampProgress, exitDir, letterOut, letterIn, imprintIn],
   );
 
   // --- gesture handlers (JS thread; positions go out through shared values) ------
@@ -347,6 +316,7 @@ export function DeskScreen() {
       if (penInHand.current) penHome();
       useGame.getState().markHelpSeen(id);
       setHelp(id);
+      setSpread(0);
       helpIn.value = 0;
       helpIn.value = withTiming(1, { duration: 600, easing: SETTLE });
       playSfx('paper', 0.6);
@@ -402,6 +372,18 @@ export function DeskScreen() {
 
     if (help) {
       drag.current = null;
+      // The booklet turns a page when its edge is tapped; anywhere else closes it.
+      const book = LAYOUT.bookletOpen;
+      if (help === 'rules' && inRect(p, book)) {
+        const forward = p.x > book.x + book.w / 2;
+        const next = spread + (forward ? 1 : -1);
+        if (next >= 0 && next < spreadCount(pages.length)) {
+          setSpread(next);
+          playSfx('paper', 0.4);
+          return;
+        }
+        if (!forward) return;
+      }
       closeHelp();
       return;
     }
@@ -630,6 +612,12 @@ export function DeskScreen() {
       case 'pen-stroke': {
         const id = g.state.open;
         if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
+        // A closed ring marks whatever it encloses as suspicious; the ledger judges it.
+        if (id && openLetter && layout && isClosedLoop(d.points)) {
+          const hits = ringed(d.points, markTargets(openLetter, layout));
+          for (const t of hits) g.mark(id, t.target, t.anomaly);
+          if (hits.length) haptic(Haptics.ImpactFeedbackStyle.Medium);
+        }
         livePath.value = Skia.Path.Make();
         setDrawing(false);
         break;
@@ -746,7 +734,8 @@ export function DeskScreen() {
       <MoneyNote purse={day.purse} />
       <BrassPlate rank={desk.rank} />
       <LockedTray />
-      {showSlips && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+      {showSlips && HELP_IDS.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+      {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
     </FontsBridge>,
     DESK_REGION,
     fit.scale,
@@ -817,14 +806,13 @@ export function DeskScreen() {
             <MagnifierFrame x={magX} y={magY} lift={magLift} />
             <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
-            {slip && <InspectionSlip note={slip.note} x={slip.x} y={slip.y} opacity={slipOpacity} />}
 
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} />
             <Vignette />
-            {help && <HelpSheetView id={help} opacity={helpIn} />}
+            {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} opacity={continueOpacity} />}
           </Group>
         </FontsBridge>

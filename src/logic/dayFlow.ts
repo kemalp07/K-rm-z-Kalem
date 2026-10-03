@@ -38,12 +38,14 @@ export function openEnvelope(s: DayState, id: string): DayState {
   };
 }
 
-type ListKey = 'censored' | 'revealed' | 'inspected';
+type ListKey = 'censored' | 'revealed' | 'inspected' | 'marked' | 'wrongMarked';
 
 export function addMark(s: DayState, id: string, key: ListKey, value: string): DayState {
   const p = s.letters[id];
-  if (!p || p.decision || p[key].includes(value)) return s;
-  return { ...s, letters: { ...s.letters, [id]: { ...p, [key]: [...p[key], value] } } };
+  // Saves from before marking existed have no marked/wrongMarked lists.
+  const list = p?.[key] ?? [];
+  if (!p || p.decision || list.includes(value)) return s;
+  return { ...s, letters: { ...s.letters, [id]: { ...p, [key]: [...list, value] } } };
 }
 
 /** The eraser: the letter's red-pencil censoring goes, what was found (ink, anomalies) stays found. */

@@ -1,0 +1,280 @@
+{
+  "cover": {
+    "label": "TALİMATNAME",
+    "title": "SANSÜR TALİMATNAMESİ",
+    "subtitle": "Kilitbahir Posta ve Telgraf Şubesi",
+    "lines": ["Sansür kâtiplerine mahsustur.", "Bu defter Şube'den dışarı çıkarılmaz."],
+    "note": "Yeni talimat geldikçe ek sayfa olarak yapıştırılır."
+  },
+  "noTitle": "OLMAZ",
+  "pageLabel": "Sahife {n}",
+  "turnHint": "Sayfa çevirmek için kenarına dokun",
+  "pages": [
+    {
+      "id": "umumi",
+      "n": 1,
+      "day": 1,
+      "title": "UMUMİ TALİMAT",
+      "blocks": [
+        {
+          "t": "num",
+          "items": [
+            "Her zarf açılır; mektup satır satır okunur.",
+            "Askerî malûmat veren satırlar kırmızı kalemle karalanır (bkz. Sahife 7).",
+            "Şüpheli görülen yer (mühür, tarih, damga, pul) kırmızı kalemle daire içine alınır.",
+            "Mühür, damga, pul ve tarih bu defterdeki örneklerle karşılaştırılır.",
+            "Karar mühürle verilir:"
+          ]
+        },
+        {
+          "t": "dash",
+          "items": [
+            "İLET — mektup yoluna devam eder.",
+            "BEKLET — bir gün çekmecede kalır; yarın yeniden bakılır.",
+            "DURDUR — mektup alıcıya gitmez.",
+            "İSTİHBARAT — mektup ve gönderen Şube'ye bildirilir."
+          ]
+        },
+        { "t": "p", "text": "Her karar deftere yazılır. Kâtip yaptığından mesuldür." }
+      ]
+    },
+    {
+      "id": "takvim",
+      "n": 2,
+      "day": 1,
+      "title": "TAKVİM",
+      "blocks": [
+        { "t": "p", "text": "Rumi takvim kullanılır. Sene 1331, 1 Mart'ta başlamıştır. Rumi tarih Frenk tarihinden on üç gün geridir: 5 Mayıs 1331 = 18 Mayıs 1915." },
+        {
+          "t": "table",
+          "rows": [
+            ["Mart", "31", "Haziran", "30"],
+            ["Nisan", "30", "Temmuz", "31"],
+            ["Mayıs", "31", "Ağustos", "31"]
+          ]
+        },
+        { "t": "p", "text": "Doğru yazılış: \"12 Mayıs 1331\" ya da kısaca \"12 Mayıs 331\". Askerler başlığa yer yazmaz: \"Ordu-yı Hümayun, 12 Mayıs 1331\"." },
+        {
+          "t": "no",
+          "items": [
+            "Takvimde olmayan gün (\"31 Nisan\").",
+            "Bugünden sonraki bir tarih.",
+            "Frenk ayı ile Rumi senenin karışması (\"12 May 1331\").",
+            "Memur ve tüccar mektubunda Frenk senesi (\"12 Mayıs 1915\")."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posta_yolu",
+      "n": 3,
+      "day": 4,
+      "title": "POSTA YOLU VE MÜDDETLERİ",
+      "blocks": [
+        { "t": "p", "text": "Bir mektup yazıldığı günden önce damgalanamaz, damgalandığı günden önce masaya gelemez." },
+        {
+          "t": "table",
+          "head": true,
+          "rows": [
+            ["Nereden → nereye", "En az", "En çok"],
+            ["Cephe → Dersaadet, Çanakkale", "3 gün", "8 gün"],
+            ["Cephe → Anadolu şehri", "6 gün", "15 gün"],
+            ["Cephe → Anadolu köyü", "10 gün", "20 gün"],
+            ["Dersaadet → cephe", "3 gün", "8 gün"],
+            ["Anadolu → cephe", "8 gün", "20 gün"]
+          ]
+        },
+        {
+          "t": "no",
+          "items": [
+            "Sivas'ın köyünden dün yazılıp bugün gelmiş mektup.",
+            "Bir ay önce yazılıp ancak bugün damgalanmış mektup."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "damgalar",
+      "n": 4,
+      "day": 4,
+      "title": "POSTA DAMGALARI",
+      "blocks": [
+        { "t": "p", "text": "Damga siyah mürekkeple, yuvarlak basılır. Üst yayda şubenin adı, ortada tarih, alt yayda yıldız. Cepheden gelen mektup \"SAHRA POSTASI\" damgası taşır." },
+        {
+          "t": "seals",
+          "items": [
+            { "legend": "SAHRA POSTASI ★", "color": "#2b2118", "center": "3 MAYIS 331", "caption": "Cepheden" },
+            { "legend": "SİVAS ★", "color": "#2b2118", "center": "20 NİSAN 331", "caption": "Şehirden" }
+          ]
+        },
+        {
+          "t": "no",
+          "items": [
+            "Mor ya da kırmızı damga.",
+            "Şubenin gönderenin memleketini tutmaması.",
+            "Damga tarihinin mektup tarihinden önce olması.",
+            "Cepheden gelen mektupta şehir damgası."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pullar",
+      "n": 5,
+      "day": 5,
+      "title": "PULLAR",
+      "blocks": [
+        { "t": "p", "text": "Cepheden gelen asker mektubu pulsuz gider. Cepheye ve şehirler arası giden mektup pulludur; pul zarfın sağ üst köşesine düz yapıştırılır." },
+        {
+          "t": "table",
+          "head": true,
+          "rows": [
+            ["Pul", "Kıymet", "Nerede"],
+            ["Kırmızı, gemiler", "20 para", "Mektup"],
+            ["Yeşil, kale", "10 para", "Kartpostal"],
+            ["Kahverengi, ay-yıldız", "5 para", "Gazete"],
+            ["Mavi, şehir", "1 kuruş", "Ağır mektup"],
+            ["Mor, köprü", "2 kuruş", "Paket"]
+          ]
+        },
+        {
+          "t": "no",
+          "items": [
+            "Cepheden gelen mektupta pul.",
+            "Eksik kıymet (mektupta tek yeşil pul).",
+            "Ters yapıştırılmış pul: casusların işaretidir.",
+            "Pul kenarında kesik ya da kabarıklık."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muhurler",
+      "n": 6,
+      "day": 1,
+      "title": "MÜHÜRLER",
+      "blocks": [
+        { "t": "p", "text": "Mührü olan herkes mektubunu mühürle tasdik eder. Okuma yazma bilmeyen kimse imza yerine şahsi mührünü basar." },
+        {
+          "t": "dash",
+          "items": [
+            "Şahsi mühür: küçük, oval; siyah ya da kırmızı. Halkada yalnız sahibinin adı.",
+            "Karye muhtarı ve alay kumandanlığı: yuvarlak, siyah; ortada ay-yıldız.",
+            "Kumpanya mühürleri: yuvarlak, çift halka, MOR mürekkep; ortada kumpanyanın alameti."
+          ]
+        },
+        {
+          "t": "no",
+          "items": [
+            "Ayna gibi ters okunan yazı: mühür ters kazınmıştır.",
+            "Kumpanya mührünün siyah basılması.",
+            "Halkada eksik ya da fazla harf.",
+            "Okuma yazma bilmeyenin el yazısıyla imzası."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muhur_ornek",
+      "n": 6.5,
+      "label": "6 (devamı)",
+      "day": 1,
+      "title": "MÜHÜR ÖRNEKLERİ",
+      "blocks": [
+        { "t": "p", "text": "Doğru basılmış mühürler. Halkadaki yazı soldan sağa, düz okunur." },
+        {
+          "t": "seals",
+          "items": [
+            { "legend": "ŞARK TİCARET · GALATA", "color": "#5b2e4a", "symbol": "anchor", "double": true, "caption": "Şark Ticaret Kumpanyası" },
+            { "legend": "ANADOLU HUBUBAT · KONYA", "color": "#5b2e4a", "symbol": "wheat", "double": true, "caption": "Anadolu Hububat Şirketi" },
+            { "legend": "ALAY KUMANDANLIĞI", "color": "#2b2118", "symbol": "crescent", "caption": "Alay kumandanlığı" },
+            { "legend": "KARYESİ MUHTARI", "color": "#2b2118", "symbol": "crescent", "caption": "Karye muhtarı" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malumat",
+      "n": 7,
+      "day": 1,
+      "title": "KARALANACAK MALÛMAT",
+      "blocks": [
+        { "t": "p", "text": "Cepheden gelen mektupta şunlar karalanır:" },
+        {
+          "t": "dash",
+          "items": [
+            "Birliğin yeri, adı, numarası; \"sırt\", \"iskele\", \"dere\" gibi yer tarifleri.",
+            "Asker, top, yaralı, ölü sayıları.",
+            "İkmalin, kumanyanın, suyun saati ve yolu.",
+            "Kumandan adları; birliğin nereye, ne zaman gideceği.",
+            "Yiyecek darlığı ve hastalık şikâyeti."
+          ]
+        },
+        { "t": "p", "text": "Cepheye giden mektupta askerin moralini bozacak ağır haber karalanır ya da mektup durdurulur." }
+      ]
+    },
+    {
+      "id": "malumat_2",
+      "n": 7.5,
+      "label": "7 (devamı)",
+      "day": 1,
+      "title": "DURDURULACAK MEKTUP",
+      "blocks": [
+        { "t": "p", "text": "Durdurulur:" },
+        { "t": "dash", "items": ["Bozgunculuk.", "Firara teşvik.", "Hükümete ağır şikâyet."] },
+        { "t": "p", "text": "İstihbarata verilir:" },
+        {
+          "t": "dash",
+          "items": [
+            "Harita ya da çizim.",
+            "Yabancı dilde satır; anlaşılmaz ya da şifreli ifade.",
+            "Tutarsız mühür, damga ya da pul.",
+            "Zarf içinde para."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adresler",
+      "n": 8,
+      "day": 4,
+      "title": "ADRESLER",
+      "blocks": [
+        { "t": "p", "text": "Köy: il, kaza, karye; muhtar ya da imam vasıtasıyla." },
+        { "t": "p", "text": "Şehir: şehir, mahalle; bakkal, kahveci ya da berber vasıtasıyla. İstanbul için \"Dersaadet\"." },
+        { "t": "p", "text": "Askerî: Ordu-yı Hümayun, alay, tabur, bölük; rütbe, memleket lakabı, isim." },
+        { "t": "p", "text": "Şubemize bağlı birlikler: 61., 74. ve 88. Alaylar." },
+        {
+          "t": "no",
+          "items": [
+            "Askerî adreste yer adı (\"Çanakkale\", \"cephe\").",
+            "Şubemize bağlı olmayan alay numarası.",
+            "Köy adresinde vasıta bulunmaması."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sira",
+      "n": 9,
+      "day": 1,
+      "title": "KONTROL SIRASI",
+      "blocks": [
+        { "t": "p", "text": "Her mektupta sırayla:" },
+        {
+          "t": "num",
+          "items": [
+            { "day": 4, "text": "Zarf: adres kalıba uyuyor mu?" },
+            { "day": 5, "text": "Pul: olmalı mı, doğru mu yapışmış?" },
+            { "day": 4, "text": "Damga: şube ve tarih tutuyor mu?" },
+            { "day": 1, "text": "Tarih: takvimde var mı, bugünden önce mi?" },
+            { "day": 1, "text": "Mühür: varsa defterdekiyle aynı mı?" },
+            { "day": 1, "text": "Metin: karalanacak malûmat var mı?" },
+            { "day": 1, "text": "Gizli: satır araları mumla yoklanır." },
+            { "day": 1, "text": "Karar." }
+          ]
+        }
+      ]
+    }
+  ]
+}

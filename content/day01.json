@@ -469,7 +469,7 @@
           "when": {
             "all": [
               "d1_imzasiz:reported",
-              "d1_imzasiz:inspected:seal"
+              "d1_imzasiz:marked:seal"
             ]
           },
           "text": "Şube Galata'daki adresi arayacak. O adreste bir kumpanya yok."
@@ -502,7 +502,7 @@
           "when": {
             "all": [
               "d1_imzasiz:delivered",
-              "d1_imzasiz:inspected:seal"
+              "d1_imzasiz:marked:seal"
             ]
           },
           "text": "Halil Efendi mektubu okuyup yakacak. Mührü sen de gördün."

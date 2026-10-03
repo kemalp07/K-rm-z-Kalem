@@ -57,7 +57,16 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         const p = state.letters[letter.id]!;
         const y = top + i * rowH;
         const decision = p.decision!;
-        const extra = p.censored.length ? ` · ${t('ledger.censored', { n: p.censored.length })}` : '';
+        const what = (target: string) => t(target === 'seal' ? 'target.seal' : 'target.date');
+        const extra = [
+          p.censored.length ? t('ledger.censored', { n: p.censored.length }) : '',
+          ...(p.marked ?? []).map((m) => t('ledger.marked', { what: what(m) })),
+          // A ring around something that was in order is written down too: the clerk learns.
+          ...(p.wrongMarked ?? []).map((m) => t('ledger.wrongMark', { what: what(m) })),
+        ]
+          .filter(Boolean)
+          .map((x) => ` · ${x}`)
+          .join('');
         return (
           <Group key={letter.id}>
             <Para text={`${i + 1}.`} x={r.x + M - 28} y={y} width={26} family="Caveat" size={17} color={C.inkFaded} />
