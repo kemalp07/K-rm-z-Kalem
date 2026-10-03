@@ -13,8 +13,6 @@ export const T = {
   lift: 280,
   /** A tool going back to its place. */
   home: 650,
-  /** A carried object trailing the finger a little, so it never jitters. */
-  follow: 70,
   /** A letter unfolding after the envelope is opened. */
   unfold: 950,
   /** Pause after the stamp lands, before the letter leaves. */

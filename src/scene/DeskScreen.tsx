@@ -66,7 +66,6 @@ const EXIT: Record<Decision, { dx: number; dy: number; rot: number }> = {
   reported: { dx: 120, dy: -560, rot: 0.1 }, // up to the Şube's folder
 };
 
-const FOLLOW = { duration: T.follow };
 
 /** Quadratic curve through the midpoints of a finger's track: no corners, no jitter. */
 function smoothPath(pts: Point[]): SkPath {
@@ -516,27 +515,28 @@ export function DeskScreen() {
     const d = drag.current;
     if (!d) return;
     switch (d.kind) {
-      // Carried things trail the finger by a few frames: steady, never twitchy.
+      // Carried things sit exactly under the finger. (Easing toward each new pointer
+      // position restarted an animation per event, which read as lag and sliding.)
       case 'envelope':
-        envX.value = withTiming(p.x + d.ox, FOLLOW);
-        envY.value = withTiming(p.y + d.oy, FOLLOW);
+        envX.value = p.x + d.ox;
+        envY.value = p.y + d.oy;
         break;
       case 'candle': {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 20);
-        candleX.value = withTiming(c.x, FOLLOW);
-        candleY.value = withTiming(c.y, FOLLOW);
+        candleX.value = c.x;
+        candleY.value = c.y;
         break;
       }
       case 'magnifier': {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 10);
-        magX.value = withTiming(c.x, FOLLOW);
-        magY.value = withTiming(c.y, FOLLOW);
+        magX.value = c.x;
+        magY.value = c.y;
         break;
       }
       case 'pen-carry': {
         const c = clampTo(p, BOARD, 4);
-        penX.value = withTiming(c.x, FOLLOW);
-        penY.value = withTiming(c.y, FOLLOW);
+        penX.value = c.x;
+        penY.value = c.y;
         break;
       }
       case 'pen-stroke': {
