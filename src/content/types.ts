@@ -175,7 +175,18 @@ export interface BookletPage {
   blocks: BookletBlock[];
 }
 
+/** A stiff sample card for the desk, carrying one page's seal examples to set beside a letter. */
+export interface SampleCard {
+  id: string;
+  day: number;
+  title: string;
+  note: string;
+  /** Booklet page whose `seals` block the card shows. */
+  page: string;
+}
+
 export interface Booklet {
+  cards: SampleCard[];
   cover: { label: string; title: string; subtitle: string; lines: string[]; note: string };
   noTitle: string;
   pageLabel: string;

@@ -22,7 +22,8 @@ import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } fr
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
-import { bookletPages } from '../content/booklet';
+import { bookletPages, sampleCards } from '../content/booklet';
+import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
 import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
@@ -47,6 +48,7 @@ type Drag =
   | { kind: 'envelope'; id: string; ox: number; oy: number }
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'magnifier'; ox: number; oy: number }
+  | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
   | { kind: 'pen-stroke'; last: Point; points: Point[]; done: string[] }
@@ -162,6 +164,10 @@ export function DeskScreen() {
   /** Which sentence the pen is over, and which this stroke has covered. */
   const penHint = useSharedValue<{ hover: string; done: string[] }>({ hover: '', done: [] });
   const stampProgress = useSharedValue(0);
+  const cardX = useSharedValue(CARD_HOME.x);
+  const cardY = useSharedValue(CARD_HOME.y);
+  const cardScale = useSharedValue(CARD_HOME.scale);
+  const cardRot = useSharedValue(CARD_HOME.rot);
   const stampX = useSharedValue(0);
   const stampY = useSharedValue(0);
   const imprintIn = useSharedValue(0);
@@ -179,6 +185,7 @@ export function DeskScreen() {
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
+  const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
   const [warm, setWarm] = useState(false);
@@ -473,6 +480,16 @@ export function DeskScreen() {
       return;
     }
 
+    // The sample card: lifted to full size to lay beside (or over) the letter.
+    if (card && onCard(p, { x: cardX.value, y: cardY.value, scale: cardScale.value, rot: cardRot.value })) {
+      drag.current = { kind: 'card', ox: cardX.value - p.x, oy: cardY.value - p.y };
+      cardScale.value = withTiming(1, { duration: T.lift + 80, easing: SETTLE });
+      cardRot.value = withTiming(0.02, { duration: T.lift + 80, easing: SETTLE });
+      haptic(Haptics.ImpactFeedbackStyle.Light);
+      playSfx('paper', 0.3);
+      return;
+    }
+
     const slipHit = HELP_IDS.find((id) => inRect(p, LAYOUT.help[id], 4));
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
@@ -542,6 +559,12 @@ export function DeskScreen() {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 20);
         candleX.value = c.x;
         candleY.value = c.y;
+        break;
+      }
+      case 'card': {
+        const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 30);
+        cardX.value = c.x;
+        cardY.value = c.y;
         break;
       }
       case 'magnifier': {
@@ -648,6 +671,16 @@ export function DeskScreen() {
         break;
       case 'magnifier':
         magLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
+        break;
+      case 'card':
+        // Put back near its place, it tucks itself away again.
+        if (dist({ x: cardX.value, y: cardY.value }, CARD_HOME) < 90) {
+          const home = { duration: T.home, easing: GLIDE };
+          cardX.value = withTiming(CARD_HOME.x, home);
+          cardY.value = withTiming(CARD_HOME.y, home);
+          cardScale.value = withTiming(CARD_HOME.scale, home);
+          cardRot.value = withTiming(CARD_HOME.rot, home);
+        }
         break;
       case 'pen-carry':
         // A tap on the pen you're already holding puts it down.
@@ -792,6 +825,13 @@ export function DeskScreen() {
     fit.scale,
     deskKey,
   );
+  const cardImage = useBaked(card ? <FontsBridge fonts={fonts}><SampleCardFace card={card} /></FontsBridge> : null, CARD_REGION, fit.scale, `card:${card?.id}`);
+  const cardTransform = useCardTransform(cardX, cardY, cardScale, cardRot);
+  const cardNode = card && state.phase === 'desk' && cardImage ? (
+    <Group transform={cardTransform}>
+      <BakedImage baked={cardImage} />
+    </Group>
+  ) : null;
   const pile = useBaked(
     <FontsBridge fonts={fonts}>
       {/* Envelopes, bottom of the pile first */}
@@ -833,6 +873,7 @@ export function DeskScreen() {
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
             {letterNode}
+            {cardNode}
             <StampPress pressing={pressing} progress={stampProgress} x={stampX} y={stampY} />
 
             {draggedLetter && (
@@ -850,6 +891,7 @@ export function DeskScreen() {
                 <BakedImage baked={pile} />
                 <BakedImage baked={stampCards} />
                 {letterNode}
+                {cardNode}
               </Group>
               <Circle cx={magX} cy={magY} r={LENS_R} color="rgba(255,230,190,0.04)" />
             </Group>

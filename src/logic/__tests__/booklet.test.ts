@@ -1,7 +1,8 @@
-import { bookletPages, itemText } from '../../content/booklet';
+import { booklet, bookletPages, itemText, sampleCards } from '../../content/booklet';
 import type { Booklet, BookletPage } from '../../content/types';
 
 const src: Booklet = {
+  cards: [],
   cover: { label: '', title: '', subtitle: '', lines: [], note: '' },
   noTitle: '',
   pageLabel: '',
@@ -24,5 +25,12 @@ describe('bookletPages', () => {
     expect(c.blocks).toEqual([]);
     const a4 = bookletPages(4, src)[0]!;
     expect((a4.blocks[0] as { items: unknown[] }).items.map((i) => itemText(i as string))).toEqual(['one', 'later']);
+  });
+});
+
+describe('sampleCards', () => {
+  it('copies the seals of the page it names', () => {
+    const [card] = sampleCards(1, booklet);
+    expect(card?.seals.length).toBeGreaterThan(0);
   });
 });

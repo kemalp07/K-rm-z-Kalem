@@ -132,12 +132,12 @@ function symbolPath(kind: BookletSeal['symbol'], cx: number, cy: number) {
 }
 
 /** A seal or postmark as the Şube wants it, drawn the same way the letters draw theirs. */
-function SealExample({ seal, cx, cy }: { seal: BookletSeal; cx: number; cy: number }) {
+export function SealExample({ seal, cx, cy, scale = SEAL_SCALE }: { seal: BookletSeal; cx: number; cy: number; scale?: number }) {
   const { sealFont } = useSceneFonts();
   const ring = useMemo(() => Skia.PathBuilder.Make().addCircle(cx, cy, SEAL_R - 8).build(), [cx, cy]);
   const sym = useMemo(() => (seal.symbol ? symbolPath(seal.symbol, cx, cy) : null), [seal.symbol, cx, cy]);
   return (
-    <Group transform={[{ scale: SEAL_SCALE }]} origin={{ x: cx, y: cy }} opacity={0.85}>
+    <Group transform={[{ scale }]} origin={{ x: cx, y: cy }} opacity={0.85}>
       <Circle cx={cx} cy={cy} r={SEAL_R} style="stroke" strokeWidth={2.2} color={seal.color} />
       {seal.double && <Circle cx={cx} cy={cy} r={SEAL_R - 2.6} style="stroke" strokeWidth={0.8} color={seal.color} />}
       <Circle cx={cx} cy={cy} r={SEAL_R - 14} style="stroke" strokeWidth={1} color={seal.color} />

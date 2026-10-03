@@ -1,5 +1,5 @@
 import bookletJson from '../../content/booklet.json';
-import type { Booklet, BookletBlock, BookletItem, BookletPage } from './types';
+import type { Booklet, BookletBlock, BookletItem, BookletPage, BookletSeal, SampleCard } from './types';
 
 export const booklet = bookletJson as Booklet;
 
@@ -25,3 +25,15 @@ export function bookletPages(day: number, source: Booklet = booklet): BookletPag
 /** Pages that arrived on exactly this day; the booklet opens on the first of them. */
 export const newPages = (day: number, source: Booklet = booklet) =>
   day > 1 ? bookletPages(day, source).filter((p) => p.day === day) : [];
+
+/** Sample cards on the desk by `day`, each with the seals of the page it copies. */
+export function sampleCards(day: number, source: Booklet = booklet): (SampleCard & { seals: BookletSeal[] })[] {
+  return source.cards
+    .filter((c) => c.day <= day)
+    .map((c) => {
+      const page = source.pages.find((p) => p.id === c.page);
+      const block = page?.blocks.find((b) => b.t === 'seals');
+      if (!block || block.t !== 'seals') throw new Error(`content/booklet.json: card "${c.id}" needs page "${c.page}" with seals`);
+      return { ...c, seals: block.items };
+    });
+}
