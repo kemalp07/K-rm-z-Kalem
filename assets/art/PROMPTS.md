@@ -134,3 +134,148 @@ Very high resolution, fine crisp linework.
 | Defter sayfası | `ledger` | |
 
 Ölçüler `README.md`'deki tabloda. Kesme, ölçekleme ve yerleştirme bende.
+
+---
+
+# İkinci tur: yeni aletler, kitapçık, gazete, kâğıt, zarf, pul
+
+Aynı kurallar: tam tepeden, üstünde yazı yok, düz ışık, açık gri zemin, eşyalar birbirine
+değmiyor. Yazılar, mühürler, damgalar ve filigranlar oyunda kodla basılır.
+
+## 9) Yeni aletler — defterler ve şifre aletleri
+
+```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: scuffed cloth bindings, rubbed corners, foxing, faded ink stains, fine scratches. Muted palette: faded oxblood and dark green cloth, aged cream paper, dull brass, dark brown-black ink. Flat, soft, even lighting with no cast shadows and no shiny highlights. Plain flat light-grey background. No text, no letters, no numbers, no symbols, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A thin closed office regulations booklet, about the size of a hand, bound in faded oxblood cloth, a plain blank paper label rectangle on the cover, a narrow black ribbon bookmark sticking out of the bottom edge, corners rubbed pale.
+2. A thick closed code book bound in dark green cloth with worn leather corners and a small brass clasp, a plain blank label on the cover, the page edges darkened with use.
+3. A stiff rectangular card made of pale grey-brown cardboard with eight to ten small rectangular windows cut out of it at irregular positions, the cut edges slightly rough, a small round hole near one corner.
+4. A cipher disc made of two stacked circles of stiff aged cream card held together by a small brass rivet in the centre: the smaller disc lies on top of the larger one; around the edge of each disc a ring of evenly spaced empty boxes separated by fine radial lines, every box completely blank.
+
+Very high resolution, fine crisp linework.
+```
+
+## 10) Yeni aletler — buhar ve kimya
+
+```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: dented and tarnished copper, chipped enamel, fine scratches, old stains on glass. Muted palette: dull copper, blackened iron, cloudy green-brown glass, pale porcelain, dark walnut wood. Flat, soft, even lighting with no cast shadows and no shiny highlights. Plain flat light-grey background. No text, no letters, no numbers, no labels, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A small round copper kettle seen from directly above: the round lid with a small knob in the middle, a curved spout pointing to the right, a bent wire handle across the top, dents and dark tarnish.
+2. A small round spirit burner seen from directly above: a squat blackened brass cup with a short wick tube in the middle, no flame.
+3. A small glass medicine bottle lying flat on its side, cloudy green-brown glass, stoppered with a cork, about a third full of a dark liquid, no label.
+4. A thin flat brush lying flat, a wooden handle worn smooth, a tin ferrule, the bristles stained dark brown at the tip.
+5. A small shallow white porcelain dish with a chipped rim and a faint brown stain in the bottom.
+
+Very high resolution, fine crisp linework.
+```
+
+## 11) Kâğıtlar
+
+```
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Plain flat light-grey background.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
+
+A single sheet with three separate blank sheets of old paper, evenly spaced, none touching, with generous empty space around each one. Each sheet is completely blank: no writing, no text, no letters, no numbers. Flat, even lighting, no shadows.
+1. A page torn out of a cheap school exercise book: pale grey-white paper with faint pale-blue horizontal ruled lines, one ragged torn edge on the left where it came out of the binding, a dog-eared corner, a grease spot.
+2. A sheet of coarse cheap brownish-grey paper with visible fibres and small dark specks in it, uneven edges, a few creases.
+3. A sheet of good thick cream writing paper of a business house, with a plain empty rectangular band across the top framed by a thin printed double border, and a thin printed ornamental border around the whole sheet, nothing inside the band; slightly yellowed edges.
+
+Portrait format sheets. Very high resolution, fine crisp linework.
+```
+
+## 12) Zarflar ve kartpostal
+
+```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: soiled and softened paper, creases, small tears, faded colours. Muted palette: aged cream, yellowish-brown cheap paper, pale buff card, dark brown-black ink. Flat, soft, even lighting with no cast shadows. Plain flat light-grey background. No text, no letters, no numbers, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A long narrow business envelope of good cream paper seen from the front, a thin printed double-line frame along its top-left corner area left completely empty, an empty space for a stamp in the top right corner, clean but slightly bent.
+2. A soldier's letter: a single sheet of cheap yellowish-brown paper folded into a flat triangle, the way soldiers folded letters without an envelope, dirty fingerprints, soft creases, completely blank.
+3. A postcard seen from the back: pale buff card, a thin vertical line dividing it in two halves, three faint empty horizontal lines on the right half, an empty rectangle for a stamp in the top right corner, rounded worn corners, completely blank.
+
+Very high resolution, fine crisp linework.
+```
+
+## 13) Pullar
+
+```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine engraved-looking dark linework with muted, slightly faded colour, like old postage stamps from the Ottoman Empire around 1914. Worn paper with small imperfections: slightly off-centre printing, a little ink smudge. Plain flat light-grey background. No text, no letters, no numbers, no calligraphy, no monogram, no logos, no watermark.
+
+Strict orthographic top-down view, camera directly above looking straight down.
+
+A single sheet of five separate small postage stamps, evenly spaced, none touching, with generous empty space around each one. Each stamp is a small rectangle with perforated, toothed edges and a decorative engraved frame; inside each frame is a small engraved picture, and every place where a stamp would carry words or a value is an empty plain band.
+1. Dull red stamp: a sailing ship and a steamship on calm water.
+2. Dull blue stamp: a city skyline of domes and slender minarets across water.
+3. Olive-green stamp: an old stone fortress with round towers on a shore.
+4. Brown stamp: a crescent and a star inside an oval wreath of leaves.
+5. Violet stamp: a stone bridge over a river with poplar trees.
+
+Very high resolution, fine crisp linework.
+```
+
+## 14) Gazete
+
+```
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Plain flat light-grey background.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
+
+A single sheet with two separate objects, none touching, with generous empty space around each one. Flat, even lighting, no shadows. Absolutely no readable text, no letters, no numbers anywhere: where newspaper print would be, show only faint, even grey textured blocks.
+1. A daily newspaper folded in half and in half again, lying flat, cheap greyish newsprint that has yellowed, soft creases, a torn corner; its visible face shows a wide empty band at the top and narrow columns of faint grey texture below.
+2. One open newspaper page lying flat: cheap greyish-yellow newsprint, a wide completely empty band across the top for the title, below it four narrow columns separated by thin black vertical rules, the columns themselves completely empty and clean, small tears at the edges, a fold line across the middle.
+
+Portrait format for the open page. Very high resolution, fine crisp linework.
+```
+
+## 15) Gazete gravürleri — isteğe bağlı
+
+```
+Small black-and-white woodcut-style engravings for a newspaper printed in 1915, fine crosshatched dark ink lines on plain off-white paper, slightly uneven printing like cheap newsprint. Plain flat light-grey background around them. No text, no letters, no numbers, no captions, no logos, no watermark.
+
+A single sheet of four separate small square engravings, evenly spaced, none touching:
+1. A steamship with a tall funnel leaving a harbour, smoke trailing.
+2. A long queue of women and children in front of a bakery door in a narrow street.
+3. A row of soldiers in long coats walking along a dusty road, seen from a distance.
+4. A skyline of domes and minarets above a harbour with small boats.
+
+Very high resolution, fine crisp linework.
+```
+
+## 16) Talimatname — açık sayfa
+
+```
+Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Plain flat light-grey background.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
+
+A small office regulations booklet lying open flat, showing two facing pages: aged cream paper, a soft shadowless gutter in the middle where the pages meet, a thin printed single-line frame near the edges of each page, the inside of both frames completely empty, faint foxing spots, a narrow black ribbon bookmark lying across the right page, the faded oxblood cloth cover visible as a thin border around the pages. Completely blank: no writing, no text, no letters, no numbers. Flat, even lighting, no shadows.
+
+Landscape format, about 3:2. Very high resolution, fine crisp linework.
+```
+
+### Hangi görsel nereye gider (ikinci tur)
+
+| Görsel | Slot | Not |
+|---|---|---|
+| Kırmızı ciltli defter | `booklet` | Talimatname, masada kapalı |
+| Açık defter | `booklet_open` | Sayfa yazıları, mühür ve damga örnekleri kodla basılır |
+| Yeşil ciltli kitap | `codebook` | Kod kitabı |
+| Delikli kart | `grille` | Kardan ızgarası; delikler saydamlaştırılır |
+| Şifre çarkı | `cipher_disc` | Harfleri kod basar, üst disk döner |
+| Çaydanlık | `kettle` | Buharı kod çizer |
+| İspirto ocağı | `burner` | Alevi kod çizer |
+| Şişe, fırça, kap | `reagent`, `brush`, `dish` | Fırça izi kodla |
+| Kâğıtlar | `paper_ruled`, `paper_coarse`, `paper_letterhead` | |
+| Zarflar | `envelope_business`, `letter_triangle`, `postcard` | |
+| Pullar | `stamp_1` … `stamp_5` | |
+| Gazete | `newspaper_folded`, `newspaper_page` | Yazıları kod basar |
+| Gravürler | `engraving_1` … `engraving_4` | İsteğe bağlı |
