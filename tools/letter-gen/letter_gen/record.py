@@ -98,8 +98,12 @@ def body_text(rec: dict[str, Any]) -> str:
     return " ".join(s["text"] for s in rec.get("segments", []))
 
 
-def readable(rec: dict[str, Any], mark_sensitive: bool = True) -> str:
-    """The letter as a person would read it; sensitive parts in ⟦ ⟧ when asked."""
+def readable(rec: dict[str, Any], mark_sensitive: bool = True, with_package: bool = True) -> str:
+    """The letter as a person would read it; sensitive parts in ⟦ ⟧ when asked.
+
+    The package line is ours, not the writer's: leave it out where it could be taken as
+    part of the letter (the critic sees the package in the request anyway).
+    """
 
     def m(text: str, sensitive: bool) -> str:
         return f"⟦{text}⟧" if mark_sensitive and sensitive else text
@@ -121,6 +125,6 @@ def readable(rec: dict[str, Any], mark_sensitive: bool = True) -> str:
         lines += ["", "Not: " + m(rec["note"]["text"], rec["note"]["sensitive"])]
     if rec.get("envelope"):
         lines += ["", "Zarf: " + m(rec["envelope"]["text"], rec["envelope"]["sensitive"])]
-    if rec.get("package"):
+    if with_package and rec.get("package"):
         lines += ["Paket: " + ", ".join(rec["package"])]
     return "\n".join(lines).strip()

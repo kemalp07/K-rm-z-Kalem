@@ -140,6 +140,7 @@ async def generate(
             "createdAt": record_mod.now(),
             "tokens": reply.usage.to_dict(),
             "attempts": reply.attempts,
+            "finish": reply.finish,
             "lore": p.prompt.lore_used,
             "raw": reply.text,
         }
@@ -147,6 +148,8 @@ async def generate(
             parsed, perr = parse(reply.text), None
         except ParseError as e:
             parsed, perr = None, str(e)
+            if reply.finish and reply.finish != "STOP":
+                perr = f"model durdu ({reply.finish}): {perr}"
         rec = record_mod.build(p.id, p.request, p.text, parsed, meta, parse_error=perr)
         apply_checks(rec, check_context(settings, src, others))
         if rec["status"] != "rejected":

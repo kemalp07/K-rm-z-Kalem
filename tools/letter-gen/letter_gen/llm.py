@@ -35,6 +35,8 @@ class Reply:
     text: str
     usage: Usage
     attempts: int = 1
+    # Why the model stopped ("STOP", "MAX_TOKENS", "SAFETY", …), when known.
+    finish: str = ""
 
 
 class Model(Protocol):
@@ -93,7 +95,11 @@ class GenaiModel:
             output=((u.candidates_token_count or 0) + (u.thoughts_token_count or 0)) if u else 0,
             calls=1,
         )
-        return Reply(text=resp.text or "", usage=usage)
+        finish = ""
+        if resp.candidates and resp.candidates[0].finish_reason:
+            fr = resp.candidates[0].finish_reason
+            finish = getattr(fr, "name", str(fr))
+        return Reply(text=resp.text or "", usage=usage, finish=finish)
 
 
 @dataclass

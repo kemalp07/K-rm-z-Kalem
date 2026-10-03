@@ -11,13 +11,14 @@ macros:
 
 generation:
   temperature: 0.9
-  max_output_tokens: 4096
+  # Includes the model's thinking, which alone can run to a few thousand tokens.
+  max_output_tokens: 16384
   concurrency: 4
   retries: 5          # waits 2, 4, 8, 16, 32 s between attempts
 
 review:
   temperature: 0.2
-  max_output_tokens: 4096
+  max_output_tokens: 8192
   accept_min: 4       # every score >= this → accepted
   reject_max: 2       # any score <= this → rejected; anything else → needs_review
 

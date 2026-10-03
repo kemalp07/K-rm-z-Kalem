@@ -67,7 +67,7 @@ def user_prompt(rec: dict[str, Any]) -> str:
     criteria = "\n".join(f"- {k}: {v}" for k, v in CRITERIA.items())
     return (
         f"İSTEK:\n{rec['meta']['request']}\n\n"
-        f"MEKTUP:\n{readable(rec)}\n\n"
+        f"MEKTUP:\n{readable(rec, with_package=False)}\n\n"
         "Şu ölçütleri 1–5 arası puanla ve her biri için tek cümlelik gerekçe yaz:\n"
         f"{criteria}\n\n"
         "Sonra sorunlu satırları listele: satırın kendisi (mektuptan aynen), sorun ve önerilen düzeltme. "
