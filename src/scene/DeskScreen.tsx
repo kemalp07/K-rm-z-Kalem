@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { Canvas, Circle, Group, Rect, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
+import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { Easing, useDerivedValue, useSharedValue, withSpring, withTiming } from 'react-native-reanimated';
+import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
@@ -22,15 +22,15 @@ import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } fr
 import { InspectionSlip } from '../objects/InspectionSlip';
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
-import { Letter } from '../objects/Letter';
+import { Letter, LetterMarks, LetterStill, letterRegion } from '../objects/Letter';
 import { inspectPoints, layoutLetter, type LaidSegment } from '../objects/letterLayout';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
-import { Stamps, stampSlots } from '../objects/Stamps';
-import { Candle, CANDLE_FLAME, CANDLE_R, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
+import { StampPress, Stamps, stampSlots } from '../objects/Stamps';
+import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
-import { DeskBoard, useDeskTexture } from './DeskBoard';
+import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
 import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd, toLocalFrame } from './hit';
@@ -86,6 +86,13 @@ function smoothPath(pts: Point[]): SkPath {
 
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
+/** Cheap content fingerprint for cache keys. */
+const hash = (parts: string[]) => {
+  let h = 5381;
+  for (const part of parts) for (let i = 0; i < part.length; i++) h = ((h << 5) + h + part.charCodeAt(i)) | 0;
+  return `${parts.length}.${h >>> 0}`;
+};
+
 export function DeskScreen() {
   const { width, height } = useWindowDimensions();
   const fit = useMemo(() => fitWorld(width, height), [width, height]);
@@ -119,7 +126,6 @@ export function DeskScreen() {
   const flicker = useFlicker();
   const candleFlicker = useFlicker(3.7);
   const lampLevel = useSharedValue(state.phase === 'desk' ? 1 : 0.3);
-  const deskTexture = useDeskTexture(fit.scale);
 
   const envX = useSharedValue(0);
   const envY = useSharedValue(0);
@@ -148,6 +154,9 @@ export function DeskScreen() {
   const imprintIn = useSharedValue(0);
   const slipOpacity = useSharedValue(0);
   const helpIn = useSharedValue(0);
+  const eraserRub = useSharedValue(0);
+  const eraserLift = useSharedValue(0);
+  const marksFade = useSharedValue(1);
   const ledgerY = useSharedValue(state.phase === 'ledger' ? 0 : 640);
   const continueOpacity = useSharedValue(state.phase === 'continued' ? 1 : 0);
 
@@ -156,6 +165,10 @@ export function DeskScreen() {
   const [pressing, setPressing] = useState<Decision | null>(null);
   const [imprint, setImprint] = useState<Decision | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
+  // The live stroke layer is costly even when empty, so it exists only mid-stroke.
+  const [drawing, setDrawing] = useState(false);
+  const [warm, setWarm] = useState(false);
+  const warmRef = useRef(false);
   const [slip, setSlip] = useState<{ note: string; x: number; y: number } | null>(null);
 
   // --- mutable interaction state ----------------------------------------------
@@ -168,16 +181,22 @@ export function DeskScreen() {
   const slipShownFor = useRef<string | null>(null);
   const slipHideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Fresh coverage and heat for each letter that lands on the desk.
-  useEffect(() => {
+  const resetCoverage = useCallback(() => {
     coverage.current = new Map(
       (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
+  }, [layout]);
+
+  // Fresh coverage and heat for each letter that lands on the desk.
+  useEffect(() => {
+    resetCoverage();
     heatLocal.current = {};
+    warmRef.current = false;
+    setWarm(false);
     heat.value = {};
     dwell.current = null;
     slipShownFor.current = null;
-  }, [layout, heat]);
+  }, [resetCoverage, heat]);
 
   useEffect(() => {
     loopSfx('flame', 0.12);
@@ -244,6 +263,11 @@ export function DeskScreen() {
         if (changed) {
           heatLocal.current = next;
           heat.value = next;
+          const isWarm = Object.values(next).some((h) => h > 0.004);
+          if (isWarm !== warmRef.current) {
+            warmRef.current = isWarm;
+            setWarm(isWarm);
+          }
         }
       }
       if (points.length) {
@@ -336,6 +360,28 @@ export function DeskScreen() {
     return true;
   };
 
+  /** The eraser rubs the open letter's pen work away; found ink and anomalies stay found. */
+  const erasing = useRef(false);
+  const erase = () => {
+    const g = useGame.getState();
+    const id = g.state.open;
+    if (penInHand.current) penHome();
+    haptic(Haptics.ImpactFeedbackStyle.Light);
+    eraserLift.value = withSequence(withTiming(1, { duration: T.lift, easing: SETTLE }), withTiming(1, { duration: 520 }), withTiming(0, { duration: 360, easing: SETTLE }));
+    const hasMarks = !!id && ((g.strokes[id]?.length ?? 0) > 0 || (g.state.letters[id]?.censored.length ?? 0) > 0);
+    if (!hasMarks || erasing.current) return;
+    erasing.current = true;
+    eraserRub.value = withSequence(withRepeat(withSequence(withTiming(-4, { duration: 80 }), withTiming(4, { duration: 80 })), 4), withTiming(0, { duration: 120, easing: SETTLE }));
+    playSfx('paper', 0.35);
+    marksFade.value = withTiming(0, { duration: 600, easing: GLIDE });
+    setTimeout(() => {
+      useGame.getState().erase(id);
+      resetCoverage();
+      marksFade.value = 1;
+      erasing.current = false;
+    }, 640);
+  };
+
   // The Şube's rules lie open on the desk the very first night.
   useEffect(() => {
     if (state.phase !== 'desk' || seenHelp.includes('rules')) return;
@@ -399,6 +445,13 @@ export function DeskScreen() {
       return;
     }
 
+    const e = LAYOUT.eraser;
+    if (dist(p, { x: e.x + e.w / 2, y: e.y + e.h / 2 }) < 28) {
+      if (introduce('pen')) return;
+      erase();
+      return;
+    }
+
     const slipHit = HELP_IDS.find((id) => inRect(p, LAYOUT.help[id], 4));
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
@@ -408,6 +461,7 @@ export function DeskScreen() {
     if (s.open && layout) {
       if (penInHand.current && inRect(p, LAYOUT.letter)) {
         drag.current = { kind: 'pen-stroke', last: p, points: [p] };
+        setDrawing(true);
         penX.value = p.x;
         penY.value = p.y;
         playSfx('pen', 0.5);
@@ -569,6 +623,7 @@ export function DeskScreen() {
         const id = g.state.open;
         if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
         livePath.value = Skia.Path.Make();
+        setDrawing(false);
         break;
       }
       case 'stamp':
@@ -628,6 +683,13 @@ export function DeskScreen() {
   const draggedLetter = dragId ? getLetter(dragId) : undefined;
   const nextDay = Math.min(state.day + 1, LAST_AUTHORED_DAY + 1);
 
+  // The open letter's paper and text, and separately its pen work, likewise rasterised.
+  const region = layout ? letterRegion(layout.paper) : LAYOUT.letter;
+  const stillKey = openLetter ? `still:${openLetter.id}` : '';
+  const letterStill = useBaked(openLetter && layout ? <FontsBridge fonts={fonts}><LetterStill letter={openLetter} layout={layout} /></FontsBridge> : null, region, fit.scale, stillKey);
+  const marksKey = openLetter && progress ? `marks:${openLetter.id}:${progress.censored.join(',')}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
+  const letterMarks = useBaked(layout && progress ? <LetterMarks layout={layout} censored={progress.censored} strokes={strokes} /> : null, region, fit.scale, marksKey);
+
   const letterNode =
     openLetter && layout && progress ? (
       <Fade transform={letterTransform} opacity={letterOpacity}>
@@ -637,22 +699,52 @@ export function DeskScreen() {
           censored={progress.censored}
           revealed={progress.revealed}
           strokes={strokes}
-          livePath={livePath}
+          livePath={drawing ? livePath : undefined}
           heat={heat}
+          warm={warm}
           imprint={imprint ?? undefined}
           imprintIn={imprintIn}
+          marksFade={marksFade}
+          still={letterStill?.key === stillKey ? <BakedImage baked={letterStill} /> : undefined}
+          marks={letterMarks?.key === marksKey ? <BakedImage baked={letterMarks} opacity={marksFade} /> : undefined}
         />
       </Fade>
     ) : null;
 
-  const props = (
-    <>
+  // Everything that sits still, rasterised once per change (see useBakedLayer).
+  const stampsEnabled = !!openLetter && state.phase === 'desk';
+  const showSlips = state.phase === 'desk';
+  const deskKey = [day.day, stackIds.join(','), dragId, openLetter?.id, stampsEnabled, showSlips, seenHelp.join(',')].join('|');
+  const desk_ = useBaked(
+    <FontsBridge fonts={fonts}>
+      <DeskSurface />
       <NightWindow />
       <CalendarLeaf calendar={day.calendar} />
       <MoneyNote purse={day.purse} />
       <BrassPlate rank={desk.rank} />
       <LockedTray />
-    </>
+      {/* Envelopes, bottom of the pile first */}
+      {[...stackIds]
+        .map((id, i) => ({ id, i }))
+        .reverse()
+        .filter(({ id }) => id !== dragId)
+        .map(({ id, i }) => {
+          const l = getLetter(id)!;
+          const pose = stackPose(l, i, LAYOUT.stack);
+          return (
+            <Group key={id} transform={[{ translateX: pose.x }, { translateY: pose.y }, { rotate: pose.angle }]}>
+              <EnvelopeBody letter={l} />
+              <EnvelopeAddress letter={l} />
+            </Group>
+          );
+        })}
+      {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
+      <Stamps enabled={stampsEnabled} pressing={null} progress={stampProgress} />
+      {showSlips && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+    </FontsBridge>,
+    DESK_REGION,
+    fit.scale,
+    deskKey,
   );
 
   return (
@@ -660,29 +752,9 @@ export function DeskScreen() {
       <Canvas style={{ flex: 1, backgroundColor: C.deskDark }}>
         <FontsBridge fonts={fonts}>
           <Group transform={boardTransform}>
-            <DeskBoard texture={deskTexture} />
-            {props}
-
-            {/* Envelopes, bottom of the pile first */}
-            {[...stackIds]
-              .map((id, i) => ({ id, i }))
-              .reverse()
-              .filter(({ id }) => id !== dragId)
-              .map(({ id, i }) => {
-                const l = getLetter(id)!;
-                const pose = stackPose(l, i, LAYOUT.stack);
-                return (
-                  <Group key={id} transform={[{ translateX: pose.x }, { translateY: pose.y }, { rotate: pose.angle }]}>
-                    <EnvelopeBody letter={l} />
-                    <EnvelopeAddress letter={l} />
-                  </Group>
-                );
-              })}
-
-            {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
+            <BakedImage baked={desk_} />
             {letterNode}
-            <Stamps enabled={!!openLetter && state.phase === 'desk'} pressing={pressing} progress={stampProgress} />
-            {state.phase === 'desk' && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+            <StampPress pressing={pressing} progress={stampProgress} />
 
             {draggedLetter && (
               <Group transform={envTransform}>
@@ -695,13 +767,12 @@ export function DeskScreen() {
             {/* What the glass sees: the same desk, larger */}
             <Group clip={lensClip}>
               <Group transform={lensTransform}>
-                <Rect x={0} y={0} width={WORLD.w} height={WORLD.h} color={C.deskMid} />
-                <DeskBoard texture={deskTexture} />
-                {props}
+                <BakedImage baked={desk_} />
                 {letterNode}
               </Group>
               <Circle cx={magX} cy={magY} r={LENS_R} color="rgba(255,230,190,0.04)" />
             </Group>
+            {state.phase === 'desk' && <Eraser rub={eraserRub} lift={eraserLift} />}
             <MagnifierFrame x={magX} y={magY} lift={magLift} />
             <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />

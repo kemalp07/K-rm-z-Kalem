@@ -10,7 +10,11 @@ export default function RootLayout() {
 
   useEffect(() => {
     ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE).catch(() => {});
-    prepareSkia().then(() => setReady(true));
+    prepareSkia()
+      // Skia's module may only be evaluated once CanvasKit is loaded (web), hence the late import.
+      .then(() => import('../src/art/preload'))
+      .then((m) => m.preloadArt())
+      .then(() => setReady(true));
   }, []);
 
   return (

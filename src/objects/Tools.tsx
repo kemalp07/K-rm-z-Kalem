@@ -3,7 +3,8 @@ import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { PlacedArt, placed } from '../art/ArtSlot';
 import { teardrop } from '../scene/Lamp';
 import { C } from '../scene/palette';
-import { blob } from '../scene/rough';
+import { blob, roughRect } from '../scene/rough';
+import { LAYOUT } from '../scene/world';
 
 export const PEN_LENGTH = 168;
 export const CANDLE_R = 30;
@@ -89,7 +90,7 @@ export function RedPen({ x, y, angle, lift }: Pose & { angle: SharedValue<number
   const body = { y: -L + 3, h: L - cone - 3 };
   return (
     <Group transform={transform}>
-      <PlacedArt slot="pen" shadow={{ transform: shadow, opacity: shadowOpacity, blur: shadowBlur }}>
+      <PlacedArt slot="pen" shadow={{ transform: shadow, opacity: shadowOpacity, restBlur: 3.5 }}>
         <Group>
           <Group transform={shadow} opacity={shadowOpacity}>
             <RoundedRect x={-W + 1} y={-L + 2} width={W * 2 - 2} height={L - 4} r={3} color="#000">
@@ -171,7 +172,7 @@ export function Candle({ x, y, flicker, lift }: Pose & { flicker: SharedValue<nu
   const dotR = useDerivedValue(() => 4.2 * flicker.value);
   return (
     <Group transform={transform}>
-      <PlacedArt slot="candle" shadow={{ transform: shadow, opacity: 0.55, blur: 5 }}>
+      <PlacedArt slot="candle" shadow={{ transform: shadow, opacity: 0.55, restBlur: 5 }}>
         <Group>
           {/* Shadow of saucer and stick */}
           <Group transform={shadow} opacity={0.6}>
@@ -281,7 +282,7 @@ export function MagnifierFrame({ x, y, lift }: Pose & { lift: SharedValue<number
   const shadowBlur = useDerivedValue(() => 4 + lift.value * 5);
   return (
     <Group transform={transform}>
-      <PlacedArt slot="magnifier" shadow={{ transform: shadow, opacity: 0.5, blur: shadowBlur }}>
+      <PlacedArt slot="magnifier" shadow={{ transform: shadow, opacity: 0.5, restBlur: 5 }}>
         <Group>
           <Group transform={shadow} opacity={0.5}>
             <Circle cx={0} cy={0} r={R + 3} style="stroke" strokeWidth={8} color="#000">
@@ -331,6 +332,61 @@ export function MagnifierFrame({ x, y, lift }: Pose & { lift: SharedValue<number
       <Circle cx={R * 0.42} cy={-R * 0.5} r={2} color="rgba(255,252,240,0.6)">
         <BlurMask blur={1} style="normal" />
       </Circle>
+    </Group>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Rubber eraser
+
+const ERASER = (() => {
+  const { w, h } = LAYOUT.eraser;
+  const body = roughRect({ x: -w / 2, y: -h / 2, w, h }, 'eraser', 0.5);
+  // One end worn round and grey from use, with the red it has taken off letters.
+  const worn = blob(-w / 2 + 6, 0, h / 2 + 1, 'eraser-worn', 0.12, 12);
+  const smudge = blob(-w / 2 + 7, 1, h / 3, 'eraser-red', 0.35, 10);
+  const crumbs = [0, 1, 2, 3].map((i) => blob(-w / 2 - 9 - i * 5, -5 + ((i * 7) % 11), 1.3 + (i % 2) * 0.5, `crumb${i}`, 0.4, 7));
+  return { w, h, body, worn, smudge, crumbs };
+})();
+
+/** Lies beside the pencil; `rub` slides it back and forth while it works. */
+export function Eraser({ rub, lift }: { rub: SharedValue<number>; lift: SharedValue<number> }) {
+  const { x, y, w, h, rot } = LAYOUT.eraser;
+  const transform = useDerivedValue<Transforms3d>(() => [
+    { translateX: x + w / 2 },
+    { translateY: y + h / 2 },
+    { rotate: rot },
+    { translateX: rub.value },
+    { scale: 1 + lift.value * 0.04 },
+  ]);
+  const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -2 - lift.value * 4 }, { translateY: 3 + lift.value * 6 }]);
+  return (
+    <Group>
+      <Group transform={[{ translateX: x + w / 2 }, { translateY: y + h / 2 }, { rotate: rot }]}>
+        {ERASER.crumbs.map((c, i) => (
+          <Path key={i} path={c} color="rgba(150,110,100,0.55)" />
+        ))}
+      </Group>
+      <Group transform={transform}>
+        <Group transform={shadow} opacity={0.55}>
+          <Path path={ERASER.body} color="#000">
+            <BlurMask blur={3} style="normal" />
+          </Path>
+        </Group>
+        <Path path={ERASER.body}>
+          <LinearGradient start={vec(0, -h / 2)} end={vec(0, h / 2)} colors={['#c9a59a', '#b38a7f', '#9a7268']} />
+        </Path>
+        <Group clip={ERASER.body}>
+          <Path path={ERASER.worn} color="rgba(90,70,64,0.35)">
+            <BlurMask blur={2} style="normal" />
+          </Path>
+          <Path path={ERASER.smudge} color="rgba(163,36,27,0.35)">
+            <BlurMask blur={1.5} style="normal" />
+          </Path>
+        </Group>
+        <Path path={ERASER.body} style="stroke" strokeWidth={0.8} color="rgba(60,35,30,0.55)" />
+        <Rect x={-w / 2 + 3} y={-h / 2 + 1.5} width={w - 8} height={1.2} color="rgba(255,235,225,0.25)" />
+      </Group>
     </Group>
   );
 }

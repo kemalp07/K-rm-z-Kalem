@@ -50,6 +50,12 @@ export function Stamps({ enabled, pressing, progress }: Props) {
   );
 }
 
+/** Only the stamp coming down; the cards themselves live in the desk's baked layer. */
+export function StampPress({ pressing, progress }: { pressing: Decision | null; progress: SharedValue<number> }) {
+  if (!pressing) return null;
+  return <StampKnob rect={stampSlots().find((s) => s.d === pressing)!.rect} progress={progress} />;
+}
+
 const STAMP_ART = placed('stamp');
 
 /** The wooden stamp, lifted off the card and coming down as the finger holds. */
@@ -68,10 +74,9 @@ function StampArt({ cx, cy, progress }: { cx: number; cy: number; progress: Shar
     { scale: 1.28 - progress.value * 0.28 },
   ]);
   const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -6 - (1 - progress.value) * 10 }, { translateY: 4 + (1 - progress.value) * 18 }]);
-  const blur = useDerivedValue(() => 2 + (1 - progress.value) * 6);
   return (
     <Group transform={transform}>
-      <PlacedArt slot="stamp" shadow={{ transform: shadow, opacity: 0.55, blur }}>
+      <PlacedArt slot="stamp" shadow={{ transform: shadow, opacity: 0.55, restBlur: 4 }}>
         {null}
       </PlacedArt>
     </Group>

@@ -3,7 +3,7 @@ import type { Day, Letter } from '../../content/types';
 import { matches } from '../conditions';
 import { resolveSegments } from '../variants';
 import { pickOutcome } from '../outcomes';
-import { advancePhase, addMark, decide, flagsOf, openEnvelope, startDay } from '../dayFlow';
+import { advancePhase, addMark, clearCensor, decide, flagsOf, openEnvelope, startDay } from '../dayFlow';
 import { flagsForLetter, emptyProgress } from '../flags';
 
 const day = day01 as Day;
@@ -119,5 +119,18 @@ describe('day flow', () => {
     expect(addMark(s, 'd1_mehmet', 'censored', 's1')).toBe(s);
     expect(flagsOf(s).has('d1_mehmet:held')).toBe(true);
     expect(flagsOf(s).has('d1_mehmet:censored:s3')).toBe(true);
+  });
+});
+
+describe('eraser', () => {
+  test('clears censoring but keeps what was found, and never touches a decided letter', () => {
+    let s = openEnvelope(startDay(day), 'd1_mehmet');
+    s = addMark(s, 'd1_mehmet', 'censored', 's3');
+    s = addMark(s, 'd1_mehmet', 'revealed', 's4');
+    const erased = clearCensor(s, 'd1_mehmet');
+    expect(erased.letters.d1_mehmet!.censored).toEqual([]);
+    expect(erased.letters.d1_mehmet!.revealed).toEqual(['s4']);
+    const decided = decide(s, 'd1_mehmet', 'delivered');
+    expect(clearCensor(decided, 'd1_mehmet')).toBe(decided);
   });
 });

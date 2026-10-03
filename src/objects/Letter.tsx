@@ -1,4 +1,4 @@
-import { memo, useMemo } from 'react';
+import { memo, useMemo, type ReactNode } from 'react';
 import {
   Blur,
   BlendColor,
@@ -42,8 +42,16 @@ export interface LetterProps {
   censored: string[];
   revealed: string[];
   strokes: SkPath[];
-  livePath: SharedValue<SkPath>;
+  /** The stroke being drawn right now, if any. */
+  livePath?: SharedValue<SkPath>;
+  /** Pen work fading under the eraser. */
+  marksFade?: SharedValue<number>;
+  /** Pre-rendered stand-ins for LetterStill / LetterMarks, when the screen has them. */
+  still?: ReactNode;
+  marks?: ReactNode;
   heat: SharedValue<Record<string, number>>;
+  /** Some hidden ink is being heated right now. */
+  warm?: boolean;
   imprint?: Decision;
   /** 0→1 as the stamp's ink lands. */
   imprintIn?: SharedValue<number>;
@@ -57,7 +65,7 @@ function Block({ laid }: { laid: Laid }) {
   );
 }
 
-function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedValue<Record<string, number>>; wasRead: boolean }) {
+function HiddenInk({ laid, heat, wasRead, warm }: { laid: LaidSegment; heat: SharedValue<Record<string, number>>; wasRead: boolean; warm: boolean }) {
   const id = laid.seg.id;
   // Mirrors logic/reveal displayedHeat (worklets can't call plain JS). A near-invisible
   // trace stays even when cold: the paper looks very faintly scratched there.
@@ -71,16 +79,19 @@ function HiddenInk({ laid, heat, wasRead }: { laid: LaidSegment; heat: SharedVal
   });
   return (
     <Group transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
-      <Group
-        layer={
-          <Paint opacity={glow}>
-            <BlendColor color={C.hiddenGlow} mode="srcIn" />
-            <Blur blur={4} />
-          </Paint>
-        }
-      >
-        <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
-      </Group>
+      {/* The blurred glow layer is expensive; it is only there while a flame is near. */}
+      {warm && (
+        <Group
+          layer={
+            <Paint opacity={glow}>
+              <BlendColor color={C.hiddenGlow} mode="srcIn" />
+              <Blur blur={4} />
+            </Paint>
+          }
+        >
+          <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
+        </Group>
+      )}
       <Fade opacity={ink}>
         <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
       </Fade>
@@ -363,31 +374,53 @@ export function CensorStroke({ path, width = 9 }: { path: SkPath | SharedValue<S
   );
 }
 
-function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, heat, imprint, imprintIn }: LetterProps) {
-  const p = layout.paper;
+/** Everything on the sheet that only changes when a new letter is opened. */
+export function LetterStill({ letter, layout }: { letter: LetterData; layout: LetterLayout }) {
   return (
     <Group>
-      <Paper letter={letter} rect={p} />
+      <Paper letter={letter} rect={layout.paper} />
       {(letter.marks ?? []).map((m, i) => (
         <Mark key={i} mark={m} layout={layout} seed={`${letter.id}-mark${i}`} />
       ))}
       {layout.letterhead && <Block laid={layout.letterhead} />}
       {layout.date && <Block laid={layout.date} />}
       <Block laid={layout.heading} />
-      {layout.segments.map((s) =>
-        s.seg.kind === 'hiddenInk' ? (
-          <HiddenInk key={s.seg.id} laid={s} heat={heat} wasRead={revealed.includes(s.seg.id)} />
-        ) : (
-          <Block key={s.seg.id} laid={s} />
-        ),
-      )}
+      {layout.segments.map((s) => (s.seg.kind === 'hiddenInk' ? null : <Block key={s.seg.id} laid={s} />))}
       {layout.signature && <Block laid={layout.signature} />}
       {layout.seal && <Seal letter={letter} at={layout.seal} />}
+    </Group>
+  );
+}
+
+/** The red pencil's finished work: bars over censored lines and the strokes themselves. */
+export function LetterMarks({ layout, censored, strokes }: { layout: LetterLayout; censored: string[]; strokes: SkPath[] }) {
+  return (
+    <Group>
       <CensorBars segments={layout.segments} censored={censored} />
       {strokes.map((s, i) => (
         <CensorStroke key={i} path={s} />
       ))}
-      <CensorStroke path={livePath} />
+    </Group>
+  );
+}
+
+/** Area a letter can paint on, shadow included — what gets rasterised. */
+export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
+
+function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
+  const p = layout.paper;
+  return (
+    <Group>
+      {still ?? <LetterStill letter={letter} layout={layout} />}
+      {layout.segments.map((s) =>
+        s.seg.kind === 'hiddenInk' ? <HiddenInk key={s.seg.id} laid={s} heat={heat} wasRead={revealed.includes(s.seg.id)} warm={!!warm} /> : null,
+      )}
+      {marks ?? (
+        <Fade opacity={marksFade ?? 1}>
+          <LetterMarks layout={layout} censored={censored} strokes={strokes} />
+        </Fade>
+      )}
+      {livePath && <CensorStroke path={livePath} />}
       {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} paper={p} imprintIn={imprintIn} />}
     </Group>
   );

@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { Circle, FontWeight, Group, Path, RadialGradient, Shadow, vec } from '@shopify/react-native-skia';
 import { ArtSlot } from '../art/ArtSlot';
 import type { Day } from '../content/types';
-import { C } from '../scene/palette';
 import { Para } from '../scene/Para';
 import { roughRect } from '../scene/rough';
 import { LAYOUT } from '../scene/world';

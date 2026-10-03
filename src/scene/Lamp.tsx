@@ -113,7 +113,7 @@ export function Lamp({ flicker, level }: Props) {
     <Group>
       {LAMP_ART ? (
         <Group transform={[{ translateX: cx }, { translateY: baseY }]}>
-          <PlacedArt slot="lamp" shadow={{ transform: [{ translateX: -9 }, { translateY: 11 }], opacity: 0.6, blur: 8 }}>
+          <PlacedArt slot="lamp" shadow={{ transform: [{ translateX: -9 }, { translateY: 11 }], opacity: 0.6, restBlur: 8 }}>
             {null}
           </PlacedArt>
         </Group>

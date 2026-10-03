@@ -3,7 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { getDay } from '../content/loader';
 import type { Decision, HelpId } from '../content/types';
-import { addMark, advancePhase, decide, openEnvelope, startDay, type DayState } from '../logic/dayFlow';
+import { addMark, advancePhase, clearCensor, decide, openEnvelope, startDay, type DayState } from '../logic/dayFlow';
 
 interface GameStore {
   state: DayState;
@@ -18,6 +18,8 @@ interface GameStore {
   reveal: (letterId: string, segId: string) => void;
   inspect: (letterId: string, inspId: string) => void;
   addStroke: (letterId: string, svg: string) => void;
+  /** Rub out the pen work on a letter still on the desk. */
+  erase: (letterId: string) => void;
   stamp: (letterId: string, d: Decision) => void;
   advance: () => void;
   restart: () => void;
@@ -44,6 +46,8 @@ export const useGame = create<GameStore>()(
       inspect: (id, insp) => set((g) => ({ state: addMark(g.state, id, 'inspected', insp) })),
       addStroke: (id, svg) =>
         set((g) => ({ strokes: { ...g.strokes, [id]: [...(g.strokes[id] ?? []), svg] } })),
+      erase: (id) =>
+        set((g) => (g.state.letters[id]?.decision ? g : { state: clearCensor(g.state, id), strokes: { ...g.strokes, [id]: [] } })),
       stamp: (id, d) => set((g) => ({ state: decide(g.state, id, d) })),
       advance: () => set((g) => ({ state: advancePhase(g.state) })),
       restart: () => set({ state: firstDay(), strokes: {} }),

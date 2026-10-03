@@ -45,6 +45,13 @@ export function addMark(s: DayState, id: string, key: ListKey, value: string): D
   return { ...s, letters: { ...s.letters, [id]: { ...p, [key]: [...p[key], value] } } };
 }
 
+/** The eraser: the letter's red-pencil censoring goes, what was found (ink, anomalies) stays found. */
+export function clearCensor(s: DayState, id: string): DayState {
+  const p = s.letters[id];
+  if (!p || p.decision || p.censored.length === 0) return s;
+  return { ...s, letters: { ...s.letters, [id]: { ...p, censored: [] } } };
+}
+
 export function decide(s: DayState, id: string, decision: Decision): DayState {
   const p = s.letters[id];
   if (s.open !== id || !p || p.decision) return s;
