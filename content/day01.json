@@ -24,23 +24,23 @@
       "direction": "cepheden",
       "kind": "mektup",
       "hand": "hurried",
-      "dateLine": "1 Mayıs 331",
+      "dateLine": "Ordu-yı Hümayun, 1 Mayıs 331",
       "heading": "Muhterem validem,",
       "segments": [
         {
           "id": "s1",
           "kind": "normal",
-          "text": "Gönderdiğiniz çorapları aldım. Ayaklarım ilk defa kuru, Allah razı olsun."
+          "text": "Evvela ellerinizden öperim. Yolladığınız yün çorapları aldım, ayaklarım ilk defa kuru, Allah razı olsun."
         },
         {
           "id": "s2",
           "kind": "normal",
-          "text": "Burada havalar ısındı, sinek çok. Biz iyiyiz, merak etmeyin."
+          "text": "Burada havalar ısındı, sinek pek çok. Biz eyiyiz, merak etmeyesiniz."
         },
         {
           "id": "s3",
           "kind": "sensitive",
-          "text": "Bizi yine kuzeydeki sırta, ikinci hatta aldılar."
+          "text": "Bizi yine şimal tarafındaki sırta, ikinci hatta aldılar."
         },
         {
           "id": "s4",
@@ -51,12 +51,12 @@
         {
           "id": "s5",
           "kind": "normal",
-          "text": "Babama selam söyleyin. Bağı bu sene kim budayacak, merak ederim."
+          "text": "Pederime selam söyleyin. Bağı bu sene kim budayacak, aklım oradadır."
         },
         {
           "id": "s6",
           "kind": "normal",
-          "text": "Ayşe'nin gözlerinden öperim. Duanızı eksik etmeyin."
+          "text": "Ayşe'nin gözlerinden öperim. Duanızı eksik etmeyiniz."
         }
       ],
       "signature": "Oğlunuz Mehmet",
@@ -145,27 +145,27 @@
       "kind": "mektup",
       "hand": "elegant",
       "dateLine": "Pazar akşamı",
-      "heading": "Nuri'ciğim,",
+      "heading": "Aziz Nuri'm,",
       "segments": [
         {
           "id": "s1",
           "kind": "normal",
-          "text": "Kalbim, bu satırları yazarken pencereden körfeze bakıyorum."
+          "text": "Kalbim hep sizdedir; bu satırları yazarken pencereden körfeze bakıyorum."
         },
         {
           "id": "s2",
           "kind": "normal",
-          "text": "Akşamları annenle oturup senin için dua ediyoruz."
+          "text": "Akşamları valideniz ile oturup sizin için dua ediyoruz."
         },
         {
           "id": "s3",
           "kind": "normal",
-          "text": "Yasemin bu yıl erken açtı; bir dalını kurutup zarfa koydum."
+          "text": "Yasemin bu sene erkenden açtı; bir dalını kurutup zarfın içine koydum."
         },
         {
           "id": "s4",
           "kind": "normal",
-          "text": "Işıklar söndükten sonra mektuplarını yeniden okuyorum."
+          "text": "Işıklar söndükten sonra mektuplarınızı yeniden okuyorum."
         },
         {
           "id": "s5",
@@ -175,7 +175,7 @@
         {
           "id": "s6",
           "kind": "normal",
-          "text": "Seni bekliyorum. Her gün, her akşam."
+          "text": "Sizi bekliyorum. Her gün, her akşam."
         }
       ],
       "signature": "Saadet",
@@ -245,18 +245,18 @@
       "direction": "cepheden",
       "kind": "mektup",
       "hand": "dictated",
-      "dateLine": "2 Mayıs 331",
-      "heading": "Emine,",
+      "dateLine": "Ordu-yı Hümayun, 2 Mayıs 331",
+      "heading": "Refikam Emine'ye,",
       "segments": [
         {
           "id": "s1",
           "kind": "normal",
-          "text": "Ben Rıza. Bu mektubu bölükten Hasan yazıyor, ben söylüyorum."
+          "text": "Bu mektubu bölükten Hasan yazıyor, ben söylüyorum. Evvela selam eder, çocukların gözlerinden öperim."
         },
         {
           "id": "s2",
           "kind": "normal",
-          "text": "Sağım, merak etme. Çocukların başını benim yerime okşa."
+          "text": "Ben sağım, merak etme. Çocukların başını benim yerime okşa."
         },
         {
           "id": "s3",
@@ -266,7 +266,7 @@
         {
           "id": "s4",
           "kind": "normal",
-          "text": "Kerim Ağa'ya söyle, bahçenin duvarı yıkılmadan bir el atsın."
+          "text": "Kerim Ağa'ya söyle, bahçe duvarı yıkılmadan bir el atsın."
         },
         {
           "id": "s5",
@@ -355,22 +355,22 @@
         {
           "id": "s1",
           "kind": "normal",
-          "text": "Çorapların ikinci çiftini ördüm, dutları da avludaki ağaçtan topladım."
+          "text": "Çorapların ikinci çiftini de ördüm, dutları avludaki ağaçtan topladım, beraber yolladım."
         },
         {
           "id": "s2",
           "kind": "sensitive",
-          "text": "Baban geçen cuma vefat etti. Sabah namazından sonra uzandı, uyanmadı."
+          "text": "Baban geçen cuma vefat etti. Sabah namazından sonra uzandı, bir daha uyanmadı."
         },
         {
           "id": "s3",
           "kind": "normal",
-          "text": "Bağı bu sene komşu Osman budayacak, sen aklını yorma."
+          "text": "Bağı bu sene komşumuz Osman budayacak, sen aklını yorma."
         },
         {
           "id": "s4",
           "kind": "normal",
-          "text": "Ayşe büyüdü, her akşam seni soruyor. Soğuk sudan uzak dur."
+          "text": "Ayşe büyüdü, her akşam seni soruyor. Soğuk sudan sakın."
         }
       ],
       "signature": "Anan Hatice",
@@ -435,7 +435,7 @@
       "hand": "clerical",
       "letterhead": "ŞARK TİCARET KUMPANYASI · GALATA",
       "dateLine": "3 Mayıs 1331",
-      "heading": "Halil Efendi,",
+      "heading": "Muhterem Efendim,",
       "segments": [
         {
           "id": "s1",
@@ -445,17 +445,17 @@
         {
           "id": "s2",
           "kind": "normal",
-          "text": "Bedeli evvelce konuşulduğu gibidir; teslimat malum yerde yapılacaktır."
+          "text": "Bedeli evvelce kararlaştırıldığı vechiledir; teslimat malum mahalde icra olunacaktır."
         },
         {
           "id": "s3",
           "kind": "normal",
-          "text": "Mallar pazartesi akşamı yola çıkacaktır."
+          "text": "Mallar pazartesi akşamı yola çıkarılacaktır."
         },
         {
           "id": "s4",
           "kind": "normal",
-          "text": "Hürmetlerimizle."
+          "text": "Hürmetlerimizle efendim."
         }
       ],
       "seal": {
