@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
@@ -87,6 +87,9 @@ function smoothPath(pts: Point[]): SkPath {
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
 /** Cheap content fingerprint for cache keys. */
+const PILE_REGION = { x: LAYOUT.stack.x - 50, y: LAYOUT.stack.y - 50, w: LAYOUT.stack.w + 100, h: LAYOUT.stack.h + 100 };
+const STAMPS_REGION = { x: LAYOUT.stamps.x - 24, y: LAYOUT.stamps.y - 20, w: LAYOUT.stamps.w + 48, h: LAYOUT.stamps.h + 40 };
+
 const hash = (parts: string[]) => {
   let h = 5381;
   for (const part of parts) for (let i = 0; i < part.length; i++) h = ((h << 5) + h + part.charCodeAt(i)) | 0;
@@ -168,6 +171,8 @@ export function DeskScreen() {
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
   const [warm, setWarm] = useState(false);
+  // While the eraser works the marks fade, which needs a layer; otherwise they draw plain.
+  const [rubbing, setRubbing] = useState(false);
   const warmRef = useRef(false);
   const [slip, setSlip] = useState<{ note: string; x: number; y: number } | null>(null);
 
@@ -371,6 +376,7 @@ export function DeskScreen() {
     const hasMarks = !!id && ((g.strokes[id]?.length ?? 0) > 0 || (g.state.letters[id]?.censored.length ?? 0) > 0);
     if (!hasMarks || erasing.current) return;
     erasing.current = true;
+    setRubbing(true);
     eraserRub.value = withSequence(withRepeat(withSequence(withTiming(-4, { duration: 80 }), withTiming(4, { duration: 80 })), 4), withTiming(0, { duration: 120, easing: SETTLE }));
     playSfx('paper', 0.35);
     marksFade.value = withTiming(0, { duration: 600, easing: GLIDE });
@@ -379,6 +385,7 @@ export function DeskScreen() {
       resetCoverage();
       marksFade.value = 1;
       erasing.current = false;
+      setRubbing(false);
     }, 640);
   };
 
@@ -590,7 +597,8 @@ export function DeskScreen() {
       case 'envelope': {
         const l = getLetter(d.id)!;
         const { w, h } = envelopeSize(l);
-        const center = { x: envX.value + w / 2, y: envY.value + h / 2 };
+        // Where the finger put it, not where the trailing animation has got to yet.
+        const center = { x: p.x + d.ox + w / 2, y: p.y + d.oy + h / 2 };
         if (inRect(center, LAYOUT.dropZone) && !g.state.open) {
           g.open(d.id);
           setDragId(null);
@@ -688,11 +696,25 @@ export function DeskScreen() {
   const stillKey = openLetter ? `still:${openLetter.id}` : '';
   const letterStill = useBaked(openLetter && layout ? <FontsBridge fonts={fonts}><LetterStill letter={openLetter} layout={layout} /></FontsBridge> : null, region, fit.scale, stillKey);
   const marksKey = openLetter && progress ? `marks:${openLetter.id}:${progress.censored.join(',')}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
-  const letterMarks = useBaked(layout && progress ? <LetterMarks layout={layout} censored={progress.censored} strokes={strokes} /> : null, region, fit.scale, marksKey);
+  const hasMarks = !!progress && (progress.censored.length > 0 || strokes.length > 0);
+  const letterMarks = useBaked(layout && progress && hasMarks ? <LetterMarks layout={layout} censored={progress.censored} strokes={strokes} /> : null, region, fit.scale, marksKey);
+
+  let marksNode: ReactNode = undefined; // undefined: draw the marks live until recorded
+  if (!hasMarks) marksNode = null;
+  else if (letterMarks?.key === marksKey) {
+    const recorded = <BakedImage baked={letterMarks} />;
+    marksNode = rubbing ? (
+      <Fade opacity={marksFade} bounds={region}>
+        {recorded}
+      </Fade>
+    ) : (
+      recorded
+    );
+  }
 
   const letterNode =
     openLetter && layout && progress ? (
-      <Fade transform={letterTransform} opacity={letterOpacity}>
+      <Fade transform={letterTransform} opacity={letterOpacity} bounds={region}>
         <Letter
           letter={openLetter}
           layout={layout}
@@ -706,7 +728,7 @@ export function DeskScreen() {
           imprintIn={imprintIn}
           marksFade={marksFade}
           still={letterStill?.key === stillKey ? <BakedImage baked={letterStill} /> : undefined}
-          marks={letterMarks?.key === marksKey ? <BakedImage baked={letterMarks} opacity={marksFade} /> : undefined}
+          marks={marksNode}
         />
       </Fade>
     ) : null;
@@ -714,7 +736,8 @@ export function DeskScreen() {
   // Everything that sits still, rasterised once per change (see useBakedLayer).
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
-  const deskKey = [day.day, stackIds.join(','), dragId, openLetter?.id, stampsEnabled, showSlips, seenHelp.join(',')].join('|');
+  // Split by how often each part changes, so opening a letter redoes only small images.
+  const deskKey = [day.day, showSlips, seenHelp.join(',')].join('|');
   const desk_ = useBaked(
     <FontsBridge fonts={fonts}>
       <DeskSurface />
@@ -723,6 +746,14 @@ export function DeskScreen() {
       <MoneyNote purse={day.purse} />
       <BrassPlate rank={desk.rank} />
       <LockedTray />
+      {showSlips && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+    </FontsBridge>,
+    DESK_REGION,
+    fit.scale,
+    deskKey,
+  );
+  const pile = useBaked(
+    <FontsBridge fonts={fonts}>
       {/* Envelopes, bottom of the pile first */}
       {[...stackIds]
         .map((id, i) => ({ id, i }))
@@ -738,13 +769,18 @@ export function DeskScreen() {
             </Group>
           );
         })}
-      {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
-      <Stamps enabled={stampsEnabled} pressing={null} progress={stampProgress} />
-      {showSlips && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
     </FontsBridge>,
-    DESK_REGION,
+    PILE_REGION,
     fit.scale,
-    deskKey,
+    `pile:${stackIds.join(',')}|${dragId}`,
+  );
+  const stampCards = useBaked(
+    <FontsBridge fonts={fonts}>
+      <Stamps enabled={stampsEnabled} pressing={null} progress={stampProgress} />
+    </FontsBridge>,
+    STAMPS_REGION,
+    fit.scale,
+    `stamps:${stampsEnabled}`,
   );
 
   return (
@@ -753,6 +789,9 @@ export function DeskScreen() {
         <FontsBridge fonts={fonts}>
           <Group transform={boardTransform}>
             <BakedImage baked={desk_} />
+            <BakedImage baked={pile} />
+            {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
+            <BakedImage baked={stampCards} />
             {letterNode}
             <StampPress pressing={pressing} progress={stampProgress} />
 
@@ -768,6 +807,8 @@ export function DeskScreen() {
             <Group clip={lensClip}>
               <Group transform={lensTransform}>
                 <BakedImage baked={desk_} />
+                <BakedImage baked={pile} />
+                <BakedImage baked={stampCards} />
                 {letterNode}
               </Group>
               <Circle cx={magX} cy={magY} r={LENS_R} color="rgba(255,230,190,0.04)" />
@@ -781,7 +822,7 @@ export function DeskScreen() {
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
-            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} />
+            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} />
             <Vignette />
             {help && <HelpSheetView id={help} opacity={helpIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} opacity={continueOpacity} />}

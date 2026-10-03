@@ -11,17 +11,20 @@ interface Props {
   candleFlicker: SharedValue<number>;
   /** Flame position relative to the candle's (x, y). */
   candleOffset: { dx: number; dy: number };
+  /** Lamp turned down (end of day): the night closes in. */
+  dimmed: boolean;
 }
 
 // The pool is centred below-left of the lamp: that is where the chimney throws its light.
 const POOL = { x: LAYOUT.lamp.cx - 300, y: LAMP_FLAME_Y + 205 };
+const GLOW_C = vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125);
 
 /**
  * Light is subtracted, not added: everything is drawn at full colour, then the
  * dark is laid over it with a hole where the lamp reaches. A warm screen pass
  * on top gives the paper its yellow.
  */
-export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset }: Props) {
+export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed }: Props) {
   const radius = useDerivedValue(() => 640 * (0.45 + 0.55 * level.value) * (0.985 + (flicker.value - 1) * 0.9));
   const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
   const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
@@ -34,20 +37,21 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
     <Group>
       {/* Cold window spill on the left, under the dark so the lamp can still win */}
       <Group blendMode="screen">
-        <Rect x={-400} y={0} width={WORLD.w + 800} height={WORLD.h}>
+        {/* Gradients are drawn only over the area they light: fewer pixels each frame. */}
+        <Circle cx={70} cy={250} r={260}>
           <RadialGradient c={vec(70, 250)} r={260} colors={['rgba(70,100,160,0.22)', 'rgba(40,60,110,0.08)', 'rgba(0,0,0,0)']} />
-        </Rect>
+        </Circle>
       </Group>
 
       <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400}>
         <RadialGradient c={center} r={radius} colors={['rgba(0,0,0,0)', 'rgba(10,6,3,0.32)', 'rgba(6,4,3,0.78)', 'rgba(3,2,2,0.94)']} positions={[0, 0.42, 0.78, 1]} />
       </Rect>
-      <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="#05070c" opacity={night} />
+      {dimmed && <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="#05070c" opacity={night} />}
 
       <Group blendMode="screen" opacity={glowOpacity}>
-        <Rect x={-400} y={0} width={WORLD.w + 800} height={WORLD.h}>
-          <RadialGradient c={vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125)} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
-        </Rect>
+        <Circle c={GLOW_C} r={glowRadius}>
+          <RadialGradient c={GLOW_C} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
+        </Circle>
       </Group>
 
       {/* The candle carries its own small warm circle wherever it goes */}

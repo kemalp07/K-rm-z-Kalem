@@ -48,6 +48,7 @@ export interface LetterProps {
   marksFade?: SharedValue<number>;
   /** Pre-rendered stand-ins for LetterStill / LetterMarks, when the screen has them. */
   still?: ReactNode;
+  /** `null` when there is nothing to draw. */
   marks?: ReactNode;
   heat: SharedValue<Record<string, number>>;
   /** Some hidden ink is being heated right now. */
@@ -73,6 +74,12 @@ function HiddenInk({ laid, heat, wasRead, warm }: { laid: LaidSegment; heat: Sha
     const h = heat.value[id] ?? 0;
     return Math.max(0.035, wasRead ? Math.max(h, 0.35) : h);
   });
+  const bounds = useMemo(() => {
+    const xs = laid.lines.flatMap((l) => [l.x, l.x + l.w]);
+    const ys = laid.lines.flatMap((l) => [l.y, l.y + l.h]);
+    const pad = 10;
+    return { x: Math.min(...xs) - pad, y: Math.min(...ys) - pad, w: Math.max(...xs) - Math.min(...xs) + pad * 2, h: Math.max(...ys) - Math.min(...ys) + pad * 2 };
+  }, [laid]);
   const glow = useDerivedValue(() => {
     const h = heat.value[id] ?? 0;
     return h * h * 0.9;
@@ -92,7 +99,7 @@ function HiddenInk({ laid, heat, wasRead, warm }: { laid: LaidSegment; heat: Sha
           <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
         </Group>
       )}
-      <Fade opacity={ink}>
+      <Fade opacity={ink} bounds={bounds}>
         <Paragraph paragraph={laid.para} x={laid.x} y={laid.y} width={laid.width} />
       </Fade>
     </Group>
@@ -415,7 +422,7 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hea
       {layout.segments.map((s) =>
         s.seg.kind === 'hiddenInk' ? <HiddenInk key={s.seg.id} laid={s} heat={heat} wasRead={revealed.includes(s.seg.id)} warm={!!warm} /> : null,
       )}
-      {marks ?? (
+      {marks !== undefined ? marks : (
         <Fade opacity={marksFade ?? 1}>
           <LetterMarks layout={layout} censored={censored} strokes={strokes} />
         </Fade>
