@@ -14,6 +14,9 @@ const DY = hasArt('calendar') ? 11 : 0;
 export function CalendarLeaf({ calendar }: { calendar: Day['calendar'] }) {
   const r = LAYOUT.calendar;
   const shape = useMemo(() => roughRect(r, 'calendar-leaf', 0.7, true), [r]);
+  // "5 Mayıs 1331" → "5" big, "Mayıs 1331" beneath it.
+  const [rumiDay = '', ...rest] = calendar.rumi.split(' ');
+  const rumiRest = rest.join(' ');
   return (
     <Group transform={[{ rotate: -0.07 }]} origin={{ x: r.x + r.w / 2, y: r.y + r.h / 2 }}>
       <ArtSlot slot="calendar" rect={r} shadow>
@@ -27,9 +30,10 @@ export function CalendarLeaf({ calendar }: { calendar: Day['calendar'] }) {
         <Path path={shakyLine(r.x + 8, r.y + 86, r.x + r.w - 8, r.y + 86, 'cal-rule', 0.3)} style="stroke" strokeWidth={0.6} color="rgba(60,30,20,0.4)" />
       </ArtSlot>
       <Para text={calendar.weekday} x={r.x} y={r.y + 12 + DY} width={r.w} family="Cormorant" size={12} color={C.ink} align="center" weight={FontWeight.SemiBold} />
-      <Para text={calendar.dayOfMonth} x={r.x} y={r.y + 22 + DY * 0.8} width={r.w} family="Cormorant" size={46} color={C.censor} align="center" weight={FontWeight.Bold} />
-      <Para text={`${calendar.month} ${calendar.year}`} x={r.x} y={r.y + 70 + DY * 0.6} width={r.w} family="Cormorant" size={11} color={C.ink} align="center" letterSpacing={0.6} />
-      <Para text={calendar.rumi} x={r.x} y={r.y + 92 + DY * 0.3} width={r.w} family="Cormorant" size={10.5} color={C.inkFaded} align="center" italic />
+      {/* An Ottoman office calendar leads with the Rumi date; the Frankish one is the small print. */}
+      <Para text={rumiDay} x={r.x} y={r.y + 18 + DY * 0.8} width={r.w} family="Cormorant" size={42} color={C.censor} align="center" weight={FontWeight.Bold} />
+      <Para text={rumiRest} x={r.x} y={r.y + 75 + DY * 0.5} width={r.w} family="Cormorant" size={11.5} color={C.ink} align="center" letterSpacing={0.6} weight={FontWeight.SemiBold} />
+      <Para text={`${calendar.dayOfMonth} ${calendar.month} ${calendar.year}`} x={r.x} y={r.y + 93 + DY * 0.3} width={r.w} family="Cormorant" size={10} color={C.inkFaded} align="center" italic />
     </Group>
   );
 }
