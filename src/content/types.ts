@@ -127,3 +127,16 @@ export interface Day {
 export interface Desk {
   rank: { name: string; title: string };
 }
+
+export type HelpId = 'rules' | 'pen' | 'candle' | 'magnifier' | 'stamps';
+
+/** An instruction sheet on the desk: the Şube's rules, or the note left beside a tool. */
+export interface HelpSheet {
+  id: HelpId;
+  /** Word written on the folded slip. */
+  tag: string;
+  title: string;
+  subtitle?: string;
+  lines: string[];
+  footer?: string;
+}

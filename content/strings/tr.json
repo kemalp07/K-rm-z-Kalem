@@ -22,5 +22,7 @@
   "continue.text": "devam edecek",
   "continue.restart": "Baştan başla",
 
-  "web.rotate": "Telefonu yan çevir"
+  "web.rotate": "Telefonu yan çevir",
+
+  "help.close": "kapatmak için dokun"
 }

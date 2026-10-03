@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { getDay } from '../content/loader';
-import type { Decision } from '../content/types';
+import type { Decision, HelpId } from '../content/types';
 import { addMark, advancePhase, decide, openEnvelope, startDay, type DayState } from '../logic/dayFlow';
 
 interface GameStore {
@@ -10,6 +10,8 @@ interface GameStore {
   /** Pen strokes as SVG path strings, per letter — so a reopened app shows the same scrawl. */
   strokes: Record<string, string[]>;
   hydrated: boolean;
+  /** Instruction sheets the player has already been shown once. */
+  seenHelp: HelpId[];
 
   open: (letterId: string) => void;
   censor: (letterId: string, segId: string) => void;
@@ -19,6 +21,7 @@ interface GameStore {
   stamp: (letterId: string, d: Decision) => void;
   advance: () => void;
   restart: () => void;
+  markHelpSeen: (id: HelpId) => void;
 }
 
 const firstDay = (): DayState => {
@@ -33,6 +36,7 @@ export const useGame = create<GameStore>()(
       state: firstDay(),
       strokes: {},
       hydrated: false,
+      seenHelp: [],
 
       open: (id) => set((g) => ({ state: openEnvelope(g.state, id) })),
       censor: (id, seg) => set((g) => ({ state: addMark(g.state, id, 'censored', seg) })),
@@ -43,12 +47,13 @@ export const useGame = create<GameStore>()(
       stamp: (id, d) => set((g) => ({ state: decide(g.state, id, d) })),
       advance: () => set((g) => ({ state: advancePhase(g.state) })),
       restart: () => set({ state: firstDay(), strokes: {} }),
+      markHelpSeen: (id) => set((g) => (g.seenHelp.includes(id) ? g : { seenHelp: [...g.seenHelp, id] })),
     }),
     {
       name: 'kirmizi-kalem/save',
       version: 1,
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: (g) => ({ state: g.state, strokes: g.strokes }),
+      partialize: (g) => ({ state: g.state, strokes: g.strokes, seenHelp: g.seenHelp }),
       onRehydrateStorage: () => () => useGame.setState({ hydrated: true }),
     },
   ),

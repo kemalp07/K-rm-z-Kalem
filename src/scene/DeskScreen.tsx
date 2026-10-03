@@ -7,7 +7,7 @@ import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, LAST_AUTHORED_DAY } from '../content/loader';
-import type { Decision } from '../content/types';
+import type { Decision, HelpId } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { flagsOf } from '../logic/dayFlow';
 import { DEFAULT_REVEAL, heatTarget, stepHeat } from '../logic/reveal';
@@ -21,6 +21,7 @@ import { ContinueCard, RESTART_RECT } from '../objects/ContinueCard';
 import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
 import { InspectionSlip } from '../objects/InspectionSlip';
 import { Ledger } from '../objects/Ledger';
+import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { Letter } from '../objects/Letter';
 import { inspectPoints, layoutLetter, type LaidSegment } from '../objects/letterLayout';
 import { LockedTray } from '../objects/LockedTray';
@@ -92,6 +93,7 @@ export function DeskScreen() {
 
   const state = useGame((g) => g.state);
   const savedStrokes = useGame((g) => g.strokes);
+  const seenHelp = useGame((g) => g.seenHelp);
   const actions = useGame.getState();
 
   const day = getDay(state.day)!;
@@ -145,6 +147,7 @@ export function DeskScreen() {
   const stampProgress = useSharedValue(0);
   const imprintIn = useSharedValue(0);
   const slipOpacity = useSharedValue(0);
+  const helpIn = useSharedValue(0);
   const ledgerY = useSharedValue(state.phase === 'ledger' ? 0 : 640);
   const continueOpacity = useSharedValue(state.phase === 'continued' ? 1 : 0);
 
@@ -152,6 +155,7 @@ export function DeskScreen() {
   const [dragId, setDragId] = useState<string | null>(null);
   const [pressing, setPressing] = useState<Decision | null>(null);
   const [imprint, setImprint] = useState<Decision | null>(null);
+  const [help, setHelp] = useState<HelpId | null>(null);
   const [slip, setSlip] = useState<{ note: string; x: number; y: number } | null>(null);
 
   // --- mutable interaction state ----------------------------------------------
@@ -309,9 +313,46 @@ export function DeskScreen() {
   );
 
   // --- gesture handlers (JS thread; positions go out through shared values) ------
+  // --- instruction sheets ---------------------------------------------------------
+  const openHelp = useCallback(
+    (id: HelpId) => {
+      if (penInHand.current) penHome();
+      useGame.getState().markHelpSeen(id);
+      setHelp(id);
+      helpIn.value = 0;
+      helpIn.value = withTiming(1, { duration: 600, easing: SETTLE });
+      playSfx('paper', 0.6);
+    },
+    [helpIn, penHome],
+  );
+  const closeHelp = useCallback(() => {
+    helpIn.value = withTiming(0, { duration: 420, easing: GLIDE });
+    setTimeout(() => setHelp(null), 420);
+  }, [helpIn]);
+  /** First time a tool is touched, its note opens instead; returns true when it did. */
+  const introduce = (id: HelpId) => {
+    if (useGame.getState().seenHelp.includes(id)) return false;
+    openHelp(id);
+    return true;
+  };
+
+  // The Şube's rules lie open on the desk the very first night.
+  useEffect(() => {
+    if (state.phase !== 'desk' || seenHelp.includes('rules')) return;
+    const timer = setTimeout(() => openHelp('rules'), 900);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const onBegin = (p: Point) => {
     const g = useGame.getState();
     const s = g.state;
+
+    if (help) {
+      drag.current = null;
+      closeHelp();
+      return;
+    }
 
     if (s.phase === 'ledger') {
       drag.current = { kind: 'ledger' };
@@ -325,6 +366,7 @@ export function DeskScreen() {
 
     const saucer = { x: candleX.value, y: candleY.value };
     if (dist(p, saucer) < CANDLE_R + 6 || (Math.abs(p.x - saucer.x) < 14 && p.y < saucer.y && p.y > saucer.y + CANDLE_FLAME.dy - 10)) {
+      if (introduce('candle')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'candle', ox: candleX.value - p.x, oy: candleY.value - p.y };
       candleLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
@@ -336,6 +378,7 @@ export function DeskScreen() {
     const lens = { x: magX.value, y: magY.value };
     const handleEnd = { x: lens.x + MAG_HANDLE_END.x, y: lens.y + MAG_HANDLE_END.y };
     if (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14) {
+      if (introduce('magnifier')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
@@ -345,6 +388,7 @@ export function DeskScreen() {
 
     const nib = { x: penX.value, y: penY.value };
     if (distToSegment(p, nib, stickEnd(nib, penAngle.value, PEN_LENGTH)) < 16) {
+      if (introduce('pen')) return;
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
       penLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
@@ -352,6 +396,12 @@ export function DeskScreen() {
       penX.value = withTiming(p.x, { duration: T.lift, easing: SETTLE });
       penY.value = withTiming(p.y, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
+      return;
+    }
+
+    const slipHit = HELP_IDS.find((id) => inRect(p, LAYOUT.help[id], 4));
+    if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
+      openHelp(slipHit);
       return;
     }
 
@@ -365,6 +415,7 @@ export function DeskScreen() {
       }
       const slot = stampSlots().find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
+        if (introduce('stamps')) return;
         if (penInHand.current) penHome();
         setPressing(slot.d);
         stampProgress.value = 0;
@@ -631,6 +682,7 @@ export function DeskScreen() {
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             {letterNode}
             <Stamps enabled={!!openLetter && state.phase === 'desk'} pressing={pressing} progress={stampProgress} />
+            {state.phase === 'desk' && HELP_IDS.map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
 
             {draggedLetter && (
               <Group transform={envTransform}>
@@ -660,6 +712,7 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} />
             <Vignette />
+            {help && <HelpSheetView id={help} opacity={helpIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} opacity={continueOpacity} />}
           </Group>
         </FontsBridge>

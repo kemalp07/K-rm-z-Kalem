@@ -41,6 +41,16 @@ export const LAYOUT = {
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 398, w: 120, h: 93 },
   ledger: { x: 240, y: 28, w: 520, h: 512 },
+  /** Instruction slips on the desk; the tool ones sit partly under their tool. */
+  help: {
+    rules: { x: 182, y: 164, w: 88, h: 104, rot: -0.06 },
+    pen: { x: 712, y: 238, w: 62, h: 30, rot: 0.08 },
+    candle: { x: 738, y: 296, w: 62, h: 30, rot: -0.05 },
+    magnifier: { x: 690, y: 434, w: 62, h: 30, rot: 0.04 },
+    stamps: { x: 236, y: 412, w: 60, h: 30, rot: -0.07 },
+  },
+  /** The opened sheet, centred over the desk. */
+  helpSheet: { x: 280, y: 60, w: 440, h: 430 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },

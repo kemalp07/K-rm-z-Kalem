@@ -1,0 +1,60 @@
+{
+  "sheets": [
+    {
+      "id": "rules",
+      "tag": "Talimat",
+      "title": "ŞUBE TALİMATI",
+      "subtitle": "Sansür kâtiplerine",
+      "lines": [
+        "Her zarfı aç; mektubu satır satır oku.",
+        "Birliğin yerini, hareketini, sayısını bildiren satırları kırmızı kalemle karala.",
+        "Cepheye moral bozucu haber, cepheden bozgunculuk geçmez.",
+        "Satır aralarını mumla yokla; görünmez mürekkep ısıyla belirir.",
+        "Mühürde, tarihte, kâğıtta tutarsızlık varsa büyüteçle bak.",
+        "Kararını mühürle: İLET, BEKLET, DURDUR ya da İSTİHBARAT."
+      ],
+      "footer": "Her kararın bir sonucu vardır. — Kilitbahir Posta Şubesi"
+    },
+    {
+      "id": "pen",
+      "tag": "Kalem",
+      "title": "Kırmızı Kalem",
+      "lines": [
+        "Kaleme dokun, eline al.",
+        "Karalanacak satırın üzerinden parmağınla geç. Satır baştan sona kapanınca karalanmış sayılır.",
+        "Kalemi bırakmak için ona yeniden dokun."
+      ]
+    },
+    {
+      "id": "candle",
+      "tag": "Mum",
+      "title": "Mum",
+      "lines": [
+        "Mumu sürükleyip mektubun üstüne getir.",
+        "Alevi satır aralarına yaklaştır. Limon suyu ya da sütle yazılmış satırlar ısınınca kahverengileşip belirir.",
+        "Bıraktığın yerde yanmaya devam eder."
+      ]
+    },
+    {
+      "id": "magnifier",
+      "tag": "Büyüteç",
+      "title": "Büyüteç",
+      "lines": [
+        "Büyüteci sürükle; camın altı büyür.",
+        "Mührün ya da tarihin üstünde bir an tut. Dikkatini çeken bir şey varsa yanına not düşersin."
+      ]
+    },
+    {
+      "id": "stamps",
+      "tag": "Mühürler",
+      "title": "Karar Mühürleri",
+      "lines": [
+        "İLET — mektup yoluna devam eder.",
+        "BEKLET — bir gün çekmecede kalır.",
+        "DURDUR — mektup hiç gitmez.",
+        "İSTİHBARAT — Şube'ye gönderilir.",
+        "Mühre basılı tut; kâğıda inince karar verilmiş olur. Geri dönüşü yoktur."
+      ]
+    }
+  ]
+}
