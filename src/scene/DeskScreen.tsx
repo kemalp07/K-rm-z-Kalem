@@ -23,13 +23,13 @@ import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages } from '../content/booklet';
-import { Letter, LetterMarks, LetterStill, letterRegion } from '../objects/Letter';
+import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
 import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
-import { StampPress, Stamps, stampSlots } from '../objects/Stamps';
+import { StampPress, Stamps, stampHome, stampSlots } from '../objects/Stamps';
 import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
@@ -50,12 +50,18 @@ type Drag =
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
   | { kind: 'pen-stroke'; last: Point; points: Point[]; done: string[] }
-  | { kind: 'stamp'; d: Decision; start: Point; timer: ReturnType<typeof setTimeout> }
+  /**
+   * A rubber stamp in hand. It comes down once the finger rests over the paper
+   * (`still` waits for that, `timer` for the press to finish); lifting early puts it back.
+   */
+  | { kind: 'stamp'; d: Decision; pressAt: Point | null; still?: ReturnType<typeof setTimeout>; timer?: ReturnType<typeof setTimeout>; done: boolean }
   | { kind: 'ledger' }
   | { kind: 'restart' };
 
 const PEN_IN_HAND_ANGLE = 0.5;
 const STAMP_HOLD_MS = 450;
+/** How long a carried stamp must rest over the paper before it starts to come down. */
+const STAMP_REST_MS = 140;
 const TICK_MS = 50;
 const BOARD = { x: 0, y: 0, w: WORLD.w, h: WORLD.h };
 
@@ -156,6 +162,8 @@ export function DeskScreen() {
   /** Which sentence the pen is over, and which this stroke has covered. */
   const penHint = useSharedValue<{ hover: string; done: string[] }>({ hover: '', done: [] });
   const stampProgress = useSharedValue(0);
+  const stampX = useSharedValue(0);
+  const stampY = useSharedValue(0);
   const imprintIn = useSharedValue(0);
   const helpIn = useSharedValue(0);
   const eraserRub = useSharedValue(0);
@@ -167,7 +175,7 @@ export function DeskScreen() {
   // --- React state for things that change what is drawn, not where -------------
   const [dragId, setDragId] = useState<string | null>(null);
   const [pressing, setPressing] = useState<Decision | null>(null);
-  const [imprint, setImprint] = useState<Decision | null>(null);
+  const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
@@ -285,18 +293,30 @@ export function DeskScreen() {
     penLift.value = withTiming(0, home);
   }, [penX, penY, penAngle, penLift]);
 
-  const finishStamp = useCallback(
+  /** The stamp goes back onto its card, then is no longer drawn in hand. */
+  const stampBack = useCallback(
     (d: Decision) => {
+      const home = stampHome(d);
+      stampX.value = withTiming(home.x, { duration: T.home, easing: GLIDE });
+      stampY.value = withTiming(home.y, { duration: T.home, easing: GLIDE });
+      stampProgress.value = withTiming(0, { duration: 260, easing: SETTLE });
+      setTimeout(() => setPressing((cur) => (cur === d ? null : cur)), T.home);
+    },
+    [stampX, stampY, stampProgress],
+  );
+
+  const finishStamp = useCallback(
+    (d: Decision, at: Point) => {
       const id = useGame.getState().state.open;
-      if (!id) return;
+      if (!id || !layout) return;
       exiting.current = true;
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
-      setImprint(d);
+      // A hand never stamps quite straight.
+      setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
       imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
-      stampProgress.value = withTiming(0, { duration: 380, easing: SETTLE });
-      setTimeout(() => setPressing(null), 380);
+      setTimeout(() => stampBack(d), 200);
       exitDir.value = EXIT[d];
       setTimeout(() => {
         letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
@@ -309,8 +329,18 @@ export function DeskScreen() {
         exiting.current = false;
       }, T.stampRest + T.leave + 50);
     },
-    [stampProgress, exitDir, letterOut, letterIn, imprintIn],
+    [layout, stampBack, exitDir, letterOut, letterIn, imprintIn],
   );
+
+  /** Over the paper and holding still: the stamp starts to come down. */
+  const pressStamp = (d: Extract<Drag, { kind: 'stamp' }>, p: Point) => {
+    d.pressAt = p;
+    stampProgress.value = withTiming(1, { duration: STAMP_HOLD_MS, easing: Easing.inOut(Easing.quad) });
+    d.timer = setTimeout(() => {
+      d.done = true;
+      finishStamp(d.d, p);
+    }, STAMP_HOLD_MS);
+  };
 
   // --- gesture handlers (JS thread; positions go out through shared values) ------
   // --- instruction sheets ---------------------------------------------------------
@@ -465,8 +495,9 @@ export function DeskScreen() {
         if (penInHand.current) penHome();
         setPressing(slot.d);
         stampProgress.value = 0;
-        stampProgress.value = withTiming(1, { duration: STAMP_HOLD_MS, easing: Easing.inOut(Easing.quad) });
-        drag.current = { kind: 'stamp', d: slot.d, start: p, timer: setTimeout(() => finishStamp(slot.d), STAMP_HOLD_MS) };
+        stampX.value = p.x;
+        stampY.value = p.y;
+        drag.current = { kind: 'stamp', d: slot.d, pressAt: null, done: false };
         haptic(Haptics.ImpactFeedbackStyle.Light);
         return;
       }
@@ -553,17 +584,21 @@ export function DeskScreen() {
         d.last = p;
         break;
       }
-      case 'stamp':
-        if (dist(p, d.start) > 14) cancelStamp(d);
+      case 'stamp': {
+        if (d.done) break;
+        stampX.value = p.x;
+        stampY.value = p.y;
+        // Moving off the spot lifts the stamp again; nothing is decided until it lands.
+        if (d.pressAt && dist(p, d.pressAt) > 8) {
+          clearTimeout(d.timer);
+          d.pressAt = null;
+          stampProgress.value = withTiming(0, { duration: 160, easing: SETTLE });
+        }
+        clearTimeout(d.still);
+        if (!d.pressAt && layout && inRect(p, layout.paper)) d.still = setTimeout(() => pressStamp(d, p), STAMP_REST_MS);
         break;
+      }
     }
-  };
-
-  const cancelStamp = (d: Extract<Drag, { kind: 'stamp' }>) => {
-    clearTimeout(d.timer);
-    stampProgress.value = withTiming(0, { duration: 260, easing: SETTLE });
-    setTimeout(() => setPressing((cur) => (cur === d.d && !exiting.current ? null : cur)), 260);
-    drag.current = null;
   };
 
   const onEnd = (p: Point) => {
@@ -634,7 +669,11 @@ export function DeskScreen() {
         break;
       }
       case 'stamp':
-        cancelStamp(d);
+        clearTimeout(d.still);
+        if (!d.done) {
+          clearTimeout(d.timer);
+          stampBack(d.d);
+        }
         break;
     }
   };
@@ -777,7 +816,7 @@ export function DeskScreen() {
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
-      <Stamps enabled={stampsEnabled} pressing={null} progress={stampProgress} />
+      <Stamps enabled={stampsEnabled} />
     </FontsBridge>,
     STAMPS_REGION,
     fit.scale,
@@ -794,7 +833,7 @@ export function DeskScreen() {
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
             {letterNode}
-            <StampPress pressing={pressing} progress={stampProgress} />
+            <StampPress pressing={pressing} progress={stampProgress} x={stampX} y={stampY} />
 
             {draggedLetter && (
               <Group transform={envTransform}>

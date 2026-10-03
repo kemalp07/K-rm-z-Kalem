@@ -56,7 +56,7 @@ export interface LetterProps {
   heat: SharedValue<Record<string, number>>;
   /** Some hidden ink is being heated right now. */
   warm?: boolean;
-  imprint?: Decision;
+  imprint?: ImprintAt;
   /** 0→1 as the stamp's ink lands. */
   imprintIn?: SharedValue<number>;
 }
@@ -451,7 +451,6 @@ function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<Pen
 export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
 
 function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hint, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
-  const p = layout.paper;
   return (
     <Group>
       {still ?? <LetterStill letter={letter} layout={layout} />}
@@ -465,31 +464,47 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hin
       )}
       {hint && <SentenceHints segments={layout.segments} hint={hint} />}
       {livePath && <CensorStroke path={livePath} />}
-      {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} paper={p} imprintIn={imprintIn} />}
+      {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} imprintIn={imprintIn} />}
     </Group>
   );
 }
 
+export interface ImprintAt {
+  d: Decision;
+  /** Centre of the impression, where the stamp came down. */
+  x: number;
+  y: number;
+  rot: number;
+}
+
+const IMPRINT = { w: 130, h: 46 };
+
 /** The decision stamp landing on the letter: it settles from slightly larger and the ink comes up. */
-function Imprint({ imprint, letter, paper: p, imprintIn }: { imprint: Decision; letter: LetterData; paper: R; imprintIn: SharedValue<number> }) {
-  const cx = p.x + 34 + 75;
-  const cy = p.y + p.h - 92 + 26;
+function Imprint({ imprint, letter, imprintIn }: { imprint: ImprintAt; letter: LetterData; imprintIn: SharedValue<number> }) {
+  const { d, x: cx, y: cy, rot } = imprint;
   const transform = useDerivedValue<Transforms3d>(() => [{ translateX: cx }, { translateY: cy }, { scale: 1.1 - 0.1 * imprintIn.value }, { translateX: -cx }, { translateY: -cy }]);
   return (
     <Fade opacity={imprintIn} transform={transform}>
-        <StampMark
-          x={p.x + 34}
-          y={p.y + p.h - 92}
-          w={150}
-          h={52}
-          label={t(`decision.${imprint}`)}
-          color={STAMP_INK[imprint]}
-          rotate={-0.16}
-          seed={`imprint-${letter.id}`}
-          size={22}
-        />
+      <StampMark
+        x={cx - IMPRINT.w / 2}
+        y={cy - IMPRINT.h / 2}
+        w={IMPRINT.w}
+        h={IMPRINT.h}
+        label={t(`decision.${d}`)}
+        color={STAMP_INK[d]}
+        rotate={rot}
+        seed={`imprint-${letter.id}`}
+        size={d === 'reported' ? 16 : 19}
+      />
     </Fade>
   );
+}
+
+/** Where a stamp pressed at p lands: wholly on the paper. */
+export function imprintPoint(paper: R, p: { x: number; y: number }) {
+  const mx = IMPRINT.w / 2 + 6;
+  const my = IMPRINT.h / 2 + 6;
+  return { x: Math.min(paper.x + paper.w - mx, Math.max(paper.x + mx, p.x)), y: Math.min(paper.y + paper.h - my, Math.max(paper.y + my, p.y)) };
 }
 
 export const Letter = memo(LetterImpl);
