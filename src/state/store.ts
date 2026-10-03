@@ -27,6 +27,8 @@ interface GameStore {
   reason: (letterId: string, reason: string) => void;
   stamp: (letterId: string, d: Decision) => void;
   advance: () => void;
+  /** The next authored day, with its side letters drawn; nothing if there is none yet. */
+  nextDay: () => void;
   restart: () => void;
   markHelpSeen: (id: HelpId) => void;
 }
@@ -61,6 +63,15 @@ export const useGame = create<GameStore>()(
       reason: (id, r) => set((g) => ({ state: setReason(g.state, id, r) })),
       stamp: (id, d) => set((g) => ({ state: decide(g.state, id, d) })),
       advance: () => set((g) => ({ state: advancePhase(g.state) })),
+      nextDay: () =>
+        set((g) => {
+          const day = getDay(g.state.day + 1);
+          if (!day) return g;
+          const seed = (Date.now() ^ Math.floor(Math.random() * 0x7fffffff)) >>> 0;
+          const seen = new Set(Object.keys(g.state.letters));
+          const side = pickSideLetters(sideLetterCandidates, day.calendar.rumi, day.sideLetters ?? 0, seed, seen);
+          return { state: startDay(day, g.state, mixIntoStack(day.letters.map((l) => l.id), side, seed)) };
+        }),
       restart: () => set({ state: firstDay(), strokes: {} }),
       markHelpSeen: (id) => set((g) => (g.seenHelp.includes(id) ? g : { seenHelp: [...g.seenHelp, id] })),
     }),

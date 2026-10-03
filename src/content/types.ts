@@ -10,11 +10,16 @@ export type Decision = 'delivered' | 'held' | 'stopped' | 'reported';
 /** How the letter was written. Drives font, slant, ink colour and wobble. */
 export type Hand = 'careful' | 'hurried' | 'dictated' | 'elegant' | 'clerical';
 
+/** Where hidden ink sits: squeezed between lines, up the left margin, or under the signature. */
+export type InkPlace = 'between' | 'margin' | 'foot';
+
 export interface Segment {
   id: string;
   text: string;
   kind: SegmentKind;
   revealBy?: RevealTool;
+  /** Hidden ink only; `between` when absent. */
+  place?: InkPlace;
 }
 
 export interface PackageItem {
@@ -132,8 +137,12 @@ export interface Day {
   sideLetters?: number;
 }
 
+export type Tool = 'pen' | 'magnifier' | 'candle';
+
 export interface Desk {
   rank: { name: string; title: string };
+  /** The day each tool is issued; until then it is not on the desk. */
+  tools: Record<Tool, number>;
 }
 
 export type HelpId = 'rules' | 'pen' | 'candle' | 'magnifier' | 'stamps';

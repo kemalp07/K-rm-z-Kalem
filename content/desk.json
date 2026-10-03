@@ -1,3 +1,11 @@
 {
-  "rank": { "name": "Sansür Kâtibi", "title": "Kilitbahir Posta Şubesi" }
+  "rank": {
+    "name": "Sansür Kâtibi",
+    "title": "Kilitbahir Posta Şubesi"
+  },
+  "tools": {
+    "pen": 1,
+    "magnifier": 2,
+    "candle": 3
+  }
 }

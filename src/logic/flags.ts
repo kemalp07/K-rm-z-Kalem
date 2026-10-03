@@ -10,6 +10,8 @@ export interface LetterProgress {
   marked?: string[];
   /** Places ringed that were in order: the ledger says so. */
   wrongMarked?: string[];
+  /** Held over a night at least once; it came back the next morning. */
+  wasHeld?: boolean;
   /** Why it was stopped or reported, ticked on the reason slip. */
   reason?: string;
   decision?: Decision;
@@ -37,8 +39,10 @@ export const flag = {
 
 /** Flags only exist once a decision is stamped; half-read letters leave no trace. */
 export function flagsForLetter(letterId: string, p: LetterProgress): string[] {
-  if (!p.decision) return [];
+  // A letter held and not yet decided again only remembers that it was held.
+  if (!p.decision) return p.wasHeld ? [flag.decision(letterId, 'held')] : [];
   const out = [flag.decision(letterId, p.decision)];
+  if (p.wasHeld && p.decision !== 'held') out.push(flag.decision(letterId, 'held'));
   if (p.censored.length) out.push(flag.censoredAny(letterId));
   for (const s of p.censored) out.push(flag.censored(letterId, s));
   for (const s of p.revealed) out.push(flag.revealed(letterId, s));

@@ -43,12 +43,6 @@
           "text": "Bizi yine şimal tarafındaki sırta, ikinci hatta aldılar."
         },
         {
-          "id": "s4",
-          "kind": "hiddenInk",
-          "revealBy": "mum",
-          "text": "pazartesi gece · iskeleden üç kayık · fener ikinci"
-        },
-        {
           "id": "s5",
           "kind": "normal",
           "text": "Pederime selam söyleyin. Bağı bu sene kim budayacak, aklım oradadır."
@@ -73,19 +67,9 @@
         }
       ],
       "reasons": [
-        "askeri",
-        "gizli"
+        "askeri"
       ],
       "outcomes": [
-        {
-          "when": {
-            "all": [
-              "d1_mehmet:reported",
-              "d1_mehmet:revealed:s4"
-            ]
-          },
-          "text": "Mehmet'in mektubu Şube'ye gitti. Sabaha karşı bölüğe iki subay gelecek."
-        },
         {
           "when": {
             "all": [
@@ -114,15 +98,6 @@
           "when": {
             "all": [
               "d1_mehmet:delivered",
-              "d1_mehmet:revealed:s4"
-            ]
-          },
-          "text": "Satır aralarındaki mürekkep Sivas yoluna çıktı. Onu kimin okuyacağı belli değil."
-        },
-        {
-          "when": {
-            "all": [
-              "d1_mehmet:delivered",
               "d1_mehmet:censored"
             ]
           },
@@ -138,9 +113,9 @@
       "threadId": "saadet_nuri",
       "day": 1,
       "sender": "Saadet",
-      "recipient": "Nuri Efendi",
+      "recipient": "Mülazım Nuri Efendi",
       "from": "İzmir, Karataş",
-      "to": "Çanakkale, 19. Fırka",
+      "to": "Ordu-yı Hümayun, 61. Alay",
       "direction": "cepheye",
       "kind": "mektup",
       "hand": "elegant",
@@ -191,7 +166,6 @@
           "kind": "jasmine"
         }
       ],
-      "reasons": [],
       "outcomes": [
         {
           "when": {
@@ -333,7 +307,7 @@
       "sender": "Hatice Hanım",
       "recipient": "Onbaşı Mehmet",
       "from": "Sivas, Hafik kazası",
-      "to": "Arıburnu",
+      "to": "Ordu-yı Hümayun, 74. Alay",
       "direction": "cepheye",
       "kind": "paket",
       "hand": "careful",

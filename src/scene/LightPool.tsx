@@ -13,6 +13,8 @@ interface Props {
   candleOffset: { dx: number; dy: number };
   /** Lamp turned down (end of day): the night closes in. */
   dimmed: boolean;
+  /** Whether there is a candle on the desk yet. */
+  candle: boolean;
 }
 
 // The pool is centred below-left of the lamp: that is where the chimney throws its light.
@@ -24,7 +26,7 @@ const GLOW_C = vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125);
  * dark is laid over it with a hole where the lamp reaches. A warm screen pass
  * on top gives the paper its yellow.
  */
-export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed }: Props) {
+export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed, candle }: Props) {
   const radius = useDerivedValue(() => 640 * (0.45 + 0.55 * level.value) * (0.985 + (flicker.value - 1) * 0.9));
   const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
   const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
@@ -55,11 +57,11 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
       </Group>
 
       {/* The candle carries its own small warm circle wherever it goes */}
-      <Group blendMode="screen">
+      {candle && <Group blendMode="screen">
         <Circle c={candleC} r={candleR}>
           <RadialGradient c={candleC} r={candleR} colors={['rgba(255,170,80,0.32)', 'rgba(255,140,60,0.1)', 'rgba(0,0,0,0)']} />
         </Circle>
-      </Group>
+      </Group>}
     </Group>
   );
 }

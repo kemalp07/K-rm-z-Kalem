@@ -78,11 +78,9 @@ describe('flags and outcomes', () => {
     expect(pickOutcome(letter('d1_mehmet'), flags)).toBe('Hatice Hanım oğlundan kısa bir mektup alacak.');
   });
 
-  test('revealed ink outranks censoring in outcome order', () => {
-    const flags = new Set(
-      flagsForLetter('d1_mehmet', { ...emptyProgress(), censored: ['s3'], revealed: ['s4'], decision: 'reported' }),
-    );
-    expect(pickOutcome(letter('d1_mehmet'), flags)).toContain('iki subay');
+  test('a decision outranks censoring in outcome order', () => {
+    const flags = new Set(flagsForLetter('d1_mehmet', { ...emptyProgress(), censored: ['s3'], decision: 'reported' }));
+    expect(pickOutcome(letter('d1_mehmet'), flags)).toContain('Şube');
   });
 
   test('every letter has a fallback outcome', () => {
@@ -143,5 +141,19 @@ describe('reason slip', () => {
     s = decide(s, 'd1_imzasiz', 'reported');
     expect(flagsOf(s).has('d1_imzasiz:reason:sahte')).toBe(true);
     expect(setReason(s, 'd1_imzasiz', 'askeri')).toBe(s);
+  });
+});
+
+describe('next day', () => {
+  it('brings held letters back first, remembering they were held', () => {
+    let s = openEnvelope(startDay(day), 'd1_saadet');
+    s = decide(s, 'd1_saadet', 'held');
+    const next = startDay({ ...day, day: 2, letters: [] }, s, ['x']);
+    expect(next.stack).toEqual(['d1_saadet', 'x']);
+    expect(next.letters.d1_saadet?.decision).toBeUndefined();
+    expect(flagsOf(next).has('d1_saadet:held')).toBe(true);
+    const again = decide(openEnvelope(next, 'd1_saadet'), 'd1_saadet', 'delivered');
+    expect(flagsOf(again).has('d1_saadet:delivered')).toBe(true);
+    expect(flagsOf(again).has('d1_saadet:held')).toBe(true);
   });
 });

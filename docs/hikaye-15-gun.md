@@ -1,4 +1,4 @@
-# 15 günlük hikâye taslağı (onay bekliyor)
+# 15 günlük hikâye taslağı (onaylandı; Saadet için (b) seçildi)
 
 Oyun 5 Mayıs – 10 Haziran 1331 (18 Mayıs – 23 Haziran 1915). Takvim yaprağı her gün bir
 sonraki oynanan güne atlar. Her gün: 3 ana hikâye mektubu + 2–3 yan mektup.
@@ -49,13 +49,13 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 ### İmzasız ağ (her yeni aletin asıl sınandığı hat)
 - **Kaynak:** Levazım Kâtibi Halil Efendi. İkmal kayıklarının gün ve saatini sızdırıyor.
 - **Posta kutusu:** Galata'da olmayan "Şark Ticaret Kumpanyası".
-- **Cephedeki aracı:** Mehmet'in bölüğündeki postacı onbaşı Rasim. Askerlerin mektuplarına, onlar bilmeden limon suyuyla satır ekliyor. 1. günde Mehmet'in mektubundaki gizli satır budur.
+- **Cephedeki aracı:** Maydos menzil postanesinde memur Rasim Efendi. Cepheden gelen askerlerin mektuplarına, onlar bilmeden, limon suyuyla satır ekliyor. İlk gizli satır, mum geldiği gün (3. gün) Rıza'nın mektubunun kenarında çıkar.
 - Ağ, oyuncunun yakaladıklarına göre yöntem değiştirir. Mum mürekkebi yakalanırsa kimyasal mürekkebe geçer; kumpanya mühürleri yakalanırsa sahte antetli kâğıda geçer.
 
 | Gün | Ağın mektubu | Yakalayan alet ya da sayfa |
 |---|---|---|
-| 1 | Ayna mühürlü kumpanya mektubu; Mehmet'in mektubunda gizli satır | Talimatname, mum |
-| 2 | Halkada fazla harf ("KUMPANYASİ") | Büyüteç + mühür kartı |
+| 1 | Ayna mühürlü kumpanya mektubu | Talimatname, mühür kartı |
+| 2 | Halkada fazla harf ("TİCARRET") | Büyüteç + mühür kartı |
 | 3 | Rıza'nın mektubunun kenar boşluğunda gizli satır | Mum (her yerde) |
 | 4 | Sivas'tan diye gelen mektupta İzmir damgası; askerî adreste yer adı | Sayfa 4, 8 |
 | 5 | Halil'e giden zarfta pulun altında yazı | Buhar |
@@ -66,7 +66,7 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 | 15 | Şifreli satır; anahtar gazetenin ilan sütununda | Şifre çarkı |
 
 ## Bedeller ve gazete
-- **1. gün gizli satır kaçarsa:** 2. gün gazetesinde "Kilitbahir iskelesine gece taarruzu, ikmal kayıklarından biri batırıldı" haberi çıkar. Defterde de bir satır olur.
+- **3. gün gizli satır kaçarsa** ("salı gecesi · iskele · iki mavna"): 4. gün gazetesinde "Kilitbahir iskelesine gece taarruzu, mavnalardan biri batırıldı" haberi çıkar. Defterde de bir satır olur.
 - **Ağın mektupları doğru gerekçeyle istihbarata verilirse:** dosya kabarır. 8. gün Halil Efendi "tebdil-i mekân" ile başka yere alınır, 12. gün tevkif edilir. 15. gün gazetesi: "Bir casus şebekesi meydana çıkarıldı."
 - **Çoğu kaçarsa:** 14. gün iskele yine vurulur, 15. gün Şube'ye müfettiş gelir. Son defterde kâtip hakkında tahkikat açılır.
 - **Aile hatlarında aşırı karalama:** aileler "mektuplarımız kapkara geliyor" diye yazar. Şube ise "fazla gayret" der ve kâtipten memnun kalır. İkisi arasındaki gerilim bilerek bırakıldı.
@@ -74,6 +74,8 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 ## Oyunun sonu (15. gün)
 Üç son var: ağ çöktü, ağ kaçtı, yarım kaldı. Hangisinin geleceği, ağın mektuplarından kaçının doğru gerekçeyle yakalandığına bağlı. Aile hatlarının sonu kendi bayraklarına göre ayrıca yazılır.
 
+## Birlikler
+Mehmet 74. Alay (Arıburnu), Rıza 88. Alay (Seddülbahir), Mülazım Nuri Efendi 61. Alay. Zarflarda yer adı yok.
+
 ## Not
-- Saadet'in 1. gün zarfındaki "Çanakkale, 19. Fırka" adresi 4. günün adres kuralına aykırı. Kısım B'de "Ordu-yı Hümayun, 61. Alay, 2. Tabur…" yapılacak.
-- Mühürler ve Takvim sayfaları büyüteçle birlikte 2. güne alınacak.
+- Mühürler ve Takvim sayfaları 1. günde kalıyor: ayna mühür gözle görülür, büyüteç ise 2. gündeki küçük harf hatası için gelir.

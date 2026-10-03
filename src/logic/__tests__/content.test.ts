@@ -15,7 +15,8 @@ test('day 1 holds the five envelopes the brief asks for', () => {
   expect(day.letters.filter((l) => l.kind === 'paket')).toHaveLength(1);
   const kinds = day.letters.flatMap((l) => l.segments.map((s) => s.kind));
   expect(kinds).toContain('sensitive');
-  expect(kinds).toContain('hiddenInk');
+  // Hidden ink needs the candle, which comes later (content/desk.json).
+  expect(kinds).not.toContain('hiddenInk');
   expect(day.letters.some((l) => l.inspectables?.some((i) => i.anomaly))).toBe(true);
 });
 
@@ -58,5 +59,39 @@ describe('dates', () => {
     const d = day01 as Day;
     const bad: Day = { ...d, letters: [{ ...d.letters[0]!, dateLine: '12 Mayıs 331' }] };
     expect(validateDay(bad, threads as Thread[]).some((p) => p.includes('after today'))).toBe(true);
+  });
+});
+
+describe('every authored day', () => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { getDay, LAST_AUTHORED_DAY, hasTool } = require('../../content/loader') as typeof import('../../content/loader');
+  const all = Array.from({ length: LAST_AUTHORED_DAY }, (_, i) => getDay(i + 1)!);
+
+  it('is sound', () => {
+    for (const d of all) expect(validateDay(d, threads as Thread[])).toEqual([]);
+  });
+
+  it('never asks for a tool before it is issued', () => {
+    for (const d of all)
+      for (const l of d.letters) {
+        if (l.segments.some((s) => s.kind === 'hiddenInk')) expect(hasTool('candle', d.day)).toBe(true);
+      }
+  });
+
+  it('keeps acrostics spelling what their meta says', () => {
+    for (const d of all)
+      for (const l of d.letters) {
+        const a = l.meta?.acrostic as { segmentIds: string[]; word: string } | undefined;
+        if (!a) continue;
+        const word = a.segmentIds.map((id) => l.segments.find((s) => s.id === id)!.text[0]).join('').toLocaleUpperCase('tr');
+        expect(word).toBe(a.word);
+      }
+  });
+
+  it('only lists reasons the slip knows', () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { booklet } = require('../../content/booklet') as typeof import('../../content/booklet');
+    const known = new Set(booklet.reasons.map((r) => r.id));
+    for (const d of all) for (const l of d.letters) for (const r of l.reasons ?? []) expect(known.has(r)).toBe(true);
   });
 });

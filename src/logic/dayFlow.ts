@@ -17,13 +17,17 @@ export interface DayState {
 
 /** `stack` overrides the order (top first), e.g. with side letters mixed in. */
 export function startDay(day: Day, previous?: DayState, stack?: string[]): DayState {
+  // Earlier days' letters stay in the record; their flags shape later content.
+  const letters = { ...(previous?.letters ?? {}) };
+  // What was held comes out of the drawer first thing, to be decided again.
+  const held = (previous?.done ?? []).filter((id) => letters[id]?.decision === 'held');
+  for (const id of held) letters[id] = { ...letters[id]!, decision: undefined, wasHeld: true };
   return {
     day: day.day,
     phase: 'desk',
-    stack: stack ?? day.letters.map((l) => l.id),
+    stack: [...held, ...(stack ?? day.letters.map((l) => l.id))],
     done: [],
-    // Earlier days' letters stay in the record; their flags shape later content.
-    letters: { ...(previous?.letters ?? {}) },
+    letters,
   };
 }
 

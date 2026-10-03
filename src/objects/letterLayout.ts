@@ -187,8 +187,11 @@ function attempt(
   out.heading = { para: headPara, x: left + between(r, -2, 2), y, width, tilt: hand.rise + between(r, -hand.tilt, hand.tilt), skew: hand.skew };
   y += headPara.getHeight() + hand.gap + 2;
 
+  // Hidden ink in the margin or under the signature is placed once the writing is laid out.
+  const offFlow = (seg: Segment) => seg.kind === 'hiddenInk' && (seg.place === 'margin' || seg.place === 'foot');
   out.segments = segments.map((seg) => {
     const isHidden = seg.kind === 'hiddenInk';
+    if (offFlow(seg)) return { seg } as LaidSegment;
     const indent = isHidden ? 26 : between(r, 0, hand.drift);
     const w = width - indent - (isHidden ? 10 : 0);
     const para = makeParagraph(provider, seg.text, isHidden ? hidden : text, w);
@@ -216,8 +219,29 @@ function attempt(
     out.signature = { para, x: paper.x + paper.w - PAD - sw + between(r, -6, 0), y: y + 6, width: sw, tilt: between(r, -0.03, 0.01), skew: hand.skew };
   }
 
+  let foot = out.signature ? out.signature.y + out.signature.para.getHeight() + 10 : y + 10;
+  out.segments = out.segments.map((laid) => {
+    if (laid.para) return laid;
+    const seg = laid.seg;
+    if (seg.place === 'foot') {
+      // A line under the signature, small, as if added after the letter was done.
+      const w = width - 40;
+      const para = makeParagraph(provider, seg.text, { ...hidden, size: hidden.size - 1 }, w);
+      const x = left + 14;
+      const placed: LaidSegment = { seg, para, x, y: foot, width: w, tilt: -0.01, skew: -0.08, lines: lineRects(para, seg.text.length, x, foot) };
+      foot += para.getHeight() + 4;
+      return placed;
+    }
+    // Up the left margin, turned a quarter, reading bottom to top.
+    const w = 240;
+    const para = makeParagraph(provider, seg.text, { ...hidden, size: hidden.size - 2 }, w);
+    const x = paper.x + 7;
+    const yy = paper.y + PAD + 20 + Math.min(w, para.getLongestLine());
+    return { seg, para, x, y: yy, width: w, tilt: -Math.PI / 2, skew: 0, lines: lineRects(para, seg.text.length, x, yy) };
+  });
+
   // Paper is as long as the writer needed, plus a foot for the seal and the clerk's stamp.
-  const end = out.signature ? out.signature.y + out.signature.para.getHeight() : y;
+  const end = Math.max(out.signature ? out.signature.y + out.signature.para.getHeight() : y, foot - 10);
   const h = Math.min(paper.h, Math.max(300, end - paper.y + 96));
   out.paper = { ...paper, h };
   if (letter.seal) out.seal = { cx: paper.x + paper.w - 66, cy: paper.y + h - 50, r: 32 };

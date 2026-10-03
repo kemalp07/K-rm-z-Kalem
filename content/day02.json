@@ -1,0 +1,307 @@
+{
+  "day": 2,
+  "calendar": {
+    "dayOfMonth": "20",
+    "month": "Mayıs",
+    "year": "1915",
+    "weekday": "Perşembe",
+    "rumi": "7 Mayıs 1331"
+  },
+  "purse": {
+    "kurus": 35,
+    "line": "Ay başına dek — 35 kuruş"
+  },
+  "sideLetters": 2,
+  "letters": [
+    {
+      "id": "d2_mehmet",
+      "threadId": "mehmet_hatice",
+      "day": 2,
+      "sender": "Onbaşı Mehmet",
+      "recipient": "Hatice Hanım",
+      "from": "Arıburnu",
+      "to": "Sivas, Hafik kazası",
+      "direction": "cepheden",
+      "kind": "mektup",
+      "hand": "hurried",
+      "dateLine": "Ordu-yı Hümayun, 6 Mayıs 331",
+      "heading": "Muhterem validem,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Evvela ellerinizden öperim. Bu mektubu siperde dizimin üstünde yazıyorum, yazım bozuksa kusura bakmayın."
+        },
+        {
+          "id": "s2",
+          "kind": "sensitive",
+          "text": "Evvelki gece hücuma kalktık; bölükten yarısı dönmedi, Kadir Çavuş da onların içinde."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Ben sağım, bir çizik bile yok, Allah'a şükür."
+        },
+        {
+          "id": "s4",
+          "kind": "sensitive",
+          "text": "Kumanya iki gündür gelmedi, mataralarda su da azaldı."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Ayşe'ye söyleyin, abisi ona bir çakı getirecek."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Pederimin ellerinden öperim, duasını isterim."
+        }
+      ],
+      "signature": "Oğlunuz Mehmet",
+      "marks": [
+        {
+          "kind": "mud",
+          "near": "s2"
+        }
+      ],
+      "reasons": [
+        "askeri",
+        "moral"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:reported"
+            ]
+          },
+          "text": "Mehmet'in adı Şube'nin defterine geçti. Mektubunda casusluk yoktu, korku vardı."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:stopped"
+            ]
+          },
+          "text": "Hatice Hanım oğlunun sağ olduğunu bilmeden bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:held"
+            ]
+          },
+          "text": "Mehmet'in mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:delivered"
+            ],
+            "none": [
+              "d2_mehmet:censored:s2"
+            ]
+          },
+          "text": "Kadir Çavuş'un öldüğünü köyde ilk Hatice Hanım duyacak; anasına o söyleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:delivered",
+              "d2_mehmet:censored:s2"
+            ]
+          },
+          "text": "Hatice Hanım oğlunun sağ olduğunu okuyacak. Karalı satırın altında ne yazdığını hiç bilmeyecek."
+        },
+        {
+          "text": "Hatice Hanım mektubu komşuya okutacak."
+        }
+      ]
+    },
+    {
+      "id": "d2_emine",
+      "threadId": "riza_emine",
+      "day": 2,
+      "sender": "Emine Hanım",
+      "recipient": "Er Rıza",
+      "from": "İstanbul, Eyüp",
+      "to": "Ordu-yı Hümayun, 88. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "dictated",
+      "dateLine": "28 Nisan 1331",
+      "heading": "Rıza'ma,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Bu mektubu İmam Efendi'ye yazdırıyorum. Evvela selam eder, gözlerinden öperim."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Çocuklar sağdır, küçük Fatma yürümeye başladı."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Dikimevinde günde iki yüz kaput dikiyoruz, yine de yetişmiyor; Harbiye'den her gün yeni sipariş geliyor."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Kerim Ağa kirayı iki mecidiye artırdı, ne diyeceğimi bilemedim."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Duvarı da kendisi yaptıracakmış, borcumuza yazacakmış."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Sen kendine bak, gözüm yollardadır."
+        }
+      ],
+      "signature": "Refikan Emine",
+      "reasons": [
+        "askeri"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d2_emine:reported"
+            ]
+          },
+          "text": "Dikimevinin ustabaşısı Şube'ye çağrılacak. Emine'nin adını kimse anmayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_emine:stopped"
+            ]
+          },
+          "text": "Rıza bu hafta da evden haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_emine:held"
+            ]
+          },
+          "text": "Emine'nin sözleri bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_emine:delivered",
+              "d2_emine:censored:s3"
+            ]
+          },
+          "text": "Hasan mektubu Rıza'ya okurken karalı satırı atlayacak."
+        },
+        {
+          "text": "Hasan mektubu Rıza'ya okuyacak. Kaput sayısını çadırda herkes duyacak."
+        }
+      ]
+    },
+    {
+      "id": "d2_kumpanya",
+      "threadId": "imzasiz_halil",
+      "day": 2,
+      "sender": "İmzasız",
+      "recipient": "Levazım Kâtibi Halil Efendi",
+      "from": "İstanbul, Galata",
+      "to": "Çanakkale, Kilitbahir",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "clerical",
+      "letterhead": "ŞARK TİCARET KUMPANYASI · GALATA",
+      "dateLine": "4 Mayıs 1331",
+      "heading": "Muhterem Efendim,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Geçen hafta gönderilen incirlerin bir kısmı yolda ıslanmış, hasarlı ulaşmıştır."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Yeni sevkiyat için kayıkların vakti tarafınızdan tez elden bildirilmelidir."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Bedeli bir evvelki gibi malum mahalde ödenecektir."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hürmetlerimizle efendim."
+        }
+      ],
+      "seal": {
+        "legend": "ŞARK TİCARRET · GALATA",
+        "color": "#5b2e4a"
+      },
+      "inspectables": [
+        {
+          "id": "seal",
+          "target": "seal",
+          "anomaly": true,
+          "note": "Halkadaki yazıda bir harf fazla: TİCARRET. Bir kumpanya kendi adını yanlış kazdırmaz."
+        },
+        {
+          "id": "date",
+          "target": "date",
+          "note": "4 Mayıs 1331. Dört gün evvel."
+        }
+      ],
+      "reasons": [
+        "sahte",
+        "askeri"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d2_kumpanya:reported",
+              "d1_imzasiz:reported"
+            ]
+          },
+          "text": "Halil Efendi'nin adı Şube'nin dosyasına ikinci kez yazıldı. Dosya kalınlaşıyor."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_kumpanya:reported"
+            ]
+          },
+          "text": "Şube Galata'daki adresi arayacak. Kapıda bir kumpanya tabelası bile yok."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_kumpanya:stopped"
+            ]
+          },
+          "text": "Halil Efendi bu hafta Galata'dan haber alamayacak. Bir başka yol arayacaklar."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_kumpanya:held"
+            ]
+          },
+          "text": "Kumpanyanın mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "text": "Halil Efendi mektubu okuyup sobaya atacak. Kayıkların vaktini bir sonraki mektupta yazacak."
+        }
+      ]
+    }
+  ]
+}

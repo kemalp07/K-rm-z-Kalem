@@ -216,6 +216,5 @@ Her mektupta sırayla:
 | 13 | Izgara | Delikli kartın kullanımı |
 | 15 | Şifre | Harf kaydırma; anahtar başka yerde aranır |
 
-> **Şimdilik:** Oyunda henüz yalnız 1. gün var ve o gün büyüteçle ayna mühürlü mektup geliyor;
-> bu yüzden Mühürler (6, 6 devamı) ve Takvim (2) sayfaları `content/booklet.json`'da 1. güne
-> konuldu. Kısım B'de büyüteç 2. güne geçince bu sayfalar da 2. güne alınacak.
+> **Karar:** Mühürler (6, 6 devamı) ve Takvim (2) sayfaları 1. günde. Ayna mühür gözle görülür;
+> büyüteç 2. günde, halkadaki tek harflik hata için gelir.

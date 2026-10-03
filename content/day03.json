@@ -1,0 +1,332 @@
+{
+  "day": 3,
+  "calendar": {
+    "dayOfMonth": "22",
+    "month": "Mayıs",
+    "year": "1915",
+    "weekday": "Cumartesi",
+    "rumi": "9 Mayıs 1331"
+  },
+  "purse": {
+    "kurus": 33,
+    "line": "Ay başına dek — 33 kuruş"
+  },
+  "sideLetters": 2,
+  "letters": [
+    {
+      "id": "d3_riza",
+      "threadId": "riza_emine",
+      "day": 3,
+      "sender": "Er Rıza",
+      "recipient": "Emine Hanım",
+      "from": "Seddülbahir",
+      "to": "İstanbul, Eyüp",
+      "direction": "cepheden",
+      "kind": "mektup",
+      "hand": "dictated",
+      "dateLine": "Ordu-yı Hümayun, 7 Mayıs 331",
+      "heading": "Refikam Emine'ye,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Hasan yazıyor, ben söylüyorum. Evvela selam eder, çocukların gözlerinden öperim."
+        },
+        {
+          "id": "s2",
+          "kind": "sensitive",
+          "text": "İshal geçti sanıyordum, yine tuttu; iki gündür çadırda yatıyorum."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Kerim Ağa'ya söyle, duvar parasını ben gelince öderim, borca yazmasın."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hasan da selam ediyor, onun anası da Eyüp'te, bir uğrayıver."
+        },
+        {
+          "id": "s5",
+          "kind": "hiddenInk",
+          "text": "salı gecesi · iskele · iki mavna · fener sönük",
+          "revealBy": "mum",
+          "place": "margin"
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Sen dua et, gerisi Allah'ın."
+        }
+      ],
+      "signature": "Rıza — Hasan eliyle",
+      "marks": [
+        {
+          "kind": "thumb",
+          "near": "s2"
+        }
+      ],
+      "reasons": [
+        "askeri",
+        "gizli"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d3_riza:reported",
+              "d3_riza:revealed:s5"
+            ]
+          },
+          "text": "Şube kenardaki satırı okudu. Salı gecesi iskeleye fazladan nöbetçi konacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_riza:reported"
+            ]
+          },
+          "text": "Rıza'nın mektubu Şube'ye gitti. Kenarda ne yazdığını kimse bilmiyor; Rıza da bilmiyor."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_riza:stopped"
+            ]
+          },
+          "text": "Emine bu hafta Rıza'dan haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_riza:held"
+            ]
+          },
+          "text": "Rıza'nın sözleri bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_riza:delivered",
+              "d3_riza:revealed:s5"
+            ]
+          },
+          "text": "Kenardaki satırı gördün ve geçirdin. Mektup Eyüp'e, satır başka birine gidecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_riza:delivered",
+              "d3_riza:censored:s2"
+            ]
+          },
+          "text": "Emine kocasının hasta olduğunu bilmeyecek. Kenardaki boşluğa kimse bakmayacak."
+        },
+        {
+          "text": "Emine mektubu imama okutacak. Kenardaki boşlukta bir şey olduğunu kimse fark etmeyecek."
+        }
+      ]
+    },
+    {
+      "id": "d3_saadet",
+      "threadId": "saadet_nuri",
+      "day": 3,
+      "sender": "Saadet",
+      "recipient": "Mülazım Nuri Efendi",
+      "from": "İzmir, Karataş",
+      "to": "Ordu-yı Hümayun, 61. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "elegant",
+      "dateLine": "28 Nisan 1331",
+      "heading": "Aziz Nuri'm,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Fesleğenleri pencerenin önüne dizdim, sizin sevdiğiniz gibi."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Evde herkes sizi soruyor; valideniz her mektubunuzu üç kere okutuyor."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Nişan yüzüğümü bir an olsun parmağımdan çıkarmıyorum."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Ellerimle bir mendil işledim, köşesine adınızı yazdım."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Rüyamda sizi gördüm, iskelede bekliyordunuz."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Tez vakitte cevap yazınız, gözüm yoldadır."
+        }
+      ],
+      "signature": "Saadet",
+      "marks": [
+        {
+          "kind": "jasmine"
+        }
+      ],
+      "meta": {
+        "acrostic": {
+          "segmentIds": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "word": "FENER"
+        }
+      },
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d3_saadet:reported"
+            ]
+          },
+          "text": "Bir aşk mektubu daha Şube'nin dosyasına girdi. Dosya incelmiyor."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_saadet:stopped"
+            ]
+          },
+          "text": "Saadet cevap gelmeyince bir mektup daha yazacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_saadet:held"
+            ]
+          },
+          "text": "Fesleğen kokan mektup bir gece daha çekmecede kalacak."
+        },
+        {
+          "text": "Nuri Efendi mektubu göğüs cebinde taşıyacak. Mendili soracak; zarfta mendil yok."
+        }
+      ]
+    },
+    {
+      "id": "d3_hatice",
+      "threadId": "mehmet_hatice",
+      "day": 3,
+      "sender": "Hatice Hanım",
+      "recipient": "Onbaşı Mehmet",
+      "from": "Sivas, Hafik kazası",
+      "to": "Ordu-yı Hümayun, 74. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "careful",
+      "dateLine": "26 Nisan 1331",
+      "heading": "Gözümün nuru Mehmet'im,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "sensitive",
+          "text": "Babanın mevlidini okuttuk; köyün yarısı geldi, helvasını komşular kavurdu."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Ayşe senin için bir mendil işledi, bu mektuba koyamadık, kâğıt ince."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Köyde un kalmadı, değirmen durdu; jandarma ambardaki buğdayı da yazıp götürdü."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Bağı Osman budadı, bu sene üzüm bol olacak inşallah."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Soğuk sudan sakın, yün çoraplarını giy."
+        }
+      ],
+      "signature": "Anan Hatice",
+      "reasons": [
+        "moral"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d3_hatice:reported"
+            ]
+          },
+          "text": "Bir ananın mektubu Şube'ye gitti. İçinde bir köyün açlığından başka bir şey yoktu."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_hatice:stopped"
+            ]
+          },
+          "text": "Mehmet bu hafta da evden haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_hatice:held"
+            ]
+          },
+          "text": "Hatice Hanım'ın mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_hatice:delivered"
+            ],
+            "none": [
+              "d3_hatice:censored:s1"
+            ],
+            "any": [
+              "d1_hatice:censored:s2",
+              "d1_hatice:stopped"
+            ]
+          },
+          "text": "Mehmet babasının öldüğünü bir mevlit haberinden öğrenecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_hatice:delivered",
+              "d3_hatice:censored:s1"
+            ]
+          },
+          "text": "Mehmet babasının haberini yine alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d3_hatice:delivered",
+              "d3_hatice:censored:s3"
+            ]
+          },
+          "text": "Mehmet mektubu siperde okuyacak; köydeki açlığı arkadaşlarına anlatmayacak."
+        },
+        {
+          "text": "Mehmet mektubu siperde okuyacak. Köyde un kalmadığını bütün takım duyacak."
+        }
+      ]
+    }
+  ]
+}

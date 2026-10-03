@@ -6,7 +6,7 @@ import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, with
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
-import { desk, getDay, getLetter, LAST_AUTHORED_DAY } from '../content/loader';
+import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY } from '../content/loader';
 import type { Decision, HelpId } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { flagsOf } from '../logic/dayFlow';
@@ -17,7 +17,7 @@ import { loopSfx, playSfx } from '../sfx/sfx';
 
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
-import { ContinueCard, RESTART_RECT } from '../objects/ContinueCard';
+import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
 import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
@@ -59,7 +59,8 @@ type Drag =
    */
   | { kind: 'stamp'; d: Decision; pressAt: Point | null; still?: ReturnType<typeof setTimeout>; timer?: ReturnType<typeof setTimeout>; done: boolean }
   | { kind: 'ledger' }
-  | { kind: 'restart' };
+  | { kind: 'restart' }
+  | { kind: 'next' };
 
 const PEN_IN_HAND_ANGLE = 0.5;
 const STAMP_HOLD_MS = 450;
@@ -190,6 +191,10 @@ export function DeskScreen() {
   const [slip, setSlip] = useState<{ id: string; d: Decision; chosen: string | null } | null>(null);
   const reasons = useMemo(() => slipReasons(state.day), [state.day]);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
+  const hasCandle = hasTool('candle', state.day);
+  const hasMagnifier = hasTool('magnifier', state.day);
+  // A tool's note lies on the desk only once the tool does.
+  const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : true));
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
@@ -221,8 +226,8 @@ export function DeskScreen() {
   }, [resetCoverage, heat]);
 
   useEffect(() => {
-    loopSfx('flame', 0.12);
-  }, []);
+    if (hasCandle) loopSfx('flame', 0.12);
+  }, [hasCandle]);
 
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
@@ -256,7 +261,7 @@ export function DeskScreen() {
 
   // --- candle heat: a slow 20 Hz tick on the JS side --------
   useEffect(() => {
-    if (!layout || !openLetter) return;
+    if (!layout || !openLetter || !hasCandle) return;
     const hidden = layout.segments.filter((s) => s.seg.kind === 'hiddenInk' && s.seg.revealBy === 'mum');
     const id = openLetter.id;
     const tick = setInterval(() => {
@@ -293,7 +298,7 @@ export function DeskScreen() {
       }
     }, TICK_MS);
     return () => clearInterval(tick);
-  }, [layout, openLetter, candleX, candleY, heat]);
+  }, [layout, openLetter, hasCandle, candleX, candleY, heat]);
 
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
@@ -473,13 +478,13 @@ export function DeskScreen() {
       return;
     }
     if (s.phase === 'continued') {
-      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : null;
+      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady && inRect(p, NEXT_RECT, 10) ? { kind: 'next' } : null;
       return;
     }
     if (s.phase !== 'desk' || exiting.current) return;
 
     const saucer = { x: candleX.value, y: candleY.value };
-    if (dist(p, saucer) < CANDLE_R + 6 || (Math.abs(p.x - saucer.x) < 14 && p.y < saucer.y && p.y > saucer.y + CANDLE_FLAME.dy - 10)) {
+    if (hasCandle && (dist(p, saucer) < CANDLE_R + 6 || (Math.abs(p.x - saucer.x) < 14 && p.y < saucer.y && p.y > saucer.y + CANDLE_FLAME.dy - 10))) {
       if (introduce('candle')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'candle', ox: candleX.value - p.x, oy: candleY.value - p.y };
@@ -491,7 +496,7 @@ export function DeskScreen() {
 
     const lens = { x: magX.value, y: magY.value };
     const handleEnd = { x: lens.x + MAG_HANDLE_END.x, y: lens.y + MAG_HANDLE_END.y };
-    if (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14) {
+    if (hasMagnifier && (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14)) {
       if (introduce('magnifier')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
@@ -530,7 +535,7 @@ export function DeskScreen() {
       return;
     }
 
-    const slipHit = HELP_IDS.find((id) => inRect(p, LAYOUT.help[id], 4));
+    const slipHit = slipIds.find((id) => inRect(p, LAYOUT.help[id], 4));
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
       return;
@@ -673,6 +678,9 @@ export function DeskScreen() {
       case 'ledger':
         if (inRect(p, LAYOUT.ledger)) g.advance();
         break;
+      case 'next':
+        if (inRect(p, NEXT_RECT, 10)) g.nextDay();
+        break;
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
@@ -800,7 +808,8 @@ export function DeskScreen() {
 
   const stackIds = state.stack;
   const draggedLetter = dragId ? getLetter(dragId) : undefined;
-  const nextDay = Math.min(state.day + 1, LAST_AUTHORED_DAY + 1);
+  const nextDay = state.day + 1;
+  const nextReady = nextDay <= LAST_AUTHORED_DAY;
 
   // The open letter's paper and text, and separately its pen work, likewise rasterised.
   const region = layout ? letterRegion(layout.paper) : LAYOUT.letter;
@@ -858,7 +867,7 @@ export function DeskScreen() {
       <MoneyNote purse={day.purse} />
       <BrassPlate rank={desk.rank} />
       <LockedTray />
-      {showSlips && HELP_IDS.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
+      {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
       {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
     </FontsBridge>,
     DESK_REGION,
@@ -925,7 +934,7 @@ export function DeskScreen() {
             )}
 
             {/* What the glass sees: the same desk, larger */}
-            <Group clip={lensClip}>
+            {hasMagnifier && <Group clip={lensClip}>
               <Group transform={lensTransform}>
                 <BakedImage baked={desk_} />
                 <BakedImage baked={pile} />
@@ -934,20 +943,20 @@ export function DeskScreen() {
                 {cardNode}
               </Group>
               <Circle cx={magX} cy={magY} r={LENS_R} color="rgba(255,230,190,0.04)" />
-            </Group>
+            </Group>}
             {state.phase === 'desk' && <Eraser rub={eraserRub} lift={eraserLift} />}
-            <MagnifierFrame x={magX} y={magY} lift={magLift} />
-            <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />
+            {hasMagnifier && <MagnifierFrame x={magX} y={magY} lift={magLift} />}
+            {hasCandle && <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />}
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
             {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
 
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
-            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} />
+            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} />
             <Vignette />
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
-            {state.phase === 'continued' && <ContinueCard nextDay={nextDay} opacity={continueOpacity} />}
+            {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
           </Group>
         </FontsBridge>
       </Canvas>
