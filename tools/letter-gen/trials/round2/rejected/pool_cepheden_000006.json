@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheden_000006",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Reşit",
+    "epithet": "Aydınlı",
+    "age": 29,
+    "hometown": "Aydın",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Seher",
+    "relation": "annesi",
+    "location": "Aydın, Çine kazası, Kayadibi karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 64,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Seher Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Anam ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kaç kâğıt yolladım birine bile cevap vermedin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan bir mektup yazıp yollamaz mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Posta dağıtılırken hep elim boş dönüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köydeki Bakkal Halil'e olan borcu nittiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hasat yaklaştı o tarlayı kim biçecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Borcu ödeyebildiniz mi tez yazın bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim halim şükür ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralar iyice ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ali'yi sorarsan o artık yanımda değil anasına da kâğıt yazamaz sen varıp söyleyiver.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Emmime selam et.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Oğlun Reşit"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Aydın, Çine kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Seher Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Reşit, Aydınlı, 29, çiftçi, er (Aydın, Çine kazası, Kayadibi karyesi)\nAlıcı: Annesi Seher Hanım, Aydın, Çine kazası, Kayadibi karyesi\nYön: cepheden\nTarih: 20 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: arkadaşının öldüğünü gördüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 64",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": "çiftçi",
+        "epithet": "Aydınlı",
+        "place": "Çine kazası, Kayadibi karyesi"
+      },
+      "recipient": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 54,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çine kazası, Kayadibi karyesi"
+      },
+      "recipient_location": "Aydın, Çine kazası, Kayadibi karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "arkadaşının öldüğünü gördüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 64,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "20 Mayıs 1331",
+      "home_address": "Aydın, Çine kazası, Kayadibi karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5505,
+      "output": 2720
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Mayıs 1331\nHİTAP: Anam Seher Hanım'a\nGÖVDE: Anam ellerinden öperim. Kaç kâğıt yolladım birine bile cevap vermedin. İnsan bir mektup yazıp yollamaz mı. Posta dağıtılırken hep elim boş dönüyorum. Köydeki Bakkal Halil'e olan borcu nittiniz. Hasat yaklaştı o tarlayı kim biçecek. Borcu ödeyebildiniz mi tez yazın bana. Benim halim şükür ayaktayım. Buralar iyice ısındı. Ali'yi sorarsan o artık yanımda değil anasına da kâğıt yazamaz sen varıp söyleyiver. Emmime selam et.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Oğlun Reşit\nZARF: Aydın, Çine kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Seher Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "63 kelime, hedef 64 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4690,
+      "output": 2327
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun kelimeler seçilmiş ancak 'posta dağıtılırken' ifadesi köylü ağzı için biraz fazla standart kaçmış.",
+      "olculuk": "Duygular adlandırılmadan, sitemkâr ton doğrudan eylemler ve sorular üzerinden başarıyla hissettirilmiş.",
+      "okuryazarlik": "Kısa cümleler ve noktalama eksiklikleri düşük okuryazarlığa uygun, ancak bazı cümle yapıları fazla akıcı.",
+      "somutluk": "Bakkal Halil, borç, hasat ve tarla gibi köye ait gündelik detaylar mektubu çok somut kılmış.",
+      "sadakat": "Karakterin arkadaşının ölümünü saklaması gerekirken, mektupta bu durum açıkça ima edilip annesine haber vermesi istenerek kural ihlal edilmiş.",
+      "sahicilik": "Köydeki borç endişesi ve mektup gelmemesine edilen sitem gerçekçi, ancak ölüm haberinin veriliş biçimi saklama kuralını bozduğu için inandırıcılığı zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Ali'yi sorarsan o artık yanımda değil anasına da kâğıt yazamaz sen varıp söyleyiver.",
+        "problem": "İstekte karakterin arkadaşının öldüğünü 'sakladığı' belirtilmiş, ancak burada ölüm haberi açıkça (ve biraz acımasızca) veriliyor.",
+        "suggestion": "Ali'yi sorarsan o başka tabura gitti, anasına selam eyle."
+      },
+      {
+        "line": "Posta dağıtılırken hep elim boş dönüyorum.",
+        "problem": "Düşük okuryazarlık seviyesindeki bir köylü için fazla düzgün ve günümüz Türkçesine yakın bir ifade.",
+        "suggestion": "Çavuş kâğıtları dağıtırken bana hiç çıkmıyor."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

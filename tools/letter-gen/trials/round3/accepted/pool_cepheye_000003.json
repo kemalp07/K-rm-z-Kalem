@@ -1,0 +1,267 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Vesile",
+    "epithet": "Afyonlu",
+    "age": 41,
+    "hometown": "Afyon",
+    "occupation": "ırgat",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Salih",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 87,
+  "hand": "hurried",
+  "header": {
+    "text": "Bahçecik, 9 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Salih'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Hatırını sorarım mektubunu bekliyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Havalar ısındı tarlaya çapa vuruyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ot yolma işi çok yoruyo yevmiyesi az geliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Şeker un pahalandı alamıyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bakkal Hasan ağa borcunu istiyo parayı nerden bulacam bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen orda para biriktirdin mi mektupla yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hacıların tarlaya da gidiyom günlüğü beş kuruş ama yetmiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ekinler bu sene cılız yağmur yağmadı pek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hasada kim girecek belli değil herkez darda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kendine mukayet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Emmingillere olan borcu da veremedik daha onu da dert ediyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çabuk cevap yaz kâğıdın içine üç beş kuruş da koy emi unutma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Vesile"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Emirdağlı Salih'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Vesile Hanım, Afyonlu, 41, ırgat (Afyon, Emirdağ kazası, Bahçecik karyesi)\nAlıcı: Oğlu Er Salih, cephede\nYön: cepheye\nTarih: 9 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: çapa ve ot yolma işleri\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 87",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Vesile",
+        "gender": "kadın",
+        "age": 41,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": "ırgat",
+        "epithet": "Afyonlu",
+        "place": "Emirdağ kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Salih",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Emirdağ kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "çapa ve ot yolma işleri",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 87,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "9 Mayıs 1331",
+      "home_address": "Afyon, Emirdağ kazası, Bahçecik karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5630,
+      "output": 2521
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Bahçecik, 9 Mayıs 1331\nHİTAP: Oğlum Salih'e\nGÖVDE: Hatırını sorarım mektubunu bekliyom. Havalar ısındı tarlaya çapa vuruyoz. Ot yolma işi çok yoruyo yevmiyesi az geliyo. Şeker un pahalandı alamıyoz. Bakkal Hasan ağa borcunu istiyo parayı nerden bulacam bilmeyorum. Sen orda para biriktirdin mi mektupla yolla. Hacıların tarlaya da gidiyom günlüğü beş kuruş ama yetmiyo. Ekinler bu sene cılız yağmur yağmadı pek. Hasada kim girecek belli değil herkez darda. Kendine mukayet ol. Emmingillere olan borcu da veremedik daha onu da dert ediyom. Çabuk cevap yaz kâğıdın içine üç beş kuruş da koy emi unutma.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Vesile\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Emirdağlı Salih'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "85 kelime, hedef 87 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4794,
+      "output": 3606
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelimeleri (yevmiye, kuruş) ve köy ağzı başarıyla kullanılmış, hiçbir modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular adlandırılmamış, annenin kaygısı borçlar ve para üzerinden somutça hissettirilmiş.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği, 'herkez', 'bilmeyorum' gibi bilinçli imla hataları ve bağlaçsız kısa cümleler düşük okuryazarlık kuralına tam uyuyor.",
+      "somutluk": "Çapa, ot yolma, bakkalın borcu, beş kuruş yevmiye gibi çok sayıda gündelik ve somut detay barındırıyor.",
+      "sadakat": "Hesapçı ses tonu çok iyi yansıtılmış, istenen tüm unsurlar (konu, saklanan bilgi, uzunluk) eksiksiz ve kuralına uygun işlenmiş.",
+      "sahicilik": "Oğlundan para isteyen hesapçı ve darda kalmış bir köy kadınının sesi son derece inandırıcı ve dönemin ruhuna uygun."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

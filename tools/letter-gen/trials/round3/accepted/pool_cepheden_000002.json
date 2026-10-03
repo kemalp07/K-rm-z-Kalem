@@ -1,0 +1,292 @@
+{
+  "id": "pool_cepheden_000002",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Musa",
+    "epithet": "Dokumacı",
+    "age": 26,
+    "hometown": "Erzurum",
+    "occupation": "dokumacı",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Habibe",
+    "relation": "karısı",
+    "location": "Erzurum, İspir kazası, Eğrisu karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 121,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 7 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Habibe'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Musa çavuş der ki: Evvela Allah'ın selamı üzerine olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım kâğıdı almışsınız, muhtar okumuş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Havalar iyice ısındı, bizim oralarda da karlar erimiştir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Caminin arkasındaki bostanı ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Büyük oğlan tek başına çapalayamaz, kayınbabama söyleyin o bir el atsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Fasulye tohumluğunu geçen seneden ayırmıştık, ahırdaki sandığın alt gözündedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Onu ekin, toprağı sakın boş komayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Küçük kızıma güzün aldığım kırmızı pabuçlar küçülmüş müdür?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geceleri üstlerini iyi ört, hastalanmasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İkisinin de alnından ayrı ayrı öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim üçüncü taburu derenin içine indirdiler, yanyanayız.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Geceleri nöbette hep bizim dağların patika yolları gözümün önüne geliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "İnsan gece vakti yürüse kaç günde aşar o yokuşları bilmem.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Evin eksiği bitmez, sen çocuklara mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cümleten Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Musa"
+  },
+  "note": {
+    "text": "İşbu mektup tabur imamı vasıtasıyla kaleme alınmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Erzurum, İspir kazası, Eğrisu karyesi, Muhtar vasıtasıyla Habibe Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Musa, Dokumacı, 26, dokumacı, çavuş (Erzurum, İspir kazası, Eğrisu karyesi)\nAlıcı: Karısı Habibe Hanım, Erzurum, İspir kazası, Eğrisu karyesi\nYön: cepheden\nTarih: 7 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 121",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Musa",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Erzurum",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "İspir kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Habibe",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "İspir kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Erzurum, İspir kazası, Eğrisu karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 121,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "7 Mayıs 1331",
+      "home_address": "Erzurum, İspir kazası, Eğrisu karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5602,
+      "output": 2848
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 7 Mayıs 1331\nHİTAP: Zevcem Habibe'ye\nGÖVDE: Musa çavuş der ki: Evvela Allah'ın selamı üzerine olsun. Geçen ay yolladığım kâğıdı almışsınız, muhtar okumuş. Havalar iyice ısındı, bizim oralarda da karlar erimiştir. Caminin arkasındaki bostanı ne yaptınız? Büyük oğlan tek başına çapalayamaz, kayınbabama söyleyin o bir el atsın. Fasulye tohumluğunu geçen seneden ayırmıştık, ahırdaki sandığın alt gözündedir. Onu ekin, toprağı sakın boş komayın. Küçük kızıma güzün aldığım kırmızı pabuçlar küçülmüş müdür? Geceleri üstlerini iyi ört, hastalanmasınlar. İkisinin de alnından ayrı ayrı öperim. ⟦Bizim üçüncü taburu derenin içine indirdiler, yanyanayız.⟧ Geceleri nöbette hep bizim dağların patika yolları gözümün önüne geliyor. İnsan gece vakti yürüse kaç günde aşar o yokuşları bilmem. Evin eksiği bitmez, sen çocuklara mukayyet ol.\nKAPANIŞ: Cümleten Allah'a emanet olun.\nİMZA: (mühür: Musa)\nNOT: İşbu mektup tabur imamı vasıtasıyla kaleme alınmıştır.\nZARF: Erzurum, İspir kazası, Eğrisu karyesi, Muhtar vasıtasıyla Habibe Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "108 kelime, hedef 121 (-11%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4922,
+      "output": 4670
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 yılının ruhuna ve bir imamın kaleminden çıkan köylü mektubuna tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, çocuklara duyulan özlem kırmızı pabuçlar ve üstlerini örtme tembihiyle çok ölçülü ve dolaylı verilmiş.",
+      "okuryazarlik": "Mektubun imam tarafından yazıldığı hem giriş kalıbından hem de sonundaki nottan başarıyla anlaşılıyor.",
+      "somutluk": "Ahırdaki sandığın alt gözü, fasulye tohumluğu ve kırmızı pabuçlar gibi detaylar mektubu son derece somut kılmış.",
+      "sadakat": "Bostan konusu, firar etme düşüncesinin üstü kapalı verilişi ve dikkatsizlik unsuru isteğe birebir uyuyor.",
+      "sahicilik": "Bir babanın evlatlarına duyduğu şefkat ve cephenin getirdiği çaresizlikle köye kaçma arzusu çok sahici işlenmiş."
+    },
+    "issues": [
+      {
+        "line": "⟦Bizim üçüncü taburu derenin içine indirdiler, yanyanayız.⟧",
+        "problem": "'Yan yana' ikilemesi ayrı yazılmalıdır; mektubu okumuş biri (imam) yazdığı için bu tür temel imla kurallarına uyulması beklenir.",
+        "suggestion": "⟦Bizim üçüncü taburu derenin içine indirdiler, yan yanayız.⟧"
+      },
+      {
+        "line": "Erzurum, İspir kazası, Eğrisu karyesi, Muhtar vasıtasıyla Habibe Hanım'a",
+        "problem": "Zarf adresinde dönemin usulüne uygun olarak muhtarın adı veya unvanı (Muhtar ... Ağa) belirtilmelidir, sadece 'Muhtar' yazılması eksiktir.",
+        "suggestion": "Erzurum, İspir kazası, Eğrisu karyesi, Muhtar Ali Ağa vasıtasıyla Habibe Hanım'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

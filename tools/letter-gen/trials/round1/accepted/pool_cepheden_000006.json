@@ -1,0 +1,293 @@
+{
+  "id": "pool_cepheden_000006",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Emin",
+    "epithet": "Dokumacı",
+    "age": 27,
+    "hometown": "Bursa",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Rukiye",
+    "relation": "karısı",
+    "location": "Bursa, Gemlik kazası, Kızılca karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 112,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Rukiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Emin der ki: Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür turp gibiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralara bahar geldi, yağmurlar yağıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Aklım hep evde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim ocağın üstündeki dam akıyordu, onarabildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çamurla sıvayın iyice, yatak yorgan ıslanmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tarlaya ne ektiniz, bostan işine kim yardım ediyor?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anamın, babamın ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kara Ali'nin kahvesinde oturanlara, Muhtar Hasan'a, komşumuz Ayşe ablaya tek tek selamımı söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köyde kim var kim yok hepsinin hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Koyunları tepeye çıkardınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizim sarı ineğin buzağısı ne âlemde, büyüdü mü?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Berber Halil dükkânı açıyor mu hâlâ?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Benim için hiç tasalanma, burada ekmeğimiz aşımız eksik değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Sen evine barkına iyi mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Kâğıt bulunca çabuk cevap yaz, damı ne yaptınız bildir.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Emin"
+  },
+  "note": {
+    "text": "İşbu mektubu köylüsü Onbaşı Hüseyin yazmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Bursa, Gemlik kazası, Kızılca karyesi, Muhtar Hasan Ağa vasıtasıyla Rukiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Emin, Dokumacı, 27, dokumacı, er (Bursa, Gemlik kazası, Kızılca karyesi)\nAlıcı: Karısı Rukiye Hanım, Bursa, Gemlik kazası, Kızılca karyesi\nYön: cepheden\nTarih: 20 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: meraklı, köyden herkesi sorar\nKonu: evin damının akmasından endişe\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 112",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Emin",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bursa",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "Gemlik kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Rukiye",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gemlik kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Bursa, Gemlik kazası, Kızılca karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "evin damının akmasından endişe",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 112,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Nisan 1331",
+      "home_address": "Bursa, Gemlik kazası, Kızılca karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5399,
+      "output": 3116
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Nisan 1331\nHİTAP: Zevcem Rukiye Hanım'a\nGÖVDE: Emin der ki: Evvela selam eder, iki gözlerinden öperim. Benim hâlimi sorarsan şükür turp gibiyim. Buralara bahar geldi, yağmurlar yağıyor. Aklım hep evde kaldı. Bizim ocağın üstündeki dam akıyordu, onarabildiniz mi? Çamurla sıvayın iyice, yatak yorgan ıslanmasın. Tarlaya ne ektiniz, bostan işine kim yardım ediyor? Anamın, babamın ellerinden öperim. Kara Ali'nin kahvesinde oturanlara, Muhtar Hasan'a, komşumuz Ayşe ablaya tek tek selamımı söyle. Köyde kim var kim yok hepsinin hatırını sorarım. Koyunları tepeye çıkardınız mı? Bizim sarı ineğin buzağısı ne âlemde, büyüdü mü? Berber Halil dükkânı açıyor mu hâlâ? Benim için hiç tasalanma, burada ekmeğimiz aşımız eksik değil. Sen evine barkına iyi mukayyet ol. Kâğıt bulunca çabuk cevap yaz, damı ne yaptınız bildir.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Emin)\nNOT: İşbu mektubu köylüsü Onbaşı Hüseyin yazmıştır.\nZARF: Bursa, Gemlik kazası, Kızılca karyesi, Muhtar Hasan Ağa vasıtasıyla Rukiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "112 kelime, hedef 112 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000001 ile ortak: \"ineğin buzağısı ne alemde büyüdü mü\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4752,
+      "output": 3027
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme ait kelimeler (mukayyet, zevcem, tasalanma) modern ifadelere yer verilmeden, doğal bir şekilde kullanılmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış; özlem ve endişe, köydeki insanlara ve damın durumuna dair sorulan sorularla çok iyi hissettirilmiş.",
+      "okuryazarlik": "Mektubun bir onbaşıya yazdırıldığı, 'Emin der ki' girişi ve kapanıştaki not ile başarılı bir şekilde yansıtılmış.",
+      "somutluk": "Ocağın üstündeki dam, çamurla sıvamak, sarı ineğin buzağısı ve Berber Halil gibi detaylarla mektup son derece somut kılınmış.",
+      "sadakat": "İstenen kelime sayısına tam uyulmuş, damın akması konusu işlenmiş ve ayaktaki yara 'turp gibiyim' denilerek başarıyla saklanmış.",
+      "sahicilik": "Köydeki herkesi tek tek soran, evinin derdine düşmüş gerçek bir köylü asker mektubu tonu yakalanmış."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

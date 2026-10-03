@@ -1,0 +1,288 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Habibe",
+    "epithet": "Diyarbekirli",
+    "age": 34,
+    "hometown": "Diyarbekir",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Recep",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 80,
+  "hand": "hurried",
+  "header": {
+    "text": "Yenice, 21 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Recep'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Recep, mektubumu aldın sesin çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Niye yazmıyorsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kâğıt mı yok kalem mi yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köye muhtarın yanına her gün varıyorum senin mektup yok diyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hemen bul buluştur bir kâğıt yaz gönder.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tarlayı sürdüm bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İnek erkek buzağı verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Öküzün biri topallıyor canım ona çok sıkkın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Koca tarla işleri hep benim boynuma kaldı sen orda ne yaparsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Elin kolun tutmaz mı bir kâğıt atmaya.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çocuklar her gün yola bakar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Ahmet sordu babam niye yazmıyor dedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çabuk cevap yolla beni delirtme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Zevcen Habibe"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Palulu Recep'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Habibe Hanım, Diyarbekirli, 34, çiftçi (Diyarbekir, Palu kazası, Yenice karyesi)\nAlıcı: Kocası Er Recep, cephede\nYön: cepheye\nTarih: 21 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: mektup gelmediği için endişe\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 80",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Habibe",
+        "gender": "kadın",
+        "age": 34,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": "çiftçi",
+        "epithet": "Diyarbekirli",
+        "place": "Palu kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Palu kazası, Yenice karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 80,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "21 Nisan 1331",
+      "home_address": "Diyarbekir, Palu kazası, Yenice karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5374,
+      "output": 2333
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Yenice, 21 Nisan 1331\nHİTAP: Zevcim Recep'e\nGÖVDE: Recep, mektubumu aldın sesin çıkmadı. Niye yazmıyorsun. Kâğıt mı yok kalem mi yok. Köye muhtarın yanına her gün varıyorum senin mektup yok diyor. Hemen bul buluştur bir kâğıt yaz gönder. Tarlayı sürdüm bitti. İnek erkek buzağı verdi. Öküzün biri topallıyor canım ona çok sıkkın. Koca tarla işleri hep benim boynuma kaldı sen orda ne yaparsın. Elin kolun tutmaz mı bir kâğıt atmaya. Çocuklar her gün yola bakar. Ahmet sordu babam niye yazmıyor dedi. Çabuk cevap yolla beni delirtme.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Zevcen Habibe\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Palulu Recep'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 80 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4603,
+      "output": 3760
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Metindeki 'beni delirtme' ifadesi dönemin mektup dilinden ziyade günümüz sözlü tartışmalarını andırıyor.",
+      "olculuk": "Duygular büyük ölçüde somut olaylar üzerinden verilmiş, ancak sondaki isyan cümlesi biraz fazla doğrudan.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesine uygun kısa ve bağlaçsız cümleler kurulmuş, ancak 'zevcim' kelimesi bu profile fazla resmî kaçıyor.",
+      "somutluk": "Erkek buzağı ve topallayan öküz gibi köye dair çok başarılı ve inandırıcı somut detaylar kullanılmış.",
+      "sadakat": "İstenen uzunluk, sert ses tonu, konu ve zarf adresi kurallarına tam olarak uyulmuş.",
+      "sahicilik": "Kocasından haber alamayan ve işlerin yükü altında ezilen bir köylü kadınının ruh hâli inandırıcı şekilde yansıtılmış."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcim Recep'e",
+        "problem": "Düşük okuryazarlığa sahip bir köylü kadınının 'zevcim' gibi resmî bir kelime kullanması beklenmez.",
+        "suggestion": "HİTAP: Kocam Recep'e"
+      },
+      {
+        "line": "Çabuk cevap yolla beni delirtme.",
+        "problem": "'Beni delirtme' ifadesi 1915 mektup adabından çok günümüz günlük konuşma diline aittir.",
+        "suggestion": "Çabuk cevap yolla beni merakta koma."
+      },
+      {
+        "line": "İMZA: Zevcen Habibe",
+        "problem": "Hitaptaki gibi 'zevcen' kelimesi düşük okuryazarlık profili için fazla resmîdir.",
+        "suggestion": "İMZA: Habibe"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

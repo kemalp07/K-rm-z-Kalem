@@ -33,7 +33,12 @@ python -m letter_gen.cli promote pool_cepheden_000003 --note "iyi"
 python -m letter_gen.cli reject  pool_cepheye_000004  --note "klişe"
 python -m letter_gen.cli stats
 python -m letter_gen.cli export --out ../../content/pool_letters.json
+python -m letter_gen.cli --pool trials/round4 generate -n 12   # deneme, asıl havuza karışmaz
+python -m letter_gen.cli review --redo                         # kurallar değişince yeniden kontrol + puan
 ```
+
+Denemeler `trials/` altında durur (`round0`: kart düzeltilmeden önceki ilk 10 mektup;
+`round1–3`: kart ve lorebook ayarlanırken yapılan denemeler).
 
 `--dry-run` ayrıca lorebook'tan okunan yasak kelime listesini ve karttan okunan istek
 etiketlerini gösterir: kart ya da lorebook biçimi değişince ilk bakılacak yer burası.

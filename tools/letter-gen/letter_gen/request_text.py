@@ -58,6 +58,7 @@ def _field_values(req: Request, pools: dict[str, Any]) -> dict[str, str | None]:
     writes = lab["writes"][req.writes].format(writer=req.writer or "")
     return {
         "direction": lab["direction"][req.direction],
+        "date": req.date or None,
         "sender": sender,
         "recipient": recipient,
         "writes": writes,

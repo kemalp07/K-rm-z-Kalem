@@ -11,6 +11,7 @@ request_labels:
   Gönderen: sender
   Alıcı: recipient
   Yön: direction
+  Tarih: date
   Yazma biçimi: writes
   Okuryazarlık: literacy
   Ses: voice
@@ -37,6 +38,13 @@ labels:
   woman_title_min_age: 16
   soldier_location: "cephede"
 
+# Mektubun yazıldığı gün (Rumi). Oyun 5 Mayıs 1331'de (18 Mayıs 1915) başlıyor.
+dates:
+  year: 1331
+  months:
+    - { value: Nisan, days: [15, 30], weight: 1 }
+    - { value: Mayıs, days: [1, 31],  weight: 2 }
+
 prev_state:
   - { value: "ilk mektup", weight: 35 }
   - { value: "önceki mektup normal ulaştı", weight: 50 }
@@ -58,8 +66,21 @@ soldier_age:
   onbaşı: [20, 40]
   çavuş: [24, 45]
 
-# Hassas bilgi: "yok" ise modelin dikkatsizlik düzeyine göre kendisi kaçırması beklenir.
-sensitive_info: [ { value: "yok", weight: 1 } ]
+# Hassas bilgi: "yok" ise model dikkatsizlik düzeyine göre kendisi bir şey kaçırır — ve
+# hep başlığa yer adı yazmayı seçer. Dikkatsiz askerlerin bir kısmında kaçacak şeyin
+# TÜRÜ verilir ki sansür masasına gelen kaçaklar çeşitlensin.
+sensitive_info:
+  none: [ { value: "yok", weight: 1 } ]
+  careless:
+    - { value: "yok", weight: 35 }
+    - { value: "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)", weight: 12 }
+    - { value: "bir arkadaşının hangi taburda ya da bölükte olduğu", weight: 10 }
+    - { value: "kaç kişi kaldıkları ya da kaç kişinin yaralandığı", weight: 10 }
+    - { value: "kumanyanın ya da suyun hangi saatte geldiği", weight: 8 }
+    - { value: "yakındaki bir köyün ya da iskelenin adı", weight: 8 }
+    - { value: "hastaneye kaldırılan arkadaşlarının sayısı", weight: 7 }
+    - { value: "birliğin yakında yer değiştireceği", weight: 5 }
+    - { value: "gece hangi saatte nöbet değiştiği", weight: 5 }
 
 # Yazma biçimi ve okuryazarlık birlikte seçilir; imkânsız eşleşme bu tabloda yoktur.
 writing_pairs:
@@ -92,7 +113,7 @@ voices:
   - "utangaç, karısına adıyla seslenemez"
   - "dertli, ama dertlerini söylemez"
   - "hesapçı, para ve borçtan söz eder"
-  - "telaşlı, cümleleri yarım bırakır"
+  - "telaşlı, bir konudan ötekine atlar"
   - "ağırbaşlı, kalıplara sadık"
   - "meraklı, köyden herkesi sorar"
   - "sitemkâr, mektup gelmemesinden yakınır"
@@ -216,13 +237,13 @@ occupations:
 topics:
   cepheden:
     - "çorapların ve paketin geldiğini haber vermek"
-    - "hasadın kimin kaldıracağını sormak"
+    - "hasadı kimin kaldıracağını sormak"
     - "köydeki borcun nasıl ödeneceği"
     - "nişanlısının beklemesini istemek"
     - "kardeşinin askere alınmaması için çare aramak"
     - "evin damının akmasından endişe"
     - "çocuğunun mektebe gidip gitmediğini sormak"
-    - "bayramı uzakta geçirmek"
+    - "Hıdrellez'i uzakta geçirmek"
     - "annesine sağ olduğunu bildirmek"
     - "tarladaki öküzün satılıp satılmayacağı"
     - "köyden aynı bölüğe düşen hemşehrisinden haber"
@@ -230,23 +251,23 @@ topics:
     - "yeni doğan çocuğuna ad koymak"
     - "babasıyla eski bir dargınlığı gidermek"
     - "izin alma umudu"
-    - "kış için odun kesilip kesilmediğini sormak"
+    - "bostanın ekilip ekilmediğini sormak"
   cepheye:
     - "köyden haberler, kim evlendi kim öldü"
-    - "hasadın kaldırıldığını bildirmek"
+    - "ekinlerin durumunu bildirmek"
     - "çocuğun ilk adımları"
     - "paketle gönderilen şeyler"
     - "borcun ödenmesi için ne yapılacağı"
     - "evin geçimi, tarlanın kiraya verilmesi"
     - "kardeşin de askere çağrılması"
-    - "bayramda sofrada boş kalan yer"
+    - "Hıdrellez'de sofrada boş kalan yer"
     - "muska ve dualar"
     - "köydeki salgın hastalık (üstü örtülü)"
     - "nişanın bozulması tehlikesi"
     - "mektup gelmediği için endişe"
     - "komşunun oğlunun şehit haberi"
     - "ineğin buzağılaması"
-    - "kış hazırlığı"
+    - "çapa ve ot yolma işleri"
     - "fiyatların artması, un bulunamaması"
 
 hidden:
@@ -260,7 +281,7 @@ hidden:
     - "bir kavgaya karışıp ceza aldığını"
     - "parasını kumarda kaybettiğini"
     - "kaçmayı düşündüğünü"
-    - "ayağının donmak üzere olduğunu"
+    - "ayağında yara açıldığını"
     - { value: "yok", weight: 2 }
   cepheye:
     - "babasının öldüğünü"

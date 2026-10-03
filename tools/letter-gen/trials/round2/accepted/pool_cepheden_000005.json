@@ -1,0 +1,275 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Mustafa",
+    "epithet": "Kütahyalı",
+    "age": 29,
+    "hometown": "Kütahya",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zarife",
+    "relation": "karısı",
+    "location": "Kütahya, Simav kazası, Çukurören karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 97,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Zarife'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mustafa der ki: Evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bana bak Zarife, pederimle olan o eski niza meselesini sakın uzatmayasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Gidin elini öpün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Pederime de ki, bana darılmasın artık, hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dükkândaki örsü, çekici Hasan Usta'ya tembihlemiştim, gidip bakın pas tutmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Körüğün derisini eski çuvalla iyi sarsınlar da fare kemirmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kimseye borç etmeyin, eldeki unla idare edin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Pederime söyle, öküzleri koşup o derenin alt başındaki yeri muhakkak sürsün, tarlayı boş bırakmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evin çatısını da aktarsınlar, yağmurda akmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ben gelene kadar eve mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çocuğun üstünü başını yırtık gezdirme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "İki satır kâğıt yazdırıp muhtara verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Sözümden çıkma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Mustafa"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Çukurörenli Mustafa'nın sözüyle yazdım. Onbaşı Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kütahya, Simav kazası, Çukurören karyesi, Muhtar İbrahim Ağa vasıtasıyla Zarife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mustafa, Kütahyalı, 29, demirci, er (Kütahya, Simav kazası, Çukurören karyesi)\nAlıcı: Karısı Zarife Hanım, Kütahya, Simav kazası, Çukurören karyesi\nYön: cepheden\nTarih: 22 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 97",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Mustafa",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "demirci",
+        "epithet": "Kütahyalı",
+        "place": "Simav kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Zarife",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Simav kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Kütahya, Simav kazası, Çukurören karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 97,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "22 Mayıs 1331",
+      "home_address": "Kütahya, Simav kazası, Çukurören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5514,
+      "output": 4376
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Mayıs 1331\nHİTAP: Zevcem Zarife'ye\nGÖVDE: Mustafa der ki: Evvela selam eder, hatırını sorarım. Bana bak Zarife, pederimle olan o eski niza meselesini sakın uzatmayasın. Gidin elini öpün. Pederime de ki, bana darılmasın artık, hakkını helal etsin. Dükkândaki örsü, çekici Hasan Usta'ya tembihlemiştim, gidip bakın pas tutmasın. Körüğün derisini eski çuvalla iyi sarsınlar da fare kemirmesin. Kimseye borç etmeyin, eldeki unla idare edin. Pederime söyle, öküzleri koşup o derenin alt başındaki yeri muhakkak sürsün, tarlayı boş bırakmasın. Evin çatısını da aktarsınlar, yağmurda akmasın. Ben gelene kadar eve mukayyet ol. Çocuğun üstünü başını yırtık gezdirme. İki satır kâğıt yazdırıp muhtara verin. Sözümden çıkma.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Mustafa)\nNOT: İşbu kâğıdı Çukurörenli Mustafa'nın sözüyle yazdım. Onbaşı Ali.\nZARF: Kütahya, Simav kazası, Çukurören karyesi, Muhtar İbrahim Ağa vasıtasıyla Zarife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 97 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4815,
+      "output": 2517
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta kullanılan kelimeler ve ifadeler 1915 yılının ruhuna ve yazıcı onbaşının kelime dağarcığına tam uygundur.",
+      "olculuk": "Duygular hiçbir şekilde adlandırılmamış, yazarın sert ve emredici tavrı doğrudan eylemler ve emirler üzerinden başarıyla verilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen bir köylünün onbaşıya yazdırdığı mektup formatına, giriş kalıbı, mühür ve yazıcının notu detaylarıyla harfiyen uyulmuştur.",
+      "somutluk": "Körüğün derisi, örs, çekiç, fare kemirmesi ve derenin alt başındaki tarla gibi mesleki ve zirai detaylar mektubu son derece somut kılmış.",
+      "sadakat": "İstenen konu, gizlenen bilgi, uzunluk (96 kelime) ve sert ses tonu gibi tüm talimatlar eksiksiz yerine getirilmiş.",
+      "sahicilik": "Bir demirci askerinin geride bıraktığı dükkânı, tarlası ve ailesi için duyduğu pratik kaygılar mektubu son derece inandırıcı ve yaşanmış kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

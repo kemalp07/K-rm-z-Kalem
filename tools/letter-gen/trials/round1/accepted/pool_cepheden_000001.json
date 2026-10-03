@@ -1,0 +1,248 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yusuf",
+    "epithet": "Adanalı",
+    "age": 40,
+    "hometown": "Adana",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Arif",
+    "relation": "babası",
+    "location": "Adana, Karaisalı kazası, Ilıca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 60,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 13 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Arif Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunuzu ve yolladığınız paketi sağ salim elime aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Anamın ördüğü yün çoraplar tam ayağıma göre, Allah razı olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Pestili arkadaşlara da verdim, hepimiz dua ettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde havalar nasıldır, ısındı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ekinleri çapaladınız mı, bostanı ektiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Boz ineğin buzağısı ne alemde, büyüdü mü?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kardeşim Hasan tarlada size yardım ediyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anamın diz ağrıları hafifledi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim halimi sorarsanız şükür ayaktayız, hiç merak etmeyin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin ayrı ayrı ellerinden öperim.",
+  "signature": {
+    "text": "Oğlun Yusuf"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Adana, Karaisalı kazası, Ilıca karyesi, Muhtar Veli Ağa vasıtasıyla Arif Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yusuf, Adanalı, 40, çiftçi, onbaşı (Adana, Karaisalı kazası, Ilıca karyesi)\nAlıcı: Babası Arif, Adana, Karaisalı kazası, Ilıca karyesi\nYön: cepheden\nTarih: 13 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: genç ve heyecanlı, çok soru sorar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 60",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 40,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "epithet": "Adanalı",
+        "place": "Karaisalı kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Arif",
+        "gender": "erkek",
+        "age": 68,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karaisalı kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Adana, Karaisalı kazası, Ilıca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 60,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "13 Mayıs 1331",
+      "home_address": "Adana, Karaisalı kazası, Ilıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5487,
+      "output": 2088
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 13 Mayıs 1331\nHİTAP: Muhterem pederim Arif Ağa'ya\nGÖVDE: Mektubunuzu ve yolladığınız paketi sağ salim elime aldım. Anamın ördüğü yün çoraplar tam ayağıma göre, Allah razı olsun. Pestili arkadaşlara da verdim, hepimiz dua ettik. Köyde havalar nasıldır, ısındı mı? Ekinleri çapaladınız mı, bostanı ektiniz mi? Boz ineğin buzağısı ne alemde, büyüdü mü? Kardeşim Hasan tarlada size yardım ediyor mu? Anamın diz ağrıları hafifledi mi? Benim halimi sorarsanız şükür ayaktayız, hiç merak etmeyin.\nKAPANIŞ: Hepinizin ayrı ayrı ellerinden öperim.\nİMZA: Oğlun Yusuf\nZARF: Adana, Karaisalı kazası, Ilıca karyesi, Muhtar Veli Ağa vasıtasıyla Arif Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "63 kelime, hedef 60 (+5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4612,
+      "output": 2542
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimleri 1915 dönemine tamamen uygundur, modern bir sözcük içermemektedir.",
+      "olculuk": "Duygular adlandırılmadan, art arda sorulan sorular ve memleket merakı üzerinden çok ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Orta seviye okuryazarlığa uygun olarak sade, anlaşılır ve düzgün cümleler kurulmuştur.",
+      "somutluk": "Yün çorap, pestil, ekin çapalamak, bostan ve boz ineğin buzağısı gibi son derece somut ve kırsal hayata dair detaylar kullanılmıştır.",
+      "sadakat": "İstenen konu, uzunluk (63 kelime), çok soru sorma detayı ve diğer tüm yönergeler eksiksiz yerine getirilmiştir.",
+      "sahicilik": "Cephedeki bir çiftçi askerin ailesine yazdığı gerçek ve samimi bir mektup hissini tam olarak vermektedir."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

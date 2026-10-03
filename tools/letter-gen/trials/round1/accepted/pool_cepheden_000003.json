@@ -1,0 +1,257 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yakup",
+    "epithet": "Bursalı",
+    "age": 18,
+    "hometown": "Bursa",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Havva",
+    "relation": "karısı",
+    "location": "Bursa, Mihalıç kazası, Sarıyar karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 64,
+  "hand": "dictated",
+  "header": {
+    "text": "Seddülbahir, 8 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Zevcem Havva Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Yakup der ki: Evvela selam eder, Allah'tan sıhhatinizi dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hak ikinizi de esirgesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlim şükür ayaktadır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Denizden koca gemiler sabahtan beri durmadan atıyor.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Allah hepimizin yardımcısı olsun, her vakit duadayım, siz de dualarınızı esirgemeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim taburun yarısı geriye sargı yerine çekildi.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Evdeki bulgur yeter mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Oğlan mektebe başladı mı, imam efendiye yolla, Kuran'ı öğrensin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Yaradan onu size bağışlasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Yakup"
+  },
+  "note": {
+    "text": "İşbu mektubu Yakup kardeşimin lisanından ben kaleme aldım.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Bursa, Mihalıç kazası, Sarıyar karyesi, İmam Efendi vasıtasıyla Havva Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yakup, Bursalı, 18, çiftçi, er (Bursa, Mihalıç kazası, Sarıyar karyesi)\nAlıcı: Karısı Havva Hanım, Bursa, Mihalıç kazası, Sarıyar karyesi\nYön: cepheden\nTarih: 8 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 64",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yakup",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bursa",
+        "occupation": "çiftçi",
+        "epithet": "Bursalı",
+        "place": "Mihalıç kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Havva",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mihalıç kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Bursa, Mihalıç kazası, Sarıyar karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "korktuğunu",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 64,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "8 Mayıs 1331",
+      "home_address": "Bursa, Mihalıç kazası, Sarıyar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5394,
+      "output": 2318
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 8 Mayıs 1331\nHİTAP: Zevcem Havva Hanım'a\nGÖVDE: Yakup der ki: Evvela selam eder, Allah'tan sıhhatinizi dilerim. Cenab-ı Hak ikinizi de esirgesin. Benim hâlim şükür ayaktadır. ⟦Denizden koca gemiler sabahtan beri durmadan atıyor.⟧ Allah hepimizin yardımcısı olsun, her vakit duadayım, siz de dualarınızı esirgemeyin. ⟦Bizim taburun yarısı geriye sargı yerine çekildi.⟧ Evdeki bulgur yeter mi? Oğlan mektebe başladı mı, imam efendiye yolla, Kuran'ı öğrensin. Yaradan onu size bağışlasın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Yakup)\nNOT: İşbu mektubu Yakup kardeşimin lisanından ben kaleme aldım.\nZARF: Bursa, Mihalıç kazası, Sarıyar karyesi, İmam Efendi vasıtasıyla Havva Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "61 kelime, hedef 64 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 8 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4634,
+      "output": 2323
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler, hitap biçimleri ve dini kalıplar 1915 dönemine tam olarak uygundur.",
+      "olculuk": "Duygular adlandırılmamış, askerin içindeki korku hissi yoğun bombardıman tasviri ve art arda edilen dualarla üstü kapalı şekilde verilmiştir.",
+      "okuryazarlik": "İmamın kaleme aldığı mektup formatına ('Yakup der ki', 'lisanından') ve askerin basit dünyasına sadık kalınmıştır.",
+      "somutluk": "Bulgur, sargı yeri, koca gemiler ve mektep gibi gündelik ve somut detaylar mektubu zenginleştirmiştir.",
+      "sadakat": "İstenen tüm unsurlar ve dikkatsizlik seviyesi mektuba eklenmiştir ancak sansür işaretlemesinde tarih kurala aykırı olarak parantez içine alınmıştır.",
+      "sahicilik": "Cephedeki ağır şartlardan aniden evdeki bulgura ve çocuğun mektebine geçiş yapılması, dönemin asker mektuplarındaki gerçekçi ruh hâlini yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 8 Mayıs 1331⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) içine yalnızca askerî bilgi (yer adı) alınmalıdır, tarih işaretin dışında bırakılmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 8 Mayıs 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

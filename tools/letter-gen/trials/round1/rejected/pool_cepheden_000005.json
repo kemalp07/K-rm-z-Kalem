@@ -1,0 +1,257 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yakup",
+    "epithet": "Kütahyalı",
+    "age": 25,
+    "hometown": "Kütahya",
+    "occupation": "terzi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Seher",
+    "relation": "karısı",
+    "location": "Kütahya, Eşme kazası, Akpınar karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 100,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 11 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Seher Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hak'tan sıhhat ve afiyetinizi dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim hâlimizi sual ederseniz şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Mektubun elime geçti, pek ziyade memnun oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Seher, aklım hep pederimde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Buraya gelirken dargın ayrıldık, harmandaki buğday meselesinden ötürü yüzümüz asıktı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Vakit bulup yanına var, ellerinden hürmetle öptüğümü söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benden yana hakkım helaldir, o da bana hakkını helal eylesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "İhtiyardır, bostanda kendini fazla yormasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gurbetlik zor, küsü kalmayalım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarladaki ekinleri ne yaptınız, çapayı bitirdiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "İki gündür siper kazıyoruz",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": ", başka bir işimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Sağlığım yerindedir, meraklanma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Akpınar'daki emmime, dayıma, köyün büyüklerine tekmil selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam eder, cümlenizi Allah'a emanet eylerim.",
+  "signature": {
+    "text": "Zevcin Yakup"
+  },
+  "note": {
+    "text": "İşbu kâğıt Yakup'un ricasıyla yazılmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kütahya, Eşme kazası, Akpınar karyesi, Muhtar Hasan Ağa vasıtasıyla Seher Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yakup, Kütahyalı, 25, terzi, er (Kütahya, Eşme kazası, Akpınar karyesi)\nAlıcı: Karısı Seher Hanım, Kütahya, Eşme kazası, Akpınar karyesi\nYön: cepheden\nTarih: 11 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 100",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yakup",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "terzi",
+        "epithet": "Kütahyalı",
+        "place": "Eşme kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eşme kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Kütahya, Eşme kazası, Akpınar karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 100,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "11 Mayıs 1331",
+      "home_address": "Kütahya, Eşme kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5475,
+      "output": 3950
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 11 Mayıs 1331\nHİTAP: Zevcem Seher Hanım'a\nGÖVDE: Evvela mahsus selam eder, iki gözlerinden hasretle öperim. Cenab-ı Hak'tan sıhhat ve afiyetinizi dilerim. Bizim hâlimizi sual ederseniz şükür ayaktayız. Mektubun elime geçti, pek ziyade memnun oldum. Seher, aklım hep pederimde kaldı. Buraya gelirken dargın ayrıldık, harmandaki buğday meselesinden ötürü yüzümüz asıktı. Vakit bulup yanına var, ellerinden hürmetle öptüğümü söyle. Benden yana hakkım helaldir, o da bana hakkını helal eylesin. İhtiyardır, bostanda kendini fazla yormasın. Gurbetlik zor, küsü kalmayalım. Tarladaki ekinleri ne yaptınız, çapayı bitirdiniz mi? ⟦İki gündür siper kazıyoruz⟧, başka bir işimiz yoktur. Sağlığım yerindedir, meraklanma. Akpınar'daki emmime, dayıma, köyün büyüklerine tekmil selam eylerim.\nKAPANIŞ: Baki selam eder, cümlenizi Allah'a emanet eylerim.\nİMZA: Zevcin Yakup\nNOT: İşbu kâğıt Yakup'un ricasıyla yazılmıştır.\nZARF: Kütahya, Eşme kazası, Akpınar karyesi, Muhtar Hasan Ağa vasıtasıyla Seher Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 100 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "fail",
+      "detail": "geçen: hürmet"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000003 ile ortak: \"selam eder iki gözlerinden hasretle öperim\""
+    }
+  },
+  "review": null,
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "rejected",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontrol: literacy_words"
+    }
+  ]
+}

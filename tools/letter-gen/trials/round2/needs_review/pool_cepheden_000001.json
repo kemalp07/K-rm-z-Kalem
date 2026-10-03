@@ -1,0 +1,299 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tahir",
+    "epithet": "Niğdeli",
+    "age": 23,
+    "hometown": "Niğde",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Medine",
+    "relation": "karısı",
+    "location": "Niğde, Bor kazası, Kocaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 81,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Medine'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Medine sana mektup yolladım cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Çok merak ettim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hıdrellez geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde şenlik vardır şimdi ateş yakılır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Koyunları kırktınız mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yaylaya kim götürecek bizim sürüyü, Hasan emmim yardım etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ben iyiyim merak edilecek bir şey yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Günler geçiyor işte.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim mangada on kişi yaralandı geriye altı kişi kaldık.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İşler aynı, nöbet tutuyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Beni sorma canım sağ.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Siz kendinize iyi bakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kaynatamın ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Emmioğlu Ali'ye selam söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Bir kâğıt bulup da yazın haliniz nicedir bileyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Kuzular büyümüştür, buzağıyı sattınız mı.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Zevcin Tahir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Niğde, Bor kazası, Kocaköy karyesi, İmam Hafız Efendi vasıtasıyla Medine Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tahir, Niğdeli, 23, çoban, er (Niğde, Bor kazası, Kocaköy karyesi)\nAlıcı: Karısı Medine Hanım, Niğde, Bor kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 20 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dertli, ama dertlerini söylemez\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tahir",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Niğde",
+        "occupation": "çoban",
+        "epithet": "Niğdeli",
+        "place": "Bor kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Medine",
+        "gender": "kadın",
+        "age": 17,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bor kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Niğde, Bor kazası, Kocaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "20 Nisan 1331",
+      "home_address": "Niğde, Bor kazası, Kocaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5517,
+      "output": 3422
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Nisan 1331\nHİTAP: Medine'ye\nGÖVDE: Medine sana mektup yolladım cevap gelmedi. Çok merak ettim. Hıdrellez geldi çattı. Köyde şenlik vardır şimdi ateş yakılır. Koyunları kırktınız mı. Yaylaya kim götürecek bizim sürüyü, Hasan emmim yardım etsin. Ben iyiyim merak edilecek bir şey yok. Günler geçiyor işte. ⟦Bizim mangada on kişi yaralandı geriye altı kişi kaldık.⟧ İşler aynı, nöbet tutuyoruz. Beni sorma canım sağ. Siz kendinize iyi bakın. Kaynatamın ellerinden öperim. Emmioğlu Ali'ye selam söyle. Bir kâğıt bulup da yazın haliniz nicedir bileyim. Kuzular büyümüştür, buzağıyı sattınız mı.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Zevcin Tahir\nZARF: Niğde, Bor kazası, Kocaköy karyesi, İmam Hafız Efendi vasıtasıyla Medine Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 81 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4735,
+      "output": 3625
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "'Kendinize iyi bakın' gibi modern bir veda kalıbı kullanılmış.",
+      "olculuk": "Duygular adlandırılmadan, somut sorular ve durum bildirimleriyle ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Okuryazarlığı düşük bir çobanın 'zevcin' kelimesini kullanması ve mühür yerine imza atması uyumsuz.",
+      "somutluk": "Koyun kırkma, yayla, buzağı ve Hıdrellez ateşi gibi köye dair çok iyi somut detaylar var.",
+      "sadakat": "İstenen tüm unsurlar var ancak hassas bilgi gündelik bir cümlenin içine yedirilmek yerine doğrudan söylenmiş.",
+      "sahicilik": "Genel olarak samimi bir köy mektubu hissi veriyor ancak modern kalıp ve doğrudan verilen zayiat bilgisi doğallığı zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Siz kendinize iyi bakın.",
+        "problem": "'Kendine iyi bak' günümüz Türkçesine ait modern bir kalıptır, o dönemde kullanılmaz.",
+        "suggestion": "Allah'a emanet olun."
+      },
+      {
+        "line": "İMZA: Zevcin Tahir",
+        "problem": "Düşük okuryazar bir köylü 'zevc' kelimesini kullanmaz ve genellikle mühür basar.",
+        "suggestion": "(mühür: Tahir)"
+      },
+      {
+        "line": "⟦Bizim mangada on kişi yaralandı geriye altı kişi kaldık.⟧",
+        "problem": "Hassas bilgi gündelik bir cümlenin arasına farkında olmadan sızmamış, doğrudan askerî bir rapor gibi yazılmış.",
+        "suggestion": "Yemekler artıyor artık, ⟦mangada on kişi yaralanıp altı kişi kalınca⟧ hepimize bol bol yetiyor."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

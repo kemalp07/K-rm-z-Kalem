@@ -1,0 +1,254 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tahir",
+    "epithet": "Bolulu",
+    "age": 19,
+    "hometown": "Bolu",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Sadık",
+    "relation": "erkek kardeşi",
+    "location": "Bolu, Göynük kazası, Karacaören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 76,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Sadık'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Selam ederim hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halim eyidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim koca öküzü sattınız mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Onu satıp da borcu kapattın mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bakkal Salih'e on iki kuruş borcumuz vardı onu ver.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Geri kalan parayı beze sar sakla sakın kimseye deme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bana da mektupla bir iki kuruş yolla burda tütün alamıyorum hiç param kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Pazar yerine gidince fiyatları eyi sor ucuza verme öküzü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Emine halama dayıma komşulara selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Koyunların yününü kırktınız mı kaç okka yapağı çıktı onu da bana yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözlerinden öperim cevabını beklerim.",
+  "signature": {
+    "text": "Abin Tahir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Bolu, Göynük kazası, Karacaören karyesi, Muhtar Hasan Ağa vasıtasıyla Sadık'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tahir, Bolulu, 19, çoban, er (Bolu, Göynük kazası, Karacaören karyesi)\nAlıcı: Erkek kardeşi Sadık, Bolu, Göynük kazası, Karacaören karyesi\nYön: cepheden\nTarih: 23 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tahir",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bolu",
+        "occupation": "çoban",
+        "epithet": "Bolulu",
+        "place": "Göynük kazası, Karacaören karyesi"
+      },
+      "recipient": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 10,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Bolu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Göynük kazası, Karacaören karyesi"
+      },
+      "recipient_location": "Bolu, Göynük kazası, Karacaören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "23 Mayıs 1331",
+      "home_address": "Bolu, Göynük kazası, Karacaören karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5647,
+      "output": 2289
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Mayıs 1331\nHİTAP: Kardeşim Sadık'a\nGÖVDE: Selam ederim hatırını sorarım. Benim halim eyidir. Bizim koca öküzü sattınız mı. Onu satıp da borcu kapattın mı. Bakkal Salih'e on iki kuruş borcumuz vardı onu ver. Geri kalan parayı beze sar sakla sakın kimseye deme. Bana da mektupla bir iki kuruş yolla burda tütün alamıyorum hiç param kalmadı. Pazar yerine gidince fiyatları eyi sor ucuza verme öküzü. Emine halama dayıma komşulara selam ederim. Koyunların yününü kırktınız mı kaç okka yapağı çıktı onu da bana yaz.\nKAPANIŞ: Gözlerinden öperim cevabını beklerim.\nİMZA: Abin Tahir\nZARF: Bolu, Göynük kazası, Karacaören karyesi, Muhtar Hasan Ağa vasıtasıyla Sadık'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "76 kelime, hedef 76 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4777,
+      "output": 2832
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kuruş, okka, yapağı gibi kelimeler döneme ve köylü ağzına tamamen uygundur, modern ifade yoktur.",
+      "olculuk": "Duygular adlandırılmamış, durum tamamen somut talepler ve hesaplar üzerinden aktarılmıştır.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği, soru işaretlerinin unutulması ve 'eyi', 'burda' gibi yazımlar düşük okuryazarlığı kusursuz yansıtıyor.",
+      "somutluk": "Öküzün satışı, bakkala olan on iki kuruş borç, beze sarılan para ve yapağı hesabı gibi son derece somut detaylar içeriyor.",
+      "sadakat": "İstenen uzunluğa (tam 76 kelime), sese (titiz/hesapçı) ve gizlenen kumarda para kaybetme detayına (parasızlık çekmesiyle) tamamen sadık kalınmış.",
+      "sahicilik": "Bir köylü askerinin geride bıraktığı işleri ve borçları dert edindiği, son derece inandırıcı, doğal ve klişeden uzak bir mektup."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

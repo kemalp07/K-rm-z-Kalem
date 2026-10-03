@@ -1,0 +1,305 @@
+{
+  "id": "pool_cepheye_000005",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Cemile",
+    "epithet": "Adanalı",
+    "age": 31,
+    "hometown": "Adana",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Şevket",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 108,
+  "hand": "dictated",
+  "header": {
+    "text": "Yenice, 28 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Şevket'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam ederim, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığın mektup elimize geçti, okuttuk, ferahladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dün Yenice'ye jandarma geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim karşı komşu Hatice ablanın oğlu İsmail'in künyesi gelmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Şehit düşmüş diyorlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sokağın başından ağıt sesi kesilmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İsmail'in nişanlısı da oradaydı, kızcağız eşiğe yığıldı kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Allah onlara dayanma gücü versin, seni de bize bağışlasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralarda havalar iyice ısındı, millet pamuk çapasına indi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ben bu ara tarlaya gitmiyorum, evde kalıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Güneş dokunuyor herhal, gölgede oturuyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kızılgözlerin gelini sağ olsun, ekmeğimizi o yoğuruyor kaç gündür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çocuklar iyidir, yollara bakıyorlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Avludaki asma da koruk döktü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Geceleri serin olur, göğsünü sıcak tut.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Çabuk cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Cemile"
+  },
+  "note": {
+    "text": "İşbu mektubu Cemile teyzemin ağzından ben yazdım. Komşu talebe Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Adanalı Şevket'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Cemile Hanım, Adanalı, 31, ev hanımı (Adana, Ceyhan kazası, Yenice karyesi)\nAlıcı: Kocası Onbaşı Şevket, cephede\nYön: cepheye\nTarih: 28 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: dertli, ama dertlerini söylemez\nKonu: komşunun oğlunun şehit haberi\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 108",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Cemile",
+        "gender": "kadın",
+        "age": 31,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "ev hanımı",
+        "epithet": "Adanalı",
+        "place": "Ceyhan kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Şevket",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ceyhan kazası, Yenice karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 108,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "28 Mayıs 1331",
+      "home_address": "Adana, Ceyhan kazası, Yenice karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5507,
+      "output": 2394
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Yenice, 28 Mayıs 1331\nHİTAP: Zevcim Şevket'e\nGÖVDE: Evvela selam ederim, iki gözlerinden öperim. Yolladığın mektup elimize geçti, okuttuk, ferahladık. Dün Yenice'ye jandarma geldi. Bizim karşı komşu Hatice ablanın oğlu İsmail'in künyesi gelmiş. Şehit düşmüş diyorlar. Sokağın başından ağıt sesi kesilmiyor. İsmail'in nişanlısı da oradaydı, kızcağız eşiğe yığıldı kaldı. Allah onlara dayanma gücü versin, seni de bize bağışlasın. Buralarda havalar iyice ısındı, millet pamuk çapasına indi. Ben bu ara tarlaya gitmiyorum, evde kalıyorum. Güneş dokunuyor herhal, gölgede oturuyorum. Kızılgözlerin gelini sağ olsun, ekmeğimizi o yoğuruyor kaç gündür. Çocuklar iyidir, yollara bakıyorlar. Avludaki asma da koruk döktü. Geceleri serin olur, göğsünü sıcak tut. Çabuk cevap yaz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Cemile)\nNOT: İşbu mektubu Cemile teyzemin ağzından ben yazdım. Komşu talebe Hasan.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Adanalı Şevket'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "97 kelime, hedef 108 (-10%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4823,
+      "output": 3809
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "'Dayanma gücü' gibi modern bir ifade kullanılmış, hitapta ufak bir resmîlik var ancak geneli döneme uygun.",
+      "olculuk": "Duygular adlandırılmadan, eşiğe yığılma ve ağıt sesleri gibi somut sahnelerle çok ölçülü verilmiş.",
+      "okuryazarlik": "Talebenin elinden çıktığını hissettiren not kısmı ve kadının sade anlatımı uyum içinde.",
+      "somutluk": "Pamuk çapası, ekmek yoğurma, asmanın koruk dökmesi gibi yöresel ve gündelik detaylar mükemmel.",
+      "sadakat": "İstenen tüm unsurlar (şehit haberi, gizlenen hastalık) mektuba başarıyla ve doğal bir şekilde yedirilmiş.",
+      "sahicilik": "Hastalığını 'güneş dokunuyor' bahanesiyle gizlemesi ve komşunun ekmek yoğurması mektubu çok sahici kılmış."
+    },
+    "issues": [
+      {
+        "line": "Allah onlara dayanma gücü versin, seni de bize bağışlasın.",
+        "problem": "'Dayanma gücü' modern bir ifadedir, o dönemde bunun yerine 'sabır' kullanılırdı.",
+        "suggestion": "Allah onlara sabır versin, seni de bize bağışlasın."
+      },
+      {
+        "line": "HİTAP: Zevcim Şevket'e",
+        "problem": "Köylü bir kadının mektubunda 'zevcim' fazla resmîdir; talebe yazsa bile kadının ağzından 'Kocam' veya 'Efendim' daha doğal durur.",
+        "suggestion": "HİTAP: Kocam Şevket'e"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

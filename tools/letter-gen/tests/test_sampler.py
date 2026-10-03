@@ -121,3 +121,18 @@ def test_mixed_batch_is_half_and_half(pools):
     s = Sampler(pools, seed=2, name_max_uses=100)
     reqs = s.batch(10, "mixed")
     assert Counter(r.direction for r in reqs) == {"cepheden": 5, "cepheye": 5}
+
+
+def test_sensitive_hint_only_for_careless_soldiers(pools):
+    reqs = _many(pools, 1000, seed=31)
+    assert all(r.sensitive_info == "yok" for r in reqs if r.carelessness == "none")
+    careless = [r for r in reqs if r.carelessness != "none"]
+    hinted = [r for r in careless if r.sensitive_info != "yok"]
+    assert 0.5 < len(hinted) / len(careless) < 0.8
+    assert len({r.sensitive_info for r in hinted}) >= 6
+
+
+def test_dates_fall_in_spring_1331(pools):
+    for r in _many(pools, 200, seed=4):
+        day, month, year = r.date.split()
+        assert year == "1331" and month in ("Nisan", "Mayıs")

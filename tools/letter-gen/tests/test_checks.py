@@ -25,6 +25,7 @@ def make_request(**kw) -> Request:
         length_label="kısa",
         length_target=30,
         soldier_relation="oğlu",
+        date="4 Mayıs 1331",
     )
     base.update(kw)
     return Request(**base)
@@ -62,8 +63,8 @@ def test_low_literacy_words():
     raw = GOOD_LETTER.replace("Öküzü satmayın.", "Lakin öküzü satmayın.")
     assert checks.check_literacy_words(make_record(raw), CTX)["result"] == "fail"
     assert checks.check_literacy_words(make_record(raw, literacy="high"), CTX)["result"] == "pass"
-    # an illiterate soldier's words written down by a comrade: still plain
-    assert checks.check_literacy_words(make_record(raw, literacy="none", writes="dictated"), CTX)["result"] == "fail"
+    # someone writing it down for an illiterate sender mixes in their own words
+    assert checks.check_literacy_words(make_record(raw, literacy="none", writes="dictated"), CTX)["result"] == "pass"
     # a professional scribe may write formally
     assert checks.check_literacy_words(make_record(raw, literacy="none", writes="scribe"), CTX)["result"] == "pass"
 
@@ -141,3 +142,17 @@ def test_parse_error_is_a_format_fail():
     rec = record.build("pool_cepheden_000002", req, "", None, {}, parse_error="eksik alan: ZARF")
     res = checks.run_all(rec, CTX)
     assert res == {"format": {"result": "fail", "detail": "eksik alan: ZARF"}}
+
+
+def test_paid_scribe_may_write_formally():
+    raw = GOOD_LETTER.replace("Öküzü satmayın.", "Lakin öküzü satmayın.")
+    assert checks.check_literacy_words(make_record(raw, literacy="low", writes="scribe"), CTX)["result"] == "pass"
+    assert checks.check_literacy_words(make_record(raw, literacy="low"), CTX)["result"] == "fail"
+
+
+def test_header_date_must_match_request():
+    rec = make_record(date="4 Mayıs 1331")
+    rec["meta"]["request_fields"] = {"date": "4 Mayıs 1331"}
+    assert checks.check_date(rec)["result"] == "pass"
+    rec["meta"]["request_fields"] = {"date": "14 Mayıs 1331"}
+    assert checks.check_date(rec)["result"] == "warn"

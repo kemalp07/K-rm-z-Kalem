@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Vesile",
+    "epithet": "Konyalı",
+    "age": 8,
+    "hometown": "Konya",
+    "occupation": "çiftçi",
+    "relation": "kızı"
+  },
+  "recipient": {
+    "name": "Sait",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 105,
+  "hand": "dictated",
+  "header": {
+    "text": "Ilıca, 11 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Pederim Sait'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Vesile kızın der ki: Babacığım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gittiğinden beri muhtarın odasına kaç kere vardım, hiç kâğıdın çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizi unuttun mu yoksa kâğıt mı bulamazsın?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hani çabuk dönecektin, bahar geldi geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sarı inek geçen cuma buzağıladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Alnı sakar, pek yaman bir dişi buzağı verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Anam sabah akşam altını temizliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sütünü sağdık, yoğurt da çalacağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Tarlada ekinlerin otunu yolmaya başladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Evde herkesin sağlığı yerindedir, bir eksiğimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yalnız senin yolunu gözleriz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Köpek bile akşamları avlu kapısına başını koyup bekliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Geçen gün köyden giden İbrahim ağabeylere mektup gelmiş, okuttular da avluda hepimiz dinledik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Sen de iki satır kelam yollasan ne olurdu sanki?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Çabuk cevap yaz, kâğıdını beklerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol babacığım.",
+  "signature": {
+    "text": "",
+    "seal": "Vesile"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Vesile kızın isteği üzerine ben yazdım, pederine selam ederim. İmam Salih.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Konyalı Er Sait'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Vesile, Konyalı, 8, çiftçi (Konya, Karaman kazası, Ilıca karyesi)\nAlıcı: Babası Er Sait, cephede\nYön: cepheye\nTarih: 11 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: ineğin buzağılaması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 105",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Vesile",
+        "gender": "kadın",
+        "age": 8,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": "çiftçi",
+        "epithet": "Konyalı",
+        "place": "Karaman kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Sait",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karaman kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "ineğin buzağılaması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 105,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "11 Mayıs 1331",
+      "home_address": "Konya, Karaman kazası, Ilıca karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5494,
+      "output": 3815
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ilıca, 11 Mayıs 1331\nHİTAP: Pederim Sait'e\nGÖVDE: Vesile kızın der ki: Babacığım ellerinden öperim. Gittiğinden beri muhtarın odasına kaç kere vardım, hiç kâğıdın çıkmadı. Bizi unuttun mu yoksa kâğıt mı bulamazsın? Hani çabuk dönecektin, bahar geldi geçiyor. Sarı inek geçen cuma buzağıladı. Alnı sakar, pek yaman bir dişi buzağı verdi. Anam sabah akşam altını temizliyor. Sütünü sağdık, yoğurt da çalacağız. Tarlada ekinlerin otunu yolmaya başladık. Evde herkesin sağlığı yerindedir, bir eksiğimiz yoktur. Yalnız senin yolunu gözleriz. Köpek bile akşamları avlu kapısına başını koyup bekliyor. Geçen gün köyden giden İbrahim ağabeylere mektup gelmiş, okuttular da avluda hepimiz dinledik. Sen de iki satır kelam yollasan ne olurdu sanki? Çabuk cevap yaz, kâğıdını beklerim.\nKAPANIŞ: Allah'a emanet ol babacığım.\nİMZA: (mühür: Vesile)\nNOT: İşbu kâğıdı Vesile kızın isteği üzerine ben yazdım, pederine selam ederim. İmam Salih.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Konyalı Er Sait'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 105 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "fail",
+      "detail": "geçen: kelam"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": null,
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "rejected",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontrol: literacy_words"
+    }
+  ]
+}

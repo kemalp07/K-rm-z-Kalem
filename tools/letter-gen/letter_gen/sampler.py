@@ -45,6 +45,7 @@ class Request:
     length_target: int
     package: list[str] | None = None
     prev_state: str = ""
+    date: str = ""
     # Full home address line in the lorebook's pattern, without the go-between.
     home_address: str = ""
     # How the soldier stands to the other person ("oğlu"), for the request text.
@@ -168,6 +169,19 @@ class Sampler:
             options = [w for w in self.p["writing_pairs"] if w["writes"] != "self"]
         return self.pick(options)
 
+    def _sensitive(self, carelessness: str) -> str:
+        s = self.p["sensitive_info"]
+        if isinstance(s, list):  # a single list for everyone
+            return self.pick_value(s)
+        return self.pick_value(s["none"] if carelessness == "none" else s["careless"])
+
+    def _date(self) -> str:
+        d = self.p.get("dates")
+        if not d:
+            return ""
+        month = self.pick(d["months"])
+        return f"{self.rng.randint(*month['days'])} {_value(month)} {d['year']}"
+
     def _epithet(self, hometown: dict[str, Any], occupation: dict[str, Any]) -> str:
         style = self.pick_value(self.p["epithet_style"])
         if style == "occupation" and occupation.get("epithet", True):
@@ -237,6 +251,7 @@ class Sampler:
             lo, hi = self.p.get("package_items_count", [1, 2])
             package = self.rng.sample(self.p["package_items"], k=self.rng.randint(lo, hi))
 
+        carelessness = self.pick_value(self.p["carelessness"][direction])
         req = Request(
             direction=direction,
             sender=sender,
@@ -248,13 +263,14 @@ class Sampler:
             voice=self.rng.choice(self.p["voices"]),
             topic=self.rng.choice(self.p["topics"][direction]),
             hidden=self.pick_value(self.p["hidden"][direction]),
-            carelessness=self.pick_value(self.p["carelessness"][direction]),
-            sensitive_info=self.pick_value(self.p["sensitive_info"]),
+            carelessness=carelessness,
+            sensitive_info=self._sensitive(carelessness),
             length_label=_value(length),
             length_target=self.rng.randint(*length["words"]),
             package=package,
             soldier_relation=inverse,
             prev_state=self.pick_value(self.p["prev_state"]),
+            date=self._date(),
             home_address=home_address,
         )
 

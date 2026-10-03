@@ -131,6 +131,20 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text.replace(_OPEN, "").replace(_CLOSE, "")).strip()
 
 
+_RUMI_MONTHS = "Mart|Nisan|Mayıs|Haziran|Temmuz|Ağustos|Eylül|Teşrinievvel|Teşrinisani|Kânunuevvel|Kanunuevvel|Kânunusani|Kanunusani|Şubat"
+_MARKED_DATE = re.compile(r"⟦([^⟧]*?),?\s*(\d{1,2}\s+(?:" + _RUMI_MONTHS + r")\s+\d{3,4})\s*⟧")
+
+
+def unmark_dates(text: str) -> str:
+    """Take a date out of a censor mark in a header: the place is the secret, not the day."""
+
+    def fix(m: re.Match[str]) -> str:
+        place = m.group(1).strip(" ,")
+        return f"⟦{place}⟧, {m.group(2)}" if place else m.group(2)
+
+    return _MARKED_DATE.sub(fix, text)
+
+
 def _marked(text: str, where: str) -> Marked:
     _check_marks(text, where)
     return Marked(text=_clean(text), sensitive=_OPEN in text)
@@ -191,7 +205,7 @@ def parse(raw: str) -> ParsedLetter:
     signature = _clean(_SEAL_RE.sub("", signature))
     note = values.get("NOT", "").strip()
     return ParsedLetter(
-        header=_marked(values["BAŞLIK"], "BAŞLIK"),
+        header=_marked(unmark_dates(values["BAŞLIK"]), "BAŞLIK"),
         salutation=_clean(values["HİTAP"]),
         segments=body_segments(values["GÖVDE"]),
         closing=_clean(values["KAPANIŞ"]),

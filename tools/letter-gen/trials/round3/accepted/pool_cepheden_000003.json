@@ -1,0 +1,281 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Süleyman",
+    "epithet": "Afyonlu",
+    "age": 20,
+    "hometown": "Afyon",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Şerife",
+    "relation": "annesi",
+    "location": "Afyon, Bolvadin kazası, Yeniköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 109,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Şerife Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "İşbu kâğıdı Süleyman'ın sözüyle yazıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Süleyman der ki: Anacığım, ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen yolladığın mektup elime geçti, imam efendiye okuttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim keyfim yerinde, koca gün siperde yan gelip yatıyoruz, dağda koyun peşinde koşmaktan daha kolaymış.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim köyden Topal Hasan'ın oğlu Ali'yle karşılaştım geçen gün,",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "onları Üçüncü Tabura vermişler",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": ", boyu posu uzamış, selâmı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim haylaz oğlanı sorarım, mektebe yolladın mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "İmam efendinin yakasını bıraksın da elifbayı söksün gayrı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çobanlık bana yeter, o kâğıt okumayı bilsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köyün sürüsü şimdi kime emanet, bahar geldi kurtlara kuzu kaptırmadınız inşallah?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dert etme beni, buranın peksimeti bizim evin bulgurundan sert ama adamı tok tutuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Emmime, cemaate çok selâm eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Süleyman"
+  },
+  "note": {
+    "text": "Evladınızın keyfi şükür yerindedir. Alay İmamı Hafız Ömer.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Afyon, Bolvadin kazası, Yeniköy karyesi, İmam Tahir Efendi vasıtasıyla Şerife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Süleyman, Afyonlu, 20, çoban, er (Afyon, Bolvadin kazası, Yeniköy karyesi)\nAlıcı: Annesi Şerife Hanım, Afyon, Bolvadin kazası, Yeniköy karyesi\nYön: cepheden\nTarih: 26 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: yok\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 109",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Süleyman",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Afyon",
+        "occupation": "çoban",
+        "epithet": "Afyonlu",
+        "place": "Bolvadin kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Şerife",
+        "gender": "kadın",
+        "age": 45,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bolvadin kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Afyon, Bolvadin kazası, Yeniköy karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "yok",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "uzun",
+      "length_target": 109,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Mayıs 1331",
+      "home_address": "Afyon, Bolvadin kazası, Yeniköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5613,
+      "output": 3612
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 26 Mayıs 1331\nHİTAP: Validem Şerife Hanım'a\nGÖVDE: İşbu kâğıdı Süleyman'ın sözüyle yazıyorum. Süleyman der ki: Anacığım, ellerinden öperim. Geçen yolladığın mektup elime geçti, imam efendiye okuttum. Benim keyfim yerinde, koca gün siperde yan gelip yatıyoruz, dağda koyun peşinde koşmaktan daha kolaymış. Bizim köyden Topal Hasan'ın oğlu Ali'yle karşılaştım geçen gün, ⟦onları Üçüncü Tabura vermişler⟧, boyu posu uzamış, selâmı var. Bizim haylaz oğlanı sorarım, mektebe yolladın mı? İmam efendinin yakasını bıraksın da elifbayı söksün gayrı. Çobanlık bana yeter, o kâğıt okumayı bilsin. Köyün sürüsü şimdi kime emanet, bahar geldi kurtlara kuzu kaptırmadınız inşallah? Dert etme beni, buranın peksimeti bizim evin bulgurundan sert ama adamı tok tutuyor. Emmime, cemaate çok selâm eyle.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Süleyman)\nNOT: Evladınızın keyfi şükür yerindedir. Alay İmamı Hafız Ömer.\nZARF: Afyon, Bolvadin kazası, Yeniköy karyesi, İmam Tahir Efendi vasıtasıyla Şerife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "103 kelime, hedef 109 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4941,
+      "output": 3234
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelimeleri (işbu, gayrı, elifba, peksimet) ve hitap biçimleri modern ifadeye kaçmadan kusursuz kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, şakacı ton abartısız ve somut detaylarla (siperde yan gelip yatmak) verilmiş.",
+      "okuryazarlik": "İmamın resmi giriş-çıkış dili ile Süleyman'ın köylü ağzı çok iyi harmanlanmış, mühür detayı atlanmamış.",
+      "somutluk": "Peksimet, bulgur, koyun, kurt, elifba gibi döneme ve karaktere uygun çok sayıda somut detay barındırıyor.",
+      "sadakat": "İstenen konu, şakacı ses, hassas bilgi ve dikkatsizlik seviyesi tam olarak karşılanmış.",
+      "sahicilik": "Bir çobanın cephedeki durumu hafife alarak anlatması inandırıcı olsa da, kullanılan bir deyimde küçük bir mantık kayması var."
+    },
+    "issues": [
+      {
+        "line": "İmam efendinin yakasını bıraksın da elifbayı söksün gayrı.",
+        "problem": "\"Yakasını bıraksın\" deyimi peşini bırakmak, uzaklaşmak anlamındadır; oysa baba çocuğun imamdan eğitim almasını istemektedir, bu yüzden \"yakasını bırakmasın\" (peşinden ayrılmasın) denmesi mantıken daha doğrudur.",
+        "suggestion": "İmam efendinin yakasını bırakmasın da elifbayı söksün gayrı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

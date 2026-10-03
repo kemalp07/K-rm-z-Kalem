@@ -1,0 +1,300 @@
+{
+  "id": "pool_cepheye_000004",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ümmühan",
+    "epithet": "Eskişehirli",
+    "age": 27,
+    "hometown": "Eskişehir",
+    "occupation": "ırgat",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Mahmut",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 123,
+  "hand": "dictated",
+  "header": {
+    "text": "Karaağaç, 15 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Mahmut'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ümmühan der ki: Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür ayaktayım, bir yaramazlık yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kaç zamandır yollarını gözleriz, muhtarın getirdiği postalarda senin adın çıkmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bu sana yazdırdığım ikinci kâğıt oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Acaba eline kâğıt kalem geçmez mi, yoksa vaktin mi daraldı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Biz burada iyiyiz, hiç meraklanma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Nisan geldi, havalar ısınmaya durdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben dünden beri Hacıların tarlasına çapaya gidiyorum, gündeliğe başladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Anamın babamın selâmı var, onlar da iyiler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Koyunlar yavrulamaya başladı, bizim sarı kız da bir dişi buzağı verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Evde unumuz bulgurumuz yetiyor, ekinler de yeşerdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen kendini sakın, siperde geceleri üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kâğıdı alınca köyün hocasına bir iki satır yazdır, sağ olduğunu bilelim, içimiz ferahlasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Başka bir diyeceğim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Gelecek postayı dört gözle beklerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Babam muhtara on para verdi pul parası için.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Ümmühan"
+  },
+  "note": {
+    "text": "İşbu mektubu Ümmühan kızımızın lisanından fakir köy hocası yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Seyitgazili Er Mahmut'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ümmühan Hanım, Eskişehirli, 27, ırgat (Eskişehir, Seyitgazi kazası, Karaağaç karyesi)\nAlıcı: Nişanlısı Er Mahmut, cephede\nYön: cepheye\nTarih: 15 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: az konuşur, her şeyi iyi gösterir\nKonu: mektup gelmediği için endişe\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 123",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ümmühan",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "ırgat",
+        "epithet": "Eskişehirli",
+        "place": "Seyitgazi kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Mahmut",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Seyitgazi kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 123,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "15 Nisan 1331",
+      "home_address": "Eskişehir, Seyitgazi kazası, Karaağaç karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5391,
+      "output": 4911
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Karaağaç, 15 Nisan 1331\nHİTAP: Mahmut'a\nGÖVDE: Ümmühan der ki: Evvela selam eder, iki gözlerinden öperim. Benim hâlimi sorarsan şükür ayaktayım, bir yaramazlık yoktur. Kaç zamandır yollarını gözleriz, muhtarın getirdiği postalarda senin adın çıkmıyor. Bu sana yazdırdığım ikinci kâğıt oldu. Acaba eline kâğıt kalem geçmez mi, yoksa vaktin mi daraldı? Biz burada iyiyiz, hiç meraklanma. Nisan geldi, havalar ısınmaya durdu. Ben dünden beri Hacıların tarlasına çapaya gidiyorum, gündeliğe başladık. Anamın babamın selâmı var, onlar da iyiler. Koyunlar yavrulamaya başladı, bizim sarı kız da bir dişi buzağı verdi. Evde unumuz bulgurumuz yetiyor, ekinler de yeşerdi. Sen kendini sakın, siperde geceleri üşütme. Kâğıdı alınca köyün hocasına bir iki satır yazdır, sağ olduğunu bilelim, içimiz ferahlasın. Başka bir diyeceğim yoktur. Gelecek postayı dört gözle beklerim. Babam muhtara on para verdi pul parası için.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Ümmühan)\nNOT: İşbu mektubu Ümmühan kızımızın lisanından fakir köy hocası yazdı. \nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Seyitgazili Er Mahmut'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "123 kelime, hedef 123 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4771,
+      "output": 3470
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve kalıplar dönemin ruhuna ve köy yaşantısına tamamen uygundur.",
+      "olculuk": "Duygular isimlendirilmeden, mektup bekleme endişesi ve gündelik telaşlar üzerinden çok ölçülü verilmiş.",
+      "okuryazarlik": "Köy hocasının ağzından yazıldığı giriş ve çıkış kalıplarıyla, aynı zamanda Ümmühan'ın sade diliyle çok iyi yansıtılmış.",
+      "somutluk": "Çapa, sarı kızın buzağısı, on para pul parası gibi detaylar mektubu son derece somut kılıyor.",
+      "sadakat": "İstekteki tüm kısıtlamalara, özellikle her şeyi iyi gösterme çabasına ve yazdırılma biçimine sadık kalınmış.",
+      "sahicilik": "Genel olarak çok inandırıcı olsa da, cephedeki askerin köy hocasına mektup yazdıracağının söylenmesi küçük bir mantık hatası yaratmış."
+    },
+    "issues": [
+      {
+        "line": "Kâğıdı alınca köyün hocasına bir iki satır yazdır, sağ olduğunu bilelim, içimiz ferahlasın.",
+        "problem": "Cephedeki askerin mektup yazdırabileceği kişi köy hocası değil, bölük kâtibi veya okuryazar bir silah arkadaşıdır.",
+        "suggestion": "Kâğıdı alınca okuryazar bir arkadaşına bir iki satır yazdır, sağ olduğunu bilelim, içimiz ferahlasın."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

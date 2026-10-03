@@ -1,0 +1,268 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nuriye",
+    "epithet": "Çorumlu",
+    "age": 17,
+    "hometown": "Çorum",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Osman",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 81,
+  "hand": "careful",
+  "header": {
+    "text": "Gökçeören, 16 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendim Osman'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, hatırınızı sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sana İmam Efendiyle bir çıkın yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İçine iki çift yün çorapla biraz kavurga koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Üç kuruş da para sardım, tütün alırsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde her şey ateş pahası oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bakkal Bekir veresiye defterini kapattı, gazyağı bile alamıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Güzden kalan buğdayı vergiye saydılar, elde avuçta kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Senin geçen ay yolladığın o beş kuruşu da Muhtar'ın borcuna verdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ben ayaktayım şükür, evin işini gücünü tek başıma çeviriyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Gönderdiğim parayı idareli harca, burada kuruşun hesabı yapılıyor.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol. Cevabını bekliyorum.",
+  "signature": {
+    "text": "Zevcen Nuriye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Osmancıklı Osman'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nuriye Hanım, Çorumlu, 17, ev hanımı (Çorum, Osmancık kazası, Gökçeören karyesi)\nAlıcı: Kocası Er Osman, cephede\nYön: cepheye\nTarih: 16 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: hesapçı, para ve borçtan söz eder\nKonu: paketle gönderilen şeyler\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nuriye",
+        "gender": "kadın",
+        "age": 17,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": "ev hanımı",
+        "epithet": "Çorumlu",
+        "place": "Osmancık kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Osman",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Osmancık kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "paketle gönderilen şeyler",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Nisan 1331",
+      "home_address": "Çorum, Osmancık kazası, Gökçeören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5733,
+      "output": 2327
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Gökçeören, 16 Nisan 1331\nHİTAP: Efendim Osman'a\nGÖVDE: Evvela selam eder, hatırınızı sorarım. Mektubun elime geçti. Sana İmam Efendiyle bir çıkın yolladım. İçine iki çift yün çorapla biraz kavurga koydum. Üç kuruş da para sardım, tütün alırsın. Köyde her şey ateş pahası oldu. Bakkal Bekir veresiye defterini kapattı, gazyağı bile alamıyoruz. Güzden kalan buğdayı vergiye saydılar, elde avuçta kalmadı. Senin geçen ay yolladığın o beş kuruşu da Muhtar'ın borcuna verdim. Ben ayaktayım şükür, evin işini gücünü tek başıma çeviriyorum. Gönderdiğim parayı idareli harca, burada kuruşun hesabı yapılıyor.\nKAPANIŞ: Allah'a emanet ol. Cevabını bekliyorum.\nİMZA: Zevcen Nuriye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Osmancıklı Osman'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "79 kelime, hedef 81 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4802,
+      "output": 2936
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kavurga, çıkın, veresiye defteri gibi döneme uygun kelimeler kullanılmış ancak imzadaki zevcen kelimesi köylü bir kadın için fazla resmî kaçmış.",
+      "olculuk": "Duygular adlandırılmamış, hastalık durumu ayaktayım şükür denilerek ustaca gizlenmiş ve abartıdan uzak durulmuş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade cümleler kurulmuş, kurguyla örtüşüyor.",
+      "somutluk": "Bakkal Bekir, gazyağı, yün çorap ve üç kuruş gibi son derece somut ve inandırıcı detaylar içeriyor.",
+      "sadakat": "Hesapçı ses tonu, paket içeriği, gizlenen hastalık ve kelime sayısı istekle tam uyumlu.",
+      "sahicilik": "Köydeki geçim sıkıntısını ve paranın hesabını yapan bir eşin mektubu olarak çok gerçekçi hissettiriyor."
+    },
+    "issues": [
+      {
+        "line": "İMZA: Zevcen Nuriye",
+        "problem": "Zevce kelimesi kâtiplere ve yüksek okuryazar kesime ait bir kelimedir, orta okuryazar bir köylü kadının kendi yazdığı mektupta iğreti durur.",
+        "suggestion": "İMZA: Karın Nuriye yahut sadece İMZA: Nuriye"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

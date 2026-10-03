@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yusuf",
+    "epithet": "Tokatlı",
+    "age": 20,
+    "hometown": "Tokat",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Lütfi",
+    "relation": "amcası",
+    "location": "Tokat, Zile kazası, Çukurören karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 106,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 8 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Emmim Lütfi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Yusuf der ki: Kıymetli emmim, ellerinden öper, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim keyfim yerinde, yiyip içip yatıyoruz, arada bir de talim yapıyoruz, beyde yok bu rahatlık!",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralar toz toprak ama alıştık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyden gelenlerden duydum, bizim Sarı Öküz'ü satılığa çıkarmışsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Emmi, o öküzün huyu bana benzer, biraz inattır, yavaş yürür ama tarlada işi yarım bırakmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Onu satıp da çifte kimi koşacaksın?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hele az sabret, harmandan sonra bakarsınız çaresine.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim cebimde hiç metelik kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Parayı nerede yedin dersen, kahveci adamın masrafı çok olur bilirsin!",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Elinize üç beş kuruş geçerse kâğıdın arasına koyuverin, tütünsüz vakit geçmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yengeme, çocuklara, köydeki ahbaplara bol selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bostanı ektiniz mi onu da yazın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Mektubun cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Yusuf"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Yusuf kardeşimin ağzından ben yazdım. Arkadaşı Konyalı Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Tokat, Zile kazası, Çukurören karyesi, Muhtar Ali Ağa vasıtasıyla Lütfi Efendi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yusuf, Tokatlı, 20, kahveci, er (Tokat, Zile kazası, Çukurören karyesi)\nAlıcı: Amcası Lütfi, Tokat, Zile kazası, Çukurören karyesi\nYön: cepheden\nTarih: 8 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 106",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Tokat",
+        "occupation": "kahveci",
+        "epithet": "Tokatlı",
+        "place": "Zile kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 49,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Tokat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Zile kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Tokat, Zile kazası, Çukurören karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 106,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "8 Mayıs 1331",
+      "home_address": "Tokat, Zile kazası, Çukurören karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5470,
+      "output": 2684
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 8 Mayıs 1331\nHİTAP: Muhterem Emmim Lütfi'ye\nGÖVDE: Yusuf der ki: Kıymetli emmim, ellerinden öper, hatırını sorarım. Benim keyfim yerinde, yiyip içip yatıyoruz, arada bir de talim yapıyoruz, beyde yok bu rahatlık! Buralar toz toprak ama alıştık. Köyden gelenlerden duydum, bizim Sarı Öküz'ü satılığa çıkarmışsın. Emmi, o öküzün huyu bana benzer, biraz inattır, yavaş yürür ama tarlada işi yarım bırakmaz. Onu satıp da çifte kimi koşacaksın? Hele az sabret, harmandan sonra bakarsınız çaresine. Benim cebimde hiç metelik kalmadı. Parayı nerede yedin dersen, kahveci adamın masrafı çok olur bilirsin! Elinize üç beş kuruş geçerse kâğıdın arasına koyuverin, tütünsüz vakit geçmiyor. Yengeme, çocuklara, köydeki ahbaplara bol selam ederim. Bostanı ektiniz mi onu da yazın.\nKAPANIŞ: Mektubun cevabını bekliyorum.\nİMZA: (mühür: Yusuf)\nNOT: İşbu kâğıdı Yusuf kardeşimin ağzından ben yazdım. Arkadaşı Konyalı Hasan.\nZARF: Tokat, Zile kazası, Çukurören karyesi, Muhtar Ali Ağa vasıtasıyla Lütfi Efendi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 106 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4752,
+      "output": 1897
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Metinde modern kelime bulunmuyor; 'metelik', 'ahbap', 'çifte koşmak' gibi döneme ve kırsal yaşama uygun ifadeler kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, abartılı metaforlardan kaçınılmış ve askerin dertleri şakacı bir dille örtbas edilmiş.",
+      "okuryazarlik": "Mektubun başındaki 'Yusuf der ki' kalıbı ve sonundaki kâtip notuyla yazdırılma durumu kusursuz yansıtılmış.",
+      "somutluk": "Sarı Öküz, harman, tütün, bostan ve üç beş kuruş gibi son derece somut ve gündelik detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluğa (105 kelime), şakacı sese, öküz mevzusuna ve kumarın gizlenmesi detayına tamamen sadık kalınmış.",
+      "sahicilik": "Cephedeki zorlukları 'beyde yok bu rahatlık' diyerek gizleyen, samimi ve gerçekçi bir asker mektubu olmuş."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

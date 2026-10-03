@@ -1,0 +1,273 @@
+{
+  "id": "pool_cepheden_000006",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kadir",
+    "epithet": "Kütahyalı",
+    "age": 19,
+    "hometown": "Kütahya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Nuriye",
+    "relation": "karısı",
+    "location": "Kütahya, Simav kazası, Eğrisu karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 104,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 7 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcem Nuriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hakka şükürler olsun ki sıhhat ve afiyetteyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Valideciğimin mübarek ellerinden hürmetle öper, hayır dualarını beklerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Beni sorarsa sağ salim olduğumu bilsin, gönlünü ferah tutsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kerimenin ve mahdumun gözlerinden ayrı ayrı öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Oğlan yürümeye başlamıştır gayrı, kızı da benim yerime sev.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Onlara iyi mukayyet ol, üstlerini açık koma, hastalanmasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kıştan kalan unumuz idare ediyor mu, eksik gediğiniz var ise amcamlara danışasın, hakkınızı kimseye ezdirme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Eğrisu'daki ekinlerin işini pederim halleder inşallah, sen çocukların başından ayrılma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Burada günlerimiz geçip gidiyor, tayınımız muntazamdır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köydeki komşulara, akrabaya tekmil selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kâğıdım bittiğinden sözüme nihayet veriyor, sıhhatinizi Yüce Mevla'dan niyaz ediyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve dua ile.",
+  "signature": {
+    "text": "",
+    "seal": "Kadir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kütahya, Simav kazası, Eğrisu karyesi, İmam Hasan Efendi vasıtasıyla Nuriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kadir, Kütahyalı, 19, çiftçi, er (Kütahya, Simav kazası, Eğrisu karyesi)\nAlıcı: Karısı Nuriye Hanım, Kütahya, Simav kazası, Eğrisu karyesi\nYön: cepheden\nTarih: 7 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kadir",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "çiftçi",
+        "epithet": "Kütahyalı",
+        "place": "Simav kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Nuriye",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Simav kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Kütahya, Simav kazası, Eğrisu karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "7 Mayıs 1331",
+      "home_address": "Kütahya, Simav kazası, Eğrisu karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5665,
+      "output": 5278
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 7 Mayıs 1331\nHİTAP: Muhterem zevcem Nuriye Hanım'a\nGÖVDE: Evvela mahsus selam eder, iki gözlerinden hasretle öperim. Cenab-ı Hakka şükürler olsun ki sıhhat ve afiyetteyim. Valideciğimin mübarek ellerinden hürmetle öper, hayır dualarını beklerim. Beni sorarsa sağ salim olduğumu bilsin, gönlünü ferah tutsun. Kerimenin ve mahdumun gözlerinden ayrı ayrı öperim. Oğlan yürümeye başlamıştır gayrı, kızı da benim yerime sev. Onlara iyi mukayyet ol, üstlerini açık koma, hastalanmasınlar. Kıştan kalan unumuz idare ediyor mu, eksik gediğiniz var ise amcamlara danışasın, hakkınızı kimseye ezdirme. Eğrisu'daki ekinlerin işini pederim halleder inşallah, sen çocukların başından ayrılma. Burada günlerimiz geçip gidiyor, tayınımız muntazamdır. Köydeki komşulara, akrabaya tekmil selam eylerim. Kâğıdım bittiğinden sözüme nihayet veriyor, sıhhatinizi Yüce Mevla'dan niyaz ediyorum.\nKAPANIŞ: Baki selam ve dua ile.\nİMZA: (mühür: Kadir)\nZARF: Kütahya, Simav kazası, Eğrisu karyesi, İmam Hasan Efendi vasıtasıyla Nuriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "105 kelime, hedef 104 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000001 ile ortak: \"selam eder iki gözlerinden hasretle öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4919,
+      "output": 3499
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kâtip üslubunu yansıtan 'kerime', 'mahdum', 'niyaz ediyorum' gibi kelimelerle dönem dili kusursuz kurulmuş.",
+      "olculuk": "Duygular isimlendirilmeden, çocuklara duyulan şefkat somut tembihler üzerinden ('üstlerini açık koma') çok iyi verilmiş.",
+      "okuryazarlik": "Kâtibin resmî dili ile Kadir'in köylü ağzı ('gayrı', 'koma') arasındaki geçişler yazdırılan mektup formatına tam uyuyor.",
+      "somutluk": "Kıştan kalan un, ekinler ve çocukların yürümesi gibi gündelik detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen kelime sayısı, konu, gizlenen bilgi ve yazma biçimi harfiyen yerine getirilmiş.",
+      "sahicilik": "Mektup genel olarak çok inandırıcı olsa da, alıcı zaten o köyde yaşadığı için köyün adının zikretmesi ufak bir açıklama (exposition) yapaylığı yaratıyor."
+    },
+    "issues": [
+      {
+        "line": "Eğrisu'daki ekinlerin işini pederim halleder inşallah, sen çocukların başından ayrılma.",
+        "problem": "Karısı zaten Eğrisu'da yaşadığı için 'Eğrisu'daki ekinler' demek yerine doğrudan 'tarladaki ekinler' veya 'bizim ekinler' demesi daha doğaldır; köyün adını anmak dışarıya bilgi vermek gibi duruyor.",
+        "suggestion": "Tarladaki ekinlerin işini pederim halleder inşallah, sen çocukların başından ayrılma."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheye_000004",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Raziye",
+    "epithet": "Rizeli",
+    "age": 34,
+    "hometown": "Rize",
+    "occupation": "terzi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Lütfi",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 76,
+  "hand": "hurried",
+  "header": {
+    "text": "Akpınar, 1 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Lütfi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Lütfi kâğıdı alınca hemen cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Biz iyiyiz uşaklar iyi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sarı inek doğurdu dişi buzağı verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sütü azaldı idare ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen orda ne yapıyorsun kışlıkları çıkar artık havalar ısındı terlersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bana dikiş işi çıkıyor komşu köylerden entari diktiriyorlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Onunla mısır unu alıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Köyde adam kalmadı tarlaya ben giriyorum kimseden hayır bekleme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kendine dikkat et hastalanıp da başıma dert açma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ayağına sağlam ayakkabı giy.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Fadime'nin herifi mektup yollamış sen de kâğıt bul yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizi bekleterek durma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Raziye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Rizeli Lütfi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Raziye Hanım, Rizeli, 34, terzi (Rize, Atina kazası, Akpınar karyesi)\nAlıcı: Kocası Er Lütfi, cephede\nYön: cepheye\nTarih: 1 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: ineğin buzağılaması\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Raziye",
+        "gender": "kadın",
+        "age": 34,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": "terzi",
+        "epithet": "Rizeli",
+        "place": "Atina kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Atina kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "ineğin buzağılaması",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "1 Mayıs 1331",
+      "home_address": "Rize, Atina kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5486,
+      "output": 2733
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Akpınar, 1 Mayıs 1331\nHİTAP: Lütfi'ye\nGÖVDE: Lütfi kâğıdı alınca hemen cevap yaz. Biz iyiyiz uşaklar iyi. Sarı inek doğurdu dişi buzağı verdi. Sütü azaldı idare ediyoruz. Sen orda ne yapıyorsun kışlıkları çıkar artık havalar ısındı terlersin. Bana dikiş işi çıkıyor komşu köylerden entari diktiriyorlar. Onunla mısır unu alıyorum. Köyde adam kalmadı tarlaya ben giriyorum kimseden hayır bekleme. Kendine dikkat et hastalanıp da başıma dert açma. Ayağına sağlam ayakkabı giy. Fadime'nin herifi mektup yollamış sen de kâğıt bul yolla. Bizi bekleterek durma.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Raziye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Rizeli Lütfi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "75 kelime, hedef 76 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4693,
+      "output": 2267
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler genel olarak uygun olsa da 'bekleterek durma' gibi ifadeler dönemin doğal söyleyişinden uzak kalmış.",
+      "olculuk": "Duygular hiçbir şekilde adlandırılmamış, tamamen somut emirler ve gündelik telaşlar üzerinden çok iyi hissettirilmiş.",
+      "okuryazarlik": "Kısa ve basit cümlelerle düşük okuryazarlık yansıtılmış ancak noktalama işaretleri bir köylü için fazla kusursuz kullanılmış.",
+      "somutluk": "Sarı inek, mısır unu, entari dikişi ve komşu köyler gibi döneme ve yöreye ait çok güçlü somut detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluk, sert ses tonu, konu ve gizlenen bilgi talimatlarına eksiksiz uyulmuş.",
+      "sahicilik": "Kocasından uzakta evi çekip çeviren, yorgun ve sert mizaçlı bir Karadeniz kadınının sesi son derece inandırıcı."
+    },
+    "issues": [
+      {
+        "line": "Bizi bekleterek durma.",
+        "problem": "'Bekleterek durma' ifadesi dönemin doğal söyleyişine uymuyor, günümüz Türkçesinin zorlama bir kullanımı gibi duruyor.",
+        "suggestion": "Gözümüzü yolda koma."
+      },
+      {
+        "line": "ZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Rizeli Lütfi'ye",
+        "problem": "Zarf adresinde askerin rütbesi (Er) kurala aykırı olarak eksik bırakılmış.",
+        "suggestion": "ZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Rizeli Lütfi'ye"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

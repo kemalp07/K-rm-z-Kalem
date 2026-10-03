@@ -63,3 +63,9 @@ def test_markdown_bold_labels_are_tolerated():
 def test_malformed_letters_are_rejected(raw, message):
     with pytest.raises(ParseError, match=message):
         parse(raw)
+
+
+def test_dates_are_taken_out_of_header_marks():
+    p = parse(GOOD_LETTER.replace("Ordu-yı Hümayun, ⟦Seddülbahir⟧, 4 Mayıs 1331", "⟦Seddülbahir, 4 Mayıs 1331⟧"))
+    assert p.header.text == "Seddülbahir, 4 Mayıs 1331" and p.header.sensitive
+    assert parse(GOOD_LETTER).header.text == "Ordu-yı Hümayun, Seddülbahir, 4 Mayıs 1331"

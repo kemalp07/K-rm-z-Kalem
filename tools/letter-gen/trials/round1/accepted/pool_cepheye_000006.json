@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheye_000006",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sıdıka",
+    "epithet": "Diyarbekirli",
+    "age": 17,
+    "hometown": "Diyarbekir",
+    "occupation": "çiftçi",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Mustafa",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 72,
+  "hand": "dictated",
+  "header": {
+    "text": "Kuzören, 4 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Mustafa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sıdıka ablam der ki: Mustafa, gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Akşam babamgiller odada konuştular.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Diyorlar ki askerden dönüşü belli değilmiş, daha ne kadar bekleyecekmişim...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Halamın oğlu tarlayı bahane edip kapıya gelip gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Babam da ona...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ne olursun tez bir mektup yolla, sağım de, döneceğim de.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Gözüm yollarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Çeyiz sandığı köşede duruyor ama...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Tarlada çapaya gidiyorum, aklım hep...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bir kâğıt yolla, babam kendi gözüyle görsün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yoksa beni halamın oğluna...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Tez haber et Mustafa, yoksam...",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Sıdıka"
+  },
+  "note": {
+    "text": "İşbu mektubu Sıdıka ablamın ağzından ben yazdım. Komşunuz Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kuzörenli Mustafa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sıdıka Hanım, Diyarbekirli, 17, çiftçi (Diyarbekir, Ergani kazası, Kuzören karyesi)\nAlıcı: Nişanlısı Er Mustafa, cephede\nYön: cepheye\nTarih: 4 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: telaşlı, cümleleri yarım bırakır\nKonu: nişanın bozulması tehlikesi\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sıdıka",
+        "gender": "kadın",
+        "age": 17,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": "çiftçi",
+        "epithet": "Diyarbekirli",
+        "place": "Ergani kazası, Kuzören karyesi"
+      },
+      "recipient": {
+        "name": "Mustafa",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ergani kazası, Kuzören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "telaşlı, cümleleri yarım bırakır",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "4 Mayıs 1331",
+      "home_address": "Diyarbekir, Ergani kazası, Kuzören karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5394,
+      "output": 2683
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Kuzören, 4 Mayıs 1331\nHİTAP: Mustafa'ya\nGÖVDE: Sıdıka ablam der ki: Mustafa, gözlerinden öperim. Akşam babamgiller odada konuştular. Diyorlar ki askerden dönüşü belli değilmiş, daha ne kadar bekleyecekmişim... Halamın oğlu tarlayı bahane edip kapıya gelip gidiyor. Babam da ona... Ne olursun tez bir mektup yolla, sağım de, döneceğim de. Gözüm yollarda. Çeyiz sandığı köşede duruyor ama... Tarlada çapaya gidiyorum, aklım hep... Bir kâğıt yolla, babam kendi gözüyle görsün. Yoksa beni halamın oğluna... Tez haber et Mustafa, yoksam...\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Sıdıka)\nNOT: İşbu mektubu Sıdıka ablamın ağzından ben yazdım. Komşunuz Ali.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kuzörenli Mustafa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "70 kelime, hedef 72 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4651,
+      "output": 2435
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler dönemin ruhuna ve yöresel ağza (tez, yoksam) tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, yarım bırakılan cümleler ve somut eylemler üzerinden başarıyla hissettirilmiştir.",
+      "okuryazarlik": "Mektepli bir çocuğun ağzından yazıldığı giriş ve not kısımlarıyla çok iyi verilmiş, telaşlı ses tonu korunmuştur.",
+      "somutluk": "Çeyiz sandığı, tarlada çapa yapmak gibi gündelik ve somut ayrıntılar mektubu zenginleştirmiştir.",
+      "sadakat": "Nişanın bozulma tehlikesi, yarım bırakılan cümleler, saklanan bilgi ve uzunluk gibi tüm isteklere harfiyen uyulmuştur.",
+      "sahicilik": "Gerçekten telaşlı bir genç kızın yazdırdığı, samimi ve inandırıcı bir mektup olmuş."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Bekir",
+    "epithet": "Harputlu",
+    "age": 21,
+    "hometown": "Harput",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Safiye",
+    "relation": "kız kardeşi",
+    "location": "Harput, Arapkir kazası, Ağılönü karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 108,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Safiye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana iki kâğıt yolladım ama cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Niye yazmıyorsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Mektup kâğıdı parayla satılır boşa gitmesin çabuk cevap verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim hâlim iyidir merak etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim evin damı akıyordu ben askere gelmeden.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yağmur yağarsa kerpiç erir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Onu Deli Hasan emmime söyleyin toprak çekip yapsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Para isterse benim ondan alacağım yarım yevmiyeden kessin sayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sakın cebinizden kuruş vermeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Şehirde bulgur fiyatları ne kadar oldu onu da yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Ekmeği idareli yiyin ziyan etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Muhtara olan borcun vakti geldi mi onu beklerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Tarladaki otu yolunca satın da o borcu kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Benim burada masrafım yok para yollamayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Kunduram delindi ama idare ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Beni düşünmeyin karnım toktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Dayıma yengeme selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Ağabeyin Bekir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Harput, Arapkir kazası, Ağılönü karyesi, Muhtar Rıza Ağa vasıtasıyla Safiye'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Bekir, Harputlu, 21, ırgat, er (Harput, Arapkir kazası, Ağılönü karyesi)\nAlıcı: Kız kardeşi Safiye, Harput, Arapkir kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 23 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: evin damının akmasından endişe\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 108",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Harput",
+        "occupation": "ırgat",
+        "epithet": "Harputlu",
+        "place": "Arapkir kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Safiye",
+        "gender": "kadın",
+        "age": 13,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Arapkir kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Harput, Arapkir kazası, Ağılönü karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "evin damının akmasından endişe",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 108,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "23 Mayıs 1331",
+      "home_address": "Harput, Arapkir kazası, Ağılönü karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5566,
+      "output": 3978
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Mayıs 1331\nHİTAP: Kardeşim Safiye'ye\nGÖVDE: Evvela selam ederim. Sana iki kâğıt yolladım ama cevap gelmedi. Niye yazmıyorsun. Mektup kâğıdı parayla satılır boşa gitmesin çabuk cevap verin. Benim hâlim iyidir merak etmeyin. Bizim evin damı akıyordu ben askere gelmeden. Yağmur yağarsa kerpiç erir. Onu Deli Hasan emmime söyleyin toprak çekip yapsın. Para isterse benim ondan alacağım yarım yevmiyeden kessin sayın. Sakın cebinizden kuruş vermeyin. Şehirde bulgur fiyatları ne kadar oldu onu da yaz. Ekmeği idareli yiyin ziyan etmeyin. Muhtara olan borcun vakti geldi mi onu beklerim. Tarladaki otu yolunca satın da o borcu kapatın. Benim burada masrafım yok para yollamayın. Kunduram delindi ama idare ederim. Beni düşünmeyin karnım toktur. Dayıma yengeme selam ederim.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Ağabeyin Bekir\nZARF: Harput, Arapkir kazası, Ağılönü karyesi, Muhtar Rıza Ağa vasıtasıyla Safiye'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "107 kelime, hedef 108 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4773,
+      "output": 2089
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta kullanılan kelimeler (yevmiye, kuruş, kerpiç, ziyan) dönemin ruhuna ve bir ırgatın söz dağarcığına tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, metafor kullanılmamış; endişe tamamen damın akması ve borçlar üzerinden ölçülü ve dolaylı bir şekilde aktarılmış.",
+      "okuryazarlik": "Kısa, basit, bağlaçsız ve yer yer devrik cümlelerle düşük okuryazarlık seviyesi çok başarılı bir şekilde yansıtılmış.",
+      "somutluk": "Yarım yevmiye, kerpiç erimesi, delik kundura ve bulgur fiyatı gibi harika somut detaylar barındırıyor.",
+      "sadakat": "İstenen konu, hesapçı ses, uzunluk ve saklanan bilgi (iznin iptalinden hiç bahsedilmemiş) yönergelerine eksiksiz uyulmuş.",
+      "sahicilik": "Kısıtlı imkânlarla cepheden ailesinin geçimini, borcunu ve evini dert eden bir askerin son derece gerçekçi ve inandırıcı bir mektubu olmuş."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

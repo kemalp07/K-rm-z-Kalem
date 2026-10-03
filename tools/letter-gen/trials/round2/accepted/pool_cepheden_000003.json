@@ -1,0 +1,263 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Murat",
+    "epithet": "Tokatlı",
+    "age": 18,
+    "hometown": "Tokat",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Süleyman",
+    "relation": "babası",
+    "location": "Tokat, Zile kazası, Dereköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 65,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Süleyman Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela muhterem pederim Süleyman Ağa'ya selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Baba, benim hâlimi sual edersen şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Güzün tarlayı süremedik, sarı öküzü ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Yem bulamazsanız zahmet etmeyin satın, kışa borçlu girmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ben burada rahatım, hiçbir sıkıntım yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dün bizim taburu biraz geriye aldılar",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": ", çadırda oturuyoruz, keyfimiz yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anamın, küçük kardeşlerimin gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Köydeki kahveci çırağı yetim Mustafa'yı buralarda gördüm, o da iyidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Komşulara selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "",
+    "seal": "Murat"
+  },
+  "note": {
+    "text": "İşbu mektubu Murat kardeşimizin lisanından ben kaleme aldım. Çadır arkadaşı Hafız.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Tokat, Zile kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Süleyman Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Murat, Tokatlı, 18, kahveci, er (Tokat, Zile kazası, Dereköy karyesi)\nAlıcı: Babası Süleyman, Tokat, Zile kazası, Dereköy karyesi\nYön: cepheden\nTarih: 22 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: yaralandığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 65",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Murat",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Tokat",
+        "occupation": "kahveci",
+        "epithet": "Tokatlı",
+        "place": "Zile kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Süleyman",
+        "gender": "erkek",
+        "age": 41,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Tokat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Zile kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Tokat, Zile kazası, Dereköy karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "yaralandığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 65,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "22 Nisan 1331",
+      "home_address": "Tokat, Zile kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5508,
+      "output": 3532
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Nisan 1331\nHİTAP: Muhterem pederim Süleyman Ağa'ya\nGÖVDE: Evvela muhterem pederim Süleyman Ağa'ya selam eder, mübarek ellerinden öperim. Baba, benim hâlimi sual edersen şükür ayaktayız. Güzün tarlayı süremedik, sarı öküzü ne yaptınız? Yem bulamazsanız zahmet etmeyin satın, kışa borçlu girmeyin. Ben burada rahatım, hiçbir sıkıntım yoktur. ⟦Dün bizim taburu biraz geriye aldılar⟧, çadırda oturuyoruz, keyfimiz yerindedir. Anamın, küçük kardeşlerimin gözlerinden öperim. Köydeki kahveci çırağı yetim Mustafa'yı buralarda gördüm, o da iyidir. Komşulara selam eyle.\nKAPANIŞ: Baki selam.\nİMZA: (mühür: Murat)\nNOT: İşbu mektubu Murat kardeşimizin lisanından ben kaleme aldım. Çadır arkadaşı Hafız.\nZARF: Tokat, Zile kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Süleyman Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 65 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4753,
+      "output": 2984
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "\"Evvela\", \"sual edersen\", \"işbu mektubu\" gibi ifadelerle dönemin kâtip ve hoca ağzı çok iyi yansıtılmış.",
+      "olculuk": "Duygular adlandırılmamış, askerin durumu ve yorgunluğu \"çadırda oturuyoruz\" gibi somut ve sade ifadelerle verilmiş.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin hoca efendiye yazdırdığı mektup formatına (mühür, kâtip notu, giriş kalıpları) tamamen uyulmuş.",
+      "somutluk": "Sarı öküz, kahveci çırağı yetim Mustafa ve çadır gibi detaylar mektubu çok somut ve yaşanmış kılmış.",
+      "sadakat": "İstenen uzunluk, konu, saklanan yaralanma durumu (çadırda dinlenerek hissettirilmiş) ve dikkatsizlik seviyesi başarıyla uygulanmış.",
+      "sahicilik": "Kâtibin resmî girişiyle askerin köylü dilinin birbirine karıştığı çok inandırıcı ve doğal bir mektup olmuş."
+    },
+    "issues": [
+      {
+        "line": "⟦Dün bizim taburu biraz geriye aldılar⟧ , çadırda oturuyoruz, keyfimiz yerindedir.",
+        "problem": "\"Dün\" kelimesi zaman bildiren gündelik bir sözcüktür ve kural gereği sansür işaretinin dışında kalmalıdır; ayrıca virgülden önce gereksiz boşluk bırakılmıştır.",
+        "suggestion": "Dün ⟦bizim taburu biraz geriye aldılar⟧, çadırda oturuyoruz, keyfimiz yerindedir."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

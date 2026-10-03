@@ -1,0 +1,309 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nadide",
+    "epithet": "Kayserili",
+    "age": 63,
+    "hometown": "Kayseri",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Arif",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 117,
+  "hand": "careful",
+  "header": {
+    "text": "Kızılca, 29 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Gözümün nuru oğlum Arif'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Lakin sana epey sitemim var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kaç vakittir yollarını gözlerim, köye posta gelir, senin kâğıdın çıkmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "İnsan anasına iki satır yazıp sağlığını bildirmez mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizi düşünme, ambarımızda yiyeceğimiz var şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yalnız şu Hacı'ya olan borç meselesi canımı sıkıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Vadesi geldi kapıya dayandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ekin daha yeşil, hasada çok var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Azar azar mı ödeyeyim, yoksa sarı ineğin buzağısını satıp toptan mı kapatalım?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bana tez cevap yaz, ne edelim bileyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Gidenlerle sana bir bohça yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "İçine biraz kuru dut, bir tutam da tütün sardım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Ayağındaki eskimiştir diye bir çift de yeni çarık koydum, giyersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Beni daha fazla merakta bırakma, tez elden kâğıt yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Emmilerin selam eyler.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol, duam seninledir.",
+  "signature": {
+    "text": "Annen Nadide"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kayserili Arif'e",
+    "sensitive": false
+  },
+  "package": [
+    "kuru dut",
+    "tütün",
+    "bir çift çarık"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nadide Hanım, Kayserili, 63, ev hanımı (Kayseri, Talas kazası, Kızılca karyesi)\nAlıcı: Oğlu Onbaşı Arif, cephede\nYön: cepheye\nTarih: 29 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: borcun ödenmesi için ne yapılacağı\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: kuru dut, tütün, bir çift çarık\nUzunluk: 117",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nadide",
+        "gender": "kadın",
+        "age": 63,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": "ev hanımı",
+        "epithet": "Kayserili",
+        "place": "Talas kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Arif",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Talas kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "borcun ödenmesi için ne yapılacağı",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 117,
+      "package": [
+        "kuru dut",
+        "tütün",
+        "bir çift çarık"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "29 Nisan 1331",
+      "home_address": "Kayseri, Talas kazası, Kızılca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5501,
+      "output": 2796
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Kızılca, 29 Nisan 1331\nHİTAP: Gözümün nuru oğlum Arif'e\nGÖVDE: Evvela selam eder, iki gözlerinden hasretle öperim. Benim hâlimi sorarsan şükür ayaktayız. Lakin sana epey sitemim var. Kaç vakittir yollarını gözlerim, köye posta gelir, senin kâğıdın çıkmaz. İnsan anasına iki satır yazıp sağlığını bildirmez mi? Bizi düşünme, ambarımızda yiyeceğimiz var şükür. Yalnız şu Hacı'ya olan borç meselesi canımı sıkıyor. Vadesi geldi kapıya dayandı. Ekin daha yeşil, hasada çok var. Azar azar mı ödeyeyim, yoksa sarı ineğin buzağısını satıp toptan mı kapatalım? Bana tez cevap yaz, ne edelim bileyim. Gidenlerle sana bir bohça yolladım. İçine biraz kuru dut, bir tutam da tütün sardım. Ayağındaki eskimiştir diye bir çift de yeni çarık koydum, giyersin. Beni daha fazla merakta bırakma, tez elden kâğıt yolla. Emmilerin selam eyler.\nKAPANIŞ: Allah'a emanet ol, duam seninledir.\nİMZA: Annen Nadide\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kayserili Arif'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "114 kelime, hedef 117 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4731,
+      "output": 2138
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 3,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kurallarda açıkça yasaklanan 'lakin' kelimesi kullanılmış ve 'sitemim var' gibi modern/soyut ifadelere yer verilmiş.",
+      "olculuk": "Duygular somut olaylarla hissettirilmek yerine 'sitemim var', 'canımı sıkıyor', 'merakta bırakma' diyerek doğrudan adlandırılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesindeki bir köylü kadının mektubunda 'lakin' gibi okumuş kişi kelimeleri bulunmamalıdır.",
+      "somutluk": "Sarı ineğin buzağısı, ekinin yeşil olması, Hacı'ya olan borç ve paketteki eşyalar gibi çok başarılı somut ayrıntılar var.",
+      "sadakat": "İstenen uzunluk, konu, saklanan bilgi (ambarımızda yiyeceğimiz var denilerek unsuzluk gizlenmiş) ve paket içeriği eksiksiz işlenmiş.",
+      "sahicilik": "Somut detaylar mektubu çok gerçekçi kılsa da, duyguların doğrudan söylenmesi dönemin köylü mektubu ruhunu biraz zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Lakin sana epey sitemim var.",
+        "problem": "Hem yasaklı 'lakin' kelimesi kullanılmış hem de duygu (sitem) doğrudan adlandırılmış.",
+        "suggestion": "Amma sana çok darıldım."
+      },
+      {
+        "line": "Yalnız şu Hacı'ya olan borç meselesi canımı sıkıyor.",
+        "problem": "Duygu doğrudan adlandırılmış ('canımı sıkıyor').",
+        "suggestion": "Yalnız şu Hacı'ya olan borç ne olacak?"
+      },
+      {
+        "line": "Beni daha fazla merakta bırakma, tez elden kâğıt yolla.",
+        "problem": "Duygu doğrudan adlandırılmış ('merakta bırakma').",
+        "suggestion": "Gözümü yolda koyma, tez elden kâğıt yolla."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

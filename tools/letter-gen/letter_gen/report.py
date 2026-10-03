@@ -113,6 +113,8 @@ def stats_md(records: list[dict[str, Any]]) -> list[str]:
         for k, v in (r.get("checks") or {}).items():
             if v["result"] != "pass":
                 warns[f"{CHECK_NAMES.get(k, k)} ({v['result']})"] += 1
+    closings = Counter(r["closing"] for r in records if r.get("closing"))
+    openings = Counter(r["segments"][0]["text"].split(",")[0].split(".")[0][:40] for r in records if r.get("segments"))
     return (
         table("Durum", status)
         + table("Yön", direction)
@@ -121,4 +123,6 @@ def stats_md(records: list[dict[str, Any]]) -> list[str]:
         + table("Memleket", towns)
         + table("En çok kullanılan isimler", names, 10)
         + table("En sık uyarılar", warns, 10)
+        + table("En sık kapanışlar", closings, 8)
+        + table("En sık açılışlar", openings, 8)
     )

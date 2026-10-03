@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheye_000006",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nefise",
+    "epithet": "Giresunlu",
+    "age": 56,
+    "hometown": "Giresun",
+    "occupation": "ebe",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Emin",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 79,
+  "hand": "hurried",
+  "header": {
+    "text": "Kozluca, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Emin'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sana kâğıt yolladım, cevap yazmadın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Elin kalem tutmaz mı oldu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Terzi Halil'in kızı Ayşe'yi sana nişanladık, unuttun mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kızın babası kapıma geldi darlanıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyde laf çıkmış Emin vuruldu da Nefise saklıyor diye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Adam nişanı bozacak, bohçayı geri yollayacak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çabuk bana bir kâğıt yaz da sağ olduğunu görsünler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Yoksa bu iş temelli biter, köye dönersen yüzüme bakma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Fındıklık ot doldu, biçmeye adam yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Hemen cevap yolla, beni de daha fazla kızdırma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşlerin selam eder.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Başka diyeceğim yoktur.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını tez bekliyorum.",
+  "signature": {
+    "text": "Anan Nefise"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Giresunlu Emin'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nefise Hanım, Giresunlu, 56, ebe (Giresun, Keşap kazası, Kozluca karyesi)\nAlıcı: Oğlu Çavuş Emin, cephede\nYön: cepheye\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: nişanın bozulması tehlikesi\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 79",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nefise",
+        "gender": "kadın",
+        "age": 56,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Giresun",
+        "occupation": "ebe",
+        "epithet": "Giresunlu",
+        "place": "Keşap kazası, Kozluca karyesi"
+      },
+      "recipient": {
+        "name": "Emin",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Giresun",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keşap kazası, Kozluca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 79,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "26 Mayıs 1331",
+      "home_address": "Giresun, Keşap kazası, Kozluca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5489,
+      "output": 3340
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Kozluca, 26 Mayıs 1331\nHİTAP: Oğlum Emin'e\nGÖVDE: Sana kâğıt yolladım, cevap yazmadın. Elin kalem tutmaz mı oldu? Terzi Halil'in kızı Ayşe'yi sana nişanladık, unuttun mu? Kızın babası kapıma geldi darlanıyor. Köyde laf çıkmış Emin vuruldu da Nefise saklıyor diye. Adam nişanı bozacak, bohçayı geri yollayacak. Çabuk bana bir kâğıt yaz da sağ olduğunu görsünler. Yoksa bu iş temelli biter, köye dönersen yüzüme bakma. Fındıklık ot doldu, biçmeye adam yok. Hemen cevap yolla, beni de daha fazla kızdırma. Kardeşlerin selam eder. Başka diyeceğim yoktur.\nKAPANIŞ: Cevabını tez bekliyorum.\nİMZA: Anan Nefise\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Giresunlu Emin'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "76 kelime, hedef 79 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4696,
+      "output": 3370
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve darlanıyor gibi yöresel ifadeler dönemin ruhuna tam uyuyor.",
+      "olculuk": "Duygular isimlendirilmeden doğrudan eylemler ve somut tehditler üzerinden başarıyla aktarılmış.",
+      "okuryazarlik": "Cümle yapıları kısa ve sade olsa da düşük okuryazarlık için fazla kusursuz bir noktalama ve imla kullanılmış.",
+      "somutluk": "Terzi Halil, bohça ve fındıklığın ot dolması gibi detaylar mektubu son derece somut kılmış.",
+      "sadakat": "İstenen uzunluk, sert ses tonu, nişan konusu ve un meselesinin gizlenmesi talimatlarına harfiyen uyulmuş.",
+      "sahicilik": "Karadenizli otoriter bir annenin endişesi ve öfkesi çok doğal ve inandırıcı bir şekilde yansıtılmış."
+    },
+    "issues": [
+      {
+        "line": "Adam nişanı bozacak, bohçayı geri yollayacak.",
+        "problem": "Düşük okuryazarlık seviyesi için fazla düzgün noktalanmış ve hatasız yazılmış.",
+        "suggestion": "Adam nişanı bozacak bohçayı geri yolayacak"
+      },
+      {
+        "line": "Fındıklık ot doldu, biçmeye adam yok.",
+        "problem": "Virgül kullanımı düşük okuryazarlık kuralına göre fazla kusursuz.",
+        "suggestion": "Fındıklık ot doldu biçmeye adam yok"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

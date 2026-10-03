@@ -1,0 +1,315 @@
+{
+  "id": "pool_cepheye_000001",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şükrü",
+    "epithet": "Çoban",
+    "age": 28,
+    "hometown": "Trabzon",
+    "occupation": "çoban",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Kâzım",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 108,
+  "hand": "hurried",
+  "header": {
+    "text": "Akpınar, 16 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Kâzım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubumu yazmaya başlarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana İdris Hoca'ya üç tane muska yazdırdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Birini boynunda taşıyacaksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İkincisini sol göğsünün cebine koy.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Üçüncüsünü de kaputuna dik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sakın üstünden çıkarma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyde senin için tam yedi gün Yasin okuttuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "İki horoz kestik, dört fakire pay ettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Allah kaza bela vermesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Yaylaya çıkma vakti geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "On beş koyun sağdım sabah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dört tane kuzu doğdu bu ay, ikisi erkek ikisi dişi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Mısır tohumunu da üç dönüm tarlaya ektik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Dört gün yağmur yağdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Sana bir bohça hazırladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "İçine iki çift yün çorap, bir kese kavrulmuş fındık, üç dilim kuru ekmek koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Postayla yollayacağım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Hepsini tek tek saydım noksan olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Anam günde yüz defa tespih çekiyor.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol. Cevap yaz.",
+  "signature": {
+    "text": "Abin Şükrü"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Kâzım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şükrü, Çoban, 28, çoban (Trabzon, Vakfıkebir kazası, Akpınar karyesi)\nAlıcı: Kardeşi Er Kâzım, cephede\nYön: cepheye\nTarih: 16 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: muska ve dualar\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 108",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 28,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Trabzon",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Vakfıkebir kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Kâzım",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Trabzon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Vakfıkebir kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "muska ve dualar",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 108,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "16 Mayıs 1331",
+      "home_address": "Trabzon, Vakfıkebir kazası, Akpınar karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5581,
+      "output": 3187
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Akpınar, 16 Mayıs 1331\nHİTAP: Kardeşim Kâzım'a\nGÖVDE: Mektubumu yazmaya başlarım. Sana İdris Hoca'ya üç tane muska yazdırdım. Birini boynunda taşıyacaksın. İkincisini sol göğsünün cebine koy. Üçüncüsünü de kaputuna dik. Sakın üstünden çıkarma. Köyde senin için tam yedi gün Yasin okuttuk. İki horoz kestik, dört fakire pay ettik. Allah kaza bela vermesin. Yaylaya çıkma vakti geldi. On beş koyun sağdım sabah. Dört tane kuzu doğdu bu ay, ikisi erkek ikisi dişi. Mısır tohumunu da üç dönüm tarlaya ektik. Dört gün yağmur yağdı. Sana bir bohça hazırladım. İçine iki çift yün çorap, bir kese kavrulmuş fındık, üç dilim kuru ekmek koydum. Postayla yollayacağım. Hepsini tek tek saydım noksan olmasın. Anam günde yüz defa tespih çekiyor.\nKAPANIŞ: Allah'a emanet ol. Cevap yaz.\nİMZA: Abin Şükrü\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Kâzım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "106 kelime, hedef 108 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4766,
+      "output": 2848
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 dönemine tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut eylemler üzerinden ölçülü bir şekilde aktarılmıştır.",
+      "okuryazarlik": "Kısa cümleler ve basit ifade tarzı düşük okuryazarlığa uysa da noktalama işaretleri fazla kusursuzdur.",
+      "somutluk": "Sayılar, hayvanlar, erzak ve muskalar gibi son derece somut ve gündelik ayrıntılarla doludur.",
+      "sadakat": "İstenen konu, uzunluk, yön ve özellikle her şeyi tek tek sayan titiz ses tonu mükemmel yansıtılmıştır.",
+      "sahicilik": "Karakterin her şeyi sayma takıntısı mektuba çok doğal ve inandırıcı bir köylü sesi katmıştır."
+    },
+    "issues": [
+      {
+        "line": "Birini boynunda taşıyacaksın. İkincisini sol göğsünün cebine koy. Üçüncüsünü de kaputuna dik.",
+        "problem": "Düşük okuryazarlık seviyesi için noktalama işaretleri fazla kusursuz, cümleler bağlaçsız art arda dizilmeliydi.",
+        "suggestion": "Birini boynunda taşıyacaksın ikincisini sol göğsünün cebine koy üçüncüsünü de kaputuna dik"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

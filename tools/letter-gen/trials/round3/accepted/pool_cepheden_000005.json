@@ -1,0 +1,294 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hamdi",
+    "epithet": "Adanalı",
+    "age": 26,
+    "hometown": "Adana",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Naciye",
+    "relation": "annesi",
+    "location": "Adana, Kozan kazası, Kayadibi karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 113,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 26 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Naciye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsanız çok şükür ayaktayız, bir sıkıntımız yoktur, sağlığım sıhhatim yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Havalar burada iyice ısınmaya başladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geceleri de eskisi kadar soğuk olmuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyde bahar işleri başlamıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bostanı ektiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tarlaya sürülecek yerleri emmim halletti mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim aklım hep orada, tarlada kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bu sene karpuzu, kavunu erken ekin, geçen yıl yağmurlara geç kalmıştık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Süleyman'a söyleyin öküzleri sabanda fazla yormasın, yonca tarlasının alt kısmını da güzelce çapalasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Benim için hiç tasalanmayın, keyfim yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Yemeğimiz vakitlice çıkıyor, suyumuz var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bugünlerde biraz istirahat ediyorum, yorucu işimiz yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Dayıma, halama, köy odasındaki büyüklere ayrı ayrı selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Kardeşim Ali'nin de gözlerinden öperim, sana yardım etsin, sözünden hiç çıkmasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun, duanızı eksik etmeyin.",
+  "signature": {
+    "text": "Oğlun Hamdi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Adana, Kozan kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Naciye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hamdi, Adanalı, 26, çiftçi, er (Adana, Kozan kazası, Kayadibi karyesi)\nAlıcı: Annesi Naciye Hanım, Adana, Kozan kazası, Kayadibi karyesi\nYön: cepheden\nTarih: 26 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: az konuşur, her şeyi iyi gösterir\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: yaralandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "epithet": "Adanalı",
+        "place": "Kozan kazası, Kayadibi karyesi"
+      },
+      "recipient": {
+        "name": "Naciye",
+        "gender": "kadın",
+        "age": 42,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kozan kazası, Kayadibi karyesi"
+      },
+      "recipient_location": "Adana, Kozan kazası, Kayadibi karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "yaralandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "26 Nisan 1331",
+      "home_address": "Adana, Kozan kazası, Kayadibi karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5583,
+      "output": 3001
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 26 Nisan 1331\nHİTAP: Validem Naciye Hanım'a\nGÖVDE: Evvela selam eder, iki ellerinizden hürmetle öperim. Benim hâlimi sorarsanız çok şükür ayaktayız, bir sıkıntımız yoktur, sağlığım sıhhatim yerindedir. Havalar burada iyice ısınmaya başladı. Geceleri de eskisi kadar soğuk olmuyor. Köyde bahar işleri başlamıştır. Bostanı ektiniz mi? Tarlaya sürülecek yerleri emmim halletti mi? Benim aklım hep orada, tarlada kaldı. Bu sene karpuzu, kavunu erken ekin, geçen yıl yağmurlara geç kalmıştık. Süleyman'a söyleyin öküzleri sabanda fazla yormasın, yonca tarlasının alt kısmını da güzelce çapalasınlar. Benim için hiç tasalanmayın, keyfim yerinde. Yemeğimiz vakitlice çıkıyor, suyumuz var. Bugünlerde biraz istirahat ediyorum, yorucu işimiz yok. Dayıma, halama, köy odasındaki büyüklere ayrı ayrı selam ederim. Kardeşim Ali'nin de gözlerinden öperim, sana yardım etsin, sözünden hiç çıkmasın.\nKAPANIŞ: Allah'a emanet olun, duanızı eksik etmeyin.\nİMZA: Oğlun Hamdi\nZARF: Adana, Kozan kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Naciye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "111 kelime, hedef 113 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4890,
+      "output": 3276
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Sağlık ve keyif gibi kelimeler dönemin mektup dilinde sırıtıyor, daha geleneksel tabirler tercih edilmeliydi.",
+      "olculuk": "Duygular adlandırılmamış, yaranın gizlenmesi istirahat bahanesiyle çok ölçülü ve zekice verilmiş.",
+      "okuryazarlik": "Orta seviye okuryazarlığa uygun, düzgün ama sade ve kalıplara dayalı bir cümle yapısı kullanılmış.",
+      "somutluk": "Kavun, karpuz, yonca tarlası ve sabana koşulan öküzler gibi köye dair çok güçlü somut detaylar barındırıyor.",
+      "sadakat": "İstenen konu işlenmiş, yaranın saklanması detayı metne başarıyla yedirilmiş ve uzunluk tam tutturulmuş.",
+      "sahicilik": "Aklı tarlasında kalan, ailesini endişelendirmemek için yarasını gizleyen bir çiftçi askerin sesini çok iyi yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "Benim hâlimi sorarsanız çok şükür ayaktayız, bir sıkıntımız yoktur, sağlığım sıhhatim yerindedir.",
+        "problem": "'Sağlık' kelimesi 'sıhhat' ile yan yana modern bir ikileme oluşturuyor.",
+        "suggestion": "Benim hâlimi sorarsanız çok şükür ayaktayız, bir sıkıntımız yoktur, vücudum sıhhattedir."
+      },
+      {
+        "line": "Benim için hiç tasalanmayın, keyfim yerinde.",
+        "problem": "'Keyfim yerinde' ifadesi cephe mektupları için fazla güncel ve rahat bir tabir.",
+        "suggestion": "Benim için hiç tasalanmayın, rahatım iyidir."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

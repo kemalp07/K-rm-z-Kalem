@@ -1,0 +1,296 @@
+{
+  "id": "pool_cepheye_000001",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zehra",
+    "epithet": "Dokumacı",
+    "age": 20,
+    "hometown": "Kayseri",
+    "occupation": "dokumacı",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Süleyman",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 92,
+  "hand": "hurried",
+  "header": {
+    "text": "Ortaköy, 31 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Süleyman'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Süleyman bu sana ikinci kâğıdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Senden hiç haber gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İki ay oldu yola bakıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizi unuttun mu yoksa postacı mı getirmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Şimdi çapa zamanı geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yağmurdan sonra tarlada otlar çok büyümüş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Her sabah erkenden tarlaya gidiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Akşama kadar ot yoluyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ellerim hep yara oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Dün anan da benimle geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çabuk yoruluyor beli ağrıyor gölgede oturdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Senin kâğıdını bekliyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kâğıdın mı bitti yoksa kalemin mi kırıldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Geçen sefer zarfın içine boş kâğıt koymuştum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "O da mı eline geçmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Bir satır kâğıt yaz yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Sağ mısın ayakta mısın bilelim merakta koma bizi.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Zehra"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Süleyman'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zehra Hanım, Dokumacı, 20, dokumacı (Kayseri, Everek kazası, Ortaköy karyesi)\nAlıcı: Nişanlısı Er Süleyman, cephede\nYön: cepheye\nTarih: 31 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: çapa ve ot yolma işleri\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 92",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zehra",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "Everek kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Süleyman",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Everek kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "çapa ve ot yolma işleri",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 92,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "31 Mayıs 1331",
+      "home_address": "Kayseri, Everek kazası, Ortaköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5382,
+      "output": 3203
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ortaköy, 31 Mayıs 1331\nHİTAP: Süleyman'a\nGÖVDE: Süleyman bu sana ikinci kâğıdım. Senden hiç haber gelmedi. İki ay oldu yola bakıyoruz. Bizi unuttun mu yoksa postacı mı getirmedi. Şimdi çapa zamanı geldi. Yağmurdan sonra tarlada otlar çok büyümüş. Her sabah erkenden tarlaya gidiyorum. Akşama kadar ot yoluyorum. Ellerim hep yara oldu. Dün anan da benimle geldi. Çabuk yoruluyor beli ağrıyor gölgede oturdu. Senin kâğıdını bekliyoruz. Kâğıdın mı bitti yoksa kalemin mi kırıldı. Geçen sefer zarfın içine boş kâğıt koymuştum. O da mı eline geçmedi. Bir satır kâğıt yaz yolla. Sağ mısın ayakta mısın bilelim merakta koma bizi.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Zehra\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Süleyman'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 92 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4646,
+      "output": 3069
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 yılının köylü diline tamamen uygundur, modern hiçbir sözcük barındırmamaktadır.",
+      "olculuk": "Duygular adlandırılmadan, sitem ve özlem peş peşe sorulan sorularla ve somut eylemlerle çok ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Kısa, bağlaçsız cümleler ve eksik noktalama işaretleri (soru işaretlerinin kullanılmaması) düşük okuryazarlık seviyesini kusursuz yansıtmaktadır.",
+      "somutluk": "Çapa zamanı, ot yolmaktan yara olan eller, beli ağrıyan anne ve zarfa konulan boş kâğıt gibi detaylar mektubu son derece somut kılmıştır.",
+      "sadakat": "İstenen konu, sitemkâr ses tonu, yazma biçimi ve uzunluk (90 kelime) hedeflerine tam olarak uyulmuştur.",
+      "sahicilik": "Özellikle önceki mektuba boş kâğıt koyma detayı, dönemin cephe gerisi yoksunluğunu ve köylü zekâsını yansıtan çok sahici bir dokunuştur."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

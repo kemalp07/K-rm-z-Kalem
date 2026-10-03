@@ -1,0 +1,306 @@
+{
+  "id": "pool_cepheden_000002",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Bekir",
+    "epithet": "Ispartalı",
+    "age": 33,
+    "hometown": "Isparta",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Recep",
+    "relation": "amcası",
+    "location": "Isparta, Eğirdir kazası, Kocaköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 94,
+  "hand": "dictated",
+  "header": {
+    "text": "Seddülbahir, 2 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Muhterem Emmim Recep Ağa'ya,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Bekir der ki: Emmim ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığınız paketi aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Yün çoraplar tam ayağıma göre oldu, Allah razı olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kuru dutları da bizim",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "bölükteki on beş kardaşla",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "paylaştık, ağzımız tatlandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyde herkesin keyfi nicedir?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Muhtarın tarlayı kim sürüyor?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim demirci dükkânının kilidi sağlam mıdır, pas tutmasın ara sıra yağlayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Hüseyin'in düğünü yapıldı mı, yoksa hasada mı kaldı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "İneğin buzağısı doğdu mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Halil emmimin öksürüğü geçti mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Anamın, yengemin, çocukların tekmil gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Gece nöbetlerinde hep köyü düşünüyorum, burası hiç bizim dağlara benzemez.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Düşman gemileri tam karşımızda duruyor.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Dualarınızı eksik etmeyin, muskamı boynumdan hiç çıkarmıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Bizi kâğıtsız komayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Bekir"
+  },
+  "note": {
+    "text": "İşbu mektubu köylüsü Onbaşı Ali yazmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Isparta, Eğirdir kazası, Kocaköy karyesi, Muhtar Hasan Ağa vasıtasıyla Recep Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Bekir, Ispartalı, 33, demirci, er (Isparta, Eğirdir kazası, Kocaköy karyesi)\nAlıcı: Amcası Recep, Isparta, Eğirdir kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 2 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: meraklı, köyden herkesi sorar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 94",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Isparta",
+        "occupation": "demirci",
+        "epithet": "Ispartalı",
+        "place": "Eğirdir kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 57,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Isparta",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eğirdir kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Isparta, Eğirdir kazası, Kocaköy karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "korktuğunu",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 94,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "2 Mayıs 1331",
+      "home_address": "Isparta, Eğirdir kazası, Kocaköy karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 501,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:12:02+00:00",
+    "tokens": {
+      "input": 5496,
+      "output": 3353
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 2 Mayıs 1331\nHİTAP: Muhterem Emmim Recep Ağa'ya,\nGÖVDE: Bekir der ki: Emmim ellerinden öperim. Yolladığınız paketi aldım. Yün çoraplar tam ayağıma göre oldu, Allah razı olsun. Kuru dutları da bizim ⟦bölükteki on beş kardaşla⟧ paylaştık, ağzımız tatlandı. Köyde herkesin keyfi nicedir? Muhtarın tarlayı kim sürüyor? Bizim demirci dükkânının kilidi sağlam mıdır, pas tutmasın ara sıra yağlayın. Hüseyin'in düğünü yapıldı mı, yoksa hasada mı kaldı? İneğin buzağısı doğdu mu? Halil emmimin öksürüğü geçti mi? Anamın, yengemin, çocukların tekmil gözlerinden öperim. Gece nöbetlerinde hep köyü düşünüyorum, burası hiç bizim dağlara benzemez. ⟦Düşman gemileri tam karşımızda duruyor.⟧ Dualarınızı eksik etmeyin, muskamı boynumdan hiç çıkarmıyorum. Bizi kâğıtsız komayın.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Bekir)\nNOT: İşbu mektubu köylüsü Onbaşı Ali yazmıştır.\nZARF: Isparta, Eğirdir kazası, Kocaköy karyesi, Muhtar Hasan Ağa vasıtasıyla Recep Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 94 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 2 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:14:13+00:00",
+    "tokens": {
+      "input": 4733,
+      "output": 2254
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (tekmil, nicedir, hasat, muska) dönemin ruhuna ve köylü ağzına tam uygundur.",
+      "olculuk": "Duygular adlandırılmamış, korku hissi 'muskamı hiç çıkarmıyorum' gibi somut eylemlerle çok ölçülü verilmiştir.",
+      "okuryazarlik": "Mektubun başkasına yazdırıldığı 'Bekir der ki' girişi ve kâtibin notuyla kusursuz biçimde yansıtılmıştır.",
+      "somutluk": "Demirci dükkânının kilidi, kuru dut, ineğin buzağısı ve Halil emminin öksürüğü gibi ayrıntılarla son derece somut bir dünya kurulmuştur.",
+      "sadakat": "İstenen tüm unsurlar mektuba dâhil edilmiştir ancak başlıkta sansür işareti kuralı (tarihin dışarıda bırakılması) ihlal edilmiştir.",
+      "sahicilik": "Köyünü merak eden bir askerin art arda sorduğu sorular ve kâtibin aradan çekilmiş hissi veren üslubu mektubu çok sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 2 Mayıs 1331⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) içine yalnızca askerî bilgi alınmalıdır; tarih ve gündelik sözler işaretin dışında kalmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 2 Mayıs 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:12:02+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:14:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -20,6 +20,16 @@ from .store import Pool
 
 app = typer.Typer(add_completion=False, help="Kırmızı Kalem yan mektup havuzu üretici.")
 console = Console()
+_POOL: dict[str, Path | None] = {"dir": None}
+
+
+@app.callback()
+def main(pool: Path = typer.Option(None, "--pool", help="Havuz klasörü (varsayılan: pool/; denemeler için ör. trials/round1)")) -> None:
+    _POOL["dir"] = pool
+
+
+def _pool(settings) -> Pool:
+    return Pool(settings.path(str(_POOL["dir"])) if _POOL["dir"] else settings.pool_dir)
 
 
 class Direction(str, Enum):
@@ -70,7 +80,7 @@ def generate(
     """Mektup üret, kontrol et ve (varsayılan olarak) eleştirmene incelet."""
     settings = load_settings(ROOT)
     src = _sources(settings)
-    pool = Pool(settings.pool_dir)
+    pool = _pool(settings)
     seed = seed if seed is not None else random.randrange(1, 10**9)
 
     if src.unknown_labels:
@@ -140,7 +150,7 @@ def review(
     missing = missing_model_env(env, need_review=True)
     if missing:
         _fail("ortam değişkenleri eksik: " + ", ".join(missing))
-    pool = Pool(settings.pool_dir)
+    pool = _pool(settings)
     if redo:
         console.print(f"{pipeline.recheck(settings, src, pool)} mektup yeniden kontrol edildi.")
     runner = _runner(settings, env)
@@ -154,7 +164,7 @@ def review(
 
 def _move(letter_id: str, status: str, note: str) -> None:
     settings = load_settings(ROOT)
-    pool = Pool(settings.pool_dir)
+    pool = _pool(settings)
     rec = pool.load(letter_id)
     if not rec:
         _fail(f"{letter_id} bulunamadı")
@@ -180,7 +190,7 @@ def reject(letter_id: str, note: str = typer.Option("", "--note", help="Neden"))
 def stats() -> None:
     """Havuzun genel dağılımı."""
     settings = load_settings(ROOT)
-    pool = Pool(settings.pool_dir)
+    pool = _pool(settings)
     records = list(pool.all())
     if not records:
         console.print("Havuz boş.")
@@ -192,7 +202,7 @@ def stats() -> None:
 def export(out: Path = typer.Option(None, "--out", help="Oyunun içerik dosyası")) -> None:
     """Yalnızca kabul edilmiş mektupları oyunun içerik dosyasına yaz."""
     settings = load_settings(ROOT)
-    pool = Pool(settings.pool_dir)
+    pool = _pool(settings)
     target = out or settings.path(settings.config["export"]["out"])
     n = export_letters(list(pool.all()), target)
     console.print(f"{n} mektup → {target}")

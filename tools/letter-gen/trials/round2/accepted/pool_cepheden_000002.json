@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheden_000002",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Osman",
+    "epithet": "Diyarbekirli",
+    "age": 23,
+    "hometown": "Diyarbekir",
+    "occupation": "kahveci",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Ömer",
+    "relation": "erkek kardeşi",
+    "location": "Diyarbekir, Lice kazası, Ilıca karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 111,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 12 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Biraderim Ömer Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, hasretle iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hak'tan daima afiyetinizi niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sual ederseniz, hamdolsun ayaktayız, şimdilik bir sıkıntımız yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kardeşim Ömer, dükkânı kapattıktan sonra kalan borç meselemiz için sana hususi olarak bu kâğıdı yazdırıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hacı Salih'e olan on yedi mecidiye borcumuzu sakın ola unutmayasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Evdeki büyük bakır leğenleri yahut ahırdaki boz katırı satıp o adamın parasını tez vakitte verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Üzerimizde kul hakkı kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Hasat vakti gelmeden bu işi hallet.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim için hiç endişe etmeyin, burada rahatım yerindedir, yiyip içip yatıyoruz, yorulacak ağır bir işimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Validemin mübarek ellerinden, küçüklerin gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köydeki bütün komşulara, hususiyle kahvedeki ahbaplara selamımı ayrı ayrı söyleyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Başkaca bir kelamım yoktur.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cenab-ı Hakk'a emanet olasınız.",
+  "signature": {
+    "text": "",
+    "seal": "Osman"
+  },
+  "note": {
+    "text": "İşbu mektup Onbaşı Osman'ın ricası üzerine tarafımdan kaleme alınmıştır. Bölük Kâtibi.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Diyarbekir, Lice kazası, Ilıca karyesi, İmam Şeyhmus Efendi vasıtasıyla Ömer'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Osman, Diyarbekirli, 23, kahveci, onbaşı (Diyarbekir, Lice kazası, Ilıca karyesi)\nAlıcı: Erkek kardeşi Ömer, Diyarbekir, Lice kazası, Ilıca karyesi\nYön: cepheden\nTarih: 12 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 111",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Osman",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Diyarbekir",
+        "occupation": "kahveci",
+        "epithet": "Diyarbekirli",
+        "place": "Lice kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Ömer",
+        "gender": "erkek",
+        "age": 11,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Lice kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Diyarbekir, Lice kazası, Ilıca karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 111,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "12 Mayıs 1331",
+      "home_address": "Diyarbekir, Lice kazası, Ilıca karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5573,
+      "output": 2768
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 12 Mayıs 1331\nHİTAP: Biraderim Ömer Efendi'ye\nGÖVDE: Evvela mahsus selam eder, hasretle iki gözlerinden öperim. Cenab-ı Hak'tan daima afiyetinizi niyaz eylerim. Benim hâlimi sual ederseniz, hamdolsun ayaktayız, şimdilik bir sıkıntımız yoktur. Kardeşim Ömer, dükkânı kapattıktan sonra kalan borç meselemiz için sana hususi olarak bu kâğıdı yazdırıyorum. Hacı Salih'e olan on yedi mecidiye borcumuzu sakın ola unutmayasın. Evdeki büyük bakır leğenleri yahut ahırdaki boz katırı satıp o adamın parasını tez vakitte verin. Üzerimizde kul hakkı kalmasın. Hasat vakti gelmeden bu işi hallet. Benim için hiç endişe etmeyin, burada rahatım yerindedir, yiyip içip yatıyoruz, yorulacak ağır bir işimiz yoktur. Validemin mübarek ellerinden, küçüklerin gözlerinden öperim. Köydeki bütün komşulara, hususiyle kahvedeki ahbaplara selamımı ayrı ayrı söyleyesin. Başkaca bir kelamım yoktur.\nKAPANIŞ: Cenab-ı Hakk'a emanet olasınız.\nİMZA: (mühür: Osman)\nNOT: İşbu mektup Onbaşı Osman'ın ricası üzerine tarafımdan kaleme alınmıştır. Bölük Kâtibi.\nZARF: Diyarbekir, Lice kazası, Ilıca karyesi, İmam Şeyhmus Efendi vasıtasıyla Ömer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "111 kelime, hedef 111 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4856,
+      "output": 3128
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtibin kullandığı resmî ve kalıplaşmış ifadeler (evvela mahsus selam, niyaz eylerim, hususiyle) dönemin mektup yazım kurallarına tam uyuyor.",
+      "olculuk": "Duygu sömürüsü yapılmamış, durum son derece sade, net ve ölçülü bir dille aktarılmış.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin somut dertlerinin, kâtibin nispeten ağdalı ve kalıplaşmış diliyle kâğıda dökülmesi çok başarılı yansıtılmış.",
+      "somutluk": "On yedi mecidiye borç, büyük bakır leğenler, boz katır ve kahvedeki ahbaplar gibi detaylar mektubu son derece somut kılıyor.",
+      "sadakat": "İstenen tüm kısıtlamalara uyulmuş; özellikle hasta yatma durumu 'yiyip içip yatıyoruz, ağır işimiz yoktur' denilerek zekice gizlenmiş.",
+      "sahicilik": "Kâtip notu, mühür kullanımı, kahveci geçmişine yapılan atıflar ve borç derdi mektubun gerçek bir tarihî belge gibi hissedilmesini sağlıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

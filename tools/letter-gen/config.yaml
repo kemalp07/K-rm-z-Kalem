@@ -35,8 +35,7 @@ checks:
   length_warn: 0.30   # body words outside ±30% of the target → warn
   length_fail: 0.50   # outside ±50% → fail
   repeat_ngram: 6     # shared word sequence of this length with another letter → warn
-  # Words that must not appear when the sender's literacy is low
-  # (also for illiterate senders whose letter a comrade writes down as dictated).
+  # Words that must not appear when a sender of low literacy writes in their own hand.
   low_literacy_words: [mühim, kelam, yahut, hürmet, zira, lakin, binaenaleyh, malum]
   # Added to the list read from the lorebook's language-rules entry.
   extra_forbidden: []

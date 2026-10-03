@@ -1,0 +1,307 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hacer",
+    "epithet": "Çamaşırcı",
+    "age": 21,
+    "hometown": "Çorum",
+    "occupation": "çamaşırcı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Halil",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 101,
+  "hand": "careful",
+  "header": {
+    "text": "Kurtköy, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendime,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğiniz kâğıdı muhtar emmi getirdi, okuduk, sağlığınıza duacı olduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim hâlimizi sorarsanız, şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen hafta Hıdrellez idi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Meydanda ateş yaktık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bulgur pilavı kaynattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sofrayı kurunca gözüm hep sedirdeki boş yerine kaydı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Senin şimşir kaşığını da sininin kenarına koymuşum, öylece durdu bütün akşam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocuklar seni soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Küçük kızın fistanı dizine çekti, ucuna bez ulayıp yama yaptım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Havalar ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Ekinler yeşerdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Köyde işler ağır, çamaşır tokmağı sallamaktan bileklerim ağrıyor ama şikayetim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kendine mukayet ol, bizi merakta bırakma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Komşulardan Fatma yengenin de selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Kayınbabamın öksürüğü tuttu yine, nane kaynatıp veriyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Geceleri soğuk oluyor mu oralar?",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olunuz.",
+  "signature": {
+    "text": "Zevceniz Hacer"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Sungurlulu Halil'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hacer Hanım, Çamaşırcı, 21, çamaşırcı (Çorum, Sungurlu kazası, Kurtköy karyesi)\nAlıcı: Kocası Er Halil, cephede\nYön: cepheye\nTarih: 30 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: utangaç, karısına adıyla seslenemez\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hacer",
+        "gender": "kadın",
+        "age": 21,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": "çamaşırcı",
+        "epithet": "Çamaşırcı",
+        "place": "Sungurlu kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Halil",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sungurlu kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "30 Nisan 1331",
+      "home_address": "Çorum, Sungurlu kazası, Kurtköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 502,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:18:36+00:00",
+    "tokens": {
+      "input": 5505,
+      "output": 3629
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Kurtköy, 30 Nisan 1331\nHİTAP: Efendime,\nGÖVDE: Evvela selam eder, iki ellerinizden hürmetle öperim. Gönderdiğiniz kâğıdı muhtar emmi getirdi, okuduk, sağlığınıza duacı olduk. Bizim hâlimizi sorarsanız, şükür ayaktayız. Geçen hafta Hıdrellez idi. Meydanda ateş yaktık. Bulgur pilavı kaynattım. Sofrayı kurunca gözüm hep sedirdeki boş yerine kaydı. Senin şimşir kaşığını da sininin kenarına koymuşum, öylece durdu bütün akşam. Çocuklar seni soruyor. Küçük kızın fistanı dizine çekti, ucuna bez ulayıp yama yaptım. Havalar ısındı. Ekinler yeşerdi. Köyde işler ağır, çamaşır tokmağı sallamaktan bileklerim ağrıyor ama şikayetim yoktur. Kendine mukayet ol, bizi merakta bırakma. Komşulardan Fatma yengenin de selamı var. Kayınbabamın öksürüğü tuttu yine, nane kaynatıp veriyorum. Geceleri soğuk oluyor mu oralar?\nKAPANIŞ: Allah'a emanet olunuz.\nİMZA: Zevceniz Hacer\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Sungurlulu Halil'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "102 kelime, hedef 101 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:24:06+00:00",
+    "tokens": {
+      "input": 4796,
+      "output": 3184
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili genel olarak başarılı ancak köylü sınıfı için fazla resmî olan birkaç kelime kullanılmış.",
+      "olculuk": "Duygular adlandırılmadan, boş kalan yer ve şimşir kaşık gibi çok güçlü somut detaylarla hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlığa uygun kısa ve düzgün cümleler kurulmuş fakat 'hürmet' ve 'zevce' gibi okumuş kişi kelimeleri araya karışmış.",
+      "somutluk": "Şimşir kaşık, fistanın dizine çekmesi, bez ulamak ve çamaşır tokmağı gibi harika gündelik ayrıntılar barındırıyor.",
+      "sadakat": "İstenen konu, saklanan bilgi, uzunluk ve utangaç ses tonu (kocasına adıyla hitap etmemesi) başarıyla uygulanmış.",
+      "sahicilik": "Kızın fistanına bez ulanması ve kayınbabanın öksürüğüne nane kaynatılması mektubu son derece gerçekçi kılıyor."
+    },
+    "issues": [
+      {
+        "line": "Evvela selam eder, iki ellerinizden hürmetle öperim.",
+        "problem": "'Hürmet' kelimesi köylü dili için fazla resmîdir ve kurallarda kullanılmaması gereken kelimeler arasında belirtilmiştir.",
+        "suggestion": "Evvela selam eder, iki ellerinizden öperim."
+      },
+      {
+        "line": "İMZA: Zevceniz Hacer",
+        "problem": "'Zevce' kelimesi okumuş kişilerin veya kâtiplerin kullandığı bir ifadedir, kendi yazan bir köylü kadını için uygun değildir.",
+        "suggestion": "İMZA: Hacer"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:18:36+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:24:06+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

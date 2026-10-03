@@ -110,9 +110,9 @@ def check_forbidden(rec: dict[str, Any], ctx: CheckContext) -> dict[str, str]:
 
 
 def check_literacy_words(rec: dict[str, Any], ctx: CheckContext) -> dict[str, str]:
-    # A professional scribe writes in his own register; a comrade writing down an
-    # illiterate soldier's words, or a barely literate writer, should not.
-    applies = rec["literacy"] == "low" or (rec["literacy"] == "none" and rec["writes"] == "dictated")
+    # Only a barely literate person writing in their own hand. Whoever writes a letter down
+    # for someone else (comrade, imam, scribe) mixes in their own words, as the card says.
+    applies = rec["literacy"] == "low" and rec["writes"] == "self"
     if not applies:
         return result(PASS, "uygulanmadı")
     hits = _matches(_all_text(rec), ctx.low_literacy_words)
@@ -194,6 +194,17 @@ def check_envelope(rec: dict[str, Any]) -> dict[str, str]:
     return result(PASS)
 
 
+def check_date(rec: dict[str, Any]) -> dict[str, str]:
+    want = (rec["meta"].get("request_fields") or {}).get("date")
+    if not want:
+        return result(PASS, "uygulanmadı")
+    header = fold((rec.get("header") or {}).get("text", ""))
+    day, month, _ = want.split(" ")
+    if re.search(rf"(?<!\d){day}(?!\d)", header) and fold(month) in header:
+        return result(PASS)
+    return result(WARN, f"başlıktaki tarih istekteki {want!r} değil: {(rec.get('header') or {}).get('text', '')[:50]!r}")
+
+
 def check_seal(rec: dict[str, Any]) -> dict[str, str]:
     if rec["literacy"] != "none":
         return result(PASS, "uygulanmadı")
@@ -231,6 +242,7 @@ def run_all(rec: dict[str, Any], ctx: CheckContext) -> dict[str, dict[str, str]]
         sensitive_balance=check_sensitive_balance(rec),
         header=check_header(rec, ctx),
         envelope=check_envelope(rec),
+        date=check_date(rec),
         seal=check_seal(rec),
         repetition=check_repetition(rec, ctx),
     )
@@ -251,6 +263,7 @@ CHECK_NAMES = {
     "sensitive_balance": "Hassas bilgi dengesi",
     "header": "Asker başlığı",
     "envelope": "Zarf adresi",
+    "date": "Tarih",
     "seal": "Mühür",
     "repetition": "Tekrar",
 }

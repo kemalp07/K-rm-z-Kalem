@@ -1,0 +1,305 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tahir",
+    "epithet": "Denizlili",
+    "age": 29,
+    "hometown": "Denizli",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Emine",
+    "relation": "nişanlısı",
+    "location": "Denizli, Buldan kazası, Ağılönü karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 107,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 12 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Emine'ye,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bu sana yolladığım ikinci kâğıttır, ilkinden ses çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Posta mı gecikti yoksa pederim hâlâ bana dargın mıdır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Giderayak kahvenin önünde onun kalbini kırdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ellerinden öptüğümü söyle, beni affetsin, hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sizin oralarda havalar ısınmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tütün fidelerini diktiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kır atı sattınız mı yoksa ambarın arkasında duruyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ahmet emmim dükkân borcunu ödedi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çeyiz için basma kumaş alabildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Beni sorarsan şükür ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dün bizim taburu denize bakan sırtlara çektiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Burada günlerimiz nöbetle geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köyde başka evlenen, askere giden var mıdır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Bana uzun uzun yaz, her şeyi bileyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Babama muhakkak selamımı söyle, duasını eksik etmesin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum. Allah'a emanet ol.",
+  "signature": {
+    "text": "Tahir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Denizli, Buldan kazası, Ağılönü karyesi, Muhtar İbrahim Ağa vasıtasıyla Emine Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tahir, Denizlili, 29, çiftçi, er (Denizli, Buldan kazası, Ağılönü karyesi)\nAlıcı: Nişanlısı Emine Hanım, Denizli, Buldan kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 12 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: genç ve heyecanlı, çok soru sorar\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 107",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tahir",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Denizli",
+        "occupation": "çiftçi",
+        "epithet": "Denizlili",
+        "place": "Buldan kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Emine",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Buldan kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Denizli, Buldan kazası, Ağılönü karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "yok",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 107,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "12 Mayıs 1331",
+      "home_address": "Denizli, Buldan kazası, Ağılönü karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 503,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:26:41+00:00",
+    "tokens": {
+      "input": 5589,
+      "output": 4504
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 12 Mayıs 1331\nHİTAP: Nişanlım Emine'ye,\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Bu sana yolladığım ikinci kâğıttır, ilkinden ses çıkmadı. Posta mı gecikti yoksa pederim hâlâ bana dargın mıdır? Giderayak kahvenin önünde onun kalbini kırdım. Ellerinden öptüğümü söyle, beni affetsin, hakkını helal etsin. Sizin oralarda havalar ısınmıştır. Tütün fidelerini diktiniz mi? Kır atı sattınız mı yoksa ambarın arkasında duruyor mu? Ahmet emmim dükkân borcunu ödedi mi? Çeyiz için basma kumaş alabildiniz mi? Beni sorarsan şükür ayaktayım. ⟦Dün bizim taburu denize bakan sırtlara çektiler.⟧ Burada günlerimiz nöbetle geçiyor. Köyde başka evlenen, askere giden var mıdır? Bana uzun uzun yaz, her şeyi bileyim. Babama muhakkak selamımı söyle, duasını eksik etmesin.\nKAPANIŞ: Cevabını bekliyorum. Allah'a emanet ol.\nİMZA: Tahir\nZARF: Denizli, Buldan kazası, Ağılönü karyesi, Muhtar İbrahim Ağa vasıtasıyla Emine Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "102 kelime, hedef 107 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:28:38+00:00",
+    "tokens": {
+      "input": 4871,
+      "output": 3411
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan bazı deyimler dönemin köylü ağzından ziyade günümüz ifadelerine yakın duruyor.",
+      "olculuk": "Duygular adlandırılmadan, tamamen somut sorular ve köy hayatına dair merak üzerinden ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Orta okuryazar bir çiftçinin mektubunda kâtip ve okumuş kesime ait kelimelerin yer alması kural ihlalidir.",
+      "somutluk": "Tütün fidesi, kır at, ambarın arkası ve basma kumaş gibi son derece yerinde ve canlı ayrıntılar kullanılmış.",
+      "sadakat": "İstenen tüm özellikler, dikkatsizlik alanı, uzunluk ve karakterin soru soran heyecanlı yapısı eksiksiz karşılanmış.",
+      "sahicilik": "Genel hissiyat başarılı olsa da, aynı mektup içinde hem 'pederim' hem 'babama' denmesi karakterin sesinde tutarsızlık yaratıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Nişanlım Emine'ye,",
+        "problem": "'Nişanlım' hitabı kurala göre okumuş kişilerde kullanılır, orta okuryazar bir çiftçi için fazla resmîdir.",
+        "suggestion": "HİTAP: Emine'ye,"
+      },
+      {
+        "line": "Posta mı gecikti yoksa pederim hâlâ bana dargın mıdır?",
+        "problem": "'Pederim' kelimesi kâtip veya okumuş kişi kelimesidir, çiftçi ağzına uymaz.",
+        "suggestion": "Posta mı gecikti yoksa babam hâlâ bana dargın mıdır?"
+      },
+      {
+        "line": "Giderayak kahvenin önünde onun kalbini kırdım.",
+        "problem": "'Kalbini kırmak' dönemin köylü dili için fazla modern ve naif bir deyimdir.",
+        "suggestion": "Giderayak kahvenin önünde onu darılttım."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:26:41+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:28:38+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}
