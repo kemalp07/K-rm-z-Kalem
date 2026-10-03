@@ -72,6 +72,10 @@
           "kind": "mud"
         }
       ],
+      "reasons": [
+        "askeri",
+        "gizli"
+      ],
       "outcomes": [
         {
           "when": {
@@ -187,6 +191,7 @@
           "kind": "jasmine"
         }
       ],
+      "reasons": [],
       "outcomes": [
         {
           "when": {
@@ -278,6 +283,9 @@
           "kind": "thumb",
           "near": "s3"
         }
+      ],
+      "reasons": [
+        "askeri"
       ],
       "outcomes": [
         {
@@ -372,6 +380,9 @@
           "near": "s2"
         }
       ],
+      "reasons": [
+        "moral"
+      ],
       "outcomes": [
         {
           "when": {
@@ -463,6 +474,9 @@
           "target": "date",
           "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış."
         }
+      ],
+      "reasons": [
+        "sahte"
       ],
       "outcomes": [
         {

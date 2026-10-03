@@ -98,6 +98,8 @@ export function toLetter(r: PoolRecord): Letter {
     hand: r.hand,
     segments,
     signature: sig,
+    // Side letters are judged loosely: anything sensitive in them may be called any of these.
+    reasons: segments.some((s) => s.kind === 'sensitive') ? ['askeri', 'bozgun', 'moral'] : [],
     outcomes: outcomesOf(r.id, sender, recipient, segments.some((s) => s.kind === 'sensitive')),
     meta: { pool: true, date: r.date },
   };

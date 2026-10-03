@@ -37,3 +37,8 @@ export function sampleCards(day: number, source: Booklet = booklet): (SampleCard
       return { ...c, seals: block.items };
     });
 }
+
+/** Reasons on the slip by `day`; like the booklet's rules, they arrive with what they are about. */
+export const slipReasons = (day: number, source: Booklet = booklet) => source.reasons.filter((r) => r.day <= day);
+
+export const reasonLabel = (id: string, source: Booklet = booklet) => source.reasons.find((r) => r.id === id)?.label ?? id;

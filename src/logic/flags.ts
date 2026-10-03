@@ -10,6 +10,8 @@ export interface LetterProgress {
   marked?: string[];
   /** Places ringed that were in order: the ledger says so. */
   wrongMarked?: string[];
+  /** Why it was stopped or reported, ticked on the reason slip. */
+  reason?: string;
   decision?: Decision;
 }
 
@@ -30,6 +32,7 @@ export const flag = {
   inspected: (letterId: string, inspId: string) => `${letterId}:inspected:${inspId}`,
   marked: (letterId: string, target: string) => `${letterId}:marked:${target}`,
   wrongMarked: (letterId: string, target: string) => `${letterId}:wrongmark:${target}`,
+  reason: (letterId: string, r: string) => `${letterId}:reason:${r}`,
 };
 
 /** Flags only exist once a decision is stamped; half-read letters leave no trace. */
@@ -42,6 +45,7 @@ export function flagsForLetter(letterId: string, p: LetterProgress): string[] {
   for (const i of p.inspected) out.push(flag.inspected(letterId, i));
   for (const m of p.marked ?? []) out.push(flag.marked(letterId, m));
   for (const m of p.wrongMarked ?? []) out.push(flag.wrongMarked(letterId, m));
+  if (p.reason) out.push(flag.reason(letterId, p.reason));
   return out;
 }
 

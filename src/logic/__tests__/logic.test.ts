@@ -3,7 +3,7 @@ import type { Day, Letter } from '../../content/types';
 import { matches } from '../conditions';
 import { resolveSegments } from '../variants';
 import { pickOutcome } from '../outcomes';
-import { advancePhase, addMark, clearCensor, decide, flagsOf, openEnvelope, startDay } from '../dayFlow';
+import { advancePhase, addMark, clearCensor, decide, flagsOf, openEnvelope, setReason, startDay } from '../dayFlow';
 import { flagsForLetter, emptyProgress } from '../flags';
 
 const day = day01 as Day;
@@ -132,5 +132,16 @@ describe('eraser', () => {
     expect(erased.letters.d1_mehmet!.revealed).toEqual(['s4']);
     const decided = decide(s, 'd1_mehmet', 'delivered');
     expect(clearCensor(decided, 'd1_mehmet')).toBe(decided);
+  });
+});
+
+describe('reason slip', () => {
+  it('records the ticked reason as a flag once the letter is decided', () => {
+    let s = openEnvelope(startDay(day), 'd1_imzasiz');
+    s = setReason(s, 'd1_imzasiz', 'sahte');
+    expect(flagsOf(s).has('d1_imzasiz:reason:sahte')).toBe(false);
+    s = decide(s, 'd1_imzasiz', 'reported');
+    expect(flagsOf(s).has('d1_imzasiz:reason:sahte')).toBe(true);
+    expect(setReason(s, 'd1_imzasiz', 'askeri')).toBe(s);
   });
 });

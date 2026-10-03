@@ -22,7 +22,8 @@ import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } fr
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
-import { bookletPages, sampleCards } from '../content/booklet';
+import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
+import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
 import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
@@ -171,6 +172,7 @@ export function DeskScreen() {
   const stampX = useSharedValue(0);
   const stampY = useSharedValue(0);
   const imprintIn = useSharedValue(0);
+  const slipIn = useSharedValue(0);
   const helpIn = useSharedValue(0);
   const eraserRub = useSharedValue(0);
   const eraserLift = useSharedValue(0);
@@ -184,6 +186,9 @@ export function DeskScreen() {
   const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
+  /** A DURDUR or İSTİHBARAT stamp waits on its reason slip before the letter leaves. */
+  const [slip, setSlip] = useState<{ id: string; d: Decision; chosen: string | null } | null>(null);
+  const reasons = useMemo(() => slipReasons(state.day), [state.day]);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
@@ -312,6 +317,24 @@ export function DeskScreen() {
     [stampX, stampY, stampProgress],
   );
 
+  /** The stamped letter goes its way and the decision is written down. */
+  const sendOff = useCallback(
+    (id: string, d: Decision, after: number) => {
+      exitDir.value = EXIT[d];
+      setTimeout(() => {
+        letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
+      }, after);
+      setTimeout(() => {
+        useGame.getState().stamp(id, d);
+        letterOut.value = 0;
+        letterIn.value = 0;
+        setImprint(null);
+        exiting.current = false;
+      }, after + T.leave + 50);
+    },
+    [exitDir, letterOut, letterIn],
+  );
+
   const finishStamp = useCallback(
     (d: Decision, at: Point) => {
       const id = useGame.getState().state.open;
@@ -324,19 +347,18 @@ export function DeskScreen() {
       imprintIn.value = 0;
       imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
       setTimeout(() => stampBack(d), 200);
-      exitDir.value = EXIT[d];
-      setTimeout(() => {
-        letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
-      }, T.stampRest);
-      setTimeout(() => {
-        useGame.getState().stamp(id, d);
-        letterOut.value = 0;
-        letterIn.value = 0;
-        setImprint(null);
-        exiting.current = false;
-      }, T.stampRest + T.leave + 50);
+      if (d === 'stopped' || d === 'reported') {
+        // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
+        setTimeout(() => {
+          setSlip({ id, d, chosen: null });
+          slipIn.value = withTiming(1, { duration: 380, easing: SETTLE });
+          playSfx('paper', 0.4);
+        }, T.stampRest);
+        return;
+      }
+      sendOff(id, d, T.stampRest);
     },
-    [layout, stampBack, exitDir, letterOut, letterIn, imprintIn],
+    [layout, stampBack, imprintIn, slipIn, sendOff],
   );
 
   /** Over the paper and holding still: the stamp starts to come down. */
@@ -425,6 +447,24 @@ export function DeskScreen() {
         if (!forward) return;
       }
       closeHelp();
+      return;
+    }
+
+    // While the reason slip waits, only a tick on it counts.
+    if (slip) {
+      drag.current = null;
+      if (slip.chosen) return;
+      const row = reasonRows(reasons).find((r) => inRect(p, r.rect, 2));
+      if (!row) return;
+      setSlip({ ...slip, chosen: row.r.id });
+      g.reason(slip.id, row.r.id);
+      haptic(Haptics.ImpactFeedbackStyle.Light);
+      playSfx('pen', 0.4);
+      setTimeout(() => {
+        slipIn.value = withTiming(0, { duration: 320, easing: GLIDE });
+        sendOff(slip.id, slip.d, 200);
+        setTimeout(() => setSlip(null), 340);
+      }, 520);
       return;
     }
 
@@ -899,6 +939,7 @@ export function DeskScreen() {
             <MagnifierFrame x={magX} y={magY} lift={magLift} />
             <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
+            {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
 
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 

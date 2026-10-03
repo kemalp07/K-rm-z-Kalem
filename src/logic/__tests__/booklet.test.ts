@@ -3,6 +3,8 @@ import type { Booklet, BookletPage } from '../../content/types';
 
 const src: Booklet = {
   cards: [],
+  reasonSlip: { title: '', hint: '' },
+  reasons: [],
   cover: { label: '', title: '', subtitle: '', lines: [], note: '' },
   noTitle: '',
   pageLabel: '',

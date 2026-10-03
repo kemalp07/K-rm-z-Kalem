@@ -55,6 +55,13 @@ export function clearCensor(s: DayState, id: string): DayState {
   return { ...s, letters: { ...s.letters, [id]: { ...p, censored: [] } } };
 }
 
+/** The reason slip, ticked after a DURDUR or İSTİHBARAT stamp and before the letter leaves. */
+export function setReason(s: DayState, id: string, reason: string): DayState {
+  const p = s.letters[id];
+  if (!p || p.decision) return s;
+  return { ...s, letters: { ...s.letters, [id]: { ...p, reason } } };
+}
+
 export function decide(s: DayState, id: string, decision: Decision): DayState {
   const p = s.letters[id];
   if (s.open !== id || !p || p.decision) return s;

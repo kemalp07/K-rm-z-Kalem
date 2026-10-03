@@ -52,6 +52,8 @@ export const LAYOUT = {
   },
   /** The Talimatname opened over the desk (booklet_open.png is 827×604). */
   bookletOpen: { x: 137, y: 14, w: 726, h: 530 },
+  /** The reason slip that comes with DURDUR and İSTİHBARAT, beside the letter. */
+  reasonSlip: { x: 668, y: 186, w: 206 },
   /** The opened sheet, centred over the desk. */
   helpSheet: { x: 280, y: 60, w: 440, h: 430 },
   /** Rubber eraser, beside the pencil. */

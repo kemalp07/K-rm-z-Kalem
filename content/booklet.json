@@ -40,7 +40,7 @@
         },
         {
           "t": "p",
-          "text": "Her karar deftere yazılır. Kâtip yaptığından mesuldür."
+          "text": "DURDUR ve İSTİHBARAT kararlarında gerekçe pusulası doldurulur. Her karar deftere yazılır; kâtip yaptığından mesuldür."
         }
       ]
     },
@@ -464,6 +464,47 @@
       "title": "MÜHÜR NUMUNELERİ",
       "note": "Talimatname, Sahife 6",
       "page": "muhur_ornek"
+    }
+  ],
+  "reasonSlip": {
+    "title": "GEREKÇE PUSULASI",
+    "hint": "Gerekçeyi işaretle"
+  },
+  "reasons": [
+    {
+      "id": "askeri",
+      "day": 1,
+      "label": "Askerî malûmat"
+    },
+    {
+      "id": "bozgun",
+      "day": 1,
+      "label": "Bozgunculuk, firara teşvik"
+    },
+    {
+      "id": "moral",
+      "day": 1,
+      "label": "Moral bozucu ağır haber"
+    },
+    {
+      "id": "sahte",
+      "day": 1,
+      "label": "Sahte mühür ya da tarih"
+    },
+    {
+      "id": "gizli",
+      "day": 1,
+      "label": "Gizli yazı, şifreli ifade"
+    },
+    {
+      "id": "damga",
+      "day": 4,
+      "label": "Tutarsız posta damgası"
+    },
+    {
+      "id": "pul",
+      "day": 5,
+      "label": "Pul usulsüzlüğü"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { FontWeight, Group, Line, Path, Shadow, vec } from '@shopify/react-native-skia';
 import type { SharedValue } from 'react-native-reanimated';
+import { reasonLabel } from '../content/booklet';
 import { getLetter } from '../content/loader';
 import { t } from '../content/strings';
 import type { Day, Letter as LetterData } from '../content/types';
@@ -71,6 +72,8 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
           ...(p.marked ?? []).map((m) => t('ledger.marked', { what: what(m) })),
           // A ring around something that was in order is written down too: the clerk learns.
           ...(p.wrongMarked ?? []).map((m) => t('ledger.wrongMark', { what: what(m) })),
+          // The reason ticked on the slip; one the letter gives no ground for is called out.
+          p.reason ? t(letter.reasons && !letter.reasons.includes(p.reason) ? 'ledger.wrongReason' : 'ledger.reason', { r: reasonLabel(p.reason).toLocaleLowerCase('tr') }) : '',
         ]
           .filter(Boolean)
           .map((x) => ` · ${x}`)

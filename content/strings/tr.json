@@ -9,6 +9,8 @@
   "ledger.reported": "istihbarata verildi",
   "ledger.censored": "{n} satır karalandı",
   "ledger.overCensored": "{n} tanesi zararsızdı",
+  "ledger.reason": "gerekçe: {r}",
+  "ledger.wrongReason": "gerekçe: {r}, oysa mektupta böyle bir şey yoktu",
   "ledger.title": "Gün Defteri",
   "ledger.route": "{from} — {to}",
   "ledger.dayLine": "{rumi} — {weekday}",

@@ -102,6 +102,11 @@ export interface Letter {
   inspectables?: Inspectable[];
   marks?: PaperMark[];
   variants?: Variant[];
+  /**
+   * Reasons (booklet `reasons` ids) that hold for stopping or reporting this letter.
+   * Empty: nothing in it justifies either. Absent: the ledger does not judge the reason.
+   */
+  reasons?: string[];
   /** First matching entry is shown on the day-end ledger. */
   outcomes: Outcome[];
   /** Free-form data that later systems may use (e.g. acrostics). Not shown. */
@@ -185,8 +190,17 @@ export interface SampleCard {
   page: string;
 }
 
+/** One line of the reason slip that comes with DURDUR and İSTİHBARAT. */
+export interface Reason {
+  id: string;
+  day: number;
+  label: string;
+}
+
 export interface Booklet {
   cards: SampleCard[];
+  reasonSlip: { title: string; hint: string };
+  reasons: Reason[];
   cover: { label: string; title: string; subtitle: string; lines: string[]; note: string };
   noTitle: string;
   pageLabel: string;
