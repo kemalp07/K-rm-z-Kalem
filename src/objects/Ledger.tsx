@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { FontWeight, Group, Line, Path, Shadow, vec } from '@shopify/react-native-skia';
+import { FontWeight, Group, Line, Paragraph, Path, Shadow, vec } from '@shopify/react-native-skia';
 import type { SharedValue } from 'react-native-reanimated';
 import { reasonLabel } from '../content/booklet';
 import { getLetter } from '../content/loader';
@@ -9,6 +9,7 @@ import type { DayState } from '../logic/dayFlow';
 import { pickOutcome } from '../logic/outcomes';
 import { flagsOf } from '../logic/dayFlow';
 import { C, STAMP_INK } from '../scene/palette';
+import { makeParagraph, useSceneFonts } from '../scene/fonts';
 import { Para } from '../scene/Para';
 import { roughRect } from '../scene/rough';
 import { LAYOUT } from '../scene/world';
@@ -25,14 +26,55 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
   const r = LAYOUT.ledger;
   const page = useMemo(() => roughRect(r, 'ledger', 0.7), [r]);
   const flags = useMemo(() => flagsOf(state), [state]);
-  const rows = state.done.map((id) => getLetter(id)).filter((l) => l !== undefined);
+  const rows = useMemo(() => state.done.map((id) => getLetter(id)).filter((l) => l !== undefined), [state.done]);
   const top = r.y + 78;
-  // Five entries fit at full height; a fuller day is written tighter, on two lines each.
-  const compact = rows.length > 5;
-  const rowH = compact ? Math.min(80, (r.h - 78 - 44) / rows.length) : 80;
   // Writing starts right of the red margin; the illustrated register has it further in.
   const M = hasArt('ledger') ? r.w * 0.163 : 44;
   const L = M + 12;
+  const { provider } = useSceneFonts();
+
+  // Each entry: who to whom, what the clerk did (and got wrong), what will come of it.
+  // Lines are measured, and a full day is written smaller until it fits the page.
+  const entries = useMemo(() => {
+    const width = r.w - L - 28;
+    const avail = r.h - 78 - 48;
+    const texts = rows.map((letter) => {
+      const p = state.letters[letter.id]!;
+      const decision = p.decision!;
+      const what = (target: string) => t(target === 'seal' ? 'target.seal' : 'target.date');
+      const extra = [
+        p.censored.length ? t('ledger.censored', { n: p.censored.length }) : '',
+        // Harmless sentences blacked out cost the family their words; the ledger says so.
+        harmless(letter, p.censored) ? t('ledger.overCensored', { n: harmless(letter, p.censored) }) : '',
+        ...(p.marked ?? []).map((m) => t('ledger.marked', { what: what(m) })),
+        // A ring around something that was in order is written down too: the clerk learns.
+        ...(p.wrongMarked ?? []).map((m) => t('ledger.wrongMark', { what: what(m) })),
+        // The reason ticked on the slip; one the letter gives no ground for is called out.
+        p.reason ? t(letter.reasons && !letter.reasons.includes(p.reason) ? 'ledger.wrongReason' : 'ledger.reason', { r: reasonLabel(p.reason).toLocaleLowerCase('tr') }) : '',
+      ].filter(Boolean);
+      return {
+        id: letter.id,
+        route: t('ledger.route', { from: letter.sender, to: letter.recipient }),
+        act: [t(`ledger.${decision}`), ...extra].join(' · '),
+        color: STAMP_INK[decision],
+        outcome: pickOutcome(letter, flags),
+      };
+    });
+    for (const k of [1, 0.92, 0.85, 0.78, 0.72]) {
+      const gap = 10 * k;
+      let y = top;
+      const out = texts.map((e) => {
+        const route = makeParagraph(provider, e.route, { family: 'Caveat', size: 17 * k, color: C.ink, weight: FontWeight.Medium, lineHeight: 0.95 }, width);
+        const act = makeParagraph(provider, e.act, { family: 'Caveat', size: 15 * k, color: e.color, weight: FontWeight.Bold, lineHeight: 0.95 }, width - 8);
+        const outcome = makeParagraph(provider, e.outcome, { family: 'Cormorant', size: 13.5 * k, color: '#4a3d30', italic: true, lineHeight: 0.95 }, width - 10);
+        const at = y;
+        y += route.getHeight() + act.getHeight() + outcome.getHeight() + gap;
+        return { id: e.id, at, route, act, outcome, k };
+      });
+      if (y - top <= avail || k === 0.72) return out;
+    }
+    return [];
+  }, [provider, rows, state.letters, flags, top, r, L]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Group transform={slide}>
@@ -60,40 +102,15 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         align="right"
       />
 
-      {rows.map((letter, i) => {
-        const p = state.letters[letter.id]!;
-        const y = top + i * rowH;
-        const decision = p.decision!;
-        const what = (target: string) => t(target === 'seal' ? 'target.seal' : 'target.date');
-        const extra = [
-          p.censored.length ? t('ledger.censored', { n: p.censored.length }) : '',
-          // Harmless sentences blacked out cost the family their words; the ledger says so.
-          harmless(letter, p.censored) ? t('ledger.overCensored', { n: harmless(letter, p.censored) }) : '',
-          ...(p.marked ?? []).map((m) => t('ledger.marked', { what: what(m) })),
-          // A ring around something that was in order is written down too: the clerk learns.
-          ...(p.wrongMarked ?? []).map((m) => t('ledger.wrongMark', { what: what(m) })),
-          // The reason ticked on the slip; one the letter gives no ground for is called out.
-          p.reason ? t(letter.reasons && !letter.reasons.includes(p.reason) ? 'ledger.wrongReason' : 'ledger.reason', { r: reasonLabel(p.reason).toLocaleLowerCase('tr') }) : '',
-        ]
-          .filter(Boolean)
-          .map((x) => ` · ${x}`)
-          .join('');
+      {entries.map((e, i) => {
+        const y1 = e.at + e.route.getHeight();
+        const y2 = y1 + e.act.getHeight();
         return (
-          <Group key={letter.id}>
-            <Para text={`${i + 1}.`} x={r.x + M - 28} y={y} width={26} family="Caveat" size={17} color={C.inkFaded} />
-            {/* Who wrote to whom, then what the clerk did, then what will come of it. */}
-            {compact ? (
-              <>
-                <Para text={`${t('ledger.route', { from: letter.sender, to: letter.recipient })} · ${t(`ledger.${decision}`)}${extra}`} x={r.x + L} y={y} width={r.w - L - 24} family="Caveat" size={15} color={C.ink} weight={FontWeight.Medium} />
-                <Para text={pickOutcome(letter, flags)} x={r.x + L + 8} y={y + 19} width={r.w - L - 34} family="Cormorant" size={12.5} color="#4a3d30" italic lineHeight={0.92} />
-              </>
-            ) : (
-              <>
-                <Para text={t('ledger.route', { from: letter.sender, to: letter.recipient })} x={r.x + L} y={y} width={r.w - L - 24} family="Caveat" size={17} color={C.ink} weight={FontWeight.Medium} />
-                <Para text={`${t(`ledger.${decision}`)}${extra}`} x={r.x + L + 8} y={y + 21} width={r.w - L - 32} family="Caveat" size={15} color={STAMP_INK[decision]} weight={FontWeight.Bold} />
-                <Para text={pickOutcome(letter, flags)} x={r.x + L + 8} y={y + 40} width={r.w - L - 34} family="Cormorant" size={13.5} color="#4a3d30" italic lineHeight={0.95} />
-              </>
-            )}
+          <Group key={e.id}>
+            <Para text={`${i + 1}.`} x={r.x + M - 28} y={e.at} width={26} family="Caveat" size={17 * e.k} color={C.inkFaded} />
+            <Paragraph paragraph={e.route} x={r.x + L} y={e.at} width={e.route.getMaxWidth()} />
+            <Paragraph paragraph={e.act} x={r.x + L + 8} y={y1} width={e.act.getMaxWidth()} />
+            <Paragraph paragraph={e.outcome} x={r.x + L + 10} y={y2} width={e.outcome.getMaxWidth()} />
           </Group>
         );
       })}

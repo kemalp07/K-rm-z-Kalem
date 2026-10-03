@@ -1,4 +1,13 @@
+import { rumiOrdinal } from '../logic/sideLetters';
 import type { Day, Letter, Thread, VariantOp } from './types';
+
+/** "12 Mayıs 331" and "12 Mayıs 1331" are the same day. */
+const rumiDay = (text: string) => {
+  const m = text.match(/(\d{1,2})\s+(\S+)\s+(1?3\d\d)\s*$/);
+  if (!m) return Number.NaN;
+  const year = Number(m[3]) < 1000 ? Number(m[3]) + 1000 : Number(m[3]);
+  return rumiOrdinal(`${m[1]} ${m[2]} ${year}`);
+};
 
 /** Returns human-readable problems; an empty list means the content is sound. */
 export function validateDay(day: Day, threads: Thread[]): string[] {
@@ -21,6 +30,11 @@ export function validateDay(day: Day, threads: Thread[]): string[] {
       if (insp.target === 'date' && !letter.dateLine) problems.push(`${where}: date inspectable without dateLine`);
       if (insp.target === 'seal' && !letter.seal) problems.push(`${where}: seal inspectable without seal`);
     }
+
+    // A letter dated after today is a forgery; only one that is meant to be may carry it.
+    const written = letter.dateLine ? rumiDay(letter.dateLine) : Number.NaN;
+    const wrongDate = letter.inspectables?.some((i) => i.target === 'date' && i.anomaly);
+    if (written > rumiDay(day.calendar.rumi) && !wrongDate) problems.push(`${where}: dated ${letter.dateLine}, after today (${day.calendar.rumi})`);
 
     problems.push(...validateSegments(letter, where));
   }

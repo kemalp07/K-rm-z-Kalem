@@ -52,3 +52,11 @@ test('every tool has an instruction sheet', () => {
   expect(ids).toEqual(['candle', 'magnifier', 'pen', 'rules', 'stamps']);
   for (const s of help.sheets) expect(s.lines.length).toBeGreaterThan(0);
 });
+
+describe('dates', () => {
+  it('flags a letter dated after the day it arrives', () => {
+    const d = day01 as Day;
+    const bad: Day = { ...d, letters: [{ ...d.letters[0]!, dateLine: '12 Mayıs 331' }] };
+    expect(validateDay(bad, threads as Thread[]).some((p) => p.includes('after today'))).toBe(true);
+  });
+});
