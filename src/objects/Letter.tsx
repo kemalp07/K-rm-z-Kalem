@@ -5,6 +5,7 @@ import {
   BlurMask,
   Circle,
   ColorMatrix,
+  DashPathEffect,
   DiscretePathEffect,
   FractalNoise,
   Group,
@@ -44,6 +45,8 @@ export interface LetterProps {
   strokes: SkPath[];
   /** The stroke being drawn right now, if any. */
   livePath?: SharedValue<SkPath>;
+  /** Sentence under the pen, while a stroke is going on. */
+  hint?: SharedValue<PenHint>;
   /** Pen work fading under the eraser. */
   marksFade?: SharedValue<number>;
   /** Pre-rendered stand-ins for LetterStill / LetterMarks, when the screen has them. */
@@ -411,10 +414,43 @@ export function LetterMarks({ layout, censored, strokes }: { layout: LetterLayou
   );
 }
 
+export type PenHint = { hover: string; done: string[] };
+
+/**
+ * While the pen is down, a faint rule under the sentence it is over shows what one
+ * stroke of censoring takes in; a covered sentence's rule turns red.
+ */
+function SentenceHints({ segments, hint }: { segments: LaidSegment[]; hint: SharedValue<PenHint> }) {
+  return (
+    <Group>
+      {segments.map((s) => (s.seg.kind === 'hiddenInk' ? null : <SentenceHint key={s.seg.id} laid={s} hint={hint} />))}
+    </Group>
+  );
+}
+
+function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<PenHint> }) {
+  const id = laid.seg.id;
+  const path = useMemo(() => {
+    const b = Skia.PathBuilder.Make();
+    for (const l of laid.lines) b.moveTo(l.x, l.y + l.h - 1).lineTo(l.x + l.w, l.y + l.h - 1);
+    return b.build();
+  }, [laid]);
+  const over = useDerivedValue(() => (hint.value.hover === id && !hint.value.done.includes(id) ? 0.55 : 0));
+  const done = useDerivedValue(() => (hint.value.done.includes(id) ? 0.85 : 0));
+  return (
+    <Group transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
+      <Path path={path} style="stroke" strokeWidth={1.2} color={C.inkFaded} opacity={over}>
+        <DashPathEffect intervals={[4, 3]} />
+      </Path>
+      <Path path={path} style="stroke" strokeWidth={2} color={C.censor} opacity={done} />
+    </Group>
+  );
+}
+
 /** Area a letter can paint on, shadow included — what gets rasterised. */
 export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
 
-function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
+function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hint, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
   const p = layout.paper;
   return (
     <Group>
@@ -427,6 +463,7 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hea
           <LetterMarks layout={layout} censored={censored} strokes={strokes} />
         </Fade>
       )}
+      {hint && <SentenceHints segments={layout.segments} hint={hint} />}
       {livePath && <CensorStroke path={livePath} />}
       {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} paper={p} imprintIn={imprintIn} />}
     </Group>

@@ -48,7 +48,8 @@ type Drag =
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'magnifier'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
-  | { kind: 'pen-stroke'; last: Point; points: Point[] }
+  /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
+  | { kind: 'pen-stroke'; last: Point; points: Point[]; done: string[] }
   | { kind: 'stamp'; d: Decision; start: Point; timer: ReturnType<typeof setTimeout> }
   | { kind: 'ledger' }
   | { kind: 'restart' };
@@ -152,6 +153,8 @@ export function DeskScreen() {
 
   const heat = useSharedValue<Record<string, number>>({});
   const livePath = useSharedValue<SkPath>(Skia.Path.Make());
+  /** Which sentence the pen is over, and which this stroke has covered. */
+  const penHint = useSharedValue<{ hover: string; done: string[] }>({ hover: '', done: [] });
   const stampProgress = useSharedValue(0);
   const imprintIn = useSharedValue(0);
   const helpIn = useSharedValue(0);
@@ -448,7 +451,8 @@ export function DeskScreen() {
 
     if (s.open && layout) {
       if (penInHand.current && inRect(p, LAYOUT.letter)) {
-        drag.current = { kind: 'pen-stroke', last: p, points: [p] };
+        drag.current = { kind: 'pen-stroke', last: p, points: [p], done: [] };
+        penHint.value = { hover: '', done: [] };
         setDrawing(true);
         penX.value = p.x;
         penY.value = p.y;
@@ -531,15 +535,21 @@ export function DeskScreen() {
         livePath.value = smoothPath(d.points);
         penX.value = p.x;
         penY.value = p.y;
+        // Covering a sentence is felt at once but recorded when the pen lifts: a store
+        // update mid-stroke re-renders and re-rasterises the letter, which stutters.
+        let hover = '';
         for (const [segId, { lines, laid }] of coverage.current) {
           const local = (q: Point) => toLocalFrame(q, laid, laid.tilt, laid.skew);
-          if (!strokeOver(lines, local(d.last), local(p), 5)) continue;
-          const already = useGame.getState().state.letters[id]?.censored.includes(segId);
+          const at = local(p);
+          if (!hover && lines.some(({ rect: r }) => at.x >= r.x - 4 && at.x <= r.x + r.w + 4 && at.y >= r.y - 3 && at.y <= r.y + r.h + 3)) hover = segId;
+          if (!strokeOver(lines, local(d.last), at, 5)) continue;
+          const already = d.done.includes(segId) || useGame.getState().state.letters[id]?.censored.includes(segId);
           if (!already && isBlackedOut(lines)) {
-            useGame.getState().censor(id, segId);
+            d.done.push(segId);
             Haptics.selectionAsync().catch(() => {});
           }
         }
+        if (hover !== penHint.value.hover || d.done.length !== penHint.value.done.length) penHint.value = { hover, done: [...d.done] };
         d.last = p;
         break;
       }
@@ -611,6 +621,7 @@ export function DeskScreen() {
         break;
       case 'pen-stroke': {
         const id = g.state.open;
+        if (id) for (const segId of d.done) g.censor(id, segId);
         if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
         // A closed ring marks whatever it encloses as suspicious; the ledger judges it.
         if (id && openLetter && layout && isClosedLoop(d.points)) {
@@ -710,6 +721,7 @@ export function DeskScreen() {
           revealed={progress.revealed}
           strokes={strokes}
           livePath={drawing ? livePath : undefined}
+          hint={drawing ? penHint : undefined}
           heat={heat}
           warm={warm}
           imprint={imprint ?? undefined}

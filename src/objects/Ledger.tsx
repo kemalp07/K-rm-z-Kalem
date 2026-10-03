@@ -3,7 +3,7 @@ import { FontWeight, Group, Line, Path, Shadow, vec } from '@shopify/react-nativ
 import type { SharedValue } from 'react-native-reanimated';
 import { getLetter } from '../content/loader';
 import { t } from '../content/strings';
-import type { Day } from '../content/types';
+import type { Day, Letter as LetterData } from '../content/types';
 import type { DayState } from '../logic/dayFlow';
 import { pickOutcome } from '../logic/outcomes';
 import { flagsOf } from '../logic/dayFlow';
@@ -14,6 +14,12 @@ import { LAYOUT } from '../scene/world';
 import { ArtSlot, hasArt } from '../art/ArtSlot';
 
 /** End of day: the clerk's register, one entry per envelope, written as it happened. */
+/** How many of the censored sentences were plain, innocent ones. */
+function harmless(letter: LetterData, censored: string[]) {
+  const all = [...letter.segments, ...(letter.variants ?? []).flatMap((v) => v.ops.flatMap((o) => ('segment' in o ? [o.segment] : [])))];
+  return censored.filter((id) => all.find((s) => s.id === id)?.kind === 'normal').length;
+}
+
 export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide: SharedValue<{ translateY: number }[]> }) {
   const r = LAYOUT.ledger;
   const page = useMemo(() => roughRect(r, 'ledger', 0.7), [r]);
@@ -60,6 +66,8 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         const what = (target: string) => t(target === 'seal' ? 'target.seal' : 'target.date');
         const extra = [
           p.censored.length ? t('ledger.censored', { n: p.censored.length }) : '',
+          // Harmless sentences blacked out cost the family their words; the ledger says so.
+          harmless(letter, p.censored) ? t('ledger.overCensored', { n: harmless(letter, p.censored) }) : '',
           ...(p.marked ?? []).map((m) => t('ledger.marked', { what: what(m) })),
           // A ring around something that was in order is written down too: the clerk learns.
           ...(p.wrongMarked ?? []).map((m) => t('ledger.wrongMark', { what: what(m) })),

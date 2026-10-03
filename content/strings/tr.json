@@ -8,6 +8,7 @@
   "ledger.stopped": "durduruldu",
   "ledger.reported": "istihbarata verildi",
   "ledger.censored": "{n} satır karalandı",
+  "ledger.overCensored": "{n} tanesi zararsızdı",
   "ledger.title": "Gün Defteri",
   "ledger.route": "{from} — {to}",
   "ledger.dayLine": "{rumi} — {weekday}",
