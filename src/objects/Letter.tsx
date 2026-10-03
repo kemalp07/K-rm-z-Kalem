@@ -18,6 +18,7 @@ import {
   TextPath,
   vec,
   type SkPath,
+  type Transforms3d,
 } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { hasArt, TintedArt } from '../art/ArtSlot';
@@ -44,6 +45,8 @@ export interface LetterProps {
   livePath: SharedValue<SkPath>;
   heat: SharedValue<Record<string, number>>;
   imprint?: Decision;
+  /** 0→1 as the stamp's ink lands. */
+  imprintIn?: SharedValue<number>;
 }
 
 function Block({ laid }: { laid: Laid }) {
@@ -288,6 +291,10 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
   );
 }
 
+/**
+ * A censored line, done the way a clerk does it: the red pencil dragged back and forth
+ * across the words until they are gone, over a first heavy pass that leaves nothing legible.
+ */
 function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored: string[] }) {
   const blocks = useMemo(
     () =>
@@ -295,19 +302,22 @@ function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored:
         .filter((s) => censored.includes(s.seg.id))
         .map((s) => ({
           laid: s,
-          bars: s.lines.map((l, i) => roughRect({ x: l.x - 3, y: l.y + 1, w: l.w + 6, h: l.h - 1 }, `bar-${s.seg.id}-${i}`, 1.4)),
+          beds: s.lines.map((l, i) => roughRect({ x: l.x - 2, y: l.y + 2, w: l.w + 4, h: l.h - 3 }, `bed-${s.seg.id}-${i}`, 1.6)),
+          scribbles: s.lines.map((l, i) => scribble(l, `scr-${s.seg.id}-${i}`)),
         })),
     [segments, censored],
   );
-  // Opaque, and in the writing's own slant: once a line counts as censored, nothing of it shows.
   return (
     <Group>
-      {blocks.map(({ laid, bars }) => (
+      {blocks.map(({ laid, beds, scribbles }) => (
         <Group key={laid.seg.id} transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
-          {bars.map((b, i) => (
-            <Path key={i} path={b} color={C.censor}>
-              <DiscretePathEffect length={6} deviation={1.2} seed={i} />
+          {beds.map((b, i) => (
+            <Path key={`b${i}`} path={b} color={C.censor} opacity={0.88}>
+              <DiscretePathEffect length={5} deviation={1.4} seed={i} />
             </Path>
+          ))}
+          {scribbles.map((sc, i) => (
+            <CensorStroke key={`s${i}`} path={sc} width={7} />
           ))}
         </Group>
       ))}
@@ -315,21 +325,45 @@ function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored:
   );
 }
 
-/** A red grease pencil: waxy, a little broken at the edges, darker where it doubled back. */
-export function CensorStroke({ path }: { path: SkPath | SharedValue<SkPath> }) {
+/** Back-and-forth pencil marks across a line box, with rounded turns and a hand's unevenness. */
+function scribble(r: R, seed: string): SkPath {
+  const rand = rng(seed);
+  const b = Skia.PathBuilder.Make();
+  const top = r.y + 3;
+  const bottom = r.y + r.h - 3;
+  let x = r.x - 3;
+  let up = false;
+  b.moveTo(x, bottom);
+  while (x < r.x + r.w + 3) {
+    const step = between(rand, 3.2, 5.4);
+    const nx = x + step;
+    const ny = (up ? bottom : top) + between(rand, -1.5, 1.5);
+    b.quadTo(x + step * 0.5, ny + (up ? 2 : -2), nx, ny);
+    x = nx;
+    up = !up;
+  }
+  return b.build();
+}
+
+/**
+ * Red grease pencil on paper: a soft waxy body, the paper's tooth breaking it up into
+ * grain, and a darker vein where the pencil pressed hardest.
+ */
+export function CensorStroke({ path, width = 9 }: { path: SkPath | SharedValue<SkPath>; width?: number }) {
   return (
-    <Group blendMode="multiply">
-      <Path path={path} style="stroke" strokeWidth={10} strokeCap="round" strokeJoin="round" color={C.censor} opacity={0.82}>
-        <DiscretePathEffect length={5} deviation={1.6} seed={2} />
+    <Group layer={<Paint blendMode="multiply" />}>
+      <Path path={path} style="stroke" strokeWidth={width} strokeCap="round" strokeJoin="round" color={C.censor} opacity={0.9}>
+        <BlurMask blur={0.7} style="normal" />
       </Path>
-      <Path path={path} style="stroke" strokeWidth={4} strokeCap="round" strokeJoin="round" color={C.censorDark} opacity={0.35}>
-        <DiscretePathEffect length={3} deviation={1} seed={5} />
+      <Path path={path} style="stroke" strokeWidth={width + 1} strokeCap="round" strokeJoin="round" blendMode="dstOut" opacity={0.5}>
+        <FractalNoise freqX={0.9} freqY={0.35} octaves={2} seed={11} />
       </Path>
+      <Path path={path} style="stroke" strokeWidth={width * 0.3} strokeCap="round" strokeJoin="round" color={C.censorDark} opacity={0.35} transform={[{ translateX: 0.6 }, { translateY: 0.8 }]} />
     </Group>
   );
 }
 
-function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, heat, imprint }: LetterProps) {
+function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, heat, imprint, imprintIn }: LetterProps) {
   const p = layout.paper;
   return (
     <Group>
@@ -354,7 +388,18 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hea
         <CensorStroke key={i} path={s} />
       ))}
       <CensorStroke path={livePath} />
-      {imprint && (
+      {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} paper={p} imprintIn={imprintIn} />}
+    </Group>
+  );
+}
+
+/** The decision stamp landing on the letter: it settles from slightly larger and the ink comes up. */
+function Imprint({ imprint, letter, paper: p, imprintIn }: { imprint: Decision; letter: LetterData; paper: R; imprintIn: SharedValue<number> }) {
+  const cx = p.x + 34 + 75;
+  const cy = p.y + p.h - 92 + 26;
+  const transform = useDerivedValue<Transforms3d>(() => [{ translateX: cx }, { translateY: cy }, { scale: 1.1 - 0.1 * imprintIn.value }, { translateX: -cx }, { translateY: -cy }]);
+  return (
+    <Fade opacity={imprintIn} transform={transform}>
         <StampMark
           x={p.x + 34}
           y={p.y + p.h - 92}
@@ -366,8 +411,7 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hea
           seed={`imprint-${letter.id}`}
           size={22}
         />
-      )}
-    </Group>
+    </Fade>
   );
 }
 

@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { Canvas, Circle, Group, Rect, Skia, type SkPath, type SkPathBuilder, type Transforms3d } from '@shopify/react-native-skia';
+import { Canvas, Circle, Group, Rect, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withSpring, withTiming } from 'react-native-reanimated';
+import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, LAST_AUTHORED_DAY } from '../content/loader';
@@ -44,7 +45,7 @@ type Drag =
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'magnifier'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
-  | { kind: 'pen-stroke'; last: Point; path: SkPathBuilder }
+  | { kind: 'pen-stroke'; last: Point; points: Point[] }
   | { kind: 'stamp'; d: Decision; start: Point; timer: ReturnType<typeof setTimeout> }
   | { kind: 'ledger' }
   | { kind: 'restart' };
@@ -63,6 +64,24 @@ const EXIT: Record<Decision, { dx: number; dy: number; rot: number }> = {
   stopped: { dx: -520, dy: 260, rot: -0.22 }, // onto the refused pile
   reported: { dx: 120, dy: -560, rot: 0.1 }, // up to the Şube's folder
 };
+
+const FOLLOW = { duration: T.follow };
+
+/** Quadratic curve through the midpoints of a finger's track: no corners, no jitter. */
+function smoothPath(pts: Point[]): SkPath {
+  const b = Skia.PathBuilder.Make();
+  const first = pts[0]!;
+  b.moveTo(first.x, first.y);
+  if (pts.length === 1) return b.lineTo(first.x + 0.1, first.y).build();
+  for (let i = 1; i < pts.length - 1; i++) {
+    const a = pts[i]!;
+    const c = pts[i + 1]!;
+    b.quadTo(a.x, a.y, (a.x + c.x) / 2, (a.y + c.y) / 2);
+  }
+  const last = pts[pts.length - 1]!;
+  b.lineTo(last.x, last.y);
+  return b.build();
+}
 
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
@@ -124,6 +143,7 @@ export function DeskScreen() {
   const heat = useSharedValue<Record<string, number>>({});
   const livePath = useSharedValue<SkPath>(Skia.Path.Make());
   const stampProgress = useSharedValue(0);
+  const imprintIn = useSharedValue(0);
   const slipOpacity = useSharedValue(0);
   const ledgerY = useSharedValue(state.phase === 'ledger' ? 0 : 640);
   const continueOpacity = useSharedValue(state.phase === 'continued' ? 1 : 0);
@@ -165,9 +185,9 @@ export function DeskScreen() {
     let timer: ReturnType<typeof setTimeout> | undefined;
     switch (state.phase) {
       case 'desk':
-        lampLevel.value = withTiming(1, { duration: 900 });
+        lampLevel.value = withTiming(1, { duration: 1400, easing: GLIDE });
         ledgerY.value = 640;
-        continueOpacity.value = withTiming(0, { duration: 600 });
+        continueOpacity.value = withTiming(0, { duration: 900, easing: GLIDE });
         break;
       case 'dusk':
         playSfx('drawer', 0.6);
@@ -175,13 +195,13 @@ export function DeskScreen() {
         timer = setTimeout(advance, 3900);
         break;
       case 'ledger':
-        lampLevel.value = withTiming(0.3, { duration: 600 });
+        lampLevel.value = withTiming(0.3, { duration: 900, easing: GLIDE });
         playSfx('paper', 0.7);
-        ledgerY.value = withTiming(0, { duration: 900, easing: Easing.out(Easing.cubic) });
+        ledgerY.value = withTiming(0, { duration: T.ledger, easing: SETTLE });
         break;
       case 'continued':
-        lampLevel.value = withTiming(0.04, { duration: 1600 });
-        continueOpacity.value = withTiming(1, { duration: 1600 });
+        lampLevel.value = withTiming(0.04, { duration: 2000, easing: GLIDE });
+        continueOpacity.value = withTiming(1, { duration: 2000, easing: GLIDE });
         break;
     }
     return () => {
@@ -231,7 +251,7 @@ export function DeskScreen() {
             slipShownFor.current = over.id;
             if (slipHideTimer.current) clearTimeout(slipHideTimer.current);
             setSlip({ note: over.note, x: lens.x, y: lens.y });
-            slipOpacity.value = withTiming(1, { duration: 350 });
+            slipOpacity.value = withTiming(1, { duration: T.slipIn, easing: SETTLE });
             useGame.getState().inspect(id, over.id);
             haptic(Haptics.ImpactFeedbackStyle.Light);
           }
@@ -240,7 +260,7 @@ export function DeskScreen() {
           if (slipShownFor.current) {
             slipShownFor.current = null;
             slipHideTimer.current = setTimeout(() => {
-              slipOpacity.value = withTiming(0, { duration: 700 });
+              slipOpacity.value = withTiming(0, { duration: T.slipOut, easing: GLIDE });
             }, 2200);
           }
         }
@@ -252,10 +272,11 @@ export function DeskScreen() {
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
     penInHand.current = false;
-    penX.value = withTiming(LAYOUT.rest.pen.x, { duration: 380 });
-    penY.value = withTiming(LAYOUT.rest.pen.y, { duration: 380 });
-    penAngle.value = withTiming(LAYOUT.rest.pen.angle, { duration: 380 });
-    penLift.value = withTiming(0, { duration: 380 });
+    const home = { duration: T.home, easing: GLIDE };
+    penX.value = withTiming(LAYOUT.rest.pen.x, home);
+    penY.value = withTiming(LAYOUT.rest.pen.y, home);
+    penAngle.value = withTiming(LAYOUT.rest.pen.angle, home);
+    penLift.value = withTiming(0, home);
   }, [penX, penY, penAngle, penLift]);
 
   const finishStamp = useCallback(
@@ -266,13 +287,15 @@ export function DeskScreen() {
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
       setImprint(d);
-      stampProgress.value = withTiming(0, { duration: 220 });
-      setTimeout(() => setPressing(null), 220);
-      slipOpacity.value = withTiming(0, { duration: 300 });
+      imprintIn.value = 0;
+      imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
+      stampProgress.value = withTiming(0, { duration: 380, easing: SETTLE });
+      setTimeout(() => setPressing(null), 380);
+      slipOpacity.value = withTiming(0, { duration: 400 });
       exitDir.value = EXIT[d];
       setTimeout(() => {
-        letterOut.value = withTiming(1, { duration: 560, easing: Easing.in(Easing.cubic) });
-      }, 750);
+        letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
+      }, T.stampRest);
       setTimeout(() => {
         useGame.getState().stamp(id, d);
         letterOut.value = 0;
@@ -280,9 +303,9 @@ export function DeskScreen() {
         setImprint(null);
         setSlip(null);
         exiting.current = false;
-      }, 1350);
+      }, T.stampRest + T.leave + 50);
     },
-    [stampProgress, slipOpacity, exitDir, letterOut, letterIn],
+    [stampProgress, slipOpacity, exitDir, letterOut, letterIn, imprintIn],
   );
 
   // --- gesture handlers (JS thread; positions go out through shared values) ------
@@ -304,7 +327,7 @@ export function DeskScreen() {
     if (dist(p, saucer) < CANDLE_R + 6 || (Math.abs(p.x - saucer.x) < 14 && p.y < saucer.y && p.y > saucer.y + CANDLE_FLAME.dy - 10)) {
       if (penInHand.current) penHome();
       drag.current = { kind: 'candle', ox: candleX.value - p.x, oy: candleY.value - p.y };
-      candleLift.value = withTiming(1, { duration: 160 });
+      candleLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       playSfx('candle', 0.5);
       return;
@@ -315,7 +338,7 @@ export function DeskScreen() {
     if (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14) {
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
-      magLift.value = withTiming(1, { duration: 160 });
+      magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
     }
@@ -324,18 +347,17 @@ export function DeskScreen() {
     if (distToSegment(p, nib, stickEnd(nib, penAngle.value, PEN_LENGTH)) < 16) {
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
-      penLift.value = withTiming(1, { duration: 160 });
-      penAngle.value = withTiming(PEN_IN_HAND_ANGLE, { duration: 200 });
-      penX.value = withTiming(p.x, { duration: 120 });
-      penY.value = withTiming(p.y, { duration: 120 });
+      penLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
+      penAngle.value = withTiming(PEN_IN_HAND_ANGLE, { duration: T.lift + 120, easing: SETTLE });
+      penX.value = withTiming(p.x, { duration: T.lift, easing: SETTLE });
+      penY.value = withTiming(p.y, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
     }
 
     if (s.open && layout) {
       if (penInHand.current && inRect(p, LAYOUT.letter)) {
-        const path = Skia.PathBuilder.Make().moveTo(p.x, p.y);
-        drag.current = { kind: 'pen-stroke', last: p, path };
+        drag.current = { kind: 'pen-stroke', last: p, points: [p] };
         penX.value = p.x;
         penY.value = p.y;
         playSfx('pen', 0.5);
@@ -346,7 +368,7 @@ export function DeskScreen() {
         if (penInHand.current) penHome();
         setPressing(slot.d);
         stampProgress.value = 0;
-        stampProgress.value = withTiming(1, { duration: STAMP_HOLD_MS, easing: Easing.in(Easing.quad) });
+        stampProgress.value = withTiming(1, { duration: STAMP_HOLD_MS, easing: Easing.inOut(Easing.quad) });
         drag.current = { kind: 'stamp', d: slot.d, start: p, timer: setTimeout(() => finishStamp(slot.d), STAMP_HOLD_MS) };
         haptic(Haptics.ImpactFeedbackStyle.Light);
         return;
@@ -365,7 +387,7 @@ export function DeskScreen() {
           envX.value = pose.x;
           envY.value = pose.y;
           envAngle.value = pose.angle;
-          envAngle.value = withTiming(pose.angle * 0.3, { duration: 300 });
+          envAngle.value = withTiming(pose.angle * 0.3, { duration: 500, easing: SETTLE });
           drag.current = { kind: 'envelope', id, ox: pose.x - p.x, oy: pose.y - p.y };
           setDragId(id);
           haptic(Haptics.ImpactFeedbackStyle.Light);
@@ -382,33 +404,37 @@ export function DeskScreen() {
     const d = drag.current;
     if (!d) return;
     switch (d.kind) {
+      // Carried things trail the finger by a few frames: steady, never twitchy.
       case 'envelope':
-        envX.value = p.x + d.ox;
-        envY.value = p.y + d.oy;
+        envX.value = withTiming(p.x + d.ox, FOLLOW);
+        envY.value = withTiming(p.y + d.oy, FOLLOW);
         break;
       case 'candle': {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 20);
-        candleX.value = c.x;
-        candleY.value = c.y;
+        candleX.value = withTiming(c.x, FOLLOW);
+        candleY.value = withTiming(c.y, FOLLOW);
         break;
       }
       case 'magnifier': {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 10);
-        magX.value = c.x;
-        magY.value = c.y;
+        magX.value = withTiming(c.x, FOLLOW);
+        magY.value = withTiming(c.y, FOLLOW);
         break;
       }
       case 'pen-carry': {
         const c = clampTo(p, BOARD, 4);
-        penX.value = c.x;
-        penY.value = c.y;
+        penX.value = withTiming(c.x, FOLLOW);
+        penY.value = withTiming(c.y, FOLLOW);
         break;
       }
       case 'pen-stroke': {
         const id = useGame.getState().state.open;
         if (!id) return;
-        d.path.lineTo(p.x, p.y);
-        livePath.value = d.path.build();
+        // The finger reports jagged points; the pencil draws the curve through them.
+        const prev = d.points[d.points.length - 1]!;
+        if (Math.hypot(p.x - prev.x, p.y - prev.y) < 1.5) break;
+        d.points.push(p);
+        livePath.value = smoothPath(d.points);
         penX.value = p.x;
         penY.value = p.y;
         for (const [segId, { lines, laid }] of coverage.current) {
@@ -431,8 +457,8 @@ export function DeskScreen() {
 
   const cancelStamp = (d: Extract<Drag, { kind: 'stamp' }>) => {
     clearTimeout(d.timer);
-    stampProgress.value = withTiming(0, { duration: 140 });
-    setTimeout(() => setPressing((cur) => (cur === d.d && !exiting.current ? null : cur)), 140);
+    stampProgress.value = withTiming(0, { duration: 260, easing: SETTLE });
+    setTimeout(() => setPressing((cur) => (cur === d.d && !exiting.current ? null : cur)), 260);
     drag.current = null;
   };
 
@@ -449,10 +475,11 @@ export function DeskScreen() {
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
           penHome();
-          candleX.value = withTiming(LAYOUT.rest.candle.x);
-          candleY.value = withTiming(LAYOUT.rest.candle.y);
-          magX.value = withTiming(LAYOUT.rest.magnifier.x);
-          magY.value = withTiming(LAYOUT.rest.magnifier.y);
+          const home = { duration: T.home, easing: GLIDE };
+          candleX.value = withTiming(LAYOUT.rest.candle.x, home);
+          candleY.value = withTiming(LAYOUT.rest.candle.y, home);
+          magX.value = withTiming(LAYOUT.rest.magnifier.x, home);
+          magY.value = withTiming(LAYOUT.rest.magnifier.y, home);
         }
         break;
       case 'envelope': {
@@ -463,33 +490,33 @@ export function DeskScreen() {
           g.open(d.id);
           setDragId(null);
           letterIn.value = 0;
-          letterIn.value = withTiming(1, { duration: 700, easing: Easing.out(Easing.cubic) });
+          letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
           playSfx('envelope_tear');
           haptic(Haptics.ImpactFeedbackStyle.Medium);
         } else {
           const i = g.state.stack.indexOf(d.id);
           const pose = stackPose(l, Math.max(0, i), LAYOUT.stack);
-          envX.value = withSpring(pose.x, { damping: 18 });
-          envY.value = withSpring(pose.y, { damping: 18 });
-          envAngle.value = withTiming(pose.angle, { duration: 300 });
-          setTimeout(() => setDragId((cur) => (cur === d.id ? null : cur)), 420);
+          envX.value = withSpring(pose.x, RETURN_SPRING);
+          envY.value = withSpring(pose.y, RETURN_SPRING);
+          envAngle.value = withTiming(pose.angle, { duration: 600, easing: SETTLE });
+          setTimeout(() => setDragId((cur) => (cur === d.id ? null : cur)), 700);
         }
         break;
       }
       case 'candle':
-        candleLift.value = withTiming(0, { duration: 200 });
+        candleLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
         break;
       case 'magnifier':
-        magLift.value = withTiming(0, { duration: 200 });
+        magLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
         break;
       case 'pen-carry':
         // A tap on the pen you're already holding puts it down.
         if (d.wasInHand && dist(p, d.start) < 6) penHome();
-        else penLift.value = withTiming(0.6, { duration: 160 });
+        else penLift.value = withTiming(0.6, { duration: T.lift, easing: SETTLE });
         break;
       case 'pen-stroke': {
         const id = g.state.open;
-        if (id && d.path.countPoints() > 2) g.addStroke(id, d.path.build().toSVGString());
+        if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
         livePath.value = Skia.Path.Make();
         break;
       }
@@ -525,14 +552,14 @@ export function DeskScreen() {
     const e = exitDir.value;
     return [
       { translateX: o.x + e.dx * out },
-      { translateY: o.y + e.dy * out - (1 - v) * 14 },
-      { rotate: e.rot * out },
-      { scaleY: 0.32 + 0.68 * v },
+      { translateY: o.y + e.dy * out + (1 - v) * 22 },
+      { rotate: e.rot * out + (1 - v) * -0.02 },
+      { scale: 0.96 + 0.04 * v },
       { translateX: -o.x },
       { translateY: -o.y },
     ];
   });
-  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.6) * (1 - letterOut.value * 0.9));
+  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value));
   const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
     return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R - 2).build();
@@ -562,6 +589,7 @@ export function DeskScreen() {
           livePath={livePath}
           heat={heat}
           imprint={imprint ?? undefined}
+          imprintIn={imprintIn}
         />
       </Fade>
     ) : null;
