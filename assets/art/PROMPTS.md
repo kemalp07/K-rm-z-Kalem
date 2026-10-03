@@ -257,7 +257,7 @@ Hand-drawn illustration for a quiet historical drama set in 1915. Fine dark-brow
 
 Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph.
 
-A small office regulations booklet lying open flat, showing two facing pages: aged cream paper, a soft shadowless gutter in the middle where the pages meet, a thin printed single-line frame near the edges of each page, the inside of both frames completely empty, faint foxing spots, a narrow black ribbon bookmark lying across the right page, the faded oxblood cloth cover visible as a thin border around the pages. Completely blank: no writing, no text, no letters, no numbers. Flat, even lighting, no shadows.
+A small office regulations booklet lying open flat, showing two facing pages: aged cream paper, a soft shadowless gutter in the middle where the pages meet, a thin printed single-line frame near the edges of each page, the inside of both frames completely empty, faint foxing spots, the faded oxblood cloth cover visible as a thin border around the pages. A narrow black ribbon bookmark comes out of the gutter at the bottom edge and hangs down below the book, outside the pages; nothing lies on the pages themselves. Completely blank: no writing, no text, no letters, no numbers. Flat, even lighting, no shadows.
 
 Landscape format, about 3:2. Very high resolution, fine crisp linework.
 ```
