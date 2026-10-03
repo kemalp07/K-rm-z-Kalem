@@ -211,11 +211,11 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4237,
-      "output": 1665
+      "output": 2358
     },
     "scores": {
       "donem_dili": 5,
@@ -226,18 +226,18 @@
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "1915 yılına ve dönem ruhuna aykırı hiçbir modern sözcük ya da ifade barındırmıyor.",
-      "olculuk": "Duygular adlandırılmamış, her şeyi iyi gösterme gayreti abartısız ve dengeli bir dille aktarılmış.",
-      "okuryazarlik": "Orta düzey okuryazar bir kahvecinin kendi elinden çıkacak sadelikte ve düzgünlükte yazılmış.",
-      "somutluk": "Oğlanın mektebi, kışlık odun ve kahvehanenin kilitli kapısı gibi döneme ve karaktere özgü somut detaylar içeriyor.",
-      "sadakat": "Dikkatsizlik unsuru yer adında doğru işlenmiş ancak sansür işareti tarihe de taşırılarak kural ihlali yapılmış.",
-      "sahicilik": "Geride bıraktığı ailesini ve dükkânını dert edinen askerin sesi son derece samimi ve inandırıcı."
+      "donem_dili": "Kullanılan kelimeler (mektep, ziyan, bellesin) ve cümle yapıları 1915 dönemine tam uygundur.",
+      "olculuk": "Duygular hiç adlandırılmamış, karakterin 'az konuşur' ve 'iyi gösterir' yapısı başarıyla yansıtılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade ve kısa cümleler kurulmuş.",
+      "somutluk": "Kışlık odun, dükkân, kahvehanenin kilitli kapısı gibi döneme ve karaktere ait çok somut detaylar var.",
+      "sadakat": "İstenen tüm unsurlar mevcut ancak karakterin 'kaçmayı düşündüğü' bilgisi metne alt metin olarak bile hiç sızmamış.",
+      "sahicilik": "Kardeşine yazan, dertlerini saklayıp geride bıraktığı dükkânı ve çocuğunu düşünen bir askerin sahici sesini taşıyor."
     },
     "issues": [
       {
-        "line": "BAŞLIK: ⟦Seddülbahir, 18 Teşrinievvel 1331⟧",
-        "problem": "Tarih askerî bir bilgi değildir; yalnızca dikkatsizlik sonucu kaçırılan yer adı sansür parantezine alınmalıdır.",
-        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 18 Teşrinievvel 1331"
+        "line": "Günler geçip gidiyor.",
+        "problem": "Karakterin sakladığı 'kaçma düşüncesi' metne hiçbir şekilde sızmamış, tamamen yok olmuş.",
+        "suggestion": "Günler geçip gidiyor, kış bastırmadan belki ansızın çıkıp gelirim, belli mi olur."
       }
     ]
   },
@@ -265,6 +265,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

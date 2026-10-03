@@ -6,11 +6,11 @@
     "recipient": "Fikriye",
     "status": "accepted",
     "scores": {
-      "donem_dili": 5,
+      "donem_dili": 4,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
-      "sadakat": 4,
+      "sadakat": 5,
       "sahicilik": 5
     },
     "warnings": [],
@@ -23,12 +23,12 @@
     "recipient": "Şadiye",
     "status": "accepted",
     "scores": {
-      "donem_dili": 4,
+      "donem_dili": 5,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
       "sadakat": 5,
-      "sahicilik": 4
+      "sahicilik": 5
     },
     "warnings": [
       "length"
@@ -40,14 +40,14 @@
     "direction": "cepheden",
     "sender": "Çoban Yusuf",
     "recipient": "Hüsniye",
-    "status": "accepted",
+    "status": "needs_review",
     "scores": {
       "donem_dili": 5,
       "olculuk": 5,
-      "okuryazarlik": 5,
+      "okuryazarlik": 3,
       "somutluk": 5,
       "sadakat": 5,
-      "sahicilik": 5
+      "sahicilik": 4
     },
     "warnings": [],
     "failed": []
@@ -94,7 +94,7 @@
       "olculuk": 5,
       "okuryazarlik": 4,
       "somutluk": 5,
-      "sadakat": 4,
+      "sadakat": 5,
       "sahicilik": 5
     },
     "warnings": [
@@ -109,7 +109,7 @@
     "recipient": "Talat",
     "status": "accepted",
     "scores": {
-      "donem_dili": 5,
+      "donem_dili": 4,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
@@ -147,7 +147,7 @@
     "recipient": "İsmet",
     "status": "accepted",
     "scores": {
-      "donem_dili": 4,
+      "donem_dili": 5,
       "olculuk": 5,
       "okuryazarlik": 4,
       "somutluk": 5,

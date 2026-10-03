@@ -206,35 +206,29 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4198,
-      "output": 1155
+      "output": 2480
     },
     "scores": {
-      "donem_dili": 4,
+      "donem_dili": 5,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
       "sadakat": 5,
-      "sahicilik": 4
+      "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Dönem dili ve takvim kullanımı genel olarak başarılıdır, ancak mahalle esnafına 'amca' hitabı o dönemin Dersaadet adabına göre biraz yenidir.",
-      "olculuk": "Hiçbir duygu açıkça adlandırılmamış, abartı ve benzetmelerden kaçınılarak hisler somut sorular üzerinden hissettirilmiştir.",
-      "okuryazarlik": "İstekteki orta seviye okuryazarlığa uygun şekilde sade, düzgün ve kurallı cümlelerle yazılmıştır.",
-      "somutluk": "Pazar fiyatı, odun kömür tedariki ve akbaşlı koyunun kuzulaması gibi döneme ve mesleğe has somut ayrıntılar çok iyi işlenmiştir.",
-      "sadakat": "İstek kartındaki heyecanlı ve soru soran ses tonuna, zarf kalıbına ve konuya bütünüyle sadık kalınmıştır.",
-      "sahicilik": "Gerçek bir evladın telaşını ve merakını yansıtan sahici bir mektuptur, yalnızca zarf ile metin arasındaki esnaf hitabı küçük bir tutarsızlık barındırır."
+      "donem_dili": "Dönemin kelime dağarcığına ve hitap şekillerine uygun yazılmış.",
+      "olculuk": "Duygular isimlendirilmeden, art arda sorulan meraklı sorularla çok iyi hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, sade, anlaşılır ve düzgün cümleler kurulmuş.",
+      "somutluk": "Odun kömür, kahveci Hasan amca ve akbaşlı koyun gibi çok başarılı somut detaylar barındırıyor.",
+      "sadakat": "İstekteki tüm özellikler (genç ve heyecanlı ses, çok soru sorma, çobanlık detayı) mektuba başarıyla yansıtılmış.",
+      "sahicilik": "Cepheye yeni varmış, aklının bir köşesi evde ve sürüsünde olan bir askerin gerçekçi bir mektubu olmuş."
     },
-    "issues": [
-      {
-        "line": "Komşumuz kahveci Hasan amca nasıl, dükkânı açıyor mu?",
-        "problem": "Zarfta 'Hasan Efendi' olarak geçen şehir esnafına gövdede 'amca' denmesi 1915 Dersaadet mahallesi hitap geleneğine göre modern kalmaktadır.",
-        "suggestion": "Komşumuz kahveci Hasan Efendi nasıl, dükkânı açıyor mu?"
-      }
-    ]
+    "issues": []
   },
   "status": "accepted",
   "parse_error": null,
@@ -260,6 +254,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

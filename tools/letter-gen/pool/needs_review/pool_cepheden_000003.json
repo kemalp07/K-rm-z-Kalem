@@ -223,31 +223,37 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4177,
-      "output": 1394
+      "output": 3151
     },
     "scores": {
       "donem_dili": 5,
       "olculuk": 5,
-      "okuryazarlik": 5,
+      "okuryazarlik": 3,
       "somutluk": 5,
       "sadakat": 5,
-      "sahicilik": 5
+      "sahicilik": 4
     },
     "reasons": {
-      "donem_dili": "Dönem ruhuna aykırı veya modern hiçbir kelime barındırmayan, 1915 yılına uygun yalın bir Türkçe kullanılmıştır.",
-      "olculuk": "Duygular adlandırılmamış, abartılı edebî söylem ve metaforlara yer verilmeden doğrudan konuya girilmiştir.",
-      "okuryazarlik": "Düşük okuryazarlık seviyesine uygun olarak bağlaçsız, kısa ve peş peşe gelen yalın cümleler kurulmuştur.",
-      "somutluk": "Öküzün yemi, tezek yığını, bakkal borcu ve öksürük gibi somut köy hayatı ayrıntıları metni çok canlı kılmıştır.",
-      "sadakat": "Öküzün satışı meselesi, hastalığın çadırda dinlenme bahanesiyle gizlenmesi ve soru ağırlıklı ses isteğe bütünüyle sadıktır.",
-      "sahicilik": "Cephedeki bir askerin geride bıraktığı ocağına ve ailesine duyduğu telaşlı merak son derece sahici hissettirilmektedir."
+      "donem_dili": "Kullanilan kelimeler ve mektup kaliplari 1915 doneminin ruhuna tamamen uygundur.",
+      "olculuk": "Duygular isimlendirilmeden art arda sorulan sorular ve somut durumlar uzerinden basariyla hissettirilmistir.",
+      "okuryazarlik": "Dusuk okuryazarlik istenmesine ragmen noktalama isaretleri ve ozellikle soru isaretleri fazla kusursuz kullanilmistir.",
+      "somutluk": "Okuz tezek bakkal borcu ve kizin oksurugu gibi koye dair cok canli ve somut detaylar barindirmaktadir.",
+      "sadakat": "Okuzun satilmasi konusu hasta yattiginin gizlenmesi ve cok soru sorma gibi istekteki tum detaylar mektuba basariyla yedirilmistir.",
+      "sahicilik": "Telasli ve merakli bir askerin koyune duydugu ozlemi yansitan oldukca sahici bir metin olmus ancak noktalama kusursuzlugu dogalligi biraz zedelemistir."
     },
-    "issues": []
+    "issues": [
+      {
+        "line": "Koyde ne var ne yok? Okuzu ne yaptiniz? Kisin yemi kalmaz satin. Kaca verdiniz bana mektupta yazin. Bakkala borcu verdiniz mi? TeZegi yigdiniz mi? Hasan uslu duruyor mu? Kizin oksurugu gecti mi?",
+        "problem": "Dusuk okuryazarlik seviyesindeki bir cobanin mektubunda soru isaretleri ve noktalar bu kadar kusursuz kullanilamaz cumleler baglacsiz ve isaretsiz birbirine ulanmalidir.",
+        "suggestion": "Koyde ne var ne yok okuzu ne yaptiniz kisin yemi kalmaz satin kaca verdiniz bana mektupta yazin bakkala borcu verdiniz mi tezegi yigdiniz mi Hasan uslu duruyor mu kizin oksurugu gecti mi"
+      }
+    ]
   },
-  "status": "accepted",
+  "status": "needs_review",
   "parse_error": null,
   "history": [
     {
@@ -273,6 +279,12 @@
       "at": "2026-10-03T14:00:23+00:00",
       "by": "auto",
       "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
     }
   ]
 }

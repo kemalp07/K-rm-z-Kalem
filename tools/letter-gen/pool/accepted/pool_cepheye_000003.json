@@ -192,11 +192,11 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4164,
-      "output": 1629
+      "output": 2011
     },
     "scores": {
       "donem_dili": 5,
@@ -207,12 +207,12 @@
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "1915 yılına ve kırsal muhite uygun, hiçbir modern ifade barındırmayan doğal bir dönem Türkçesi kullanılmıştır.",
-      "olculuk": "Duygular adlandırılmamış, abartılı keder ifadelerine girilmeden acı haber vakur ve ölçülü aktarılmıştır.",
-      "okuryazarlik": "Okuma yazması olmayan bir köylünün muhtara yazdırdığı metin ve muhtarın eklediği not kurguya tam oturmaktadır.",
-      "somutluk": "Kır Abbas'ın vefatı ve emminin gelini gibi köy hayatına dair somut ve canlı ayrıntılara yer verilmiştir.",
-      "sadakat": "Salgın hastalığın üstü örtülü verilmesi, mühür kullanımı ve muhtar aracılığıyla yazdırma şartlarının tamamına uyulmuştur.",
-      "sahicilik": "Dönemin köy atmosferini ve cephedeki oğluna seslenen yaşlı bir babanın ağırbaşlı sesini kusursuz yansıtmaktadır."
+      "donem_dili": "Kullanılan kelimeler (peyda oldu, nefsine mukayyet ol) dönemin ruhuna ve köy diline tam uygun.",
+      "olculuk": "Duygular adlandırılmadan, tamamen somut olaylar üzerinden son derece ölçülü bir şekilde aktarılmış.",
+      "okuryazarlik": "Muhtarın yazım kalıpları ('der ki', 'işbu mektubu') ve imza yerine mühür kullanımı istekle birebir örtüşüyor.",
+      "somutluk": "Kır Abbas'ın vefatı ve emmi gelininin hastalığı gibi çok somut, gerçekçi detaylar barındırıyor.",
+      "sadakat": "Salgın hastalık konusu 'bir dert peyda oldu' denilerek istenildiği gibi üstü örtülü işlenmiş ve tüm yönergelere uyulmuş.",
+      "sahicilik": "Bir babanın cephedeki oğluna muhtar aracılığıyla yazdırdığı endişeli ama metanetli bir mektup hissini kusursuz veriyor."
     },
     "issues": []
   },
@@ -240,6 +240,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

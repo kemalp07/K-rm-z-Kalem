@@ -205,33 +205,33 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4219,
-      "output": 1755
+      "output": 2282
     },
     "scores": {
-      "donem_dili": 5,
+      "donem_dili": 4,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
-      "sadakat": 4,
+      "sadakat": 5,
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Döneme aykırı modern bir kelimeye yer verilmemiş, 1915 Anadolu Türkçesinin yalınlığı iyi korunmuştur.",
-      "olculuk": "Duygular adlandırılmadan, kardeşini koruma endişesi ve hastalığı örtbas etme çabası ölçülü verilmiştir.",
-      "okuryazarlik": "Orta okuryazarlıktaki bir erin elinden çıkmışçasına derli toplu ve anlaşılır bir üslup kurulmuştur.",
-      "somutluk": "Sarı inek, kışlık buğday ve yukarı tarla gibi somut köylü ayrıntıları metni zenginleştirmiştir.",
-      "sadakat": "İstekteki tüm unsurlar eksiksiz işlenmiş, fakat başlıkta tarihin de sansür köşeli ayraçlarına katılması küçük bir kural ihlali yaratmıştır.",
-      "sahicilik": "Hastane ortamını ailesine dinlenme ve rahatlık gibi gösteren askerin ruh hâli son derece inandırıcıdır."
+      "donem_dili": "Dönem diline genel olarak uyulmuş ancak 'hâlim vaktim yerindedir' deyimi sağlık yerine maddi durum için kullanıldığından bağlama tam oturmamış.",
+      "olculuk": "Duygular hiçbir şekilde adlandırılmamış, kardeşini koruma güdüsü tamamen somut eylemler üzerinden aktarılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun olarak düzgün, anlaşılır fakat sade ve süssüz cümleler kurulmuş.",
+      "somutluk": "Yukarı tarla, kışlık buğday, sarı inek gibi dönemin köy hayatına ait çok yerinde somut detaylar kullanılmış.",
+      "sadakat": "İstenen tüm özellikler (gizlenen hastalık, titiz ses, az dikkatsizlik, konu) başarıyla ve eksiksiz olarak mektuba yedirilmiş.",
+      "sahicilik": "Hastanede yattığını 'kapalı sıcak yerdeyim, bütün gün dinleniyorum' diyerek gizlemesi mektubu son derece sahici ve dokunaklı kılmış."
     },
     "issues": [
       {
-        "line": "BAŞLIK: ⟦Seddülbahir, 14 Teşrinisani 1331⟧",
-        "problem": "Tarihî ibare sansür kapsamında değildir, yalnızca yer adı olan Seddülbahir işarete alınmalıdır.",
-        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 14 Teşrinisani 1331"
+        "line": "Benim hâlim vaktim yerindedir, merak etmeyesin.",
+        "problem": "'Hâli vakti yerinde olmak' deyimi daha çok maddi refahı ifade eder; cephedeki bir askerin sağlığından bahsetmesi beklenir.",
+        "suggestion": "Benim hâlimi sorarsanız iyiyim, merak etmeyesin."
       }
     ]
   },
@@ -259,6 +259,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

@@ -227,38 +227,33 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4210,
-      "output": 1953
+      "output": 2514
     },
     "scores": {
       "donem_dili": 5,
       "olculuk": 5,
       "okuryazarlik": 4,
       "somutluk": 5,
-      "sadakat": 4,
+      "sadakat": 5,
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Dönemine tamamen uygun, yabancı ya da modern hiçbir kelimeye yer vermeyen duru bir dil kullanılmış.",
-      "olculuk": "Duygular adlandırılmadan, çocuğun yaramazlığı ve gündelik neşe üzerinden çok ölçülü hissettirilmiş.",
-      "okuryazarlik": "Düşük okuryazarlık için cümleler ve noktalama işaretleri biraz fazla muntazam ve pürüzsüz kalmış.",
-      "somutluk": "Kırılan su testisi, kuru ekmeğin suya banılması ve buzağı gibi ayrıntılar anlatımı son derece somut kılmış.",
-      "sadakat": "İstenen tüm unsurlar eksiksiz işlenmiş fakat mektup hedeflenen 105 kelimenin bir miktar altında kalmış.",
-      "sahicilik": "Köylü kadınının şakacı ve hayat dolu sesi klişeye kaçmadan, gayet inandırıcı bir doğallıkla yakalanmış."
+      "donem_dili": "Döneme ait kelimeler (sıpa, gayrı, bohça) kullanılmış ve hiçbir modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular adlandırılmamış, yalnızca köylü diline uygun tek bir somut benzetme (buzağı gibi) yapılmış.",
+      "okuryazarlik": "Kısa ve bağlaçsız cümleler düşük okuryazarlığı yansıtıyor ancak kuralda belirtilen 'hafif imla hataları' eksik.",
+      "somutluk": "Su testisi, buzağı, yün eldiven ve suya banılan kuru ekmek gibi çok somut ve yaşamsal detaylar içeriyor.",
+      "sadakat": "İstenen şakacı ses tonu, paket içeriği, konu ve yazma biçimi mektuba eksiksiz ve doğal biçimde yedirilmiş.",
+      "sahicilik": "Babasına yazan köylü bir genç kadının samimi, dertsiz görünmeye çalışan ve şakacı tavrı son derece gerçekçi hissettiriyor."
     },
     "issues": [
       {
         "line": "HİTAP: Babam Kemal'e",
-        "problem": "Dönem mektup adabında babaya hitap ederken rütbesi veya hafif bir hürmet ifadesi eklenmesi daha uygundur.",
-        "suggestion": "Babam Kemal Çavuş'a"
-      },
-      {
-        "line": "GÖVDE: Ellerinden öperim. Bizim sarı oğlan yürümeye başladı. Düşe kalka gidiyor yeni doğmuş buzağı gibi.",
-        "problem": "Düşük okuryazarlığa sahip bir köylü kadını için noktalama ve cümle geçişleri fazla kusursuzdur.",
-        "suggestion": "Ellerinden öperim bizim sarı oğlan yürümeye başladı gayrı düşe kalka gidiyor yeni doğmuş buzağı gibi."
+        "problem": "Düşük okuryazarlıkta bile hitaplar genellikle yöresel bir saygı ifadesi içerir; doğrudan isme yönelmek biraz fazla modern ve yavan duruyor.",
+        "suggestion": "HİTAP: Babam Kemal Ağa'ya"
       }
     ]
   },
@@ -286,6 +281,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

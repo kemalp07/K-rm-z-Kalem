@@ -223,14 +223,14 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4209,
-      "output": 1774
+      "output": 1954
     },
     "scores": {
-      "donem_dili": 5,
+      "donem_dili": 4,
       "olculuk": 5,
       "okuryazarlik": 5,
       "somutluk": 5,
@@ -238,14 +238,20 @@
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Dönem ruhunu bozan modern bir tabir yer almamış, kelime tercihleri 1915 Türkçesine tam uyum sağlamıştır.",
-      "olculuk": "Duygular doğrudan adlandırılmamış, kardeşlik bağı ve endişe somut sorular vasıtasıyla ölçülü bir şekilde hissettirilmiştir.",
-      "okuryazarlik": "İstenen yüksek okuryazarlık düzeyine uygun olarak akıcı, imlası düzgün ve dengeli cümleler kurulmuştur.",
-      "somutluk": "Sarıkızın buzağılaması, alnındaki sakarlık, mintan, çorap ve mektup kâğıdı gibi gündelik detaylar mektubu somutlaştırmıştır.",
-      "sadakat": "İstekteki çok soru soran ses, paket detayı, babanın ölümünün ustaca gizlenmesi ve zarf biçimi eksiksiz yansıtılmıştır.",
-      "sahicilik": "Bir ağabeyin cephedeki kardeşine duyduğu merak ve köydeki telaşı yapaylığa düşmeden, son derece doğal yansıtılmıştır."
+      "donem_dili": "Kullanılan kelimeler döneme uygun olmakla birlikte 'her şey aynı' ifadesi biraz modern kaçıyor.",
+      "olculuk": "Duygular isimlendirilmeden, somut sorular ve detaylar üzerinden başarıyla aktarılmış.",
+      "okuryazarlik": "Yüksek okuryazarlık seviyesine uygun, düzgün ve akıcı cümleler kurulmuş.",
+      "somutluk": "İneğin buzağılaması, alnı sakar dişi, güz ekimi ve mektup kâğıdı gibi detaylar mektubu çok somut kılmış.",
+      "sadakat": "İstenen konu, gizlenen bilgi (babadan hiç bahsedilmemesi), paket ve soru soran ses tonu eksiksiz işlenmiş.",
+      "sahicilik": "Kardeşini merak eden ve ona kötü haber vermemeye çalışan bir ağabeyin samimi sesi yakalanmış."
     },
-    "issues": []
+    "issues": [
+      {
+        "line": "Bizim evde her şey aynı, anamın sana çok selamı var.",
+        "problem": "\"Her şey aynı\" ifadesi günümüz günlük konuşma diline aittir.",
+        "suggestion": "Köyde her şey bildiğin gibi, anamın sana çok selamı var."
+      }
+    ]
   },
   "status": "accepted",
   "parse_error": null,
@@ -271,6 +277,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

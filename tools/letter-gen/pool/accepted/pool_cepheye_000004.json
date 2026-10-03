@@ -217,14 +217,14 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4216,
-      "output": 1450
+      "output": 3096
     },
     "scores": {
-      "donem_dili": 4,
+      "donem_dili": 5,
       "olculuk": 5,
       "okuryazarlik": 4,
       "somutluk": 5,
@@ -232,18 +232,23 @@
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Dönem dili ve takvim kullanımı genel olarak başarılı olsa da 'acil' kelimesi 1915 mektupları için modern kaçmaktadır.",
-      "olculuk": "Duygular doğrudan adlandırılmamış, telaş ve merak somut olgular üzerinden ölçülü bir şekilde hissettirilmiştir.",
-      "okuryazarlik": "Cümle yapıları düzgün ve kurallı olsa da istekte belirtilen yüksek okuryazarlık düzeyine kıyasla kelime dağarcığı biraz sade kalmıştır.",
-      "somutluk": "Pestil, bez, kuşak, cami avlusundaki celp ve ambar ayrıntılarıyla mektup son derece somut kılınmıştır.",
-      "sadakat": "Kardeşin celbi, cevapsız kalan önceki mektup ve evin satıldığının örtülü anlatımı isteğe birebir uymaktadır.",
-      "sahicilik": "Tek tek sayan titiz baba sesi ve köydeki durumu saklayarak aktarma biçimi son derece sahicidir."
+      "donem_dili": "Döneme ait kelimeler (okka, celp, zahire, peder) başarıyla ve sırıtmadan kullanılmıştır.",
+      "olculuk": "Duygular tamamen somut eylemler ve durumlar üzerinden, isimlendirilmeden ve abartısız aktarılmıştır.",
+      "okuryazarlik": "İstenen 'yüksek' okuryazarlık seviyesine kıyasla cümleler fazla kısa ve basittir, daha çok 'orta' seviyeyi andırmaktadır.",
+      "somutluk": "Yarım okka dut pestili, yün kuşak, cami avlusu gibi detaylarla son derece somut bir tablo çizilmiştir.",
+      "sadakat": "Evin satıldığı gerçeği, 'zahireyi emminlerin ambarına taşıdık' bahanesiyle çok zekice gizlenmiş ve tüm yönergelere uyulmuştur.",
+      "sahicilik": "Titiz bir babanın hem eşyaları tek tek sayması hem de evi sattığını gizlemeye çalışması mektubu çok gerçekçi kılmıştır."
     },
     "issues": [
       {
-        "line": "Senden acil bir satır haber beklerim.",
-        "problem": "'Acil' kelimesi dönemin mektup adabına ve diline göre modern kalmaktadır.",
-        "suggestion": "Senden tez elden bir satır haber beklerim."
+        "line": "Sana geçen ayın beşinde bir kâğıt yolladım, cevabı gelmedi. Meraktayız.",
+        "problem": "Yüksek okuryazarlık seviyesi için cümleler fazla kısa ve kopuktur; daha birleşik ve akıcı bir ifade beklenir.",
+        "suggestion": "Geçen ayın beşinde yolladığım mektubun cevabı henüz vasıl olmadığından meraktayız."
+      },
+      {
+        "line": "Salı sabahı Osmancık'a şubeye teslim olacak, çarığını diktik.",
+        "problem": "Yüksek okuryazarlıkta sıralı cümleler yerine daha sağlam bağlaçlar ve tamlamalar kullanılır.",
+        "suggestion": "Salı sabahı Osmancık'taki şubeye teslim olacağı için çarığını dikip hazırladık."
       }
     ]
   },
@@ -271,6 +276,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }

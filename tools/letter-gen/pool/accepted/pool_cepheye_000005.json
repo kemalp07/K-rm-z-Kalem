@@ -216,11 +216,11 @@
     }
   },
   "review": {
-    "model": "gemini-3.8-flash",
-    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T14:04:49+00:00",
     "tokens": {
       "input": 4247,
-      "output": 1246
+      "output": 2492
     },
     "scores": {
       "donem_dili": 5,
@@ -231,12 +231,12 @@
       "sahicilik": 5
     },
     "reasons": {
-      "donem_dili": "Döneme ve kırsal muhite ait kelimeler son derece yerinde kullanılmış, modern hiçbir tabire yer verilmemiştir.",
-      "olculuk": "Hüzün ve hasret doğrudan adlandırılmadan, sofradaki boş tas ve sayılan erzak üzerinden incelikle hissettirilmiştir.",
-      "okuryazarlik": "Okuma yazması olmayan bir kadının köy muhtarına yazdırdığı anlatım kalıbı ve mühür kullanımı kurallara kusursuz uymuştur.",
-      "somutluk": "Tarhana, üç kaşık, iki çuval bulgur, küp, odun ve urba gibi detaylarla çok canlı ve somut bir dünya kurulmuştur.",
-      "sadakat": "İstekteki titiz karakter yapısı, bayram sofrası konusu ve evin satıldığının saklanması gibi tüm unsurlar eksiksiz işlenmiştir.",
-      "sahicilik": "Dönemin köy yaşantısını ve ayrılık kederini yapmacıklıktan uzak, son derece inandırıcı bir dille aksettirmektedir."
+      "donem_dili": "Urba, pılı pırtı, işbu gibi kelimelerle dönemin köy ve kâtip dili hiçbir modern ifadeye yer verilmeden başarıyla yansıtılmış.",
+      "olculuk": "Özlem ve hüzün gibi duygular adlandırılmak yerine sofradaki boş tas üzerinden çok güçlü ve ölçülü bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Muhtarın ağzından giriş ve çıkış kalıpları kullanılarak mektubun bir başkasına yazdırıldığı kusursuz biçimde verilmiş.",
+      "somutluk": "Bulgur çuvalı, pekmez küpü ve odun parçaları tek tek sayılarak istenen titiz ses son derece somut ayrıntılarla işlenmiş.",
+      "sadakat": "Evin satıldığı gerçeği amcalara taşınma bahanesiyle zekice gizlenmiş, bayram sofrası ve diğer tüm istekler eksiksiz karşılanmış.",
+      "sahicilik": "Hem muhtarın resmî notu hem de kadının gündelik telaşı ve sayım yapması mektubu son derece inandırıcı ve doğal kılmış."
     },
     "issues": []
   },
@@ -264,6 +264,18 @@
     {
       "status": "accepted",
       "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:02:51+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:04:49+00:00",
       "by": "auto",
       "note": "eleştirmen"
     }
