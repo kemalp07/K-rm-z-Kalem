@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000038",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zeki",
+    "epithet": "Çankırılı",
+    "age": 58,
+    "hometown": "Çankırı",
+    "occupation": "çiftçi",
+    "relation": "amcası"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 91,
+  "hand": "hurried",
+  "header": {
+    "text": "Kızılca, 3 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Talat oğlum gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığın kağıdını muhtardan aldık okuduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim halimizi sorarsan şükür hepimiz iyiyiz ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde işler yolunda gidiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Aşağı tarlanın ekini bu sene boylandı yağmurlar eyi vurdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hasat bol olcak inşallah sen buraları hiç dert etme ekin maşallah güzel.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Anan teyzen yengen hepsi eyi sana hep dua ediyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Komşu kel Ali'nin ortanca oğlu da askere getti geçen hafta.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana yün çorapla biraz kavurga ayırdık köye gelen giden olursa onla yollıycaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Herkez sana çok selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kendine mukayet ol üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizi merak etme biz hep aynıyız sağ salim duruyoruz bekliyoz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Emmin Zeki"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı Talat'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zeki, Çankırılı, 58, çiftçi (Çankırı, Kalecik kazası, Kızılca karyesi)\nAlıcı: Yeğeni Er Talat, cephede\nYön: cepheye\nTarih: 3 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: ekinlerin durumunu bildirmek\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 91",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zeki",
+        "gender": "erkek",
+        "age": 58,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "epithet": "Çankırılı",
+        "place": "Kalecik kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kalecik kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 91,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "3 Mayıs 1331",
+      "home_address": "Çankırı, Kalecik kazası, Kızılca karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5619,
+      "output": 3688
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kızılca, 3 Mayıs 1331\nHİTAP: Yeğenim Talat'a\nGÖVDE: Talat oğlum gözlerinden öperim. Yolladığın kağıdını muhtardan aldık okuduk. Bizim halimizi sorarsan şükür hepimiz iyiyiz ayaktayız. Köyde işler yolunda gidiyo. Aşağı tarlanın ekini bu sene boylandı yağmurlar eyi vurdu. Hasat bol olcak inşallah sen buraları hiç dert etme ekin maşallah güzel. Anan teyzen yengen hepsi eyi sana hep dua ediyolar. Komşu kel Ali'nin ortanca oğlu da askere getti geçen hafta. Sana yün çorapla biraz kavurga ayırdık köye gelen giden olursa onla yollıycaz. Herkez sana çok selam ediyo. Kendine mukayet ol üşütme. Bizi merak etme biz hep aynıyız sağ salim duruyoruz bekliyoz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Emmin Zeki\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "91 kelime, hedef 91 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4810,
+      "output": 2397
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (kavurga, mukayet, kağıt) döneme ve köylü ağzına tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, her şeyin yolunda olduğu vurgusuyla istenen ölçülü ve gizleyici ton yakalanmıştır.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği ve bilinçli imla hataları (eyi, getti, herkez) düşük okuryazarlık seviyesini kusursuz yansıtmaktadır.",
+      "somutluk": "Aşağı tarla, kel Ali'nin oğlu, yün çorap ve kavurga gibi detaylar mektubu son derece somut kılmıştır.",
+      "sadakat": "İstenen uzunluğa (92 kelime), konuya ve gizlenen bilgi (evin satılması) dinamiğine tam olarak sadık kalınmıştır.",
+      "sahicilik": "Kötü haberi saklamak için ekinlerin durumunu abartan ve her şeyin aynı olduğunu vurgulayan tavır çok sahicidir."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

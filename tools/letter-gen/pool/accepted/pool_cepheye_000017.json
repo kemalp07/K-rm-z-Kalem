@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000017",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Melek",
+    "epithet": "Erzurumlu",
+    "age": 55,
+    "hometown": "Erzurum",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Cafer",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 114,
+  "hand": "hurried",
+  "header": {
+    "text": "Ilıca, 1 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Cafer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Cafer kâğıdın geldi okuttum sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim halimiz sorsan şükür ayaktayız ama bende hal kalmadı dizlerim çok ağrıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sana bir bohça yapdım İmam efendiylen yolluyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İçine kendi ördüğüm yün atkı koydum geceleri soğuk olur oralar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Gözlerim eskisi gibi görmüyo iğneye ipi zor geçirdim kusura kalma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bir kaba da biraz göğermiş peynir bastım bir de kurutulmuş elma koydum hasret kalmışındır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hacı emmin kızı Ayşe evlendi geçen hafta sade bir düğün ettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim eski evin damı akıttı yağmurlarda onu onarmaya usta bulamadık herkez gitdi komşu Halil yardım etdi sağolsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Odunumuz azaldı dağdan çalı çırpı topluyom yorucu oluyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Buraları merak etme sen gendine mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Peyniri tez ye bozulmasın ha.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kardeşin Zeynep selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Anan Melek"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Ilıcalı Cafer'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Melek Hanım, Erzurumlu, 55, ev hanımı (Erzurum, Hasankale kazası, Ilıca karyesi)\nAlıcı: Oğlu Onbaşı Cafer, cephede\nYön: cepheye\nTarih: 1 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: yaşlı ve yorgun, kısa yazar\nKonu: paketle gönderilen şeyler\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 114",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Melek",
+        "gender": "kadın",
+        "age": 55,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": "ev hanımı",
+        "epithet": "Erzurumlu",
+        "place": "Hasankale kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Cafer",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hasankale kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "paketle gönderilen şeyler",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 114,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "1 Mayıs 1331",
+      "home_address": "Erzurum, Hasankale kazası, Ilıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5718,
+      "output": 3254
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ilıca, 1 Mayıs 1331\nHİTAP: Oğlum Cafer'e\nGÖVDE: Oğlum Cafer kâğıdın geldi okuttum sevindim. Bizim halimiz sorsan şükür ayaktayız ama bende hal kalmadı dizlerim çok ağrıyo. Sana bir bohça yapdım İmam efendiylen yolluyom. İçine kendi ördüğüm yün atkı koydum geceleri soğuk olur oralar. Gözlerim eskisi gibi görmüyo iğneye ipi zor geçirdim kusura kalma. Bir kaba da biraz göğermiş peynir bastım bir de kurutulmuş elma koydum hasret kalmışındır. Hacı emmin kızı Ayşe evlendi geçen hafta sade bir düğün ettik. Bizim eski evin damı akıttı yağmurlarda onu onarmaya usta bulamadık herkez gitdi komşu Halil yardım etdi sağolsun. Odunumuz azaldı dağdan çalı çırpı topluyom yorucu oluyo. Buraları merak etme sen gendine mukayyet ol. Peyniri tez ye bozulmasın ha. Kardeşin Zeynep selam ediyo.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Anan Melek\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Ilıcalı Cafer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "111 kelime, hedef 114 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4864,
+      "output": 2598
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "\"Sade bir düğün\" ve \"yorucu\" gibi günümüz tınısı taşıyan birkaç ifade dışında dönemin köy dili başarıyla yansıtılmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış; yaşlılık ve yorgunluk hissi dam akması, odun toplama ve iğneye ip geçirememe gibi somut eylemlerle verilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık kuralına uygun olarak noktalama işaretleri asgari düzeyde tutulmuş, \"yapdım\", \"herkez\", \"gitdi\" gibi bilinçli imla hataları eklenmiş.",
+      "somutluk": "Göğermiş peynir, kurutulmuş elma, yün atkı ve çalı çırpı gibi döneme ve yöreye ait çok güçlü somut detaylar kullanılmış.",
+      "sadakat": "İstenen konu, uzunluk, yön ve yaşlı/yorgun ses tonu mektuba eksiksiz biçimde aktarılmış.",
+      "sahicilik": "Genel olarak yaşlı bir Anadolu kadınının sesini çok iyi yansıtıyor, sadece birkaç kelime seçimi köy gerçekliğinden hafifçe uzaklaştırıyor."
+    },
+    "issues": [
+      {
+        "line": "Hacı emmin kızı Ayşe evlendi geçen hafta sade bir düğün ettik.",
+        "problem": "\"Sade bir düğün\" modern bir ifadedir; o dönem köy yerinde gösterişsiz düğünler için daha farklı tabirler kullanılırdı.",
+        "suggestion": "Hacı emmin kızı Ayşe evlendi geçen hafta çalgısız çengisiz gelin ettik."
+      },
+      {
+        "line": "Odunumuz azaldı dağdan çalı çırpı topluyom yorucu oluyo.",
+        "problem": "\"Yorucu oluyo\" günümüz Türkçesine ait bir tını taşıyor, yaşlı bir köylü kadının ağzına tam oturmuyor.",
+        "suggestion": "Odunumuz azaldı dağdan çalı çırpı topluyom zor oluyo."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

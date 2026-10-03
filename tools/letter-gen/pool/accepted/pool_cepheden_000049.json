@@ -1,0 +1,259 @@
+{
+  "id": "pool_cepheden_000049",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Çankırılı",
+    "age": 20,
+    "hometown": "Çankırı",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Selime",
+    "relation": "karısı",
+    "location": "Çankırı, Çerkeş kazası, Kocaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 91,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 24 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Selime'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Selime mektubunu aldım okudum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Ben eyiyim hiç merak etme yeyip içmeyimiz yerinde yatacak yerimiz var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kardaşım Veli'yi askere yazacaklar diyosun şubeye gidin yaşı ufak deyin nüfuzdan küçültsünler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Muhtara iki mecidiye verin işi halletsin o da gelmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buralar eyi ama tarlada adam lazım ekinleri kim çapalayacak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Babamın ellerinden öpüyorum sarı kız doğurdu mu yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim köyden Topal Hasanın oğlu Bekir 3. taburda imiş dün suyda gördüm",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "sana selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim için tasalanman sağlığım eyi havalar ısınıyo burda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Veli'yi salmayın bir çaresine bakın tarlayı o sürsün bana kâğıt yollayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Kocan Nail"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çankırı, Çerkeş kazası, Kocaköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Selime Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Çankırılı, 20, ırgat, er (Çankırı, Çerkeş kazası, Kocaköy karyesi)\nAlıcı: Karısı Selime Hanım, Çankırı, Çerkeş kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 24 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: yaralandığını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 91",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çankırı",
+        "occupation": "ırgat",
+        "epithet": "Çankırılı",
+        "place": "Çerkeş kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Selime",
+        "gender": "kadın",
+        "age": 16,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çerkeş kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Çankırı, Çerkeş kazası, Kocaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "yaralandığını",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "orta",
+      "length_target": 91,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "24 Nisan 1331",
+      "home_address": "Çankırı, Çerkeş kazası, Kocaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5651,
+      "output": 3823
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 24 Nisan 1331\nHİTAP: Selime'ye\nGÖVDE: Selime mektubunu aldım okudum. Ben eyiyim hiç merak etme yeyip içmeyimiz yerinde yatacak yerimiz var. Kardaşım Veli'yi askere yazacaklar diyosun şubeye gidin yaşı ufak deyin nüfuzdan küçültsünler. Muhtara iki mecidiye verin işi halletsin o da gelmesin. Buralar eyi ama tarlada adam lazım ekinleri kim çapalayacak. Babamın ellerinden öpüyorum sarı kız doğurdu mu yaz. ⟦Bizim köyden Topal Hasanın oğlu Bekir 3. taburda imiş dün suyda gördüm⟧ sana selamı var. Benim için tasalanman sağlığım eyi havalar ısınıyo burda. Veli'yi salmayın bir çaresine bakın tarlayı o sürsün bana kâğıt yollayın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Kocan Nail\nZARF: Çankırı, Çerkeş kazası, Kocaköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Selime Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "86 kelime, hedef 91 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4847,
+      "output": 3018
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme ait kelimeler kullanılmış ve modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular adlandırılmadan tamamen somut dertler üzerinden aktarılmış.",
+      "okuryazarlik": "Yazım hataları ve noktalama eksikliği düşük okuryazarlığı çok iyi yansıtıyor.",
+      "somutluk": "İki mecidiye, sarı kızın doğurması ve ekin çapalamak gibi yerinde detaylar var.",
+      "sadakat": "İstenen tüm unsurlar eklenmiş ancak sansür işaretlemesinde kural hatası yapılmış.",
+      "sahicilik": "Yaralandığını gizleyip kardeşini korumaya çalışan pragmatik bir askerin sesini kusursuz veriyor."
+    },
+    "issues": [
+      {
+        "line": "⟦Bizim köyden Topal Hasanın oğlu Bekir 3. taburda imiş dün suyda gördüm⟧ sana selamı var.",
+        "problem": "Sansür işaretleri yalnızca askerî bilginin etrafına konmalıdır, gündelik sözler dışarıda kalmalıdır.",
+        "suggestion": "Bizim köyden Topal Hasanın oğlu Bekir ⟦3. taburda⟧ imiş dün suyda gördüm sana selamı var."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

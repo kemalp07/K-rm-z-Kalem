@@ -1,0 +1,256 @@
+{
+  "id": "pool_cepheden_000008",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Osman",
+    "epithet": "Manisalı",
+    "age": 24,
+    "hometown": "Manisa",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zehra",
+    "relation": "annesi",
+    "location": "Manisa, Akhisar kazası, Hacılar karyesi"
+  },
+  "writes": "scribe",
+  "writer": "alay kâtibi",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 67,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, Seddülbahir, 2 Haziran 1331",
+    "sensitive": true
+  },
+  "salutation": "Muhterem validem Zehra Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığınız yün çoraplar ile kuru incir paketi elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İncirleri bizim çocuklarla paylaştık, yiyen sağlığına duacı oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim keyfim yerinde, turp gibiyim merak buyurmayınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim bölük on gündür şu zeytinlik yamaçta bekliyor.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yüzbaşı Rauf Efendi",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "sağ olsun bizi pek yormuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Çoraplar ayağıma epey bol geldi, seneye ayaklarım uzarsa o vakit tam uyar inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hısım akrabaya selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve dua ile.",
+  "signature": {
+    "text": "",
+    "seal": "Osman"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Manisa, Akhisar kazası, Hacılar karyesi, İmam Salih Efendi vasıtasıyla Zehra Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Osman, Manisalı, 24, çiftçi, er (Manisa, Akhisar kazası, Hacılar karyesi)\nAlıcı: Annesi Zehra Hanım, Manisa, Akhisar kazası, Hacılar karyesi\nYön: cepheden\nTarih: 2 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: alay kâtibi)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 67",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Osman",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Manisa",
+        "occupation": "çiftçi",
+        "epithet": "Manisalı",
+        "place": "Akhisar kazası, Hacılar karyesi"
+      },
+      "recipient": {
+        "name": "Zehra",
+        "gender": "kadın",
+        "age": 54,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akhisar kazası, Hacılar karyesi"
+      },
+      "recipient_location": "Manisa, Akhisar kazası, Hacılar karyesi",
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 67,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "2 Haziran 1331",
+      "home_address": "Manisa, Akhisar kazası, Hacılar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5812,
+      "output": 2767
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, ⟦Seddülbahir⟧, 2 Haziran 1331\nHİTAP: Muhterem validem Zehra Hanım'a\nGÖVDE: Evvela selam eder, mübarek ellerinizden hürmetle öperim. Yolladığınız yün çoraplar ile kuru incir paketi elime geçti. İncirleri bizim çocuklarla paylaştık, yiyen sağlığına duacı oldu. Benim keyfim yerinde, turp gibiyim merak buyurmayınız. ⟦Bizim bölük on gündür şu zeytinlik yamaçta bekliyor.⟧ ⟦Yüzbaşı Rauf Efendi⟧ sağ olsun bizi pek yormuyor. Çoraplar ayağıma epey bol geldi, seneye ayaklarım uzarsa o vakit tam uyar inşallah. Hısım akrabaya selam ederim.\nKAPANIŞ: Baki selam ve dua ile.\nİMZA: (mühür: Osman)\nZARF: Manisa, Akhisar kazası, Hacılar karyesi, İmam Salih Efendi vasıtasıyla Zehra Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "64 kelime, hedef 67 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"selam eder mübarek ellerinizden hürmetle öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4813,
+      "output": 2532
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtibe yazdırılan bir mektuba uygun olarak 'evvela', 'hürmetle', 'merak buyurmayınız' gibi dönemin resmî ve saygılı ifadeleri başarıyla kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, abartılı ifadelerden kaçınılmış ve mektup tamamen somut olaylar üzerinden ilerlemiş.",
+      "okuryazarlik": "Kâtibin resmî üslubu ile Osman'ın köylü şakacılığı (çorapların seneye uyması) çok iyi harmanlanmış.",
+      "somutluk": "Yün çorap, kuru incir, zeytinlik yamaç gibi gündelik ve somut detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen tüm unsurlar (şakacı ses, kâtip kullanımı, dikkatsizlik) mevcut ancak başlıkta sansür işareti kuralına tam uyulmamış.",
+      "sahicilik": "Çorapların bol gelmesi üzerine yapılan şaka, cephedeki bir askerin annesini neşelendirme çabasını çok sahici bir şekilde yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Ordu-yı Hümayun, Seddülbahir, 2 Haziran 1331⟧",
+        "problem": "Kural 10'a göre ⟦ ⟧ içine yalnızca askerî bilginin kendisi alınmalıdır; tarih ve 'Ordu-yı Hümayun' gibi standart ifadeler işaretin dışında kalmalıdır.",
+        "suggestion": "BAŞLIK: Ordu-yı Hümayun, ⟦Seddülbahir⟧, 2 Haziran 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

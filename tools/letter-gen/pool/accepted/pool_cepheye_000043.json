@@ -1,0 +1,251 @@
+{
+  "id": "pool_cepheye_000043",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Gülsüm",
+    "epithet": "Trabzonlu",
+    "age": 30,
+    "hometown": "Trabzon",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Kemal",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "mahalle imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 68,
+  "hand": "dictated",
+  "header": {
+    "text": "Sarıyar, 7 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Kemal'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gülsüm der ki: Evvela mahsus selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım kâğıda cevap gelmedi, inşallah sıhhatin yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim hâlimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Mısır tarlasını çapaladık, fındıklarda da ufaktan tomurcuk göründü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Yağmurlar bu sene kararında yağıyor, ekinin durumu iyidir, sen buraları hiç aklına takıp kederlenme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bohçanın içine bir miktar tütün sardım, arkadaşlarınla içersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kaynanam sağdır, sana çok selam eyler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tez vakitte müjdeli kâğıdını bekleriz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah seni muhafaza etsin.",
+  "signature": {
+    "text": "",
+    "seal": "Gülsüm"
+  },
+  "note": {
+    "text": "İşbu mektubu zevcen Gülsüm'ün ağzından yazdım. İmam Salih.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Sarıyarlı Kemal'e",
+    "sensitive": false
+  },
+  "package": [
+    "tütün"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Gülsüm Hanım, Trabzonlu, 30, ev hanımı (Trabzon, Vakfıkebir kazası, Sarıyar karyesi)\nAlıcı: Kocası Er Kemal, cephede\nYön: cepheye\nTarih: 7 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: mahalle imamı)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: ekinlerin durumunu bildirmek\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nPaket: tütün\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Gülsüm",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Trabzon",
+        "occupation": "ev hanımı",
+        "epithet": "Trabzonlu",
+        "place": "Vakfıkebir kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Trabzon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Vakfıkebir kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": [
+        "tütün"
+      ],
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "7 Mayıs 1331",
+      "home_address": "Trabzon, Vakfıkebir kazası, Sarıyar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5736,
+      "output": 2699
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 7 Mayıs 1331\nHİTAP: Muhterem zevcim Kemal'e\nGÖVDE: Gülsüm der ki: Evvela mahsus selam eder, iki gözlerinden öperim. Geçen ay yolladığım kâğıda cevap gelmedi, inşallah sıhhatin yerindedir. Bizim hâlimizi sorarsan şükür ayaktayız. Mısır tarlasını çapaladık, fındıklarda da ufaktan tomurcuk göründü. Yağmurlar bu sene kararında yağıyor, ekinin durumu iyidir, sen buraları hiç aklına takıp kederlenme. Bohçanın içine bir miktar tütün sardım, arkadaşlarınla içersin. Kaynanam sağdır, sana çok selam eyler. Tez vakitte müjdeli kâğıdını bekleriz.\nKAPANIŞ: Allah seni muhafaza etsin.\nİMZA: (mühür: Gülsüm)\nNOT: İşbu mektubu zevcen Gülsüm'ün ağzından yazdım. İmam Salih.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Sarıyarlı Kemal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "65 kelime, hedef 68 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"selam eder iki gözlerinden öperim geçen\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4826,
+      "output": 2879
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "İmamın kaleminden çıktığını belli eden döneme uygun, temiz ve kalıplı bir dil kullanılmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, ekinler ve gündelik işler üzerinden ölçülü bir hasret aktarılmış.",
+      "okuryazarlik": "Okuma yazma bilmeyen gönderici için imamın ağzından yazılma kuralına ve mühür kullanımına tam uyulmuş.",
+      "somutluk": "Mısır çapası, fındık tomurcuğu ve tütün gibi son derece somut ve yöreye uygun detaylar barındırıyor.",
+      "sadakat": "Ekinlerin durumu, tütün paketi, cevapsız kalan mektup ve unsuzluğun gizlenmesi gibi tüm isteklere eksiksiz uyulmuş.",
+      "sahicilik": "Hem Karadeniz yöresinin tarımsal gerçekliğini hem de cephe gerisindeki bir kadının tevekkülünü çok sahici bir şekilde yansıtıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

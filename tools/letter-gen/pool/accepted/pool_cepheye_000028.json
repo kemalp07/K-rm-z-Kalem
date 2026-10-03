@@ -1,0 +1,281 @@
+{
+  "id": "pool_cepheye_000028",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ahmet",
+    "epithet": "Rizeli",
+    "age": 45,
+    "hometown": "Rize",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Zekeriya",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 103,
+  "hand": "hurried",
+  "header": {
+    "text": "Çamlıca, 2 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Zekeriya'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Zekeriya gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim halimizi sorarsan bizler iyiyiz tarladayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Çocukların anası sana çok selam ediyo elleriyle pestil sardı pakete koyduk bide yün eldiven sardık gece nöbette üşümeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İki tabaka kâğıt da koydum bittikçe yazasın diye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Havalar hep yağmurlu gidiyo mısırları ektik tarlada çamur içinde bekleyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sana diyeceğim kardeşin İdris'e de dün kağıt geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Onu da askere çağırıyolar jandarma köyden topladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Haftaya şubeye teslim olcak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Köyde işe gidecek erkek kalmadı Dursun emmin yardım ediyo sağolsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ufaklık hep yatıyo bugünlerde pek sesi çıkmıyo beşiğinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen nasılsın oralarda iyi misin mektup yolla bizi merakta koma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bütün komşuların herkezin selamı var köyden gidenlere de selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Baban Ahmet"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çayelili Zekeriya'ya",
+    "sensitive": false
+  },
+  "package": [
+    "mektup kâğıdı",
+    "pestil",
+    "yün eldiven"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ahmet, Rizeli, 45, çiftçi (Rize, Çayeli kazası, Çamlıca karyesi)\nAlıcı: Oğlu Er Zekeriya, cephede\nYön: cepheye\nTarih: 2 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: kardeşin de askere çağrılması\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: mektup kâğıdı, pestil, yün eldiven\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ahmet",
+        "gender": "erkek",
+        "age": 45,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": "çiftçi",
+        "epithet": "Rizeli",
+        "place": "Çayeli kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Zekeriya",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çayeli kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": [
+        "mektup kâğıdı",
+        "pestil",
+        "yün eldiven"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "2 Mayıs 1331",
+      "home_address": "Rize, Çayeli kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5738,
+      "output": 3401
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Çamlıca, 2 Mayıs 1331\nHİTAP: Oğlum Zekeriya'ya\nGÖVDE: Oğlum Zekeriya gözlerinden öperim. Bizim halimizi sorarsan bizler iyiyiz tarladayız. Çocukların anası sana çok selam ediyo elleriyle pestil sardı pakete koyduk bide yün eldiven sardık gece nöbette üşümeyesin. İki tabaka kâğıt da koydum bittikçe yazasın diye. Havalar hep yağmurlu gidiyo mısırları ektik tarlada çamur içinde bekleyoz. Sana diyeceğim kardeşin İdris'e de dün kağıt geldi. Onu da askere çağırıyolar jandarma köyden topladı. Haftaya şubeye teslim olcak. Köyde işe gidecek erkek kalmadı Dursun emmin yardım ediyo sağolsun. Ufaklık hep yatıyo bugünlerde pek sesi çıkmıyo beşiğinde. Sen nasılsın oralarda iyi misin mektup yolla bizi merakta koma. Bütün komşuların herkezin selamı var köyden gidenlere de selam söyle.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Baban Ahmet\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çayelili Zekeriya'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "103 kelime, hedef 103 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4873,
+      "output": 3604
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime kullanılmamış, dönemin jandarma ve şube gibi askere alma terimleri doğru yansıtılmış.",
+      "olculuk": "Duygular adlandırılmamış, baba şefkati ve endişesi tamamen somut olaylar üzerinden verilmiş.",
+      "okuryazarlik": "'ediyo', 'bide', 'bekleyoz', 'herkezin' gibi kelimeler ve noktalama eksikliği düşük okuryazarlığı kusursuz yansıtıyor.",
+      "somutluk": "Pestil, yün eldiven, çamurlu tarla ve mısır ekimi gibi çok güçlü somut köylü detayları barındırıyor.",
+      "sadakat": "İstekteki tüm öğeler mevcut ancak çocuğun hasta olduğunu saklaması gerekirken askeri endişelendirecek kadar açık bir ipucu vermiş.",
+      "sahicilik": "Utangaç babanın karısından 'çocukların anası' diye bahsetmesi ve çaresizliği mektubu son derece sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "Ufaklık hep yatıyo bugünlerde pek sesi çıkmıyo beşiğinde.",
+        "problem": "Gönderen çocuğun hasta olduğunu saklamalıdır; cephedeki askere moral bozmamak için bu kadar bariz bir hastalık belirtisi yazılmaz, iyi olduğu söylenerek konu geçiştirilir.",
+        "suggestion": "Ufaklık da iyi beşiğinde uyuyo maşallah."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

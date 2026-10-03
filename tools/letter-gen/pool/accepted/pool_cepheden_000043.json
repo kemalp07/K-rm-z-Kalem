@@ -1,0 +1,293 @@
+{
+  "id": "pool_cepheden_000043",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hafız",
+    "epithet": "Kastamonulu",
+    "age": 32,
+    "hometown": "Kastamonu",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Sultan",
+    "relation": "nişanlısı",
+    "location": "Kastamonu, Tosya kazası, Ilıca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 90,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 3 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Sultan Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki cihan saadeti dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun elime geçti, okuyup ferahladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Allah sizleri darda bırakmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim oğlan mektebe gidiyor mu, hocası ne der, bir haber eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Göz kulak ol ona, sahipsiz kalıp da yaban ellere düşmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Buraların sıcağı bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Toz topraktan gözümüzü zor açıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Gece olunca yıldızlara bakıp köyün yollarını, o serin ormanları düşlüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bazen içimden kalkıp o yollara düşmek, bir solukta kapınıza varmak geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ayaklarım yerinde durmuyor ama boynumuz bükük.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarlada arpa sararmıştır, kim biçecek diye dertlenirim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Cenab-ı Hak yardımcımız olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kayınpederin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Dualarınızı eksik etmeyin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Hafız"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kastamonu, Tosya kazası, Ilıca karyesi, İmam Salih Efendi vasıtasıyla Sultan Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hafız, Kastamonulu, 32, çiftçi, er (Kastamonu, Tosya kazası, Ilıca karyesi)\nAlıcı: Nişanlısı Sultan Hanım, Kastamonu, Tosya kazası, Ilıca karyesi\nYön: cepheden\nTarih: 3 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: dualı, sık sık dua eder\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 90",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hafız",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kastamonu",
+        "occupation": "çiftçi",
+        "epithet": "Kastamonulu",
+        "place": "Tosya kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Sultan",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tosya kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Kastamonu, Tosya kazası, Ilıca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 90,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "3 Haziran 1331",
+      "home_address": "Kastamonu, Tosya kazası, Ilıca karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5638,
+      "output": 3214
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 3 Haziran 1331\nHİTAP: Nişanlım Sultan Hanım'a\nGÖVDE: Evvela selam eder, iki cihan saadeti dilerim. Mektubun elime geçti, okuyup ferahladım. Allah sizleri darda bırakmasın. Bizim oğlan mektebe gidiyor mu, hocası ne der, bir haber eyle. Göz kulak ol ona, sahipsiz kalıp da yaban ellere düşmesin. Buraların sıcağı bastırdı. Toz topraktan gözümüzü zor açıyoruz. Gece olunca yıldızlara bakıp köyün yollarını, o serin ormanları düşlüyorum. Bazen içimden kalkıp o yollara düşmek, bir solukta kapınıza varmak geçiyor. Ayaklarım yerinde durmuyor ama boynumuz bükük. Tarlada arpa sararmıştır, kim biçecek diye dertlenirim. Cenab-ı Hak yardımcımız olsun. Kayınpederin ellerinden öperim. Dualarınızı eksik etmeyin.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Hafız\nZARF: Kastamonu, Tosya kazası, Ilıca karyesi, İmam Salih Efendi vasıtasıyla Sultan Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 90 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4847,
+      "output": 3094
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "'Düşlüyorum' kelimesi 1915 dönemi için fazla modern bir kullanımdır.",
+      "olculuk": "Yıldızlara bakıp ormanları düşlemek, bir çiftçi mektubu için fazla romantik ve edebidir.",
+      "okuryazarlik": "'Nişanlım' hitabı kurala göre okumuş kişilere aittir, orta okuryazar bir çiftçiye tam uymaz.",
+      "somutluk": "Arpanın sararması, toz toprak ve mektep gibi detaylar mektubu çok somut kılmış.",
+      "sadakat": "İstenen konu, dua eden ses, gizlenen kaçma fikri ve uzunluk başarıyla işlenmiş.",
+      "sahicilik": "Genel olarak inandırıcı olsa da, aradaki edebi ve modern kelimeler köylü çiftçi kimliğini hafif zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Nişanlım Sultan Hanım'a",
+        "problem": "'Nişanlım' hitabı lorebook'a göre okumuş kişiler içindir, orta okuryazar çiftçi için fazla resmîdir.",
+        "suggestion": "HİTAP: Sultan Hanım'a"
+      },
+      {
+        "line": "Gece olunca yıldızlara bakıp köyün yollarını, o serin ormanları düşlüyorum.",
+        "problem": "'Düşlemek' kelimesi modern bir türetmedir ve cümle yapısı fazla romantiktir.",
+        "suggestion": "Gece olunca köyün yolları, o serin ormanlar gözümde tütüyor."
+      },
+      {
+        "line": "Kayınpederin ellerinden öperim.",
+        "problem": "Henüz nişanlıyken 'kayınpeder' demek yerine 'babanın' demek daha doğal ve köylü ağzına uygundur.",
+        "suggestion": "Babanın ellerinden öperim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

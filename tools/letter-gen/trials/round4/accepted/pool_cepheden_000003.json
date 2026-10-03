@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ömer",
+    "epithet": "Muallim",
+    "age": 45,
+    "hometown": "Denizli",
+    "occupation": "muallim",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Hanife",
+    "relation": "annesi",
+    "location": "Denizli, Acıpayam kazası, Çamlıca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 104,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 16 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Hanife Hanım'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela ellerinizden hürmetle öper, sıhhatte olmanızı Cenab-ı Hak'tan niyaz ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim ahvalim şükre şayandır, endişe etmeyiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kardeşim İsmail'in askerlik celbi meselesini işittim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bu hususta derhal Acıpayam'daki askerlik şubesine müracaat ediniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hanenin tek erkeği kaldığı ve tütün tarlasının bakımı onun eline baktığı için kanunen tehir hakkı doğabilir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Nüfus memuru Rıza Efendi'ye benden selam söyleyin, evrak işlerinde size yol göstersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yaşlı olduğunuzu, evde başka çalışacak kimse bulunmadığını şubedeki efendilere bilhassa anlatsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bu meseleyi sakın ihmal etmeyin, İsmail de buralara gelmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Onu tarlanın başından ayırmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köydeki ahbaba, komşularımıza selamımı iletin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Beni merak etmeyin, burada bana verilen vazifeyi yapıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Vaktim sükûnetle geçiyor, sizden gelecek hayırlı haberi bekliyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam eder, dualarınızı beklerim.",
+  "signature": {
+    "text": "Oğlun Ömer"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Denizli, Acıpayam kazası, Çamlıca karyesi, Muhtar İbrahim Efendi vasıtasıyla Hanife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ömer, Muallim, 45, muallim, çavuş (Denizli, Acıpayam kazası, Çamlıca karyesi)\nAlıcı: Annesi Hanife Hanım, Denizli, Acıpayam kazası, Çamlıca karyesi\nYön: cepheden\nTarih: 16 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ömer",
+        "gender": "erkek",
+        "age": 45,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Denizli",
+        "occupation": "muallim",
+        "epithet": "Muallim",
+        "place": "Acıpayam kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Hanife",
+        "gender": "kadın",
+        "age": 71,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Acıpayam kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Denizli, Acıpayam kazası, Çamlıca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "16 Mayıs 1331",
+      "closing": "",
+      "home_address": "Denizli, Acıpayam kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5677,
+      "output": 3767
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 16 Mayıs 1331\nHİTAP: Muhterem Validem Hanife Hanım'a,\nGÖVDE: Evvela ellerinizden hürmetle öper, sıhhatte olmanızı Cenab-ı Hak'tan niyaz ederim. Benim ahvalim şükre şayandır, endişe etmeyiniz. Kardeşim İsmail'in askerlik celbi meselesini işittim. Bu hususta derhal Acıpayam'daki askerlik şubesine müracaat ediniz. Hanenin tek erkeği kaldığı ve tütün tarlasının bakımı onun eline baktığı için kanunen tehir hakkı doğabilir. Nüfus memuru Rıza Efendi'ye benden selam söyleyin, evrak işlerinde size yol göstersin. Yaşlı olduğunuzu, evde başka çalışacak kimse bulunmadığını şubedeki efendilere bilhassa anlatsın. Bu meseleyi sakın ihmal etmeyin, İsmail de buralara gelmesin. Onu tarlanın başından ayırmayın. Köydeki ahbaba, komşularımıza selamımı iletin. Beni merak etmeyin, burada bana verilen vazifeyi yapıyorum. Vaktim sükûnetle geçiyor, sizden gelecek hayırlı haberi bekliyorum.\nKAPANIŞ: Baki selam eder, dualarınızı beklerim.\nİMZA: Oğlun Ömer\nZARF: Denizli, Acıpayam kazası, Çamlıca karyesi, Muhtar İbrahim Efendi vasıtasıyla Hanife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 104 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4947,
+      "output": 3350
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Genel Osmanlıca kelime dağarcığı başarılı olmakla birlikte, 'askerlik şubesi' ve 'hak doğması' gibi ufak modern/güncel kullanımlar göze çarpıyor.",
+      "olculuk": "Karakterin içine kapanık ve sadece gerekeni yazan mizacı, duygulardan tamamen arındırılmış net talimatlarla çok iyi yansıtılmış.",
+      "okuryazarlik": "Muallim kimliğine uygun, bürokratik işleyişi bilen, düzgün ve kurallı cümleler kurulmuş.",
+      "somutluk": "Tütün tarlası, nüfus memuru Rıza Efendi ve evrak işleri gibi gündelik, somut detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen kelime sayısına (103 kelime) tam uyulmuş, kardeşin durumu işlenmiş ve alınan ceza 'vaktim sükûnetle geçiyor' denerek başarıyla gizlenmiş.",
+      "sahicilik": "Ailesini yönlendiren, kanunları bilen bir ağabeyin endişesini pratik adımlarla gösteren son derece inandırıcı bir mektup."
+    },
+    "issues": [
+      {
+        "line": "Bu hususta derhal Acıpayam'daki askerlik şubesine müracaat ediniz.",
+        "problem": "Dönemde asker alma daireleri için genellikle 'ahz-ı asker şubesi' tabiri kullanılırdı; bir muallimin bu resmî tabiri kullanması daha sahici olur.",
+        "suggestion": "Bu hususta derhal Acıpayam'daki ahz-ı asker şubesine müracaat ediniz."
+      },
+      {
+        "line": "Hanenin tek erkeği kaldığı ve tütün tarlasının bakımı onun eline baktığı için kanunen tehir hakkı doğabilir.",
+        "problem": "'Hak doğması' modern bir hukuki ifade kalıbıdır ve askerliğin ertelenmesi için 'tecil' kelimesi daha yaygındır.",
+        "suggestion": "Hanenin tek erkeği kaldığı ve tütün tarlasının bakımı onun eline baktığı için kanunen tecil hakkı vardır."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "pool_cepheye_000033",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Pakize",
+    "epithet": "Malatyalı",
+    "age": 26,
+    "hometown": "Malatya",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Şaban",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 96,
+  "hand": "hurried",
+  "header": {
+    "text": "Kocaköy, 5 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Şaban'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektup yolladım cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nasılsın eyimisin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bura çok paha oldu herşey ateş pahası.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Un bulamıyok çarşıda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen cuma Hekimhan'a indim bi çuval una o kadar para isdediler alamadım döndüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bakkal Veli emmi veresiye defterini kapattı herkezden para isdeyo peşin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Senin gitmeden aldığın tohumluk borcu duruyo adam kapıya geliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "İneğin sütünü satıyom ama yetmeyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bize üç beş kuruş yolla yolunu bulup.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Evde tek kaldım işler yığıldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarlayı yarıcıya vercem seneye böyle giderse ekin büyüyo bi başıma yetişemeyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen nasılsın çabuk kâğıt yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Ahmet dayıma soruyom postayı o da bilmeyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Parayı sakın unutma birine ver yollasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Karın Pakize"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kocaköylü Şaban'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Pakize Hanım, Malatyalı, 26, çiftçi (Malatya, Hekimhan kazası, Kocaköy karyesi)\nAlıcı: Kocası Er Şaban, cephede\nYön: cepheye\nTarih: 5 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: fiyatların artması, un bulunamaması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 96",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Pakize",
+        "gender": "kadın",
+        "age": 26,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "epithet": "Malatyalı",
+        "place": "Hekimhan kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Şaban",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hekimhan kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "fiyatların artması, un bulunamaması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 96,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "5 Mayıs 1331",
+      "home_address": "Malatya, Hekimhan kazası, Kocaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5686,
+      "output": 3103
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Kocaköy, 5 Mayıs 1331\nHİTAP: Şaban'a\nGÖVDE: Mektup yolladım cevap gelmedi. Nasılsın eyimisin. Bura çok paha oldu herşey ateş pahası. Un bulamıyok çarşıda. Geçen cuma Hekimhan'a indim bi çuval una o kadar para isdediler alamadım döndüm. Bakkal Veli emmi veresiye defterini kapattı herkezden para isdeyo peşin. Senin gitmeden aldığın tohumluk borcu duruyo adam kapıya geliyo. İneğin sütünü satıyom ama yetmeyo. Bize üç beş kuruş yolla yolunu bulup. Evde tek kaldım işler yığıldı. Tarlayı yarıcıya vercem seneye böyle giderse ekin büyüyo bi başıma yetişemeyom. Sen nasılsın çabuk kâğıt yaz. Ahmet dayıma soruyom postayı o da bilmeyo. Parayı sakın unutma birine ver yollasın.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Karın Pakize\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kocaköylü Şaban'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "94 kelime, hedef 96 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4831,
+      "output": 3284
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelime dağarcığına (yarıcı, tohumluk, veresiye defteri) ve ifade biçimlerine bütünüyle sadık kalınmış.",
+      "olculuk": "Duygular adlandırılmadan, tamamen geçim derdi ve somut şikâyetler üzerinden ustaca hissettirilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi; kısa cümleler, bağlaç eksikliği ve tutarlı imla hatalarıyla (herkez, isdeyo, bilmeyo) çok iyi yansıtılmış.",
+      "somutluk": "Bakkal Veli, ineğin sütü, tohumluk borcu ve Hekimhan çarşısı gibi detaylarla mektup son derece somut kılınmış.",
+      "sadakat": "İstenen tüm öğeler mevcut ancak 'bize' kelimesi ile 'tek kaldım' ifadesi arasında küçük bir mantıksal pürüz bulunuyor.",
+      "sahicilik": "Cephedeki askere sürekli para ve borç soran hesapçı köylü kadını sesi son derece inandırıcı ve doğal."
+    },
+    "issues": [
+      {
+        "line": "Bize üç beş kuruş yolla yolunu bulup. Evde tek kaldım işler yığıldı.",
+        "problem": "Mektupta çocuklardan söz edilmediği hâlde önce 'bize' denilip hemen ardından 'tek kaldım' denmesi küçük bir çelişki yaratıyor; ayrıca kardeşin gidişini saklayan birinin 'tek kaldım' diyerek dikkat çekmesi risklidir.",
+        "suggestion": "Bana üç beş kuruş yolla yolunu bulup. İşler yığıldı ekin büyüyo bi başıma yetişemeyom."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

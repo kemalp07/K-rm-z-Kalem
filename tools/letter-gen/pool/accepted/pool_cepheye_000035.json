@@ -1,0 +1,256 @@
+{
+  "id": "pool_cepheye_000035",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sultan",
+    "epithet": "Niğdeli",
+    "age": 21,
+    "hometown": "Niğde",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Yusuf",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "postane önündeki arzuhalci",
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 85,
+  "hand": "dictated",
+  "header": {
+    "text": "Niğde, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Yusuf Efendi'nin huzuruna,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hak'tan sıhhatini dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sultan der ki: Hıdrellez geldi geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "O gün avluda gölgede sofrayı kurduk, senin tahta iskemleyi de baş köşeye çektim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kaynatam \"Kızım o iskemle niye boş duruyor\" dedi, ben de \"Yusuf'un yeri, belki pilavın kokusunu alır da kopup gelir\" dedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gülüştük hep beraber.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Saçaklı nineden yoğurt mayası aldım, kara inek maşallah iyi süt veriyor bu sıra.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizi hiç düşünme, buralar bildiğin gibi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sen kendi başının çaresine bak, tayınına ne düşerse sil süpür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İşbu name arzuhalci dükkanında yazılmıştır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve dua ile.",
+  "signature": {
+    "text": "Zevcen",
+    "seal": "Sultan"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Niğdeli Yusuf'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sultan Hanım, Niğdeli, 21, ev hanımı (Niğde, Bor kazası, Kavak karyesi)\nAlıcı: Kocası Er Yusuf, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: postane önündeki arzuhalci)\nOkuryazarlık: düşük\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 85",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sultan",
+        "gender": "kadın",
+        "age": 21,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": "ev hanımı",
+        "epithet": "Niğdeli",
+        "place": "Bor kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bor kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "low",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 85,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Haziran 1331",
+      "home_address": "Niğde, Bor kazası, Kavak karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5698,
+      "output": 2713
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Niğde, 20 Haziran 1331\nHİTAP: Muhterem zevcim Yusuf Efendi'nin huzuruna,\nGÖVDE: Evvela selam eder, iki ellerinden öperim. Cenab-ı Hak'tan sıhhatini dilerim. Sultan der ki: Hıdrellez geldi geçti. O gün avluda gölgede sofrayı kurduk, senin tahta iskemleyi de baş köşeye çektim. Kaynatam \"Kızım o iskemle niye boş duruyor\" dedi, ben de \"Yusuf'un yeri, belki pilavın kokusunu alır da kopup gelir\" dedim. Gülüştük hep beraber. Saçaklı nineden yoğurt mayası aldım, kara inek maşallah iyi süt veriyor bu sıra. Bizi hiç düşünme, buralar bildiğin gibi. Sen kendi başının çaresine bak, tayınına ne düşerse sil süpür. İşbu name arzuhalci dükkanında yazılmıştır.\nKAPANIŞ: Baki selam ve dua ile.\nİMZA: (mühür: Sultan) Zevcen\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Niğdeli Yusuf'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "87 kelime, hedef 85 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4838,
+      "output": 3495
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri ve hitap kalıpları sırıtmadan kullanılmış.",
+      "olculuk": "Duygular adlandırılmadan, boş iskemle ve şaka üzerinden çok iyi hissettirilmiş.",
+      "okuryazarlik": "Arzuhalcinin resmî giriş-çıkış kalıpları ile kadının kendi sesi arasındaki geçiş çok başarılı.",
+      "somutluk": "Tahta iskemle, pilav kokusu, yoğurt mayası ve kara inek gibi detaylar mektubu canlandırmış.",
+      "sadakat": "İstenen konu, şakacı ton, uzunluk ve yazma biçimi eksiksiz uygulanmış.",
+      "sahicilik": "Kâtibe yazdırılan bir köy mektubunun tüm doğallığını ve biçimsel özelliklerini taşıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

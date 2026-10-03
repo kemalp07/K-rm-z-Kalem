@@ -1,0 +1,300 @@
+{
+  "id": "pool_cepheden_000032",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nuri",
+    "epithet": "Rizeli",
+    "age": 18,
+    "hometown": "Rize",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Şevket",
+    "relation": "babası",
+    "location": "Rize, Çayeli kazası, Karaağaç karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 116,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Şevket Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Muhterem pederim, evvela ellerinden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğin kâğıdı aldım, okudum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Gelin doğum yapmış, sağ salim kurtulmuş, Allah'a şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çocuğun adını kulağına sen ezanla oku, pederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim adım geçmesin, kendi adını ver ya da köyün büyüklerinden kime dersen onu koy.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Buralarda haziran sıcağı iyice bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Toz toprak içinde günleri sayıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Karaağaç'ın serin sularını arar olduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "İnsanın beli burada çabuk bükülüyor, sanki memleketten çıkalı yirmi yıl olmuş gibi omuzlarım çöktü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kazmayı vurdukça kollarım kalkmaz oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Geceleri de pek uyku tutmuyor, gözümü kapattıkça aklım bulanıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizim tarlada mısırlar boy atmış mıdır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "İnekleri yaylaya çıkardınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Anama, zevceme, komşulara çok selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Geline tembih et, çocuğa iyi baksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Buraların havası adamı yoruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Bizi merak etmeyin, şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabınızı beklerim.",
+  "signature": {
+    "text": "Oğlun Nuri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Rize, Çayeli kazası, Karaağaç karyesi, Muhtar İlyas Efendi vasıtasıyla Şevket Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nuri, Rizeli, 18, çiftçi, er (Rize, Çayeli kazası, Karaağaç karyesi)\nAlıcı: Babası Şevket, Rize, Çayeli kazası, Karaağaç karyesi\nYön: cepheden\nTarih: 16 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: yaşlı ve yorgun, kısa yazar\nKonu: yeni doğan çocuğuna ad koymak\nSakladığı: arkadaşının öldüğünü gördüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 116",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nuri",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Rize",
+        "occupation": "çiftçi",
+        "epithet": "Rizeli",
+        "place": "Çayeli kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Şevket",
+        "gender": "erkek",
+        "age": 48,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çayeli kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Rize, Çayeli kazası, Karaağaç karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "yeni doğan çocuğuna ad koymak",
+      "hidden": "arkadaşının öldüğünü gördüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 116,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "home_address": "Rize, Çayeli kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5638,
+      "output": 4133
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 16 Haziran 1331\nHİTAP: Muhterem pederim Şevket Ağa'ya\nGÖVDE: Muhterem pederim, evvela ellerinden hürmetle öperim. Gönderdiğin kâğıdı aldım, okudum. Gelin doğum yapmış, sağ salim kurtulmuş, Allah'a şükür. Çocuğun adını kulağına sen ezanla oku, pederim. Benim adım geçmesin, kendi adını ver ya da köyün büyüklerinden kime dersen onu koy. Buralarda haziran sıcağı iyice bastırdı. Toz toprak içinde günleri sayıyoruz. Karaağaç'ın serin sularını arar olduk. İnsanın beli burada çabuk bükülüyor, sanki memleketten çıkalı yirmi yıl olmuş gibi omuzlarım çöktü. Kazmayı vurdukça kollarım kalkmaz oldu. Geceleri de pek uyku tutmuyor, gözümü kapattıkça aklım bulanıyor. Bizim tarlada mısırlar boy atmış mıdır? İnekleri yaylaya çıkardınız mı? Anama, zevceme, komşulara çok selam eyle. Geline tembih et, çocuğa iyi baksın. Buraların havası adamı yoruyor. Bizi merak etmeyin, şükür ayaktayız.\nKAPANIŞ: Cevabınızı beklerim.\nİMZA: Oğlun Nuri\nZARF: Rize, Çayeli kazası, Karaağaç karyesi, Muhtar İlyas Efendi vasıtasıyla Şevket Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "113 kelime, hedef 116 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000016 ile ortak: \"buralarda haziran sıcağı iyice bastırdı toz\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4921,
+      "output": 3049
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem diline genel olarak uyulmuş ancak 'zevce' gibi kâtip kelimeleri köylü ağzına karışmış.",
+      "olculuk": "Yorgunluk hissi 'sanki yirmi yıl olmuş gibi' tarzı fazla edebi ve doğrudan bir metaforla verilerek kural ihlali yapılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesi için cümle yapıları uygun fakat kelime seçimlerinde ufak tutarsızlıklar mevcut.",
+      "somutluk": "Mısırların boy atması, ineklerin yaylaya çıkması ve kazma vurmak gibi çok başarılı somut detaylar kullanılmış.",
+      "sadakat": "İstekteki tüm kısıtlamalara (konu, saklanan bilgi, uzunluk, ses) tam olarak uyulmuş.",
+      "sahicilik": "Eşinden babasına bahsederken önce 'gelin' deyip sonra 'zevcem' demesi mektubun inandırıcılığını zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "İnsanın beli burada çabuk bükülüyor, sanki memleketten çıkalı yirmi yıl olmuş gibi omuzlarım çöktü.",
+        "problem": "Duygu ve yorgunluk fazla edebi bir metaforla, doğrudan adlandırılarak verilmiş; köylü askerin sadeliğine uymuyor.",
+        "suggestion": "Burada insanın beli çabuk bükülüyor, kazmayı vurdukça kollarım kalkmaz oldu."
+      },
+      {
+        "line": "Anama, zevceme, komşulara çok selam eyle.",
+        "problem": "'Zevce' kâtip ve okumuş kişi kelimesidir, ayrıca mektubun başında eşinden 'gelin' diye bahseden bir köylü genci için fazla resmî ve tutarsızdır.",
+        "suggestion": "Anama, geline, komşulara çok selam eyle."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

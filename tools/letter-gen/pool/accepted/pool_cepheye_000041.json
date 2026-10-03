@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheye_000041",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Cemile",
+    "epithet": "Malatyalı",
+    "age": 22,
+    "hometown": "Malatya",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Recep",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 100,
+  "hand": "careful",
+  "header": {
+    "text": "Sarıkaya, 14 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Recep Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, halini hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen aydan beri posta geldi köy odasına, sana ait bir kâğıt çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dört defa sordurdum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kâğıdın mı bitti, vaktin mi olmadı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bir kelam yaz da ne halde olduğunu bilelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Evdeki unumuz yirmi gün daha ancak yeter.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ahırdaki sarı ineğin ayağı şişti, emmim sirkeli suyla sardı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Arpayı biçmeye haftaya başlayacağız, komşu kadınlarla imece yapacağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kirazları da topladık, birazını kuruttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sana yolladığım tütünle yün kuşak eline geçti mi, onu da hiç yazmadın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çocukların üstü başı sağlam, evde hastamız yok şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Havalar burada çok ısındı, ekinler iyice sarardı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Cevabını tez yolla, sabah akşam yola bakıyoruz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Cemile"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı Recep'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Cemile Hanım, Malatyalı, 22, çiftçi (Malatya, Hekimhan kazası, Sarıkaya karyesi)\nAlıcı: Kocası Er Recep, cephede\nYön: cepheye\nTarih: 14 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: titiz, her şeyi tek tek sayar\nKonu: mektup gelmediği için endişe\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 100",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Cemile",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "epithet": "Malatyalı",
+        "place": "Hekimhan kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hekimhan kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 100,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Haziran 1331",
+      "home_address": "Malatya, Hekimhan kazası, Sarıkaya karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5628,
+      "output": 2608
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Sarıkaya, 14 Haziran 1331\nHİTAP: Zevcim Recep Efendi'ye\nGÖVDE: Evvela selam eder, halini hatırını sorarım. Geçen aydan beri posta geldi köy odasına, sana ait bir kâğıt çıkmadı. Dört defa sordurdum. Kâğıdın mı bitti, vaktin mi olmadı? Bir kelam yaz da ne halde olduğunu bilelim. Evdeki unumuz yirmi gün daha ancak yeter. Ahırdaki sarı ineğin ayağı şişti, emmim sirkeli suyla sardı. Arpayı biçmeye haftaya başlayacağız, komşu kadınlarla imece yapacağız. Kirazları da topladık, birazını kuruttum. Sana yolladığım tütünle yün kuşak eline geçti mi, onu da hiç yazmadın. Çocukların üstü başı sağlam, evde hastamız yok şükür. Havalar burada çok ısındı, ekinler iyice sarardı. Cevabını tez yolla, sabah akşam yola bakıyoruz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Zevcen Cemile\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı Recep'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "98 kelime, hedef 100 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4827,
+      "output": 2927
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan kelimeler doneme uygun olmakla birlikte zevcim ve imece yapacagiz gibi ifadeler hafif modern veya katip agzi kacmaktadir.",
+      "olculuk": "Duygular adlandirilmadan, mektup bekleyisi ve gundelik telaslar uzerinden cok iyi hissettirilmistir.",
+      "okuryazarlik": "Orta okuryazarlik seviyesine uygun, duzgun ama sade ve kisa cumleler kullanilmistir.",
+      "somutluk": "Unun yirmi gun yetmesi, sari inegin ayaginin sirkeli suyla sarilmasi gibi cok guclu somut detaylar barindiriyor.",
+      "sadakat": "Istenen uzunluk, konu, ses tonu ve saklanan bilgi ynergelerine tam uyulmustur.",
+      "sahicilik": "Koydeki gundelik hayatin dertleriyle cephedeki kocaya duyulan ozlemin ic ice gecisi son derece sahicidir."
+    },
+    "issues": [
+      {
+        "line": "HITAP: Zevcim Recep Efendi'ye",
+        "problem": "Orta okuryazar bir koylu kadinin kocasina zevcim demesi pek yaygin degildir; kocam veya dogrudan ismiyle hitap etmesi daha dogaldir.",
+        "suggestion": "HITAP: Kocam Recep Efendi'ye"
+      },
+      {
+        "line": "Arpayi bicmeye haftaya baslayacagiz, komsu kadinlarla imece yapacagiz.",
+        "problem": "Imece yapacagiz kalibi modern bir soylemdir; donemin koylu agzinda eylemin kendisi vurgulanir.",
+        "suggestion": "Arpayi haftaya komsu kadinlarla imeceye durup bicecegiz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

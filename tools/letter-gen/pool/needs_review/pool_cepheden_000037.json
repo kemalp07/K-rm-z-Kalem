@@ -1,0 +1,310 @@
+{
+  "id": "pool_cepheden_000037",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Şevket",
+    "epithet": "Amasyalı",
+    "age": 30,
+    "hometown": "Amasya",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Veli",
+    "relation": "erkek kardeşi",
+    "location": "Amasya, Ladik kazası, Yenice karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 95,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 5 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardaşım Veli'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Şevket der ki: Veli kardaşım evvela hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun geldi okuttum sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bakkal Rüstem'e olan borcu ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hasat vakti geldi, arpayı erkenden biçince götürüp verin adamın parasını, faiz binmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Tarlayı kim biçiyor, adam buldunuz mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırdaki sarı inek sağılıyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hacı emmimin oğlunun düğünü ne zaman edilecek, güzün mü?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anamın öksürüğü geçti mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bana hepsi için bir bir yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sürekli soruyorsun deme, aklım hep orada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim üçüncü taburdan",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "çok kişi sıtmaya tutuldu,",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "dün yirmi iki kişiyi hastaneye indirdiler",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": ".",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Sıcak fena bastırdı, tepeden",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "denizi izleyip",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "kavruluyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Çabuk cevap yaz, bütün ahaliye selam et.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "",
+    "seal": "Şevket"
+  },
+  "note": {
+    "text": "İşbu mektubu Şevket'in ağzından yoldaşı Hasan yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Amasya, Ladik kazası, Yenice karyesi, Muhtar Salih Ağa vasıtasıyla Veli'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şevket, Amasyalı, 30, dokumacı, er (Amasya, Ladik kazası, Yenice karyesi)\nAlıcı: Erkek kardeşi Veli, Amasya, Ladik kazası, Yenice karyesi\nYön: cepheden\nTarih: 5 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: genç ve heyecanlı, çok soru sorar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 95",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şevket",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Amasya",
+        "occupation": "dokumacı",
+        "epithet": "Amasyalı",
+        "place": "Ladik kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Veli",
+        "gender": "erkek",
+        "age": 32,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ladik kazası, Yenice karyesi"
+      },
+      "recipient_location": "Amasya, Ladik kazası, Yenice karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "high",
+      "sensitive_info": "hastaneye kaldırılan arkadaşlarının sayısı",
+      "length_label": "orta",
+      "length_target": 95,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "5 Haziran 1331",
+      "home_address": "Amasya, Ladik kazası, Yenice karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5660,
+      "output": 3468
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 5 Haziran 1331\nHİTAP: Kardaşım Veli'ye\nGÖVDE: Şevket der ki: Veli kardaşım evvela hatırını sorarım. Mektubun geldi okuttum sevindim. Bakkal Rüstem'e olan borcu ne yaptınız? Hasat vakti geldi, arpayı erkenden biçince götürüp verin adamın parasını, faiz binmesin. Tarlayı kim biçiyor, adam buldunuz mu? Ahırdaki sarı inek sağılıyor mu? Hacı emmimin oğlunun düğünü ne zaman edilecek, güzün mü? Anamın öksürüğü geçti mi? Bana hepsi için bir bir yaz. Sürekli soruyorsun deme, aklım hep orada. ⟦Bizim üçüncü taburdan⟧ çok kişi sıtmaya tutuldu, ⟦dün yirmi iki kişiyi hastaneye indirdiler⟧. Sıcak fena bastırdı, tepeden ⟦denizi izleyip⟧ kavruluyoruz. Çabuk cevap yaz, bütün ahaliye selam et.\nKAPANIŞ: Baki selam.\nİMZA: (mühür: Şevket)\nNOT: İşbu mektubu Şevket'in ağzından yoldaşı Hasan yazdı.\nZARF: Amasya, Ladik kazası, Yenice karyesi, Muhtar Salih Ağa vasıtasıyla Veli'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "93 kelime, hedef 95 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4895,
+      "output": 3543
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "\"Sürekli\" kelimesi ve \"izlemek\" fiilinin seyretmek anlamında kullanımı 1915 yılı için fazla moderndir.",
+      "olculuk": "Duygular adlandırılmadan, peş peşe sorulan sorularla ve somut dertlerle çok iyi hissettirilmiş.",
+      "okuryazarlik": "Kâtibe yazdırılan mektup formatına (\"Şevket der ki\") ve köylü söyleyişine sadık kalınmış.",
+      "somutluk": "Bakkalın borcu, sarı inek, arpa hasadı gibi gündelik ve somut detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen uzunluğa (93 kelime), dikkatsizlik seviyesine ve gizlenen/verilen bilgi talimatlarına tam uyulmuş.",
+      "sahicilik": "Genç ve heyecanlı bir askerin köyünü merak eden telaşlı sesi çok doğal yansıtılmış."
+    },
+    "issues": [
+      {
+        "line": "Bana hepsi için bir bir yaz. Sürekli soruyorsun deme, aklım hep orada.",
+        "problem": "\"Sürekli\" kelimesi modern bir ifadedir, o dönemde bu anlamda kullanılmaz.",
+        "suggestion": "Bana hepsi için bir bir yaz. Boyuna soruyorsun deme, aklım hep orada."
+      },
+      {
+        "line": "Sıcak fena bastırdı, tepeden ⟦denizi izleyip⟧ kavruluyoruz.",
+        "problem": "\"İzlemek\" kelimesinin \"seyretmek/bakmak\" anlamında kullanımı modern bir anlamsal kaymadır; o dönemde daha çok \"iz sürmek\" anlamındaydı.",
+        "suggestion": "Sıcak fena bastırdı, tepeden ⟦denize bakıp⟧ kavruluyoruz."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

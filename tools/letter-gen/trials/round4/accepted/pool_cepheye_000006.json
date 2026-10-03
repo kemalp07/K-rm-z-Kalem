@@ -1,0 +1,279 @@
+{
+  "id": "pool_cepheye_000006",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ulviye",
+    "epithet": "Terzi",
+    "age": 30,
+    "hometown": "Bolu",
+    "occupation": "terzi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Ahmet",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 83,
+  "hand": "careful",
+  "header": {
+    "text": "Kurtköy, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Ahmet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun geçen hafta ulaştı, okudum ferahladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gelen postayla sana biraz sarma tütün ile sandıkta duran yün eldivenleri yolladım, bohçaya koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim buralarda hâlimiz vaktimiz yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Makine tıkır tıkır işliyor, kasabadan basma getirdiler, komşuların kızlarına entari dikiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Tarlayı bu sene kendim sürmeyecektim, Halil ağabeygil biz eker biçeriz, sana kirasını veririz dediler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Zaten dikiş işi yetiyor, hem hiç yorulmuyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Onlara icara verdim, böylesi daha iyi oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen buraları hiç aklına takma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evde unumuz da var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sadece sen sağ salim dön, bize o yeter.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Zevcen Ulviye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Geredeli Ahmet'e",
+    "sensitive": false
+  },
+  "package": [
+    "tütün",
+    "yün eldiven"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ulviye Hanım, Terzi, 30, terzi (Bolu, Gerede kazası, Kurtköy karyesi)\nAlıcı: Kocası Onbaşı Ahmet, cephede\nYön: cepheye\nTarih: 16 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: az konuşur, her şeyi iyi gösterir\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: tütün, yün eldiven\nKapanış: Baki selam\nUzunluk: 83",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ulviye",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Bolu",
+        "occupation": "terzi",
+        "epithet": "Terzi",
+        "place": "Gerede kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Ahmet",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Bolu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gerede kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 83,
+      "package": [
+        "tütün",
+        "yün eldiven"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "closing": "Baki selam",
+      "home_address": "Bolu, Gerede kazası, Kurtköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5838,
+      "output": 3074
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Kurtköy, 16 Haziran 1331\nHİTAP: Zevcim Ahmet'e\nGÖVDE: Mektubun geçen hafta ulaştı, okudum ferahladım. Gelen postayla sana biraz sarma tütün ile sandıkta duran yün eldivenleri yolladım, bohçaya koydum. Bizim buralarda hâlimiz vaktimiz yerinde. Makine tıkır tıkır işliyor, kasabadan basma getirdiler, komşuların kızlarına entari dikiyorum. Tarlayı bu sene kendim sürmeyecektim, Halil ağabeygil biz eker biçeriz, sana kirasını veririz dediler. Zaten dikiş işi yetiyor, hem hiç yorulmuyorum. Onlara icara verdim, böylesi daha iyi oldu. Sen buraları hiç aklına takma. Evde unumuz da var. Sadece sen sağ salim dön, bize o yeter.\nKAPANIŞ: Baki selam.\nİMZA: Zevcen Ulviye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Geredeli Ahmet'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 83 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4858,
+      "output": 2847
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Bazı ifadeler ('Sadece sen...', 'tıkır tıkır') günümüz günlük konuşma dilini andırıyor.",
+      "olculuk": "Duygular adlandırılmamış, tarlanın elden çıkışı çok doğal ve ölçülü bir bahaneyle gizlenmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun düzgün cümleler kurulmuş ancak hitap biraz yapay.",
+      "somutluk": "Basma, entari, sandıktaki yün eldiven, sarma tütün gibi döneme uygun somut detaylar çok başarılı.",
+      "sadakat": "İstenen uzunluk, paket içeriği, gizlenen bilgi ve kapanış kalıbı eksiksiz uygulanmış.",
+      "sahicilik": "Tarlayı icara verme bahanesi çok inandırıcı olsa da son cümledeki modern tını mektubun ruhunu hafif zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcim Ahmet'e",
+        "problem": "Köy yerinde orta okuryazar bir kadının kocasına 'Zevcim' demesi pek yaygın değildir; 'Kocam' veya 'Efendim' daha doğaldır.",
+        "suggestion": "HİTAP: Kocam Ahmet'e"
+      },
+      {
+        "line": "Makine tıkır tıkır işliyor, kasabadan basma getirdiler, komşuların kızlarına entari dikiyorum.",
+        "problem": "'Makine tıkır tıkır işliyor' deyimi dönemin mektup dilinden ziyade modern bir ağzı yansıtıyor.",
+        "suggestion": "Makineyle dikiş dikiyorum, kasabadan basma getirdiler, komşuların kızlarına entari biçiyorum."
+      },
+      {
+        "line": "Sadece sen sağ salim dön, bize o yeter.",
+        "problem": "'Sadece' kelimesi ve cümlenin dizilişi günümüz dizi/film repliklerini andırıyor.",
+        "suggestion": "Sen canını sağ et de gerisi mühim değil."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

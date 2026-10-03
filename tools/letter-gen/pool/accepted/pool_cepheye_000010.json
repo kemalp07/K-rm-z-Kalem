@@ -1,0 +1,255 @@
+{
+  "id": "pool_cepheye_000010",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Arif",
+    "epithet": "Çoban",
+    "age": 67,
+    "hometown": "Ankara",
+    "occupation": "çoban",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Hilmi",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 85,
+  "hand": "hurried",
+  "header": {
+    "text": "Yeniköy, 17 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Hilmi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Hilmi mektup yolladım cevap gelmedi eline geçmeyo mu kâat.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim hâlimiz eyidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Koyunları kırktık yaylaya çıkardım yünü kasap rızaya sattım ama yirmi kuruş borcu kaldı peşin vermedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Herşey ateş pahası arpaya zam gelmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Senin oğlan dün yürümeye başladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kendi başına duvara tutunup avlu kapısına kadar gidiyo maşallahı var ayaklandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Boyu da uzadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen bizi düşünme cepheden aylık verirlerse bir kaç kuruş zarfa koy yolla tahsildar yine köye dadandı vergi istiyo elde avuçta yok bakkal da borç defterini kabarttı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çabuk kâat yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Baban Arif"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Yeniköylü Hilmi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Arif, Çoban, 67, çoban (Ankara, Beypazarı kazası, Yeniköy karyesi)\nAlıcı: Oğlu Onbaşı Hilmi, cephede\nYön: cepheye\nTarih: 17 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: çocuğun ilk adımları\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 85",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Arif",
+        "gender": "erkek",
+        "age": 67,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Beypazarı kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Hilmi",
+        "gender": "erkek",
+        "age": 40,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beypazarı kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 85,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "17 Haziran 1331",
+      "home_address": "Ankara, Beypazarı kazası, Yeniköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5676,
+      "output": 2568
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 17 Haziran 1331\nHİTAP: Oğlum Hilmi'ye\nGÖVDE: Oğlum Hilmi mektup yolladım cevap gelmedi eline geçmeyo mu kâat. Bizim hâlimiz eyidir. Koyunları kırktık yaylaya çıkardım yünü kasap rızaya sattım ama yirmi kuruş borcu kaldı peşin vermedi. Herşey ateş pahası arpaya zam gelmiş. Senin oğlan dün yürümeye başladı. Kendi başına duvara tutunup avlu kapısına kadar gidiyo maşallahı var ayaklandı. Boyu da uzadı. Sen bizi düşünme cepheden aylık verirlerse bir kaç kuruş zarfa koy yolla tahsildar yine köye dadandı vergi istiyo elde avuçta yok bakkal da borç defterini kabarttı. Çabuk kâat yaz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Baban Arif\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Yeniköylü Hilmi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "82 kelime, hedef 85 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4783,
+      "output": 3396
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "'Zam gelmek' gibi günümüz ekonomisine ait ifadeler 1915 köylü ağzı için fazla moderndir.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut ve ölçülü bir dil kullanılmış.",
+      "okuryazarlik": "Noktalama eksiklikleri, imla hataları ve yöresel kelimeler düşük okuryazarlığı çok iyi yansıtıyor.",
+      "somutluk": "Kasap Rıza, yirmi kuruş, arpa, tahsildar gibi detaylarla mektup son derece somutlaştırılmış.",
+      "sadakat": "İstenen tüm unsurlar, hesapçı ses, çocuğun yürümesi ve uzunluk eksiksiz işlenmiş.",
+      "sahicilik": "Para derdindeki yaşlı bir çobanın sesi ve üslubu çok doğal ve inandırıcı verilmiş."
+    },
+    "issues": [
+      {
+        "line": "Herşey ateş pahası arpaya zam gelmiş.",
+        "problem": "'Zam gelmek' 1915 yılındaki bir köylünün kullanacağı bir ifade değildir, modern bir kalıptır.",
+        "suggestion": "Herşey ateş pahası arpa bulunmeyo."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

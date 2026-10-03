@@ -1,0 +1,211 @@
+{
+  "id": "pool_cepheden_000038",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Rüstem",
+    "epithet": "Bursalı",
+    "age": 25,
+    "hometown": "Bursa",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Akile",
+    "relation": "karısı",
+    "location": "Bursa, Mudanya kazası, Gölcük karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 89,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Akile'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Akile kağıdını aldım sağolasın benim halimi sorarsan şükür ayaktayız bi derdimiz yok Bakkal Salih emmiye olan borcu sen düşünme çapa vakti geliyo ırgatlığa inersin yevmiyeni ordan keserler olmazsa dayımdan iki lira iste ben gelince öderim burda havalar ısındı çok",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "bizim bölük denize iniyo su almaya",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "sen çocuklara iyi bak hiç üzülme tarla işini nittiniz ekinler boy verdimi bizim komşu Hasanı gördüm oda iyi çok selâmı var sen canını sıkma borç ödenir biter elbet evdeki herkeze selâm ederim kaynatamın ellerinden öperim Hasanın anasına da çok selâm söyle tez cevap yaz",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allaha emanet ol",
+  "signature": {
+    "text": "Kocan Rüstem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Bursa, Mudanya kazası, Gölcük karyesi, Muhtar Ali Ağa vasıtasıyla Akile Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Rüstem, Bursalı, 25, ırgat, er (Bursa, Mudanya kazası, Gölcük karyesi)\nAlıcı: Karısı Akile Hanım, Bursa, Mudanya kazası, Gölcük karyesi\nYön: cepheden\nTarih: 17 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Rüstem",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bursa",
+        "occupation": "ırgat",
+        "epithet": "Bursalı",
+        "place": "Mudanya kazası, Gölcük karyesi"
+      },
+      "recipient": {
+        "name": "Akile",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mudanya kazası, Gölcük karyesi"
+      },
+      "recipient_location": "Bursa, Mudanya kazası, Gölcük karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "17 Mayıs 1331",
+      "home_address": "Bursa, Mudanya kazası, Gölcük karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5632,
+      "output": 4409
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 17 Mayıs 1331\nHİTAP: Akile'ye\nGÖVDE: Akile kağıdını aldım sağolasın benim halimi sorarsan şükür ayaktayız bi derdimiz yok Bakkal Salih emmiye olan borcu sen düşünme çapa vakti geliyo ırgatlığa inersin yevmiyeni ordan keserler olmazsa dayımdan iki lira iste ben gelince öderim burda havalar ısındı çok ⟦bizim bölük denize iniyo su almaya⟧ sen çocuklara iyi bak hiç üzülme tarla işini nittiniz ekinler boy verdimi bizim komşu Hasanı gördüm oda iyi çok selâmı var sen canını sıkma borç ödenir biter elbet evdeki herkeze selâm ederim kaynatamın ellerinden öperim Hasanın anasına da çok selâm söyle tez cevap yaz\nKAPANIŞ: Allaha emanet ol\nİMZA: Kocan Rüstem\nZARF: Bursa, Mudanya kazası, Gölcük karyesi, Muhtar Ali Ağa vasıtasıyla Akile Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 89 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4798,
+      "output": 3117
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta kullanılan 'kağıdını', 'ırgatlık', 'yevmiye', 'kaynata' gibi kelimeler 1915 köy yaşantısına ve dönem diline kusursuz uyuyor.",
+      "olculuk": "Duygular adlandırılmadan, yalnızca borç ve gündelik işler üzerinden, askerin her şeyi iyi gösterme çabasıyla çok ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Noktalama işaretlerinin yokluğu, 'geliyo', 'nittiniz', 'oda', 'herkeze' gibi bilinçli imla hataları düşük okuryazarlık seviyesini mükemmel yansıtıyor.",
+      "somutluk": "Bakkal Salih emmi, çapa vakti, iki lira, ekinlerin boy vermesi gibi ayrıntılar mektubu son derece somut ve inandırıcı kılıyor.",
+      "sadakat": "İstenen uzunluk (tam 89 kelime), borç konusu, iptal edilen iznin gizlenmesi ve 'az' seviyesindeki dikkatsizlik (bölüğün su alması) harfiyen yerine getirilmiş.",
+      "sahicilik": "Kısa, bağlaçsız cümleleri ve köydeki borcu dert edinen yapısıyla Çanakkale'deki köylü bir askerin gerçek bir mektubu gibi hissettiriyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

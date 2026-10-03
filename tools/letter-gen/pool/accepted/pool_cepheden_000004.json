@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kemal",
+    "epithet": "Kastamonulu",
+    "age": 24,
+    "hometown": "Kastamonu",
+    "occupation": "terzi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zarife",
+    "relation": "annesi",
+    "location": "Kastamonu, Tosya kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "low",
+  "length_target": 72,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 5 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Zarife Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunuzu vaktinde aldım, sıhhatte olmanıza ziyadesiyle sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim de hâlim vaktim yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen gün tesadüf, bizim bölüğe Tosya’dan yeni neferler katıldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İçlerinde Demirci Yakup’un oğlu Hasan da var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Onu karşımda görünce memleket havası gelmiş gibi oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Akbaş iskelesine",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "erzak indirmeye gittik, yolda epeyce konuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim burada vaktim nöbetle ve kaputların söküklerini dikmekle geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kendi hâlimdeyim, kimseye karıştığım yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Hasan’ın anasına selam söyleyin, oğlunun sağ ve selamette olduğunu muhakkak bilsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dualarınızı beklerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam eder, ellerinizden öperim.",
+  "signature": {
+    "text": "Oğlunuz Kemal"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kastamonu, Tosya kazası, Kurtköy karyesi, İmam Rıza Efendi vasıtasıyla Zarife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kemal, Kastamonulu, 24, terzi, er (Kastamonu, Tosya kazası, Kurtköy karyesi)\nAlıcı: Annesi Zarife Hanım, Kastamonu, Tosya kazası, Kurtköy karyesi\nYön: cepheden\nTarih: 5 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yakındaki bir köyün ya da iskelenin adı\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kastamonu",
+        "occupation": "terzi",
+        "epithet": "Kastamonulu",
+        "place": "Tosya kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Zarife",
+        "gender": "kadın",
+        "age": 41,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tosya kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Kastamonu, Tosya kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "low",
+      "sensitive_info": "yakındaki bir köyün ya da iskelenin adı",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "5 Mayıs 1331",
+      "home_address": "Kastamonu, Tosya kazası, Kurtköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5738,
+      "output": 2910
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Yer · Kuzey sırtı ve iskele (oyun içi)",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 5 Mayıs 1331\nHİTAP: Muhterem Validem Zarife Hanım'a\nGÖVDE: Mektubunuzu vaktinde aldım, sıhhatte olmanıza ziyadesiyle sevindim. Benim de hâlim vaktim yerindedir. Geçen gün tesadüf, bizim bölüğe Tosya’dan yeni neferler katıldı. İçlerinde Demirci Yakup’un oğlu Hasan da var. Onu karşımda görünce memleket havası gelmiş gibi oldum. Dün ⟦Akbaş iskelesine⟧ erzak indirmeye gittik, yolda epeyce konuştuk. Benim burada vaktim nöbetle ve kaputların söküklerini dikmekle geçiyor. Kendi hâlimdeyim, kimseye karıştığım yok. Hasan’ın anasına selam söyleyin, oğlunun sağ ve selamette olduğunu muhakkak bilsin. Dualarınızı beklerim.\nKAPANIŞ: Baki selam eder, ellerinizden öperim.\nİMZA: Oğlunuz Kemal\nZARF: Kastamonu, Tosya kazası, Kurtköy karyesi, İmam Rıza Efendi vasıtasıyla Zarife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "72 kelime, hedef 72 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4833,
+      "output": 3765
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri (ziyadesiyle, nefer, kaput) başarılı kullanılmış ancak 'hâlim vaktim' deyimi bağlama tam oturmamış.",
+      "olculuk": "Karakterin içine kapanık yapısına uygun, abartıdan uzak ve son derece ölçülü bir dil kullanılmış.",
+      "okuryazarlik": "Yüksek okuryazarlık seviyesi, düzgün ve akıcı cümle yapılarıyla başarılı bir şekilde yansıtılmış.",
+      "somutluk": "Kaput söküğü dikmek ve Demirci Yakup'un oğlu gibi detaylar mektubu gündelik ve somut kılmış.",
+      "sadakat": "İsteklere büyük ölçüde uyulmuş ancak ikmal bilgisi olan 'erzak indirme' kısmı sansür işaretinin dışında bırakılmış.",
+      "sahicilik": "Terzi bir askerin cephedeki sakin yaşamı ve kavgayı gizleme çabası çok doğal ve inandırıcı verilmiş."
+    },
+    "issues": [
+      {
+        "line": "Benim de hâlim vaktim yerindedir.",
+        "problem": "'Hâlim vaktim yerinde' ifadesi genellikle maddi durumun iyi olması anlamında kullanılır; cephedeki bir asker için 'hâlim sıhhatim' daha doğrudur.",
+        "suggestion": "Benim de hâlim sıhhatim yerindedir."
+      },
+      {
+        "line": "Dün ⟦Akbaş iskelesine⟧ erzak indirmeye gittik, yolda epeyce konuştuk.",
+        "problem": "Kural 10'a göre ikmal bilgileri de askerî bilgidir; 'erzak indirmek' eylemi de sansür işaretleri içinde yer almalıdır.",
+        "suggestion": "Dün ⟦Akbaş iskelesine erzak indirmeye⟧ gittik, yolda epeyce konuştuk."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

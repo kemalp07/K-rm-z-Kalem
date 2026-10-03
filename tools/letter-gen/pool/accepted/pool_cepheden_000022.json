@@ -1,0 +1,271 @@
+{
+  "id": "pool_cepheden_000022",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Salih",
+    "epithet": "Afyonlu",
+    "age": 26,
+    "hometown": "Afyon",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Latif",
+    "relation": "oğlu",
+    "location": "Afyon, Bolvadin kazası, Eğrisu karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 84,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 8 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Latif'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Latif mektubunuz geldi okudum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Hıdrellez geçmiş köyde ateş yakıp atladınızmı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ben burda ateşi rüyamda gördüm uyandım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ananın sözünden çıkma ekinleri yabana yedirme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen sene bindiğin kır tay büyüdümü onuda yazasın bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kardeşin Elife de söyle ağlamasın babam geliyo desin herkeze.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim buralar sıcak oldu gayri.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sana tahtadan at yapıyodum vakit bulamadım yarım kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Köydeki emmilere dayılara selam et ellerinden öp.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Benim yerime koyunları sağmaya sen git artık koca adam oldun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Evin direği sensin gayri anana yardım edesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çabuk cevap yazın bekleyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözlerinden öperim.",
+  "signature": {
+    "text": "Baban Salih"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Afyon, Bolvadin kazası, Eğrisu karyesi, Muhtar Hasan Ağa vasıtasıyla Latif'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Salih, Afyonlu, 26, çiftçi, onbaşı (Afyon, Bolvadin kazası, Eğrisu karyesi)\nAlıcı: Oğlu Latif, Afyon, Bolvadin kazası, Eğrisu karyesi\nYön: cepheden\nTarih: 8 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 84",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Salih",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Afyon",
+        "occupation": "çiftçi",
+        "epithet": "Afyonlu",
+        "place": "Bolvadin kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Latif",
+        "gender": "erkek",
+        "age": 9,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bolvadin kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Afyon, Bolvadin kazası, Eğrisu karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 84,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "8 Mayıs 1331",
+      "home_address": "Afyon, Bolvadin kazası, Eğrisu karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5632,
+      "output": 2405
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 8 Mayıs 1331\nHİTAP: Oğlum Latif'e\nGÖVDE: Latif mektubunuz geldi okudum. Hıdrellez geçmiş köyde ateş yakıp atladınızmı. Ben burda ateşi rüyamda gördüm uyandım. Ananın sözünden çıkma ekinleri yabana yedirme. Geçen sene bindiğin kır tay büyüdümü onuda yazasın bana. Kardeşin Elife de söyle ağlamasın babam geliyo desin herkeze. Bizim buralar sıcak oldu gayri. Sana tahtadan at yapıyodum vakit bulamadım yarım kaldı. Köydeki emmilere dayılara selam et ellerinden öp. Benim yerime koyunları sağmaya sen git artık koca adam oldun. Evin direği sensin gayri anana yardım edesin. Çabuk cevap yazın bekleyorum.\nKAPANIŞ: Gözlerinden öperim.\nİMZA: Baban Salih\nZARF: Afyon, Bolvadin kazası, Eğrisu karyesi, Muhtar Hasan Ağa vasıtasıyla Latif'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 84 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4801,
+      "output": 2677
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Döneme ait kelimeler kullanılmış, modern veya yabancı hiçbir ifadeye yer verilmemiş.",
+      "olculuk": "Duygular isimlendirilmeden, tahta at yapmak ve rüyada ateş görmek gibi somut eylemlerle çok ölçülü hissettirilmiş.",
+      "okuryazarlik": "Kısa cümleler, bitişik yazılan soru ekleri ve 'herkeze', 'bekleyorum' gibi imla hatalarıyla düşük okuryazarlık kusursuz yansıtılmış.",
+      "somutluk": "Kır tay, ekinler, tahta at gibi detaylar çok başarılı ancak erkek çocuğa koyun sağma görevi verilmesi dönemin köy hayatı işbölümüne pek uymuyor.",
+      "sadakat": "İstenen konu, uzunluk, yazma biçimi ve karakterin sevecen ama kaba sesi mektuba tam olarak aktarılmış.",
+      "sahicilik": "Genel hissiyat çok gerçekçi olsa da, köy yerinde koyun sağmak kadın işi kabul edildiğinden bir babanın oğluna bunu 'koca adam oldun' diyerek vermesi kültürel olarak sırıtıyor."
+    },
+    "issues": [
+      {
+        "line": "Benim yerime koyunları sağmaya sen git artık koca adam oldun.",
+        "problem": "Anadolu köy kültüründe hayvan sağmak genellikle kadınların işidir; bir babanın oğluna büyüdüğünü göstermek için sağım işi vermesi dönemin gerçekliğine uymaz.",
+        "suggestion": "Benim yerime koyunları gütmeye sen git artık koca adam oldun."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

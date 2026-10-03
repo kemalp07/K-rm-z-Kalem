@@ -1,0 +1,265 @@
+{
+  "id": "pool_cepheden_000046",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Asım",
+    "epithet": "Amasyalı",
+    "age": 23,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Sabiha",
+    "relation": "annesi",
+    "location": "Amasya, Merzifon kazası, Kocaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 98,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Sabiha'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ben sağım ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana kâğıt yolladım niye cevap yazmeyon.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köye posta gelmiyo mu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ben burdayım sağlığım yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen o tarlayı kime sürdürdün onu hemen bana yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tohumu ziyan etmeyin çapa vaktidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Koyunları yaylaya çıkarırken çobana tembih et kuzuları telef etmesin göz kulak olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Emmime de söyle o kahveciye olan borcunu ödesin lafımı ikiletmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geceleri buralar çok esiyo ama iyiyiz bişeyimiz yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Küçük Hasan'a da söyle o sarı katırı sakın satmasın ben gelince harmana lazım olacak o hayvan.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kâğıdı eline alınca hemen muhtara git cevap yazdır beni burda bekletme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Cümle aleme selam ettim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Oğlun Asım"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Amasya, Merzifon kazası, Kocaköy karyesi, Muhtar Ali Ağa vasıtasıyla Sabiha Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Asım, Amasyalı, 23, çiftçi, onbaşı (Amasya, Merzifon kazası, Kocaköy karyesi)\nAlıcı: Annesi Sabiha Hanım, Amasya, Merzifon kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 20 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 98",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Asım",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Merzifon kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Sabiha",
+        "gender": "kadın",
+        "age": 53,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Merzifon kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Amasya, Merzifon kazası, Kocaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "korktuğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 98,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "20 Nisan 1331",
+      "home_address": "Amasya, Merzifon kazası, Kocaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5630,
+      "output": 2963
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Nisan 1331\nHİTAP: Anam Sabiha'ya\nGÖVDE: Ben sağım ayaktayım. Sana kâğıt yolladım niye cevap yazmeyon. Köye posta gelmiyo mu. Ben burdayım sağlığım yerinde. Sen o tarlayı kime sürdürdün onu hemen bana yaz. Tohumu ziyan etmeyin çapa vaktidir. Koyunları yaylaya çıkarırken çobana tembih et kuzuları telef etmesin göz kulak olsun. Emmime de söyle o kahveciye olan borcunu ödesin lafımı ikiletmesin. Geceleri buralar çok esiyo ama iyiyiz bişeyimiz yok. Küçük Hasan'a da söyle o sarı katırı sakın satmasın ben gelince harmana lazım olacak o hayvan. Kâğıdı eline alınca hemen muhtara git cevap yazdır beni burda bekletme. Cümle aleme selam ettim.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Oğlun Asım\nZARF: Amasya, Merzifon kazası, Kocaköy karyesi, Muhtar Ali Ağa vasıtasıyla Sabiha Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "92 kelime, hedef 98 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4817,
+      "output": 2875
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem diline ve köylü ağzına tam uyumlu, modern kelime içermiyor.",
+      "olculuk": "Duygular hiç adlandırılmamış, tamamen somut işler ve emirler üzerinden aktarılmış.",
+      "okuryazarlik": "Noktalama eksiklikleri ve yazmeyon gibi imla hatalarıyla düşük okuryazarlık kusursuz verilmiş.",
+      "somutluk": "Sarı katır, kahveciye borç ve çapa vakti gibi detaylarla muazzam bir somutluk sağlanmış.",
+      "sadakat": "Sert ses tonu, gizlenen korku ve diğer tüm istekler eksiksiz ve tam kararında uygulanmış.",
+      "sahicilik": "Korkusunu emir yağdırarak bastıran çiftçi asker profili son derece inandırıcı ve doğal."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

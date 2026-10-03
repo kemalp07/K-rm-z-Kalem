@@ -1,0 +1,273 @@
+{
+  "id": "pool_cepheden_000012",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Zeki",
+    "epithet": "İstanbullu",
+    "age": 43,
+    "hometown": "Dersaadet",
+    "occupation": "imam",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Kadir",
+    "relation": "oğlu",
+    "location": "Dersaadet, Kasımpaşa, Camiikebir mahallesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 63,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Kadir'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bu ikinci kâğıdım, hani cevap yazmadın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kasımpaşa'dan Berber Salih'in çırağı bizim bölüğe düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sizi sormuş, kahvenin önünde görmüş seni, iyiymişsiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Havalar ısındı buralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Benim hâlim vaktim yerindedir, merak edilecek bir şey yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Un, şeker bulunmuyor derler oralar için, anana mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kardeşlerinin başından ayrılma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Fırın kuyruklarında eziyet çekmesinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bana dua edin yeter.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Cevabını tez yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Baban Çavuş Zeki"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Dersaadet, Kasımpaşa, Camiikebir mahallesi, Bakkal Nuri Efendi vasıtasıyla Kadir''e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zeki, İstanbullu, 43, imam, çavuş (Dersaadet, Kasımpaşa, Camiikebir mahallesi)\nAlıcı: Oğlu Kadir, Dersaadet, Kasımpaşa, Camiikebir mahallesi\nYön: cepheden\nTarih: 23 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: dertli, ama dertlerini söylemez\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 63",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Zeki",
+        "gender": "erkek",
+        "age": 43,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Dersaadet",
+        "occupation": "imam",
+        "epithet": "İstanbullu",
+        "place": "Kasımpaşa, Camiikebir mahallesi"
+      },
+      "recipient": {
+        "name": "Kadir",
+        "gender": "erkek",
+        "age": 13,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kasımpaşa, Camiikebir mahallesi"
+      },
+      "recipient_location": "Dersaadet, Kasımpaşa, Camiikebir mahallesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 63,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "23 Nisan 1331",
+      "home_address": "Dersaadet, Kasımpaşa, Camiikebir mahallesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5819,
+      "output": 2392
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Nisan 1331\nHİTAP: Oğlum Kadir'e\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Bu ikinci kâğıdım, hani cevap yazmadın. Kasımpaşa'dan Berber Salih'in çırağı bizim bölüğe düştü. Sizi sormuş, kahvenin önünde görmüş seni, iyiymişsiniz. Şükür. Havalar ısındı buralarda. Benim hâlim vaktim yerindedir, merak edilecek bir şey yok. Un, şeker bulunmuyor derler oralar için, anana mukayyet ol. Kardeşlerinin başından ayrılma. Fırın kuyruklarında eziyet çekmesinler. Bana dua edin yeter. Cevabını tez yolla.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Baban Çavuş Zeki\nZARF: Dersaadet, Kasımpaşa, Camiikebir mahallesi, Bakkal Nuri Efendi vasıtasıyla Kadir''e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 63 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4793,
+      "output": 2570
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemin ruhu modern ifadeye kaçılmadan yansıtılmış.",
+      "olculuk": "Duygular adlandırılmamış, babanın gizli kederi sadece somut öğütler üzerinden verilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade ve kısa cümleler kurulmuş.",
+      "somutluk": "Berber Salih'in çırağı, kahvenin önü, un ve şeker kıtlığı gibi çok canlı detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluğa, konuya, saklanan bilgiye ve cevapsız kalma durumuna tam olarak uyulmuş.",
+      "sahicilik": "İstanbullu bir babanın cepheden ailesine duyduğu kaygıyı son derece doğal bir tonda aktarıyor."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Dersaadet, Kasımpaşa, Camiikebir mahallesi, Bakkal Nuri Efendi vasıtasıyla Kadir''e",
+        "problem": "Kadir isminden sonra fazladan bir kesme işareti kullanılmış.",
+        "suggestion": "ZARF: Dersaadet, Kasımpaşa, Camiikebir mahallesi, Bakkal Nuri Efendi vasıtasıyla Kadir'e"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

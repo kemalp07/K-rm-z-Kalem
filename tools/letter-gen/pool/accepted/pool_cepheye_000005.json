@@ -1,0 +1,293 @@
+{
+  "id": "pool_cepheye_000005",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Tevfik",
+    "epithet": "Kâtip",
+    "age": 56,
+    "hometown": "Konya",
+    "occupation": "kâtip",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Bekir",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 122,
+  "hand": "elegant",
+  "header": {
+    "text": "Ortaköy, 29 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Bekir'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubumu alır almaz okuyup derhal cevabını yazasın, ihmal etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Köyde işler bildiğin minval üzere yürüyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen hafta Hacı Süleyman'ın büyük kızı Zehra'yı, Demircilerin büyük oğluyla evlendirdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Adet yerini bulsun diye sessizce verdik gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Eski muhtar kahveci Salih Efendi perşembe günü vefat etti, cuma namazından sonra toprağa verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Meydan kahvesi şimdilik kapalı duruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ben günlerdir odamdan pek çıkmıyorum, içeride eski defterleri tanzim etmekle meşgulüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tarladaki ufak tefek işleri ananla kardeşin bir şekilde halletmeye gayret ediyorlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana bu kâğıtla beraber bir bez torba yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İçine ananın hazırladığı güz pestillerinden, biraz da bizim bağın kuru üzümünden koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Torbanın dibine de hocaya hususi yazdırdığım yeni bir muska iliştirdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Onu boynundan katiyen çıkarma, daima üstünde taşı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Askerlik vazifeni layıkıyla ifa et, aklın buralarda kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Yolladıklarımı idareli tüket.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Pederin Tevfik"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Ilgınlı Bekir'e",
+    "sensitive": false
+  },
+  "package": [
+    "kuru üzüm",
+    "muska",
+    "pestil"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tevfik, Kâtip, 56, kâtip (Konya, Ilgın kazası, Ortaköy karyesi)\nAlıcı: Oğlu Çavuş Bekir, cephede\nYön: cepheye\nTarih: 29 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: sert, emir verir gibi yazar\nKonu: köyden haberler, kim evlendi kim öldü\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: kuru üzüm, muska, pestil\nUzunluk: 122",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Tevfik",
+        "gender": "erkek",
+        "age": 56,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": "kâtip",
+        "epithet": "Kâtip",
+        "place": "Ilgın kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ilgın kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "köyden haberler, kim evlendi kim öldü",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 122,
+      "package": [
+        "kuru üzüm",
+        "muska",
+        "pestil"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "29 Mayıs 1331",
+      "home_address": "Konya, Ilgın kazası, Ortaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5733,
+      "output": 4585
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ortaköy, 29 Mayıs 1331\nHİTAP: Oğlum Bekir'e\nGÖVDE: Mektubumu alır almaz okuyup derhal cevabını yazasın, ihmal etmeyesin. Köyde işler bildiğin minval üzere yürüyor. Geçen hafta Hacı Süleyman'ın büyük kızı Zehra'yı, Demircilerin büyük oğluyla evlendirdik. Adet yerini bulsun diye sessizce verdik gitti. Eski muhtar kahveci Salih Efendi perşembe günü vefat etti, cuma namazından sonra toprağa verdik. Meydan kahvesi şimdilik kapalı duruyor. Ben günlerdir odamdan pek çıkmıyorum, içeride eski defterleri tanzim etmekle meşgulüm. Tarladaki ufak tefek işleri ananla kardeşin bir şekilde halletmeye gayret ediyorlar. Sana bu kâğıtla beraber bir bez torba yolladım. İçine ananın hazırladığı güz pestillerinden, biraz da bizim bağın kuru üzümünden koydum. Torbanın dibine de hocaya hususi yazdırdığım yeni bir muska iliştirdim. Onu boynundan katiyen çıkarma, daima üstünde taşı. Askerlik vazifeni layıkıyla ifa et, aklın buralarda kalmasın. Yolladıklarımı idareli tüket.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Pederin Tevfik\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Ilgınlı Bekir'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "122 kelime, hedef 122 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4916,
+      "output": 3019
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtip diline uygun Osmanlıca kelimeler başarıyla kullanılmış, ancak 'tüketmek' kelimesinin kullanımı modern anlama kaymış.",
+      "olculuk": "Duygular tamamen somut olaylar ve emir kipleri üzerinden, isimlendirilmeden ve abartısız aktarılmış.",
+      "okuryazarlik": "Kâtip olan babanın otoriter, resmi ve eğitimli üslubu mektubun tamamına çok iyi yansıtılmış.",
+      "somutluk": "Köydeki vefat, evlilik, kahvenin durumu ve paketteki ürünler gibi detaylar mektubu çok somut kılmış.",
+      "sadakat": "Hastalığını defter tanzimi bahanesiyle gizlemesi ve istenen tüm unsurların eksiksiz yer alması harika.",
+      "sahicilik": "Sert mizaçlı bir babanın cephedeki oğluna yazdığı gerçek bir mektup hissini tam anlamıyla veriyor."
+    },
+    "issues": [
+      {
+        "line": "Yolladıklarımı idareli tüket.",
+        "problem": "'Tüketmek' kelimesi o dönemde gündelik yiyecek harcamak anlamından ziyade 'yok etmek, bitirmek, mahvetmek' anlamında kullanılırdı.",
+        "suggestion": "Yolladıklarımı idareli kullan."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

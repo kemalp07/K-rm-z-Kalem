@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000015",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "İbrahim",
+    "epithet": "Nalbant",
+    "age": 31,
+    "hometown": "Diyarbekir",
+    "occupation": "nalbant",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Mahmut",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "çarşıdaki arzuhalci",
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 87,
+  "hand": "dictated",
+  "header": {
+    "text": "Ergani, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem kardeşim Mahmut'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kardeşim, hâlimizi sual edersen şükür hepimiz ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen ay bir kâğıt daha yolladım ama cevabın gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Gözümüz yolda, merakta koyma bizi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sana bu kâğıtla beraber bir paket hazırlattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "İçine içesin diye az tütün, ananın eğirdiği yünden bir çift kalın çorap, bir de Hacı Veli'den kuru üzüm koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim oğlan Hasan her gün emmim ne zaman gelecek diye soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Küçük Zeynep de dükkâna koşup seni arıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dükkânı şimdilik çırağa bıraktım, o idare ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Baki selam eyler, dualar ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cenab-ı Hak'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "İbrahim"
+  },
+  "note": {
+    "text": "İşbu mektup çarşı arzuhalcisi Şükrü eliyle kaleme alınmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Taşpınarlı Mahmut'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İbrahim, Nalbant, 31, nalbant (Diyarbekir, Ergani kazası, Taşpınar karyesi)\nAlıcı: Kardeşi Er Mahmut, cephede\nYön: cepheye\nTarih: 30 Nisan 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: çarşıdaki arzuhalci)\nOkuryazarlık: düşük\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: paketle gönderilen şeyler\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 87",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "İbrahim",
+        "gender": "erkek",
+        "age": 31,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": "nalbant",
+        "epithet": "Nalbant",
+        "place": "Ergani kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Mahmut",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ergani kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "low",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "paketle gönderilen şeyler",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 87,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "30 Nisan 1331",
+      "home_address": "Diyarbekir, Ergani kazası, Taşpınar karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5796,
+      "output": 4334
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ergani, 30 Nisan 1331\nHİTAP: Muhterem kardeşim Mahmut'a\nGÖVDE: Evvela selam eder, iki gözlerinden hasretle öperim. Kardeşim, hâlimizi sual edersen şükür hepimiz ayaktayız. Geçen ay bir kâğıt daha yolladım ama cevabın gelmedi. Gözümüz yolda, merakta koyma bizi. Sana bu kâğıtla beraber bir paket hazırlattım. İçine içesin diye az tütün, ananın eğirdiği yünden bir çift kalın çorap, bir de Hacı Veli'den kuru üzüm koydum. Bizim oğlan Hasan her gün emmim ne zaman gelecek diye soruyor. Küçük Zeynep de dükkâna koşup seni arıyor. Dükkânı şimdilik çırağa bıraktım, o idare ediyor. Baki selam eyler, dualar ederim.\nKAPANIŞ: Cenab-ı Hak'a emanet ol.\nİMZA: (mühür: İbrahim)\nNOT: İşbu mektup çarşı arzuhalcisi Şükrü eliyle kaleme alınmıştır.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Taşpınarlı Mahmut'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "84 kelime, hedef 87 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4841,
+      "output": 3536
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Arzuhalci ağzına uygun, dönemin kelimeleri (evvela, sual, baki, işbu) yerinde ve doğru kullanılmış.",
+      "olculuk": "Duygular genel olarak eylemlerle somutlaştırılmış ancak 'hasretle' kelimesi duygu adlandırma kuralını hafifçe ihlal ediyor.",
+      "okuryazarlik": "Kâtibe yazdırılan mektupların o kalıplı giriş-çıkışları ile köylünün sade taleplerinin birleşimi çok iyi yansıtılmış.",
+      "somutluk": "Tütün, ananın eğirdiği yün çorap, Hacı Veli'nin kuru üzümü ve dükkân gibi gündelik detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen tüm unsurlar (hastalığı gizleme, paket içeriği, arzuhalci notu, cevapsız kalma durumu) eksiksiz işlenmiş.",
+      "sahicilik": "Hastalığını doğrudan söylemeyip 'şükür ayaktayız' ve 'dükkânı çırağa bıraktım' diyerek gizlemesi çok zekice ve sahici bir detay."
+    },
+    "issues": [
+      {
+        "line": "Evvela selam eder, iki gözlerinden hasretle öperim.",
+        "problem": "Kural 4 gereği duygu adlandırılmamalıdır; 'hasretle' kelimesi doğrudan duygu ismidir ve kuralı esnetmektedir.",
+        "suggestion": "Evvela selam eder, iki gözlerinden öperim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

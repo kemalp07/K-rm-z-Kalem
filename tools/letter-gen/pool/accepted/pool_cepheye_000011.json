@@ -1,0 +1,317 @@
+{
+  "id": "pool_cepheye_000011",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ahmet",
+    "epithet": "Eskişehirli",
+    "age": 15,
+    "hometown": "Eskişehir",
+    "occupation": "ırgat",
+    "relation": "oğlu"
+  },
+  "recipient": {
+    "name": "Ömer",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 110,
+  "hand": "hurried",
+  "header": {
+    "text": "Yeniköy, 28 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Babam Ömer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Geçen yolladığın kağıtı okuduk herkez selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Dün Hıdrellez idi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Akşam yemeğe oturduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sofra bezini serdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Anam oturdu kardeşim Hasan oturdu küçük Ayşe de oturdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Senin yerin köşede boş kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Minderini koymadık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kaşıkları tek tek dizdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bir iki üç dört kaşık koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Senin tahta kaşığını sandığa kaldırdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yemekte koca tas tarhana yedik bir baş soğan kırdık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sana bir paket hazırladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "İçine anam ördüğü yün eldiveni koydu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Ben güzden ayırdığım kuru duttan koydum bir de kuşburnu marmelatı sardım beze akmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Hasan iki tane ceviz sıkıştırdı içine.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "İnek günde üç kilo süt veriyo bu ara ahırdaki saman da bitti bitecek otlarla idare ediyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Tarlada çapa vakti geliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Bizi merak etme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden öperim baba.",
+  "signature": {
+    "text": "Oğlun Ahmet"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Ömer'e",
+    "sensitive": false
+  },
+  "package": [
+    "yün eldiven",
+    "kuru dut",
+    "kuşburnu marmelatı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ahmet, Eskişehirli, 15, ırgat (Eskişehir, Mihalıççık kazası, Yeniköy karyesi)\nAlıcı: Babası Er Ömer, cephede\nYön: cepheye\nTarih: 28 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: yün eldiven, kuru dut, kuşburnu marmelatı\nUzunluk: 110",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ahmet",
+        "gender": "erkek",
+        "age": 15,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "ırgat",
+        "epithet": "Eskişehirli",
+        "place": "Mihalıççık kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Ömer",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mihalıççık kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 110,
+      "package": [
+        "yün eldiven",
+        "kuru dut",
+        "kuşburnu marmelatı"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "28 Nisan 1331",
+      "home_address": "Eskişehir, Mihalıççık kazası, Yeniköy karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5746,
+      "output": 3724
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 28 Nisan 1331\nHİTAP: Babam Ömer'e\nGÖVDE: Geçen yolladığın kağıtı okuduk herkez selam ediyo. Dün Hıdrellez idi. Akşam yemeğe oturduk. Sofra bezini serdim. Anam oturdu kardeşim Hasan oturdu küçük Ayşe de oturdu. Senin yerin köşede boş kaldı. Minderini koymadık. Kaşıkları tek tek dizdim. Bir iki üç dört kaşık koydum. Senin tahta kaşığını sandığa kaldırdım. Yemekte koca tas tarhana yedik bir baş soğan kırdık. Sana bir paket hazırladık. İçine anam ördüğü yün eldiveni koydu. Ben güzden ayırdığım kuru duttan koydum bir de kuşburnu marmelatı sardım beze akmasın. Hasan iki tane ceviz sıkıştırdı içine. İnek günde üç kilo süt veriyo bu ara ahırdaki saman da bitti bitecek otlarla idare ediyoz. Tarlada çapa vakti geliyo. Bizi merak etme.\nKAPANIŞ: Ellerinden öperim baba.\nİMZA: Oğlun Ahmet\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Ömer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "108 kelime, hedef 110 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4858,
+      "output": 2669
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili genel olarak başarılı ancak köylü ağzında 'kilo' yerine 'okka' veya 'bakraç' kullanımı daha uygundur.",
+      "olculuk": "Duygular hiç adlandırılmamış, babanın yokluğu sadece kaşıkların sayılıp sandığa kaldırılmasıyla çok ölçülü ve etkili verilmiş.",
+      "okuryazarlik": "Kısa cümleler, bağlaç eksikliği ve 'herkez', 'ediyo' gibi bilinçli imla hataları düşük okuryazarlık seviyesini tam yansıtıyor.",
+      "somutluk": "Tarhana, soğan, tahta kaşık, sandık ve çapa vakti gibi detaylarla mektup son derece somut kılınmış.",
+      "sadakat": "İstenen tüm ögeler (paket, konu, titiz ses) mektuba yedirilmiş, unun yokluğu da ekmekten hiç bahsedilmeyerek zekice saklanmış.",
+      "sahicilik": "Çocuğun sofradaki kişileri ve kaşıkları tek tek sayması, karakterin titiz sesine ve yaşına çok uygun, sahici bir atmosfer yaratmış."
+    },
+    "issues": [
+      {
+        "line": "İnek günde üç kilo süt veriyo bu ara ahırdaki saman da bitti bitecek otlarla idare ediyoz.",
+        "problem": "1915 yılında bir Anadolu köylüsünün sütü 'kilo' ile ölçmesi anokroniktir; 'okka' veya 'bakraç' gibi ölçüler kullanılırdı.",
+        "suggestion": "İnek günde üç okka süt veriyo bu ara ahırdaki saman da bitti bitecek otlarla idare ediyoz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000042",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Server",
+    "epithet": "Kastamonulu",
+    "age": 24,
+    "hometown": "Kastamonu",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Kadriye",
+    "relation": "nişanlısı",
+    "location": "Kastamonu, İnebolu kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "high",
+  "length_target": 79,
+  "hand": "hurried",
+  "header": {
+    "text": "Seddülbahir, 29 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Kadriye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kadriyem kâadı aldım çok sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Köyden Demirci Alinin oğlu Hüseyin geldi geçen gün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Onu gördüm dünyalar benim oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Onu hemen bizim ikinci tabur üçüncü bölüğe verdiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Beraber oturduk köyü Kastamonuyu konuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Havalar çok ısındı bizim buralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Emmimin çocukları Ayşe nası Hasan nası onlara iyi bak gözlerinden öp benim için.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben çok iyiyim bi derdim yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dün üç yüz asker daha geldi tepeye.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Koyunları naptınız yünleri kırkıp satınca parayı sakla sağa sola borç verme düğüne lazım olur çabuk kâat yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allaha emanet ol.",
+  "signature": {
+    "text": "Server"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kastamonu, İnebolu kazası, Kurtköy karyesi, İmam Rıza Efendi vasıtasıyla Kadriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Server, Kastamonulu, 24, çoban, onbaşı (Kastamonu, İnebolu kazası, Kurtköy karyesi)\nAlıcı: Nişanlısı Kadriye Hanım, Kastamonu, İnebolu kazası, Kurtköy karyesi\nYön: cepheden\nTarih: 29 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 79",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Server",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kastamonu",
+        "occupation": "çoban",
+        "epithet": "Kastamonulu",
+        "place": "İnebolu kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Kadriye",
+        "gender": "kadın",
+        "age": 21,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "İnebolu kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Kastamonu, İnebolu kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "high",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "kısa",
+      "length_target": 79,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "29 Mayıs 1331",
+      "home_address": "Kastamonu, İnebolu kazası, Kurtköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5664,
+      "output": 4549
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 29 Mayıs 1331\nHİTAP: Kadriye'ye\nGÖVDE: Kadriyem kâadı aldım çok sevindim. Köyden Demirci Alinin oğlu Hüseyin geldi geçen gün. Onu gördüm dünyalar benim oldu. ⟦Onu hemen bizim ikinci tabur üçüncü bölüğe verdiler.⟧ Beraber oturduk köyü Kastamonuyu konuştuk. Havalar çok ısındı bizim buralarda. Emmimin çocukları Ayşe nası Hasan nası onlara iyi bak gözlerinden öp benim için. Ben çok iyiyim bi derdim yok. ⟦Dün üç yüz asker daha geldi tepeye.⟧ Koyunları naptınız yünleri kırkıp satınca parayı sakla sağa sola borç verme düğüne lazım olur çabuk kâat yolla.\nKAPANIŞ: Allaha emanet ol.\nİMZA: Server\nZARF: Kastamonu, İnebolu kazası, Kurtköy karyesi, İmam Rıza Efendi vasıtasıyla Kadriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "79 kelime, hedef 79 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 29 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4814,
+      "output": 2403
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 2,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler döneme ve yöreye uygun, modern bir ifade barındırmıyor.",
+      "olculuk": "Mektupta 'çok sevindim' ve 'dünyalar benim oldu' gibi doğrudan duygu adlandıran ve abartılı ifadeler kullanılarak temel kurallar ihlal edilmiş.",
+      "okuryazarlik": "Noktalama eksiklikleri, bağlaçsız kısa cümleler ve 'kâat', 'nası' gibi yazımlar düşük okuryazarlığı çok iyi yansıtıyor.",
+      "somutluk": "Koyunların yünü, düğün parası ve emmi çocukları gibi gündelik detaylar mektubu oldukça somut kılmış.",
+      "sadakat": "İstenen tüm unsurlar, gizlenen kavga olayı (iyi olduğu söylenerek geçiştirilmiş) ve sansür kuralları başarıyla uygulanmış.",
+      "sahicilik": "Duygu adlandırmaları dışında köylü bir askerin nişanlısına yazdığı telaşlı ve samimi mektup hissini veriyor."
+    },
+    "issues": [
+      {
+        "line": "Kadriyem kâadı aldım çok sevindim.",
+        "problem": "Duygu doğrudan adlandırılmış ('çok sevindim'), bu durum temel kurallara aykırıdır.",
+        "suggestion": "Kadriyem kâadı aldım."
+      },
+      {
+        "line": "Onu gördüm dünyalar benim oldu.",
+        "problem": "Duygu adlandırma ve klişe deyim kullanımı var, duygu somut olaylarla hissettirilmeli.",
+        "suggestion": "Onu görünce köyü görmüş gibi oldum."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "id": "pool_cepheye_000037",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazife",
+    "epithet": "Denizlili",
+    "age": 14,
+    "hometown": "Denizli",
+    "occupation": "çiftçi",
+    "relation": "kızı"
+  },
+  "recipient": {
+    "name": "Kâmil",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 70,
+  "hand": "hurried",
+  "header": {
+    "text": "Sarıyar, 11 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Babam Kâmil'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Babacığım mektubun gelmeyo epeydir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gözümüz yolda galdı köyde herkez iyi biz de iyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Merak etmeyesin tarlada ot yoldum bugün hava epey sıcak oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ahırdaki sarı koyun ikiz doğurdu sabahtan akşama onlarla uğraşıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen nasılsın kâğıdın bitmişse köyden yollayalım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kimsede bir dert yok rahatız hepimiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tek sen kâğıt yazmayınca muhtarın yolunu gözleyoz sabahları.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anamın çok selamı var Hasan emmim de kahvede sordu seni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bize acele yaz geceleri yatarken dua ediyoz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden hasretle öperim.",
+  "signature": {
+    "text": "Kızın Nazife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Tavaslı Kâmil'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazife, Denizlili, 14, çiftçi (Denizli, Tavas kazası, Sarıyar karyesi)\nAlıcı: Babası Er Kâmil, cephede\nYön: cepheye\nTarih: 11 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: mektup gelmediği için endişe\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 70",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazife",
+        "gender": "kadın",
+        "age": 14,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": "çiftçi",
+        "epithet": "Denizlili",
+        "place": "Tavas kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Kâmil",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tavas kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 70,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "11 Mayıs 1331",
+      "home_address": "Denizli, Tavas kazası, Sarıyar karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5629,
+      "output": 2468
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 11 Mayıs 1331\nHİTAP: Babam Kâmil'e\nGÖVDE: Babacığım mektubun gelmeyo epeydir. Gözümüz yolda galdı köyde herkez iyi biz de iyiyiz. Merak etmeyesin tarlada ot yoldum bugün hava epey sıcak oldu. Ahırdaki sarı koyun ikiz doğurdu sabahtan akşama onlarla uğraşıyom. Sen nasılsın kâğıdın bitmişse köyden yollayalım. Kimsede bir dert yok rahatız hepimiz. Tek sen kâğıt yazmayınca muhtarın yolunu gözleyoz sabahları. Anamın çok selamı var Hasan emmim de kahvede sordu seni. Bize acele yaz geceleri yatarken dua ediyoz.\nKAPANIŞ: Ellerinden hasretle öperim.\nİMZA: Kızın Nazife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Tavaslı Kâmil'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "69 kelime, hedef 70 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4786,
+      "output": 2190
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri ve yöresel ağız kullanımı başarılı olsa da 'babacığım' hitabı 1915'te köylü bir kız için fazla modern ve şehirlidir.",
+      "olculuk": "Duygular genel olarak eylemlerle gösterilmiş ancak kapanıştaki 'hasretle' kelimesi duygu adlandırma kuralını hafifçe ihlal ediyor.",
+      "okuryazarlik": "Bitişik yazılan cümleler, az noktalama ve 'herkez', 'gelmeyo' gibi hatalar düşük okuryazarlık seviyesini kusursuz yansıtıyor.",
+      "somutluk": "Tarlada ot yolma, sarı koyunun ikiz doğurması ve muhtarın yolunu gözleme gibi detaylar mektubu çok somut kılmış.",
+      "sadakat": "İstenen uzunluk, konu, saklanan bilgi (her şeyin yolunda olduğu söylenerek gizlenmiş) ve yazma biçimi yönergelerine tam uyulmuş.",
+      "sahicilik": "Köydeki sıradan hayatın ardına gizlenen dert teması ve babaya duyulan endişe mektuba çok doğal, sahici bir ton katmış."
+    },
+    "issues": [
+      {
+        "line": "GÖVDE: Babacığım mektubun gelmeyo epeydir.",
+        "problem": "'Babacığım' hitabı 1915 yılındaki köylü bir kızın diline uygun değildir, fazla modern ve şehirlidir.",
+        "suggestion": "GÖVDE: Baba mektubun gelmeyo epeydir."
+      },
+      {
+        "line": "KAPANIŞ: Ellerinden hasretle öperim.",
+        "problem": "'Hasretle' kelimesi duyguyu doğrudan adlandırma yasağını ihlal etmektedir.",
+        "suggestion": "KAPANIŞ: Ellerinden öperim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "id": "pool_cepheye_000016",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Mustafa",
+    "epithet": "Afyonlu",
+    "age": 40,
+    "hometown": "Afyon",
+    "occupation": "çiftçi",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Cafer",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 78,
+  "hand": "hurried",
+  "header": {
+    "text": "Söğütlü, 2 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardaşım Cafer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun geldi okuduk sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizi sorarsan iyiyiz ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sen bizi hiç dert etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kardaşım ben aşağdaki büyük tarlayı Kör Hasan'a icara verdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bu sene biz süremedik öküzün biri hastalandı tohumluk da yetmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hasan ekecek harman zamanı bize de biraz zahire verecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Öküzler duruyo satmadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Zaten senin emanetin onlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocuklar ellerinden öper.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Pazarda un pahalı diyolar gazyağı da bulunmuyo ama bizim unumuz var sen aklını burda koyma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sadece kendi canına mukayet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Köydeki herkez selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Ağabeyin Mustafa"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Söğütlülü Cafer'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mustafa, Afyonlu, 40, çiftçi (Afyon, Emirdağ kazası, Söğütlü karyesi)\nAlıcı: Kardeşi Çavuş Cafer, cephede\nYön: cepheye\nTarih: 2 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dertli, ama dertlerini söylemez\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Mustafa",
+        "gender": "erkek",
+        "age": 40,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": "çiftçi",
+        "epithet": "Afyonlu",
+        "place": "Emirdağ kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Cafer",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Emirdağ kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "2 Mayıs 1331",
+      "home_address": "Afyon, Emirdağ kazası, Söğütlü karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5691,
+      "output": 2705
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Söğütlü, 2 Mayıs 1331\nHİTAP: Kardaşım Cafer'e\nGÖVDE: Mektubun geldi okuduk sevindik. Bizi sorarsan iyiyiz ayaktayız. Sen bizi hiç dert etme. Kardaşım ben aşağdaki büyük tarlayı Kör Hasan'a icara verdim. Bu sene biz süremedik öküzün biri hastalandı tohumluk da yetmedi. Hasan ekecek harman zamanı bize de biraz zahire verecek. Öküzler duruyo satmadım. Zaten senin emanetin onlar. Çocuklar ellerinden öper. Pazarda un pahalı diyolar gazyağı da bulunmuyo ama bizim unumuz var sen aklını burda koyma. Sadece kendi canına mukayet ol. Köydeki herkez selam ediyo.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Ağabeyin Mustafa\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Söğütlülü Cafer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "75 kelime, hedef 78 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4790,
+      "output": 3550
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (icara vermek, zahire, mukayet olmak, gazyağı) dönemin ruhuna ve köylü diline tam uygundur.",
+      "olculuk": "Duygular adlandırılmamış, dertler somut olaylar üzerinden son derece ölçülü ve metanetli bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Kısa cümleler, noktalama eksikliği ve bilinçli imla hataları (diyolar, duruyo, herkez, aşağdaki) düşük okuryazarlık kuralını kusursuz karşılıyor.",
+      "somutluk": "Kör Hasan, hastalanan öküz, tohumluk eksikliği, gazyağı ve un fiyatları gibi çok güçlü ve inandırıcı somut detaylar barındırıyor.",
+      "sadakat": "Tarlanın borç yüzünden elden gitmesi gerçeği, öküzün hastalanması bahanesiyle çok iyi saklanmış; uzunluk ve diğer tüm isteklere uyulmuş.",
+      "sahicilik": "Cephedeki kardeşini üzmemeye çalışan, dertlerini gizleyen gerçek bir Anadolu köylüsünün mektubu kadar doğal ve sahici."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "pool_cepheden_000030",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Fikri",
+    "epithet": "Balıkesirli",
+    "age": 27,
+    "hometown": "Balıkesir",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Fevziye",
+    "relation": "karısı",
+    "location": "Balıkesir, Edremit kazası, Gökçeören karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 122,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 25 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Fevziye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Fikri der ki: Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual edersen şükür hayattayız, bir eksiğimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen yolladığın kâğıdı okuttum, vakitlice elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köydeki Bakkal Süleyman’a olan borcu sormuşsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hiç dert etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Evdeki büyük bakır kazanı satıp parasını ona verin, defterden silsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Zaten yakında koyunların yünü kırkılacak, yapağıyı kasabadaki tüccara verince elinize üç beş kuruş daha geçer.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ununuz azaldıysa komşu Halil Emmilerden şimdilik ödünç isteyin, harman vakti buğdayla ödeşirsiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ben buralarda gayet iyiyim, çadırda yatıp kalkıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gölgelik yerdeyiz, yorulacak ağır bir işim de yok bugünlerde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sabahtan akşama dinleniyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çocukların üstüne titreyin, ateşe kuyuya yaklaştırmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Babamın ellerinden, küçüklerin gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köyde beni soran bütün komşulara, emmilerime, dayılarıma hususi selamımı söyle, dualarını esirgemesinler.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Fikri"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Fikri kardaşımın ağzından silah arkadaşı Recep yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Balıkesir, Edremit kazası, Gökçeören karyesi, Muhtar vasıtasıyla Fevziye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikri, Balıkesirli, 27, ırgat, er (Balıkesir, Edremit kazası, Gökçeören karyesi)\nAlıcı: Karısı Fevziye Hanım, Balıkesir, Edremit kazası, Gökçeören karyesi\nYön: cepheden\nTarih: 25 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 122",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Balıkesir",
+        "occupation": "ırgat",
+        "epithet": "Balıkesirli",
+        "place": "Edremit kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Fevziye",
+        "gender": "kadın",
+        "age": 23,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Balıkesir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Edremit kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Balıkesir, Edremit kazası, Gökçeören karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 122,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "25 Mayıs 1331",
+      "home_address": "Balıkesir, Edremit kazası, Gökçeören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5660,
+      "output": 3731
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 25 Mayıs 1331\nHİTAP: Zevcem Fevziye Hanım'a\nGÖVDE: Fikri der ki: Evvela selam eder, iki gözlerinden öperim. Benim hâlimi sual edersen şükür hayattayız, bir eksiğimiz yoktur. Geçen yolladığın kâğıdı okuttum, vakitlice elime geçti. Köydeki Bakkal Süleyman’a olan borcu sormuşsun. Hiç dert etme. Evdeki büyük bakır kazanı satıp parasını ona verin, defterden silsin. Zaten yakında koyunların yünü kırkılacak, yapağıyı kasabadaki tüccara verince elinize üç beş kuruş daha geçer. Ununuz azaldıysa komşu Halil Emmilerden şimdilik ödünç isteyin, harman vakti buğdayla ödeşirsiniz. Ben buralarda gayet iyiyim, çadırda yatıp kalkıyoruz. Gölgelik yerdeyiz, yorulacak ağır bir işim de yok bugünlerde. Sabahtan akşama dinleniyorum. Çocukların üstüne titreyin, ateşe kuyuya yaklaştırmayın. Babamın ellerinden, küçüklerin gözlerinden hasretle öperim. Köyde beni soran bütün komşulara, emmilerime, dayılarıma hususi selamımı söyle, dualarını esirgemesinler.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Fikri)\nNOT: İşbu kâğıdı Fikri kardaşımın ağzından silah arkadaşı Recep yazdı.\nZARF: Balıkesir, Edremit kazası, Gökçeören karyesi, Muhtar vasıtasıyla Fevziye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "114 kelime, hedef 122 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000005 ile ortak: \"der ki evvela selam eder iki\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4984,
+      "output": 2196
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri ve kalıpları (evvela, sual edersen, işbu) sırıtmadan ve modern ifadelere yer verilmeden kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, askerin durumu abartısız ve son derece ölçülü bir dille aktarılmış.",
+      "okuryazarlik": "Yazdıran köylü ile yazan okuryazar askerin sesleri 'Fikri der ki' ve 'İşbu kâğıdı' gibi kalıplarla çok başarılı bir şekilde harmanlanmış.",
+      "somutluk": "Büyük bakır kazan, yapağı, Bakkal Süleyman ve Halil Emmi gibi detaylarla köy hayatı çok somut kılınmış.",
+      "sadakat": "Borç meselesi işlenmiş, hasta yatma durumu 'gölgelikte dinleniyorum' denilerek ustaca saklanmış ve tüm biçimsel kurallara uyulmuş.",
+      "sahicilik": "Askerin ailesini endişelendirmemek için hastalığını 'rahatım yerinde, dinleniyorum' diye gizlemesi mektuba muazzam bir gerçekçilik katmış."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Balıkesir, Edremit kazası, Gökçeören karyesi, Muhtar vasıtasıyla Fevziye Hanım'a",
+        "problem": "Zarf adresi kalıbında muhtarın veya aracının isminin (ör. Muhtar Hasan Ağa) belirtilmesi gerekir, sadece 'Muhtar' yazılması eksiktir.",
+        "suggestion": "Balıkesir, Edremit kazası, Gökçeören karyesi, Muhtar Hasan Ağa vasıtasıyla Fevziye Hanım'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

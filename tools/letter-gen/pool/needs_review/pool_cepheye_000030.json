@@ -1,0 +1,305 @@
+{
+  "id": "pool_cepheye_000030",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sabiha",
+    "epithet": "Afyonlu",
+    "age": 24,
+    "hometown": "Afyon",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Abdullah",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 120,
+  "hand": "hurried",
+  "header": {
+    "text": "Alacahan, 14 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardaşım Abdullah'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kardaşım Abdullah mektubun gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Köyde herkezin kağıdı geliyo posta emmiye sordum sana yok diyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Niye yazmadın kâğıt mı bitti ya da vaktin mi yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İki gözüm yolda kaldı haberini bekleyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Biz buralarda eyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tarlada ot yoluyoz bütün gün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Evde aşımız var ekmek pişiriyoz her gün kiler dolu sen sakın bizi düşünme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Geçen hafta Kel Hasan'ın kızı everildi düğün oldu pek kalabalık değildi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Havalar ısındı buralarda yağmur yağmıyo pek ekinler su bekliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ahmet emmin tarlasını sürdü koyunları da haftaya yaylaya sürücekler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Senin urbayı sandıkta havalandırdım naftalinledim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen nasılsın oralarda yatacak yerin eyi mi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bize tez haber et.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Geceleri uyku girmiyo mektup gelmeyince.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Herkeze selam ederim büyüklerin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Mektubu alınca hemen cevap yaz unutma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Bacın Sabiha"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Alacahanlı Abdullah'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sabiha Hanım, Afyonlu, 24, çiftçi (Afyon, Sandıklı kazası, Alacahan karyesi)\nAlıcı: Kardeşi Er Abdullah, cephede\nYön: cepheye\nTarih: 14 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: mektup gelmediği için endişe\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 120",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sabiha",
+        "gender": "kadın",
+        "age": 24,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": "çiftçi",
+        "epithet": "Afyonlu",
+        "place": "Sandıklı kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Abdullah",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sandıklı kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 120,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Mayıs 1331",
+      "home_address": "Afyon, Sandıklı kazası, Alacahan karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5625,
+      "output": 3076
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Alacahan, 14 Mayıs 1331\nHİTAP: Kardaşım Abdullah'a\nGÖVDE: Kardaşım Abdullah mektubun gelmedi. Köyde herkezin kağıdı geliyo posta emmiye sordum sana yok diyo. Niye yazmadın kâğıt mı bitti ya da vaktin mi yok. İki gözüm yolda kaldı haberini bekleyorum. Biz buralarda eyiyiz. Tarlada ot yoluyoz bütün gün. Evde aşımız var ekmek pişiriyoz her gün kiler dolu sen sakın bizi düşünme. Geçen hafta Kel Hasan'ın kızı everildi düğün oldu pek kalabalık değildi. Havalar ısındı buralarda yağmur yağmıyo pek ekinler su bekliyo. Ahmet emmin tarlasını sürdü koyunları da haftaya yaylaya sürücekler. Senin urbayı sandıkta havalandırdım naftalinledim. Sen nasılsın oralarda yatacak yerin eyi mi. Bize tez haber et. Geceleri uyku girmiyo mektup gelmeyince. Herkeze selam ederim büyüklerin ellerinden öperim. Mektubu alınca hemen cevap yaz unutma.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Bacın Sabiha\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Alacahanlı Abdullah'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "113 kelime, hedef 120 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000027 ile ortak: \"herkeze selam ederim büyüklerin ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4867,
+      "output": 2941
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 4,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "Köy ağzı ve dönemin kelimeleri genel olarak iyi yansıtılmış ancak 'naftalin' köy ortamı için fazla şehirli kaçmış ve cepheye yazılan mektupta 'büyüklerin ellerinden öperim' kalıbı yersiz kullanılmış.",
+      "olculuk": "Unsuzluğu saklama çabası 'her gün ekmek pişiriyoruz, kiler dolu' gibi abartılı ifadelerle çok göze sokulmuş, içine kapanık bir sese uymamış.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği, kısa cümleler ve 'herkez, geliyo, bekleyorum' gibi hatalar düşük okuryazarlık seviyesini kusursuz yansıtıyor.",
+      "somutluk": "Ot yolma, düğün, koyunların yaylaya sürülmesi gibi gündelik ve somut köy ayrıntıları mektubu zenginleştirmiş.",
+      "sadakat": "İstenen konu, yön ve yazma biçimi sağlanmış ancak karakterin 'içine kapanık ve yalnız gerekeni yazar' özelliği un meselesini saklarken bozulmuş.",
+      "sahicilik": "Un yokluğunu saklamak için kurulan cümlelerin fazlasıyla yapay durması ve cephedeki askerlere 'büyüklerin ellerinden öperim' denmesi mektubun inandırıcılığını zedelemiş."
+    },
+    "issues": [
+      {
+        "line": "Evde aşımız var ekmek pişiriyoz her gün kiler dolu sen sakın bizi düşünme.",
+        "problem": "Unsuzluğu saklamak için 'her gün ekmek pişiriyoruz, kiler dolu' demek, içine kapanık ve sadece gerekeni yazan birine göre fazla geveze ve şüphe çekici bir abartı.",
+        "suggestion": "Biz buralarda eyiyiz, bulgurumuz var kaynatıyoz sen bizi düşünme."
+      },
+      {
+        "line": "Senin urbayı sandıkta havalandırdım naftalinledim.",
+        "problem": "'Naftalin' 1915 yılında Afyon'un bir köyünde yaşayan yoksul bir çiftçi için fazla modern ve şehirli bir kelime.",
+        "suggestion": "Senin urbayı sandıkta havalandırdım güve yemesin deye."
+      },
+      {
+        "line": "Geceleri uyku girmiyo mektup gelmeyince.",
+        "problem": "Duyguyu (endişe ve uykusuzluk) doğrudan adlandırmaya çok yaklaşıyor, kural 4'e aykırı.",
+        "suggestion": "Posta emmi her geldiğinde yolunu gözlüyoz, tez yaz."
+      },
+      {
+        "line": "Herkeze selam ederim büyüklerin ellerinden öperim.",
+        "problem": "Cephedeki kardeşe yazılan bir mektupta 'büyüklerin ellerinden öperim' denmez; bu, köye yazılan mektuplara ait ezbere bir kalıptır ve cephe bağlamında mantıksızdır.",
+        "suggestion": "Yanındaki asker kardaşlara selam ederim."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

@@ -55,6 +55,11 @@ class Model(Protocol):
 class TransientError(RuntimeError):
     """Worth retrying: rate limits, server errors, dropped connections."""
 
+    def __init__(self, message: str, rate_limited: bool = False) -> None:
+        super().__init__(message)
+        # Quotas refill per minute: these need a much longer wait than a server hiccup.
+        self.rate_limited = rate_limited
+
 
 class GenaiModel:
     def __init__(self, project: str, location: str) -> None:
@@ -85,10 +90,13 @@ class GenaiModel:
             resp = await self._client.aio.models.generate_content(model=model, contents=contents, config=config)
         except errors.APIError as e:
             if e.code in (408, 429, 500, 502, 503, 504):
-                raise TransientError(f"{e.code}: {e.message}") from e
+                raise TransientError(f"{e.code}: {e.message}", rate_limited=e.code == 429) from e
             raise
-        except (OSError, asyncio.TimeoutError) as e:
-            raise TransientError(str(e)) from e
+        except Exception as e:  # noqa: BLE001
+            # Dropped connections surface as httpx/aiohttp errors of many kinds.
+            if isinstance(e, (OSError, asyncio.TimeoutError)) or type(e).__module__.split(".")[0] in ("httpx", "httpcore", "aiohttp"):
+                raise TransientError(f"{type(e).__name__}: {e}") from e
+            raise
         u = resp.usage_metadata
         usage = Usage(
             input=(u.prompt_token_count or 0) if u else 0,
@@ -110,6 +118,10 @@ class Runner:
     concurrency: int = 4
     retries: int = 5
     base_delay: float = 2.0
+    # Rate limits: wait 15 s, 30 s, … up to `max_delay`, and allow more attempts.
+    rate_delay: float = 15.0
+    rate_retries: int = 8
+    max_delay: float = 240.0
     sleep: Any = asyncio.sleep
     usage: Usage = field(default_factory=Usage)
 
@@ -126,8 +138,9 @@ class Runner:
                     reply.attempts = attempt
                     self.usage.add(reply.usage)
                     return reply
-                except TransientError:
-                    if attempt > self.retries:
+                except TransientError as e:
+                    if attempt > (self.rate_retries if e.rate_limited else self.retries):
                         raise
-                    delay = self.base_delay * 2 ** (attempt - 1)
+                    base = self.rate_delay if e.rate_limited else self.base_delay
+                    delay = min(self.max_delay, base * 2 ** (attempt - 1))
                     await self.sleep(delay + random.uniform(0, delay * 0.1))

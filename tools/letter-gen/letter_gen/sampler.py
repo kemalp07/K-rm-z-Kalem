@@ -46,6 +46,7 @@ class Request:
     package: list[str] | None = None
     prev_state: str = ""
     date: str = ""
+    closing: str = ""
     # Full home address line in the lorebook's pattern, without the go-between.
     home_address: str = ""
     # How the soldier stands to the other person ("oğlu"), for the request text.
@@ -271,6 +272,7 @@ class Sampler:
             soldier_relation=inverse,
             prev_state=self.pick_value(self.p["prev_state"]),
             date=self._date(),
+            closing=self.pick_value(self.p["closings"]) if self.p.get("closings") else "",
             home_address=home_address,
         )
 

@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheye_000022",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Mükerrem",
+    "epithet": "Aydınlı",
+    "age": 21,
+    "hometown": "Aydın",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Nazım",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 122,
+  "hand": "hurried",
+  "header": {
+    "text": "Söğütlü, 14 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Nazım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ağabeyim ellerinden öperim mektup yazdım cevap gelmeyo niye yazmadın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kâğıt mı yok vaktin mi yok herkez soruyo seni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Tarlada ekinler iyi boy verdi bu sene yağmur biraz az yağdı ama başaklar dolu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hasat yaklaştı orakları biledik köyün kadınlarıyla beraber biçecez buğdayı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Komşu Halil emmi tırpanını verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dün Fatma teyzenin kızı evlendi düğün pek olmadı tef çalmadılar sessizce gitti kız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen orda nasılsın yemek var mı uykunu alıyon mu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Geceleri rüzgar soğuk olur oralarda sana paketle bir atkı ördüm yolladım yünden boynuna sar üşüme sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ahırın çatısı akıyo onu da kiremit bulup dizicem bi ara inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizi sorma ayaktayız çalışıyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Hasan amcamın koyunu ikiz doğurdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Ağabey çabuk yaz merakta koma beni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Ekinleri dert etme biz hallediyoz sen kendine iyi bak.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Kardeşin Mükerrem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Aydınlı Nazım'a",
+    "sensitive": false
+  },
+  "package": [
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mükerrem Hanım, Aydınlı, 21, çiftçi (Aydın, Çine kazası, Söğütlü karyesi)\nAlıcı: Ağabeyi Er Nazım, cephede\nYön: cepheye\nTarih: 14 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: telaşlı, bir konudan ötekine atlar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nPaket: el örgüsü atkı\nUzunluk: 122",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Mükerrem",
+        "gender": "kadın",
+        "age": 21,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": "çiftçi",
+        "epithet": "Aydınlı",
+        "place": "Çine kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Nazım",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çine kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 122,
+      "package": [
+        "el örgüsü atkı"
+      ],
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "14 Mayıs 1331",
+      "home_address": "Aydın, Çine kazası, Söğütlü karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5733,
+      "output": 2565
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Söğütlü, 14 Mayıs 1331\nHİTAP: Ağabeyim Nazım'a\nGÖVDE: Ağabeyim ellerinden öperim mektup yazdım cevap gelmeyo niye yazmadın. Kâğıt mı yok vaktin mi yok herkez soruyo seni. Tarlada ekinler iyi boy verdi bu sene yağmur biraz az yağdı ama başaklar dolu. Hasat yaklaştı orakları biledik köyün kadınlarıyla beraber biçecez buğdayı. Komşu Halil emmi tırpanını verdi. Dün Fatma teyzenin kızı evlendi düğün pek olmadı tef çalmadılar sessizce gitti kız. Sen orda nasılsın yemek var mı uykunu alıyon mu. Geceleri rüzgar soğuk olur oralarda sana paketle bir atkı ördüm yolladım yünden boynuna sar üşüme sakın. Ahırın çatısı akıyo onu da kiremit bulup dizicem bi ara inşallah. Bizi sorma ayaktayız çalışıyoz. Hasan amcamın koyunu ikiz doğurdu. Ağabey çabuk yaz merakta koma beni. Ekinleri dert etme biz hallediyoz sen kendine iyi bak.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Kardeşin Mükerrem\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Aydınlı Nazım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "119 kelime, hedef 122 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4885,
+      "output": 2787
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Mektupta 'kendine iyi bak' gibi kesinlikle kullanılmaması gereken modern bir veda kalıbı yer alıyor.",
+      "olculuk": "Duygular ismen zikredilmemiş, abartı ve metafor kullanılmadan doğrudan olaylar üzerinden aktarılmış.",
+      "okuryazarlik": "'Herkez', 'gelmeyo' gibi kasti hatalar başarılı ancak düşük okuryazarlık için nokta kullanımı fazla düzenli.",
+      "somutluk": "Orak bileme, tırpan, kiremit dizme ve ikiz doğuran koyun gibi köy hayatına dair çok güçlü somut detaylar var.",
+      "sadakat": "Ekinlerin durumu, konudan konuya atlayan telaşlı ses, atkı paketi ve cevapsız mektup sitemi isteğe tam uygun.",
+      "sahicilik": "Köydeki gündelik yaşam ve telaşlı kız kardeş tonu çok inandırıcı, sadece modern kapanış cümlesi sırıtıyor."
+    },
+    "issues": [
+      {
+        "line": "Ekinleri dert etme biz hallediyoz sen kendine iyi bak.",
+        "problem": "'Kendine iyi bak' modern bir ifadedir ve dönem mektuplarında kesinlikle kullanılmaz.",
+        "suggestion": "Ekinleri dert etme biz hallediyoz sen Allah'a emanet ol."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

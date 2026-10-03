@@ -23,6 +23,7 @@ request_labels:
   Alıcının görmediği bilgi: unseen       # tek seferlik mektuplarda kullanılmaz
   Okunabilen kelimeler: readable_words   # tek seferlik mektuplarda kullanılmaz
   Paket: package
+  Kapanış: closing
   Uzunluk: length
   Varyasyon: variation                   # her istek tek mektup; satır yazılmaz
 
@@ -46,6 +47,26 @@ dates:
     - { value: Nisan,   days: [20, 30], weight: 1 }
     - { value: Mayıs,   days: [1, 31],  weight: 3 }
     - { value: Haziran, days: [1, 20],  weight: 2 }
+
+# Kapanış önerisi: tek başına bırakılınca model mektupların yarısını "Allah'a emanet ol" ile
+# bitiriyor. Boş değer = öneri yok, model kendisi seçer.
+closings:
+  - { value: "", weight: 25 }
+  - { value: "Allah'a emanet ol", weight: 8 }
+  - { value: "Hakkını helal et", weight: 6 }
+  - { value: "Duanı eksik etme", weight: 6 }
+  - { value: "Baki selam", weight: 5 }
+  - { value: "Çabuk cevap yaz", weight: 6 }
+  - { value: "Cevabını bekliyorum", weight: 6 }
+  - { value: "Hepinizin gözlerinden öperim", weight: 5 }
+  - { value: "Ellerinden öperim", weight: 6 }
+  - { value: "Selam ve dua ile", weight: 5 }
+  - { value: "Kalemim kısa, sözüm uzun", weight: 3 }
+  - { value: "Kusura bakma, kâğıt bitti", weight: 4 }
+  - { value: "Hüda hafız", weight: 3 }
+  - { value: "Gözüm yolda", weight: 4 }
+  - { value: "Bizi unutma", weight: 4 }
+  - { value: "Sağlıcakla kal", weight: 4 }
 
 prev_state:
   - { value: "ilk mektup", weight: 35 }

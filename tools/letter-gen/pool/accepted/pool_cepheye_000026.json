@@ -1,0 +1,286 @@
+{
+  "id": "pool_cepheye_000026",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Kemal",
+    "epithet": "Amasyalı",
+    "age": 51,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Abdullah",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 98,
+  "hand": "dictated",
+  "header": {
+    "text": "Karaağaç, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Abdullah'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Abdullah evvela selam eder iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Baban Kemal der ki: Bizim hâlimizi sorarsan ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Arpaları biçmeye başladık lakin tarlada adam kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Senin tırpanı Kör Hasan'a verdim gündelikle o yardım ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buğdaylar da haftasına tamamen sararır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Harman yerini süpürdük bekliyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Anan kışlık tarhanayı güneşe serdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Öşür memuru dersen köye indi harmana bakacakmış.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Allah devlete zeval vermesin ama elde avuçta un pek kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Komşu Rüstem'in kızı evlendi, düğün dernek kurmadılar sessizce verdik gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen oralarda nasılsın iyi misin, ayakların nasır tuttu mu, kumanya yeter mi kâğıt yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizi düşünme biz bir tas çorbayla günü ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Kemal"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Kemal Ağa'nın ağzından ben yazdım. Köyün muhtarı Salih.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Karaağaçlı Abdullah'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kemal, Amasyalı, 51, çiftçi (Amasya, Merzifon kazası, Karaağaç karyesi)\nAlıcı: Oğlu Er Abdullah, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 98",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 51,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Merzifon kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Abdullah",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Merzifon kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 98,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Haziran 1331",
+      "home_address": "Amasya, Merzifon kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5627,
+      "output": 2782
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Karaağaç, 20 Haziran 1331\nHİTAP: Oğlum Abdullah'a\nGÖVDE: Oğlum Abdullah evvela selam eder iki gözlerinden hasretle öperim. Baban Kemal der ki: Bizim hâlimizi sorarsan ayaktayız. Arpaları biçmeye başladık lakin tarlada adam kalmadı. Senin tırpanı Kör Hasan'a verdim gündelikle o yardım ediyor. Buğdaylar da haftasına tamamen sararır. Harman yerini süpürdük bekliyoruz. Anan kışlık tarhanayı güneşe serdi. Öşür memuru dersen köye indi harmana bakacakmış. Allah devlete zeval vermesin ama elde avuçta un pek kalmadı. Komşu Rüstem'in kızı evlendi, düğün dernek kurmadılar sessizce verdik gitti. Sen oralarda nasılsın iyi misin, ayakların nasır tuttu mu, kumanya yeter mi kâğıt yaz. Bizi düşünme biz bir tas çorbayla günü ediyoruz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Kemal)\nNOT: İşbu kâğıdı Kemal Ağa'nın ağzından ben yazdım. Köyün muhtarı Salih.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Karaağaçlı Abdullah'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 98 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000015 ile ortak: \"evvela selam eder iki gözlerinden hasretle\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4860,
+      "output": 2941
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan bazı kelime ve deyimler (tamamen, günü ediyoruz) dönemin köy veya muhtar dilinden ziyade modern ya da fazla kitabi kaçıyor.",
+      "olculuk": "Girişteki 'hasretle' kelimesi, duyguyu doğrudan adlandırmama kuralını hafifçe ihlal ediyor.",
+      "okuryazarlik": "Muhtarın yazım tarzı, 'der ki' kalıbı ve eklediği not ile yazdırılan mektup formatına tam uyum sağlanmış.",
+      "somutluk": "Tırpan, tarhana, öşür memuru ve harman gibi köye ait somut detaylar çok başarılı ve yerinde kullanılmış.",
+      "sadakat": "İstenen konu, gizlenen bilgi, uzunluk ve yazma biçimi gibi tüm talimatlara eksiksiz uyulmuş.",
+      "sahicilik": "Yaşlı bir çiftçinin yorgunluğu ve çaresizliği, abartısız ve son derece inandırıcı bir dille yansıtılmış."
+    },
+    "issues": [
+      {
+        "line": "Oğlum Abdullah evvela selam eder iki gözlerinden hasretle öperim.",
+        "problem": "'Hasretle' kelimesi duyguyu doğrudan adlandırıyor, mektup kurallarına göre duygu somut durumlarla hissettirilmelidir.",
+        "suggestion": "Oğlum Abdullah evvela selam eder iki gözlerinden öperim."
+      },
+      {
+        "line": "Buğdaylar da haftasına tamamen sararır.",
+        "problem": "'Tamamen' kelimesi köylü ve muhtar ağzı için fazla kitabi kalıyor.",
+        "suggestion": "Buğdaylar da haftasına iyice sararır."
+      },
+      {
+        "line": "Bizi düşünme biz bir tas çorbayla günü ediyoruz.",
+        "problem": "'Günü ediyoruz' ifadesi modern bir kullanım hissi veriyor, dönemin diline tam oturmuyor.",
+        "suggestion": "Bizi düşünme biz bir tas çorbayla idare ediyoruz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

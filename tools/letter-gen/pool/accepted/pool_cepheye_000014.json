@@ -1,0 +1,243 @@
+{
+  "id": "pool_cepheye_000014",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "İlyas",
+    "epithet": "Amasyalı",
+    "age": 61,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Sait",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 62,
+  "hand": "hurried",
+  "header": {
+    "text": "Çukurören, 5 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Sait'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum kâğıdını aldım bende sana pakette dut kurusuyla biraz leblebi koydum eline geçtimi yiyormusun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yemekler nasil tok musun orda arkadaşların iyimi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde herkez iyi sağ selamet emmin tarlaya iniyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dün caminin orda muhtar kâğıt okudu Kör Hasanın oğlu Veli şehit düşmüş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hasan emmin kahvenin önünde yere çöktü kalkamadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen iyimisin gece uyuyonmu çorabın delindimi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çabuk kâğıt yaz gözüm yollarda komşular selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Baban İlyas"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Sait'e",
+    "sensitive": false
+  },
+  "package": [
+    "kuru dut",
+    "leblebi"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İlyas, Amasyalı, 61, çiftçi (Amasya, Merzifon kazası, Çukurören karyesi)\nAlıcı: Oğlu Onbaşı Sait, cephede\nYön: cepheye\nTarih: 5 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: genç ve heyecanlı, çok soru sorar\nKonu: komşunun oğlunun şehit haberi\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: kuru dut, leblebi\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "İlyas",
+        "gender": "erkek",
+        "age": 61,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Merzifon kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Sait",
+        "gender": "erkek",
+        "age": 39,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Merzifon kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": [
+        "kuru dut",
+        "leblebi"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "5 Mayıs 1331",
+      "home_address": "Amasya, Merzifon kazası, Çukurören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5732,
+      "output": 3772
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Çukurören, 5 Mayıs 1331\nHİTAP: Oğlum Sait'e\nGÖVDE: Oğlum kâğıdını aldım bende sana pakette dut kurusuyla biraz leblebi koydum eline geçtimi yiyormusun. Yemekler nasil tok musun orda arkadaşların iyimi. Köyde herkez iyi sağ selamet emmin tarlaya iniyo. Dün caminin orda muhtar kâğıt okudu Kör Hasanın oğlu Veli şehit düşmüş. Hasan emmin kahvenin önünde yere çöktü kalkamadı. Sen iyimisin gece uyuyonmu çorabın delindimi. Çabuk kâğıt yaz gözüm yollarda komşular selam ediyo.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Baban İlyas\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Sait'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 62 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4765,
+      "output": 3252
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta döneme aykırı hiçbir modern kelime veya kavram kullanılmamış, dönemin köylü ağzı doğal bir şekilde yansıtılmış.",
+      "olculuk": "Duygular ismen zikredilmemiş; komşunun acısı kahve önünde yere çöküp kalkamaması gibi somut bir eylemle çok ölçülü ve vurucu verilmiş.",
+      "okuryazarlik": "Soru eklerinin bitişik yazılması, 'herkez' gibi imla hataları ve bağlaçsız, kısa, peş peşe dizilmiş cümleler düşük okuryazarlığı kusursuz yansıtıyor.",
+      "somutluk": "Dut kurusu, leblebi, delik çorap, cami ve kahve önü gibi detaylarla mektup son derece somut ve görsel kılınmış.",
+      "sadakat": "İstenen konu, saklanan bilgi, paket içeriği, uzunluk ve peş peşe soru soran heyecanlı ses tonu harfiyen uygulanmış.",
+      "sahicilik": "Babanın endişesini yansıtan peş peşe sorular ve köyden verilen sıradan havadisler mektubu son derece gerçekçi ve yaşanmış kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

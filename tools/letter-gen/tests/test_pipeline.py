@@ -123,3 +123,24 @@ def test_report_and_export(settings, tmp_path):
     data = json.loads(out.read_text(encoding="utf-8"))
     assert data["letters"][0]["id"] == "pool_cepheden_000001"
     assert "meta" not in data["letters"][0] and "segments" in data["letters"][0]
+
+
+def test_rate_limits_wait_longer_and_retry_more():
+    waits = []
+
+    async def record(d):
+        waits.append(d)
+
+    class Limited:
+        calls = 0
+
+        async def generate(self, **kw):
+            Limited.calls += 1
+            if Limited.calls <= 7:
+                raise TransientError("429", rate_limited=True)
+            return Reply("ok", Usage(1, 1, 1))
+
+    r = Runner(Limited(), retries=2, sleep=record)
+    reply = asyncio.run(r.call(model="m", system="s", turns=[], temperature=0, max_output_tokens=1))
+    assert reply.attempts == 8
+    assert waits[0] >= 15 and max(waits) <= 240 * 1.1

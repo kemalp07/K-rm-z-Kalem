@@ -1,0 +1,253 @@
+{
+  "id": "pool_cepheden_000040",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Reşit",
+    "epithet": "Maraşlı",
+    "age": 32,
+    "hometown": "Maraş",
+    "occupation": "bakkal",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Sultan",
+    "relation": "annesi",
+    "location": "Maraş, Andırın kazası, Yenice karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 18 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Sultan Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kaç vakittir postadan medet umarım, elime bir kâğıdınız geçmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Memleketin işi gücü mü bitmedi, dükkânın hesabı mı ağır geldi de bana bir mektubu çok gördünüz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sorarsanız şükür ayaktayım, yiyip içmemiz yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bu mektubu yazmaktan asıl maksadım pederimle olan dargınlıktır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buraya gelirken helalleşemedik, kapıdan çıkarken ettiğim laflar boğazımda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Haziran sıcağı bastırdı, arpa biçilirken tarlada beni düşünüp hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Büyüğümdür, kusurumu bağışlasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ellerinden hürmetle öptüğümü kendisine arz edin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Birkaç satır da olsa tez vakitte cevap yollayın, insanın gözü yolda kalınca günleri geçmek bilmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Komşumuz terzi Halil Efendi'ye, dayıma, teyzeme bilhassa selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cümlemiz Allah'a emanet olalım, duanızı eksik etmeyin.",
+  "signature": {
+    "text": "Oğlunuz Onbaşı Reşit"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Maraş, Andırın kazası, Yenice karyesi, İmam Salih Efendi vasıtasıyla Sultan Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Reşit, Maraşlı, 32, bakkal, onbaşı (Maraş, Andırın kazası, Yenice karyesi)\nAlıcı: Annesi Sultan Hanım, Maraş, Andırın kazası, Yenice karyesi\nYön: cepheden\nTarih: 18 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Maraş",
+        "occupation": "bakkal",
+        "epithet": "Maraşlı",
+        "place": "Andırın kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Sultan",
+        "gender": "kadın",
+        "age": 50,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Maraş",
+        "occupation": null,
+        "epithet": null,
+        "place": "Andırın kazası, Yenice karyesi"
+      },
+      "recipient_location": "Maraş, Andırın kazası, Yenice karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "18 Haziran 1331",
+      "home_address": "Maraş, Andırın kazası, Yenice karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5639,
+      "output": 3261
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 18 Haziran 1331\nHİTAP: Muhterem Validem Sultan Hanım'a\nGÖVDE: Kaç vakittir postadan medet umarım, elime bir kâğıdınız geçmedi. Memleketin işi gücü mü bitmedi, dükkânın hesabı mı ağır geldi de bana bir mektubu çok gördünüz? Benim hâlimi sorarsanız şükür ayaktayım, yiyip içmemiz yerindedir. Bu mektubu yazmaktan asıl maksadım pederimle olan dargınlıktır. Buraya gelirken helalleşemedik, kapıdan çıkarken ettiğim laflar boğazımda kaldı. Haziran sıcağı bastırdı, arpa biçilirken tarlada beni düşünüp hakkını helal etsin. Büyüğümdür, kusurumu bağışlasın. Ellerinden hürmetle öptüğümü kendisine arz edin. Birkaç satır da olsa tez vakitte cevap yollayın, insanın gözü yolda kalınca günleri geçmek bilmiyor. Komşumuz terzi Halil Efendi'ye, dayıma, teyzeme bilhassa selam ederim.\nKAPANIŞ: Cümlemiz Allah'a emanet olalım, duanızı eksik etmeyin.\nİMZA: Oğlunuz Onbaşı Reşit\nZARF: Maraş, Andırın kazası, Yenice karyesi, İmam Salih Efendi vasıtasıyla Sultan Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "94 kelime, hedef 93 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4881,
+      "output": 3832
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 yılının ruhuna tam olarak uygundur.",
+      "olculuk": "Duygular isimlendirilmeden, sitem ve pişmanlık eylemler üzerinden başarıyla aktarılmıştır.",
+      "okuryazarlik": "Bakkal olan birinin yüksek okuryazarlık seviyesini yansıtan düzgün ve akıcı bir dil kullanılmıştır.",
+      "somutluk": "Dükkan hesabı, arpa hasadı ve komşu isimleri gibi detaylar mektubu son derece somut kılmıştır.",
+      "sadakat": "İstenen uzunluk, konu, gizlenen hastalık durumu ve sitemkar ses tonu eksiksiz işlenmiştir.",
+      "sahicilik": "Babasından helallik isteyen bir askerin içtenliği mektubun sahiciliğini artırmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

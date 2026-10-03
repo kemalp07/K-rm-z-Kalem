@@ -1,0 +1,282 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Arif",
+    "epithet": "Denizlili",
+    "age": 19,
+    "hometown": "Denizli",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Necibe",
+    "relation": "annesi",
+    "location": "Denizli, Sarayköy kazası, Karaağaç karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 90,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 14 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Necibe Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Arif der ki: Anacığım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen mektubun elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ben iyiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim yüzbaşıya söyledim, belki harman vakti on beş gün izin verirler, hiç belli olmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Her gün kapısındayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köye gelirsem şu ahırın çöken damını yaparım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Siz sarı ineği sattınız mı, sakın satmayın sütü lazım olur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kardeşim Veli'ye de söyle bakkal Hamdi'ye olan borcun yarısını versin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralar iyice ısındı toz toprak yutuyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İzin işi olursa hemen yola düşerim, yüzbaşı bırakmazsa darılma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Dayımın oğlunun düğünü ne zaman, beni beklesinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Tarlada nohut ne âlemde onu da yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çoraplarım delindi ama yama yaptım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "",
+    "seal": "Arif"
+  },
+  "note": {
+    "text": "İşbu mektubu köylüm Arif'in ağzından yazdım. Onbaşı Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Denizli, Sarayköy kazası, Karaağaç karyesi, Muhtar Ali Ağa vasıtasıyla Necibe Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Arif, Denizlili, 19, çiftçi, er (Denizli, Sarayköy kazası, Karaağaç karyesi)\nAlıcı: Annesi Necibe Hanım, Denizli, Sarayköy kazası, Karaağaç karyesi\nYön: cepheden\nTarih: 14 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: telaşlı, bir konudan ötekine atlar\nKonu: izin alma umudu\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 90",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Arif",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Denizli",
+        "occupation": "çiftçi",
+        "epithet": "Denizlili",
+        "place": "Sarayköy kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Necibe",
+        "gender": "kadın",
+        "age": 40,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sarayköy kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Denizli, Sarayköy kazası, Karaağaç karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "izin alma umudu",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 90,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Mayıs 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Denizli, Sarayköy kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5690,
+      "output": 2495
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 14 Mayıs 1331\nHİTAP: Anam Necibe Hanım'a\nGÖVDE: Arif der ki: Anacığım ellerinden öperim. Geçen mektubun elime geçti. Ben iyiyim. Bizim yüzbaşıya söyledim, belki harman vakti on beş gün izin verirler, hiç belli olmaz. Her gün kapısındayım. Köye gelirsem şu ahırın çöken damını yaparım. Siz sarı ineği sattınız mı, sakın satmayın sütü lazım olur. Kardeşim Veli'ye de söyle bakkal Hamdi'ye olan borcun yarısını versin. Buralar iyice ısındı toz toprak yutuyoruz. İzin işi olursa hemen yola düşerim, yüzbaşı bırakmazsa darılma. Dayımın oğlunun düğünü ne zaman, beni beklesinler. Tarlada nohut ne âlemde onu da yaz. Çoraplarım delindi ama yama yaptım.\nKAPANIŞ: Hakkını helal et.\nİMZA: (mühür: Arif)\nNOT: İşbu mektubu köylüm Arif'in ağzından yazdım. Onbaşı Hasan.\nZARF: Denizli, Sarayköy kazası, Karaağaç karyesi, Muhtar Ali Ağa vasıtasıyla Necibe Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 90 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4901,
+      "output": 2353
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime içermiyor, dönemin günlük konuşma diline ve asker mektubu kalıplarına uygun.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut dertler ve telaşlı sorular üzerinden hissettirilmiş.",
+      "okuryazarlik": "Yazdıran köylü ve yazan onbaşı ilişkisi, dilin sadeliği ve eklenen not kısmıyla başarıyla verilmiş.",
+      "somutluk": "Sarı inek, çöken dam, nohut, bakkal borcu ve çorap yaması gibi köye ve cepheye dair çok canlı detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluk, daldan dala atlayan telaşlı ses ve gizlenen ceza durumu (yüzbaşının bırakmama ihtimali üzerinden) metne çok iyi yedirilmiş.",
+      "sahicilik": "Gerçek bir Anadolu köylüsünün cepheden yazdırdığı, aklı köyde kalmış telaşlı bir mektup hissini tam olarak veriyor."
+    },
+    "issues": [
+      {
+        "line": "Geçen mektubun elime geçti.",
+        "problem": "'Geçen' ve 'geçti' kelimelerinin tekrarı kulağa biraz yavan geliyor; ayrıca okuma yazma bilmeyen birinin mektubu başkasına okuttuğunu belirtmesi dönemin mektup âdetlerine daha uygundur.",
+        "suggestion": "Mektubunu aldım, Hasan onbaşıya okuttum."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000027",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "İlyas",
+    "epithet": "Eskişehirli",
+    "age": 24,
+    "hometown": "Eskişehir",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Akile",
+    "relation": "karısı",
+    "location": "Eskişehir, Sivrihisar kazası, Akpınar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 87,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Akile'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Akile kâğıdı elime aldım sana selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bostanı ektiniz mi dersen onu sormak isterim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kabak çekirdeklerini duvardaki bez torbadan çıkar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Soğanları alt tarafa dik fasulyeleri çitin yanına diz tek tek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Evin damı aktıysa emmime söyle kiremitleri düzeltsin tam üç tane kırık vardı orda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırdaki kara koyun yavrulamıştır onun kuzusunu iyi sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Un çuvalının ağzını sıkı bağla içine fare filan girmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün bizim taburdan yirmi üç kişiyi hasta arabasına koyup hastaneye yolladılar.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim sıhhatim yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ben buralardayım daha işim bitmedi epey kalacam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köydeki herkeze selam ederim büyüklerin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Kocan İlyas"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Eskişehir, Sivrihisar kazası, Akpınar karyesi, İmam Hasan Efendi vasıtasıyla Akile Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İlyas, Eskişehirli, 24, çoban, er (Eskişehir, Sivrihisar kazası, Akpınar karyesi)\nAlıcı: Karısı Akile Hanım, Eskişehir, Sivrihisar kazası, Akpınar karyesi\nYön: cepheden\nTarih: 22 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: izninin iptal edildiğini\nHassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 87",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "İlyas",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": "çoban",
+        "epithet": "Eskişehirli",
+        "place": "Sivrihisar kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Akile",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sivrihisar kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Eskişehir, Sivrihisar kazası, Akpınar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "low",
+      "sensitive_info": "hastaneye kaldırılan arkadaşlarının sayısı",
+      "length_label": "orta",
+      "length_target": 87,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "22 Nisan 1331",
+      "home_address": "Eskişehir, Sivrihisar kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5646,
+      "output": 3376
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Nisan 1331\nHİTAP: Zevcem Akile'ye\nGÖVDE: Akile kâğıdı elime aldım sana selam ederim. Bostanı ektiniz mi dersen onu sormak isterim. Kabak çekirdeklerini duvardaki bez torbadan çıkar. Soğanları alt tarafa dik fasulyeleri çitin yanına diz tek tek. Evin damı aktıysa emmime söyle kiremitleri düzeltsin tam üç tane kırık vardı orda. Ahırdaki kara koyun yavrulamıştır onun kuzusunu iyi sakın. Un çuvalının ağzını sıkı bağla içine fare filan girmesin. ⟦Dün bizim taburdan yirmi üç kişiyi hasta arabasına koyup hastaneye yolladılar.⟧ Benim sıhhatim yerindedir. Ben buralardayım daha işim bitmedi epey kalacam. Köydeki herkeze selam ederim büyüklerin ellerinden öperim.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Kocan İlyas\nZARF: Eskişehir, Sivrihisar kazası, Akpınar karyesi, İmam Hasan Efendi vasıtasıyla Akile Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "88 kelime, hedef 87 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4833,
+      "output": 2718
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler döneme uygun, modern veya dönem dışı bir ifade bulunmuyor.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut işler ve durumlar üzerinden ölçülü bir aktarım yapılmış.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi için yasaklanmış olan 'zevcem' kelimesi hitapta kullanılmış.",
+      "somutluk": "Bez torba, üç kırık kiremit, kara koyun gibi son derece canlı ve gündelik ayrıntılar içeriyor.",
+      "sadakat": "İstenen tüm unsurlar (konu, saklanan bilgi, hassas bilgi) mevcut ancak sansür işaretlemesi kurala uygun yapılmamış.",
+      "sahicilik": "Titiz bir köylünün sesini ve endişelerini çok doğal, inandırıcı bir şekilde yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcem Akile'ye",
+        "problem": "Düşük okuryazarlık kuralına göre 'zevcem' gibi kâtip kelimeleri kullanılmamalı, daha sade bir hitap seçilmelidir.",
+        "suggestion": "HİTAP: Akile'ye"
+      },
+      {
+        "line": "⟦Dün bizim taburdan yirmi üç kişiyi hasta arabasına koyup hastaneye yolladılar.⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) cümlenin tamamını değil, yalnızca askerî bilginin kendisini kapsamalıdır; tarih ve gündelik eylemler dışarıda kalmalıdır.",
+        "suggestion": "Dün ⟦bizim taburdan yirmi üç kişiyi⟧ hasta arabasına koyup hastaneye yolladılar."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

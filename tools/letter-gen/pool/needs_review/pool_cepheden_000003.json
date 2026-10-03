@@ -1,0 +1,250 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Salih",
+    "epithet": "Diyarbekirli",
+    "age": 28,
+    "hometown": "Diyarbekir",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Hamide",
+    "relation": "annesi",
+    "location": "Diyarbekir, Lice kazası, Kuzören karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 67,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Hamide Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Salih der ki: Validem ellerinden öperim, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen yolladığın haberi Süleyman okudu, çok sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim evdekine söyle bebesi hayırlı olsun, sağ salim büyüsün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kızsa adını sen koy, oğlansa rahmetli babamın adını verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim halim çok şükür iyidir, karavanadan yana eksiğimiz yoktur, karnımız toktur, hiç merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Koyunların kırkım zamanı geldi, yünleri tüccar Şeyhmus'a borca karşılık ucuza vermeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Emmime dayıma selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bebeği benim için kokla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Salih"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Salih'in ağzından ben yazdım, selam ederim. Onbaşı Süleyman.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Diyarbekir, Lice kazası, Kuzören karyesi, İmam Yusuf Efendi vasıtasıyla Hamide Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Salih, Diyarbekirli, 28, çiftçi, onbaşı (Diyarbekir, Lice kazası, Kuzören karyesi)\nAlıcı: Annesi Hamide Hanım, Diyarbekir, Lice kazası, Kuzören karyesi\nYön: cepheden\nTarih: 22 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: utangaç, karısına adıyla seslenemez\nKonu: yeni doğan çocuğuna ad koymak\nSakladığı: aç kaldıklarını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 67",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Salih",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Diyarbekir",
+        "occupation": "çiftçi",
+        "epithet": "Diyarbekirli",
+        "place": "Lice kazası, Kuzören karyesi"
+      },
+      "recipient": {
+        "name": "Hamide",
+        "gender": "kadın",
+        "age": 51,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Lice kazası, Kuzören karyesi"
+      },
+      "recipient_location": "Diyarbekir, Lice kazası, Kuzören karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "yeni doğan çocuğuna ad koymak",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 67,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "22 Mayıs 1331",
+      "home_address": "Diyarbekir, Lice kazası, Kuzören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5645,
+      "output": 2993
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Mayıs 1331\nHİTAP: Validem Hamide Hanım'a\nGÖVDE: Salih der ki: Validem ellerinden öperim, hatırını sorarım. Geçen yolladığın haberi Süleyman okudu, çok sevindim. Bizim evdekine söyle bebesi hayırlı olsun, sağ salim büyüsün. Kızsa adını sen koy, oğlansa rahmetli babamın adını verin. Benim halim çok şükür iyidir, karavanadan yana eksiğimiz yoktur, karnımız toktur, hiç merak etmeyesin. Koyunların kırkım zamanı geldi, yünleri tüccar Şeyhmus'a borca karşılık ucuza vermeyin. Emmime dayıma selam eylerim. Bebeği benim için kokla.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Salih)\nNOT: İşbu kâğıdı Salih'in ağzından ben yazdım, selam ederim. Onbaşı Süleyman.\nZARF: Diyarbekir, Lice kazası, Kuzören karyesi, İmam Yusuf Efendi vasıtasıyla Hamide Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 67 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4831,
+      "output": 3207
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan dil doneme uygun olmakla birlikte kapanistaki koklama ifadesi utangac bir koylu icin biraz moderndir.",
+      "olculuk": "Duygulari adlandirmama kurali cok sevindim ifadesiyle ihlal edilmistir.",
+      "okuryazarlik": "Yazdiran kisinin koylu agzi ile yazan onbasinin temel okuryazarligi basarili bir sekilde harmanlanmistir.",
+      "somutluk": "Koyun kirkimi, tuccar Seyhmus ve borc gibi gundelik detaylar mektubu son derece somut kilmistir.",
+      "sadakat": "Istenen uzunluk, gizlenen aclik durumu ve esinin adini anamama utangacligi eksiksiz islenmistir.",
+      "sahicilik": "Duygu adlandirmasi ve son cumledeki modernlik disinda oldukca inandirici bir cephe mektubudur."
+    },
+    "issues": [
+      {
+        "line": "Gecen yolladigin haberi Suleyman okudu, cok sevindim.",
+        "problem": "Duygu dogrudan adlandirilmis (cok sevindim), bu durum duyguyu adlandirmama kuralina aykiridir.",
+        "suggestion": "Gecen yolladigin haberi Suleyman okudu, gozumuz aydin oldu."
+      },
+      {
+        "line": "Bebegi benim icin kokla.",
+        "problem": "Utangac bir koylunun mektubu arkadasina yazdirirken kullanmasi icin fazla modern ve acik bir ifadedir.",
+        "suggestion": "Cocugun gozlerinden operim."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

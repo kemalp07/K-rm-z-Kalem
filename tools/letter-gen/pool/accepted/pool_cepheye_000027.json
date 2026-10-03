@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheye_000027",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hamide",
+    "epithet": "Manisalı",
+    "age": 30,
+    "hometown": "Manisa",
+    "occupation": "dokumacı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Hulusi",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "careful",
+  "header": {
+    "text": "Karacaören, 22 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Efendim,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki ellerinden hürmetle öperim efendim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim buraları sorarsanız şükür ayaktayız, yaramaz bir hâlimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sen gideli tezgahın başında sabahlıyorum lakin kazandığımız yetmez oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çarşıda pazarda her şey ateş pahası.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen hafta Salihli'ye inip un alayım dedim, fırıncı Şaban Ağa un bulunmaz oldu dedi, zar zor yarım çuval bulgurla döndüm evimize.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Şeker zaten yok, pekmezle idare ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyde Hıdrellez telaşı var ama kimsede eski tat yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Meryem'in kızı gelin oldu dün, sessiz sedasız evlendirdiler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sen nasılsın efendim, kaza bela görmeyesin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizi hiç merak etme, dualarım seninledir.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Hamide"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Manisalı Hulusi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hamide Hanım, Manisalı, 30, dokumacı (Manisa, Salihli kazası, Karacaören karyesi)\nAlıcı: Kocası Onbaşı Hulusi, cephede\nYön: cepheye\nTarih: 22 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: utangaç, karısına adıyla seslenemez\nKonu: fiyatların artması, un bulunamaması\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hamide",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": "dokumacı",
+        "epithet": "Manisalı",
+        "place": "Salihli kazası, Karacaören karyesi"
+      },
+      "recipient": {
+        "name": "Hulusi",
+        "gender": "erkek",
+        "age": 40,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Salihli kazası, Karacaören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "fiyatların artması, un bulunamaması",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "22 Nisan 1331",
+      "home_address": "Manisa, Salihli kazası, Karacaören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5629,
+      "output": 3302
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Karacaören, 22 Nisan 1331\nHİTAP: Muhterem Efendim,\nGÖVDE: Evvela selam eder, iki ellerinden hürmetle öperim efendim. Bizim buraları sorarsanız şükür ayaktayız, yaramaz bir hâlimiz yoktur. Sen gideli tezgahın başında sabahlıyorum lakin kazandığımız yetmez oldu. Çarşıda pazarda her şey ateş pahası. Geçen hafta Salihli'ye inip un alayım dedim, fırıncı Şaban Ağa un bulunmaz oldu dedi, zar zor yarım çuval bulgurla döndüm evimize. Şeker zaten yok, pekmezle idare ediyoruz. Köyde Hıdrellez telaşı var ama kimsede eski tat yok. Meryem'in kızı gelin oldu dün, sessiz sedasız evlendirdiler. Sen nasılsın efendim, kaza bela görmeyesin inşallah. Bizi hiç merak etme, dualarım seninledir.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Zevcen Hamide\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Manisalı Hulusi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 93 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4822,
+      "output": 4069
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 yılının ruhuna ve gündelik diline tamamen uygundur, modern hiçbir kavram içermiyor.",
+      "olculuk": "Duygular adlandırılmadan, somut olaylar ve durumlar üzerinden gayet ölçülü bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade bir cümle yapısı kullanılmış; ancak 'lakin' kelimesi köy kadını için biraz kitabi kalmış.",
+      "somutluk": "Tezgah, fırıncı Şaban Ağa, yarım çuval bulgur ve pekmez gibi dönemin yokluğunu yansıtan çok başarılı somut detaylar var.",
+      "sadakat": "İstenen konu, gizlenen bilgi, uzunluk ve utangaç ses tonu mektuba eksiksiz biçimde yansıtılmış.",
+      "sahicilik": "Kocasından uzakta, geçim derdiyle uğraşan utangaç bir köy kadınının gerçek bir mektubu gibi hissettiriyor."
+    },
+    "issues": [
+      {
+        "line": "Sen gideli tezgahın başında sabahlıyorum lakin kazandığımız yetmez oldu.",
+        "problem": "Orta okuryazar bir köy kadını için 'lakin' kelimesi biraz fazla kitabi kaçabilir, daha sade bir bağlaç tercih edilmeli.",
+        "suggestion": "Sen gideli tezgahın başında sabahlıyorum ama kazandığımız yetmez oldu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

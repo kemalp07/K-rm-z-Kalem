@@ -1,0 +1,269 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ali",
+    "epithet": "Kahveci",
+    "age": 47,
+    "hometown": "Tokat",
+    "occupation": "kahveci",
+    "relation": "amcası"
+  },
+  "recipient": {
+    "name": "Sefer",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 80,
+  "hand": "dictated",
+  "header": {
+    "text": "Akpınar, 17 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Sefer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ali der ki: Gözlerinden öperim yeğenim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen kâğıda ses etmedin, herhalde siperde keyfin yerinde de bizi unuttun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim buralarda kahve sinek avlıyor, çay şeker zaten ateş pahası.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Senin pederin tarlayı bu sene Topal Hasan'a icara verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Adam peşin buğday verdi, evin erzak derdi kalmadı, aklın köyde kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Halalarından sana paketle bir atkı ile biraz pestil yolladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Şimdi sıcakta atkıyı ne yapayım deme, kışın ararsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sağ salim dön de kahveyi sana devredeyim, ben yoruldum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Ali"
+  },
+  "note": {
+    "text": "İşbu mektubu Ali Ağa'nın ağzından yazdım, muhtarın.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Sefer'e",
+    "sensitive": false
+  },
+  "package": [
+    "el örgüsü atkı",
+    "pestil"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ali, Kahveci, 47, kahveci (Tokat, Reşadiye kazası, Akpınar karyesi)\nAlıcı: Yeğeni Er Sefer, cephede\nYön: cepheye\nTarih: 17 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nPaket: el örgüsü atkı, pestil\nUzunluk: 80",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ali",
+        "gender": "erkek",
+        "age": 47,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Tokat",
+        "occupation": "kahveci",
+        "epithet": "Kahveci",
+        "place": "Reşadiye kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Sefer",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Tokat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Reşadiye kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 80,
+      "package": [
+        "el örgüsü atkı",
+        "pestil"
+      ],
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "17 Haziran 1331",
+      "home_address": "Tokat, Reşadiye kazası, Akpınar karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5744,
+      "output": 1339
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Akpınar, 17 Haziran 1331\nHİTAP: Yeğenim Sefer'e\nGÖVDE: Ali der ki: Gözlerinden öperim yeğenim. Geçen kâğıda ses etmedin, herhalde siperde keyfin yerinde de bizi unuttun. Bizim buralarda kahve sinek avlıyor, çay şeker zaten ateş pahası. Senin pederin tarlayı bu sene Topal Hasan'a icara verdik. Adam peşin buğday verdi, evin erzak derdi kalmadı, aklın köyde kalmasın. Halalarından sana paketle bir atkı ile biraz pestil yolladık. Şimdi sıcakta atkıyı ne yapayım deme, kışın ararsın. Sağ salim dön de kahveyi sana devredeyim, ben yoruldum.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Ali)\nNOT: İşbu mektubu Ali Ağa'nın ağzından yazdım, muhtarın.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Sefer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "73 kelime, hedef 80 (-9%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4826,
+      "output": 2495
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun ancak köyden cepheye gönderilen eşya için 'paket' kelimesi biraz şehirli kaçmış.",
+      "olculuk": "Duygular adlandırılmamış, amcanın şakacı ve dertleri hafife alan tonu abartısızca verilmiş.",
+      "okuryazarlik": "Muhtarın kaleminden çıktığı belli ancak bazı tamlamalar muhtar yazısı için bile fazla bozuk ve not kısmı havada kalmış.",
+      "somutluk": "Kahvenin sinek avlaması, peşin buğday, Topal Hasan gibi dönemi yansıtan çok iyi somut detaylar kullanılmış.",
+      "sadakat": "İstenen tüm unsurlar, yön, konu, paket içeriği ve şakacı ses mektuba eksiksiz yedirilmiş.",
+      "sahicilik": "Amcanın yeğenine takılması ve köyün durumunu özetlemesi son derece doğal ve sahici hissettiriyor."
+    },
+    "issues": [
+      {
+        "line": "Senin pederin tarlayı bu sene Topal Hasan'a icara verdik.",
+        "problem": "Muhtarın yazdığı bir mektup için 'Senin pederin tarlayı' tamlaması fazla bozuk düşmüş.",
+        "suggestion": "Babanın tarlasını bu sene Topal Hasan'a icara verdik."
+      },
+      {
+        "line": "Halalarından sana paketle bir atkı ile biraz pestil yolladık.",
+        "problem": "Köyden cepheye gönderilen eşyalar için 'paket' yerine döneme ve yöreye daha uygun somut kelimeler tercih edilmeli.",
+        "suggestion": "Halaların sana bir çıkın edip atkı ile biraz pestil yolladı."
+      },
+      {
+        "line": "İşbu mektubu Ali Ağa'nın ağzından yazdım, muhtarın.",
+        "problem": "'Muhtarın' kelimesi cümlenin sonunda havada kalmış ve dönemin yazım alışkanlıklarına tam uymuyor.",
+        "suggestion": "İşbu mektubu Ali Ağa'nın ağzından ben yazdım, köy muhtarı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

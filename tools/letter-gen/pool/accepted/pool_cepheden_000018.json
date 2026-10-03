@@ -1,0 +1,281 @@
+{
+  "id": "pool_cepheden_000018",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sabri",
+    "epithet": "Çankırılı",
+    "age": 20,
+    "hometown": "Çankırı",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamiyet",
+    "relation": "annesi",
+    "location": "Çankırı, Çerkeş kazası, Kayadibi karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 77,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 13 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Hamiyet Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sabri der ki: Anam hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Babama söyle, amcamla olan o sınır meselesi uzamasın, davadan vazgeçsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Giderken darıldık, yüzüne bakmadım ama hakkını helal etsin, ben helal ettim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Öküzleri yormayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "İdris'e borcu erkenden verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırın damını Hacı'nın oğluna yaptırın, tembellik etmesin gitsin çivileri çaksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyden",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "bizim Hüseyin üçüncü tabura düşmüş",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": ", anasına haber eyleyin de urba dikip yollasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Benim hiçbir eksiğim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Gece gündüz ayaktayız, silahı elimden hiç bırakmıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kimsenin aklı bende kalmasın, herkes işine baksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Dediklerimi eksiksiz yapın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "",
+    "seal": "Sabri"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Sabri'nin ağzından ben yazdım, Allah cümlesini muhafaza eylesin. Alay İmamı Lütfi.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Çankırı, Çerkeş kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Hamiyet Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sabri, Çankırılı, 20, çiftçi, er (Çankırı, Çerkeş kazası, Kayadibi karyesi)\nAlıcı: Annesi Hamiyet Hanım, Çankırı, Çerkeş kazası, Kayadibi karyesi\nYön: cepheden\nTarih: 13 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: korktuğunu\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sabri",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "epithet": "Çankırılı",
+        "place": "Çerkeş kazası, Kayadibi karyesi"
+      },
+      "recipient": {
+        "name": "Hamiyet",
+        "gender": "kadın",
+        "age": 49,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çerkeş kazası, Kayadibi karyesi"
+      },
+      "recipient_location": "Çankırı, Çerkeş kazası, Kayadibi karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "korktuğunu",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "13 Mayıs 1331",
+      "home_address": "Çankırı, Çerkeş kazası, Kayadibi karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5652,
+      "output": 4401
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 13 Mayıs 1331\nHİTAP: Validem Hamiyet Hanım'a\nGÖVDE: Sabri der ki: Anam hatırını sorarım. Babama söyle, amcamla olan o sınır meselesi uzamasın, davadan vazgeçsin. Giderken darıldık, yüzüne bakmadım ama hakkını helal etsin, ben helal ettim. Öküzleri yormayın. İdris'e borcu erkenden verin. Ahırın damını Hacı'nın oğluna yaptırın, tembellik etmesin gitsin çivileri çaksın. Köyden ⟦bizim Hüseyin üçüncü tabura düşmüş⟧, anasına haber eyleyin de urba dikip yollasın. Benim hiçbir eksiğim yoktur. Gece gündüz ayaktayız, silahı elimden hiç bırakmıyorum. Kimsenin aklı bende kalmasın, herkes işine baksın. Dediklerimi eksiksiz yapın.\nKAPANIŞ: Baki selam.\nİMZA: (mühür: Sabri)\nNOT: İşbu kâğıdı Sabri'nin ağzından ben yazdım, Allah cümlesini muhafaza eylesin. Alay İmamı Lütfi.\nZARF: Çankırı, Çerkeş kazası, Kayadibi karyesi, Muhtar Hasan Ağa vasıtasıyla Hamiyet Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "77 kelime, hedef 77 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4887,
+      "output": 2851
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve cümle yapıları 1915 dönemine ve bir köy mektubuna tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, korku ve endişe askerin silahı elinden bırakmaması gibi somut eylemlerle ustaca hissettirilmiştir.",
+      "okuryazarlik": "İmamın eklediği resmî giriş-çıkış kalıpları ile Sabri'nin sert, emredici köylü ağzı arasındaki ayrım çok başarılıdır.",
+      "somutluk": "Sınır davası, öküzler, İdris'e borç ve ahırın damı gibi köye ait çok canlı ve somut ayrıntılar kullanılmıştır.",
+      "sadakat": "İstenen uzunluk, konu, gizlenen duygu, hassas bilgi ve yazdırılma biçimi gibi tüm talimatlara harfiyen uyulmuştur.",
+      "sahicilik": "Sert mizaçlı ama içten içe korkan bir askerin, imam aracılığıyla ailesine gönderdiği telaşlı emirler son derece gerçekçi duruyor."
+    },
+    "issues": [
+      {
+        "line": "Köyden ⟦bizim Hüseyin üçüncü tabura düşmüş⟧ , anasına haber eyleyin de urba dikip yollasın.",
+        "problem": "Sansür işaretleri (⟦ ⟧) yalnızca askerî bilginin etrafında olmalıdır ('bizim Hüseyin' askerî bir bilgi değildir) ve virgülden önceki gereksiz boşluk silinmelidir.",
+        "suggestion": "Köyden bizim Hüseyin ⟦üçüncü tabura⟧ düşmüş, anasına haber eyleyin de urba dikip yollasın."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

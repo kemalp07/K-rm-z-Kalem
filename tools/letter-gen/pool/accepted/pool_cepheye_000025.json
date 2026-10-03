@@ -1,0 +1,253 @@
+{
+  "id": "pool_cepheye_000025",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sadık",
+    "epithet": "Dokumacı",
+    "age": 53,
+    "hometown": "Yozgat",
+    "occupation": "dokumacı",
+    "relation": "dayısı"
+  },
+  "recipient": {
+    "name": "İzzet",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 60,
+  "hand": "dictated",
+  "header": {
+    "text": "Kavak, 14 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim İzzet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gözlerinden öper, sağlığını dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kâğıdını aldık ferahladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İmam Efendi'ye muska yazdırdım, mektubun içine sardık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Boynundan hiç çıkarma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Her vakit duamızdasınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim köyden giden öteki uşaklar nicedir?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Topalın Ali ile Sarı Hasan'ı görür müsün, onlara da benden selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tezgâhı kurdum ama iplik pahalandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Arpayı biçmeye başladık, harman telaşı var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Emmin",
+    "seal": "Sadık"
+  },
+  "note": {
+    "text": "İşbu mektup Sadık emminin isteği üzerine tarafımdan yazılmıştır. Muhtar.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Yozgatlı Er İzzet'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sadık, Dokumacı, 53, dokumacı (Yozgat, Sorgun kazası, Kavak karyesi)\nAlıcı: Yeğeni Er İzzet, cephede\nYön: cepheye\nTarih: 14 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: meraklı, köyden herkesi sorar\nKonu: muska ve dualar\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 60",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 53,
+        "relation": "dayısı",
+        "rank": null,
+        "hometown": "Yozgat",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "Sorgun kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "İzzet",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Yozgat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sorgun kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "muska ve dualar",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 60,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Haziran 1331",
+      "home_address": "Yozgat, Sorgun kazası, Kavak karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5722,
+      "output": 1693
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Kavak, 14 Haziran 1331\nHİTAP: Yeğenim İzzet'e\nGÖVDE: Gözlerinden öper, sağlığını dilerim. Kâğıdını aldık ferahladık. İmam Efendi'ye muska yazdırdım, mektubun içine sardık. Boynundan hiç çıkarma. Her vakit duamızdasınız. Bizim köyden giden öteki uşaklar nicedir? Topalın Ali ile Sarı Hasan'ı görür müsün, onlara da benden selam eyle. Tezgâhı kurdum ama iplik pahalandı. Arpayı biçmeye başladık, harman telaşı var.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Sadık) Emmin\nNOT: İşbu mektup Sadık emminin isteği üzerine tarafımdan yazılmıştır. Muhtar.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Yozgatlı Er İzzet'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "49 kelime, hedef 60 (-18%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4769,
+      "output": 3055
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 döneminin mektup diline tam olarak uygundur.",
+      "olculuk": "Duygular adlandırılmadan, somut durumlar üzerinden ölçülü bir şekilde aktarılmıştır.",
+      "okuryazarlik": "Muhtarın kâtipliği ve gönderenin ümmi oluşu hem üsluba hem de mühür kullanımına başarıyla yansımıştır.",
+      "somutluk": "Muska, dokuma tezgâhı, iplik fiyatları ve arpa hasadı gibi döneme ve kişiye özgü somut detaylar mevcuttur.",
+      "sadakat": "İstenen konu, uzunluk, yazma biçimi ve karakter özellikleri eksiksiz olarak karşılanmıştır.",
+      "sahicilik": "Köydeki diğer askerleri sorması ve günlük telaşlardan bahsetmesi mektubu son derece gerçekçi kılmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

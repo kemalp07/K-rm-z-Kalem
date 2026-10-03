@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000034",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Ulviye",
+    "epithet": "Kırşehirli",
+    "age": 27,
+    "hometown": "Kırşehir",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 68,
+  "hand": "hurried",
+  "header": {
+    "text": "Alacahan, 18 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kocam Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Selam ederim hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nassın iyimisin orda yemek veriyolar mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Biz iyiyiz köyde herkez tarlada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Yağmur güzel yağdı arpalar boy attı maşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Orak vaktine az kaldı ama kim biçecek bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kaynatam komşunun tırpanını istedi vermediler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen ne zaman dönecen izin yok mu hiç.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Köyden gidenler geldimi yanına.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çorabın yırtıldımı bitin varmı orda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kardeşin Selim sapanı kırdı ona çok kızdılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Geceleri soğuk oluyo üşüyormusun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çabuk cevap yaz kâğıt bekleyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözlerinden öperim.",
+  "signature": {
+    "text": "Karın Ulviye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kırşehirli Talat'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ulviye Hanım, Kırşehirli, 27, çiftçi (Kırşehir, Avanos kazası, Alacahan karyesi)\nAlıcı: Kocası Çavuş Talat, cephede\nYön: cepheye\nTarih: 18 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: genç ve heyecanlı, çok soru sorar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ulviye",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "çiftçi",
+        "epithet": "Kırşehirli",
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "18 Mayıs 1331",
+      "home_address": "Kırşehir, Avanos kazası, Alacahan karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5617,
+      "output": 3595
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Alacahan, 18 Mayıs 1331\nHİTAP: Kocam Talat'a\nGÖVDE: Selam ederim hatırını sorarım. Nassın iyimisin orda yemek veriyolar mı. Biz iyiyiz köyde herkez tarlada. Yağmur güzel yağdı arpalar boy attı maşallah. Orak vaktine az kaldı ama kim biçecek bilmeyorum. Kaynatam komşunun tırpanını istedi vermediler. Sen ne zaman dönecen izin yok mu hiç. Köyden gidenler geldimi yanına. Çorabın yırtıldımı bitin varmı orda. Kardeşin Selim sapanı kırdı ona çok kızdılar. Geceleri soğuk oluyo üşüyormusun. Çabuk cevap yaz kâğıt bekleyorum.\nKAPANIŞ: Gözlerinden öperim.\nİMZA: Karın Ulviye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kırşehirli Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "68 kelime, hedef 68 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4774,
+      "output": 2787
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta hiçbir modern ifadeye yer verilmemiş, dönemin köy hayatına uygun doğal ve sade bir dil kullanılmıştır.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, peş peşe sorulan sorular ve gündelik kaygılar üzerinden ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Bilinçli imla hataları (herkez, bilmeyorum, geldimi) ve eksik noktalama işaretleriyle düşük okuryazarlık seviyesi kusursuz yansıtılmıştır.",
+      "somutluk": "Arpaların boy atması, komşunun tırpanı, kırılan sapan ve bit ihtimali gibi son derece canlı ve somut detaylar içermektedir.",
+      "sadakat": "Ekinlerin durumu işlenmiş, kelime sayısı tam tutturulmuş (68 kelime) ve genç kadının heyecanlı, soru soran sesi isteğe birebir uydurulmuştur.",
+      "sahicilik": "Kocasını merak eden ve köydeki tarım işleriyle baş başa kalan genç bir köylü kadınının samimi, telaşlı ve gerçekçi sesini çok iyi yakalamıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

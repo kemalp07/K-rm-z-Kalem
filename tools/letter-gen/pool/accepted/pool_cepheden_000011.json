@@ -1,0 +1,265 @@
+{
+  "id": "pool_cepheden_000011",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "İzzet",
+    "epithet": "Yozgatlı",
+    "age": 19,
+    "hometown": "Yozgat",
+    "occupation": "bakkal",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Raziye",
+    "relation": "annesi",
+    "location": "Yozgat, Boğazlıyan kazası, Dereköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 78,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 1 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Raziye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektup atım cevap gelmedi kâat mı yok bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Ben eyiyim burda herkez eyi yemeğimiz var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Harman vakti geliyo ekin sararmıştır bizim tarlayı kim biçecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Arpayı amcamoğlu kel hasan mı kaldıracak buğdaya kim girecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Samanı kim taşıyacak bana tek tek yazasın aklım orda kalıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde un pekmez fiatı ne oldu onuda yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dükkanda veresiye defterini kimseye açma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün akşam bizim mangada sade on iki kişi kaldık",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": ".",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Onlar memlekete selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Emmime haccı teyzeme bakkal çırağı veliye selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekleyorum hakkını helal et.",
+  "signature": {
+    "text": "Oğlun İzzet"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Yozgat, Boğazlıyan kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Raziye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İzzet, Yozgatlı, 19, bakkal, er (Yozgat, Boğazlıyan kazası, Dereköy karyesi)\nAlıcı: Annesi Raziye Hanım, Yozgat, Boğazlıyan kazası, Dereköy karyesi\nYön: cepheden\nTarih: 1 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: aç kaldıklarını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "İzzet",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Yozgat",
+        "occupation": "bakkal",
+        "epithet": "Yozgatlı",
+        "place": "Boğazlıyan kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Raziye",
+        "gender": "kadın",
+        "age": 38,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Yozgat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Boğazlıyan kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Yozgat, Boğazlıyan kazası, Dereköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "1 Haziran 1331",
+      "home_address": "Yozgat, Boğazlıyan kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5646,
+      "output": 3700
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 1 Haziran 1331\nHİTAP: Anam Raziye'ye\nGÖVDE: Mektup atım cevap gelmedi kâat mı yok bilmeyorum. Ben eyiyim burda herkez eyi yemeğimiz var. Harman vakti geliyo ekin sararmıştır bizim tarlayı kim biçecek. Arpayı amcamoğlu kel hasan mı kaldıracak buğdaya kim girecek. Samanı kim taşıyacak bana tek tek yazasın aklım orda kalıyo. Köyde un pekmez fiatı ne oldu onuda yaz. Dükkanda veresiye defterini kimseye açma. ⟦Dün akşam bizim mangada sade on iki kişi kaldık⟧. Onlar memlekete selam ediyo. Emmime haccı teyzeme bakkal çırağı veliye selam eyle.\nKAPANIŞ: Cevabını bekleyorum hakkını helal et.\nİMZA: Oğlun İzzet\nZARF: Yozgat, Boğazlıyan kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Raziye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "77 kelime, hedef 78 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4810,
+      "output": 2727
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime kullanılmamış, dönemin köy ve askerlik terminolojisine bütünüyle sadık kalınmış.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut kaygılar üzerinden ölçülü ve abartısız bir anlatım kurulmuş.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi; noktalama eksiklikleri ve 'kâat, herkez, eyiyim' gibi döneme uygun imla hatalarıyla çok iyi yansıtılmış.",
+      "somutluk": "Arpa, buğday, saman, un, pekmez ve veresiye defteri gibi son derece somut ve gündelik detaylar kullanılmış.",
+      "sadakat": "İstenen tüm unsurlar mektuba eklenmiş, ancak sansür işaretlerinin kullanımı kurala tam uymamış.",
+      "sahicilik": "Titiz bir bakkal/çiftçi askerin memleket kaygılarını yansıtan, son derece inandırıcı ve doğal bir mektup olmuş."
+    },
+    "issues": [
+      {
+        "line": "⟦Dün akşam bizim mangada sade on iki kişi kaldık⟧ .",
+        "problem": "Sansür işaretleri (⟦ ⟧) yalnızca askerî bilginin etrafına konmalı, gündelik sözler dışarıda bırakılmalıdır; ayrıca noktadan önce gereksiz boşluk bırakılmış.",
+        "suggestion": "Dün akşam bizim mangada ⟦sade on iki kişi⟧ kaldık."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

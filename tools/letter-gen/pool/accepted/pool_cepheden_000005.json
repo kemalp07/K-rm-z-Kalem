@@ -1,0 +1,269 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tayyar",
+    "epithet": "Yozgatlı",
+    "age": 30,
+    "hometown": "Yozgat",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Elif",
+    "relation": "nişanlısı",
+    "location": "Yozgat, Akdağmadeni kazası, Ağılönü karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 31 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Elif'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Tayyar der ki: Evvela selam eder, iki gözünden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim sıhhatim yerindedir, ayaktayız çok şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde arpa biçme vakti yaklaştı, ekinler sararmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Babamla olan o eski dargınlığı artık bitirelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ben uzaktayım, yarın ne olacağı belli olmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Git elini öp, benim selamımı söyle, hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Güzün o sarı öküzü satıp Süleyman'a olan borcun yarısını kapatsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kalan parayı da sandığa koysun, sakın başka yere harcamasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim düğün için ayırdığım o on liraya da dokunulmasın, dönüşte lazım olacak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sana geçen ay gönderdiğim iki mecidiye eline geçti mi, onu da yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Tayyar"
+  },
+  "note": {
+    "text": "İşbu mektup Tayyar'ın ağzından yazılmıştır. Çadır yoldaşı Hafız Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Yozgat, Akdağmadeni kazası, Ağılönü karyesi, İmam Salih Efendi vasıtasıyla Elif Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tayyar, Yozgatlı, 30, çiftçi, onbaşı (Yozgat, Akdağmadeni kazası, Ağılönü karyesi)\nAlıcı: Nişanlısı Elif Hanım, Yozgat, Akdağmadeni kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 31 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: hesapçı, para ve borçtan söz eder\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tayyar",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Yozgat",
+        "occupation": "çiftçi",
+        "epithet": "Yozgatlı",
+        "place": "Akdağmadeni kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Elif",
+        "gender": "kadın",
+        "age": 25,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Yozgat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akdağmadeni kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Yozgat, Akdağmadeni kazası, Ağılönü karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "31 Mayıs 1331",
+      "home_address": "Yozgat, Akdağmadeni kazası, Ağılönü karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5722,
+      "output": 2475
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 31 Mayıs 1331\nHİTAP: Nişanlım Elif'e\nGÖVDE: Tayyar der ki: Evvela selam eder, iki gözünden öperim. Benim sıhhatim yerindedir, ayaktayız çok şükür. Köyde arpa biçme vakti yaklaştı, ekinler sararmıştır. Babamla olan o eski dargınlığı artık bitirelim. Ben uzaktayım, yarın ne olacağı belli olmaz. Git elini öp, benim selamımı söyle, hakkını helal etsin. Güzün o sarı öküzü satıp Süleyman'a olan borcun yarısını kapatsın. Kalan parayı da sandığa koysun, sakın başka yere harcamasın. Bizim düğün için ayırdığım o on liraya da dokunulmasın, dönüşte lazım olacak. Sana geçen ay gönderdiğim iki mecidiye eline geçti mi, onu da yaz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Tayyar)\nNOT: İşbu mektup Tayyar'ın ağzından yazılmıştır. Çadır yoldaşı Hafız Ali.\nZARF: Yozgat, Akdağmadeni kazası, Ağılönü karyesi, İmam Salih Efendi vasıtasıyla Elif Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "88 kelime, hedef 93 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000003 ile ortak: \"evvela selam eder iki gözünden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4881,
+      "output": 3516
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Borcu kapatmak gibi günümüz finansal ağzına ait ifadeler dışında dönemin kelime dağarcığına uygun.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut işler ve hesaplar üzerinden hasret ve kaygı verilmiş.",
+      "okuryazarlik": "Çadır arkadaşına yazdırılma durumu, giriş ve çıkıştaki kâtip notlarıyla çok iyi yansıtılmış.",
+      "somutluk": "Sarı öküz, arpa hasadı, on lira ve iki mecidiye gibi detaylarla mektup son derece maddi ve gerçekçi kılınmış.",
+      "sadakat": "İstenen konu, gizlenen hastalık durumu, ses tonu ve uzunluk kısıtlamalarına tam uyulmuş.",
+      "sahicilik": "Hesapçı bir çiftçinin cepheden gönderdiği mektup hissi çok güçlü, ancak birkaç modern ifade sahiciliği hafifçe zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Güzün o sarı öküzü satıp Süleyman'a olan borcun yarısını kapatsın.",
+        "problem": "'Borcu kapatmak' modern bir ifadedir, o dönemde borç ödenir veya verilir.",
+        "suggestion": "Güzün o sarı öküzü satıp Süleyman'a olan borcun yarısını ödesin."
+      },
+      {
+        "line": "Babamla olan o eski dargınlığı artık bitirelim.",
+        "problem": "'Dargınlığı bitirmek' günümüz günlük diline ait bir kalıptır.",
+        "suggestion": "Babamla olan küslük gayrı bitsin."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

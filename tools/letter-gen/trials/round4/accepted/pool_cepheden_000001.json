@@ -1,0 +1,248 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "İsmet",
+    "epithet": "Kahveci",
+    "age": 36,
+    "hometown": "Balıkesir",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Bahri",
+    "relation": "babası",
+    "location": "Balıkesir, Edremit kazası, Sarıkaya karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 89,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 21 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Bahri Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Muhterem pederim, evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım mektubun vasıl olduğunu öğrenince ziyadesiyle ferahladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim sıhhatim yerindedir, endişe buyurmayınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Vakit epeyce ilerledi, malumunuz ekinler boy atmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Önümüzdeki ay arpa, sonra da buğday hasadı başlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde erkek kalmadı, bizim tarladaki mahsulü kimin kaldıracağını ziyadesiyle merak etmekteyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Irgat bulmak müşkül olmuştur, yevmiyeler de iyice artmıştır muhakkak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Şayet komşulardan yardım edecek kimse yoksa, anam ve kardeşlerim kendilerini hiç hırpalamasınlar, ne kadarını toplayabilirlerse o kadarına kanaat edelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Validemin ellerinden öper, hanıma ve çocuklara ayrı ayrı selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Oğlun İsmet"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Balıkesir, Edremit kazası, Sarıkaya karyesi, İmam Salih Efendi vasıtasıyla Bahri Efendi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İsmet, Kahveci, 36, kahveci, er (Balıkesir, Edremit kazası, Sarıkaya karyesi)\nAlıcı: Babası Bahri, Balıkesir, Edremit kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 21 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: ağırbaşlı, kalıplara sadık\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Duanı eksik etme\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "İsmet",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Balıkesir",
+        "occupation": "kahveci",
+        "epithet": "Kahveci",
+        "place": "Edremit kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Bahri",
+        "gender": "erkek",
+        "age": 54,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Balıkesir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Edremit kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Balıkesir, Edremit kazası, Sarıkaya karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "21 Nisan 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Balıkesir, Edremit kazası, Sarıkaya karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5676,
+      "output": 3107
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 21 Nisan 1331\nHİTAP: Muhterem pederim Bahri Efendi'ye\nGÖVDE: Muhterem pederim, evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim. Geçen ay yolladığım mektubun vasıl olduğunu öğrenince ziyadesiyle ferahladım. Benim sıhhatim yerindedir, endişe buyurmayınız. Vakit epeyce ilerledi, malumunuz ekinler boy atmıştır. Önümüzdeki ay arpa, sonra da buğday hasadı başlar. Köyde erkek kalmadı, bizim tarladaki mahsulü kimin kaldıracağını ziyadesiyle merak etmekteyim. Irgat bulmak müşkül olmuştur, yevmiyeler de iyice artmıştır muhakkak. Şayet komşulardan yardım edecek kimse yoksa, anam ve kardeşlerim kendilerini hiç hırpalamasınlar, ne kadarını toplayabilirlerse o kadarına kanaat edelim. Validemin ellerinden öper, hanıma ve çocuklara ayrı ayrı selam ederim.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Oğlun İsmet\nZARF: Balıkesir, Edremit kazası, Sarıkaya karyesi, İmam Salih Efendi vasıtasıyla Bahri Efendi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 89 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4896,
+      "output": 2563
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Yüksek okuryazarlığa uygun, dönemin ruhunu yansıtan kelimeler ve saygı ifadeleri kusursuz kullanılmış.",
+      "olculuk": "Duygular ismen zikredilmemiş, tamamen tarladaki mahsul ve ailenin yorulmaması gibi somut kaygılar üzerinden ölçülü bir dille aktarılmış.",
+      "okuryazarlik": "Uzun, kurallı cümleler ve 'vasıl olmak', 'kemal-i hürmet' gibi tamlamalar istenen yüksek okuryazarlık seviyesiyle tam olarak örtüşüyor.",
+      "somutluk": "Arpa ve buğday hasadı, ırgat bulma zorluğu ve yevmiyelerin artması gibi dönemin tarımsal gerçekleri mektubu son derece somut kılmış.",
+      "sadakat": "İstenen konu, uzunluk, kapanış kalıbı, tarih ve diğer tüm yönergelere eksiksiz uyulmuş.",
+      "sahicilik": "Bir askerin geride bıraktığı tarlası ve ailesi için duyduğu endişe, dönemin tarım takvimine de uygun olarak son derece doğal ve inandırıcı bir şekilde işlenmiş."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

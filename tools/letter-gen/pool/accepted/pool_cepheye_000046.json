@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheye_000046",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sıdıka",
+    "epithet": "Manisalı",
+    "age": 55,
+    "hometown": "Manisa",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "İsmet",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "dictated",
+  "writer": "mahalle imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 61,
+  "hand": "dictated",
+  "header": {
+    "text": "Çamlıca, 1 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum İsmet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sıdıka Hanım der ki: Evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığın kâğıdı imam efendiye okuttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizde işler bildiğin gibidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Aşağı tarlayı bu sene süremeyiz, sürecek adam kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Karabaşların Ali'yle konuştum, icara verdim, hasatta buğdayı yarı yarıya bölüşeceğiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen buraları düşünme, aklın kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Evin eksiği gediği yoktur, ambar henüz dolu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bana para yollayacağım diye kendini darlatma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kendine mukayet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Sıdıka"
+  },
+  "note": {
+    "text": "İşbu kâğıdı validenizin ağzından ben yazdım. İmam İsmail.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Çamlıcalı İsmet'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sıdıka Hanım, Manisalı, 55, çiftçi (Manisa, Akhisar kazası, Çamlıca karyesi)\nAlıcı: Oğlu Çavuş İsmet, cephede\nYön: cepheye\nTarih: 1 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: mahalle imamı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 61",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sıdıka",
+        "gender": "kadın",
+        "age": 55,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": "çiftçi",
+        "epithet": "Manisalı",
+        "place": "Akhisar kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "İsmet",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akhisar kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 61,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "1 Mayıs 1331",
+      "home_address": "Manisa, Akhisar kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5635,
+      "output": 2449
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Çamlıca, 1 Mayıs 1331\nHİTAP: Oğlum İsmet'e\nGÖVDE: Sıdıka Hanım der ki: Evvela selam eder, hatırını sorarım. Yolladığın kâğıdı imam efendiye okuttum. Bizde işler bildiğin gibidir. Aşağı tarlayı bu sene süremeyiz, sürecek adam kalmadı. Karabaşların Ali'yle konuştum, icara verdim, hasatta buğdayı yarı yarıya bölüşeceğiz. Sen buraları düşünme, aklın kalmasın. Evin eksiği gediği yoktur, ambar henüz dolu. Bana para yollayacağım diye kendini darlatma. Kendine mukayet ol.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Sıdıka)\nNOT: İşbu kâğıdı validenizin ağzından ben yazdım. İmam İsmail.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Çamlıcalı İsmet'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "57 kelime, hedef 61 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4798,
+      "output": 2194
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 yılının köy mektubu diline tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, gereksiz metafor veya abartı kullanılmamış, son derece ölçülü yazılmış.",
+      "okuryazarlik": "İmamın ağzından yazıldığı belirtilen giriş kalıbı ve mühür kullanımıyla okuma yazma bilmeyen birinin yazdırdığı mektup formatına tam uyulmuş.",
+      "somutluk": "Aşağı tarla, Karabaşların Ali, buğdayın bölüşülmesi ve ambar gibi çok somut köy hayatı detayları içeriyor.",
+      "sadakat": "Gizlenen bilgi çok iyi verilmiş ancak istenen sert ve emredici ton biraz zayıf kalmış.",
+      "sahicilik": "Anadolu'da tarlasını idare etmeye çalışan bir annenin gerçekçi ve pratik kaygılarını çok iyi yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "Bana para yollayacağım diye kendini darlatma. Kendine mukayet ol.",
+        "problem": "İstekte belirtilen 'sert, emir verir gibi' ses tonu yerine fazla yumuşak ve şefkatli bir ifade kullanılmış.",
+        "suggestion": "Bana para yollayacağım diye uğraşma, işine bak. Aklını buraya takıp da ziyanlık çıkarma."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

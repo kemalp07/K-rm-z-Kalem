@@ -1,0 +1,299 @@
+{
+  "id": "pool_cepheden_000036",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hasan",
+    "epithet": "Kastamonulu",
+    "age": 37,
+    "hometown": "Kastamonu",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Bekir",
+    "relation": "babası",
+    "location": "Kastamonu, Daday kazası, Dereköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 101,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 2 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Pederim Bekir Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Hasan der ki: Pederim ellerinden öperim, hayır duanı beklerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralarda havalar ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Harman vakti yaklaştı, arpayı kim biçecek düşünür dururum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyde işler ne âlemde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim sarı öküzü sattınız mı satmadınız mı bana tez haber eyleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Satmadıysanız pazara indirin, parasıyla borçları kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bana da üç beş kuruş yollayabilirseniz iyi olur, cepte hiç kalmadı, sabun tütün alınmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Öküz durursa kışa yem dayanmaz, hem elde avuçta dar diyordun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Harmanı imeceyle kaldırın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Anamın, küçük kardeşlerimin gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dayıma, emmime, bütün köylüye selam eyleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Uzun yazamadım, aklım o öküz meselesinde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Merak etmeyin, sağlığım yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Mektubu alınca tez cevap yazdırın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Hasan"
+  },
+  "note": {
+    "text": "İşbu kâğıt Hasan kardeşimin isteği üzerine tarafımdan yazılmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kastamonu, Daday kazası, Dereköy karyesi, Muhtar İbrahim Efendi vasıtasıyla Bekir Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hasan, Kastamonulu, 37, çiftçi, er (Kastamonu, Daday kazası, Dereköy karyesi)\nAlıcı: Babası Bekir, Kastamonu, Daday kazası, Dereköy karyesi\nYön: cepheden\nTarih: 2 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kastamonu",
+        "occupation": "çiftçi",
+        "epithet": "Kastamonulu",
+        "place": "Daday kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 65,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Daday kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Kastamonu, Daday kazası, Dereköy karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "2 Haziran 1331",
+      "home_address": "Kastamonu, Daday kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5707,
+      "output": 2122
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 2 Haziran 1331\nHİTAP: Pederim Bekir Ağa'ya\nGÖVDE: Hasan der ki: Pederim ellerinden öperim, hayır duanı beklerim. Benim hâlimi sorarsan şükür ayaktayız. Buralarda havalar ısındı. Harman vakti yaklaştı, arpayı kim biçecek düşünür dururum. Köyde işler ne âlemde. Bizim sarı öküzü sattınız mı satmadınız mı bana tez haber eyleyin. Satmadıysanız pazara indirin, parasıyla borçları kapatın. Bana da üç beş kuruş yollayabilirseniz iyi olur, cepte hiç kalmadı, sabun tütün alınmıyor. Öküz durursa kışa yem dayanmaz, hem elde avuçta dar diyordun. Harmanı imeceyle kaldırın. Anamın, küçük kardeşlerimin gözlerinden öperim. Dayıma, emmime, bütün köylüye selam eyleyin. Uzun yazamadım, aklım o öküz meselesinde kaldı. Merak etmeyin, sağlığım yerinde. Mektubu alınca tez cevap yazdırın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Hasan)\nNOT: İşbu kâğıt Hasan kardeşimin isteği üzerine tarafımdan yazılmıştır.\nZARF: Kastamonu, Daday kazası, Dereköy karyesi, Muhtar İbrahim Efendi vasıtasıyla Bekir Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "100 kelime, hedef 101 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000004 ile ortak: \"benim halimi sorarsan şükür ayaktayız buralarda\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4906,
+      "output": 4066
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem diline genel olarak uyulmuş ancak 'sağlık' yerine 'sıhhat' kullanımı o dönem için daha yaygındır.",
+      "olculuk": "Duygular adlandırılmadan, tamamen somut dertler üzerinden ölçülü bir şekilde aktarılmış.",
+      "okuryazarlik": "Okuma yazma bilen bir arkadaşa yazdırılma durumu, giriş kalıbı ve sondaki not ile çok iyi yansıtılmış.",
+      "somutluk": "Sarı öküz, arpa hasadı, sabun ve tütün gibi dönemin gündelik hayatına dair çok güçlü somut detaylar içeriyor.",
+      "sadakat": "İstenen konu, gizlenen kumar detayı ve kelime sayısı hedefine tam olarak uyulmuş.",
+      "sahicilik": "Bir çiftçi askerin cepheden ailesine yazdırdığı mektubun pratik ve telaşlı tonunu kusursuz yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "Merak etmeyin, sağlığım yerinde.",
+        "problem": "1915 mektuplarında 'sağlık' kelimesi yerine 'sıhhat' veya 'vücudum sağdır' ifadeleri daha sık kullanılır.",
+        "suggestion": "Merak etmeyin, sıhhatim yerinde."
+      },
+      {
+        "line": "Köyde işler ne âlemde.",
+        "problem": "Mektubu okuma yazma bilen bir arkadaş yazdığı için soru cümlesinin sonuna soru işareti konulması beklenir.",
+        "suggestion": "Köyde işler ne âlemde?"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

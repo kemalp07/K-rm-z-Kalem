@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Şükrü",
+    "epithet": "Ankaralı",
+    "age": 28,
+    "hometown": "Ankara",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Dürdane",
+    "relation": "kızı",
+    "location": "Ankara, Beypazarı kazası, Taşpınar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 60,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 5 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kızım Dürdane'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela gözlerinden öperim kızım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bu ikinci mektubum, niye cevap yazmıyorsunuz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Merakta koymayın beni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dün bizim Aşağı Mahalle'den Topal'ın oğlu Hasan buraya geldi, bizim bölüğe düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyün havadisini ondan aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Alaca koyunu satmışsınız, anan sağ olsun, borcu kapatsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dün bizim takımdan on iki kişiyi hastaneye yolladılar.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Hasan'ın anasına söyleyin iyi o.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Aklım hep orada, tarlada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ananın ellerinden öp.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Baban Şükrü"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ankara, Beypazarı kazası, Taşpınar karyesi, İmam Salih Efendi vasıtasıyla Dürdane'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şükrü, Ankaralı, 28, çiftçi, er (Ankara, Beypazarı kazası, Taşpınar karyesi)\nAlıcı: Kızı Dürdane, Ankara, Beypazarı kazası, Taşpınar karyesi\nYön: cepheden\nTarih: 5 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: telaşlı, bir konudan ötekine atlar\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (2.)\nUzunluk: 60",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "epithet": "Ankaralı",
+        "place": "Beypazarı kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Dürdane",
+        "gender": "kadın",
+        "age": 10,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beypazarı kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Ankara, Beypazarı kazası, Taşpınar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "hastaneye kaldırılan arkadaşlarının sayısı",
+      "length_label": "kısa",
+      "length_target": 60,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "5 Mayıs 1331",
+      "home_address": "Ankara, Beypazarı kazası, Taşpınar karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5650,
+      "output": 2472
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 5 Mayıs 1331\nHİTAP: Kızım Dürdane'ye\nGÖVDE: Evvela gözlerinden öperim kızım. Bu ikinci mektubum, niye cevap yazmıyorsunuz? Merakta koymayın beni. Dün bizim Aşağı Mahalle'den Topal'ın oğlu Hasan buraya geldi, bizim bölüğe düştü. Köyün havadisini ondan aldım. Alaca koyunu satmışsınız, anan sağ olsun, borcu kapatsın. ⟦Dün bizim takımdan on iki kişiyi hastaneye yolladılar.⟧ Hasan'ın anasına söyleyin iyi o. Aklım hep orada, tarlada. Ananın ellerinden öp.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Baban Şükrü\nZARF: Ankara, Beypazarı kazası, Taşpınar karyesi, İmam Salih Efendi vasıtasıyla Dürdane'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "57 kelime, hedef 60 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4780,
+      "output": 4189
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (evvela, havadis) ve ifade biçimi 1915 yılının gündelik diline tam uyuyor.",
+      "olculuk": "Duygular isimlendirilmeden, art arda sorulan sorular ve memlekete duyulan somut merak üzerinden çok iyi verilmiş.",
+      "okuryazarlik": "Orta seviye okuryazarlığa uygun olarak düzgün, sade ve kısa cümleler kullanılmış.",
+      "somutluk": "Alaca koyun, borç, Aşağı Mahalleli Topal'ın oğlu gibi detaylar mektubu çok somut kılmış.",
+      "sadakat": "İstenen tüm unsurlar var ancak 'az' dikkatsizlik kuralı gereği hassas bilgi dışında küçük bir askerî detay daha kaçırılmalıydı.",
+      "sahicilik": "Konudan konuya atlayan telaşlı yapısı ve köylü askerin dertleriyle son derece sahici bir mektup."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: Ordu-yı Hümayun, 5 Mayıs 1331",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmiş. Hassas bilgi dışında, yazanın farkında olmadan küçük bir askerî ayrıntı (örneğin bulunduğu yer) daha kaçırması gerekirdi.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, Ordu-yı Hümayun, 5 Mayıs 1331"
+      },
+      {
+        "line": "Aklım hep orada, tarlada.",
+        "problem": "Karakterin kaçmayı düşündüğü (sakladığı bilgi) mektupta biraz daha belirgin sezdirilebilirdi; şu anki haliyle standart bir özlem cümlesi gibi duruyor.",
+        "suggestion": "Aklım hep orada, tarlada, buralarda durasım kalmadı gayrı, ayaklarım köye çekiyor beni."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000006",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tevfik",
+    "epithet": "Harputlu",
+    "age": 34,
+    "hometown": "Harput",
+    "occupation": "imam",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Saliha",
+    "relation": "annesi",
+    "location": "Harput, Arapkir kazası, Bahçecik karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 72,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 18 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem validem Saliha Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, ellerinizden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buradan size mektup yollayalı aylar oldu, sizden bir satır cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan köye inen kervandan bir kâğıt bulup da yollamaz mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde Hacı Ömer'e olan borcu ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Güzden kalan arpa yetmediyse alacalı koyunu satın, adam kapıya dayanmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Meraklanmayın, benim sağlığım yerindedir, ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "bulunduğumuz sırttan karşı kıyıyı",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "seyrettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Havalar ısındı, günler beklemekle geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşime, komşulara selam söyleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çabuk cevap yazın, gözümü yolda bırakmayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Oğlun Tevfik"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Harput, Arapkir kazası, Bahçecik karyesi, Muhtar Hasan Ağa vasıtasıyla Saliha Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tevfik, Harputlu, 34, imam, er (Harput, Arapkir kazası, Bahçecik karyesi)\nAlıcı: Annesi Saliha Hanım, Harput, Arapkir kazası, Bahçecik karyesi\nYön: cepheden\nTarih: 18 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: yaralandığını\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tevfik",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Harput",
+        "occupation": "imam",
+        "epithet": "Harputlu",
+        "place": "Arapkir kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Saliha",
+        "gender": "kadın",
+        "age": 61,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Arapkir kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Harput, Arapkir kazası, Bahçecik karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "yaralandığını",
+      "carelessness": "low",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "18 Mayıs 1331",
+      "closing": "",
+      "home_address": "Harput, Arapkir kazası, Bahçecik karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5688,
+      "output": 3444
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 18 Mayıs 1331\nHİTAP: Muhterem validem Saliha Hanım'a\nGÖVDE: Evvela selam eder, ellerinizden öperim. Buradan size mektup yollayalı aylar oldu, sizden bir satır cevap gelmedi. İnsan köye inen kervandan bir kâğıt bulup da yollamaz mı? Köyde Hacı Ömer'e olan borcu ne yaptınız? Güzden kalan arpa yetmediyse alacalı koyunu satın, adam kapıya dayanmasın. Meraklanmayın, benim sağlığım yerindedir, ayaktayım. Dün ⟦bulunduğumuz sırttan karşı kıyıyı⟧ seyrettik. Havalar ısındı, günler beklemekle geçiyor. Kardeşime, komşulara selam söyleyin. Çabuk cevap yazın, gözümü yolda bırakmayın.\nKAPANIŞ: Baki selam.\nİMZA: Oğlun Tevfik\nZARF: Harput, Arapkir kazası, Bahçecik karyesi, Muhtar Hasan Ağa vasıtasıyla Saliha Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "69 kelime, hedef 72 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4857,
+      "output": 2767
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Metinde gecen 'saglik' kelimesi modern kaciyor ve 'kervan' ifadesi 1915 posta gercekliginden ziyade masalsi bir tini tasiyor.",
+      "olculuk": "Duygular ismen anilmamis, sitem ve endise tamamen somut sorular ve eylemler uzerinden gosterilmis.",
+      "okuryazarlik": "Orta okuryazarlik seviyesine ve bir koy imamini yansitan duzgun ama gosterissiz cumle yapisina tam uygun.",
+      "somutluk": "Haci Omer'in borcu, guzden kalan arpa ve alacali koyun gibi doneme ve koye ait cok guclu somut detaylar kullanilmis.",
+      "sadakat": "Istenen tum unsurlar (borc, yara saklama, sitem, uzunluk, hassas bilgi) eksiksiz ve kurallara uygun islenmis.",
+      "sahicilik": "Mektubun akisi ve dertlerin siralanisi dogal, ancak posta icin 'kervan' denmesi koylunun gundelik gercekligini hafifce zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Insan koye inen kervandan bir kagit bulup da yollamaz mi?",
+        "problem": "1915'te koylerden posta genellikle kasabaya veya pazara inenler vasitasiyla gonderilirdi, 'kervan' kullanimi donem disi ve abarti kaciyor.",
+        "suggestion": "Insan kasabaya inen birinden bir kagit yollamaz mi?"
+      },
+      {
+        "line": "Meraklanmayin, benim sagligim yerindedir, ayaktayim.",
+        "problem": "'Saglik' kelimesi donemin mektup dilinde pek kullanilmaz, yerine 'sihhat' veya 'hal' tercih edilirdi.",
+        "suggestion": "Meraklanmayin, benim sihhatim yerindedir, ayaktayim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

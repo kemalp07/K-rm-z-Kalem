@@ -1,0 +1,222 @@
+{
+  "id": "pool_cepheye_000007",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Asım",
+    "epithet": "Çoban",
+    "age": 45,
+    "hometown": "Kırşehir",
+    "occupation": "çoban",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Celal",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 63,
+  "hand": "dictated",
+  "header": {
+    "text": "Çamlıca, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Celal'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Rabbim seni kazadan beladan esirgesin, melekler yoldaşın olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim hâlimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde bu ara herkes döşekte yatıyor, komşulardan göçen giden çok oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Allah sonumuzu hayreylesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen kendini koru.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kaç vakittir mektubun gelmedi, sağ mısın bari bir kâğıt yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Koyunları yaylaya çıkardım, yiyeceğimiz içeceğimiz tas tamamdır, hiç aklın kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ümmet-i Muhammed'e her vakit dua ediyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hüda hafız.",
+  "signature": {
+    "text": "Baban",
+    "seal": "Asım"
+  },
+  "note": {
+    "text": "Asım amcanın dediklerini ben yazdım. Komşun mektepli Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çamlıcalı Celal'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Asım, Çoban, 45, çoban (Kırşehir, Keskin kazası, Çamlıca karyesi)\nAlıcı: Oğlu Er Celal, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: köydeki salgın hastalık (üstü örtülü)\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 63",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Asım",
+        "gender": "erkek",
+        "age": 45,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Keskin kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Celal",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keskin kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "köydeki salgın hastalık (üstü örtülü)",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 63,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "20 Haziran 1331",
+      "home_address": "Kırşehir, Keskin kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5633,
+      "output": 1981
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Çamlıca, 20 Haziran 1331\nHİTAP: Oğlum Celal'e\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Rabbim seni kazadan beladan esirgesin, melekler yoldaşın olsun. Bizim hâlimizi sorarsan şükür ayaktayız. Köyde bu ara herkes döşekte yatıyor, komşulardan göçen giden çok oldu. Allah sonumuzu hayreylesin. Sen kendini koru. Kaç vakittir mektubun gelmedi, sağ mısın bari bir kâğıt yolla. Koyunları yaylaya çıkardım, yiyeceğimiz içeceğimiz tas tamamdır, hiç aklın kalmasın. Ümmet-i Muhammed'e her vakit dua ediyorum.\nKAPANIŞ: Hüda hafız.\nİMZA: (mühür: Asım) Baban\nNOT: Asım amcanın dediklerini ben yazdım. Komşun mektepli Ali.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çamlıcalı Celal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "63 kelime, hedef 63 (+0%)"
+    },
+    "forbidden": {
+      "result": "fail",
+      "detail": "geçen: tamamdır"
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": null,
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "rejected",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontrol: forbidden"
+    }
+  ]
+}

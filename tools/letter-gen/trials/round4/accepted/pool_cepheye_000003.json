@@ -1,0 +1,311 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Kevser",
+    "epithet": "Giresunlu",
+    "age": 56,
+    "hometown": "Giresun",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Adem",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "mahalle imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 89,
+  "hand": "dictated",
+  "header": {
+    "text": "Yazıköy, 3 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Adem'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kevser anan der ki: Oğlum Adem, nasılsın, iyi misin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Niye hiç cevap yazmıyorsun?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kâğıdın mı bitti, postacı mı uğramadı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kaç zamandır yollara bakıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sana kendi elimle ördüğüm atkıyı yolluyorum, geceleri üşümeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Boynuna sarıyor musun?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Havalar nasıl oldu orada?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Burada her şey ateş pahası oldu oğlum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dükkanlarda un bulamıyoruz, şekerin yüzünü gören yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çarşıya pazara çıkılmıyor, bir avuç fasulye bile alınmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Komşularla eski darıları öğütmeye çalışıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen orada ne yiyip ne içiyorsun?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Aç kalmıyorsun ya?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Gece yatacak yeriniz rahat mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Çavuşların sana iyi davranıyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Sorularıma tek tek cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Sağlıcakla kal.",
+  "signature": {
+    "text": "",
+    "seal": "Kevser"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Kevser Hanım'ın ağzından yazdım. İmam Tahir.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Yazıköylü Adem'e",
+    "sensitive": false
+  },
+  "package": [
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kevser Hanım, Giresunlu, 56, çiftçi (Giresun, Keşap kazası, Yazıköy karyesi)\nAlıcı: Oğlu Er Adem, cephede\nYön: cepheye\nTarih: 3 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: mahalle imamı)\nOkuryazarlık: yok\nSes: genç ve heyecanlı, çok soru sorar\nKonu: fiyatların artması, un bulunamaması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nPaket: el örgüsü atkı\nKapanış: Sağlıcakla kal\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Kevser",
+        "gender": "kadın",
+        "age": 56,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Giresun",
+        "occupation": "çiftçi",
+        "epithet": "Giresunlu",
+        "place": "Keşap kazası, Yazıköy karyesi"
+      },
+      "recipient": {
+        "name": "Adem",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Giresun",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keşap kazası, Yazıköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "fiyatların artması, un bulunamaması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": [
+        "el örgüsü atkı"
+      ],
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "3 Haziran 1331",
+      "closing": "Sağlıcakla kal",
+      "home_address": "Giresun, Keşap kazası, Yazıköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5783,
+      "output": 3671
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Yazıköy, 3 Haziran 1331\nHİTAP: Oğlum Adem'e\nGÖVDE: Kevser anan der ki: Oğlum Adem, nasılsın, iyi misin? Niye hiç cevap yazmıyorsun? Kâğıdın mı bitti, postacı mı uğramadı? Kaç zamandır yollara bakıyorum. Sana kendi elimle ördüğüm atkıyı yolluyorum, geceleri üşümeyesin. Boynuna sarıyor musun? Havalar nasıl oldu orada? Burada her şey ateş pahası oldu oğlum. Dükkanlarda un bulamıyoruz, şekerin yüzünü gören yok. Çarşıya pazara çıkılmıyor, bir avuç fasulye bile alınmıyor. Komşularla eski darıları öğütmeye çalışıyoruz. Sen orada ne yiyip ne içiyorsun? Aç kalmıyorsun ya? Gece yatacak yeriniz rahat mı? Çavuşların sana iyi davranıyor mu? Sorularıma tek tek cevap yaz.\nKAPANIŞ: Sağlıcakla kal.\nİMZA: (mühür: Kevser)\nNOT: İşbu kâğıdı Kevser Hanım'ın ağzından yazdım. İmam Tahir.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Yazıköylü Adem'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 89 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4899,
+      "output": 2320
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler genel olarak döneme uygun olsa da 'postacı' ve 'iyi davranmak' gibi ifadeler 1915 köy bağlamı için biraz fazla modern tınlıyor.",
+      "olculuk": "Duygular adlandırılmamış, hasret ve endişe tamamen art arda sorulan sorular ve somut detaylar üzerinden verilmiş.",
+      "okuryazarlik": "İmamın kaleminden çıktığı belli olan, düzgün ama köylü kadının sade söz varlığını koruyan bir yapı kurulmuş.",
+      "somutluk": "Eski darıları öğütmek, bir avuç fasulye ve el örgüsü atkı gibi detaylar mektubu oldukça somut kılmış.",
+      "sadakat": "İstenen konu, saklanan bilgi kuralı, paket, kapanış ve uzunluk (82 kelime) kısıtlamalarına tam uyulmuş.",
+      "sahicilik": "Soru sorma mizacı iyi yansıtılmış ancak cephedeki askere 'çavuşların iyi davranıyor mu' diye sormak dönemin askerlik algısından ziyade günümüz okul/kamp endişesini andırıyor."
+    },
+    "issues": [
+      {
+        "line": "Kâğıdın mı bitti, postacı mı uğramadı?",
+        "problem": "1915'te köylere düzenli 'postacı' uğramazdı; mektuplar muhtar, imam veya pazardan dönenler vasıtasıyla gelirdi.",
+        "suggestion": "Kâğıdın mı bitti, köye posta mı gelmedi?"
+      },
+      {
+        "line": "Çavuşların sana iyi davranıyor mu? Sorularıma tek tek cevap yaz.",
+        "problem": "'İyi davranıyor mu' ifadesi Birinci Dünya Savaşı cephesindeki bir asker için fazla modern ve naif bir endişe kalıbıdır.",
+        "suggestion": "Zabitlerin, çavuşların nasıldır? Merakta koma, tez cevap yolla."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

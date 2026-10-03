@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheye_000023",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Haydar",
+    "epithet": "Kahveci",
+    "age": 22,
+    "hometown": "Niğde",
+    "occupation": "kahveci",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Recep",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 83,
+  "hand": "hurried",
+  "header": {
+    "text": "Gökçeören, 21 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Recep'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ağabey sana mektup yoladım cevap gelmedi sesin çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim küçük İsmail'e kağıt geliyo onu da askere çağrıyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Haftaya salı gidecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Evde kaldım tek başıma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kahvede işler durdu çay beş para oldu şeker bulunmuyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dükkandaki üç sandalyenin bacağı kırıldı onları tamir etdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İsmail giderken yanına iki kat çorap koyduk bi de yarım okka pestil sardık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Komşu Ali ağanın ortanca oğlu da onla gidecekmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bakkal Hasan'a on kuruş borç yapdık onu da deftere yazdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen orda nasılsın çabuk yaz İsmail'i senin yanına veriler mi bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden öperim.",
+  "signature": {
+    "text": "Kardeşin Haydar"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Gökçeörenli Recep'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Haydar, Kahveci, 22, kahveci (Niğde, Aksaray kazası, Gökçeören karyesi)\nAlıcı: Ağabeyi Er Recep, cephede\nYön: cepheye\nTarih: 21 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: kardeşin de askere çağrılması\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 83",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Haydar",
+        "gender": "erkek",
+        "age": 22,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": "kahveci",
+        "epithet": "Kahveci",
+        "place": "Aksaray kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Aksaray kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 83,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "21 Nisan 1331",
+      "home_address": "Niğde, Aksaray kazası, Gökçeören karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5620,
+      "output": 2966
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Gökçeören, 21 Nisan 1331\nHİTAP: Ağabeyim Recep'e\nGÖVDE: Ağabey sana mektup yoladım cevap gelmedi sesin çıkmadı. Bizim küçük İsmail'e kağıt geliyo onu da askere çağrıyolar. Haftaya salı gidecek. Evde kaldım tek başıma. Kahvede işler durdu çay beş para oldu şeker bulunmuyo. Dükkandaki üç sandalyenin bacağı kırıldı onları tamir etdim. İsmail giderken yanına iki kat çorap koyduk bi de yarım okka pestil sardık. Komşu Ali ağanın ortanca oğlu da onla gidecekmiş. Bakkal Hasan'a on kuruş borç yapdık onu da deftere yazdı. Sen orda nasılsın çabuk yaz İsmail'i senin yanına veriler mi bilmeyorum.\nKAPANIŞ: Ellerinden öperim.\nİMZA: Kardeşin Haydar\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Gökçeörenli Recep'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "83 kelime, hedef 83 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4787,
+      "output": 3685
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime kullanılmamış, dönemin gündelik ve sade dili başarıyla yansıtılmış.",
+      "olculuk": "Duygular adlandırılmamış, durum tamamen somut olaylar üzerinden abartısızca aktarılmış.",
+      "okuryazarlik": "Noktalama eksiklikleri ve 'geliyo', 'bilmeyorum', 'yapdık' gibi bilinçli hatalarla düşük okuryazarlık kusursuz verilmiş.",
+      "somutluk": "Çay fiyatı, kırık sandalye bacağı, pestil ve çorap gibi detaylarla çok güçlü bir somutluk sağlanmış.",
+      "sadakat": "İstenen tüm öğeler ve 'titiz/sayıcı' ses tonu mevcut ancak babanın ölümü saklanırken kurulan bir cümle gizliliği mantıken zedeliyor.",
+      "sahicilik": "Kardeşini askere uğurlayan ve dükkanda yalnız kalan bir esnafın telaşı son derece doğal ve sahici."
+    },
+    "issues": [
+      {
+        "line": "Evde kaldım tek başıma.",
+        "problem": "Babanın öldüğü saklanıyorsa 'evde tek başıma kaldım' demek cephedeki ağabeyin şüphelenmesine (Babam nerede?) yol açar ve saklama çabasıyla çelişir.",
+        "suggestion": "İsmail de gidince dükkanda tek başıma kaldım."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

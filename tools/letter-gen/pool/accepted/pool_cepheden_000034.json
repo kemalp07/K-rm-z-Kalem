@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheden_000034",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Emin",
+    "epithet": "Terzi",
+    "age": 36,
+    "hometown": "Kayseri",
+    "occupation": "terzi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Nazife",
+    "relation": "annesi",
+    "location": "Kayseri, İncesu kazası, Ortaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 71,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Nazife'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Benim halimi sorarsan şükür iyyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Siz nasılsınız inşallah iysinizdir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Anacım ekinler büyümüştür boy vermiştir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ben burda yokum o tarlayı kim biçecek hasadı kime yaptıracanız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sakın ırgata çok para verip de hakkımızı yedirme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bakkal Artin'e olan borcun faizi biniyo mu onu bana tez yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Elime bir iki kuruş geçerse hemen yollayacam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen hasadı ucuza verme kimseye para kaptırma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim yemekler yetiyo karnımız tok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Emmi kızı Zehra'ya selam et.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden hasretle öperim.",
+  "signature": {
+    "text": "Oğlun Emin"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kayseri, İncesu kazası, Ortaköy karyesi, İmam Rıza Efendi vasıtasıyla Nazife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Emin, Terzi, 36, terzi, er (Kayseri, İncesu kazası, Ortaköy karyesi)\nAlıcı: Annesi Nazife Hanım, Kayseri, İncesu kazası, Ortaköy karyesi\nYön: cepheden\nTarih: 23 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: aç kaldıklarını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 71",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Emin",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": "terzi",
+        "epithet": "Terzi",
+        "place": "İncesu kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Nazife",
+        "gender": "kadın",
+        "age": 60,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "İncesu kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Kayseri, İncesu kazası, Ortaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 71,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "23 Nisan 1331",
+      "home_address": "Kayseri, İncesu kazası, Ortaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5693,
+      "output": 1763
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Nisan 1331\nHİTAP: Anam Nazife'ye\nGÖVDE: Benim halimi sorarsan şükür iyyim. Siz nasılsınız inşallah iysinizdir. Anacım ekinler büyümüştür boy vermiştir. Ben burda yokum o tarlayı kim biçecek hasadı kime yaptıracanız. Sakın ırgata çok para verip de hakkımızı yedirme. Bakkal Artin'e olan borcun faizi biniyo mu onu bana tez yaz. Elime bir iki kuruş geçerse hemen yollayacam. Sen hasadı ucuza verme kimseye para kaptırma. Bizim yemekler yetiyo karnımız tok. Emmi kızı Zehra'ya selam et.\nKAPANIŞ: Ellerinden hasretle öperim.\nİMZA: Oğlun Emin\nZARF: Kayseri, İncesu kazası, Ortaköy karyesi, İmam Rıza Efendi vasıtasıyla Nazife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "67 kelime, hedef 71 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4773,
+      "output": 2311
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem diline ve köylü ağzına genel olarak uyulmuş ancak kapanışta kural ihlali yapılmış.",
+      "olculuk": "Kapanışta 'hasretle' kelimesi kullanılarak duygu doğrudan adlandırılmış, bu durum kural 4'e aykırıdır.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi; noktalama eksiklikleri, bağlaçsız sıralı cümleler ve 'iyyim', 'yaptıracanız' gibi ses olaylarıyla çok başarılı yansıtılmış.",
+      "somutluk": "Irgat yevmiyesi, Bakkal Artin'in borcu ve ekinlerin boy vermesi gibi son derece somut, gündelik detaylar kullanılmış.",
+      "sadakat": "İstenen uzunluğa (68 kelime), hesapçı sese, konuya ve açlığı gizleme (karnımız tok diyerek) şartına tam uyulmuş.",
+      "sahicilik": "Savaştan çok gerideki tarlayı ve borcu dert edinen, parayı kıskanan köylü asker portresi son derece inandırıcı."
+    },
+    "issues": [
+      {
+        "line": "KAPANIŞ: Ellerinden hasretle öperim.",
+        "problem": "Duygu adlandırılmış ('hasretle'). Kural 4'e göre duygu isimleri (hasret, özlem vb.) kullanılmamalıdır.",
+        "suggestion": "KAPANIŞ: Ellerinden öperim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

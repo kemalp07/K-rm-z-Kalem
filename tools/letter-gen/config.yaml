@@ -19,7 +19,7 @@ generation:
   temperature: 0.9
   # Includes the model's thinking, which alone can run to a few thousand tokens.
   max_output_tokens: 16384
-  concurrency: 6
+  concurrency: 4
   retries: 5          # waits 2, 4, 8, 16, 32 s between attempts
 
 review:

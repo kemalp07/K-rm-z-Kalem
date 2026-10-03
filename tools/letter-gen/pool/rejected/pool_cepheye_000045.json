@@ -1,0 +1,330 @@
+{
+  "id": "pool_cepheye_000045",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Necibe",
+    "epithet": "Adanalı",
+    "age": 20,
+    "hometown": "Adana",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Lütfi",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 129,
+  "hand": "careful",
+  "header": {
+    "text": "Akpınar, 20 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Lütfi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Aklın burada kalmasın, işine bak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Tarlayı sürüyoruz, arpa yakında sararır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sana yolladığım tütünü idareli iç, bitince yenisini bulamam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geceleri üstünü ört, çorapsız gezme sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde herkes kendi derdinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Geçen cuma Kör Meryem’in oğlu İsmail’in künyesi geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Evden ses çıkmıyor, kapıyı çektiler oturdular.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Gidip başsağlığı verdim, kadın ağlamıyor bile, öylece duvara bakıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen sakın kendini siperden dışarı çıkarma, komutanın ne derse onu yap.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kendi başını boş yere belaya sokma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Burada işler yetişiyor, ben hepsine koşturuyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Gündüz tarladayım, akşam eve bakıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kimseye muhtaç değiliz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Dün biraz ateşlendim yattım ama güneşin sıcağındandır, bugün hemen kalkıp ineği sağdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Ahırdaki saman azalıyor, güz gelmeden tedarik edeceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Emmioğlu borcunu getirmedi, haber saldım, parayı ondan alacağım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Yemeğini ziyan etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Bana sağlam dön, başka bir şey istemem.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s20",
+      "text": "Cevap yazmayı sakın unutma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Necibe"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Lütfi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Necibe Hanım, Adanalı, 20, çiftçi (Adana, Ceyhan kazası, Akpınar karyesi)\nAlıcı: Kocası Er Lütfi, cephede\nYön: cepheye\nTarih: 20 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sert, emir verir gibi yazar\nKonu: komşunun oğlunun şehit haberi\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 129",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Necibe",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "epithet": "Adanalı",
+        "place": "Ceyhan kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ceyhan kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 129,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "20 Mayıs 1331",
+      "home_address": "Adana, Ceyhan kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5623,
+      "output": 4064
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Akpınar, 20 Mayıs 1331\nHİTAP: Zevcim Lütfi'ye\nGÖVDE: Mektubunu aldık. Aklın burada kalmasın, işine bak. Tarlayı sürüyoruz, arpa yakında sararır. Sana yolladığım tütünü idareli iç, bitince yenisini bulamam. Geceleri üstünü ört, çorapsız gezme sakın. Köyde herkes kendi derdinde. Geçen cuma Kör Meryem’in oğlu İsmail’in künyesi geldi. Evden ses çıkmıyor, kapıyı çektiler oturdular. Gidip başsağlığı verdim, kadın ağlamıyor bile, öylece duvara bakıyor. Sen sakın kendini siperden dışarı çıkarma, komutanın ne derse onu yap. Kendi başını boş yere belaya sokma. Burada işler yetişiyor, ben hepsine koşturuyorum. Gündüz tarladayım, akşam eve bakıyorum. Kimseye muhtaç değiliz. Dün biraz ateşlendim yattım ama güneşin sıcağındandır, bugün hemen kalkıp ineği sağdım. Ahırdaki saman azalıyor, güz gelmeden tedarik edeceğim. Emmioğlu borcunu getirmedi, haber saldım, parayı ondan alacağım. Yemeğini ziyan etme. Bana sağlam dön, başka bir şey istemem. Cevap yazmayı sakın unutma.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Necibe\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Akpınarlı Lütfi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "125 kelime, hedef 129 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4909,
+      "output": 3064
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "'Tedarik edeceğim' ve 'Zevcim' gibi ifadeler köylü bir kadın için biraz fazla resmî ve kâtip ağzı olmuş.",
+      "olculuk": "Duygular hiç adlandırılmamış, komşunun acısı 'duvara bakıyor' gibi çok güçlü ve somut bir eylemle verilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine göre cümleler biraz fazla hatasız ve modern bir akıcılıkta kurulmuş.",
+      "somutluk": "Arpa hasadı, inek sağma, saman ve emmioğlunun borcu gibi gündelik hayata dair çok iyi somut detaylar barındırıyor.",
+      "sadakat": "Karakterin hastalığını saklaması gerekirken mektupta açıkça ateşlenip yattığını yazması isteğe tamamen ters düşmüş.",
+      "sahicilik": "Emir veren sert ton ve köydeki yas tasviri çok sahici olsa da, saklanması gereken bilginin açık edilmesi inandırıcılığı kırıyor."
+    },
+    "issues": [
+      {
+        "line": "Dün biraz ateşlendim yattım ama güneşin sıcağındandır, bugün hemen kalkıp ineği sağdım.",
+        "problem": "İstekte karakterin hastalığını sakladığı belirtilmiş, ancak burada açıkça ateşlendiğini yazarak kuralı ihlal etmiş.",
+        "suggestion": "Benim halimi sorarsan turp gibiyim, bugün erkenden kalkıp ineği sağdım."
+      },
+      {
+        "line": "Ahırdaki saman azalıyor, güz gelmeden tedarik edeceğim.",
+        "problem": "'Tedarik edeceğim' ifadesi köylü bir kadının gündelik diline uygun değil, fazla resmî.",
+        "suggestion": "Ahırdaki saman azalıyor, güz gelmeden bir çaresine bakacağım."
+      },
+      {
+        "line": "HİTAP: Zevcim Lütfi'ye",
+        "problem": "Köylü kadınlar mektuplarında 'zevcim' gibi kâtip kelimeleri kullanmaz, daha sade hitap ederler.",
+        "suggestion": "Kocam Lütfi'ye"
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "id": "pool_cepheden_000013",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sait",
+    "epithet": "Aydınlı",
+    "age": 31,
+    "hometown": "Aydın",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Halime",
+    "relation": "kız kardeşi",
+    "location": "Aydın, Söke kazası, Yenice karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 67,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Halime kardaşıma",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Halime kardaşım mektubun ve paketin geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İçinden çıkan yün çorapları ayağıma geçirdim çok eyi oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kuru incirleri de arkadaşlara pay ettim yedik sağolun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim halim eyidir merak etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sürüyü ne yaptınız ağılda kuzular büyüdü mü yapağı zamanı geliyo koyunları kim kırkacak",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Deniz kenarında bir sırtın ardında bekliyoz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bura sıcak oluyo ama geceleri esiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Siz nasılsınız Hasan dayıma ve köydeki herkeze selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bana gene kağıt yollayın bitti.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Kardaşın Sait"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Aydın, Söke kazası, Yenice karyesi, Muhtar İbrahim Ağa vasıtasıyla Halime Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sait, Aydınlı, 31, çoban, onbaşı (Aydın, Söke kazası, Yenice karyesi)\nAlıcı: Kız kardeşi Halime Hanım, Aydın, Söke kazası, Yenice karyesi\nYön: cepheden\nTarih: 17 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dertli, ama dertlerini söylemez\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 67",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sait",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Aydın",
+        "occupation": "çoban",
+        "epithet": "Aydınlı",
+        "place": "Söke kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Halime",
+        "gender": "kadın",
+        "age": 35,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Söke kazası, Yenice karyesi"
+      },
+      "recipient_location": "Aydın, Söke kazası, Yenice karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "korktuğunu",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 67,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "17 Mayıs 1331",
+      "home_address": "Aydın, Söke kazası, Yenice karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5728,
+      "output": 3271
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 17 Mayıs 1331\nHİTAP: Halime kardaşıma\nGÖVDE: Halime kardaşım mektubun ve paketin geldi. İçinden çıkan yün çorapları ayağıma geçirdim çok eyi oldu. Kuru incirleri de arkadaşlara pay ettim yedik sağolun. Benim halim eyidir merak etmeyin. Sürüyü ne yaptınız ağılda kuzular büyüdü mü yapağı zamanı geliyo koyunları kim kırkacak ⟦Deniz kenarında bir sırtın ardında bekliyoz.⟧ Bura sıcak oluyo ama geceleri esiyo. Siz nasılsınız Hasan dayıma ve köydeki herkeze selam ederim. Bana gene kağıt yollayın bitti.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Kardaşın Sait\nZARF: Aydın, Söke kazası, Yenice karyesi, Muhtar İbrahim Ağa vasıtasıyla Halime Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "67 kelime, hedef 67 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4766,
+      "output": 2704
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime içermiyor, dönemin köylü ağzına ve kelime dağarcığına tamamen uygun.",
+      "olculuk": "Duygular adlandırılmamış, metafor kullanılmamış, tamamen somut ve ölçülü bir anlatım var.",
+      "okuryazarlik": "Noktalama eksiklikleri ve eyi, herkeze, geliyo gibi bilinçli imla hatalarıyla düşük okuryazarlık kusursuz yansıtılmış.",
+      "somutluk": "Yün çorap, kuru incir, yapağı zamanı ve koyun kırkma gibi çobanlık mesleğine ait çok iyi somut detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluk, konu, gizlenen duygu ve dikkatsizlik kurallarına harfiyen uyulmuş.",
+      "sahicilik": "Bir çobanın cepheden kız kardeşine yazdığı telaşlı ama metanetli mektup hissini çok doğal bir şekilde veriyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

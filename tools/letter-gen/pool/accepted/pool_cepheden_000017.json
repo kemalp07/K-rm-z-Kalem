@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000017",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Rauf",
+    "epithet": "Çorumlu",
+    "age": 33,
+    "hometown": "Çorum",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Nazlı",
+    "relation": "kızı",
+    "location": "Çorum, Sungurlu kazası, Hacılar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "high",
+  "length_target": 81,
+  "hand": "hurried",
+  "header": {
+    "text": "Maydos, 8 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Nazlı kızıma",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Nazlı kızım evvela selam eder iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Allah seni esirgesin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim halimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geceleri çok gürültü oluyo uyuyamıyoruz, Rabbim hepimizi korusun sağ salim yavrularıma kavuştursun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kardeşlerine eyyi bak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sizin orda havalar ısındımı bostanı ektiniz mi bu sene.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tohum yetmezse dayından iste versin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim bölükte on beş kişi hasta yatiyo.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dün gece Akbaş iskelesine indik su almaya orası çok kalabalıktı.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Rabbim herkezin duasını kabul etsin beni burda merakta komayın gari.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Anana selam söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çabuk cevap yaz yavrum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Baban Rauf"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çorum, Sungurlu kazası, Hacılar karyesi, İmam İbrahim Efendi vasıtasıyla Nazlı Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Rauf, Çorumlu, 33, ırgat, er (Çorum, Sungurlu kazası, Hacılar karyesi)\nAlıcı: Kızı Nazlı Hanım, Çorum, Sungurlu kazası, Hacılar karyesi\nYön: cepheden\nTarih: 8 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dualı, sık sık dua eder\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: korktuğunu\nHassas bilgi: yakındaki bir köyün ya da iskelenin adı\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Rauf",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": "ırgat",
+        "epithet": "Çorumlu",
+        "place": "Sungurlu kazası, Hacılar karyesi"
+      },
+      "recipient": {
+        "name": "Nazlı",
+        "gender": "kadın",
+        "age": 17,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sungurlu kazası, Hacılar karyesi"
+      },
+      "recipient_location": "Çorum, Sungurlu kazası, Hacılar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "korktuğunu",
+      "carelessness": "high",
+      "sensitive_info": "yakındaki bir köyün ya da iskelenin adı",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "8 Mayıs 1331",
+      "home_address": "Çorum, Sungurlu kazası, Hacılar karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5726,
+      "output": 3685
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Yer · Kuzey sırtı ve iskele (oyun içi)",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Maydos⟧, 8 Mayıs 1331\nHİTAP: Nazlı kızıma\nGÖVDE: Nazlı kızım evvela selam eder iki gözlerinden hasretle öperim. Allah seni esirgesin inşallah. Benim halimi sorarsan şükür ayaktayız. Geceleri çok gürültü oluyo uyuyamıyoruz, Rabbim hepimizi korusun sağ salim yavrularıma kavuştursun. Kardeşlerine eyyi bak. Sizin orda havalar ısındımı bostanı ektiniz mi bu sene. Tohum yetmezse dayından iste versin. ⟦Bizim bölükte on beş kişi hasta yatiyo.⟧ ⟦Dün gece Akbaş iskelesine indik su almaya orası çok kalabalıktı.⟧ Rabbim herkezin duasını kabul etsin beni burda merakta komayın gari. Anana selam söyle. Çabuk cevap yaz yavrum.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Baban Rauf\nZARF: Çorum, Sungurlu kazası, Hacılar karyesi, İmam İbrahim Efendi vasıtasıyla Nazlı Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 81 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Maydos, 8 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000015 ile ortak: \"evvela selam eder iki gözlerinden hasretle\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4812,
+      "output": 3952
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri ve kalıpları doğru kullanılmış, modern ifade barındırmıyor.",
+      "olculuk": "Korku duygusu adlandırılmadan, 'geceleri çok gürültü oluyo' gibi dolaylı ve ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Kısa cümleler, bağlaç eksiklikleri ve 'oluyo', 'ısındımı' gibi hafif imla hatalarıyla düşük okuryazarlık başarıyla yansıtılmış.",
+      "somutluk": "Bostan, tohum, dayı, su alma kuyruğu gibi gündelik ve somut detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstenen tüm unsurlar mektuba eklenmiş ancak sansür işaretlerinin (⟦ ⟧) kullanımı kuralında hata yapılmış.",
+      "sahicilik": "Gerçek bir köylü asker mektubu tonunda, samimi, inandırıcı ve dönemin ruhuna uygun."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Maydos, 8 Mayıs 1331⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) içine tarih de alınmış; kurala göre tarih işaretin dışında kalmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Maydos⟧, 8 Mayıs 1331"
+      },
+      {
+        "line": "⟦Dün gece Akbaş iskelesine indik su almaya orası çok kalabalıktı.⟧",
+        "problem": "Sansür işaretleri tüm cümleyi kapsıyor; kurala göre sadece hassas bilgi (yer adı) işaretlenmeli, gündelik sözler dışarıda bırakılmalıdır.",
+        "suggestion": "Dün gece ⟦Akbaş iskelesine⟧ indik su almaya orası çok kalabalıktı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

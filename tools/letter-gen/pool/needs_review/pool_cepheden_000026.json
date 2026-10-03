@@ -1,0 +1,269 @@
+{
+  "id": "pool_cepheden_000026",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Emin",
+    "epithet": "Ankaralı",
+    "age": 24,
+    "hometown": "Ankara",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zehra",
+    "relation": "nişanlısı",
+    "location": "Ankara, Nallıhan kazası, Yeniköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 77,
+  "hand": "dictated",
+  "header": {
+    "text": "Seddülbahir, 13 Haziran 1331",
+    "sensitive": true
+  },
+  "salutation": "Nişanlım Zehra Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Emin der ki: Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Arpalar sararmıştır, tırpan işi kime kaldı, kim biçecek bana tek tek yazasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Emmimgil yardım edecek mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Tohumluğu ayırın, samanlığı iyi örtün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bakkal Salih'e on kuruş borcum vardı, onu verdiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırdaki sarı ineğin buzağısı ne oldu, sütü kime sattınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ben turp gibiyim, ayağım yere sağlam basıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün gece bizim bölüğe gelen peksimet çuvalları ıslandı.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sağımızdaki tepede topçu taburu var.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Mektubu Emin kardeşimin ricasıyla çadırda ben kaleme aldım, duacıyız.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol, cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Emin"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ankara, Nallıhan kazası, Yeniköy karyesi, İmam Hasan Efendi vasıtasıyla Zehra Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Emin, Ankaralı, 24, çiftçi, er (Ankara, Nallıhan kazası, Yeniköy karyesi)\nAlıcı: Nişanlısı Zehra Hanım, Ankara, Nallıhan kazası, Yeniköy karyesi\nYön: cepheden\nTarih: 13 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Emin",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "epithet": "Ankaralı",
+        "place": "Nallıhan kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Zehra",
+        "gender": "kadın",
+        "age": 16,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Nallıhan kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Ankara, Nallıhan kazası, Yeniköy karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "13 Haziran 1331",
+      "home_address": "Ankara, Nallıhan kazası, Yeniköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5652,
+      "output": 2721
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 13 Haziran 1331\nHİTAP: Nişanlım Zehra Hanım'a\nGÖVDE: Emin der ki: Evvela selam eder, iki gözlerinden öperim. Arpalar sararmıştır, tırpan işi kime kaldı, kim biçecek bana tek tek yazasın. Emmimgil yardım edecek mi? Tohumluğu ayırın, samanlığı iyi örtün. Bakkal Salih'e on kuruş borcum vardı, onu verdiniz mi? Ahırdaki sarı ineğin buzağısı ne oldu, sütü kime sattınız? Ben turp gibiyim, ayağım yere sağlam basıyor. ⟦Dün gece bizim bölüğe gelen peksimet çuvalları ıslandı.⟧ ⟦Sağımızdaki tepede topçu taburu var.⟧ Mektubu Emin kardeşimin ricasıyla çadırda ben kaleme aldım, duacıyız.\nKAPANIŞ: Allah'a emanet ol, cevabını bekliyorum.\nİMZA: (mühür: Emin)\nZARF: Ankara, Nallıhan kazası, Yeniköy karyesi, İmam Hasan Efendi vasıtasıyla Zehra Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "77 kelime, hedef 77 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 13 Haziran 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000005 ile ortak: \"der ki evvela selam eder iki\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4833,
+      "output": 3087
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler genel olarak döneme uygun olsa da 'Nişanlım' hitabı okuryazar olmayan bir köylü için fazla moderndir.",
+      "olculuk": "Duygu adlandırılmamış ve abartıdan kaçınılmış, ancak yara saklama çabası ('ayağım yere sağlam basıyor') biraz fazla göze batıyor.",
+      "okuryazarlik": "Yazdırılma üslubu (Emin der ki) başarılı, fakat kâtibin notu yanlış yere yazılmış ve hitap köylü ağzına uymuyor.",
+      "somutluk": "Arpa, tırpan, tohumluk, Bakkal Salih'in borcu ve sarı ineğin buzağısı gibi çok başarılı ve titiz somut ayrıntılar barındırıyor.",
+      "sadakat": "İstenen tüm unsurlar var ancak sansür işaretlerinin kullanımı (tarihin de içine alınması) ve NOT bölümünün eksikliği kuralları ihlal ediyor.",
+      "sahicilik": "Tarımsal kaygılar çok sahici hissettiriyor ancak dikkatsizlik sonucu kaçan askerî bilgiler doğal bir cümlenin parçası olmak yerine doğrudan rapor gibi yazılmış."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 13 Haziran 1331⟧",
+        "problem": "Tarih sansür işaretinin içine alınmış; kurala göre yalnızca askerî bilgi (yer adı) işaretlenmeli, tarih dışarıda kalmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 13 Haziran 1331"
+      },
+      {
+        "line": "HİTAP: Nişanlım Zehra Hanım'a",
+        "problem": "'Nişanlım' hitabı okumuş kişilere özgüdür, okuma yazma bilmeyen bir köylünün yazdırdığı mektupta daha sade bir hitap kullanılmalıdır.",
+        "suggestion": "HİTAP: Zehra'ya"
+      },
+      {
+        "line": "⟦Sağımızdaki tepede topçu taburu var.⟧",
+        "problem": "Dikkatsizlik sonucu ağızdan kaçan bir ayrıntı gibi değil, doğrudan askerî bir istihbarat cümlesi gibi duruyor; doğallıktan uzak.",
+        "suggestion": "Dün ⟦sağımızdaki topçu taburunun⟧ katırları geçerken ortalık toza bulandı."
+      },
+      {
+        "line": "Mektubu Emin kardeşimin ricasıyla çadırda ben kaleme aldım, duacıyız.",
+        "problem": "Yazdıranın (hoca efendinin) notu GÖVDE içinde bırakılmış. Kurallara göre bu tür eklemeler İMZA'dan sonra ayrı bir NOT satırında olmalıdır.",
+        "suggestion": "Bu cümleyi GÖVDE'den çıkarıp İMZA'dan sonra 'NOT: Mektubu Emin kardeşimin ricasıyla çadırda ben kaleme aldım, duacıyız.' şeklinde ekleyin."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

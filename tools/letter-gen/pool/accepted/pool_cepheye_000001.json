@@ -1,0 +1,302 @@
+{
+  "id": "pool_cepheye_000001",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Pakize",
+    "epithet": "Rizeli",
+    "age": 52,
+    "hometown": "Rize",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Mustafa",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 114,
+  "hand": "hurried",
+  "header": {
+    "text": "Karaağaç, 27 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Mustafa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Mustafa mektubumu yazeyrum inşalah isindir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim halimizi sorarsan hep koşturuyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Mısırları ektik ama yağmur az yağdı boy atmadı çapa zamanı geldi adam lazım yevmiye çok pahalı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen güzden Hasan Ağaya borcumuz var onu istiyor duruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Senin giderken bıraktığın parayı ona verdik bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Fındık dersen bu sene dallar boş gibi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Vergici geldi ahırdaki tek ineğe bakıp durdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Şeker çok bahalı oldu alamayruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dayın gilde gelmedi yardıma herkez kendi derdinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bikaç kuruş yollayabilirsen iyi olur yollayamazsan kendin bil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Hasan ağanın karısı dün laf vurdu parayı nezaman verceniz diye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Gönderdiğin o bir lira yetmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Un bulmak zorlaştı değirmenci peşin para istiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kendine dıkkat et hasda olma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Buraları merak etme biz idare edeyruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Biraz darlığımız var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Pakize"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Rizeli Mustafa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Pakize Hanım, Rizeli, 52, ev hanımı (Rize, Hemşin kazası, Karaağaç karyesi)\nAlıcı: Oğlu Onbaşı Mustafa, cephede\nYön: cepheye\nTarih: 27 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: ekinlerin durumunu bildirmek\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 114",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Pakize",
+        "gender": "kadın",
+        "age": 52,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": "ev hanımı",
+        "epithet": "Rizeli",
+        "place": "Hemşin kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Mustafa",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hemşin kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 114,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "27 Mayıs 1331",
+      "home_address": "Rize, Hemşin kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5687,
+      "output": 3250
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Karaağaç, 27 Mayıs 1331\nHİTAP: Oğlum Mustafa'ya\nGÖVDE: Oğlum Mustafa mektubumu yazeyrum inşalah isindir. Bizim halimizi sorarsan hep koşturuyoruz. Mısırları ektik ama yağmur az yağdı boy atmadı çapa zamanı geldi adam lazım yevmiye çok pahalı. Geçen güzden Hasan Ağaya borcumuz var onu istiyor duruyor. Senin giderken bıraktığın parayı ona verdik bitti. Fındık dersen bu sene dallar boş gibi. Vergici geldi ahırdaki tek ineğe bakıp durdu. Şeker çok bahalı oldu alamayruz. Dayın gilde gelmedi yardıma herkez kendi derdinde. Bikaç kuruş yollayabilirsen iyi olur yollayamazsan kendin bil. Hasan ağanın karısı dün laf vurdu parayı nezaman verceniz diye. Gönderdiğin o bir lira yetmedi. Un bulmak zorlaştı değirmenci peşin para istiyor. Kendine dıkkat et hasda olma. Buraları merak etme biz idare edeyruz. Biraz darlığımız var.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Pakize\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Rizeli Mustafa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "113 kelime, hedef 114 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4853,
+      "output": 3734
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "'Hep koşturuyoruz' gibi modern tınlayan bir ifade dışında dönemin kelime dağarcığına sadık kalınmış.",
+      "olculuk": "Duygular adlandırılmamış, şikayetler ve dertler tamamen somut olaylar üzerinden aktarılmış.",
+      "okuryazarlik": "Bilinçli yapılan imla hataları ve bağlaçsız kısa cümleler düşük okuryazarlık seviyesini kusursuz yansıtıyor.",
+      "somutluk": "Mısır çapası, Hasan Ağa'nın borcu, vergicinin ineğe bakması ve değirmencinin peşin para istemesi gibi harika somut detaylar var.",
+      "sadakat": "İstenen uzunluk, konu, hesapçı ses tonu ve saklanan bilgi kısıtlamalarına tam olarak uyulmuş.",
+      "sahicilik": "Mektup genel olarak çok sahici bir köy kadını sesi taşıyor, sadece bir iki kelime seçimi göze batıyor."
+    },
+    "issues": [
+      {
+        "line": "Bizim halimizi sorarsan hep koşturuyoruz.",
+        "problem": "'Hep koşturuyoruz' modern bir günlük telaş ifadesidir, 1915'te bir köylü kadınının kullanacağı bir tabir değildir.",
+        "suggestion": "Bizim halimizi sorarsan sabahtan akşama tarlada uğraşıyoruz."
+      },
+      {
+        "line": "Mısırları ektik ama yağmur az yağdı boy atmadı çapa zamanı geldi adam lazım yevmiye çok pahalı.",
+        "problem": "'Yevmiye pahalı' yerine 'amele pahalı' veya 'yevmiye yüksek' denmesi dönemin köy ağzına daha uygundur.",
+        "suggestion": "Mısırları ektik ama yağmur az yağdı boy atmadı çapa zamanı geldi adam lazım amele çok pahalı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

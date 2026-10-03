@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheye_000013",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Refika",
+    "epithet": "Bursalı",
+    "age": 64,
+    "hometown": "Bursa",
+    "occupation": "ırgat",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Şükrü",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 89,
+  "hand": "dictated",
+  "header": {
+    "text": "Gökçeören, 7 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Şükrü'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Şükrü gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun ulaştı, kahvede okuttuk, keyfimiz yerine geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buraları sorarsan koca köyün otu çapası benim gibi ihtiyarlara kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen hafta sırtım öyle tutuldu ki tarlanın ortasına kök saldım sandım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Fatma gelin sağ olsun kollarımı çekiştirdi de zor doğrulduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Haziran geldi, otlar adam boyu maşallah, biz yoldukça arsızlanıp büyüyorlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yakında dutları silkeleyeceğiz, senin hakkını pekmez yapıp küpe saklarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen orada paşalar gibi devletin ekmeğini yiyorsun, biz burada toprağın kahrını çekiyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Karnın doyuyorsa gerisini dert etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çoraplarını deldirme, paçalarını da üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köydeki herkesin sana selamı var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Refika"
+  },
+  "note": {
+    "text": "İşbu kâğıdı ananın ağzından ben yazdım Şükrü, gözlerinden öperim. Muhtar.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Bursalı Şükrü'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Refika Hanım, Bursalı, 64, ırgat (Bursa, Mudanya kazası, Gökçeören karyesi)\nAlıcı: Oğlu Çavuş Şükrü, cephede\nYön: cepheye\nTarih: 7 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çapa ve ot yolma işleri\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Refika",
+        "gender": "kadın",
+        "age": 64,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": "ırgat",
+        "epithet": "Bursalı",
+        "place": "Mudanya kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 39,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mudanya kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çapa ve ot yolma işleri",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "7 Haziran 1331",
+      "home_address": "Bursa, Mudanya kazası, Gökçeören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5639,
+      "output": 2821
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Gökçeören, 7 Haziran 1331\nHİTAP: Oğlum Şükrü'ye\nGÖVDE: Şükrü gözlerinden öperim. Mektubun ulaştı, kahvede okuttuk, keyfimiz yerine geldi. Buraları sorarsan koca köyün otu çapası benim gibi ihtiyarlara kaldı. Geçen hafta sırtım öyle tutuldu ki tarlanın ortasına kök saldım sandım. Fatma gelin sağ olsun kollarımı çekiştirdi de zor doğrulduk. Haziran geldi, otlar adam boyu maşallah, biz yoldukça arsızlanıp büyüyorlar. Yakında dutları silkeleyeceğiz, senin hakkını pekmez yapıp küpe saklarım. Sen orada paşalar gibi devletin ekmeğini yiyorsun, biz burada toprağın kahrını çekiyoruz. Karnın doyuyorsa gerisini dert etme. Çoraplarını deldirme, paçalarını da üşütme. Köydeki herkesin sana selamı var.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Refika)\nNOT: İşbu kâğıdı ananın ağzından ben yazdım Şükrü, gözlerinden öperim. Muhtar.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Bursalı Şükrü'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "86 kelime, hedef 89 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4868,
+      "output": 3314
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelime dağarcığına ve ifade biçimlerine uygun, modern sözcük barındırmayan temiz bir dil kullanılmış.",
+      "olculuk": "Duygular isimlendirilmeden, şakacı bir üslupla ve tarladaki bedensel zorluklar üzerinden çok iyi aktarılmış.",
+      "okuryazarlik": "Muhtarın ağzından yazıldığı sonundaki notla belirtilmiş ve kadının konuşma dili başarıyla yansıtılmış.",
+      "somutluk": "Ot yolma, sırt tutulması, dut pekmezi gibi kırsal hayata dair çok canlı ve somut detaylar içeriyor.",
+      "sadakat": "İstenen uzunluğa, şakacı tona, konuya ve saklanan bilgi kuralına (kardeşten hiç bahsedilmemiş) tam uyulmuş.",
+      "sahicilik": "Annenin oğluna takılması çok sahici olsa da, o dönemde bir kadının mektubu 'kahvede okutması' kültürel olarak pek olası değildir."
+    },
+    "issues": [
+      {
+        "line": "Mektubun ulaştı, kahvede okuttuk, keyfimiz yerine geldi.",
+        "problem": "1915'te köy yerinde bir kadının mektup okutmak için erkeklerin bulunduğu kahveye gitmesi veya mektubun kahvede okunduğunu söylemesi kültürel olarak gerçekçi değildir.",
+        "suggestion": "Mektubun ulaştı, muhtara okuttum, keyfimiz yerine geldi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

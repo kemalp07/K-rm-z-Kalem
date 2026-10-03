@@ -1,0 +1,312 @@
+{
+  "id": "pool_cepheden_000048",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Çoban",
+    "age": 35,
+    "hometown": "Kayseri",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "İsmail",
+    "relation": "babası",
+    "location": "Kayseri, İncesu kazası, Sarıkaya karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "high",
+  "length_target": 101,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 1 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Babam İsmail'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Babam İsmail ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan iyiyim ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde havalar nasıldır yağmurlar başlamadan evin damını aktardınız mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen sene çok akıyordu odanın ortasına tas koyuyorduk biliyorsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kardeşim Veli çıksın toprağı iyice ezsin loğ taşıyla yoksa kışın çürür içerisi eşyalar ziyan olur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Biz",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "üç gündür denize karşı bir sırttayız",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "bekliyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "bizim takımdan on iki kişiyi hastaneye yolladılar",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "ateşlendiler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sular da günde bir defa katırla geliyor",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "idare ediyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Koyunları yaylaya kim götürecek bu sene çoban tuttunuz mu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Karabaş duruyormu onu satmayın sakın sürüye mukayet olur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Emmioğullarına komşulara selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Benim için merak etmeyin halimiz vaktimiz yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Kardeşimin gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Oğlun Nail"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kayseri, İncesu kazası, Sarıkaya karyesi, Muhtar Hasan Ağa vasıtasıyla İsmail'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Çoban, 35, çoban, onbaşı (Kayseri, İncesu kazası, Sarıkaya karyesi)\nAlıcı: Babası İsmail, Kayseri, İncesu kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 1 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: evin damının akmasından endişe\nSakladığı: ayağında yara açıldığını\nHassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kayseri",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "İncesu kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "İsmail",
+        "gender": "erkek",
+        "age": 60,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "İncesu kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Kayseri, İncesu kazası, Sarıkaya karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "evin damının akmasından endişe",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "high",
+      "sensitive_info": "hastaneye kaldırılan arkadaşlarının sayısı",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "1 Mayıs 1331",
+      "home_address": "Kayseri, İncesu kazası, Sarıkaya karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5638,
+      "output": 3707
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 1 Mayıs 1331\nHİTAP: Babam İsmail'e\nGÖVDE: Babam İsmail ellerinden öperim. Benim halimi sorarsan iyiyim ayaktayım. Köyde havalar nasıldır yağmurlar başlamadan evin damını aktardınız mı. Geçen sene çok akıyordu odanın ortasına tas koyuyorduk biliyorsun. Kardeşim Veli çıksın toprağı iyice ezsin loğ taşıyla yoksa kışın çürür içerisi eşyalar ziyan olur. Biz ⟦üç gündür denize karşı bir sırttayız⟧ bekliyoruz. Dün ⟦bizim takımdan on iki kişiyi hastaneye yolladılar⟧ ateşlendiler. ⟦Sular da günde bir defa katırla geliyor⟧ idare ediyoz. Koyunları yaylaya kim götürecek bu sene çoban tuttunuz mu. Karabaş duruyormu onu satmayın sakın sürüye mukayet olur. Emmioğullarına komşulara selam eyle. Benim için merak etmeyin halimiz vaktimiz yerindedir. Kardeşimin gözlerinden öperim.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Oğlun Nail\nZARF: Kayseri, İncesu kazası, Sarıkaya karyesi, Muhtar Hasan Ağa vasıtasıyla İsmail'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "99 kelime, hedef 101 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000001 ile ortak: \"dün bizim takımdan on iki kişiyi\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4864,
+      "output": 5628
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "'Hâl vakit yerinde olmak' deyimi maddi durum için kullanılır, siperdeki askerin durumu için kullanılması yanlıştır.",
+      "olculuk": "Duygular hiç adlandırılmamış, tamamen somut dertler üzerinden endişe ve özlem hissettirilmiş.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği ve 'duruyormu', 'mukayet' gibi hatalar düşük okuryazarlığı kusursuz yansıtıyor.",
+      "somutluk": "Loğ taşı, damın akması, odaya tas koymak ve Karabaş gibi detaylar mektubu çok gerçekçi kılmış.",
+      "sadakat": "İstenen uzunluk, gizlenen bilgi ('ayaktayım' detayıyla) ve sansürlük askeri bilgiler eksiksiz işlenmiş.",
+      "sahicilik": "Mektup genel olarak çok sahici ancak yanlış deyim kullanımı ve 'ediyoz' gibi modern ağızlar küçük pürüzler yaratıyor."
+    },
+    "issues": [
+      {
+        "line": "⟦Sular da günde bir defa katırla geliyor⟧ idare ediyoz.",
+        "problem": "'Ediyoz' günümüz mesajlaşma ağzına daha yakındır; o dönemde yazıda şive 'edeyoruz' veya 'ediyoruz' şeklinde yansırdı.",
+        "suggestion": "⟦Sular da günde bir defa katırla geliyor⟧ idare ediyoruz."
+      },
+      {
+        "line": "Benim için merak etmeyin halimiz vaktimiz yerindedir.",
+        "problem": "'Hâli vakti yerinde olmak' maddi zenginlik belirtir, cephedeki askerin sağlığı veya durumu için kullanılması anlamsal olarak yanlıştır.",
+        "suggestion": "Benim için merak etmeyin hâlimiz sağlığımız yerindedir."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

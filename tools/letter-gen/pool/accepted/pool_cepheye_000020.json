@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000020",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Tahir",
+    "epithet": "Muallim",
+    "age": 36,
+    "hometown": "Kütahya",
+    "occupation": "muallim",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Latif",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 96,
+  "hand": "elegant",
+  "header": {
+    "text": "Yeniköy, 11 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Latif'e,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sıhhatte olduğuna memnun oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Lakin aklın burada kalmasın, vazifeni hakkıyla yapmaya gayret et.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Biliyorsun, kasabalı Hacı Rıza'ya olan borcunun vadesi geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bana yazdığın gibi o tarlayı satmak niyetinde katiyen değilim, baba yadigarıdır, üç kuruş için elden çıkarılmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Arpa hasadına nihayet başladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Evvela arpanın bir kısmını tüccara vereceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Şayet yetmezse ahırdaki sarı ineği satmayı münasip gördüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sen oradayken borçlu kalmak bizim haneye yakışmaz, bu meseleyi ben bizzat halledeceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen bunları kafana takıp kendini heder etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Anamın sıhhati yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Mektubu alınca ihmal etme, derhal cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kendine mukayet ol, kumandanlarının talimatlarına harfiyen uy.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Ağabeyin Tahir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Yeniköylü Latif'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tahir, Muallim, 36, muallim (Kütahya, Simav kazası, Yeniköy karyesi)\nAlıcı: Kardeşi Er Latif, cephede\nYön: cepheye\nTarih: 11 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: sert, emir verir gibi yazar\nKonu: borcun ödenmesi için ne yapılacağı\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 96",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Tahir",
+        "gender": "erkek",
+        "age": 36,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": "muallim",
+        "epithet": "Muallim",
+        "place": "Simav kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Latif",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Simav kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "borcun ödenmesi için ne yapılacağı",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 96,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "11 Haziran 1331",
+      "home_address": "Kütahya, Simav kazası, Yeniköy karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5624,
+      "output": 3652
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 11 Haziran 1331\nHİTAP: Kardeşim Latif'e,\nGÖVDE: Mektubun elime geçti. Sıhhatte olduğuna memnun oldum. Lakin aklın burada kalmasın, vazifeni hakkıyla yapmaya gayret et. Biliyorsun, kasabalı Hacı Rıza'ya olan borcunun vadesi geldi çattı. Bana yazdığın gibi o tarlayı satmak niyetinde katiyen değilim, baba yadigarıdır, üç kuruş için elden çıkarılmaz. Arpa hasadına nihayet başladık. Evvela arpanın bir kısmını tüccara vereceğim. Şayet yetmezse ahırdaki sarı ineği satmayı münasip gördüm. Sen oradayken borçlu kalmak bizim haneye yakışmaz, bu meseleyi ben bizzat halledeceğim. Sen bunları kafana takıp kendini heder etme. Anamın sıhhati yerinde. Mektubu alınca ihmal etme, derhal cevap yaz. Kendine mukayet ol, kumandanlarının talimatlarına harfiyen uy.\nKAPANIŞ: Baki selam.\nİMZA: Ağabeyin Tahir\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Yeniköylü Latif'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "95 kelime, hedef 96 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4840,
+      "output": 2644
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun kelimeler seçilmiş ancak 'kafana takıp' gibi modern bir deyim kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, ağabeyin sert ve emredici tavrı abartısız bir şekilde verilmiş.",
+      "okuryazarlik": "'Katiyen', 'münasip', 'bizzat', 'mukayet' gibi kelimeler muallim olan yazanın yüksek okuryazarlığını tam yansıtıyor.",
+      "somutluk": "Kasabalı Hacı Rıza, arpa hasadı, sarı inek gibi dönemin köy hayatına ait çok somut detaylar barındırıyor.",
+      "sadakat": "Borç meselesi işlenmiş, diğer kardeşin gidişi başarıyla gizlenmiş ve istenen sert, emredici ton tutturulmuş.",
+      "sahicilik": "Mektup genel olarak oldukça inandırıcı ve dönemin aile içi hiyerarşisini yansıtıyor, sadece ufak bir modern ifade göze batıyor."
+    },
+    "issues": [
+      {
+        "line": "Sen bunları kafana takıp kendini heder etme.",
+        "problem": "'Kafana takmak' günümüz Türkçesine ait modern bir deyimdir ve 1915 atmosferini bozar.",
+        "suggestion": "Sen bunları zihnine keder edip kendini heder etme."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

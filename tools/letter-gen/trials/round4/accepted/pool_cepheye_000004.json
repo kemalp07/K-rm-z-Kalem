@@ -1,0 +1,265 @@
+{
+  "id": "pool_cepheye_000004",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Musa",
+    "epithet": "Malatyalı",
+    "age": 15,
+    "hometown": "Malatya",
+    "occupation": "çiftçi",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Nail",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 84,
+  "hand": "dictated",
+  "header": {
+    "text": "Hekimhan, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Nail'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Nail ağabey ellerinden öperim, mektubunu aldık kahveci okudu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Hıdrellez günü bizim evin önünde ateş yaktılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Tepsi kuruldu, etli bulgur aşı döktük.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Senin oturduğun mindere kimse geçmedi, koca gün öylece boş kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Yemek yerken gözüm hep o köşeye takıldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde koca adam kalmadı, ağır işler hep bana düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Aşağıki su değirmeninin arkı bozulmuştu, iki gün çamurda onu onardım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen buraları hiç dert etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evde unumuz var, kışlık pekmezi de idare ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tahsildara vergiyi verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Anam her gece sana Yasin okuyor, tespih çekiyor.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Musa"
+  },
+  "note": {
+    "text": "Bu kâğıdı Musa abimin ağzından yazdım. Komşunuz mektepli Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı Nail'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Musa, Malatyalı, 15, çiftçi (Malatya, Hekimhan kazası, Taşpınar karyesi)\nAlıcı: Ağabeyi Er Nail, cephede\nYön: cepheye\nTarih: 26 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Cevabını bekliyorum\nUzunluk: 84",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Musa",
+        "gender": "erkek",
+        "age": 15,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "epithet": "Malatyalı",
+        "place": "Hekimhan kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hekimhan kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 84,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Malatya, Hekimhan kazası, Taşpınar karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5680,
+      "output": 2809
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Hekimhan, 26 Mayıs 1331\nHİTAP: Ağabeyim Nail'e\nGÖVDE: Nail ağabey ellerinden öperim, mektubunu aldık kahveci okudu. Hıdrellez günü bizim evin önünde ateş yaktılar. Tepsi kuruldu, etli bulgur aşı döktük. Senin oturduğun mindere kimse geçmedi, koca gün öylece boş kaldı. Yemek yerken gözüm hep o köşeye takıldı. Köyde koca adam kalmadı, ağır işler hep bana düştü. Aşağıki su değirmeninin arkı bozulmuştu, iki gün çamurda onu onardım. Sen buraları hiç dert etme. Evde unumuz var, kışlık pekmezi de idare ediyoruz. Tahsildara vergiyi verdik. Anam her gece sana Yasin okuyor, tespih çekiyor.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Musa)\nNOT: Bu kâğıdı Musa abimin ağzından yazdım. Komşunuz mektepli Hasan.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı Nail'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 84 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4877,
+      "output": 3563
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 Anadolu köy yaşantısına ve dönem diline tamamen uygundur.",
+      "olculuk": "Duygular isimlendirilmeden, boş kalan minder ve gözün o köşeye takılması gibi somut eylemlerle çok ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Mektubun mektepli bir çocuk tarafından yazıldığı, düzgün ama sade cümle yapısından ve sondaki nottan başarıyla anlaşılıyor.",
+      "somutluk": "Etli bulgur aşı, su değirmeninin arkı, kışlık pekmez ve tahsildar gibi döneme ait çok güçlü somut detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluğa (81 kelime), konuya ve özellikle babanın ölümünü açıkça söylemeden hissettirme (saklama) kuralına kusursuz uyulmuş.",
+      "sahicilik": "15 yaşında evin yükünü omuzlamış yorgun bir çocuğun sesini ve dönemin köy gerçekliğini son derece sahici bir şekilde yansıtıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

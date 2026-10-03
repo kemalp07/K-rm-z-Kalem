@@ -1,0 +1,248 @@
+{
+  "id": "pool_cepheye_000024",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şefika",
+    "epithet": "Giresunlu",
+    "age": 20,
+    "hometown": "Giresun",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Bayram",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 65,
+  "hand": "careful",
+  "header": {
+    "text": "Kavak, 28 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Bayram'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kaç vakittir postacı sokağımızdan geçmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İnsan iki satır kâğıt karalamaz mı, temelli mi unuttun bizi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dün aşağı mahalleden Asiye kadının oğlu Hasan’ın künyesi geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bütün köy kapısına doluştuk, avluda ağıt koptu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen bari sağ olduğunu bildir de gözümüz yolda kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Oğlan babasını soruyor, maşallah çok iyi, ayaklandı bile, hiç meraklanma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Fındıklıkta tırpan işi başladı, yevmiyeci tutacak beş kuruş kalmadı, sabahtan akşama tek başıma uğraşıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tez cevap yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Şefika"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kavaklı Bayram'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şefika Hanım, Giresunlu, 20, ev hanımı (Giresun, Şebinkarahisar kazası, Kavak karyesi)\nAlıcı: Kocası Er Bayram, cephede\nYön: cepheye\nTarih: 28 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: komşunun oğlunun şehit haberi\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 65",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şefika",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Giresun",
+        "occupation": "ev hanımı",
+        "epithet": "Giresunlu",
+        "place": "Şebinkarahisar kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Bayram",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Giresun",
+        "occupation": null,
+        "epithet": null,
+        "place": "Şebinkarahisar kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 65,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "28 Mayıs 1331",
+      "home_address": "Giresun, Şebinkarahisar kazası, Kavak karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5631,
+      "output": 2628
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kavak, 28 Mayıs 1331\nHİTAP: Zevcim Bayram'a\nGÖVDE: Kaç vakittir postacı sokağımızdan geçmiyor. İnsan iki satır kâğıt karalamaz mı, temelli mi unuttun bizi? Dün aşağı mahalleden Asiye kadının oğlu Hasan’ın künyesi geldi. Bütün köy kapısına doluştuk, avluda ağıt koptu. Sen bari sağ olduğunu bildir de gözümüz yolda kalmasın. Oğlan babasını soruyor, maşallah çok iyi, ayaklandı bile, hiç meraklanma. Fındıklıkta tırpan işi başladı, yevmiyeci tutacak beş kuruş kalmadı, sabahtan akşama tek başıma uğraşıyorum. Tez cevap yolla.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Zevcen Şefika\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kavaklı Bayram'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "67 kelime, hedef 65 (+3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4776,
+      "output": 3378
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Köy hayatında sokak sokak gezen postacı kavramı dönem gerçekliğine pek uymuyor.",
+      "olculuk": "Duygular adlandırılmadan sitem ve endişe üzerinden çok iyi hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun düzgün ama sade bir dil kullanılmış.",
+      "somutluk": "Künye gelmesi ve fındıklıkta tırpan işi gibi yöreye ait çok somut detaylar var.",
+      "sadakat": "İstenen tüm unsurlar ve çocuğun hastalığının gizlenmesi mektuba başarıyla yedirilmiş.",
+      "sahicilik": "Çocuğun hastalığını gizleme çabası ve fındıklık detayı çok sahici ancak postacı detayı köy gerçekliğine ufak bir tezat oluşturuyor."
+    },
+    "issues": [
+      {
+        "line": "Kaç vakittir postacı sokağımızdan geçmiyor.",
+        "problem": "1915 yılında Anadolu köylerinde sokak sokak gezen postacı bulunmazdı, mektuplar muhtar veya pazara gidenler vasıtasıyla gelirdi.",
+        "suggestion": "Kaç vakittir muhtara sorarım, senden bir kâğıt çıkmıyor."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

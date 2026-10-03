@@ -1,0 +1,242 @@
+{
+  "id": "pool_cepheden_000033",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Niyazi",
+    "epithet": "Diyarbekirli",
+    "age": 38,
+    "hometown": "Diyarbekir",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Kadriye",
+    "relation": "kız kardeşi",
+    "location": "Diyarbekir, Palu kazası, Yeniköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 76,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 9 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Bacım Kadriye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kardeşim Kadriye gönderdiin paketi aldım çoraplar elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim siperler yüksekte tepeden aşağı bakınca koca deniz görünüyo karşı kıyıda da gemiler duruyo.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Gece nöbetinde giydim ayaklarım iyice ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kuru dutla pestil de koymuşsun sağol birazını burdaki arkadaşlara verdim beraber yedik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyde işler nasıl gidiyo sarı öküzü sattınız mı Rüstem ağaya olan borcu kapatmak için.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tarlaya kim bakıyo bu sene ekinler nasıldır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Beni hiç merak etmeyin ben iyiyim yemeğimiz çıkıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Çocukların gözlerinden öperim Hasan dayıma çok selam söyle mektup yazın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Ağabeyin Niyazi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Diyarbekir, Palu kazası, Yeniköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Kadriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Niyazi, Diyarbekirli, 38, çiftçi, onbaşı (Diyarbekir, Palu kazası, Yeniköy karyesi)\nAlıcı: Kız kardeşi Kadriye Hanım, Diyarbekir, Palu kazası, Yeniköy karyesi\nYön: cepheden\nTarih: 9 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: yok\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Niyazi",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Diyarbekir",
+        "occupation": "çiftçi",
+        "epithet": "Diyarbekirli",
+        "place": "Palu kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Kadriye",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Palu kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Diyarbekir, Palu kazası, Yeniköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "yok",
+      "carelessness": "low",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "9 Mayıs 1331",
+      "home_address": "Diyarbekir, Palu kazası, Yeniköy karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5759,
+      "output": 2389
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 9 Mayıs 1331\nHİTAP: Bacım Kadriye'ye\nGÖVDE: Kardeşim Kadriye gönderdiin paketi aldım çoraplar elime geçti. ⟦Bizim siperler yüksekte tepeden aşağı bakınca koca deniz görünüyo karşı kıyıda da gemiler duruyo.⟧ Gece nöbetinde giydim ayaklarım iyice ısındı. Kuru dutla pestil de koymuşsun sağol birazını burdaki arkadaşlara verdim beraber yedik. Köyde işler nasıl gidiyo sarı öküzü sattınız mı Rüstem ağaya olan borcu kapatmak için. Tarlaya kim bakıyo bu sene ekinler nasıldır. Beni hiç merak etmeyin ben iyiyim yemeğimiz çıkıyo. Çocukların gözlerinden öperim Hasan dayıma çok selam söyle mektup yazın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Ağabeyin Niyazi\nZARF: Diyarbekir, Palu kazası, Yeniköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Kadriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "79 kelime, hedef 76 (+4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4826,
+      "output": 2901
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Modern kelime içermiyor, dönemin köylü asker ağzına ve kelime dağarcığına tamamen uygun.",
+      "olculuk": "Duygular adlandırılmamış, gereksiz metafor veya abartı kullanılmadan doğrudan merama geçilmiş.",
+      "okuryazarlik": "Soru işaretlerinin eksikliği, bağlaçsız kısa cümleler ve 'görünüyo', 'gönderdiin' gibi ufak hatalarla düşük okuryazarlık kusursuz yansıtılmış.",
+      "somutluk": "Kuru dut, pestil, sarı öküz ve Rüstem Ağa'ya olan borç gibi detaylarla mektup son derece somut ve yaşamsal kılınmış.",
+      "sadakat": "İstenen konu, uzunluk, hassas bilgi (manzara) ve dikkatsizlik seviyesi kurallara tam uyarak işlenmiş.",
+      "sahicilik": "İçine kapanık bir çiftçi askerin yazabileceği kadar sade, telaşsız, gerçekçi ve inandırıcı bir mektup olmuş."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

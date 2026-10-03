@@ -1,0 +1,276 @@
+{
+  "id": "pool_cepheye_000005",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Asım",
+    "epithet": "Kayserili",
+    "age": 51,
+    "hometown": "Kayseri",
+    "occupation": "demirci",
+    "relation": "amcası"
+  },
+  "recipient": {
+    "name": "Zeki",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 82,
+  "hand": "careful",
+  "header": {
+    "text": "Kocaköy, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Zeki'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden hasretle öper, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kaç aydır senden kâğıt gelmedi, yollar mı kapalı, postada mı kaldı bilemiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dükkânda ocağı tek başıma yakıyorum artık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çekiç sesinden gayrı ses yok, işler de pek yavaşladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Demir bulmak hepten zorlaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sana giden arabayla bir bez torba yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İçine kavrulmuş leblebi, bizim ağacın kuru dutundan, bir de yengen kuşburnu marmelatı koydu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Erzak niyetine yiyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evin barkın aynı duruyor, aklın köyde kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Biz burada çok şükür iyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yalnızca senden bir mektup bekleriz, çabuk cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile",
+  "signature": {
+    "text": "Amcan Asım"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kocaköylü Zeki'ye",
+    "sensitive": false
+  },
+  "package": [
+    "leblebi",
+    "kuru dut",
+    "kuşburnu marmelatı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Asım, Kayserili, 51, demirci (Kayseri, İncesu kazası, Kocaköy karyesi)\nAlıcı: Yeğeni Çavuş Zeki, cephede\nYön: cepheye\nTarih: 17 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: dertli, ama dertlerini söylemez\nKonu: mektup gelmediği için endişe\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: leblebi, kuru dut, kuşburnu marmelatı\nKapanış: Selam ve dua ile\nUzunluk: 82",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Asım",
+        "gender": "erkek",
+        "age": 51,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": "demirci",
+        "epithet": "Kayserili",
+        "place": "İncesu kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Zeki",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "İncesu kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 82,
+      "package": [
+        "leblebi",
+        "kuru dut",
+        "kuşburnu marmelatı"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "17 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "Kayseri, İncesu kazası, Kocaköy karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5781,
+      "output": 3266
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Kocaköy, 17 Mayıs 1331\nHİTAP: Yeğenim Zeki'ye\nGÖVDE: Evvela selam eder, iki gözlerinden hasretle öper, hatırını sorarım. Kaç aydır senden kâğıt gelmedi, yollar mı kapalı, postada mı kaldı bilemiyorum. Dükkânda ocağı tek başıma yakıyorum artık. Çekiç sesinden gayrı ses yok, işler de pek yavaşladı. Demir bulmak hepten zorlaştı. Sana giden arabayla bir bez torba yolladım. İçine kavrulmuş leblebi, bizim ağacın kuru dutundan, bir de yengen kuşburnu marmelatı koydu. Erzak niyetine yiyesin. Evin barkın aynı duruyor, aklın köyde kalmasın. Biz burada çok şükür iyiyiz. Yalnızca senden bir mektup bekleriz, çabuk cevap yaz.\nKAPANIŞ: Selam ve dua ile\nİMZA: Amcan Asım\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kocaköylü Zeki'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "83 kelime, hedef 82 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4862,
+      "output": 2540
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Köy diline uygun bir üslup kullanılmış ancak 'marmelat' kelimesi 1915 Anadolu'su için fazla batılı ve dönem dışıdır.",
+      "olculuk": "Duygular adlandırılmamış, babanın yokluğu dükkândaki yalnızlık ve çekiç sesi üzerinden çok ölçülü bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade ve gösterişsiz cümleler kurulmuş.",
+      "somutluk": "Ocak, çekiç sesi, demir bulma zorluğu ve gönderilen yiyecekler mektubu oldukça somut kılmış.",
+      "sadakat": "İstenen tüm unsurlar (paket, gizlenen bilgi, konu, uzunluk) mektuba başarıyla yedirilmiş.",
+      "sahicilik": "Dükkândaki yalnızlık detayı mektuba büyük bir sahicilik katıyor, sadece yiyecek ismindeki ufak hata göze çarpıyor."
+    },
+    "issues": [
+      {
+        "line": "İçine kavrulmuş leblebi, bizim ağacın kuru dutundan, bir de yengen kuşburnu marmelatı koydu.",
+        "problem": "'Marmelat' kelimesi 1915'te bir Kayseri köyünde kullanılmaz; köylüler bunun yerine 'ezme' veya 'pekmez' derdi.",
+        "suggestion": "İçine kavrulmuş leblebi, bizim ağacın kuru dutundan, bir de yengen kuşburnu ezmesi koydu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

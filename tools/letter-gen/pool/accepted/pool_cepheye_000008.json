@@ -1,0 +1,299 @@
+{
+  "id": "pool_cepheye_000008",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fikri",
+    "epithet": "Kayıkçı",
+    "age": 53,
+    "hometown": "Bursa",
+    "occupation": "kayıkçı",
+    "relation": "dayısı"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 103,
+  "hand": "careful",
+  "header": {
+    "text": "Kocaköy, 14 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Onbaşı Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldık okuduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kendine mukayyet ol, siperde başını boş yere çıkarma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sana yola çıkan posta ile bir bohça hazırlattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İçine biraz pestil, yün çorap, bir de sağlam çarık koydurdum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geceleri ayaklarını kuru tut, hastalanıp başımıza dert açma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizde havalar iyice ısındı, göl kıyısında kayık işleri yavaş yavaş açılıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Senin oğlan geçen gün kahvenin önünde paytak paytak yürümeye başladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kendi başına ayağa kalkıyor, düşüyor ama zırlamıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Anasına eziyet etmesin diye arada yanıma alıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sokaklarda başıboş dolaşmasın, büyüyünce benim yanıma vereceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kürek tutmayı öğrensin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Evi barkı dert etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Sen sadece işine bak, vatan borcunu adamakıllı öde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Emmin, yengen cümlesi selam eder.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Dayın Kayıkçı Fikri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kocaköylü Talat'a",
+    "sensitive": false
+  },
+  "package": [
+    "pestil",
+    "yün çorap",
+    "bir çift çarık"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikri, Kayıkçı, 53, kayıkçı (Bursa, İnegöl kazası, Kocaköy karyesi)\nAlıcı: Yeğeni Onbaşı Talat, cephede\nYön: cepheye\nTarih: 14 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sert, emir verir gibi yazar\nKonu: çocuğun ilk adımları\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: pestil, yün çorap, bir çift çarık\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 53,
+        "relation": "dayısı",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": "kayıkçı",
+        "epithet": "Kayıkçı",
+        "place": "İnegöl kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "İnegöl kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": [
+        "pestil",
+        "yün çorap",
+        "bir çift çarık"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Mayıs 1331",
+      "home_address": "Bursa, İnegöl kazası, Kocaköy karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5825,
+      "output": 3488
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Yer · Kuzey sırtı ve iskele (oyun içi)",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Kocaköy, 14 Mayıs 1331\nHİTAP: Yeğenim Onbaşı Talat'a\nGÖVDE: Mektubunu aldık okuduk. Kendine mukayyet ol, siperde başını boş yere çıkarma. Sana yola çıkan posta ile bir bohça hazırlattım. İçine biraz pestil, yün çorap, bir de sağlam çarık koydurdum. Geceleri ayaklarını kuru tut, hastalanıp başımıza dert açma. Bizde havalar iyice ısındı, göl kıyısında kayık işleri yavaş yavaş açılıyor. Senin oğlan geçen gün kahvenin önünde paytak paytak yürümeye başladı. Kendi başına ayağa kalkıyor, düşüyor ama zırlamıyor. Anasına eziyet etmesin diye arada yanıma alıyorum. Sokaklarda başıboş dolaşmasın, büyüyünce benim yanıma vereceğim. Kürek tutmayı öğrensin. Evi barkı dert etme. Sen sadece işine bak, vatan borcunu adamakıllı öde. Emmin, yengen cümlesi selam eder.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Dayın Kayıkçı Fikri\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kocaköylü Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "99 kelime, hedef 103 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4862,
+      "output": 3080
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler döneme uygun olmakla birlikte 'posta ile bir bohça hazırlattım' gibi ufak ifade pürüzleri barındırıyor.",
+      "olculuk": "Duygular adlandırılmamış, istenen sert ve emredici üslup ('hastalanıp başımıza dert açma', 'sen sadece işine bak') çok iyi yansıtılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, kısa, net ve anlaşılır cümleler kurulmuş.",
+      "somutluk": "Kahvenin önünde yürüyen çocuk, göl kıyısındaki kayıklar, pestil ve çarık gibi detaylarla mektup oldukça somutlaştırılmış.",
+      "sadakat": "İstenen uzunluk (104 kelime), paket içeriği, konu, gizlenen bilgi ve yazma biçimi eksiksiz uygulanmış.",
+      "sahicilik": "Huysuz ve otoriter bir aile büyüğünün sesi çok gerçekçi verilmiş, ancak bir cümlede ufak bir anlatım bozukluğu var."
+    },
+    "issues": [
+      {
+        "line": "Sana yola çıkan posta ile bir bohça hazırlattım.",
+        "problem": "'Posta ile hazırlattım' ifadesi mantık hatası içeriyor; bohça postayla hazırlanmaz, postaya verilir veya yollanır.",
+        "suggestion": "Sana yola çıkan postayla bir bohça yolladım."
+      },
+      {
+        "line": "Sokaklarda başıboş dolaşmasın, büyüyünce benim yanıma vereceğim.",
+        "problem": "'Benim yanıma vereceğim' ifadesinde anlatım bozukluğu var; kişi kendi yanına birini 'vermez', 'alır'.",
+        "suggestion": "Sokaklarda başıboş dolaşmasın, büyüyünce yanıma alacağım."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

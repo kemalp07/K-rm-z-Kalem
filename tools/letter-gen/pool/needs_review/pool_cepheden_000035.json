@@ -1,0 +1,268 @@
+{
+  "id": "pool_cepheden_000035",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ali",
+    "epithet": "Terzi",
+    "age": 36,
+    "hometown": "Kırşehir",
+    "occupation": "terzi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Makbule",
+    "relation": "karısı",
+    "location": "Kırşehir, Avanos kazası, Alacahan karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Makbule Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ali der ki: Evvela Allah'ın selamı üzerine olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Hatırını sorarım, Cenab-ı Hak seni darlığa düşürmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Mektubun elime geçti, okuttum, çok şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim hâlimizi sorarsan elhamdülillah ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Rabbim bugünlerimizi aratmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Burada tayınımız veriliyor ama insan boğazı işte, memleketin buğdayını, senin pişirdiğin somunları arıyor gözüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kursağımız pek dolmuyor lakin Allah sabrını veriyor, inşallah selametle dönersem o yufka ekmeklerinden doya doya yerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben bugünlerde çadırda istirahat ediyorum, ayağımı uzattım, dua ediyorum hep size.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Yaram berem yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köydeki komşulara, dükkândaki kalfaya selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Mevla'ya emanet olun, dualarınızı hiç eksik etmeyin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile.",
+  "signature": {
+    "text": "",
+    "seal": "Ali"
+  },
+  "note": {
+    "text": "İşbu mektubu Ali kardaşımın ağzından yazdım. Onbaşı Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kırşehir, Avanos kazası, Alacahan karyesi, Muhtar İbrahim Ağa vasıtasıyla Makbule Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ali, Terzi, 36, terzi, er (Kırşehir, Avanos kazası, Alacahan karyesi)\nAlıcı: Karısı Makbule Hanım, Kırşehir, Avanos kazası, Alacahan karyesi\nYön: cepheden\nTarih: 17 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: yemeklerin ve ekmeğin azlığı (üstü örtülü)\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ali",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kırşehir",
+        "occupation": "terzi",
+        "epithet": "Terzi",
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Makbule",
+        "gender": "kadın",
+        "age": 33,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Kırşehir, Avanos kazası, Alacahan karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "yemeklerin ve ekmeğin azlığı (üstü örtülü)",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "17 Mayıs 1331",
+      "home_address": "Kırşehir, Avanos kazası, Alacahan karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5645,
+      "output": 2558
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 17 Mayıs 1331\nHİTAP: Zevcem Makbule Hanım'a\nGÖVDE: Ali der ki: Evvela Allah'ın selamı üzerine olsun. Hatırını sorarım, Cenab-ı Hak seni darlığa düşürmesin. Mektubun elime geçti, okuttum, çok şükür. Bizim hâlimizi sorarsan elhamdülillah ayaktayız. Rabbim bugünlerimizi aratmasın. Burada tayınımız veriliyor ama insan boğazı işte, memleketin buğdayını, senin pişirdiğin somunları arıyor gözüm. Kursağımız pek dolmuyor lakin Allah sabrını veriyor, inşallah selametle dönersem o yufka ekmeklerinden doya doya yerim. Ben bugünlerde çadırda istirahat ediyorum, ayağımı uzattım, dua ediyorum hep size. Yaram berem yok. Köydeki komşulara, dükkândaki kalfaya selam eyle. Mevla'ya emanet olun, dualarınızı hiç eksik etmeyin.\nKAPANIŞ: Selam ve dua ile.\nİMZA: (mühür: Ali)\nNOT: İşbu mektubu Ali kardaşımın ağzından yazdım. Onbaşı Hasan.\nZARF: Kırşehir, Avanos kazası, Alacahan karyesi, Muhtar İbrahim Ağa vasıtasıyla Makbule Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "87 kelime, hedef 93 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4887,
+      "output": 3050
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem diline genel olarak uyulmuş ancak köylü mektuplarında kesinlikle kullanılmaması gereken 'lakin' kelimesi araya karışmış.",
+      "olculuk": "Duygular adlandırılmadan, memleketin buğdayı ve yufka ekmeği gibi somut özlemler üzerinden çok ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Yazdıranın köylü bir onbaşı olduğu belirtilmesine rağmen 'Zevcem' ve 'lakin' gibi kâtip/okumuş kişi kelimeleri kullanılarak kural ihlali yapılmış.",
+      "somutluk": "Somun, yufka ekmek, çadır, dükkândaki kalfa gibi detaylar mektubun somutluk düzeyini oldukça başarılı kılmış.",
+      "sadakat": "Yemek azlığının 'üstü örtülü' verilmesi istenirken ve dikkatsizlik 'yok' iken, 'Kursağımız pek dolmuyor' denerek sansüre takılacak doğrudan bir şikâyet edilmiş.",
+      "sahicilik": "Hastalığı gizlemek için 'çadırda istirahat ediyorum, yaram berem yok' bahanesi oldukça inandırıcı ve dönemin asker psikolojisine uygun."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcem Makbule Hanım'a",
+        "problem": "Köylülerin yazdırdığı mektuplarda 'Zevcem' ve 'Hanım' gibi resmî/kâtip kelimeleri kullanılmamalıdır.",
+        "suggestion": "HİTAP: Makbule'ye"
+      },
+      {
+        "line": "Kursağımız pek dolmuyor lakin Allah sabrını veriyor, inşallah selametle dönersem o yufka ekmeklerinden doya doya yerim.",
+        "problem": "'Kursağımız pek dolmuyor' ifadesi üstü örtülü değil, doğrudan bir açlık şikâyetidir ve sansür kuralını ihlal eder. Ayrıca 'lakin' kelimesi düşük okuryazarlık kuralına aykırıdır.",
+        "suggestion": "Devletimiz tayınımızı veriyor ama insan boğazı işte, Allah sabrını veriyor, inşallah selametle dönersem o yufka ekmeklerinden doya doya yerim."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

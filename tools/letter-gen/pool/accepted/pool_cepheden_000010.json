@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000010",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Eşref",
+    "epithet": "Rizeli",
+    "age": 34,
+    "hometown": "Rize",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Kadriye",
+    "relation": "karısı",
+    "location": "Rize, Atina kazası, Sarıyar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 106,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 19 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Kadriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, cümlenizi hürmetle selamlarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kadriye, köydeki sarı öküzün satılması işi ne oldu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sakın acele edip de o tüccar İdris'in verdiği fiyata heba etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Güz gelmeden biraz daha bekleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen gece aklıma düştü, evin arka tarafındaki kiremitleri aktarabildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yağmurlar bastırınca altı çamur oluyor, çocukların üstüne damlamasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Şayet öküzü mecburen satarsanız parasını hemen borca yatırmayın, birazını elinizde saklayın da kışlık un şeker alın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kasabada fiyatlar nasıl oldu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hasan Usta'nın dükkânındaki tezgâhım duruyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tarladaki işleri komşularla imece usulü halledin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen tek başına kendini yorma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Nöbette aklım hep sizin orada kalıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çabuk cevap yaz, öküzün akıbetini bana teferruatıyla bildir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Çocukların gözlerinden, büyüklerin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olunuz.",
+  "signature": {
+    "text": "Zevcin Eşref"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Rize, Atina kazası, Sarıyar karyesi, Muhtar İlyas Ağa vasıtasıyla Kadriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Eşref, Rizeli, 34, dokumacı, er (Rize, Atina kazası, Sarıyar karyesi)\nAlıcı: Karısı Kadriye Hanım, Rize, Atina kazası, Sarıyar karyesi\nYön: cepheden\nTarih: 19 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: telaşlı, bir konudan ötekine atlar\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 106",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Eşref",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Rize",
+        "occupation": "dokumacı",
+        "epithet": "Rizeli",
+        "place": "Atina kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Kadriye",
+        "gender": "kadın",
+        "age": 36,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Atina kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Rize, Atina kazası, Sarıyar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 106,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "19 Haziran 1331",
+      "home_address": "Rize, Atina kazası, Sarıyar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5632,
+      "output": 3149
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 19 Haziran 1331\nHİTAP: Zevcem Kadriye Hanım'a\nGÖVDE: Evvela selam eder, cümlenizi hürmetle selamlarım. Kadriye, köydeki sarı öküzün satılması işi ne oldu? Sakın acele edip de o tüccar İdris'in verdiği fiyata heba etmeyesin. Güz gelmeden biraz daha bekleyin. Geçen gece aklıma düştü, evin arka tarafındaki kiremitleri aktarabildiniz mi? Yağmurlar bastırınca altı çamur oluyor, çocukların üstüne damlamasın. Şayet öküzü mecburen satarsanız parasını hemen borca yatırmayın, birazını elinizde saklayın da kışlık un şeker alın. Kasabada fiyatlar nasıl oldu? Hasan Usta'nın dükkânındaki tezgâhım duruyor mu? Tarladaki işleri komşularla imece usulü halledin. Sen tek başına kendini yorma. Nöbette aklım hep sizin orada kalıyor. Çabuk cevap yaz, öküzün akıbetini bana teferruatıyla bildir. Çocukların gözlerinden, büyüklerin ellerinden öperim.\nKAPANIŞ: Allah'a emanet olunuz.\nİMZA: Zevcin Eşref\nZARF: Rize, Atina kazası, Sarıyar karyesi, Muhtar İlyas Ağa vasıtasıyla Kadriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 106 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4881,
+      "output": 2066
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan kelimeler ve hitap bicimi 1915 donemine ve yuksek okuryazarliga tam uygundur.",
+      "olculuk": "Duygular isimlendirilmeden pes pese sorulan sorularla endise ve telas basariyla hissettirilmistir.",
+      "okuryazarlik": "Teferruat, akibet, sayet gibi kelimelerle istenen yuksek okuryazarlik seviyesi dogru yansitilmistir.",
+      "somutluk": "Sari okuz, kiremit, un, seker ve Hasan Usta'nin tezgahi gibi cok sayida somut detay icermektedir.",
+      "sadakat": "Istenen uzunluk, konu, telasli ton ve daldan dala atlayan yapi eksiksiz bir sekilde mektuba aktarilmistir.",
+      "sahicilik": "Cephedeki bir askerin geride biraktigi evine ve isine dair duydugu gercekci kaygilari yansitiyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

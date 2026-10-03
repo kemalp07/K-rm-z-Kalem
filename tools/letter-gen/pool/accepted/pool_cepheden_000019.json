@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000019",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Reşit",
+    "epithet": "Sinoplu",
+    "age": 34,
+    "hometown": "Sinop",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hasan",
+    "relation": "oğlu",
+    "location": "Sinop, Boyabat kazası, Esentepe karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "high",
+  "length_target": 68,
+  "hand": "hurried",
+  "header": {
+    "text": "Seddülbahir, 15 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Oğlum Hasan'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Hasan gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Ben sağım merağ etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Mekdebe gidiyon mu hoca efendiyi eyi dinle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Koyunlara kuzulara mukayet ol yaza kırkım var yalniz koma ananı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sana bu ay para yollayamıyom bi borcum vardı onu ödedim idare edin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim köyden Topal Veli'nin oğlu Ali",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "dördüncü tabur ikinci bölükteymiş",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "onu gördüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Burda",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "on gündür aynı siperde",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "yatıyoz su az geliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Başka kâat kalmadı anana ebene çok selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Baban Reşit"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Sinop, Boyabat kazası, Esentepe karyesi, İmam Hafız Efendi vasıtasıyla Hasan'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Reşit, Sinoplu, 34, çoban, er (Sinop, Boyabat kazası, Esentepe karyesi)\nAlıcı: Oğlu Hasan, Sinop, Boyabat kazası, Esentepe karyesi\nYön: cepheden\nTarih: 15 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Sinop",
+        "occupation": "çoban",
+        "epithet": "Sinoplu",
+        "place": "Boyabat kazası, Esentepe karyesi"
+      },
+      "recipient": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 13,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Sinop",
+        "occupation": null,
+        "epithet": null,
+        "place": "Boyabat kazası, Esentepe karyesi"
+      },
+      "recipient_location": "Sinop, Boyabat kazası, Esentepe karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "high",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "15 Mayıs 1331",
+      "home_address": "Sinop, Boyabat kazası, Esentepe karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5708,
+      "output": 2916
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 15 Mayıs 1331\nHİTAP: Oğlum Hasan'a\nGÖVDE: Oğlum Hasan gözlerinden öperim. Ben sağım merağ etmeyin. Mekdebe gidiyon mu hoca efendiyi eyi dinle. Koyunlara kuzulara mukayet ol yaza kırkım var yalniz koma ananı. Sana bu ay para yollayamıyom bi borcum vardı onu ödedim idare edin. Bizim köyden Topal Veli'nin oğlu Ali ⟦dördüncü tabur ikinci bölükteymiş⟧ onu gördüm. Burda ⟦on gündür aynı siperde⟧ yatıyoz su az geliyo. Başka kâat kalmadı anana ebene çok selam söyle.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Baban Reşit\nZARF: Sinop, Boyabat kazası, Esentepe karyesi, İmam Hafız Efendi vasıtasıyla Hasan'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 68 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 15 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4780,
+      "output": 3241
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan kelimeler ve ifade bicimi 1915 yilinin koylu agzina tamamiyla uygundur.",
+      "olculuk": "Duygular hic adlandirilmamis, yalnizca somut durumlar ve talimatlar uzerinden aktarilmistir.",
+      "okuryazarlik": "Noktalama isaretlerinin eksikligi ve yazim yanlislari dusuk okuryazarligi basariyla yansitiyor.",
+      "somutluk": "Koyunlarin kirkimi, mektep, suyun az gelmesi gibi son derece somut ve gundelik ayrintilar iceriyor.",
+      "sadakat": "Istenen tum unsurlar mektuba eklenmis ancak sansur isaretlemesinde kural hatasi yapilmistir.",
+      "sahicilik": "Kisa, net ve icine kapanik bir babanin ogluna yazdigi gercek bir mektup hissi veriyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 15 Mayıs 1331⟧",
+        "problem": "Sansur isaretleri icine tarih de alinmis, oysa kurallara gore tarih isaretin disinda kalmalidir.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 15 Mayıs 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

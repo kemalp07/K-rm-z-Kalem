@@ -1,0 +1,220 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Makbule",
+    "epithet": "Malatyalı",
+    "age": 30,
+    "hometown": "Malatya",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "İbrahim",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 81,
+  "hand": "hurried",
+  "header": {
+    "text": "Gökçeören, 10 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendime",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldım okudum çok şükür sağsın sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim buralarda bu ara fena bir hastalık geziyor kime sorsam yatak döşek yatıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hamza ağanın torununu da toprağa verdiler dün ateşten.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim evde herkez iyi sen bizi hiç merak etmeyesin efendim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Oğlan iki gündür uyuyor demin biraz sıcağı vardı emme şimdi iyi güneşten heral.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tarlada arpalar sarardı biçmeye adam lazım kimi tutcaz bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sana beze sarıp biraz leblebiyle kuru üzüm koydum afiyetle yiyesin arkadaşlarına da veresin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kaynatam gilin de sana çok çok selamı var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden öperim.",
+  "signature": {
+    "text": "Zevcen Makbule"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı İbrahim'e",
+    "sensitive": false
+  },
+  "package": [
+    "leblebi",
+    "kuru üzüm"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Makbule Hanım, Malatyalı, 30, ev hanımı (Malatya, Hekimhan kazası, Gökçeören karyesi)\nAlıcı: Kocası Er İbrahim, cephede\nYön: cepheye\nTarih: 10 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: köydeki salgın hastalık (üstü örtülü)\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: leblebi, kuru üzüm\nKapanış: Ellerinden öperim\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Makbule",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "ev hanımı",
+        "epithet": "Malatyalı",
+        "place": "Hekimhan kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "İbrahim",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hekimhan kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "köydeki salgın hastalık (üstü örtülü)",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": [
+        "leblebi",
+        "kuru üzüm"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "10 Haziran 1331",
+      "closing": "Ellerinden öperim",
+      "home_address": "Malatya, Hekimhan kazası, Gökçeören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5783,
+      "output": 4334
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Gökçeören, 10 Haziran 1331\nHİTAP: Efendime\nGÖVDE: Mektubunu aldım okudum çok şükür sağsın sevindik. Bizim buralarda bu ara fena bir hastalık geziyor kime sorsam yatak döşek yatıyor. Hamza ağanın torununu da toprağa verdiler dün ateşten. Bizim evde herkez iyi sen bizi hiç merak etmeyesin efendim. Oğlan iki gündür uyuyor demin biraz sıcağı vardı emme şimdi iyi güneşten heral. Tarlada arpalar sarardı biçmeye adam lazım kimi tutcaz bilmeyorum. Sana beze sarıp biraz leblebiyle kuru üzüm koydum afiyetle yiyesin arkadaşlarına da veresin. Kaynatam gilin de sana çok çok selamı var.\nKAPANIŞ: Ellerinden öperim.\nİMZA: Zevcen Makbule\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Malatyalı İbrahim'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 81 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": null,
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

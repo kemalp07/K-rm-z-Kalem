@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheden_000041",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Rauf",
+    "epithet": "Aydınlı",
+    "age": 38,
+    "hometown": "Aydın",
+    "occupation": "kâtip",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zekiye",
+    "relation": "nişanlısı",
+    "location": "Aydın, Bozdoğan kazası, Dereköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "low",
+  "length_target": 102,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 26 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem nişanlım Zekiye Hanım'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Yazdığım ilk mektuba henüz bir cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gitmeden evvel tembihlediğim gibi, Bakkal Halil’e olan sekiz kuruşluk borcumuzu vaktinde kapattınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kasap Rıza'ya olan iki mecidiye borcu da unutma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Şayet yukarıdaki zeytinliği icara verdiyseniz, elinize geçen parayı muhakkak sandıkta muhafaza et, sakın lüzumsuz yere harcama.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Döndüğümde ocağımızı kurmak için epeyce akçe gerekecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Senden tek isteğim sabırla beni beklemendir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bu seferberlik elbet nihayete erer, memlekete sağ salim vardığımda yarım kalan işimizi tamamlarız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim ahvalimi sorarsan gayet iyiyim, erzakımız veriliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Yalnız saka katırı suyu hep gece yarısı getirdiğinden uykumuz biraz bölünüyor, hepsi bu.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen evdeki hesabı sağlam tut, kimseye boyun eğmeyelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Validene hürmetlerimi sunarım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Mektubuma burada son verir, sıhhat ve selamet dilerim.",
+  "signature": {
+    "text": "Rauf"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Aydın, Bozdoğan kazası, Dereköy karyesi, İmam Süleyman Efendi vasıtasıyla Zekiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Rauf, Aydınlı, 38, kâtip, er (Aydın, Bozdoğan kazası, Dereköy karyesi)\nAlıcı: Nişanlısı Zekiye Hanım, Aydın, Bozdoğan kazası, Dereköy karyesi\nYön: cepheden\nTarih: 26 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: hesapçı, para ve borçtan söz eder\nKonu: nişanlısının beklemesini istemek\nSakladığı: aç kaldıklarını\nHassas bilgi: kumanyanın ya da suyun hangi saatte geldiği\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 102",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Rauf",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": "kâtip",
+        "epithet": "Aydınlı",
+        "place": "Bozdoğan kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Zekiye",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bozdoğan kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Aydın, Bozdoğan kazası, Dereköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "low",
+      "sensitive_info": "kumanyanın ya da suyun hangi saatte geldiği",
+      "length_label": "orta",
+      "length_target": 102,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "26 Nisan 1331",
+      "home_address": "Aydın, Bozdoğan kazası, Dereköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5704,
+      "output": 3230
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 26 Nisan 1331\nHİTAP: Muhterem nişanlım Zekiye Hanım'a,\nGÖVDE: Yazdığım ilk mektuba henüz bir cevap gelmedi. Gitmeden evvel tembihlediğim gibi, Bakkal Halil’e olan sekiz kuruşluk borcumuzu vaktinde kapattınız mı? Kasap Rıza'ya olan iki mecidiye borcu da unutma. Şayet yukarıdaki zeytinliği icara verdiyseniz, elinize geçen parayı muhakkak sandıkta muhafaza et, sakın lüzumsuz yere harcama. Döndüğümde ocağımızı kurmak için epeyce akçe gerekecek. Senden tek isteğim sabırla beni beklemendir. Bu seferberlik elbet nihayete erer, memlekete sağ salim vardığımda yarım kalan işimizi tamamlarız. Benim ahvalimi sorarsan gayet iyiyim, erzakımız veriliyor. ⟦Yalnız saka katırı suyu hep gece yarısı getirdiğinden uykumuz biraz bölünüyor, hepsi bu.⟧ Sen evdeki hesabı sağlam tut, kimseye boyun eğmeyelim. Validene hürmetlerimi sunarım.\nKAPANIŞ: Mektubuma burada son verir, sıhhat ve selamet dilerim.\nİMZA: Rauf\nZARF: Aydın, Bozdoğan kazası, Dereköy karyesi, İmam Süleyman Efendi vasıtasıyla Zekiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 102 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4894,
+      "output": 2674
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme ait kelimeler (icar, akçe, ahval, muhterem) kusursuz kullanılmış, hiçbir modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular adlandırılmamış, hesapçı ve temkinli bir kâtip tonu abartısız bir şekilde çok iyi yansıtılmış.",
+      "okuryazarlik": "Yüksek okuryazarlık seviyesine uygun, düzgün, akıcı ve dilbilgisi kurallarına uyan cümleler kurulmuş.",
+      "somutluk": "Bakkal Halil'e sekiz kuruş borç, zeytinlik icari ve saka katırı gibi çok somut, inandırıcı detaylar barındırıyor.",
+      "sadakat": "İstekteki tüm unsurlar (konu, saklanan bilgi, uzunluk) karşılanmış ancak sansür işaretlemesi kuralında ufak bir hata yapılmış.",
+      "sahicilik": "Karakterin yaşına, mesleğine ve mektubun amacına son derece uygun, klişelerden uzak ve çok sahici bir metin."
+    },
+    "issues": [
+      {
+        "line": "⟦Yalnız saka katırı suyu hep gece yarısı getirdiğinden uykumuz biraz bölünüyor, hepsi bu.⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) tüm cümleyi kapsayacak şekilde konulmuş; kurala göre yalnızca askerî bilginin kendisi işaretlenmeli, gündelik sözler dışarıda bırakılmalıdır.",
+        "suggestion": "Yalnız ⟦saka katırı suyu hep gece yarısı getirdiğinden⟧ uykumuz biraz bölünüyor, hepsi bu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

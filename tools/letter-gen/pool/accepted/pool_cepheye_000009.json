@@ -1,0 +1,292 @@
+{
+  "id": "pool_cepheye_000009",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Elif",
+    "epithet": "Kütahyalı",
+    "age": 44,
+    "hometown": "Kütahya",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Sait",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "mahalle imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 103,
+  "hand": "dictated",
+  "header": {
+    "text": "Yeniköy, 4 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem kardeşim Sait'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Elif der ki: Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Rabbim seni her türlü kazadan ve beladan esirgesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Yolladığın kâğıdı aldık, Hoca Efendi okudu, yüreğimiz serinledi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim hâlimizi sorarsan çok şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen gittikten sonra tarlayı sürecek kimse kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çaresiz kaldık, köyden Kör Hasan'a icara verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Harman vakti kalkınca mahsulden payımızı verecek inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kıştan kalan unu idareli kullanıyoruz, Allah bereketini verir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Ahır boş kaldı, hayvanların yemini suyunu düşünecek halimiz kalmamıştı zaten.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gecem gündüzüm seccade başında sana duayla geçiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Allah dinimize devletimize zeval vermesin, ordumuzu düşmana karşı muzaffer kılsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kardeşin Ayşe'nin çok selâmı var, sağ salim dönesin diye o da her gün Kur'an okuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Komşular ve yeğenlerin ellerinden öper.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Elif"
+  },
+  "note": {
+    "text": "İşbu mektup Elif Hanım'ın ağzından kaleme alınmıştır. İmam Salih.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Uşaklı Er Sait'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Elif Hanım, Kütahyalı, 44, çiftçi (Kütahya, Uşak kazası, Yeniköy karyesi)\nAlıcı: Kardeşi Er Sait, cephede\nYön: cepheye\nTarih: 4 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: mahalle imamı)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Elif",
+        "gender": "kadın",
+        "age": 44,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": "çiftçi",
+        "epithet": "Kütahyalı",
+        "place": "Uşak kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Sait",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Uşak kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "4 Mayıs 1331",
+      "home_address": "Kütahya, Uşak kazası, Yeniköy karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5639,
+      "output": 3432
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 4 Mayıs 1331\nHİTAP: Muhterem kardeşim Sait'e\nGÖVDE: Elif der ki: Evvela selam eder, iki gözlerinden öperim. Rabbim seni her türlü kazadan ve beladan esirgesin. Yolladığın kâğıdı aldık, Hoca Efendi okudu, yüreğimiz serinledi. Bizim hâlimizi sorarsan çok şükür ayaktayız. Sen gittikten sonra tarlayı sürecek kimse kalmadı. Çaresiz kaldık, köyden Kör Hasan'a icara verdik. Harman vakti kalkınca mahsulden payımızı verecek inşallah. Kıştan kalan unu idareli kullanıyoruz, Allah bereketini verir. Ahır boş kaldı, hayvanların yemini suyunu düşünecek halimiz kalmamıştı zaten. Gecem gündüzüm seccade başında sana duayla geçiyor. Allah dinimize devletimize zeval vermesin, ordumuzu düşmana karşı muzaffer kılsın. Kardeşin Ayşe'nin çok selâmı var, sağ salim dönesin diye o da her gün Kur'an okuyor. Komşular ve yeğenlerin ellerinden öper.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Elif)\nNOT: İşbu mektup Elif Hanım'ın ağzından kaleme alınmıştır. İmam Salih.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Uşaklı Er Sait'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "107 kelime, hedef 103 (+4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000005 ile ortak: \"der ki evvela selam eder iki\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4905,
+      "output": 2674
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve imamın duaya yatkın üslubu döneme uygun, ancak bazı ifadeler biraz fazla günümüz anlatısını andırıyor.",
+      "olculuk": "'Çaresiz kaldık' gibi doğrudan durum ve duygu bildiren ifadeler kullanılmış, bu kural ihlalidir.",
+      "okuryazarlik": "İmamın yazdırdığını belli eden 'Elif der ki' ve 'İşbu mektup...' kalıpları ile imza yerine mühür kullanımı kusursuz.",
+      "somutluk": "Kör Hasan, kıştan kalan un ve harman vakti gibi somut detaylar var, ancak daha fazla yöresel tarım detayı eklenebilirdi.",
+      "sadakat": "Jandarmanın hayvanları alması saklanmış fakat 'ahır boş kaldı' denilerek askerin moralini bozacak şüpheli bir açık verilmiş.",
+      "sahicilik": "Genel olarak samimi bir köy mektubu hissi veriyor ancak komşuların el öpmesi gibi mantık hataları sahiciliği zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Çaresiz kaldık, köyden Kör Hasan'a icara verdik.",
+        "problem": "'Çaresiz kaldık' ifadesi doğrudan durum/duygu adlandırmasıdır; kurallara göre bu tür soyut adlandırmalar yapılmamalıdır.",
+        "suggestion": "Tarlaya saban koşacak gücümüz yetmedi, köyden Kör Hasan'a icara verdik."
+      },
+      {
+        "line": "Ahır boş kaldı, hayvanların yemini suyunu düşünecek halimiz kalmamıştı zaten.",
+        "problem": "Jandarmanın hayvanları aldığını saklamak isterken 'ahır boş kaldı' demek askeri endişelendirir ve cepheye moral bozucu haber göndermeme kuralıyla çelişir.",
+        "suggestion": "Hayvanlara bakması zor oluyordu, sarı ineği satıp kışlık unumuzu aldık, aklın kalmasın."
+      },
+      {
+        "line": "Komşular ve yeğenlerin ellerinden öper.",
+        "problem": "Komşuların (yaşıt veya büyüklerin) askerin elini öpmesi dönemin adabına ve mantığına aykırıdır; komşular selam eder.",
+        "suggestion": "Komşuların çok selamı var, yeğenlerin ellerinden öper."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

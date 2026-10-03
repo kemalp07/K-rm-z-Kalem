@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000016",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Reşit",
+    "epithet": "Bolulu",
+    "age": 32,
+    "hometown": "Bolu",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Emin",
+    "relation": "erkek kardeşi",
+    "location": "Bolu, Göynük kazası, Çukurören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 75,
+  "hand": "careful",
+  "header": {
+    "text": "Seddülbahir, 12 Haziran 1331",
+    "sensitive": true
+  },
+  "salutation": "Kardeşim Emin,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder hatırınızı sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hacı Salih’e olan borcun vadesi gelmiştir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Arpayı biçmeye başlamışsınızdır, harmanı kaldırınca ilk iş gidip o adamın parasını kuruşu kuruşuna sayacaksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Eksik çıkarsa alaca öküzü sat yine de öde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Avratlara işi bırakma, tarlanın başında dur, ekin ziyan olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Buralarda Haziran sıcağı iyice bastırdı, toz toprak içindeyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen aklını başına devşir, borcu bitir de bana öyle mektup yolla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Aklım köyde kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kahveci Yakup'a çok selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Ağabeyin Çavuş Reşit"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Bolu, Göynük kazası, Çukurören karyesi, Muhtar vasıtasıyla Emin'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Reşit, Bolulu, 32, çiftçi, çavuş (Bolu, Göynük kazası, Çukurören karyesi)\nAlıcı: Erkek kardeşi Emin, Bolu, Göynük kazası, Çukurören karyesi\nYön: cepheden\nTarih: 12 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sert, emir verir gibi yazar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 75",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Bolu",
+        "occupation": "çiftçi",
+        "epithet": "Bolulu",
+        "place": "Göynük kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Emin",
+        "gender": "erkek",
+        "age": 30,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Bolu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Göynük kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Bolu, Göynük kazası, Çukurören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "yok",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 75,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "12 Haziran 1331",
+      "home_address": "Bolu, Göynük kazası, Çukurören karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5628,
+      "output": 3830
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 12 Haziran 1331\nHİTAP: Kardeşim Emin,\nGÖVDE: Evvela selam eder hatırınızı sorarım. Mektubun elime geçti. Hacı Salih’e olan borcun vadesi gelmiştir. Arpayı biçmeye başlamışsınızdır, harmanı kaldırınca ilk iş gidip o adamın parasını kuruşu kuruşuna sayacaksın. Eksik çıkarsa alaca öküzü sat yine de öde. Avratlara işi bırakma, tarlanın başında dur, ekin ziyan olmasın. Buralarda Haziran sıcağı iyice bastırdı, toz toprak içindeyiz. Sen aklını başına devşir, borcu bitir de bana öyle mektup yolla. Aklım köyde kalmasın. Kahveci Yakup'a çok selam eyle.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Ağabeyin Çavuş Reşit\nZARF: Bolu, Göynük kazası, Çukurören karyesi, Muhtar vasıtasıyla Emin'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "72 kelime, hedef 75 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 12 Haziran 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4784,
+      "output": 2295
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve emir kipi dönemin köylü-asker ağzına oldukça uygundur.",
+      "olculuk": "Duygular adlandırılmamış, ağabeyin endişesi ve otoritesi tamamen somut emirler üzerinden verilmiştir.",
+      "okuryazarlik": "Orta okuryazarlığa uygun, düzgün ama sade ve süssüz cümleler kurulmuştur.",
+      "somutluk": "Hacı Salih, arpa hasadı, alaca öküz gibi son derece somut ve döneme ait detaylar kullanılmıştır.",
+      "sadakat": "İstenen uzunluk, konu ve ton tam tutturulmuş ancak sansür işaretlemesinde tarih de parantez içine alınarak kural ihlali yapılmıştır.",
+      "sahicilik": "Sert mizaçlı bir ağabeyin cepheden köydeki işleri yönetmeye çalışması çok gerçekçi yansıtılmıştır."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 12 Haziran 1331⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) içine yalnızca askerî bilgi (yer adı) alınmalıdır, tarih işaretin dışında kalmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 12 Haziran 1331"
+      },
+      {
+        "line": "ZARF: Bolu, Göynük kazası, Çukurören karyesi, Muhtar vasıtasıyla Emin'e",
+        "problem": "Zarf adresinde muhtarın adı (örneğin Muhtar Ali Ağa) belirtilmelidir, sadece 'Muhtar' yazılması adres kalıbına eksik uyar.",
+        "suggestion": "ZARF: Bolu, Göynük kazası, Çukurören karyesi, Muhtar Osman Ağa vasıtasıyla Emin'e"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

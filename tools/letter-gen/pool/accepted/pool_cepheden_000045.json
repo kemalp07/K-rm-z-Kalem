@@ -1,0 +1,284 @@
+{
+  "id": "pool_cepheden_000045",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Demirci",
+    "age": 45,
+    "hometown": "Manisa",
+    "occupation": "demirci",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Hayriye",
+    "relation": "annesi",
+    "location": "Manisa, Demirci kazası, Gökçeören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 104,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 2 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem validem Hayriye Hanım'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual ederseniz, şükürler olsun sağlığım yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dün bizim köylü Kahveci Hasan’ın oğlu Bekir'i gördüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Onu da bizim üçüncü tabura verdiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Beraber oturup memleketten konuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gökçeören'in havasını, peksimetini andık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bekir gelirken yanında getirdiği kuru üzümleri paylaştı, sağ olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ana, buralarda tütün bulmak zor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim cebimdeki üç beş kuruş da geçen günkü telaşede kayboldu gitti, nereye düştü bulamadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Eğer elinizde darlıktan artan varsa, zarfın içine iki kuruş koyup yollayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarladaki işler ne âlemde?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Mustafa ekinleri vaktinde suladı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Öküzlerin yemini eksik etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köydeki komşulara, bilhassa dükkânı bıraktığım çırak İsmail'e selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et, duanı eksik etme.",
+  "signature": {
+    "text": "Oğlun Çavuş Nail"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Manisa, Demirci kazası, Gökçeören karyesi, İmam Ali Efendi vasıtasıyla Hayriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Demirci, 45, demirci, çavuş (Manisa, Demirci kazası, Gökçeören karyesi)\nAlıcı: Annesi Hayriye Hanım, Manisa, Demirci kazası, Gökçeören karyesi\nYön: cepheden\nTarih: 2 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: ağırbaşlı, kalıplara sadık\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 45,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Manisa",
+        "occupation": "demirci",
+        "epithet": "Demirci",
+        "place": "Demirci kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Hayriye",
+        "gender": "kadın",
+        "age": 64,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Demirci kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Manisa, Demirci kazası, Gökçeören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "2 Mayıs 1331",
+      "home_address": "Manisa, Demirci kazası, Gökçeören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5700,
+      "output": 2841
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 2 Mayıs 1331\nHİTAP: Muhterem validem Hayriye Hanım'a,\nGÖVDE: Evvela selam eder, mübarek ellerinizden hürmetle öperim. Benim hâlimi sual ederseniz, şükürler olsun sağlığım yerindedir. Dün bizim köylü Kahveci Hasan’ın oğlu Bekir'i gördüm. ⟦Onu da bizim üçüncü tabura verdiler.⟧ Beraber oturup memleketten konuştuk. Gökçeören'in havasını, peksimetini andık. Bekir gelirken yanında getirdiği kuru üzümleri paylaştı, sağ olsun. Ana, buralarda tütün bulmak zor. Benim cebimdeki üç beş kuruş da geçen günkü telaşede kayboldu gitti, nereye düştü bulamadım. Eğer elinizde darlıktan artan varsa, zarfın içine iki kuruş koyup yollayın. Tarladaki işler ne âlemde? Mustafa ekinleri vaktinde suladı mı? Öküzlerin yemini eksik etmeyin. Köydeki komşulara, bilhassa dükkânı bıraktığım çırak İsmail'e selam eyle.\nKAPANIŞ: Hakkını helal et, duanı eksik etme.\nİMZA: Oğlun Çavuş Nail\nZARF: Manisa, Demirci kazası, Gökçeören karyesi, İmam Ali Efendi vasıtasıyla Hayriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "98 kelime, hedef 104 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"selam eder mübarek ellerinizden hürmetle öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4892,
+      "output": 3580
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve hitap biçimleri 1915 yılının ruhuna ve orta okuryazarlık seviyesine uygundur.",
+      "olculuk": "Duygular adlandırılmamış, hasret ve sıkıntı somut olaylar üzerinden başarıyla aktarılmıştır.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun olarak kalıp cümleler ve düzgün, sade bir ifade kullanılmıştır.",
+      "somutluk": "Kuru üzüm, öküzlerin yemi ve çırak İsmail gibi gündelik hayata dair çok iyi somut detaylar barındırıyor.",
+      "sadakat": "İstekteki tüm unsurlar mektuba eklenmiş ancak sansür işaretlemesinde ufak bir kural hatası yapılmıştır.",
+      "sahicilik": "Kumar borcunu telaşede kaybettim diyerek saklaması ve köydeki işleri sorması mektubu son derece gerçekçi kılıyor."
+    },
+    "issues": [
+      {
+        "line": "⟦Onu da bizim üçüncü tabura verdiler.⟧",
+        "problem": "Sansür işaretleri tüm cümleyi değil, yalnızca askerî bilginin kendisini içine almalıdır.",
+        "suggestion": "Onu da bizim ⟦üçüncü tabura⟧ verdiler."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

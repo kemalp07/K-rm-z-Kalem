@@ -1,0 +1,263 @@
+{
+  "id": "pool_cepheden_000050",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Dursun",
+    "epithet": "Kütahyalı",
+    "age": 31,
+    "hometown": "Kütahya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Fikri",
+    "relation": "babası",
+    "location": "Kütahya, Eşme kazası, Dereköy karyesi"
+  },
+  "writes": "scribe",
+  "writer": "alay kâtibi",
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 77,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Fikri Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim sağlığımı sorarsanız şükür hayattayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Anama bilhassa söyleyin hiç tasalanmasın, dualarını eksik etmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Buralarda havalar iyice ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sizin orada arpa biçimi başlamıştır, ekinleri tarlada ziyan etmeyin, dayımdan yardım isteyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim evdekine de selam ederim, çocuklara mukayyet olsun, onlara iyi baksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kardeşlerim Hüseyin ile Ayşe'nin de gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Köydeki kahveci Ali ağabeye ve bütün ahbaplara selamımı iletin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Gecikmeden siz de köyün ahvalini yazıp bir kâğıt yollayın, burada gözümüz yoldadır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve hürmetle.",
+  "signature": {
+    "text": "",
+    "seal": "Dursun"
+  },
+  "note": {
+    "text": "İşbu mektup Dursun'un iltiması üzerine tarafımdan yazılmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kütahya, Eşme kazası, Dereköy karyesi, Muhtar Hasan Ağa vasıtasıyla Fikri Efendi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Dursun, Kütahyalı, 31, çiftçi, er (Kütahya, Eşme kazası, Dereköy karyesi)\nAlıcı: Babası Fikri, Kütahya, Eşme kazası, Dereköy karyesi\nYön: cepheden\nTarih: 15 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: alay kâtibi)\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Dursun",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "çiftçi",
+        "epithet": "Kütahyalı",
+        "place": "Eşme kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 62,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eşme kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Kütahya, Eşme kazası, Dereköy karyesi",
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "15 Haziran 1331",
+      "home_address": "Kütahya, Eşme kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5711,
+      "output": 3333
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Haziran 1331\nHİTAP: Muhterem pederim Fikri Efendi'ye\nGÖVDE: Evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim. Benim sağlığımı sorarsanız şükür hayattayım. Anama bilhassa söyleyin hiç tasalanmasın, dualarını eksik etmesin. Buralarda havalar iyice ısındı. Sizin orada arpa biçimi başlamıştır, ekinleri tarlada ziyan etmeyin, dayımdan yardım isteyin. Bizim evdekine de selam ederim, çocuklara mukayyet olsun, onlara iyi baksın. Kardeşlerim Hüseyin ile Ayşe'nin de gözlerinden öperim. Köydeki kahveci Ali ağabeye ve bütün ahbaplara selamımı iletin. Gecikmeden siz de köyün ahvalini yazıp bir kâğıt yollayın, burada gözümüz yoldadır.\nKAPANIŞ: Baki selam ve hürmetle.\nİMZA: (mühür: Dursun)\nNOT: İşbu mektup Dursun'un iltiması üzerine tarafımdan yazılmıştır.\nZARF: Kütahya, Eşme kazası, Dereköy karyesi, Muhtar Hasan Ağa vasıtasıyla Fikri Efendi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 77 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"evvela mahsus selam eder mübarek ellerinizden\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4874,
+      "output": 2598
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "\"Sağlığımı\" ve \"ağabeye\" gibi kelimeler kâtip dili ve dönem için biraz fazla güncel kaçıyor; \"hâlimi\" ve \"Ağa'ya\" daha uygun olurdu.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut işler ve selamlar üzerinden hasret ve vefa hissettirilmiş.",
+      "okuryazarlik": "Kâtibin resmî giriş-çıkış kalıplarıyla köylünün basit dertleri (arpa biçimi, evdeki) çok iyi harmanlanmış.",
+      "somutluk": "Arpa biçimi, tarladaki ekin, kahveci Ali gibi köye dair çok somut ve inandırıcı detaylar barındırıyor.",
+      "sadakat": "İstenen tüm kısıtlamalara (uzunluk, utangaçlık, anaya sağ olduğunu bildirme, yaranın gizlenmesi) harfiyen uyulmuş.",
+      "sahicilik": "Kâtibe yazdırılan tipik bir siper mektubu hissiyatını, utangaçlık detayıyla birlikte kusursuz veriyor."
+    },
+    "issues": [
+      {
+        "line": "Benim sağlığımı sorarsanız şükür hayattayım.",
+        "problem": "\"Sağlık\" kelimesi o dönem kâtiplerinin kullandığı \"sıhhat\" veya kalıplaşmış \"hâl\" kelimesine göre fazla modern tınlıyor.",
+        "suggestion": "Benim hâlimi sorarsanız şükür hayattayım."
+      },
+      {
+        "line": "Köydeki kahveci Ali ağabeye ve bütün ahbaplara selamımı iletin.",
+        "problem": "Köy yerinde ve o dönemde \"ağabey\" hitabı yerine \"Ağa\" unvanı kullanılması dönemin ruhuna daha uygundur.",
+        "suggestion": "Köydeki Kahveci Ali Ağa'ya ve bütün ahbaplara selamımı iletin."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

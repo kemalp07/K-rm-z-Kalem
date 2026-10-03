@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheden_000020",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Tayyar",
+    "epithet": "Kastamonulu",
+    "age": 18,
+    "hometown": "Kastamonu",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamide",
+    "relation": "annesi",
+    "location": "Kastamonu, Araç kazası, Sarıyar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 103,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 24 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Hamide Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsanız Allah'a şükür iyiyim, yaramız beremiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Rabbim size de sıhhat versin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen yolladığın kâğıdı aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Zevcem Elif'in sağ salim kurtulduğunu yazmışsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Cenab-ı Hak analı babalı büyütsün, ömrünü uzun etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çocuğun adını bana bırakmışsınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Oğlan ise rahmetli babamın adı Hasan olsun, kız ise Fatma koyun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Mevla nasip ederse gün gelir gözümle görmek nasip olur inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tezgâhın üstüne bir kilim atın, tahtası toz tutmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşim Veli tarlada çapaya yardım ediyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Havalar ufaktan ısındı buralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Komşumuz Ali emmilere çok selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Hepinize her vakit dualar ederim, siz de duanızı hiç eksik etmeyin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ederim.",
+  "signature": {
+    "text": "Oğlun Tayyar"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kastamonu, Araç kazası, Sarıyar karyesi, İmam Salih Efendi vasıtasıyla Hamide Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tayyar, Kastamonulu, 18, dokumacı, er (Kastamonu, Araç kazası, Sarıyar karyesi)\nAlıcı: Annesi Hamide Hanım, Kastamonu, Araç kazası, Sarıyar karyesi\nYön: cepheden\nTarih: 24 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: dualı, sık sık dua eder\nKonu: yeni doğan çocuğuna ad koymak\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Tayyar",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kastamonu",
+        "occupation": "dokumacı",
+        "epithet": "Kastamonulu",
+        "place": "Araç kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Hamide",
+        "gender": "kadın",
+        "age": 34,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Araç kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Kastamonu, Araç kazası, Sarıyar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "yeni doğan çocuğuna ad koymak",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "24 Nisan 1331",
+      "home_address": "Kastamonu, Araç kazası, Sarıyar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5628,
+      "output": 2299
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 24 Nisan 1331\nHİTAP: Validem Hamide Hanım'a\nGÖVDE: Evvela selam eder, mübarek ellerinden öperim. Benim hâlimi sorarsanız Allah'a şükür iyiyim, yaramız beremiz yoktur. Rabbim size de sıhhat versin inşallah. Geçen yolladığın kâğıdı aldım. Zevcem Elif'in sağ salim kurtulduğunu yazmışsın. Cenab-ı Hak analı babalı büyütsün, ömrünü uzun etsin. Çocuğun adını bana bırakmışsınız. Oğlan ise rahmetli babamın adı Hasan olsun, kız ise Fatma koyun. Mevla nasip ederse gün gelir gözümle görmek nasip olur inşallah. Tezgâhın üstüne bir kilim atın, tahtası toz tutmasın. Kardeşim Veli tarlada çapaya yardım ediyor mu? Havalar ufaktan ısındı buralarda. Komşumuz Ali emmilere çok selam eylerim. Hepinize her vakit dualar ederim, siz de duanızı hiç eksik etmeyin.\nKAPANIŞ: Baki selam ederim.\nİMZA: Oğlun Tayyar\nZARF: Kastamonu, Araç kazası, Sarıyar karyesi, İmam Salih Efendi vasıtasıyla Hamide Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 103 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4850,
+      "output": 2252
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve dua kalıpları 1915 Anadolu köylüsünün diline tam olarak uygundur.",
+      "olculuk": "Duygular isimlendirilmeden, tamamen dualar ve somut dilekler üzerinden ölçülü bir şekilde aktarılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade ve anlaşılır cümleler kurulmuş.",
+      "somutluk": "Dokumacı tezgâhının toz tutmaması için kilim örtülmesi ve tarladaki çapa işi gibi harika somut detaylar barındırıyor.",
+      "sadakat": "İstenen tüm unsurlar (dua eden ses, konu, uzunluk) mektuba eklenmiş ancak konuda küçük bir mantık hatası var.",
+      "sahicilik": "Doğum haberini alan babanın çocuğun cinsiyetini bilmeden isim önermesi hayatın olağan akışına aykırı olduğu için sahicilik bir miktar zedelenmiş."
+    },
+    "issues": [
+      {
+        "line": "Zevcem Elif'in sağ salim kurtulduğunu yazmışsın. Cenab-ı Hak analı babalı büyütsün, ömrünü uzun etsin. Çocuğun adını bana bırakmışsınız. Oğlan ise rahmetli babamın adı Hasan olsun, kız ise Fatma koyun.",
+        "problem": "Doğum haberini veren annenin mektupta çocuğun cinsiyetini yazmamış olması mantıksızdır; çocuk doğmuşsa cinsiyeti bellidir ve 'oğlan ise/kız ise' denmez.",
+        "suggestion": "\"Zevcem Elif'in sağ salim kurtulduğunu, bir oğlumuz olduğunu yazmışsın. Cenab-ı Hak analı babalı büyütsün. Adını rahmetli babamın adı Hasan koyun.\" şeklinde çocuğun cinsiyeti belli olarak yazılmalıdır."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

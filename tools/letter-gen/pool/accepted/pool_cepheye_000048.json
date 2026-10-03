@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheye_000048",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Necip",
+    "epithet": "Sivaslı",
+    "age": 44,
+    "hometown": "Sivas",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "İlyas",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 76,
+  "hand": "dictated",
+  "header": {
+    "text": "Kızılca, 8 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum İlyas'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsanız iyiyim, çok şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Seni merak ederiz, kâğıdını bekleriz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde işler yolunda, ekinleri ektik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen hafta bizim Sarıkız buzağıladı, alnı sakar bir erkek dana verdi, görsen pek seversin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sütümüz yoğurdumuz bollaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizde her şey iyidir, hiç tasalanma, aklın geride kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kardeşlerin, anan Fatma sana selam eyler, ellerini açıp hep dua ederler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Havalar burada ısındı, ekinler yeşeriyor, ot yolmaya başlayacağız yakında.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Pederin",
+    "seal": "Necip"
+  },
+  "note": {
+    "text": "İşbu mektubu Necip amcanın ağzından yazdım. Komşunuz Ömer.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı İlyas'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Necip, Sivaslı, 44, çiftçi (Sivas, Hafik kazası, Kızılca karyesi)\nAlıcı: Oğlu Er İlyas, cephede\nYön: cepheye\nTarih: 8 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: az konuşur, her şeyi iyi gösterir\nKonu: ineğin buzağılaması\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Necip",
+        "gender": "erkek",
+        "age": 44,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Sivas",
+        "occupation": "çiftçi",
+        "epithet": "Sivaslı",
+        "place": "Hafik kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "İlyas",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Sivas",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hafik kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "ineğin buzağılaması",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "8 Mayıs 1331",
+      "home_address": "Sivas, Hafik kazası, Kızılca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5625,
+      "output": 1733
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kızılca, 8 Mayıs 1331\nHİTAP: Oğlum İlyas'a\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Benim hâlimi sorarsanız iyiyim, çok şükür ayaktayız. Seni merak ederiz, kâğıdını bekleriz. Köyde işler yolunda, ekinleri ektik. Geçen hafta bizim Sarıkız buzağıladı, alnı sakar bir erkek dana verdi, görsen pek seversin. Sütümüz yoğurdumuz bollaştı. Bizde her şey iyidir, hiç tasalanma, aklın geride kalmasın. Kardeşlerin, anan Fatma sana selam eyler, ellerini açıp hep dua ederler. Havalar burada ısındı, ekinler yeşeriyor, ot yolmaya başlayacağız yakında.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Necip) Pederin\nNOT: İşbu mektubu Necip amcanın ağzından yazdım. Komşunuz Ömer.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı İlyas'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "69 kelime, hedef 76 (-9%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4816,
+      "output": 2996
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 yılının ruhuna ve mektup adabına tam uygundur.",
+      "olculuk": "Duygular adlandırılmamış, her şeyin yolunda olduğu sade bir dille aktarılarak ölçülü davranılmıştır.",
+      "okuryazarlik": "Mektepli bir çocuğun yazım tarzı başarıyla yansıtılmış ancak imzada kâtip kelimesi kullanılmıştır.",
+      "somutluk": "Alnı sakar dana, ot yolma ve ekinlerin yeşermesi gibi köye dair çok somut ayrıntılar verilmiştir.",
+      "sadakat": "İstenen uzunluk, konu, gizlenen bilgi ve yazdırılma biçimi eksiksiz olarak yerine getirilmiştir.",
+      "sahicilik": "Cephedeki oğlunu merak eden ama onu üzmemek için her şeyi iyi gösteren bir babanın gerçekçi sesidir."
+    },
+    "issues": [
+      {
+        "line": "İMZA: (mühür: Necip) Pederin",
+        "problem": "Köylü bir babanın imzasında 'peder' gibi kâtip kelimeleri yerine daha sade bir ifade kullanılmalıdır.",
+        "suggestion": "İMZA: (mühür: Necip) Baban"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

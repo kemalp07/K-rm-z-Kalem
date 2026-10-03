@@ -1,0 +1,288 @@
+{
+  "id": "pool_cepheden_000006",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Bekir",
+    "epithet": "Kahveci",
+    "age": 18,
+    "hometown": "Çorum",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamide",
+    "relation": "annesi",
+    "location": "Çorum, İskilip kazası, Yenice karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 97,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Hamide Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual ederseniz, şükür afiyetteyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Validem, küçük kardeşim Hasan'ın yaşı geliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Onu ne yapıp edip şubeye göndermeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dayıma söyleyin, muhtarı görsün, defterde yaşını ufak göstersinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Buralar ona göre değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sana biraz harçlık yollayacaktım lakin cebimde para kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim tabur iki gündür Kirte köyünün aşağısında bekliyor.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralarda her şey çok pahalı, çay şeker derken para bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim kahveyi kapattınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kapının kilitlerini sağlam vurun, camını kırmasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Hasan dükkâna göz kulak olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Aman diyeyim çocuğu askere yollamayın, bir yolunu bulun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Emmime, dayıma selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hayır dualarınızı beklerim.",
+  "signature": {
+    "text": "",
+    "seal": "Bekir"
+  },
+  "note": {
+    "text": "İşbu mektup Bekir'in ricası üzerine tarafımdan kaleme alınmıştır. Bölük Kâtibi.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Çorum, İskilip kazası, Yenice karyesi, Muhtar vasıtasıyla Hamide Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Bekir, Kahveci, 18, kahveci, er (Çorum, İskilip kazası, Yenice karyesi)\nAlıcı: Annesi Hamide Hanım, Çorum, İskilip kazası, Yenice karyesi\nYön: cepheden\nTarih: 23 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: telaşlı, bir konudan ötekine atlar\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 97",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": "kahveci",
+        "epithet": "Kahveci",
+        "place": "İskilip kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Hamide",
+        "gender": "kadın",
+        "age": 39,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "İskilip kazası, Yenice karyesi"
+      },
+      "recipient_location": "Çorum, İskilip kazası, Yenice karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 97,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "23 Mayıs 1331",
+      "home_address": "Çorum, İskilip kazası, Yenice karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5713,
+      "output": 3487
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Mayıs 1331\nHİTAP: Muhterem Validem Hamide Hanım'a\nGÖVDE: Evvela mahsus selam eder, mübarek ellerinizden hürmetle öperim. Benim hâlimi sual ederseniz, şükür afiyetteyim. Validem, küçük kardeşim Hasan'ın yaşı geliyor. Onu ne yapıp edip şubeye göndermeyin. Dayıma söyleyin, muhtarı görsün, defterde yaşını ufak göstersinler. Buralar ona göre değil. Sana biraz harçlık yollayacaktım lakin cebimde para kalmadı. ⟦Bizim tabur iki gündür Kirte köyünün aşağısında bekliyor.⟧ Buralarda her şey çok pahalı, çay şeker derken para bitti. Bizim kahveyi kapattınız mı? Kapının kilitlerini sağlam vurun, camını kırmasınlar. Hasan dükkâna göz kulak olsun. Aman diyeyim çocuğu askere yollamayın, bir yolunu bulun. Emmime, dayıma selam ederim.\nKAPANIŞ: Hayır dualarınızı beklerim.\nİMZA: (mühür: Bekir)\nNOT: İşbu mektup Bekir'in ricası üzerine tarafımdan kaleme alınmıştır. Bölük Kâtibi.\nZARF: Çorum, İskilip kazası, Yenice karyesi, Muhtar vasıtasıyla Hamide Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "91 kelime, hedef 97 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4898,
+      "output": 3023
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtip ağzına uygun 'evvela, mahsus, afiyet, lakin' gibi kelimeler kullanılmış, modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular adlandırılmamış, telaş ve korku doğrudan somut emirler ve peş peşe gelen sorularla hissettirilmiş.",
+      "okuryazarlik": "Kâtibin resmî giriş-çıkış kalıpları ile Bekir'in dağınık, telaşlı köylü zihniyeti çok iyi harmanlanmış.",
+      "somutluk": "Nüfus defteri, çay şeker fiyatları, dükkânın kilidi ve camı gibi döneme ait çok canlı ve somut detaylar barındırıyor.",
+      "sadakat": "Kardeşin askerliği, kumar parasının gizlenmesi, kâtip kullanımı ve dikkatsizlik (Kirte köyü) gibi tüm isteklere harfiyen uyulmuş.",
+      "sahicilik": "Cephedeki bir abinin geride kalan kardeşi ve dükkânı için duyduğu telaş son derece inandırıcı ve doğal aktarılmış."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Çorum, İskilip kazası, Yenice karyesi, Muhtar vasıtasıyla Hamide Hanım'a",
+        "problem": "Zarf adresinde aracı kişinin adı (örneğin 'Muhtar Ahmet Ağa') belirtilmemiş, kalıp eksik bırakılmış.",
+        "suggestion": "ZARF: Çorum, İskilip kazası, Yenice karyesi, Muhtar Ali Ağa vasıtasıyla Hamide Hanım'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

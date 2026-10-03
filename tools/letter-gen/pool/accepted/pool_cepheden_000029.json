@@ -1,0 +1,255 @@
+{
+  "id": "pool_cepheden_000029",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kemal",
+    "epithet": "Sinoplu",
+    "age": 37,
+    "hometown": "Sinop",
+    "occupation": "imam",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamiyet",
+    "relation": "annesi",
+    "location": "Sinop, Gerze kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 78,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 18 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem validem Hamiyet Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığınız paket nihayet elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İçindeki yün çoraplar ile pestilleri aldım, ziyadesiyle makbule geçti, Allah razı olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kesenin dibine sardığınız yirmi kuruş da ulaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Lakin köydeki bakkal İdris’e olan borcumuz malumunuzdur, o parayı keşke onun hesabından düşseydiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yakında yekûnu belimizi büker.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Haziran ortası geldi, arpa biçilmeye başlamıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tarlayı yarıcıya verdiyseniz hakkımızı tam gözetin, harman vakti gözünüz üstünde olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim sağlığım gayet yerindedir, bugünlerde geride istirahat ediyorum.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve hürmetle.",
+  "signature": {
+    "text": "Oğlunuz Kemal"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Sinop, Gerze kazası, Kurtköy karyesi, Muhtar vasıtasıyla Hamiyet Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kemal, Sinoplu, 37, imam, er (Sinop, Gerze kazası, Kurtköy karyesi)\nAlıcı: Annesi Hamiyet Hanım, Sinop, Gerze kazası, Kurtköy karyesi\nYön: cepheden\nTarih: 18 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: hesapçı, para ve borçtan söz eder\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: yaralandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Sinop",
+        "occupation": "imam",
+        "epithet": "Sinoplu",
+        "place": "Gerze kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Hamiyet",
+        "gender": "kadın",
+        "age": 60,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Sinop",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gerze kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Sinop, Gerze kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "yaralandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "18 Haziran 1331",
+      "home_address": "Sinop, Gerze kazası, Kurtköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5785,
+      "output": 2121
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 18 Haziran 1331\nHİTAP: Muhterem validem Hamiyet Hanım'a\nGÖVDE: Evvela mahsus selam eder, mübarek ellerinizden hürmetle öperim. Geçen ay yolladığınız paket nihayet elime geçti. İçindeki yün çoraplar ile pestilleri aldım, ziyadesiyle makbule geçti, Allah razı olsun. Kesenin dibine sardığınız yirmi kuruş da ulaştı. Lakin köydeki bakkal İdris’e olan borcumuz malumunuzdur, o parayı keşke onun hesabından düşseydiniz. Yakında yekûnu belimizi büker. Haziran ortası geldi, arpa biçilmeye başlamıştır. Tarlayı yarıcıya verdiyseniz hakkımızı tam gözetin, harman vakti gözünüz üstünde olsun. Benim sağlığım gayet yerindedir, bugünlerde geride istirahat ediyorum.\nKAPANIŞ: Baki selam ve hürmetle.\nİMZA: Oğlunuz Kemal\nZARF: Sinop, Gerze kazası, Kurtköy karyesi, Muhtar vasıtasıyla Hamiyet Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "76 kelime, hedef 78 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"evvela mahsus selam eder mübarek ellerinizden\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4799,
+      "output": 2324
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (yekûn, lakin, ziyadesiyle) dönemin ruhunu ve bir imamın söz dağarcığını başarıyla yansıtıyor.",
+      "olculuk": "Duygu sömürüsü yapılmamış, karakterin hesapçı yapısı mektubun tonuna çok iyi yedirilmiş.",
+      "okuryazarlik": "Cümle yapıları ve kelime seçimi, yüksek okuryazarlığa sahip bir imamın yazım tarzına tam uygun.",
+      "somutluk": "Yün çorap, pestil, yirmi kuruş, bakkal İdris ve arpa hasadı gibi detaylarla mektup son derece somutlaştırılmış.",
+      "sadakat": "İstenen tüm unsurlar (borç, çorap, gizlenen yara, uzunluk) eksiksiz ve kurallara uygun şekilde işlenmiş.",
+      "sahicilik": "Annesine gönderdiği parayı borca saymadığı için sitem eden asker profili son derece gerçekçi ve inandırıcı."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Sinop, Gerze kazası, Kurtköy karyesi, Muhtar vasıtasıyla Hamiyet Hanım'a",
+        "problem": "Zarf adresinde muhtarın adı eksik bırakılmış, dönemin adres kalıbına tam uyulmamış.",
+        "suggestion": "ZARF: Sinop, Gerze kazası, Kurtköy karyesi, Muhtar Hasan Ağa vasıtasıyla Hamiyet Hanım'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

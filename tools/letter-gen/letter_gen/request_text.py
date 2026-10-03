@@ -74,6 +74,7 @@ def _field_values(req: Request, pools: dict[str, Any]) -> dict[str, str | None]:
         "package": ", ".join(req.package) if req.package else None,
         "length": str(req.length_target),
         "variation": None,
+        "closing": req.closing or None,
     }
 
 

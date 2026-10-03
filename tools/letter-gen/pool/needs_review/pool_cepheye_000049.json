@@ -1,0 +1,246 @@
+{
+  "id": "pool_cepheye_000049",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fevziye",
+    "epithet": "Eskişehirli",
+    "age": 60,
+    "hometown": "Eskişehir",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Tahir",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "postane önündeki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 72,
+  "hand": "dictated",
+  "header": {
+    "text": "Eskişehir, 4 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem oğlum Tahir'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, iki gözlerinden muhabbetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğin mektubu vaktiyle aldık, ziyadesiyle memnun olduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Lakin zarftan çıkan o on kuruş bakkalın geçen seneki borcuna bile yetmedi, adam faiziyle istiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde işler kesat, tarlayı yarıcıya verdik mecburen.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bir de köyü ince bir sıtma sardı, kimse kapıdan çıkamıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Komşu Hacı amcanlar hep döşekte, giden gidenin ardı kesilmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen oradan az daha para denkleştirip yolla, kışlık un alacak akçe kalmadı elde.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olasın.",
+  "signature": {
+    "text": "",
+    "seal": "Fevziye"
+  },
+  "note": {
+    "text": "İşbu mektubu validenizin lisanından arzuhalci yazmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Tahir'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fevziye Hanım, Eskişehirli, 60, çiftçi (Eskişehir, Seyitgazi kazası, Kavak karyesi)\nAlıcı: Oğlu Er Tahir, cephede\nYön: cepheye\nTarih: 4 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: postane önündeki arzuhalci)\nOkuryazarlık: yok\nSes: hesapçı, para ve borçtan söz eder\nKonu: köydeki salgın hastalık (üstü örtülü)\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fevziye",
+        "gender": "kadın",
+        "age": 60,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "epithet": "Eskişehirli",
+        "place": "Seyitgazi kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Tahir",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Seyitgazi kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "köydeki salgın hastalık (üstü örtülü)",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "4 Haziran 1331",
+      "home_address": "Eskişehir, Seyitgazi kazası, Kavak karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5709,
+      "output": 2686
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Eskişehir, 4 Haziran 1331\nHİTAP: Muhterem oğlum Tahir'e\nGÖVDE: Evvela mahsus selam eder, iki gözlerinden muhabbetle öperim. Gönderdiğin mektubu vaktiyle aldık, ziyadesiyle memnun olduk. Lakin zarftan çıkan o on kuruş bakkalın geçen seneki borcuna bile yetmedi, adam faiziyle istiyor. Köyde işler kesat, tarlayı yarıcıya verdik mecburen. Bir de köyü ince bir sıtma sardı, kimse kapıdan çıkamıyor. Komşu Hacı amcanlar hep döşekte, giden gidenin ardı kesilmedi. Sen oradan az daha para denkleştirip yolla, kışlık un alacak akçe kalmadı elde.\nKAPANIŞ: Allah'a emanet olasın.\nİMZA: (mühür: Fevziye)\nNOT: İşbu mektubu validenizin lisanından arzuhalci yazmıştır.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Tahir'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "69 kelime, hedef 72 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000043 ile ortak: \"evvela mahsus selam eder iki gözlerinden\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4825,
+      "output": 4339
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Arzuhalci dili gayet başarılı, ziyadesiyle, lakin, akçe gibi kelimeler döneme ve yazma biçimine uygun.",
+      "olculuk": "Duygular adlandırılmamış ancak salgından ölümlerin anlatımı üstü örtülü olması gerekirken fazla açık yazılmış.",
+      "okuryazarlik": "Arzuhalciye yazdırıldığı giriş ve not kısımlarındaki kalıplardan net bir şekilde anlaşılıyor.",
+      "somutluk": "On kuruş, bakkal borcu, tarlayı yarıcıya vermek, kışlık un gibi detaylar mektubu çok somut kılıyor.",
+      "sadakat": "Hastalık konusunun üstü örtülü işlenmesi istenirken ölümler açıkça yazılmış ve cepheye giden mektuplarda askerin moralini bozacak ağır haber yasağı ihlal edilmiş.",
+      "sahicilik": "Hesapçı bir annenin arzuhalci aracılığıyla yazdırdığı mektup hissi güçlü ancak sansür kurallarına takılacak kadar dikkatsiz bir üslup var."
+    },
+    "issues": [
+      {
+        "line": "Komşu Hacı amcanlar hep döşekte, giden gidenin ardı kesilmedi.",
+        "problem": "İstekte salgının üstü örtülü anlatılması istenmişti ancak ölümler açıkça yazılarak hem bu kural hem de cepheye giden mektuplarda moral bozucu haber yasağı ihlal edilmiş.",
+        "suggestion": "Komşu Hacı amcanlar hep döşekte, köyde herkesin üstünde bir ağırlık var, yatan zor kalkıyor."
+      },
+      {
+        "line": "Sen oradan az daha para denkleştirip yolla, kışlık un alacak akçe kalmadı elde.",
+        "problem": "Askerin moralini bozacak derecede açlık ve yokluk beyanı cephe mektuplarında sansür kurallarına aykırıdır.",
+        "suggestion": "Sen oradan az daha para denkleştirip yolla, kışlık un için zahireciye şimdiden peşinat vermek icap eder."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

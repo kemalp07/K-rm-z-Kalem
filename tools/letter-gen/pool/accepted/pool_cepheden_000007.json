@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheden_000007",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Server",
+    "epithet": "Çorumlu",
+    "age": 34,
+    "hometown": "Çorum",
+    "occupation": "imam",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Refika",
+    "relation": "karısı",
+    "location": "Çorum, İskilip kazası, Kavak karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 83,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Refika'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım kâğıda cevap gelmedi, meraktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Rıza Efendi'ye olan borcun vadesi kapıya dayandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benden yana para bekleme, burada elime geçen üç beş kuruş da tükendi gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Nasıl ödeyeceğiz bilmiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gerekirse ahırdaki sarı ineği ya da tarlanın alt başını satmak icap eder.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen muhtara bir danış, o belki bir çare gösterir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim bölüğü haftaya buradan söküp güneydeki tepeye kaydıracaklar, sabahtan beri eşya denkliyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bütün gün toprak kazmaktan kemiklerim sızlıyor, gece ayazı da iyice ağır geliyor artık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çocukların başından ayrılma, ekin zamanı kendini çok hırpalama.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Kocan Server"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çorum, İskilip kazası, Kavak karyesi, Muhtar vasıtasıyla Refika Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Server, Çorumlu, 34, imam, er (Çorum, İskilip kazası, Kavak karyesi)\nAlıcı: Karısı Refika Hanım, Çorum, İskilip kazası, Kavak karyesi\nYön: cepheden\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: yaşlı ve yorgun, kısa yazar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: birliğin yakında yer değiştireceği\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 83",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Server",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": "imam",
+        "epithet": "Çorumlu",
+        "place": "İskilip kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Refika",
+        "gender": "kadın",
+        "age": 28,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "İskilip kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çorum, İskilip kazası, Kavak karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "birliğin yakında yer değiştireceği",
+      "length_label": "orta",
+      "length_target": 83,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "26 Mayıs 1331",
+      "home_address": "Çorum, İskilip kazası, Kavak karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5701,
+      "output": 3735
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 26 Mayıs 1331\nHİTAP: Zevcem Refika'ya\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Geçen ay yolladığım kâğıda cevap gelmedi, meraktayım. Rıza Efendi'ye olan borcun vadesi kapıya dayandı. Benden yana para bekleme, burada elime geçen üç beş kuruş da tükendi gitti. Nasıl ödeyeceğiz bilmiyorum. Gerekirse ahırdaki sarı ineği ya da tarlanın alt başını satmak icap eder. Sen muhtara bir danış, o belki bir çare gösterir. ⟦Bizim bölüğü haftaya buradan söküp güneydeki tepeye kaydıracaklar, sabahtan beri eşya denkliyoruz.⟧ Bütün gün toprak kazmaktan kemiklerim sızlıyor, gece ayazı da iyice ağır geliyor artık. Çocukların başından ayrılma, ekin zamanı kendini çok hırpalama.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Kocan Server\nZARF: Çorum, İskilip kazası, Kavak karyesi, Muhtar vasıtasıyla Refika Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 83 (+8%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4824,
+      "output": 3134
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri genel olarak başarılı kullanılsa da 'meraktayım' kelimesi duygu adlandırma kuralını esnetiyor.",
+      "olculuk": "Duygular büyük ölçüde eylemlerle verilmiş ancak 'meraktayım' sözcüğüyle duygu doğrudan adlandırılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade, anlaşılır bir sözdizimi kullanılmış.",
+      "somutluk": "Sarı inek, tarlanın alt başı ve Rıza Efendi'ye borç gibi çok başarılı ve inandırıcı somut detaylar barındırıyor.",
+      "sadakat": "İstenen tüm unsurlar mektupta var ancak Mayıs sonu (Haziran başı) için 'gece ayazı' detayı mevsimle çelişiyor ve zarf kalıbı eksik.",
+      "sahicilik": "Mektup genel olarak inandırıcı bir tona sahip olsa da mevsim hatası ve zarftaki isim eksikliği sahiciliği biraz zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Evvela selam eder, iki gözlerinden öperim. Geçen ay yolladığım kâğıda cevap gelmedi, meraktayım.",
+        "problem": "'Meraktayım' kelimesi duyguyu doğrudan adlandırmaktadır (Kural 4).",
+        "suggestion": "Evvela selam eder, iki gözlerinden öperim. Geçen ay yolladığım kâğıda cevap gelmedi, gözüm yolda kaldı."
+      },
+      {
+        "line": "Bütün gün toprak kazmaktan kemiklerim sızlıyor, gece ayazı da iyice ağır geliyor artık.",
+        "problem": "26 Mayıs (Miladi Haziran başı) tarihi için 'gece ayazı iyice ağır geliyor' ifadesi mevsimle çelişmektedir, havaların ısınmış olması gerekir (Kural 15).",
+        "suggestion": "Bütün gün toprak kazmaktan kemiklerim sızlıyor, gündüzün sıcağı da iyice bastırdı artık."
+      },
+      {
+        "line": "ZARF: Çorum, İskilip kazası, Kavak karyesi, Muhtar vasıtasıyla Refika Hanım'a",
+        "problem": "Zarf adresinde muhtarın adı eksik bırakılmış, adres kalıbına tam uyulmamış (Kural 14).",
+        "suggestion": "ZARF: Çorum, İskilip kazası, Kavak karyesi, Muhtar Hasan Ağa vasıtasıyla Refika Hanım'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

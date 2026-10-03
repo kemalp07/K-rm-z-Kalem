@@ -1,0 +1,299 @@
+{
+  "id": "pool_cepheye_000032",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Mahmut",
+    "epithet": "Maraşlı",
+    "age": 59,
+    "hometown": "Maraş",
+    "occupation": "bakkal",
+    "relation": "amcası"
+  },
+  "recipient": {
+    "name": "Şükrü",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "hurried",
+  "header": {
+    "text": "Kızılca, 2 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Şükrü'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Şükrü yeğenim nasılsın eyimisin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim dükkanda işler durgun un şeker zor bulunuyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Senin oğlan geçen gün tay tay durdu ayaklandı valla.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim evdeki avluda peşinde dolanıyo düşmesin deye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Çok hareketlendi ele avuca sığmıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Harman vakti yaklaştı köyde herkez telaşlı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen hiç merak etme buraları.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dükkanda pek mal kalmadı ama idare ediyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocuğun yürüdüğünü görünce pek sevindim sana heber edeyim dedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kendi ayakları üstünde pıtır pıtır gediyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen orda eyi misin sağlığın yerinde mi onu yaz bize.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizden yana tasalanma herşey yolunda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Köyün büyükleri selam ediyo hepimiz seni bekliyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Sağ salim gelesin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Emmin Mahmut"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kızılcalı Şükrü'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mahmut, Maraşlı, 59, bakkal (Maraş, Pazarcık kazası, Kızılca karyesi)\nAlıcı: Yeğeni Çavuş Şükrü, cephede\nYön: cepheye\nTarih: 2 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: çocuğun ilk adımları\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Mahmut",
+        "gender": "erkek",
+        "age": 59,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Maraş",
+        "occupation": "bakkal",
+        "epithet": "Maraşlı",
+        "place": "Pazarcık kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 35,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Maraş",
+        "occupation": null,
+        "epithet": null,
+        "place": "Pazarcık kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "2 Haziran 1331",
+      "home_address": "Maraş, Pazarcık kazası, Kızılca karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5619,
+      "output": 3299
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kızılca, 2 Haziran 1331\nHİTAP: Yeğenim Şükrü'ye\nGÖVDE: Şükrü yeğenim nasılsın eyimisin. Bizim dükkanda işler durgun un şeker zor bulunuyo. Senin oğlan geçen gün tay tay durdu ayaklandı valla. Bizim evdeki avluda peşinde dolanıyo düşmesin deye. Çok hareketlendi ele avuca sığmıyo. Harman vakti yaklaştı köyde herkez telaşlı. Sen hiç merak etme buraları. Dükkanda pek mal kalmadı ama idare ediyoz. Çocuğun yürüdüğünü görünce pek sevindim sana heber edeyim dedim. Kendi ayakları üstünde pıtır pıtır gediyo. Sen orda eyi misin sağlığın yerinde mi onu yaz bize. Bizden yana tasalanma herşey yolunda. Köyün büyükleri selam ediyo hepimiz seni bekliyoz. Sağ salim gelesin.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Emmin Mahmut\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kızılcalı Şükrü'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "91 kelime, hedef 93 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4817,
+      "output": 2548
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 2,
+      "okuryazarlik": 4,
+      "somutluk": 4,
+      "sadakat": 3,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "\"Her şey yolunda\" ve \"çok hareketlendi\" gibi ifadeler 1915 köylü ağzından ziyade modern günlük konuşmayı andırıyor.",
+      "olculuk": "\"Pek sevindim\" denilerek duygu doğrudan adlandırılmış, mektup kurallarındaki duygu adlandırma yasağı çiğnenmiş.",
+      "okuryazarlik": "\"eyimisin\", \"herkez\", \"gediyo\" gibi kelimeler ve noktalama eksiklikleriyle düşük okuryazarlık başarıyla yansıtılmış.",
+      "somutluk": "Un, şeker, dükkandaki mal durumu ve harman vakti gibi somut detaylar mektubu zenginleştirmiş.",
+      "sadakat": "Karısına adıyla seslenememe detayı (\"bizim evdeki\") fena değil ancak çocuğun hasta olduğunun saklandığına dair metinaltı bir ipucu (huysuzluk, sürekli uyuma vb.) eksik.",
+      "sahicilik": "Mektup genel olarak samimi başlasa da sonlara doğru klişe ve basmakalıp ifadelere saplanmış."
+    },
+    "issues": [
+      {
+        "line": "Çocuğun yürüdüğünü görünce pek sevindim sana heber edeyim dedim.",
+        "problem": "Duygu doğrudan adlandırılmış (\"pek sevindim\"), bu durum temel kurallara aykırı.",
+        "suggestion": "Senin oğlanın yürüdüğünü kâğıda yazıp sana heber edeyim dedim."
+      },
+      {
+        "line": "Çok hareketlendi ele avuca sığmıyo.",
+        "problem": "Modern çocuk gelişimi ağzı gibi tınlıyor, dönemin köylü bakkalının diline pek uymuyor.",
+        "suggestion": "Zaptedemiyoz, avluda fır dönüyo."
+      },
+      {
+        "line": "Bizden yana tasalanma herşey yolunda.",
+        "problem": "\"Her şey yolunda\" ifadesi modern ve klişe bir kalıptır.",
+        "suggestion": "Bizden yana tasalanma, dükkan ev arası yuvarlanıp gediyoz."
+      },
+      {
+        "line": "Bizim evdeki avluda peşinde dolanıyo düşmesin deye.",
+        "problem": "Karısına adıyla seslenememe kuralı uygulanmış ancak çocuğun hasta olduğunun gizlendiğini hissettirecek (ateş, huysuzluk, yorgunluk gibi) üstü kapalı bir detay yok.",
+        "suggestion": "Bizim evdeki avluda peşinde dolanıyo düşmesin deye, gerçi çocuk bu ara biraz huysuz hep uyumak isteyo ama yürümesi eyi."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

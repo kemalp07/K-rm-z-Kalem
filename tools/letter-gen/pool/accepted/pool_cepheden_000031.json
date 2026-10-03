@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheden_000031",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Adem",
+    "epithet": "Harputlu",
+    "age": 25,
+    "hometown": "Harput",
+    "occupation": "nalbant",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Safiye",
+    "relation": "karısı",
+    "location": "Harput, Arapkir kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "high",
+  "length_target": 93,
+  "hand": "careful",
+  "header": {
+    "text": "Seddülbahir, 3 Haziran 1331",
+    "sensitive": true
+  },
+  "salutation": "Zevcem Safiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsanız şükür iyiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Burada atların nalları bitmek bilmez, sabahtan akşama işim çoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim dördüncü bölüğe",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "su anca",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "gece yarısı iki gibi",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "geliyor, gündüz epey sıcak bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Harman zamanı yaklaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Yüzbaşıdan izin istedim, inşallah bir ay sonra köye gelmeye yol bulurum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kayınbabama, emmimgile, komşumuz Meryem ablaya, muhtar emmiye, Demirci İbrahim ustaya hep selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Hasan'ı mektebe yolladınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kır öküzü sattınız mı, Rüstem ağaya borcu ödediniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Ahırdaki saman yetti mi, arpa tarlası nasıl oldu, bana kâğıda yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "İzin alırsam inşallah sap çekmeye yetişirim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Zevcin Adem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Harput, Arapkir kazası, Kurtköy karyesi, İmam Salih Efendi vasıtasıyla Safiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Adem, Harputlu, 25, nalbant, onbaşı (Harput, Arapkir kazası, Kurtköy karyesi)\nAlıcı: Karısı Safiye Hanım, Harput, Arapkir kazası, Kurtköy karyesi\nYön: cepheden\nTarih: 3 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: meraklı, köyden herkesi sorar\nKonu: izin alma umudu\nSakladığı: yok\nHassas bilgi: kumanyanın ya da suyun hangi saatte geldiği\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Adem",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Harput",
+        "occupation": "nalbant",
+        "epithet": "Harputlu",
+        "place": "Arapkir kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Safiye",
+        "gender": "kadın",
+        "age": 26,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Arapkir kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Harput, Arapkir kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "izin alma umudu",
+      "hidden": "yok",
+      "carelessness": "high",
+      "sensitive_info": "kumanyanın ya da suyun hangi saatte geldiği",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "3 Haziran 1331",
+      "home_address": "Harput, Arapkir kazası, Kurtköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5627,
+      "output": 3333
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 3 Haziran 1331\nHİTAP: Zevcem Safiye Hanım'a\nGÖVDE: Evvela selam eder hatırını sorarım. Benim halimi sorarsanız şükür iyiyim. Burada atların nalları bitmek bilmez, sabahtan akşama işim çoktur. ⟦Bizim dördüncü bölüğe⟧ su anca ⟦gece yarısı iki gibi⟧ geliyor, gündüz epey sıcak bastırdı. Harman zamanı yaklaştı. Yüzbaşıdan izin istedim, inşallah bir ay sonra köye gelmeye yol bulurum. Kayınbabama, emmimgile, komşumuz Meryem ablaya, muhtar emmiye, Demirci İbrahim ustaya hep selam eyle. Hasan'ı mektebe yolladınız mı? Kır öküzü sattınız mı, Rüstem ağaya borcu ödediniz mi? Ahırdaki saman yetti mi, arpa tarlası nasıl oldu, bana kâğıda yaz. İzin alırsam inşallah sap çekmeye yetişirim.\nKAPANIŞ: Baki selam.\nİMZA: Zevcin Adem\nZARF: Harput, Arapkir kazası, Kurtköy karyesi, İmam Salih Efendi vasıtasıyla Safiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "90 kelime, hedef 93 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 3 Haziran 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4830,
+      "output": 2790
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelimeleri ve köy hayatına dair tabirler (sap çekmek, kır öküz) çok başarılı ve doğal kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut sorular ve köy işleri üzerinden hasret ve merak hissettirilmiş.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun, düzgün ama sade, bağlaçların yerinde kullanıldığı kısa cümleler kurulmuş.",
+      "somutluk": "Nalbantlık işi, kır öküz, arpa tarlası, sap çekme gibi harika somut detaylar barındırıyor.",
+      "sadakat": "İstenen tüm unsurlar (uzunluk, konu, dikkatsizlik) mevcut ancak sansür işaretlemesinde küçük bir kural ihlali yapılmış.",
+      "sahicilik": "Gerçek bir Anadolu köylüsünün cepheden yazdığı, evi ve tarlayı dert edinen son derece sahici bir mektup olmuş."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 3 Haziran 1331⟧",
+        "problem": "Tarih bilgisi sansür parantezinin içine alınmış; kurala göre yalnızca askerî bilgi (yer adı) içeride, tarih dışarıda kalmalıydı.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 3 Haziran 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

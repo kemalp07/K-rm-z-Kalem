@@ -1,0 +1,247 @@
+{
+  "id": "pool_cepheden_000023",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kâzım",
+    "epithet": "Trabzonlu",
+    "age": 40,
+    "hometown": "Trabzon",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Zekiye",
+    "relation": "karısı",
+    "location": "Trabzon, Of kazası, Kavak karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 60,
+  "hand": "hurried",
+  "header": {
+    "text": "Seddülbahir, 22 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Zekiye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Zekiye kağıdı inşallah alırsın sana yazdım cevap gelmiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığın paketi aldım çoraplar tam oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Fındıkları tek başıma yedim kimseye vermedim bizim uşaklar çok kızdı aç kaldılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Buralar gündüz sıcak ama akşamları gene soğuk oluyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Haşmetin oğlu Dursun'u gördüm iyi selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Mısırları ektiniz mi tarlayı ne yaptınız inek yavruladı mı yaz bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hasan emmime komşulara selam et.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Kocan Kâzım"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Trabzon, Of kazası, Kavak karyesi, Muhtar İlyas Ağa vasıtasıyla Zekiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kâzım, Trabzonlu, 40, çiftçi, onbaşı (Trabzon, Of kazası, Kavak karyesi)\nAlıcı: Karısı Zekiye Hanım, Trabzon, Of kazası, Kavak karyesi\nYön: cepheden\nTarih: 22 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 60",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kâzım",
+        "gender": "erkek",
+        "age": 40,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Trabzon",
+        "occupation": "çiftçi",
+        "epithet": "Trabzonlu",
+        "place": "Of kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Zekiye",
+        "gender": "kadın",
+        "age": 39,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Trabzon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Of kazası, Kavak karyesi"
+      },
+      "recipient_location": "Trabzon, Of kazası, Kavak karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 60,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "22 Mayıs 1331",
+      "home_address": "Trabzon, Of kazası, Kavak karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5742,
+      "output": 3306
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 22 Mayıs 1331\nHİTAP: Zekiye'ye\nGÖVDE: Zekiye kağıdı inşallah alırsın sana yazdım cevap gelmiyo. Yolladığın paketi aldım çoraplar tam oldu. Fındıkları tek başıma yedim kimseye vermedim bizim uşaklar çok kızdı aç kaldılar. Buralar gündüz sıcak ama akşamları gene soğuk oluyo. Haşmetin oğlu Dursun'u gördüm iyi selamı var. Mısırları ektiniz mi tarlayı ne yaptınız inek yavruladı mı yaz bana. Hasan emmime komşulara selam et.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Kocan Kâzım\nZARF: Trabzon, Of kazası, Kavak karyesi, Muhtar İlyas Ağa vasıtasıyla Zekiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "57 kelime, hedef 60 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 22 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4758,
+      "output": 3389
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan kelimeler ve yoresel ifadeler doneme ve karaktere tam uygundur.",
+      "olculuk": "Duygular adlandirilmamis, sakaci ton somut olaylar uzerinden basariyla verilmistir.",
+      "okuryazarlik": "Kisa cumleler ve noktalama eksikligi kurala uygun olsa da kesme isareti kullanimi goze carpiyor.",
+      "somutluk": "Findik, corap, misir ekimi ve inegin yavrulamasina dair cok somut detaylar iceriyor.",
+      "sadakat": "Istenen tum ozellikler mektuba yansitilmis ancak sansur isareti kuralinda ufak bir hata yapilmis.",
+      "sahicilik": "Karadenizli bir ciftcinin cepheden yazdigi gercek ve samimi bir mektup hissi veriyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 22 Mayıs 1331⟧",
+        "problem": "Sansur isareti yalnizca askeri bilginin etrafinda olmali, tarihi kapsamamali.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 22 Mayıs 1331"
+      },
+      {
+        "line": "Haşmetin oğlu Dursun'u gördüm iyi selamı var.",
+        "problem": "Dusuk okuryazarlik seviyesinde kesme isareti kullanilmamalidir.",
+        "suggestion": "Haşmetin oğlu Dursunu gördüm iyi selamı var."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

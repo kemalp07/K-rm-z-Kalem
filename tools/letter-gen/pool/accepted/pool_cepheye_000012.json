@@ -1,0 +1,214 @@
+{
+  "id": "pool_cepheye_000012",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Dürdane",
+    "epithet": "İstanbullu",
+    "age": 54,
+    "hometown": "Dersaadet",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Tevfik",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 72,
+  "hand": "hurried",
+  "header": {
+    "text": "Dersaadet, 13 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Tevfik'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Tevfik kâdını aldım sağolasın ben eyiyim sen de eyisindir inşallah mahalledeki hoca efendiye sana bi muska yazdırdım onu boynundan çıkarma kurşun değmezmiş sabah akşam duva edeyorum senin için pakete biraz tütün koydum bide yazasın deye boş kâğıt koydum havalar iyice ısındı evden pek çıkamıyorum şeker bulunmuyo çayı acı içeyorum komşu kızı Meliha gelip fırından ekmek alıyo bana sen beni hiç merak etme muskağı sakın kaybetme",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Dürdane"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş İstanbullu Tevfik'e",
+    "sensitive": false
+  },
+  "package": [
+    "tütün",
+    "mektup kâğıdı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Dürdane Hanım, İstanbullu, 54, ev hanımı (Dersaadet, Eyüp, Nişancı mahallesi)\nAlıcı: Oğlu Çavuş Tevfik, cephede\nYön: cepheye\nTarih: 13 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: muska ve dualar\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: tütün, mektup kâğıdı\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Dürdane",
+        "gender": "kadın",
+        "age": 54,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": "ev hanımı",
+        "epithet": "İstanbullu",
+        "place": "Eyüp, Nişancı mahallesi"
+      },
+      "recipient": {
+        "name": "Tevfik",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eyüp, Nişancı mahallesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "muska ve dualar",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": [
+        "tütün",
+        "mektup kâğıdı"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "13 Haziran 1331",
+      "home_address": "Dersaadet, Eyüp, Nişancı mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5682,
+      "output": 3784
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Paketler ve gönderilen eşyalar",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Dersaadet, 13 Haziran 1331\nHİTAP: Oğlum Tevfik'e\nGÖVDE: Oğlum Tevfik kâdını aldım sağolasın ben eyiyim sen de eyisindir inşallah mahalledeki hoca efendiye sana bi muska yazdırdım onu boynundan çıkarma kurşun değmezmiş sabah akşam duva edeyorum senin için pakete biraz tütün koydum bide yazasın deye boş kâğıt koydum havalar iyice ısındı evden pek çıkamıyorum şeker bulunmuyo çayı acı içeyorum komşu kızı Meliha gelip fırından ekmek alıyo bana sen beni hiç merak etme muskağı sakın kaybetme\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Dürdane\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş İstanbullu Tevfik'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 72 (-8%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4776,
+      "output": 4442
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem kelimeleri ve imla hataları başarılı ancak İstanbullu bir karakter için fazla taşra ağzı kullanılmış.",
+      "olculuk": "Duygular isimlendirilmeden, yalnızca gündelik eylemler ve somut durumlar üzerinden çok iyi hissettirilmiş.",
+      "okuryazarlik": "Noktalama işareti eksikliği ve bitişik cümle yapısı düşük okuryazarlığı yansıtıyor ancak şive seçimi karakterin kökeniyle tam uyuşmuyor.",
+      "somutluk": "Şeker yokluğu, acı çay ve komşu kızı Meliha'nın ekmek alması gibi detaylar mektubu son derece somut kılıyor.",
+      "sadakat": "İstenen uzunluk, konu, paket içeriği ve karakterin hastalığını gizleme detayı başarıyla işlenmiş.",
+      "sahicilik": "Gündelik hayatın zorlukları çok gerçekçi verilmiş fakat İstanbullu bir kadının taşra ağzı kullanması sahiciliği hafif zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Oğlum Tevfik kâdını aldım sağolasın ben eyiyim sen de eyisindir inşallah mahalledeki hoca efendiye sana bi muska yazdırdım onu boynundan çıkarma kurşun değmezmiş sabah akşam duva edeyorum senin için pakete biraz tütün koydum bide yazasın deye boş kâğıt koydum havalar iyice ısındı evden pek çıkamıyorum şeker bulunmuyo çayı acı içeyorum komşu kızı Meliha gelip fırından ekmek alıyo bana sen beni hiç merak etme muskağı sakın kaybetme",
+        "problem": "İstanbullu bir kadın okuryazarlığı düşük olsa da 'eyiyim', 'edeyorum', 'içeyorum', 'muskağı' gibi belirgin taşra ağzı kullanmaz; imla hataları daha çok 'iyiyim', 'ediyom', 'içiyom', 'muskayı' şeklinde olmalıdır.",
+        "suggestion": "Oğlum Tevfik kâğıdını aldım sağolasın ben iyiyim sen de iyisindir inşallah mahalledeki hoca efendiye sana bi muska yazdırdım onu boynundan çıkarma kurşun değmezmiş sabah akşam duva ediyom senin için pakete biraz tütün koydum bide yazasın diye boş kâğıt koydum havalar iyice ısındı evden pek çıkamıyorum şeker bulunmuyo çayı acı içiyom komşu kızı Meliha gelip fırından ekmek alıyo bana sen beni hiç merak etme muskayı sakın kaybetme"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

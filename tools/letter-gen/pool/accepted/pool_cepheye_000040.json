@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheye_000040",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hamiyet",
+    "epithet": "Konyalı",
+    "age": 24,
+    "hometown": "Konya",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Reşit",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "postane önündeki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 68,
+  "hand": "dictated",
+  "header": {
+    "text": "Yeniköy, 6 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Reşit Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, o mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Cenab-ı Hak'tan daima sıhhatte olmanızı niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizi sual ederseniz, hanenizde duacınızız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde arpa biçilmeye başlandı lakin adam yokluğundan işler ağır gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bir de kız kardeşin Emine'nin nişan meselesi uzadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dünürler pek naza çekiyor, bayramdan evvel yüzüğü geri getirecekler diye babanın canı epey sıkkın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bize bir yol gösteresin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Başkaca bir derdimiz yoktur, tez vakitte cevabını bekleriz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki hürmet ve dua ile.",
+  "signature": {
+    "text": "Zevcen",
+    "seal": "Hamiyet"
+  },
+  "note": {
+    "text": "İşbu mektup postane önünde arzuhalciye yazdırılmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Konyalı Er Reşit'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hamiyet Hanım, Konyalı, 24, ev hanımı (Konya, Beyşehir kazası, Yeniköy karyesi)\nAlıcı: Kocası Er Reşit, cephede\nYön: cepheye\nTarih: 6 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: postane önündeki arzuhalci)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: nişanın bozulması tehlikesi\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hamiyet",
+        "gender": "kadın",
+        "age": 24,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": "ev hanımı",
+        "epithet": "Konyalı",
+        "place": "Beyşehir kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beyşehir kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "6 Haziran 1331",
+      "home_address": "Konya, Beyşehir kazası, Yeniköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5706,
+      "output": 2191
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 6 Haziran 1331\nHİTAP: Muhterem zevcim Reşit Efendi'ye\nGÖVDE: Evvela mahsus selam eder, o mübarek ellerinizden hürmetle öperim. Cenab-ı Hak'tan daima sıhhatte olmanızı niyaz eylerim. Bizi sual ederseniz, hanenizde duacınızız. Köyde arpa biçilmeye başlandı lakin adam yokluğundan işler ağır gidiyor. Bir de kız kardeşin Emine'nin nişan meselesi uzadı. Dünürler pek naza çekiyor, bayramdan evvel yüzüğü geri getirecekler diye babanın canı epey sıkkın. Bize bir yol gösteresin. Başkaca bir derdimiz yoktur, tez vakitte cevabını bekleriz.\nKAPANIŞ: Baki hürmet ve dua ile.\nİMZA: (mühür: Hamiyet) Zevcen\nNOT: İşbu mektup postane önünde arzuhalciye yazdırılmıştır.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Konyalı Er Reşit'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 68 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4832,
+      "output": 3542
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Arzuhalci üslubu genelde başarılı olsa da bazı ifadeler fazla güncel kaçmış.",
+      "olculuk": "Duygular adlandırılmadan, somut olaylar üzerinden ölçülü bir şekilde aktarılmış.",
+      "okuryazarlik": "Kâtip dili girişte iyi kurulmuş ancak gövdenin sonlarına doğru köylü ağzına fazla kaymış.",
+      "somutluk": "Arpa hasadı ve yüzük atma gibi döneme ve köye ait somut detaylar başarıyla kullanılmış.",
+      "sadakat": "İstenen uzunluk, konu, gizlenen bilgi ve yazma biçimi kurallarına tam uyulmuş.",
+      "sahicilik": "Mektubun sonundaki not kısmı, dönemin kâtip notlarından ziyade modern bir açıklama gibi duruyor."
+    },
+    "issues": [
+      {
+        "line": "NOT: İşbu mektup postane önünde arzuhalciye yazdırılmıştır.",
+        "problem": "Arzuhalci kendi yazdığı mektuba dışarıdan bir gözlemci gibi 'arzuhalciye yazdırılmıştır' demez.",
+        "suggestion": "NOT: İşbu mektup zevceniz Hamiyet'in lisanından tarafımdan tahrir kılındı."
+      },
+      {
+        "line": "Dünürler pek naza çekiyor, bayramdan evvel yüzüğü geri getirecekler diye babanın canı epey sıkkın.",
+        "problem": "Girişteki ağdalı kâtip dilinden sonra 'canı epey sıkkın' ifadesi fazla gündelik kalmış.",
+        "suggestion": "Dünürler pek naza çekiyor, bayramdan evvel yüzüğü geri getireceklerinden pederinizin kederi büyüktür."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

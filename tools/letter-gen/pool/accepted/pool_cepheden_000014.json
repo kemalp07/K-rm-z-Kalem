@@ -1,0 +1,257 @@
+{
+  "id": "pool_cepheden_000014",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Davut",
+    "epithet": "Konyalı",
+    "age": 34,
+    "hometown": "Konya",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Şefika",
+    "relation": "annesi",
+    "location": "Konya, Beyşehir kazası, Gölcük karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 89,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Şefika Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Davut Çavuş der ki: Anam Şefika, ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan ayaktayım, işimin başındayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hıdrellez geldi geçti, biz gurbette ateş yakmadık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Siz köyde âdeti unutmayın, çocukları sevindirin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Emmioğlu Bekir'e tembih et, o çeşmenin suyunu kendi tarlasına çevirip durmasın, hakkı neyse onu alsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dünkü hücumda bizim mangadan yedi kişi yaralandı",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": ", yerlerine yenisi gelene kadar nöbet işi bana düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Koyunların yününü vaktinde kırkın, kasabaya indirip satın, o tefeciye olan borcu kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bana da ilk postayla sert tütün sarıp yollayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Boşuna dertlenip durmayın, herkes tarladaki işine gücüne baksın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını tez yazın.",
+  "signature": {
+    "text": "",
+    "seal": "Davut"
+  },
+  "note": {
+    "text": "İşbu mektubu Davut Çavuş'un ağzından yazdım. Alay İmamı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Konya, Beyşehir kazası, Gölcük karyesi, İmam Hasan Efendi vasıtasıyla Şefika Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Davut, Konyalı, 34, çiftçi, çavuş (Konya, Beyşehir kazası, Gölcük karyesi)\nAlıcı: Annesi Şefika Hanım, Konya, Beyşehir kazası, Gölcük karyesi\nYön: cepheden\nTarih: 20 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: ayağında yara açıldığını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Davut",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Konya",
+        "occupation": "çiftçi",
+        "epithet": "Konyalı",
+        "place": "Beyşehir kazası, Gölcük karyesi"
+      },
+      "recipient": {
+        "name": "Şefika",
+        "gender": "kadın",
+        "age": 61,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beyşehir kazası, Gölcük karyesi"
+      },
+      "recipient_location": "Konya, Beyşehir kazası, Gölcük karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "20 Mayıs 1331",
+      "home_address": "Konya, Beyşehir kazası, Gölcük karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5655,
+      "output": 3918
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Mayıs 1331\nHİTAP: Validem Şefika Hanım'a\nGÖVDE: Davut Çavuş der ki: Anam Şefika, ellerinden öperim. Benim hâlimi sorarsan ayaktayım, işimin başındayım. Hıdrellez geldi geçti, biz gurbette ateş yakmadık. Siz köyde âdeti unutmayın, çocukları sevindirin. Emmioğlu Bekir'e tembih et, o çeşmenin suyunu kendi tarlasına çevirip durmasın, hakkı neyse onu alsın. ⟦Dünkü hücumda bizim mangadan yedi kişi yaralandı⟧, yerlerine yenisi gelene kadar nöbet işi bana düştü. Koyunların yününü vaktinde kırkın, kasabaya indirip satın, o tefeciye olan borcu kapatın. Bana da ilk postayla sert tütün sarıp yollayın. Boşuna dertlenip durmayın, herkes tarladaki işine gücüne baksın.\nKAPANIŞ: Cevabını tez yazın.\nİMZA: (mühür: Davut)\nNOT: İşbu mektubu Davut Çavuş'un ağzından yazdım. Alay İmamı.\nZARF: Konya, Beyşehir kazası, Gölcük karyesi, İmam Hasan Efendi vasıtasıyla Şefika Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "85 kelime, hedef 89 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4885,
+      "output": 2843
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Metikte hiçbir modern kelimeye yer verilmemiş, dönemin söz varlığı ve askerî terminolojisi başarıyla kullanılmış.",
+      "olculuk": "Duygular adlandırılmamış, emir kipleri ve somut işler üzerinden askerin sert mizacı çok iyi yansıtılmış.",
+      "okuryazarlik": "İmamın ağzından yazılma kalıpları, mühür kullanımı ve sade cümle yapısı kurguya tam uyuyor.",
+      "somutluk": "Çeşme suyunun tarlaya çevrilmesi, koyun yünü ve tefeci borcu gibi köye dair çok canlı ve somut detaylar barındırıyor.",
+      "sadakat": "İstenen uzunluk, gizlenen yara (ayaktayım diyerek), Hıdrellez konusu ve hassas bilgi kusursuzca işlenmiş.",
+      "sahicilik": "Emir veren, köydeki işleri dert edinen otoriter bir çiftçi çavuşun sesi son derece inandırıcı ve doğal."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

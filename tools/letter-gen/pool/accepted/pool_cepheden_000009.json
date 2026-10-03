@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheden_000009",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Fikri",
+    "epithet": "Erzurumlu",
+    "age": 33,
+    "hometown": "Erzurum",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Medine",
+    "relation": "annesi",
+    "location": "Erzurum, Kiğı kazası, Kocaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 126,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Medine'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela ellerinden öperim hatırını sorarım anam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan şükür eyiyim sağım merakta kalman.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen yolladıgın kaat elime geçti okudum üç defa.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Öküzleri nittiniz çifte koştunuz mu yohsa borca sattınız mı bilmeyorum yazın bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buralarda havalar ısınmaya başladı oralar nasıldır karlar kalktı mı ekinleri ektiniz mi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sabiha kızı nitti yürüyo mu diş çıkardı mı onu da sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dün gece bizi Akbaş iskelesine indirdiler erzak taşımaya",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "orda Hasan'ı gördüm o da sağmış anasına selam edin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim postalların vurması geçti alıştım gari yara bere yok bacağım sağlam turp gibiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim tarlanın alt başını kör Ali sürmesin aman diyim mani olun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşim Veli nitti mektebe gidiyo mu yohsa tarlada mı anlatsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Anam sen bana bişey yollama bura uzak gelmez ziyan olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Köydeki herkeze bol bol selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Oğlun Fikri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Erzurum, Kiğı kazası, Kocaköy karyesi, İmam Süleyman Efendi vasıtasıyla Medine Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikri, Erzurumlu, 33, çiftçi, er (Erzurum, Kiğı kazası, Kocaköy karyesi)\nAlıcı: Annesi Medine Hanım, Erzurum, Kiğı kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 22 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: telaşlı, bir konudan ötekine atlar\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yakındaki bir köyün ya da iskelenin adı\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 126",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Erzurum",
+        "occupation": "çiftçi",
+        "epithet": "Erzurumlu",
+        "place": "Kiğı kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Medine",
+        "gender": "kadın",
+        "age": 49,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kiğı kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Erzurum, Kiğı kazası, Kocaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "yakındaki bir köyün ya da iskelenin adı",
+      "length_label": "uzun",
+      "length_target": 126,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "22 Nisan 1331",
+      "home_address": "Erzurum, Kiğı kazası, Kocaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5736,
+      "output": 5153
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Yer · Kuzey sırtı ve iskele (oyun içi)",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Nisan 1331\nHİTAP: Anam Medine'ye\nGÖVDE: Evvela ellerinden öperim hatırını sorarım anam. Benim halimi sorarsan şükür eyiyim sağım merakta kalman. Geçen yolladıgın kaat elime geçti okudum üç defa. Öküzleri nittiniz çifte koştunuz mu yohsa borca sattınız mı bilmeyorum yazın bana. Buralarda havalar ısınmaya başladı oralar nasıldır karlar kalktı mı ekinleri ektiniz mi. Sabiha kızı nitti yürüyo mu diş çıkardı mı onu da sorarım. ⟦Dün gece bizi Akbaş iskelesine indirdiler erzak taşımaya⟧ orda Hasan'ı gördüm o da sağmış anasına selam edin. Benim postalların vurması geçti alıştım gari yara bere yok bacağım sağlam turp gibiyim. Bizim tarlanın alt başını kör Ali sürmesin aman diyim mani olun. Kardeşim Veli nitti mektebe gidiyo mu yohsa tarlada mı anlatsın. Anam sen bana bişey yollama bura uzak gelmez ziyan olmasın. Köydeki herkeze bol bol selam eylerim.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Oğlun Fikri\nZARF: Erzurum, Kiğı kazası, Kocaköy karyesi, İmam Süleyman Efendi vasıtasıyla Medine Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "124 kelime, hedef 126 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4905,
+      "output": 3347
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili genel olarak başarılı ancak Erzurumlu bir karakterin Ege ağzına ait 'gari' kelimesini kullanması sırıtmış.",
+      "olculuk": "Duygular adlandırılmamış, abartı ve metafor kullanılmadan doğrudan meram anlatılmış.",
+      "okuryazarlik": "Noktalama işaretlerinin eksikliği ve 'kaat', 'herkeze', 'nittiniz' gibi yazımlar düşük okuryazarlık seviyesini çok iyi yansıtıyor.",
+      "somutluk": "Öküzlerin çifte koşulması, Sabiha'nın diş çıkarması ve Kör Ali'nin tarlayı sürmesi gibi köye dair çok somut ve canlı ayrıntılar var.",
+      "sadakat": "İstenen tüm unsurlar mektuba eklenmiş ancak sansür işaretleri kurala aykırı olarak gündelik kelimeleri de içine almış.",
+      "sahicilik": "Konudan konuya atlayan telaşlı yapı ve yarasını gizlemeye çalışırken kurduğu cümleler mektubu oldukça sahici kılmış."
+    },
+    "issues": [
+      {
+        "line": "⟦Dün gece bizi Akbaş iskelesine indirdiler erzak taşımaya⟧ orda Hasan'ı gördüm o da sağmış anasına selam edin.",
+        "problem": "Sansür işaretleri kural gereği yalnızca askerî bilginin etrafında olmalıdır, cümlenin geri kalanını kapsamamalıdır.",
+        "suggestion": "Dün gece bizi ⟦Akbaş iskelesine⟧ indirdiler erzak taşımaya orda Hasan'ı gördüm o da sağmış anasına selam edin."
+      },
+      {
+        "line": "Benim postalların vurması geçti alıştım gari yara bere yok bacağım sağlam turp gibiyim.",
+        "problem": "Gönderen Erzurumlu olmasına rağmen Ege yöresine ait 'gari' kelimesi kullanılmış, bu durum coğrafi tutarsızlık yaratıyor.",
+        "suggestion": "Benim postalların vurması geçti alıştım yara bere yok bacağım sağlam turp gibiyim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheye_000047",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şadiye",
+    "epithet": "Ispartalı",
+    "age": 54,
+    "hometown": "Isparta",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Latif",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 73,
+  "hand": "hurried",
+  "header": {
+    "text": "Kozluca, 23 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Latif'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sana kâğıt yolladım cevap gelmedi eline geçmedi mi bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Meraktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bugün Hıdrellez sofrayı kurduk pilav yaptık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Senin yerin boş kaldı minderde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Gelin hep o köşeye bakıyo demin ağladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sormaya utanıyo ama gözü yolda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sana bi tane atkı ördüm pakedin içine sarıp koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Havalar serin oluyo boynuna dola üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Köyde herkez iyi şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Babanın selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim koyunları sağdık peynir yaptık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Emin emmin de selam eyliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çabuk kâğıt yaz bizi merakta koma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Şadiye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozlucalı Latif'e",
+    "sensitive": false
+  },
+  "package": [
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şadiye Hanım, Ispartalı, 54, ev hanımı (Isparta, Eğirdir kazası, Kozluca karyesi)\nAlıcı: Oğlu Er Latif, cephede\nYön: cepheye\nTarih: 23 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nPaket: el örgüsü atkı\nUzunluk: 73",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şadiye",
+        "gender": "kadın",
+        "age": 54,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Isparta",
+        "occupation": "ev hanımı",
+        "epithet": "Ispartalı",
+        "place": "Eğirdir kazası, Kozluca karyesi"
+      },
+      "recipient": {
+        "name": "Latif",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Isparta",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eğirdir kazası, Kozluca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 73,
+      "package": [
+        "el örgüsü atkı"
+      ],
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "23 Nisan 1331",
+      "home_address": "Isparta, Eğirdir kazası, Kozluca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5734,
+      "output": 2929
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Kozluca, 23 Nisan 1331\nHİTAP: Oğlum Latif'e\nGÖVDE: Sana kâğıt yolladım cevap gelmedi eline geçmedi mi bilmeyorum. Meraktayız. Bugün Hıdrellez sofrayı kurduk pilav yaptık. Senin yerin boş kaldı minderde. Gelin hep o köşeye bakıyo demin ağladı. Sormaya utanıyo ama gözü yolda. Sana bi tane atkı ördüm pakedin içine sarıp koydum. Havalar serin oluyo boynuna dola üşütme. Köyde herkez iyi şükür. Babanın selamı var. Bizim koyunları sağdık peynir yaptık. Emin emmin de selam eyliyo. Çabuk kâğıt yaz bizi merakta koma.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Şadiye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozlucalı Latif'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "71 kelime, hedef 73 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4783,
+      "output": 2631
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun olsa da 'paket' kelimesi o dönemde bir köy kadınının dilinden ziyade şehirli bir ifadedir.",
+      "olculuk": "Duygular abartılmadan, minderdeki boş yer ve gelinin sessizce ağlaması gibi somut eylemlerle çok ölçülü verilmiş.",
+      "okuryazarlik": "Kısa cümleler, bağlaç eksikliği ve 'bilmeyorum', 'bakıyo', 'herkez' gibi fonetik yazımlar düşük okuryazarlığı kusursuz yansıtıyor.",
+      "somutluk": "Hıdrellez pilavı, minder, koyun sağmak ve peynir yapmak gibi kırsal hayata dair çok canlı ve somut detaylar barındırıyor.",
+      "sadakat": "Gelinden adıyla bahsedilmemesi, Hıdrellez detayı, atkı ve cevapsız kalan mektup gibi tüm istekler eksiksiz karşılanmış.",
+      "sahicilik": "Bir Anadolu anasının cephedeki oğluna duyduğu özlemi ve köydeki gündelik telaşı son derece doğal ve sahici bir tonda aktarıyor."
+    },
+    "issues": [
+      {
+        "line": "Sana bi tane atkı ördüm pakedin içine sarıp koydum.",
+        "problem": "'Paket' kelimesi 1915'te bir köy kadınının kullanacağı bir sözcük değildir; köylüler eşyaları beze sarar, bohça veya çıkın yapardı.",
+        "suggestion": "Sana bi tane atkı ördüm bohçanın içine sarıp koydum."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

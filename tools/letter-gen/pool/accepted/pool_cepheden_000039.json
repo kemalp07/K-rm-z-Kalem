@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheden_000039",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nazım",
+    "epithet": "Niğdeli",
+    "age": 23,
+    "hometown": "Niğde",
+    "occupation": "talebe",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Lütfi",
+    "relation": "erkek kardeşi",
+    "location": "Niğde, Ürgüp kazası, Hacılar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "high",
+  "length_target": 78,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 13 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem kardeşim Lütfi,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Buraya geleli aylar oldu, sizden tek bir satır kâğıt almadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İnsan cepheye düşünce hemencecik unutuluyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Memlekette kâğıt kalem mi tükendi, yoksa halimizi sormaya vakit mi bulamıyorsunuz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Cemile’ye selamımı söyleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bohçasını bozmasın, sabretsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gecikmemiz keyfimizden değil, vatan borcudur, elbet döneriz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Geçen gün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "sahile inip",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "ikinci taburdaki",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "köylümüz Salih’i gördüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Onların bölüğü bizim sol yanımızda",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "kalıyor, epeyce dertleştik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Benim sıhhatim yerindedir, endişeniz olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Babamın ellerinden öperim, köydeki ahbaplara selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Bana tez vakitte cevap yazın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Kardeşin Nazım"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Niğde, Ürgüp kazası, Hacılar karyesi, Muhtar Şükrü Ağa vasıtasıyla Lütfi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazım, Niğdeli, 23, talebe, onbaşı (Niğde, Ürgüp kazası, Hacılar karyesi)\nAlıcı: Erkek kardeşi Lütfi, Niğde, Ürgüp kazası, Hacılar karyesi\nYön: cepheden\nTarih: 13 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: nişanlısının beklemesini istemek\nSakladığı: ayağında yara açıldığını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nazım",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Niğde",
+        "occupation": "talebe",
+        "epithet": "Niğdeli",
+        "place": "Ürgüp kazası, Hacılar karyesi"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 16,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ürgüp kazası, Hacılar karyesi"
+      },
+      "recipient_location": "Niğde, Ürgüp kazası, Hacılar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "high",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "13 Haziran 1331",
+      "home_address": "Niğde, Ürgüp kazası, Hacılar karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5656,
+      "output": 4019
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 13 Haziran 1331\nHİTAP: Muhterem kardeşim Lütfi,\nGÖVDE: Buraya geleli aylar oldu, sizden tek bir satır kâğıt almadım. İnsan cepheye düşünce hemencecik unutuluyor mu? Memlekette kâğıt kalem mi tükendi, yoksa halimizi sormaya vakit mi bulamıyorsunuz? Cemile’ye selamımı söyleyin. Bohçasını bozmasın, sabretsin. Gecikmemiz keyfimizden değil, vatan borcudur, elbet döneriz. Geçen gün ⟦sahile inip⟧ ⟦ikinci taburdaki⟧ köylümüz Salih’i gördüm. ⟦Onların bölüğü bizim sol yanımızda⟧ kalıyor, epeyce dertleştik. Benim sıhhatim yerindedir, endişeniz olmasın. Babamın ellerinden öperim, köydeki ahbaplara selam ederim. Bana tez vakitte cevap yazın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Kardeşin Nazım\nZARF: Niğde, Ürgüp kazası, Hacılar karyesi, Muhtar Şükrü Ağa vasıtasıyla Lütfi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "74 kelime, hedef 78 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4854,
+      "output": 2523
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta kullanılan 'muhterem', 'sıhhat', 'ahbap' gibi kelimeler dönemin ruhunu ve dilini başarıyla yansıtıyor.",
+      "olculuk": "Sitem duygusu doğrudan adlandırılmadan, sorular ve 'bohçasını bozmasın' gibi ifadelerle ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Talebe olan yazanın eğitim seviyesine uygun, düzgün kurgulanmış ve akıcı cümleler kullanılmış.",
+      "somutluk": "Kâğıt kalem tükenmesi ve nişanlının bohçası gibi somut, gündelik detaylar mektubu zenginleştirmiş.",
+      "sadakat": "İstekteki tüm unsurlar (sitem, nişanlının beklemesi, yaranın saklanması, hassas bilgi ve dikkatsizlik seviyesi) eksiksiz uygulanmış.",
+      "sahicilik": "Bir askerin cepheden kardeşine yazdığı sitemkâr ama vakur tavır son derece doğal ve inandırıcı duruyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

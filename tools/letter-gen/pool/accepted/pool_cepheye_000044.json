@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheye_000044",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazife",
+    "epithet": "Amasyalı",
+    "age": 20,
+    "hometown": "Amasya",
+    "occupation": "talebe",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Celal",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 68,
+  "hand": "careful",
+  "header": {
+    "text": "Kozluca, 6 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Celal Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim Sarıkız dün gece buzağıladı, erkek yavru verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sabaha kadar başında durdum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ben iyiyim, biraz uykusuz kaldım o kadar, hiç merak edilecek bir hâlim yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kaynatam şehre indi, gazyağı kalmamış bulamamış.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Havalar birden ısındı, ekinin otunu yolmak lazım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen orada ne yiyip ne içersin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Çoraplarını delinmeden yama yap.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Babanın, eltimin selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Komşu kızı Emine'yi haftaya telliyorlar, gidip yardım edeceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kâğıt burada bitiyor.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum, Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Nazife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Celal'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazife Hanım, Amasyalı, 20, talebe (Amasya, Ladik kazası, Kozluca karyesi)\nAlıcı: Kocası Onbaşı Celal, cephede\nYön: cepheye\nTarih: 6 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: telaşlı, bir konudan ötekine atlar\nKonu: ineğin buzağılaması\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazife",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": "talebe",
+        "epithet": "Amasyalı",
+        "place": "Ladik kazası, Kozluca karyesi"
+      },
+      "recipient": {
+        "name": "Celal",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ladik kazası, Kozluca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "ineğin buzağılaması",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "6 Mayıs 1331",
+      "home_address": "Amasya, Ladik kazası, Kozluca karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5622,
+      "output": 2591
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kozluca, 6 Mayıs 1331\nHİTAP: Zevcim Celal Efendi'ye\nGÖVDE: Mektubunu aldım. Bizim Sarıkız dün gece buzağıladı, erkek yavru verdi. Sabaha kadar başında durdum. Ben iyiyim, biraz uykusuz kaldım o kadar, hiç merak edilecek bir hâlim yok. Kaynatam şehre indi, gazyağı kalmamış bulamamış. Havalar birden ısındı, ekinin otunu yolmak lazım. Sen orada ne yiyip ne içersin? Çoraplarını delinmeden yama yap. Babanın, eltimin selamı var. Komşu kızı Emine'yi haftaya telliyorlar, gidip yardım edeceğim. Kâğıt burada bitiyor.\nKAPANIŞ: Cevabını bekliyorum, Allah'a emanet ol.\nİMZA: Zevcen Nazife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Celal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "65 kelime, hedef 68 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4772,
+      "output": 3324
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 yılının köy hayatına ve dönem diline tam olarak uygundur.",
+      "olculuk": "Duygular adlandırılmamış, abartılı ifadelerden ve metaforlardan tamamen kaçınılmıştır.",
+      "okuryazarlik": "Orta seviye okuryazarlığa uygun, düzgün ama sade ve kısa cümleler kurulmuştur.",
+      "somutluk": "Buzağı, gazyağı, ekin otu ve çorap yaması gibi son derece somut ve gündelik ayrıntılar içermektedir.",
+      "sadakat": "İstenen konu işlenmiş, hastalık gizlenmeye çalışılmış ve daldan dala atlayan telaşlı ses tonu başarıyla verilmiştir.",
+      "sahicilik": "Köyde yaşayan genç bir kadının cephedeki kocasına yazdığı telaşlı ve samimi bir mektup hissini kusursuzca vermektedir."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

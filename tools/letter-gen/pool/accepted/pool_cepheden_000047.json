@@ -1,0 +1,311 @@
+{
+  "id": "pool_cepheden_000047",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Asım",
+    "epithet": "Kayserili",
+    "age": 28,
+    "hometown": "Kayseri",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zekiye",
+    "relation": "nişanlısı",
+    "location": "Kayseri, Everek kazası, Kızılca karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 115,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zekiye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Asım der ki: Zekiye'ye selam ederim, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Mektubunu aldım, okuttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Babana söyle, o koca öküzü hemen satmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen yılki borcu kapatacağız diye ucuza verecek, biliyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Az daha sabretsin, tüccar Hacı İbrahim'e göstersin önce.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Piyasayı iyi yoklasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Güzün fiyatlar daha artar, şimdi elden çıkarmak akıl kârı değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Eğer kahvenin kirasını verdilerse o parayla idare etsinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Benim burada keyfim yerinde, gün geçip gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Gece saat üç sularında nöbeti devralana kadar siperde bekliyoruz",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": ", sonra yatıp uyuyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kahvenin camı kırıktı, onu yaptırdılar mı mektupta yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Bana para yollamaya kalkmayın, burada harcayacak yer yok zaten.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Siz elinizdekine mukayyet olun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Anama, babama, emmilerime selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Kardeşin Hasan'ın gözlerinden öpüyorum, kahvenin anahtarına iyi baksın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını tez yazın.",
+  "signature": {
+    "text": "",
+    "seal": "Asım"
+  },
+  "note": {
+    "text": "İşbu kâğıdı köylüm Asım'ın ağzından ben yazdım. Onbaşı Veli.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kayseri, Everek kazası, Kızılca karyesi, İmam Salih Efendi vasıtasıyla Zekiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Asım, Kayserili, 28, kahveci, er (Kayseri, Everek kazası, Kızılca karyesi)\nAlıcı: Nişanlısı Zekiye Hanım, Kayseri, Everek kazası, Kızılca karyesi\nYön: cepheden\nTarih: 17 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: hesapçı, para ve borçtan söz eder\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: aç kaldıklarını\nHassas bilgi: gece hangi saatte nöbet değiştiği\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 115",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Asım",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": "kahveci",
+        "epithet": "Kayserili",
+        "place": "Everek kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Zekiye",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Everek kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Kayseri, Everek kazası, Kızılca karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "low",
+      "sensitive_info": "gece hangi saatte nöbet değiştiği",
+      "length_label": "uzun",
+      "length_target": 115,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "17 Mayıs 1331",
+      "home_address": "Kayseri, Everek kazası, Kızılca karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5720,
+      "output": 1950
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 17 Mayıs 1331\nHİTAP: Zekiye'ye\nGÖVDE: Asım der ki: Zekiye'ye selam ederim, hatırını sorarım. Benim halimi sorarsan şükür ayaktayız. Mektubunu aldım, okuttum. Babana söyle, o koca öküzü hemen satmasın. Geçen yılki borcu kapatacağız diye ucuza verecek, biliyorum. Az daha sabretsin, tüccar Hacı İbrahim'e göstersin önce. Piyasayı iyi yoklasınlar. Güzün fiyatlar daha artar, şimdi elden çıkarmak akıl kârı değil. Eğer kahvenin kirasını verdilerse o parayla idare etsinler. Benim burada keyfim yerinde, gün geçip gidiyor. ⟦Gece saat üç sularında nöbeti devralana kadar siperde bekliyoruz⟧, sonra yatıp uyuyoruz. Kahvenin camı kırıktı, onu yaptırdılar mı mektupta yaz. Bana para yollamaya kalkmayın, burada harcayacak yer yok zaten. Siz elinizdekine mukayyet olun. Anama, babama, emmilerime selam eyle. Kardeşin Hasan'ın gözlerinden öpüyorum, kahvenin anahtarına iyi baksın.\nKAPANIŞ: Cevabını tez yazın.\nİMZA: (mühür: Asım)\nNOT: İşbu kâğıdı köylüm Asım'ın ağzından ben yazdım. Onbaşı Veli.\nZARF: Kayseri, Everek kazası, Kızılca karyesi, İmam Salih Efendi vasıtasıyla Zekiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "113 kelime, hedef 115 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000028 ile ortak: \"selam ederim hatırını sorarım benim halimi\""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4956,
+      "output": 2097
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun olsa da 'piyasayı yoklamak' gibi günümüz ticaret dilini andıran birkaç modern ifade barındırıyor.",
+      "olculuk": "Duygular hiçbir şekilde adlandırılmamış, hasret ve kaygı tamamen somut dertler üzerinden ölçülü bir şekilde verilmiş.",
+      "okuryazarlik": "Yazdırılma üslubu ('Asım der ki'), kısa ve net cümleler ile mühür kullanımı okuma yazma bilmeyen birinin kâtibe yazdırdığı mektup formatına tam uyuyor.",
+      "somutluk": "Koca öküz, tüccar Hacı İbrahim, kahvenin kırık camı ve anahtarı gibi gündelik hayata dair çok başarılı somut detaylar kullanılmış.",
+      "sadakat": "Hesapçı ses, açlığın gizlenmesi, hassas bilginin dikkatsizce verilmesi ve uzunluk gibi tüm yönergeler eksiksiz yerine getirilmiş.",
+      "sahicilik": "Karakterin esnaf/hesapçı kimliği çok iyi yansıtılmış ancak birkaç kelime seçimi mektubun tarihsel dokusunu hafifçe zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Piyasayı iyi yoklasınlar.",
+        "problem": "'Piyasayı yoklamak' 1915 yılı köylü/esnaf ağzı için fazla modern bir deyimdir.",
+        "suggestion": "Etraftan iyice bir fiyat sorsunlar."
+      },
+      {
+        "line": "Güzün fiyatlar daha artar, şimdi elden çıkarmak akıl kârı değil.",
+        "problem": "'Fiyatlar artar' ve 'elden çıkarmak' ifadeleri günümüz ekonomi ve ticaret dilini andırmaktadır.",
+        "suggestion": "Güzün daha çok para eder, şimdi satmak akıl kârı değil."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

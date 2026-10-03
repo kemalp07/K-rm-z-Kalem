@@ -1,0 +1,281 @@
+{
+  "id": "pool_cepheye_000001",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zehra",
+    "epithet": "Çorumlu",
+    "age": 22,
+    "hometown": "Çorum",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "İlyas",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 99,
+  "hand": "hurried",
+  "header": {
+    "text": "Eğrisu, 4 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim İlyas'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ağabey mektubu bu sefer kendim yazıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Hıdrellez günü siniyi yere kurduk pilav kaynattık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Senin oturduğun minderi boş bıraktık kimse oturmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Babam da o gün lokmayı zor yuttu pek konuşmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bakkal Hasana borcumuz iyice birikti günden güne artıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ambardaki un yetmeyecek gibi duruyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Vergici geldi geçen kapıya dayandı kıştan kalan ne varsa aldı gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Zar zor üç beş kuruş denkleştirdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana bir boğça yaptım yolluyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İçine biraz taze leblebi koydum bir de yünden atkı ördüm geceleri boynuna sararsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarlada işler hep bana kaldı çok yoruluyom pek halim kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen orda askerden hiç para alıyon mu alıyosan bize de birez yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "Kardeşin Zehra"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, İskilipli Er İlyas'a",
+    "sensitive": false
+  },
+  "package": [
+    "leblebi",
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zehra Hanım, Çorumlu, 22, çiftçi (Çorum, İskilip kazası, Eğrisu karyesi)\nAlıcı: Ağabeyi Er İlyas, cephede\nYön: cepheye\nTarih: 4 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: hesapçı, para ve borçtan söz eder\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: leblebi, el örgüsü atkı\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 99",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zehra",
+        "gender": "kadın",
+        "age": 22,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": "çiftçi",
+        "epithet": "Çorumlu",
+        "place": "İskilip kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "İlyas",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "İskilip kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 99,
+      "package": [
+        "leblebi",
+        "el örgüsü atkı"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "4 Mayıs 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Çorum, İskilip kazası, Eğrisu karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5841,
+      "output": 4342
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Eğrisu, 4 Mayıs 1331\nHİTAP: Ağabeyim İlyas'a\nGÖVDE: Ağabey mektubu bu sefer kendim yazıyom. Hıdrellez günü siniyi yere kurduk pilav kaynattık. Senin oturduğun minderi boş bıraktık kimse oturmadı. Babam da o gün lokmayı zor yuttu pek konuşmadı. Bakkal Hasana borcumuz iyice birikti günden güne artıyo. Ambardaki un yetmeyecek gibi duruyo. Vergici geldi geçen kapıya dayandı kıştan kalan ne varsa aldı gitti. Zar zor üç beş kuruş denkleştirdik. Sana bir boğça yaptım yolluyom. İçine biraz taze leblebi koydum bir de yünden atkı ördüm geceleri boynuna sararsın. Tarlada işler hep bana kaldı çok yoruluyom pek halim kalmadı. Sen orda askerden hiç para alıyon mu alıyosan bize de birez yolla.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: Kardeşin Zehra\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, İskilipli Er İlyas'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "99 kelime, hedef 99 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4878,
+      "output": 2737
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanilan kelimeler (sini, lokma, bogca, kurus) doneme tam uygun ve modern ifade icermiyor.",
+      "olculuk": "Duygular isimlendirilmeden, bos minder ve babanin lokmayi zor yutmasi gibi somut eylemlerle cok iyi verilmis.",
+      "okuryazarlik": "Dusuk okuryazarlik seviyesi; noktalama eksikligi, kisa cumleler ve yoresel soyleyislerle (yaziyom, bogca, birez) basariyla yansitilmis.",
+      "somutluk": "Sini, pilav, minder, ambar, un, leblebi ve atki gibi gundelik detaylarla mektup son derece somut kilinmis.",
+      "sadakat": "Istenen tum unsurlar mevcut ancak hastaligini saklamasi gerekirken fiziksel zayifligini biraz acik etmis.",
+      "sahicilik": "Koydeki gecim derdini ve hesapci bir kiz kardesin sesini cok dogal ve inandirici bir sekilde yansitiyor."
+    },
+    "issues": [
+      {
+        "line": "Tarlada isler hep bana kaldi cok yoruluyom pek halim kalmadi.",
+        "problem": "Hastaligini saklamasi istenmis ancak 'pek halim kalmadi' diyerek fiziksel zayifligini (hastalik belirtisini) belli etmis; hastaligi gizlemek icin sadece is yukunden sikayet etmeli.",
+        "suggestion": "Tarlada isler hep bana kaldi tek basima kosturuyom tirpani zor yetistiriyom."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

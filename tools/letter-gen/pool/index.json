@@ -1,0 +1,1675 @@
+[
+  {
+    "id": "pool_cepheden_000001",
+    "direction": "cepheden",
+    "sender": "Ankaralı Şükrü",
+    "recipient": "Dürdane",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000003",
+    "direction": "cepheden",
+    "sender": "Diyarbekirli Salih",
+    "recipient": "Hamide",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000004",
+    "direction": "cepheden",
+    "sender": "Kastamonulu Kemal",
+    "recipient": "Zarife",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000005",
+    "direction": "cepheden",
+    "sender": "Yozgatlı Tayyar",
+    "recipient": "Elif",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000006",
+    "direction": "cepheden",
+    "sender": "Kahveci Bekir",
+    "recipient": "Hamide",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000007",
+    "direction": "cepheden",
+    "sender": "Çorumlu Server",
+    "recipient": "Refika",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000008",
+    "direction": "cepheden",
+    "sender": "Manisalı Osman",
+    "recipient": "Zehra",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000009",
+    "direction": "cepheden",
+    "sender": "Erzurumlu Fikri",
+    "recipient": "Medine",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000010",
+    "direction": "cepheden",
+    "sender": "Rizeli Eşref",
+    "recipient": "Kadriye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000011",
+    "direction": "cepheden",
+    "sender": "Yozgatlı İzzet",
+    "recipient": "Raziye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000012",
+    "direction": "cepheden",
+    "sender": "İstanbullu Zeki",
+    "recipient": "Kadir",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000013",
+    "direction": "cepheden",
+    "sender": "Aydınlı Sait",
+    "recipient": "Halime",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000014",
+    "direction": "cepheden",
+    "sender": "Konyalı Davut",
+    "recipient": "Şefika",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000015",
+    "direction": "cepheden",
+    "sender": "Denizlili Bekir",
+    "recipient": "Nadide",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000016",
+    "direction": "cepheden",
+    "sender": "Bolulu Reşit",
+    "recipient": "Emin",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000017",
+    "direction": "cepheden",
+    "sender": "Çorumlu Rauf",
+    "recipient": "Nazlı",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000018",
+    "direction": "cepheden",
+    "sender": "Çankırılı Sabri",
+    "recipient": "Hamiyet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000019",
+    "direction": "cepheden",
+    "sender": "Sinoplu Reşit",
+    "recipient": "Hasan",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000020",
+    "direction": "cepheden",
+    "sender": "Kastamonulu Tayyar",
+    "recipient": "Hamide",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000021",
+    "direction": "cepheden",
+    "sender": "Manisalı Şükrü",
+    "recipient": "Fevziye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000022",
+    "direction": "cepheden",
+    "sender": "Afyonlu Salih",
+    "recipient": "Latif",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000023",
+    "direction": "cepheden",
+    "sender": "Trabzonlu Kâzım",
+    "recipient": "Zekiye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000024",
+    "direction": "cepheden",
+    "sender": "Nalbant Sait",
+    "recipient": "Rukiye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000025",
+    "direction": "cepheden",
+    "sender": "Niğdeli Şakir",
+    "recipient": "Zeynep",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000026",
+    "direction": "cepheden",
+    "sender": "Ankaralı Emin",
+    "recipient": "Zehra",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 3
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000027",
+    "direction": "cepheden",
+    "sender": "Eskişehirli İlyas",
+    "recipient": "Akile",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000028",
+    "direction": "cepheden",
+    "sender": "Malatyalı Necip",
+    "recipient": "Hamiyet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000029",
+    "direction": "cepheden",
+    "sender": "Sinoplu Kemal",
+    "recipient": "Hamiyet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000030",
+    "direction": "cepheden",
+    "sender": "Balıkesirli Fikri",
+    "recipient": "Fevziye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000031",
+    "direction": "cepheden",
+    "sender": "Harputlu Adem",
+    "recipient": "Safiye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000032",
+    "direction": "cepheden",
+    "sender": "Rizeli Nuri",
+    "recipient": "Şevket",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000033",
+    "direction": "cepheden",
+    "sender": "Diyarbekirli Niyazi",
+    "recipient": "Kadriye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000034",
+    "direction": "cepheden",
+    "sender": "Terzi Emin",
+    "recipient": "Nazife",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000035",
+    "direction": "cepheden",
+    "sender": "Terzi Ali",
+    "recipient": "Makbule",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000036",
+    "direction": "cepheden",
+    "sender": "Kastamonulu Hasan",
+    "recipient": "Bekir",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000037",
+    "direction": "cepheden",
+    "sender": "Amasyalı Şevket",
+    "recipient": "Veli",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000038",
+    "direction": "cepheden",
+    "sender": "Bursalı Rüstem",
+    "recipient": "Akile",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000039",
+    "direction": "cepheden",
+    "sender": "Niğdeli Nazım",
+    "recipient": "Lütfi",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000040",
+    "direction": "cepheden",
+    "sender": "Maraşlı Reşit",
+    "recipient": "Sultan",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000041",
+    "direction": "cepheden",
+    "sender": "Aydınlı Rauf",
+    "recipient": "Zekiye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000042",
+    "direction": "cepheden",
+    "sender": "Kastamonulu Server",
+    "recipient": "Kadriye",
+    "status": "rejected",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 2,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000043",
+    "direction": "cepheden",
+    "sender": "Kastamonulu Hafız",
+    "recipient": "Sultan",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000044",
+    "direction": "cepheden",
+    "sender": "Tokatlı Yakup",
+    "recipient": "Ulviye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000045",
+    "direction": "cepheden",
+    "sender": "Demirci Nail",
+    "recipient": "Hayriye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000046",
+    "direction": "cepheden",
+    "sender": "Amasyalı Asım",
+    "recipient": "Sabiha",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000047",
+    "direction": "cepheden",
+    "sender": "Kayserili Asım",
+    "recipient": "Zekiye",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000048",
+    "direction": "cepheden",
+    "sender": "Çoban Nail",
+    "recipient": "İsmail",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000049",
+    "direction": "cepheden",
+    "sender": "Çankırılı Nail",
+    "recipient": "Selime",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheden_000050",
+    "direction": "cepheden",
+    "sender": "Kütahyalı Dursun",
+    "recipient": "Fikri",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000001",
+    "direction": "cepheye",
+    "sender": "Rizeli Pakize",
+    "recipient": "Mustafa",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000002",
+    "direction": "cepheye",
+    "sender": "Kahveci Ali",
+    "recipient": "Sefer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000003",
+    "direction": "cepheye",
+    "sender": "Niğdeli Seher",
+    "recipient": "Kemal",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000004",
+    "direction": "cepheye",
+    "sender": "Kırşehirli Hayri",
+    "recipient": "Zekeriya",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000005",
+    "direction": "cepheye",
+    "sender": "Kâtip Tevfik",
+    "recipient": "Bekir",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000006",
+    "direction": "cepheye",
+    "sender": "Bursalı Şadiye",
+    "recipient": "Zeki",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000007",
+    "direction": "cepheye",
+    "sender": "Çoban Asım",
+    "recipient": "Celal",
+    "status": "rejected",
+    "scores": null,
+    "warnings": [
+      "repetition"
+    ],
+    "failed": [
+      "forbidden"
+    ]
+  },
+  {
+    "id": "pool_cepheye_000008",
+    "direction": "cepheye",
+    "sender": "Kayıkçı Fikri",
+    "recipient": "Talat",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000009",
+    "direction": "cepheye",
+    "sender": "Kütahyalı Elif",
+    "recipient": "Sait",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000010",
+    "direction": "cepheye",
+    "sender": "Çoban Arif",
+    "recipient": "Hilmi",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000011",
+    "direction": "cepheye",
+    "sender": "Eskişehirli Ahmet",
+    "recipient": "Ömer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000012",
+    "direction": "cepheye",
+    "sender": "İstanbullu Dürdane",
+    "recipient": "Tevfik",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000013",
+    "direction": "cepheye",
+    "sender": "Bursalı Refika",
+    "recipient": "Şükrü",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000014",
+    "direction": "cepheye",
+    "sender": "Amasyalı İlyas",
+    "recipient": "Sait",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000015",
+    "direction": "cepheye",
+    "sender": "Nalbant İbrahim",
+    "recipient": "Mahmut",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000016",
+    "direction": "cepheye",
+    "sender": "Afyonlu Mustafa",
+    "recipient": "Cafer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000017",
+    "direction": "cepheye",
+    "sender": "Erzurumlu Melek",
+    "recipient": "Cafer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000018",
+    "direction": "cepheye",
+    "sender": "Konyalı Necip",
+    "recipient": "Emin",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000020",
+    "direction": "cepheye",
+    "sender": "Muallim Tahir",
+    "recipient": "Latif",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000021",
+    "direction": "cepheye",
+    "sender": "Maraşlı Hayriye",
+    "recipient": "Sefer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000022",
+    "direction": "cepheye",
+    "sender": "Aydınlı Mükerrem",
+    "recipient": "Nazım",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000023",
+    "direction": "cepheye",
+    "sender": "Kahveci Haydar",
+    "recipient": "Recep",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000024",
+    "direction": "cepheye",
+    "sender": "Giresunlu Şefika",
+    "recipient": "Bayram",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000025",
+    "direction": "cepheye",
+    "sender": "Dokumacı Sadık",
+    "recipient": "İzzet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000026",
+    "direction": "cepheye",
+    "sender": "Amasyalı Kemal",
+    "recipient": "Abdullah",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000027",
+    "direction": "cepheye",
+    "sender": "Manisalı Hamide",
+    "recipient": "Hulusi",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000028",
+    "direction": "cepheye",
+    "sender": "Rizeli Ahmet",
+    "recipient": "Zekeriya",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000029",
+    "direction": "cepheye",
+    "sender": "Aydınlı Şerife",
+    "recipient": "Cafer",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000030",
+    "direction": "cepheye",
+    "sender": "Afyonlu Sabiha",
+    "recipient": "Abdullah",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 4,
+      "sadakat": 4,
+      "sahicilik": 3
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000031",
+    "direction": "cepheye",
+    "sender": "Kastamonulu Elif",
+    "recipient": "Hakkı",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000032",
+    "direction": "cepheye",
+    "sender": "Maraşlı Mahmut",
+    "recipient": "Şükrü",
+    "status": "rejected",
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 2,
+      "okuryazarlik": 4,
+      "somutluk": 4,
+      "sadakat": 3,
+      "sahicilik": 3
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000033",
+    "direction": "cepheye",
+    "sender": "Malatyalı Pakize",
+    "recipient": "Şaban",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000034",
+    "direction": "cepheye",
+    "sender": "Kırşehirli Ulviye",
+    "recipient": "Talat",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000035",
+    "direction": "cepheye",
+    "sender": "Niğdeli Sultan",
+    "recipient": "Yusuf",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000037",
+    "direction": "cepheye",
+    "sender": "Denizlili Nazife",
+    "recipient": "Kâmil",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000038",
+    "direction": "cepheye",
+    "sender": "Çankırılı Zeki",
+    "recipient": "Talat",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000039",
+    "direction": "cepheye",
+    "sender": "Nalbant Kâmil",
+    "recipient": "Tahir",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000040",
+    "direction": "cepheye",
+    "sender": "Konyalı Hamiyet",
+    "recipient": "Reşit",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000041",
+    "direction": "cepheye",
+    "sender": "Malatyalı Cemile",
+    "recipient": "Recep",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000043",
+    "direction": "cepheye",
+    "sender": "Trabzonlu Gülsüm",
+    "recipient": "Kemal",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000044",
+    "direction": "cepheye",
+    "sender": "Amasyalı Nazife",
+    "recipient": "Celal",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000045",
+    "direction": "cepheye",
+    "sender": "Adanalı Necibe",
+    "recipient": "Lütfi",
+    "status": "rejected",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 4
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000046",
+    "direction": "cepheye",
+    "sender": "Manisalı Sıdıka",
+    "recipient": "İsmet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000047",
+    "direction": "cepheye",
+    "sender": "Ispartalı Şadiye",
+    "recipient": "Latif",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000048",
+    "direction": "cepheye",
+    "sender": "Sivaslı Necip",
+    "recipient": "İlyas",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000049",
+    "direction": "cepheye",
+    "sender": "Eskişehirli Fevziye",
+    "recipient": "Tahir",
+    "status": "needs_review",
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "warnings": [
+      "repetition"
+    ],
+    "failed": []
+  },
+  {
+    "id": "pool_cepheye_000050",
+    "direction": "cepheye",
+    "sender": "Niğdeli Kâzım",
+    "recipient": "İzzet",
+    "status": "accepted",
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "warnings": [],
+    "failed": []
+  }
+]

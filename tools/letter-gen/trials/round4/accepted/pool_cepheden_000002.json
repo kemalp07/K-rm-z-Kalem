@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000002",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yakup",
+    "epithet": "Çankırılı",
+    "age": 34,
+    "hometown": "Çankırı",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Sabiha",
+    "relation": "annesi",
+    "location": "Çankırı, Çerkeş kazası, Hacılar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 74,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 9 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Sabiha'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Anacım ellerinden öpüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığım kâat eline geçtimi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ben iyiyim merak etmen.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Havalar ısındı buralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim bostanı ektiniz mi kurak gitmesin suyunu iyi verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde herkez nasıldır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Deli Ömerin oğlunun düğünü oldumu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Emmime dayıma kahveci Rızaya benden çokca selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Koca ineğin yavrusu ne alemde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Benim çoraplar delindi postallar vuruyo yürürken zor oluyo anacım yenisini örüver.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim taburu iki gün evvel ileri sürdüler",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "sağ salim duruyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Cevap yazın köylüyü tek tek sorarım gözüm yolda kaldı.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Oğlun Yakup"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çankırı, Çerkeş kazası, Hacılar karyesi, Muhtar Veli Ağa vasıtasıyla Sabiha Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yakup, Çankırılı, 34, çiftçi, onbaşı (Çankırı, Çerkeş kazası, Hacılar karyesi)\nAlıcı: Annesi Sabiha Hanım, Çankırı, Çerkeş kazası, Hacılar karyesi\nYön: cepheden\nTarih: 9 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: meraklı, köyden herkesi sorar\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 74",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yakup",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "epithet": "Çankırılı",
+        "place": "Çerkeş kazası, Hacılar karyesi"
+      },
+      "recipient": {
+        "name": "Sabiha",
+        "gender": "kadın",
+        "age": 56,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çerkeş kazası, Hacılar karyesi"
+      },
+      "recipient_location": "Çankırı, Çerkeş kazası, Hacılar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 74,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "9 Haziran 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Çankırı, Çerkeş kazası, Hacılar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5687,
+      "output": 4378
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 9 Haziran 1331\nHİTAP: Anam Sabiha'ya\nGÖVDE: Anacım ellerinden öpüyorum. Yolladığım kâat eline geçtimi. Ben iyiyim merak etmen. Havalar ısındı buralarda. Bizim bostanı ektiniz mi kurak gitmesin suyunu iyi verin. Köyde herkez nasıldır. Deli Ömerin oğlunun düğünü oldumu. Emmime dayıma kahveci Rızaya benden çokca selam eyle. Koca ineğin yavrusu ne alemde. Benim çoraplar delindi postallar vuruyo yürürken zor oluyo anacım yenisini örüver. ⟦Bizim taburu iki gün evvel ileri sürdüler⟧ sağ salim duruyoz. Cevap yazın köylüyü tek tek sorarım gözüm yolda kaldı.\nKAPANIŞ: Hakkını helal et.\nİMZA: Oğlun Yakup\nZARF: Çankırı, Çerkeş kazası, Hacılar karyesi, Muhtar Veli Ağa vasıtasıyla Sabiha Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "74 kelime, hedef 74 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4855,
+      "output": 3375
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler 1915 yılına ve bir köylünün ağzına tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmamış, hasret ve merak somut sorular üzerinden başarıyla hissettirilmiştir.",
+      "okuryazarlik": "Noktalama eksiklikleri, bitişik yazılan soru ekleri ve kâat, herkez gibi hatalarla düşük okuryazarlık çok iyi yansıtılmıştır.",
+      "somutluk": "Bostan, inek yavrusu, delik çorap ve köydeki isimler gibi çok sayıda somut ayrıntı içermektedir.",
+      "sadakat": "İstenen konu, gizlenen yara durumu, dikkatsizlik kuralı ve uzunluk hedefine birebir uyulmuştur.",
+      "sahicilik": "Köyünü merak eden ve anasına derdini tam söyleyemeyen gerçek bir askerin mektubu kadar doğaldır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

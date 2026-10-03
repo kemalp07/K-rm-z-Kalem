@@ -1,0 +1,276 @@
+{
+  "id": "pool_cepheden_000021",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Şükrü",
+    "epithet": "Manisalı",
+    "age": 34,
+    "hometown": "Manisa",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Fevziye",
+    "relation": "nişanlısı",
+    "location": "Manisa, Salihli kazası, Alacahan karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 77,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Fevziye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldım okudum sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buralar eyi yaz sıcağı bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dün bizim köylü Kel Ahmet geliyo dediler koştum buldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim bölüğe vermişler onu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyün ekinlerini anlattı harman vakti gelmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Siz naptınız arpayı kim biçecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Benim aklım sizde kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ahmet yolda gelirken anasının kattığı kuru üzümü getirmiş yedik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim karavana zaten çok çıkıyo karnımız hep tok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Geçen hafta bölükte on yedi kişi kalınca yemek artıyo bitiremeyoz bile.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Ahmet'le yanyana yatıyoz memleketi konuşuyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Köydeki bütün komşulara herkeze çok selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Şükrü"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Manisa, Salihli kazası, Alacahan karyesi, Muhtar Veli Ağa vasıtasıyla Fevziye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şükrü, Manisalı, 34, çiftçi, çavuş (Manisa, Salihli kazası, Alacahan karyesi)\nAlıcı: Nişanlısı Fevziye Hanım, Manisa, Salihli kazası, Alacahan karyesi\nYön: cepheden\nTarih: 16 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: aç kaldıklarını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Manisa",
+        "occupation": "çiftçi",
+        "epithet": "Manisalı",
+        "place": "Salihli kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Fevziye",
+        "gender": "kadın",
+        "age": 28,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Salihli kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Manisa, Salihli kazası, Alacahan karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "home_address": "Manisa, Salihli kazası, Alacahan karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5655,
+      "output": 4975
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 16 Haziran 1331\nHİTAP: Fevziye'ye\nGÖVDE: Mektubunu aldım okudum sevindim. Buralar eyi yaz sıcağı bastırdı. Dün bizim köylü Kel Ahmet geliyo dediler koştum buldum. Bizim bölüğe vermişler onu. Köyün ekinlerini anlattı harman vakti gelmiş. Siz naptınız arpayı kim biçecek. Benim aklım sizde kalmasın. Ahmet yolda gelirken anasının kattığı kuru üzümü getirmiş yedik. Bizim karavana zaten çok çıkıyo karnımız hep tok. ⟦Geçen hafta bölükte on yedi kişi kalınca yemek artıyo bitiremeyoz bile.⟧ Ahmet'le yanyana yatıyoz memleketi konuşuyoz. Köydeki bütün komşulara herkeze çok selam eyle.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Şükrü\nZARF: Manisa, Salihli kazası, Alacahan karyesi, Muhtar Veli Ağa vasıtasıyla Fevziye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "77 kelime, hedef 77 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4827,
+      "output": 3357
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifade biçimi 1915 yılının köylü asker ağzına tam olarak uyuyor.",
+      "olculuk": "Duygular adlandırılmamış, tamamen somut olaylar üzerinden hasret ve teselli verilmiş.",
+      "okuryazarlik": "Kısa cümleler, noktalama eksiklikleri ve 'geliyo, herkeze' gibi ufak imla hatalarıyla düşük okuryazarlık çok iyi yansıtılmış.",
+      "somutluk": "Kel Ahmet, arpa hasadı, kuru üzüm ve karavana gibi detaylarla mektup son derece somut kılınmış.",
+      "sadakat": "İstenen tüm unsurlar mektupta var, ancak sansür işaretleri kurala aykırı olarak gündelik sözleri de içine almış.",
+      "sahicilik": "Açlığını gizlemeye çalışan ve nişanlısını teselli eden bir askerin mektubu olarak son derece doğal ve inandırıcı."
+    },
+    "issues": [
+      {
+        "line": "⟦Geçen hafta bölükte on yedi kişi kalınca yemek artıyo bitiremeyoz bile.⟧",
+        "problem": "Sansür işaretleri (⟦ ⟧) içine yalnızca askerî bilgi alınmalıdır; cümlenin geri kalanı ve gündelik sözler dışarıda bırakılmalıdır.",
+        "suggestion": "Geçen hafta bölükte ⟦on yedi kişi⟧ kalınca yemek artıyo bitiremeyoz bile."
+      },
+      {
+        "line": "Benim aklım sizde kalmasın.",
+        "problem": "Askerin kendi durumunu iyi gösterip karşı tarafı teselli etmesi beklenirken, bu cümle anlamca ters düşüyor; muhtemelen 'Sizin aklınız bende kalmasın' denmek istendi.",
+        "suggestion": "Sizin aklınız bende kalmasın."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "pool_cepheden_000024",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sait",
+    "epithet": "Nalbant",
+    "age": 22,
+    "hometown": "İzmir",
+    "occupation": "nalbant",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Rukiye",
+    "relation": "annesi",
+    "location": "İzmir, Basmane, Gazi mahallesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 67,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 11 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Rukiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sait der ki: Anacağım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen mektubun ulaştı, iyi olduğunuza sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Demirci İbrahim Usta'ya olan borç ne âlemde, adamı kapıda bekletmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çok sıkıştırırsa çeyiz sandığındaki bakır sahanları satın, parasını hemen eline sayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dükkânın kilidi sağlam dursun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Benden yana hiç tasa etmeyin, sağlığım yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bize her akşam ezanı vakti katırlarla suyumuz tam geliyor",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": ", boğazımız kurumuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kahveci Salih amcaya, mahalledeki komşulara çok selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Emine'nin de gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Sait"
+  },
+  "note": {
+    "text": "İşbu mektubu hemşehrim Sait'in ağzından ben yazdım. Onbaşı Hasan.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "İzmir, Basmane, Gazi mahallesi, Kahveci Salih Efendi vasıtasıyla Rukiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sait, Nalbant, 22, nalbant, er (İzmir, Basmane, Gazi mahallesi)\nAlıcı: Annesi Rukiye Hanım, İzmir, Basmane, Gazi mahallesi\nYön: cepheden\nTarih: 11 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: yok\nHassas bilgi: kumanyanın ya da suyun hangi saatte geldiği\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 67",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sait",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "İzmir",
+        "occupation": "nalbant",
+        "epithet": "Nalbant",
+        "place": "Basmane, Gazi mahallesi"
+      },
+      "recipient": {
+        "name": "Rukiye",
+        "gender": "kadın",
+        "age": 46,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "İzmir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Basmane, Gazi mahallesi"
+      },
+      "recipient_location": "İzmir, Basmane, Gazi mahallesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "yok",
+      "carelessness": "low",
+      "sensitive_info": "kumanyanın ya da suyun hangi saatte geldiği",
+      "length_label": "kısa",
+      "length_target": 67,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "11 Mayıs 1331",
+      "home_address": "İzmir, Basmane, Gazi mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5701,
+      "output": 2792
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Şehir hayatı · İzmir"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 11 Mayıs 1331\nHİTAP: Validem Rukiye Hanım'a\nGÖVDE: Sait der ki: Anacağım ellerinden öperim. Geçen mektubun ulaştı, iyi olduğunuza sevindim. Demirci İbrahim Usta'ya olan borç ne âlemde, adamı kapıda bekletmeyin. Çok sıkıştırırsa çeyiz sandığındaki bakır sahanları satın, parasını hemen eline sayın. Dükkânın kilidi sağlam dursun. Benden yana hiç tasa etmeyin, sağlığım yerinde. ⟦Bize her akşam ezanı vakti katırlarla suyumuz tam geliyor⟧, boğazımız kurumuyor. Kahveci Salih amcaya, mahalledeki komşulara çok selam ederim. Emine'nin de gözlerinden öperim.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Sait)\nNOT: İşbu mektubu hemşehrim Sait'in ağzından ben yazdım. Onbaşı Hasan.\nZARF: İzmir, Basmane, Gazi mahallesi, Kahveci Salih Efendi vasıtasıyla Rukiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "67 kelime, hedef 67 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4820,
+      "output": 3458
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak dönem dili başarılı olsa da 'ulaştı' gibi ufak modern kullanımlar göze çarpıyor.",
+      "olculuk": "Duygular adlandırılmamış, içine kapanık karaktere uygun olarak yalnızca gerekenler yazılmıştır.",
+      "okuryazarlik": "Yazdırılma formatına (Sait der ki, Onbaşı notu) ve kâtip onbaşının dil seviyesine tam uyulmuştur.",
+      "somutluk": "Bakır sahanlar, dükkan kilidi ve katırlarla gelen su gibi çok somut ve inandırıcı detaylar kullanılmıştır.",
+      "sadakat": "İstenen tüm unsurlar mevcuttur ancak sansür işaretlerinin kullanımı kurala tam uymamaktadır.",
+      "sahicilik": "Borç derdi ve pratik çözümler mektubu son derece gerçekçi ve yaşanmış kılmıştır."
+    },
+    "issues": [
+      {
+        "line": "Geçen mektubun ulaştı, iyi olduğunuza sevindim.",
+        "problem": "'Ulaştı' kelimesi dönemin mektup kalıplarında pek kullanılmaz, 'geldi' veya 'aldım' daha yaygındır.",
+        "suggestion": "Geçen mektubun geldi, iyi olduğunuza sevindim."
+      },
+      {
+        "line": "⟦Bize her akşam ezanı vakti katırlarla suyumuz tam geliyor⟧ , boğazımız kurumuyor.",
+        "problem": "Sansür işaretleri gündelik sözleri de içine almış; yalnızca ikmal saati ve aracı işaretlenmeliydi.",
+        "suggestion": "Bize ⟦her akşam ezanı vakti katırlarla⟧ suyumuz tam geliyor, boğazımız kurumuyor."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

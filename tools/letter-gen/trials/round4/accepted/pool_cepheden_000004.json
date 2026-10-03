@@ -1,0 +1,273 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Mahmut",
+    "epithet": "Denizlili",
+    "age": 27,
+    "hometown": "Denizli",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Kevser",
+    "relation": "karısı",
+    "location": "Denizli, Buldan kazası, Karacaören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 103,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 4 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Kevser'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Geçen ay yolladığım kâğıda cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Meraktayım, umarım hepiniz sağsınızdır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sana bu ay maaştan para yollayacaktım ama olmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Burada çay tütün derken elde avuçta bir şey kalmadı, hepsi uçtu gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen sakın darlığa düşüp de babanın evine gitmeye kalkma, dişini sık beni bekle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Gerekirse ahırdaki sarı düveyi satın da Hacı Veli’ye olan iki lira faiz borcunu hemen kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tarlayı bu sene yarıcıya verin, mahsulün hesabını iyi tutun, hakkınızı eksik almayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "On beş gündür sağımızdaki tepenin arkasında bekliyoruz",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": ", ne zaman döneceğim belli değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen evde uslu otur, masraf çıkarma, boşa kuruş ziyan etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Köydeki cümle akrabaya, komşulara ayrı ayrı selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Kocan Mahmut"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Denizli, Buldan kazası, Karacaören karyesi, İmam Hüseyin Efendi vasıtasıyla Kevser Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mahmut, Denizlili, 27, çiftçi, çavuş (Denizli, Buldan kazası, Karacaören karyesi)\nAlıcı: Karısı Kevser Hanım, Denizli, Buldan kazası, Karacaören karyesi\nYön: cepheden\nTarih: 4 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: hesapçı, para ve borçtan söz eder\nKonu: nişanlısının beklemesini istemek\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Allah'a emanet ol\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Mahmut",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Denizli",
+        "occupation": "çiftçi",
+        "epithet": "Denizlili",
+        "place": "Buldan kazası, Karacaören karyesi"
+      },
+      "recipient": {
+        "name": "Kevser",
+        "gender": "kadın",
+        "age": 24,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Buldan kazası, Karacaören karyesi"
+      },
+      "recipient_location": "Denizli, Buldan kazası, Karacaören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "4 Mayıs 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Denizli, Buldan kazası, Karacaören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 504,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T15:29:03+00:00",
+    "tokens": {
+      "input": 5740,
+      "output": 3979
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 4 Mayıs 1331\nHİTAP: Zevcem Kevser'e\nGÖVDE: Geçen ay yolladığım kâğıda cevap gelmedi. Meraktayım, umarım hepiniz sağsınızdır. Benim hâlimi sorarsan şükür ayaktayız. Sana bu ay maaştan para yollayacaktım ama olmadı. Burada çay tütün derken elde avuçta bir şey kalmadı, hepsi uçtu gitti. Sen sakın darlığa düşüp de babanın evine gitmeye kalkma, dişini sık beni bekle. Gerekirse ahırdaki sarı düveyi satın da Hacı Veli’ye olan iki lira faiz borcunu hemen kapatın. Tarlayı bu sene yarıcıya verin, mahsulün hesabını iyi tutun, hakkınızı eksik almayın. ⟦On beş gündür sağımızdaki tepenin arkasında bekliyoruz⟧, ne zaman döneceğim belli değil. Sen evde uslu otur, masraf çıkarma, boşa kuruş ziyan etme. Köydeki cümle akrabaya, komşulara ayrı ayrı selam ederim.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Kocan Mahmut\nZARF: Denizli, Buldan kazası, Karacaören karyesi, İmam Hüseyin Efendi vasıtasıyla Kevser Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "105 kelime, hedef 103 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:37:47+00:00",
+    "tokens": {
+      "input": 4901,
+      "output": 2443
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Metinde geçen 'umarım' kelimesi 1915 yılı için fazla modern bir kullanımdır, bunun dışında dil döneme uygundur.",
+      "olculuk": "Duygular adlandırılmadan, tamamen somut talepler ve emirler üzerinden abartısız bir şekilde aktarılmış.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun olarak düzgün, anlaşılır ancak sade ve köylü hayatına ait bir sözdizimi kullanılmış.",
+      "somutluk": "Sarı düve, Hacı Veli'ye olan iki lira borç, tarlanın yarıcıya verilmesi gibi çok güçlü ve inandırıcı somut detaylar barındırıyor.",
+      "sadakat": "İstenen kelime sayısına (105 kelime), gizlenen kumar bilgisine, dikkatsizlik kuralına ve hesapçı sese tam olarak uyulmuş.",
+      "sahicilik": "Eşine sürekli hesap soran, borçları düşünen ve talimatlar veren otoriter çiftçi asker profili son derece gerçekçi yansıtılmış."
+    },
+    "issues": [
+      {
+        "line": "Geçen ay yolladığım kâğıda cevap gelmedi. Meraktayım, umarım hepiniz sağsınızdır.",
+        "problem": "'Umarım' kelimesi dilde sadeleşme dönemi sonrasına ait modern bir kelimedir; 1915'te bir köylü veya asker bu anlamda 'inşallah' kullanırdı.",
+        "suggestion": "Geçen ay yolladığım kâğıda cevap gelmedi. Meraktayım, inşallah hepiniz sağsınızdır."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T15:29:03+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:37:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

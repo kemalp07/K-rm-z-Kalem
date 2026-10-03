@@ -1,0 +1,308 @@
+{
+  "id": "pool_cepheden_000028",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Necip",
+    "epithet": "Malatyalı",
+    "age": 36,
+    "hometown": "Malatya",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Hamiyet",
+    "relation": "karısı",
+    "location": "Malatya, Arapkir kazası, Çukurören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 129,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Hamiyet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Hamiyet evvela selam ederim hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen mektubun geldi okudum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sürüyü yaylaya çıkarmışsınızdır bu vakit.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kır bayırında ot çoktur kuzuları oraya sürün başlarında durun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Babama çok selam söyle ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Giderken dargın ayrıldık benim hakkım helaldir o da helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dünya hali belli olmaz kimin ne zamana kadar yaşayacağı bilinmez burda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Yanına var elini öp Necip'in selamı var de.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gönlünü al babamdır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Küslük kalksın aradan.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sana gönderecek üç beş kuruşum yoktu bu ay para kalmadı cepte bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Sen idare et gayri komşudan biraz un iste.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Çoluk çocuğa iyi bak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Emmime teyzeme köyün büyüklerine muhtar emmiye selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Herkeze tek tek selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Havalar iyice ısındı burada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Merak edilecek bir şey yok ekinleri düşünme komşular yardım eder hasada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Cevap yazarken babamın ne dediğini yaz bana.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Kocan Necip"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Malatya, Arapkir kazası, Çukurören karyesi, Muhtar Veli Ağa vasıtasıyla Hamiyet Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Necip, Malatyalı, 36, çoban, onbaşı (Malatya, Arapkir kazası, Çukurören karyesi)\nAlıcı: Karısı Hamiyet Hanım, Malatya, Arapkir kazası, Çukurören karyesi\nYön: cepheden\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: ağırbaşlı, kalıplara sadık\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 129",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Necip",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Malatya",
+        "occupation": "çoban",
+        "epithet": "Malatyalı",
+        "place": "Arapkir kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Hamiyet",
+        "gender": "kadın",
+        "age": 38,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Arapkir kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Malatya, Arapkir kazası, Çukurören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 129,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Mayıs 1331",
+      "home_address": "Malatya, Arapkir kazası, Çukurören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5700,
+      "output": 4170
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 26 Mayıs 1331\nHİTAP: Hamiyet'e\nGÖVDE: Hamiyet evvela selam ederim hatırını sorarım. Benim halimi sorarsan şükür ayaktayız. Geçen mektubun geldi okudum. Sürüyü yaylaya çıkarmışsınızdır bu vakit. Kır bayırında ot çoktur kuzuları oraya sürün başlarında durun. Babama çok selam söyle ellerinden öperim. Giderken dargın ayrıldık benim hakkım helaldir o da helal etsin. Dünya hali belli olmaz kimin ne zamana kadar yaşayacağı bilinmez burda. Yanına var elini öp Necip'in selamı var de. Gönlünü al babamdır. Küslük kalksın aradan. Sana gönderecek üç beş kuruşum yoktu bu ay para kalmadı cepte bitti. Sen idare et gayri komşudan biraz un iste. Çoluk çocuğa iyi bak. Emmime teyzeme köyün büyüklerine muhtar emmiye selam ederim. Herkeze tek tek selam eyle. Havalar iyice ısındı burada. Merak edilecek bir şey yok ekinleri düşünme komşular yardım eder hasada. Cevap yazarken babamın ne dediğini yaz bana.\nKAPANIŞ: Hakkını helal et.\nİMZA: Kocan Necip\nZARF: Malatya, Arapkir kazası, Çukurören karyesi, Muhtar Veli Ağa vasıtasıyla Hamiyet Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "129 kelime, hedef 129 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4895,
+      "output": 2155
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemin kelimeleri ve mektup kalıpları doğru kullanılmış, hiçbir modern ifadeye yer verilmemiş.",
+      "olculuk": "Duygular doğrudan adlandırılmamış; babayla barışma isteği eylemler ve somut durumlar üzerinden ölçülü bir şekilde aktarılmış.",
+      "okuryazarlik": "Kısa ve bağlaçsız cümleler, noktalama eksikliği ve 'herkeze', 'burda' gibi ufak hatalarla düşük okuryazarlık başarıyla yansıtılmış.",
+      "somutluk": "Sürü, yayla, kır bayırı, kuzu, komşudan un istemek gibi köye ve çobanlığa dair çok somut ayrıntılar barındırıyor.",
+      "sadakat": "Babadan helallik isteme konusu işlenmiş, kumar borcu ustaca gizlenmiş, uzunluk ve diğer tüm yönergeler tam tutturulmuş.",
+      "sahicilik": "Bir çobanın cepheden karısına yazdığı telaşlı ama ağırbaşlı mektup hissini çok iyi veriyor, son derece inandırıcı."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

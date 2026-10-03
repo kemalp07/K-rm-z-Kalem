@@ -1,0 +1,263 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Seher",
+    "epithet": "Niğdeli",
+    "age": 43,
+    "hometown": "Niğde",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Kemal",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 62,
+  "hand": "dictated",
+  "header": {
+    "text": "Taşpınar, 29 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Kemal'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözünden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kaç vakittir yollarını gözlerim, köye gelen postalarda senin kâğıdın hiç çıkmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan anasına bir satır yazmaz mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Koca kış bitti, bahar geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizi merakta komak reva mıdır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim Sarıkız geçen hafta buzağıladı, erkek oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sütü şimdilik iyi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Boynuna takasın diye hocaya muska yazdırdım, paketin içine koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Üstünden çıkarma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kendine mukayyet ol, tez cevap yolla, beni bekletme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Seher"
+  },
+  "note": {
+    "text": "İşbu mektubu Seher Hanım'ın ağzından ben yazdım. Muhtar.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Taşpınarlı Kemal'e",
+    "sensitive": false
+  },
+  "package": [
+    "muska"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Seher Hanım, Niğdeli, 43, ev hanımı (Niğde, Aksaray kazası, Taşpınar karyesi)\nAlıcı: Oğlu Er Kemal, cephede\nYön: cepheye\nTarih: 29 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: ineğin buzağılaması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: muska\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 43,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": "ev hanımı",
+        "epithet": "Niğdeli",
+        "place": "Aksaray kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Aksaray kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "ineğin buzağılaması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": [
+        "muska"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "29 Mayıs 1331",
+      "home_address": "Niğde, Aksaray kazası, Taşpınar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5744,
+      "output": 2395
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Taşpınar, 29 Mayıs 1331\nHİTAP: Oğlum Kemal'e\nGÖVDE: Evvela selam eder, iki gözünden öperim. Kaç vakittir yollarını gözlerim, köye gelen postalarda senin kâğıdın hiç çıkmıyor. İnsan anasına bir satır yazmaz mı? Koca kış bitti, bahar geldi. Bizi merakta komak reva mıdır? Bizim Sarıkız geçen hafta buzağıladı, erkek oldu. Sütü şimdilik iyi. Boynuna takasın diye hocaya muska yazdırdım, paketin içine koydum. Üstünden çıkarma. Kendine mukayyet ol, tez cevap yolla, beni bekletme.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Seher)\nNOT: İşbu mektubu Seher Hanım'ın ağzından ben yazdım. Muhtar.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Taşpınarlı Kemal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 62 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4801,
+      "output": 2512
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektupta kullanılan kelimeler ve ifadeler 1915 yılının ruhuna ve köy hayatına tamamen uygundur.",
+      "olculuk": "Duygular adlandırılmadan, sitemkâr sorular ve somut beklentiler üzerinden başarıyla hissettirilmiştir.",
+      "okuryazarlik": "Muhtara yazdırılma durumu, hem dilin hafifçe toparlanmış olmasından hem de mühür ve not kullanımından anlaşılmaktadır.",
+      "somutluk": "Sarıkız'ın erkek buzağılaması ve hocaya yazdırılan muska gibi gündelik, somut detaylar mektubu zenginleştirmiştir.",
+      "sadakat": "İstenen uzunluk, konu, ton, gizlenen bilgi ve paket gibi tüm yönergelere eksiksiz uyulmuştur.",
+      "sahicilik": "Bir ananın cephedeki oğlundan haber alamama endişesi ve sitemi son derece doğal ve inandırıcı bir dille aktarılmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

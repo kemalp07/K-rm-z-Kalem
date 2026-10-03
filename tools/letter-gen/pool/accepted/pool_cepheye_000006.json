@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000006",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şadiye",
+    "epithet": "Bursalı",
+    "age": 50,
+    "hometown": "Bursa",
+    "occupation": "ırgat",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Zeki",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 73,
+  "hand": "hurried",
+  "header": {
+    "text": "Kavak, 7 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Zeki'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun geldi okudum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Dün arpaları biçmeye başladık havalar çok ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Susuzluktan belimiz koptu tarlada.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Buğday da sararıyo haftaya ona giricez.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Irgatlık çok zor adam kalmadı köyde herkez gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen orda askerliğini bil işine bak aklın burda kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Komutanın sözünden çıkma tayınını ziyan etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ahmet emminin tarlaya da ben gidiyom yevmiyeyle borçları kapamak için.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geceleri üstünü ört hasta olma aklımı alma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köyün derdi bitmeyo sen orda sağ kal bana yeter.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bana çabuk kâğıt yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Şadiye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Bursalı Zeki'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şadiye Hanım, Bursalı, 50, ırgat (Bursa, Mihalıç kazası, Kavak karyesi)\nAlıcı: Oğlu Er Zeki, cephede\nYön: cepheye\nTarih: 7 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 73",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şadiye",
+        "gender": "kadın",
+        "age": 50,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": "ırgat",
+        "epithet": "Bursalı",
+        "place": "Mihalıç kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Zeki",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mihalıç kazası, Kavak karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 73,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "7 Haziran 1331",
+      "home_address": "Bursa, Mihalıç kazası, Kavak karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:42+00:00",
+    "tokens": {
+      "input": 5625,
+      "output": 2754
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kavak, 7 Haziran 1331\nHİTAP: Oğlum Zeki'ye\nGÖVDE: Mektubun geldi okudum. Dün arpaları biçmeye başladık havalar çok ısındı. Susuzluktan belimiz koptu tarlada. Buğday da sararıyo haftaya ona giricez. Irgatlık çok zor adam kalmadı köyde herkez gitti. Sen orda askerliğini bil işine bak aklın burda kalmasın. Komutanın sözünden çıkma tayınını ziyan etme. Ahmet emminin tarlaya da ben gidiyom yevmiyeyle borçları kapamak için. Geceleri üstünü ört hasta olma aklımı alma. Köyün derdi bitmeyo sen orda sağ kal bana yeter. Bana çabuk kâğıt yolla.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Şadiye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Bursalı Zeki'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "73 kelime, hedef 73 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4776,
+      "output": 2787
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Metinde 'komutan' gibi modern bir kelime kullanılmış, bunun dışında dönemin köylü dili başarıyla yansıtılmış.",
+      "olculuk": "Duygular ismen zikredilmemiş, metafor kullanılmamış ve doğrudan, net bir anlatım tercih edilmiş.",
+      "okuryazarlik": "Kısa cümleler, noktalama eksiklikleri ve 'herkez', 'sararıyo', 'bitmeyo' gibi bilinçli hatalar düşük okuryazarlığa tam uyuyor.",
+      "somutluk": "Arpa hasadı, buğdayın sararması, Ahmet emminin tarlası, yevmiye ve tayın gibi son derece somut detaylar içeriyor.",
+      "sadakat": "İstenen sert ve emredici ton, ekin konusu, gizlenen bilgi ve kelime sayısı (73 kelime) kusursuz şekilde karşılanmış.",
+      "sahicilik": "Çalışmaktan yorulmuş, sert mizaçlı bir köylü ananın endişesini emir kipleriyle yansıtması mektubu çok gerçekçi kılmış."
+    },
+    "issues": [
+      {
+        "line": "Komutanın sözünden çıkma tayınını ziyan etme.",
+        "problem": "'Komutan' modern bir sözcüktür; 1915 yılında askerler ve halk 'kumandan' veya 'zabit' kelimelerini kullanırdı.",
+        "suggestion": "Kumandanın sözünden çıkma tayınını ziyan etme."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:42+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

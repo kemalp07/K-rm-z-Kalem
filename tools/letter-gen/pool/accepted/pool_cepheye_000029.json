@@ -1,0 +1,271 @@
+{
+  "id": "pool_cepheye_000029",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şerife",
+    "epithet": "Aydınlı",
+    "age": 32,
+    "hometown": "Aydın",
+    "occupation": "ırgat",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Cafer",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 86,
+  "hand": "dictated",
+  "header": {
+    "text": "Kocaköy, 3 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kocam Cafer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Geçenki mektubunu okuttum, sağ olasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim hâlimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Küçük Hasan artık ayaklandı, kedi peşinden avluya kadar kendi iniyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ayşe kızın da büyüdü, çeşmeden suyu o taşıyor, ikisi de ellerinden öperler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Cafer, şu Kör Salih’e olan borcun vadesi geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Her gün laf ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ne yapacağız, bu borcu nasıl kapatacağız bana bir yol göster.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Birkaç kuruş yollayabilir misin yoksam nasıl edelim?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sen dert etme de bir akıl ver.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İncirler yapraklandı, buraların sıcağı bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kendini esirge, oralarda üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Hepimiz yolunu gözleriz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Şerife"
+  },
+  "note": {
+    "text": "İşbu mektubu Şerife teyzenin ağzından ben yazdım. Mektepli Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Aydınlı Cafer'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şerife Hanım, Aydınlı, 32, ırgat (Aydın, Nazilli kazası, Kocaköy karyesi)\nAlıcı: Kocası Onbaşı Cafer, cephede\nYön: cepheye\nTarih: 3 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: borcun ödenmesi için ne yapılacağı\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 86",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şerife",
+        "gender": "kadın",
+        "age": 32,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": "ırgat",
+        "epithet": "Aydınlı",
+        "place": "Nazilli kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Cafer",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Nazilli kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "borcun ödenmesi için ne yapılacağı",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 86,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "3 Mayıs 1331",
+      "home_address": "Aydın, Nazilli kazası, Kocaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5702,
+      "output": 2670
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Kocaköy, 3 Mayıs 1331\nHİTAP: Kocam Cafer'e\nGÖVDE: Geçenki mektubunu okuttum, sağ olasın. Bizim hâlimizi sorarsan şükür ayaktayız. Küçük Hasan artık ayaklandı, kedi peşinden avluya kadar kendi iniyor. Ayşe kızın da büyüdü, çeşmeden suyu o taşıyor, ikisi de ellerinden öperler. Cafer, şu Kör Salih’e olan borcun vadesi geldi çattı. Her gün laf ediyor. Ne yapacağız, bu borcu nasıl kapatacağız bana bir yol göster. Birkaç kuruş yollayabilir misin yoksam nasıl edelim? Sen dert etme de bir akıl ver. İncirler yapraklandı, buraların sıcağı bastırdı. Kendini esirge, oralarda üşütme. Hepimiz yolunu gözleriz.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Şerife)\nNOT: İşbu mektubu Şerife teyzenin ağzından ben yazdım. Mektepli Ali.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Aydınlı Cafer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 86 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:01:32+00:00",
+    "tokens": {
+      "input": 4846,
+      "output": 3387
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme ait kelimeler ve ifadeler (vadesi geldi çattı, yoksam, esirge) başarıyla kullanılmış, modern sözcüklere yer verilmemiştir.",
+      "olculuk": "Duygular isimlendirilmeden, 'sen dert etme de bir akıl ver' gibi eylemler ve somut durumlar üzerinden son derece ölçülü bir şekilde aktarılmıştır.",
+      "okuryazarlik": "Mektubun mektepli bir çocuğa yazdırıldığı, hem sona eklenen nottan hem de kadının kaba sesini koruyan ama nispeten düzgün kurulan cümle yapısından anlaşılmaktadır.",
+      "somutluk": "Kedinin peşinden avluya inen çocuk, çeşmeden su taşıyan kız ve yapraklanan incirler gibi çok güçlü ve döneme uygun somut detaylar barındırıyor.",
+      "sadakat": "Tarlanın elden gittiği gerçeği ustaca saklanarak borç için akıl danışılmış, istenen tüm parametrelere (uzunluk, yön, konu, mühür kullanımı) tam uyulmuştur.",
+      "sahicilik": "Bir Anadolu kadınının çocuklarının gündelik hâllerinden bahsedip ardından borç sıkıntısına geçmesi ve kocasını sakınması son derece doğal ve sahici hissettiriyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:01:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

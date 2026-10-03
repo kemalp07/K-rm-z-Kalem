@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000031",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Elif",
+    "epithet": "Kastamonulu",
+    "age": 30,
+    "hometown": "Kastamonu",
+    "occupation": "ev hanımı",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Hakkı",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 77,
+  "hand": "careful",
+  "header": {
+    "text": "Kurtköy, 9 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendime,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kaç vakittir sizden bir kâğıt gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gözüm yollarda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Babam geçen gün Tosya'ya indi, dönerken kahvede epey oturmuş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Akşam eve gelince yüzü asıktı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Askerin yolu uzun olur, beklemekle ömür geçmez dedi anama.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Benim içim daraldı ama bir şey diyemedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ne olur fırsat bulursan babama bir selam yolla, yahut köyden birine bir kâğıt yaz da sağ olduğunu bilsinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Araya soğukluk girmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sandıktaki oyaları çıkardım, bakıp dururum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Güzden beri dokuduğum kilim de yarım kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Allah rızası için tez cevap gönder.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olasın.",
+  "signature": {
+    "text": "Elif"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kastamonulu Hakkı'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Elif Hanım, Kastamonulu, 30, ev hanımı (Kastamonu, Tosya kazası, Kurtköy karyesi)\nAlıcı: Nişanlısı Çavuş Hakkı, cephede\nYön: cepheye\nTarih: 9 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: utangaç, karısına adıyla seslenemez\nKonu: nişanın bozulması tehlikesi\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Elif",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": "ev hanımı",
+        "epithet": "Kastamonulu",
+        "place": "Tosya kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Hakkı",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tosya kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "9 Mayıs 1331",
+      "home_address": "Kastamonu, Tosya kazası, Kurtköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7001,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T14:45:43+00:00",
+    "tokens": {
+      "input": 5636,
+      "output": 2565
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kurtköy, 9 Mayıs 1331\nHİTAP: Efendime,\nGÖVDE: Kaç vakittir sizden bir kâğıt gelmedi. Gözüm yollarda kaldı. Babam geçen gün Tosya'ya indi, dönerken kahvede epey oturmuş. Akşam eve gelince yüzü asıktı. Askerin yolu uzun olur, beklemekle ömür geçmez dedi anama. Benim içim daraldı ama bir şey diyemedim. Ne olur fırsat bulursan babama bir selam yolla, yahut köyden birine bir kâğıt yaz da sağ olduğunu bilsinler. Araya soğukluk girmesin. Sandıktaki oyaları çıkardım, bakıp dururum. Güzden beri dokuduğum kilim de yarım kaldı. Allah rızası için tez cevap gönder.\nKAPANIŞ: Allah'a emanet olasın.\nİMZA: Elif\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kastamonulu Hakkı'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 77 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.1-pro-preview",
+    "reviewed_at": "2026-10-03T15:25:13+00:00",
+    "tokens": {
+      "input": 4793,
+      "output": 2767
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Genel olarak döneme uygun olsa da, kural gereği köylü karakterlerin kullanmaması gereken 'yahut' kelimesi geçmektedir.",
+      "olculuk": "Duygular adlandırılmadan, çeyizlik eşyalar ve babanın sözleri üzerinden çok ölçülü bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Orta seviye okuryazarlığa uygun, düzgün ama sade bir cümle yapısı kullanılmış.",
+      "somutluk": "Tosya'daki kahve, sandıktaki oyalar ve yarım kalan kilim gibi çok başarılı somut detaylar barındırıyor.",
+      "sadakat": "İstenen konu, saklanan bilgi, uzunluk ve utangaç ses tonu mektuba kusursuzca yansıtılmış.",
+      "sahicilik": "Nişanın bozulma tehlikesi karşısında duyulan çaresizlik, köylü bir genç kızın ağzından son derece sahici verilmiş."
+    },
+    "issues": [
+      {
+        "line": "Ne olur fırsat bulursan babama bir selam yolla, yahut köyden birine bir kâğıt yaz da sağ olduğunu bilsinler.",
+        "problem": "Kılavuzda köylü karakterler için açıkça yasaklanan 'yahut' kelimesi kullanılmış.",
+        "suggestion": "Ne olur fırsat bulursan babama bir selam yolla, ya da köyden birine bir kâğıt yaz da sağ olduğunu bilsinler."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T14:45:43+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T15:25:13+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}
