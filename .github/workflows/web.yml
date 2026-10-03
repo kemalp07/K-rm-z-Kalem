@@ -33,6 +33,8 @@ jobs:
         env:
           # Pages serves the site under /<repository>/
           EXPO_WEB_BASE_URL: /${{ github.event.repository.name }}
+          # Shown with ?debug, to tell which build a browser is running
+          EXPO_PUBLIC_BUILD: ${{ github.sha }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

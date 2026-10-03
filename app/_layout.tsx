@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { DebugOverlay } from '../src/platform/DebugOverlay';
 import { prepareSkia } from '../src/platform/prepareSkia';
 
 export default function RootLayout() {
@@ -22,6 +23,7 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: '#141c2a' }}>
       <StatusBar hidden />
       {ready && <Stack screenOptions={{ headerShown: false, animation: 'none' }} />}
+      <DebugOverlay />
     </GestureHandlerRootView>
   );
 }
