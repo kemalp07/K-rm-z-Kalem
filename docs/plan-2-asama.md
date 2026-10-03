@@ -53,9 +53,11 @@ Satırın üstünden geçmek eskisi gibi karalamaktır; ikisini çizginin şekli
 - Daire bir sahtelik noktasını (mühür, tarih, damga, pul, bir kelime) içine alıyorsa
   `mektup:işaretlendi:hedef` bayrağı oluşur; sonuçlar bundan sonra "büyüteçle baktı"
   yerine buna bakar.
-- Masum bir yeri işaretlemek bayrak üretmez; ama işaretli mektubu İSTİHBARAT'a vermek
+- Masum bir yeri işaretlemek bayrak üretmez; işaretli mektubu İSTİHBARAT'a vermek
   sonuç doğurur (yanlış kişi sorgulanır, gazetede görünür).
-- Gün sonu defterinde: "mühür işaretlendi".
+- Gün sonu defteri her işareti söyler: doğruysa "mühür işaretlendi", yanlışsa **uyarı**:
+  "Hatice Hanım'ın mektubunda tarih işaretlendi; tarih doğruydu." Oyuncu neyi yanlış
+  yaptığını görür ve bir sonrakinde talimatnameye daha dikkatli bakar.
 
 ---
 
@@ -98,8 +100,15 @@ taslak yazarım, sen düzeltirsin; casus mektuplarını (gizli katmanlı) ben el
 ### C1. Görünüş
 
 Her sabah (gün 2'den itibaren) masada katlanmış gazete (`newspaper_folded`); dokununca tek
-sayfa açılır (`newspaper_page`). Gerçek bir gazeteyi taklit etmeyen uydurma bir ad.
-Başlık bandı: ad, Rumi + Miladi tarih, "10 para". Dört sütun:
+sayfa açılır (`newspaper_page`). Adı: ***Ceride-i Havadis-i Harbiye*** (1915'te böyle bir
+gazete yok; 1840'ların "Ceride-i Havadis"ini anımsatan, dönem usulü bir ad).
+Başlık bandı: ad, Rumi + Miladi tarih, "10 para".
+
+**Üslup:** başlıklar ve kalıplar ağır dönem dili ("Harbiye Nezaret-i Celilesinin
+Tebliğidir", "Vefeyat", "İlânât", "Havadis-i Dâhiliye"); haberlerin gövdesi bugün de okunur
+ama eski kelimelerle ("fiat", "vapur-ı mezkûr", "dün akşam", "malûmat alınmıştır").
+
+Dört sütun:
 
 1. **Harp tebliği** — resmî ağızdan kısa haber; bazı satırları sansürden **karartılmış** basılır.
 2. **Şehir ve memleket** — ekmek/şeker fiyatı, vapur seferi, yangın, okullar.
@@ -151,13 +160,12 @@ gönderene göre seçer: asker → üçgen ya da kaba kâğıt, kumpanya → ant
 
 Hepsi hazır (`assets/art/source/`); her biri kendi parçasıyla kesilip yerleştirilir.
 
-## Senden kararlar
+## Kararlar
 
-1. **Gün sayısı:** 15 oynanabilir gün uygun mu?
-2. **Gazetenin adı:** önerim *Boğaz Postası*; başka bir ad ister misin?
-3. **Ana hikâye:** aile hatlarının mektuplarını ben taslak yazayım, sen düzelt — olur mu?
-4. **Yanlış işaretleme:** masum bir yeri daire içine almak sadece boşa mı gitsin (önerim),
-   yoksa gün sonunda bir uyarı mı yazsın?
+1. **Gün sayısı:** 15 oynanabilir gün.
+2. **Gazete:** *Ceride-i Havadis-i Harbiye*; başlıklar ağır dönem dili, haberler sade.
+3. **Ana hikâye:** aile hatlarının mektuplarını ben taslak yazarım, sen düzeltirsin.
+4. **Yanlış işaretleme:** gün sonu defterinde uyarı.
 
 ## İleride
 
