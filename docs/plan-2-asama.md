@@ -82,8 +82,10 @@ takvim yaprağı atlar). Her gün: **3 ana hikâye mektubu + 2–3 yan mektup**.
 | 13 | Kardan ızgarası | Kartı mektubun üstüne oturt; delikler gizli kelimeleri seçer (delikleri kod, kelimelerin yerine göre keser) | Izgaralı mektuplar (elle yazılır) |
 | 15 | Şifre çarkı | İç diski çevir; şifreli satırı çöz. Anahtar başka bir mektupta ya da **gazete ilanında** | Şifreli satır + anahtar |
 
-Her alet geldiği gün kendi talimat kâğıdıyla gelir (sistem hazır) ve talimatnameye ek
-sayfası yapışır. Kilitli tepsideki üç siluet (ızgara, çark, kod kitabı) sırası gelince açılır.
+Aletler **sırayla** gelir; hiçbiri baştan masada değildir. Her alet geldiği gün kendi
+talimat kâğıdıyla gelir (sistem hazır) ve talimatnameye ek sayfası yapışır. Defterin
+sayfaları da böyle gün gün eklenir (ayrıntı: `docs/talimatname-taslak.md`); bir kural
+defterde yokken ona dayanan sahtelik masaya gelmez. Kilitli tepsideki üç siluet (ızgara, çark, kod kitabı) sırası gelince açılır.
 
 ### B3. Ana hikâye mektupları
 
