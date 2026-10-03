@@ -122,6 +122,8 @@ export interface Day {
   purse: { kurus: number; line: string };
   /** Order envelopes sit in the stack, top first. */
   letters: Letter[];
+  /** How many one-off side letters (content/pool_letters.json) join the day's stack. */
+  sideLetters?: number;
 }
 
 export interface Desk {

@@ -3,6 +3,7 @@ import threadsJson from '../../content/threads.json';
 import deskJson from '../../content/desk.json';
 import helpJson from '../../content/help.json';
 import type { Day, Desk, HelpId, HelpSheet, Letter, Thread } from './types';
+import { getPoolLetter, poolLetters } from './pool';
 import { validateDay } from './validate';
 
 // JSON imports are typed loosely by TS; the validator below is what keeps them honest.
@@ -28,8 +29,11 @@ export function getLetter(id: string): Letter | undefined {
     const found = day.letters.find((l) => l.id === id);
     if (found) return found;
   }
-  return undefined;
+  return getPoolLetter(id);
 }
+
+/** Side letters the day may draw from: id and the date each was written. */
+export const sideLetterCandidates = poolLetters.map((l) => ({ id: l.id, date: String(l.meta?.date ?? '') }));
 
 if (__DEV__) {
   for (const day of Object.values(days)) {

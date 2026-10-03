@@ -15,11 +15,12 @@ export interface DayState {
   letters: Record<string, LetterProgress>;
 }
 
-export function startDay(day: Day, previous?: DayState): DayState {
+/** `stack` overrides the order (top first), e.g. with side letters mixed in. */
+export function startDay(day: Day, previous?: DayState, stack?: string[]): DayState {
   return {
     day: day.day,
     phase: 'desk',
-    stack: day.letters.map((l) => l.id),
+    stack: stack ?? day.letters.map((l) => l.id),
     done: [],
     // Earlier days' letters stay in the record; their flags shape later content.
     letters: { ...(previous?.letters ?? {}) },

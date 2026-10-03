@@ -1,7 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { getDay } from '../content/loader';
+import { getDay, sideLetterCandidates } from '../content/loader';
+import { mixIntoStack, pickSideLetters } from '../logic/sideLetters';
 import type { Decision, HelpId } from '../content/types';
 import { addMark, advancePhase, clearCensor, decide, openEnvelope, startDay, type DayState } from '../logic/dayFlow';
 
@@ -29,7 +30,11 @@ interface GameStore {
 const firstDay = (): DayState => {
   const day = getDay(1);
   if (!day) throw new Error('content/day01.json is missing');
-  return startDay(day);
+  // A new desk each game: which side letters come, and where in the pile, is drawn here
+  // once and then saved with the day.
+  const seed = (Date.now() ^ Math.floor(Math.random() * 0x7fffffff)) >>> 0;
+  const side = pickSideLetters(sideLetterCandidates, day.calendar.rumi, day.sideLetters ?? 0, seed);
+  return startDay(day, undefined, mixIntoStack(day.letters.map((l) => l.id), side, seed));
 };
 
 export const useGame = create<GameStore>()(

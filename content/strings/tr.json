@@ -3,7 +3,6 @@
   "decision.held": "BEKLET",
   "decision.stopped": "DURDUR",
   "decision.reported": "İSTİHBARAT",
-
   "ledger.delivered": "iletildi",
   "ledger.held": "bekletildi",
   "ledger.stopped": "durduruldu",
@@ -13,16 +12,22 @@
   "ledger.route": "{from} — {to}",
   "ledger.dayLine": "{rumi} — {weekday}",
   "ledger.close": "Defteri kapat",
-
   "envelope.package": "Paket",
-
   "tray.locked": "Henüz zimmetlenmedi",
-
   "continue.day": "{day}. Gün",
   "continue.text": "devam edecek",
   "continue.restart": "Baştan başla",
-
   "web.rotate": "Telefonu yan çevir",
-
-  "help.close": "kapatmak için dokun"
+  "help.close": "kapatmak için dokun",
+  "pool.outcome.reported": "{sender} için Şube'de bir dosya açıldı.",
+  "pool.outcome.stopped": "{recipient} beklediği mektubu alamayacak.",
+  "pool.outcome.held": "Mektup bir gece daha çekmecede bekleyecek.",
+  "pool.outcome.deliveredLeak": "Mektup yola çıktı; içindeki satırı postada başkaları da okuyacak.",
+  "pool.outcome.deliveredCensored": "{recipient} mektubu karalı satırların arasından okuyacak.",
+  "pool.outcome.delivered": "{recipient} mektubu okuyacak.",
+  "pool.from.front": "Ordu-yı Hümayun",
+  "pool.to.front": "Ordu-yı Hümayun",
+  "pool.woman": "{name} Hanım",
+  "pool.note": "Not: {text}",
+  "pool.seal": "{name} (mühür)"
 }

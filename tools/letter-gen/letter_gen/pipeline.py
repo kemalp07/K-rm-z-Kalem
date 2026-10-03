@@ -184,7 +184,7 @@ async def review_pending(
     ]
     system = review_mod.system_prompt(src.card, src.lore)
 
-    async def one(rec: dict[str, Any]):
+    async def one(rec: dict[str, Any]) -> None:
         try:
             reply = await runner.call(
                 model=model_name,
@@ -197,19 +197,17 @@ async def review_pending(
             data = review_mod.parse_reply(reply.text)
         except Exception as e:  # noqa: BLE001
             progress(f"✗ inceleme {rec['id']}: {e}")
-            return rec, None, None, str(e)
-        progress(f"✓ inceleme {rec['id']}")
-        return rec, data, reply, None
-
-    for rec, data, reply, err in await asyncio.gather(*(one(x) for x in todo)):
-        if err:
-            res.errors.append(f"{rec['id']}: {err}")
-            continue
+            res.errors.append(f"{rec['id']}: {e}")
+            return
+        # Saved as soon as it comes back: a long run cut short keeps what it has done.
         rec["review"] = {"model": model_name, "reviewed_at": record_mod.now(), "tokens": reply.usage.to_dict(), **data}
         status = review_mod.status_for(data["scores"], r["accept_min"], r["reject_max"])
         record_mod.set_status(rec, status, "auto", "eleştirmen")
         pool.save(rec)
         res.records.append(rec)
+        progress(f"✓ inceleme {rec['id']}")
+
+    await asyncio.gather(*(one(x) for x in todo))
     res.review_usage = runner.usage
     return res
 

@@ -11,7 +11,18 @@ _DROP = ("meta", "checks", "review", "status", "parse_error", "history", "length
 
 
 def to_game(rec: dict[str, Any]) -> dict[str, Any]:
-    return {k: v for k, v in rec.items() if k not in _DROP}
+    out = {k: v for k, v in rec.items() if k not in _DROP}
+    # A few request facts the game needs: when it was written (to fit the day), and who is
+    # a woman (for "Hanım" on the envelope).
+    req = (rec.get("meta") or {}).get("request_fields") or {}
+    out["date"] = req.get("date", "")
+    out["sender"] = {**rec["sender"], "gender": (req.get("sender") or {}).get("gender")}
+    out["recipient"] = {
+        **rec["recipient"],
+        "gender": (req.get("recipient") or {}).get("gender"),
+        "age": (req.get("recipient") or {}).get("age"),
+    }
+    return out
 
 
 def export(records: list[dict[str, Any]], out: Path) -> int:

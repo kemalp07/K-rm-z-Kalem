@@ -11,6 +11,7 @@
     "kurus": 37,
     "line": "Ay başına dek — 37 kuruş"
   },
+  "sideLetters": 2,
   "letters": [
     {
       "id": "d1_mehmet",
@@ -26,26 +27,106 @@
       "dateLine": "9 Mayıs 331",
       "heading": "Muhterem validem,",
       "segments": [
-        { "id": "s1", "kind": "normal", "text": "Gönderdiğiniz çorapları aldım. Ayaklarım ilk defa kuru, Allah razı olsun." },
-        { "id": "s2", "kind": "normal", "text": "Burada havalar ısındı, sinek çok. Biz iyiyiz, merak etmeyin." },
-        { "id": "s3", "kind": "sensitive", "text": "Bizi yine kuzeydeki sırta, ikinci hatta aldılar." },
-        { "id": "s4", "kind": "hiddenInk", "revealBy": "mum", "text": "pazartesi gece · iskeleden üç kayık · fener ikinci" },
-        { "id": "s5", "kind": "normal", "text": "Babama selam söyleyin. Bağı bu sene kim budayacak, merak ederim." },
-        { "id": "s6", "kind": "normal", "text": "Ayşe'nin gözlerinden öperim. Duanızı eksik etmeyin." }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Gönderdiğiniz çorapları aldım. Ayaklarım ilk defa kuru, Allah razı olsun."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Burada havalar ısındı, sinek çok. Biz iyiyiz, merak etmeyin."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Bizi yine kuzeydeki sırta, ikinci hatta aldılar."
+        },
+        {
+          "id": "s4",
+          "kind": "hiddenInk",
+          "revealBy": "mum",
+          "text": "pazartesi gece · iskeleden üç kayık · fener ikinci"
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Babama selam söyleyin. Bağı bu sene kim budayacak, merak ederim."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Ayşe'nin gözlerinden öperim. Duanızı eksik etmeyin."
+        }
       ],
       "signature": "Oğlunuz Mehmet",
       "inspectables": [
-        { "id": "date", "target": "date", "note": "Tarih kurşun kalemle atılmış, sonra üstünden mürekkeple geçilmiş. Siperde mürekkep bulmak kolay değil." }
+        {
+          "id": "date",
+          "target": "date",
+          "note": "Tarih kurşun kalemle atılmış, sonra üstünden mürekkeple geçilmiş. Siperde mürekkep bulmak kolay değil."
+        }
       ],
-      "marks": [{ "kind": "mud" }],
+      "marks": [
+        {
+          "kind": "mud"
+        }
+      ],
       "outcomes": [
-        { "when": { "all": ["d1_mehmet:reported", "d1_mehmet:revealed:s4"] }, "text": "Mehmet'in mektubu Şube'ye gitti. Sabaha karşı bölüğe iki subay gelecek." },
-        { "when": { "all": ["d1_mehmet:reported"] }, "text": "Mehmet'in mektubu Şube'ye gitti. Neden gittiğini Mehmet hiç öğrenmeyecek." },
-        { "when": { "all": ["d1_mehmet:stopped"] }, "text": "Hatice Hanım bu hafta da postacının yolunu gözleyecek." },
-        { "when": { "all": ["d1_mehmet:held"] }, "text": "Mehmet'in mektubu bir gece daha çekmecede bekleyecek." },
-        { "when": { "all": ["d1_mehmet:delivered", "d1_mehmet:revealed:s4"] }, "text": "Satır aralarındaki mürekkep Sivas yoluna çıktı. Onu kimin okuyacağı belli değil." },
-        { "when": { "all": ["d1_mehmet:delivered", "d1_mehmet:censored"] }, "text": "Hatice Hanım oğlundan kısa bir mektup alacak." },
-        { "text": "Hatice Hanım oğlunun mektubunu komşuya okutacak." }
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:reported",
+              "d1_mehmet:revealed:s4"
+            ]
+          },
+          "text": "Mehmet'in mektubu Şube'ye gitti. Sabaha karşı bölüğe iki subay gelecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:reported"
+            ]
+          },
+          "text": "Mehmet'in mektubu Şube'ye gitti. Neden gittiğini Mehmet hiç öğrenmeyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:stopped"
+            ]
+          },
+          "text": "Hatice Hanım bu hafta da postacının yolunu gözleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:held"
+            ]
+          },
+          "text": "Mehmet'in mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:delivered",
+              "d1_mehmet:revealed:s4"
+            ]
+          },
+          "text": "Satır aralarındaki mürekkep Sivas yoluna çıktı. Onu kimin okuyacağı belli değil."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_mehmet:delivered",
+              "d1_mehmet:censored"
+            ]
+          },
+          "text": "Hatice Hanım oğlundan kısa bir mektup alacak."
+        },
+        {
+          "text": "Hatice Hanım oğlunun mektubunu komşuya okutacak."
+        }
       ]
     },
     {
@@ -62,23 +143,78 @@
       "dateLine": "Pazar akşamı",
       "heading": "Nuri'ciğim,",
       "segments": [
-        { "id": "s1", "kind": "normal", "text": "Kalbim, bu satırları yazarken pencereden körfeze bakıyorum." },
-        { "id": "s2", "kind": "normal", "text": "Akşamları annenle oturup senin için dua ediyoruz." },
-        { "id": "s3", "kind": "normal", "text": "Yasemin bu yıl erken açtı; bir dalını kurutup zarfa koydum." },
-        { "id": "s4", "kind": "normal", "text": "Işıklar söndükten sonra mektuplarını yeniden okuyorum." },
-        { "id": "s5", "kind": "normal", "text": "Kına gecemizi düşünmekten başka bir şey gelmiyor elimden." },
-        { "id": "s6", "kind": "normal", "text": "Seni bekliyorum. Her gün, her akşam." }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Kalbim, bu satırları yazarken pencereden körfeze bakıyorum."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Akşamları annenle oturup senin için dua ediyoruz."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Yasemin bu yıl erken açtı; bir dalını kurutup zarfa koydum."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Işıklar söndükten sonra mektuplarını yeniden okuyorum."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Kına gecemizi düşünmekten başka bir şey gelmiyor elimden."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Seni bekliyorum. Her gün, her akşam."
+        }
       ],
       "signature": "Saadet",
       "inspectables": [
-        { "id": "date", "target": "date", "note": "Tarih yok. Yalnızca 'Pazar akşamı' yazılmış." }
+        {
+          "id": "date",
+          "target": "date",
+          "note": "Tarih yok. Yalnızca 'Pazar akşamı' yazılmış."
+        }
       ],
-      "marks": [{ "kind": "jasmine" }],
+      "marks": [
+        {
+          "kind": "jasmine"
+        }
+      ],
       "outcomes": [
-        { "when": { "all": ["d1_saadet:reported"] }, "text": "Bir aşk mektubu Şube'nin dosyalarına girdi. Ne aradığını kimse sormadı." },
-        { "when": { "all": ["d1_saadet:stopped"] }, "text": "Saadet cevap gelmeyince bir mektup daha yazacak." },
-        { "when": { "all": ["d1_saadet:held"] }, "text": "Kurumuş yasemin bir gece daha masanda kalacak." },
-        { "text": "Nuri Efendi mektubu göğüs cebinde taşıyacak." }
+        {
+          "when": {
+            "all": [
+              "d1_saadet:reported"
+            ]
+          },
+          "text": "Bir aşk mektubu Şube'nin dosyalarına girdi. Ne aradığını kimse sormadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_saadet:stopped"
+            ]
+          },
+          "text": "Saadet cevap gelmeyince bir mektup daha yazacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_saadet:held"
+            ]
+          },
+          "text": "Kurumuş yasemin bir gece daha masanda kalacak."
+        },
+        {
+          "text": "Nuri Efendi mektubu göğüs cebinde taşıyacak."
+        }
       ],
       "meta": {
         "acrostic": {
@@ -107,20 +243,79 @@
       "dateLine": "Mayıs 331",
       "heading": "Emine,",
       "segments": [
-        { "id": "s1", "kind": "normal", "text": "Ben Rıza. Bu mektubu bölükten Hasan yazıyor, ben söylüyorum." },
-        { "id": "s2", "kind": "normal", "text": "Sağım, merak etme. Çocukların başını benim yerime okşa." },
-        { "id": "s3", "kind": "sensitive", "text": "Ekmek gün aşırı geliyor, o da yarım somun. Çadırda ishalden yatan çok, ikisini dün gömdük." },
-        { "id": "s4", "kind": "normal", "text": "Kerim Ağa'ya söyle, bahçenin duvarı yıkılmadan bir el atsın." },
-        { "id": "s5", "kind": "normal", "text": "Ne zaman biter bilen yok. Sen dua et, gerisi Allah'ın." }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Ben Rıza. Bu mektubu bölükten Hasan yazıyor, ben söylüyorum."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Sağım, merak etme. Çocukların başını benim yerime okşa."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Ekmek gün aşırı geliyor, o da yarım somun. Çadırda ishalden yatan çok, ikisini dün gömdük."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Kerim Ağa'ya söyle, bahçenin duvarı yıkılmadan bir el atsın."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Ne zaman biter bilen yok. Sen dua et, gerisi Allah'ın."
+        }
       ],
       "signature": "Rıza — Hasan eliyle",
-      "marks": [{ "kind": "thumb" }, { "kind": "thumb", "near": "s3" }],
+      "marks": [
+        {
+          "kind": "thumb"
+        },
+        {
+          "kind": "thumb",
+          "near": "s3"
+        }
+      ],
       "outcomes": [
-        { "when": { "all": ["d1_riza:reported"] }, "text": "Rıza'nın adı bir deftere yazıldı. Hasan'ın adı da." },
-        { "when": { "all": ["d1_riza:stopped"] }, "text": "Emine Hanım kocasından haber alamayacak. Eyüp'te herkes bir şey söyleyecek." },
-        { "when": { "all": ["d1_riza:held"] }, "text": "Rıza'nın sözleri bir gece daha çekmecede bekleyecek." },
-        { "when": { "all": ["d1_riza:delivered", "d1_riza:censored"] }, "text": "Emine Hanım kocasının sağ olduğunu öğrenecek. Başka bir şey öğrenmeyecek." },
-        { "text": "Emine Hanım mektubu mahallede okutacak. Ekmek lafı kapı kapı dolaşacak." }
+        {
+          "when": {
+            "all": [
+              "d1_riza:reported"
+            ]
+          },
+          "text": "Rıza'nın adı bir deftere yazıldı. Hasan'ın adı da."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_riza:stopped"
+            ]
+          },
+          "text": "Emine Hanım kocasından haber alamayacak. Eyüp'te herkes bir şey söyleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_riza:held"
+            ]
+          },
+          "text": "Rıza'nın sözleri bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_riza:delivered",
+              "d1_riza:censored"
+            ]
+          },
+          "text": "Emine Hanım kocasının sağ olduğunu öğrenecek. Başka bir şey öğrenmeyecek."
+        },
+        {
+          "text": "Emine Hanım mektubu mahallede okutacak. Ekmek lafı kapı kapı dolaşacak."
+        }
       ]
     },
     {
@@ -137,23 +332,83 @@
       "dateLine": "12 Mayıs 1331",
       "heading": "Gözümün nuru Mehmet'im,",
       "items": [
-        { "id": "corap", "name": "Yün çorap", "note": "İkinci çift. Topukları iki kat örülmüş." },
-        { "id": "dut", "name": "Kuru dut", "note": "Bir avuç, bez keseye sarılmış." }
+        {
+          "id": "corap",
+          "name": "Yün çorap",
+          "note": "İkinci çift. Topukları iki kat örülmüş."
+        },
+        {
+          "id": "dut",
+          "name": "Kuru dut",
+          "note": "Bir avuç, bez keseye sarılmış."
+        }
       ],
       "segments": [
-        { "id": "s1", "kind": "normal", "text": "Çorapların ikinci çiftini ördüm, dutları da avludaki ağaçtan topladım." },
-        { "id": "s2", "kind": "sensitive", "text": "Baban geçen cuma vefat etti. Sabah namazından sonra uzandı, uyanmadı." },
-        { "id": "s3", "kind": "normal", "text": "Bağı bu sene komşu Osman budayacak, sen aklını yorma." },
-        { "id": "s4", "kind": "normal", "text": "Ayşe büyüdü, her akşam seni soruyor. Soğuk sudan uzak dur." }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Çorapların ikinci çiftini ördüm, dutları da avludaki ağaçtan topladım."
+        },
+        {
+          "id": "s2",
+          "kind": "sensitive",
+          "text": "Baban geçen cuma vefat etti. Sabah namazından sonra uzandı, uyanmadı."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Bağı bu sene komşu Osman budayacak, sen aklını yorma."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Ayşe büyüdü, her akşam seni soruyor. Soğuk sudan uzak dur."
+        }
       ],
       "signature": "Anan Hatice",
-      "marks": [{ "kind": "tear", "near": "s2" }],
+      "marks": [
+        {
+          "kind": "tear",
+          "near": "s2"
+        }
+      ],
       "outcomes": [
-        { "when": { "all": ["d1_hatice:reported"] }, "text": "Bir annenin paketi Şube'ye gitti. Dutlar orada kuruyacak." },
-        { "when": { "all": ["d1_hatice:stopped"] }, "text": "Mehmet çoraplarını bekleyecek. Babasını hâlâ sağ sanacak." },
-        { "when": { "all": ["d1_hatice:held"] }, "text": "Paket bir gece daha masanın altında bekleyecek." },
-        { "when": { "all": ["d1_hatice:delivered", "d1_hatice:censored:s2"] }, "text": "Mehmet çoraplarını giyecek. Bağı neden Osman'ın budadığını anlamayacak." },
-        { "text": "Mehmet babasının haberini siperde, çoraplar elinde okuyacak." }
+        {
+          "when": {
+            "all": [
+              "d1_hatice:reported"
+            ]
+          },
+          "text": "Bir annenin paketi Şube'ye gitti. Dutlar orada kuruyacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_hatice:stopped"
+            ]
+          },
+          "text": "Mehmet çoraplarını bekleyecek. Babasını hâlâ sağ sanacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_hatice:held"
+            ]
+          },
+          "text": "Paket bir gece daha masanın altında bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_hatice:delivered",
+              "d1_hatice:censored:s2"
+            ]
+          },
+          "text": "Mehmet çoraplarını giyecek. Bağı neden Osman'ın budadığını anlamayacak."
+        },
+        {
+          "text": "Mehmet babasının haberini siperde, çoraplar elinde okuyacak."
+        }
       ]
     },
     {
@@ -171,26 +426,90 @@
       "dateLine": "3 Mayıs 1331",
       "heading": "Halil Efendi,",
       "segments": [
-        { "id": "s1", "kind": "normal", "text": "Siparişiniz olan on iki sandık kuru incir ile dört top bez hazırdır." },
-        { "id": "s2", "kind": "normal", "text": "Bedeli evvelce konuşulduğu gibidir; teslimat malum yerde yapılacaktır." },
-        { "id": "s3", "kind": "normal", "text": "Mallar pazartesi akşamı yola çıkacaktır." },
-        { "id": "s4", "kind": "normal", "text": "Hürmetlerimizle." }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Siparişiniz olan on iki sandık kuru incir ile dört top bez hazırdır."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Bedeli evvelce konuşulduğu gibidir; teslimat malum yerde yapılacaktır."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Mallar pazartesi akşamı yola çıkacaktır."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hürmetlerimizle."
+        }
       ],
       "seal": {
         "legend": "ŞARK TİCARET · GALATA",
         "color": "#5b2e4a"
       },
       "inspectables": [
-        { "id": "seal", "target": "seal", "anomaly": true, "note": "Mühür halkasındaki yazı ters kazınmış; baskı ayna gibi okunuyor. Bir kumpanya kendi mührünü böyle yaptırmaz." },
-        { "id": "date", "target": "date", "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış." }
+        {
+          "id": "seal",
+          "target": "seal",
+          "anomaly": true,
+          "note": "Mühür halkasındaki yazı ters kazınmış; baskı ayna gibi okunuyor. Bir kumpanya kendi mührünü böyle yaptırmaz."
+        },
+        {
+          "id": "date",
+          "target": "date",
+          "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış."
+        }
       ],
       "outcomes": [
-        { "when": { "all": ["d1_imzasiz:reported", "d1_imzasiz:inspected:seal"] }, "text": "Şube Galata'daki adresi arayacak. O adreste bir kumpanya yok." },
-        { "when": { "all": ["d1_imzasiz:reported"] }, "text": "Mektup Şube'ye gitti. İçinde incirden başka bir şey bulunmadı." },
-        { "when": { "all": ["d1_imzasiz:stopped"] }, "text": "Pazartesi akşamı bir yük yola çıkmayacak. Belki de çıkacak." },
-        { "when": { "all": ["d1_imzasiz:held"] }, "text": "Mühür bir gece daha masanda, ters yüzüyle duracak." },
-        { "when": { "all": ["d1_imzasiz:delivered", "d1_imzasiz:inspected:seal"] }, "text": "Halil Efendi mektubu okuyup yakacak. Mührü sen de gördün." },
-        { "text": "Halil Efendi mektubu okuyup yakacak." }
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:reported",
+              "d1_imzasiz:inspected:seal"
+            ]
+          },
+          "text": "Şube Galata'daki adresi arayacak. O adreste bir kumpanya yok."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:reported"
+            ]
+          },
+          "text": "Mektup Şube'ye gitti. İçinde incirden başka bir şey bulunmadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:stopped"
+            ]
+          },
+          "text": "Pazartesi akşamı bir yük yola çıkmayacak. Belki de çıkacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:held"
+            ]
+          },
+          "text": "Mühür bir gece daha masanda, ters yüzüyle duracak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:delivered",
+              "d1_imzasiz:inspected:seal"
+            ]
+          },
+          "text": "Halil Efendi mektubu okuyup yakacak. Mührü sen de gördün."
+        },
+        {
+          "text": "Halil Efendi mektubu okuyup yakacak."
+        }
       ]
     }
   ]

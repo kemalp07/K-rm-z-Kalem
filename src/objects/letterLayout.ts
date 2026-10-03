@@ -171,7 +171,8 @@ function attempt(
   }
 
   if (letter.dateLine) {
-    const dw = 140;
+    // Wide enough for "Ordu-yı Hümayun, 26 Mayıs 1331" on one line.
+    const dw = Math.min(230, paper.w - PAD * 2);
     const para = makeParagraph(provider, letter.dateLine, { ...text, size: text.size - 3, align: 'right' }, dw);
     const dx = paper.x + paper.w - PAD - dw;
     // Right-aligned: the ink sits at the right end of the box, as wide as the longest line.

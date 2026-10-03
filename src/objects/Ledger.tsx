@@ -19,8 +19,10 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
   const page = useMemo(() => roughRect(r, 'ledger', 0.7), [r]);
   const flags = useMemo(() => flagsOf(state), [state]);
   const rows = state.done.map((id) => getLetter(id)).filter((l) => l !== undefined);
-  const rowH = 80;
   const top = r.y + 78;
+  // Five entries fit at full height; a fuller day is written tighter, on two lines each.
+  const compact = rows.length > 5;
+  const rowH = compact ? Math.min(80, (r.h - 78 - 44) / rows.length) : 80;
   // Writing starts right of the red margin; the illustrated register has it further in.
   const M = hasArt('ledger') ? r.w * 0.163 : 44;
   const L = M + 12;
@@ -60,9 +62,18 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
           <Group key={letter.id}>
             <Para text={`${i + 1}.`} x={r.x + M - 28} y={y} width={26} family="Caveat" size={17} color={C.inkFaded} />
             {/* Who wrote to whom, then what the clerk did, then what will come of it. */}
-            <Para text={t('ledger.route', { from: letter.sender, to: letter.recipient })} x={r.x + L} y={y} width={r.w - L - 24} family="Caveat" size={17} color={C.ink} weight={FontWeight.Medium} />
-            <Para text={`${t(`ledger.${decision}`)}${extra}`} x={r.x + L + 8} y={y + 21} width={r.w - L - 32} family="Caveat" size={15} color={STAMP_INK[decision]} weight={FontWeight.Bold} />
-            <Para text={pickOutcome(letter, flags)} x={r.x + L + 8} y={y + 40} width={r.w - L - 34} family="Cormorant" size={13.5} color="#4a3d30" italic lineHeight={0.95} />
+            {compact ? (
+              <>
+                <Para text={`${t('ledger.route', { from: letter.sender, to: letter.recipient })} · ${t(`ledger.${decision}`)}${extra}`} x={r.x + L} y={y} width={r.w - L - 24} family="Caveat" size={15} color={C.ink} weight={FontWeight.Medium} />
+                <Para text={pickOutcome(letter, flags)} x={r.x + L + 8} y={y + 19} width={r.w - L - 34} family="Cormorant" size={12.5} color="#4a3d30" italic lineHeight={0.92} />
+              </>
+            ) : (
+              <>
+                <Para text={t('ledger.route', { from: letter.sender, to: letter.recipient })} x={r.x + L} y={y} width={r.w - L - 24} family="Caveat" size={17} color={C.ink} weight={FontWeight.Medium} />
+                <Para text={`${t(`ledger.${decision}`)}${extra}`} x={r.x + L + 8} y={y + 21} width={r.w - L - 32} family="Caveat" size={15} color={STAMP_INK[decision]} weight={FontWeight.Bold} />
+                <Para text={pickOutcome(letter, flags)} x={r.x + L + 8} y={y + 40} width={r.w - L - 34} family="Cormorant" size={13.5} color="#4a3d30" italic lineHeight={0.95} />
+              </>
+            )}
           </Group>
         );
       })}
