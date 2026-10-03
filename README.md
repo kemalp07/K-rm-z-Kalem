@@ -7,6 +7,8 @@
 ```bash
 npm install
 npx expo start          # Expo Go ya da development build ile aç
+npm run web             # tarayıcıda, geliştirme sunucusuyla
+npm run build:web       # dist/ altına statik web sürümü (canvaskit.wasm dahil)
 npm run typecheck       # tsc --noEmit
 npm test                # saf oyun mantığı testleri (jest)
 npm run assets          # assets/art ve assets/sfx manifestlerini yeniden üret
@@ -14,6 +16,9 @@ npm run assets          # assets/art ve assets/sfx manifestlerini yeniden üret
 
 Skia, Reanimated ve Gesture Handler Expo Go'da hazır gelir. Expo Go'da sorun çıkarsa
 `npx expo run:android` / `npx expo run:ios` ile development build alın.
+
+Web sürümü her push'ta `.github/workflows/web.yml` ile GitHub Pages'e yayınlanır.
+Bir kez açmak gerekir: depo **Settings → Pages → Source: GitHub Actions**.
 
 ## Yapı
 

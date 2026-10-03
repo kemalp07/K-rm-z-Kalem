@@ -20,5 +20,7 @@
 
   "continue.day": "{day}. Gün",
   "continue.text": "devam edecek",
-  "continue.restart": "Baştan başla"
+  "continue.restart": "Baştan başla",
+
+  "web.rotate": "Telefonu yan çevir"
 }

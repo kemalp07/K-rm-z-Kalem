@@ -1,4 +1,4 @@
-import { createContext, useContext, type ReactNode } from 'react';
+import { createContext, useContext, useMemo, type ReactNode } from 'react';
 import {
   FontSlant,
   FontWeight,
@@ -37,24 +37,31 @@ const FontCtx = createContext<Fonts | null>(null);
 type FontModule = number | string;
 const src = (m: FontModule) => (typeof m === 'string' ? { uri: m } : m) as unknown as number;
 
+// Built once. Font sources must keep their identity between renders: Skia reloads a
+// font whenever its source object changes, and a fresh { uri } on every render would
+// reload forever (each reload re-rendering the whole desk).
+const FONT_SOURCES = {
+  Caveat: [
+    src(require('@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf')),
+    src(require('@expo-google-fonts/caveat/500Medium/Caveat_500Medium.ttf')),
+    src(require('@expo-google-fonts/caveat/600SemiBold/Caveat_600SemiBold.ttf')),
+    src(require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf')),
+  ],
+  Cormorant: [
+    src(require('@expo-google-fonts/cormorant-garamond/400Regular/CormorantGaramond_400Regular.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')),
+  ],
+};
+const SEAL_FONT = src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf'));
+
 export function FontsProvider({ children, fallback }: { children: ReactNode; fallback?: ReactNode }) {
-  const provider = useFonts({
-    Caveat: [
-      src(require('@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf')),
-      src(require('@expo-google-fonts/caveat/500Medium/Caveat_500Medium.ttf')),
-      src(require('@expo-google-fonts/caveat/600SemiBold/Caveat_600SemiBold.ttf')),
-      src(require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf')),
-    ],
-    Cormorant: [
-      src(require('@expo-google-fonts/cormorant-garamond/400Regular/CormorantGaramond_400Regular.ttf')),
-      src(require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf')),
-      src(require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf')),
-      src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')),
-    ],
-  });
-  const sealFont = useFont(src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')), 9);
-  if (!provider || !sealFont) return <>{fallback ?? null}</>;
-  return <FontCtx.Provider value={{ provider, sealFont }}>{children}</FontCtx.Provider>;
+  const provider = useFonts(FONT_SOURCES);
+  const sealFont = useFont(SEAL_FONT, 9);
+  const value = useMemo(() => (provider && sealFont ? { provider, sealFont } : null), [provider, sealFont]);
+  if (!value) return <>{fallback ?? null}</>;
+  return <FontCtx.Provider value={value}>{children}</FontCtx.Provider>;
 }
 
 /** Skia's Canvas renders in its own reconciler; React context must be handed across. */
