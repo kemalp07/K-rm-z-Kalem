@@ -36,6 +36,8 @@
   "pool.seal": "{name} (mühür)",
   "ledger.marked": "{what} işaretlendi",
   "ledger.wrongMark": "{what} işaretlendi, oysa doğruydu",
+  "imprint.ring": "KİLİTBAHİR SANSÜR ŞUBESİ ★",
   "target.seal": "mühür",
-  "target.date": "tarih"
+  "target.date": "tarih",
+  "target.postmark": "posta damgası"
 }

@@ -1,6 +1,6 @@
 import type { MarkTarget } from '../logic/marking';
 import { FontWeight, type SkParagraph, type SkTypefaceFontProvider } from '@shopify/react-native-skia';
-import type { Hand, Letter, Segment } from '../content/types';
+import type { Hand, Letter, Postmark, Segment } from '../content/types';
 import type { Rect } from '../logic/censor';
 import { makeParagraph, type TextSpec } from '../scene/fonts';
 import { C } from '../scene/palette';
@@ -115,6 +115,7 @@ export interface LetterLayout {
   segments: LaidSegment[];
   signature?: Laid;
   seal?: { cx: number; cy: number; r: number };
+  postmark?: Postmark & { cx: number; cy: number; r: number; rot: number };
 }
 
 const PAD = 28;
@@ -137,11 +138,11 @@ function lineRects(para: SkParagraph, len: number, ox: number, oy: number): Rect
   return [...byLine.values()].filter((r) => r.w > 1).sort((a, b) => a.y - b.y);
 }
 
-export function layoutLetter(provider: SkTypefaceFontProvider, letter: Letter, segments: Segment[], paper: Rect): LetterLayout {
+export function layoutLetter(provider: SkTypefaceFontProvider, letter: Letter, segments: Segment[], paper: Rect, postmark?: Postmark): LetterLayout {
   const hand = HANDS[letter.hand];
   // If a long letter overflows, the writer simply wrote smaller.
   for (let shrink = 0; shrink < 5; shrink++) {
-    const result = attempt(provider, letter, segments, paper, hand, shrink);
+    const result = attempt(provider, letter, segments, paper, hand, shrink, postmark);
     const bottom = result.signature ? result.signature.y + result.signature.para.getHeight() : 0;
     if (bottom <= paper.y + paper.h - 80 || shrink === 4) return result;
   }
@@ -155,6 +156,7 @@ function attempt(
   paper: Rect,
   hand: HandStyle,
   shrink: number,
+  postmark?: Postmark,
 ): LetterLayout {
   const r = rng(letter.id);
   const text = { ...hand.text, size: hand.text.size - shrink };
@@ -244,7 +246,9 @@ function attempt(
   const end = Math.max(out.signature ? out.signature.y + out.signature.para.getHeight() : y, foot - 10);
   const h = Math.min(paper.h, Math.max(300, end - paper.y + 96));
   out.paper = { ...paper, h };
-  if (letter.seal) out.seal = { cx: paper.x + paper.w - 66, cy: paper.y + h - 50, r: 32 };
+  if (letter.seal) out.seal = { cx: paper.x + paper.w - 60, cy: paper.y + h - 46, r: 19 };
+  // The post office stamps the bottom left, a little askew.
+  if (postmark) out.postmark = { ...postmark, cx: paper.x + 52, cy: paper.y + h - 44, r: 19, rot: between(r, -0.35, 0.35) };
   return out;
 }
 
@@ -257,6 +261,7 @@ export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] 
     out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date') });
   }
   if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal') });
+  if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark') });
   return out;
 }
 

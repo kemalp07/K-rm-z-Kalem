@@ -29,7 +29,16 @@ export interface PackageItem {
   note?: string;
 }
 
-export type InspectTarget = 'seal' | 'date';
+export type InspectTarget = 'seal' | 'date' | 'postmark';
+
+/** The post office's round black stamp: office round the ring, date in the middle. */
+export interface Postmark {
+  office: string;
+  /** As stamped: "3 MAYIS 331". */
+  date: string;
+  /** Black; anything else is wrong (Talimatname, page 4). */
+  color?: string;
+}
 
 export interface Inspectable {
   id: string;
@@ -43,6 +52,10 @@ export interface Seal {
   /** Text pressed into the ink ring. */
   legend: string;
   color: string;
+  /** Mark in the middle; a star when absent. */
+  symbol?: 'anchor' | 'wheat' | 'crescent' | 'star';
+  /** Company seals are cut with a double outer ring. */
+  double?: boolean;
   /** Cut the wrong way round, so the impression reads in a mirror. */
   mirrored?: boolean;
 }
@@ -104,6 +117,8 @@ export interface Letter {
   signature?: string;
   items?: PackageItem[];
   seal?: Seal;
+  /** Set only to override the ordinary one (src/content/postmark.ts), e.g. a forgery. */
+  postmark?: Postmark;
   inspectables?: Inspectable[];
   marks?: PaperMark[];
   variants?: Variant[];
@@ -165,7 +180,7 @@ export interface BookletSeal {
   legend: string;
   color: string;
   /** Drawn in the middle; a postmark carries a date instead. */
-  symbol?: 'anchor' | 'wheat' | 'crescent';
+  symbol?: 'anchor' | 'wheat' | 'crescent' | 'star';
   center?: string;
   double?: boolean;
   caption: string;
@@ -195,8 +210,8 @@ export interface SampleCard {
   day: number;
   title: string;
   note: string;
-  /** Booklet page whose `seals` block the card shows. */
-  page: string;
+  /** Booklet pages whose `seals` blocks the card shows, in order. */
+  pages: string[];
 }
 
 /** One line of the reason slip that comes with DURDUR and İSTİHBARAT. */

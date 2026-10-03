@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Circle, FontWeight, Group, Line, Paragraph, Path, Rect, PathOp, Skia, TextPath, vec, type SkParagraph, type SkTypefaceFontProvider } from '@shopify/react-native-skia';
+import { Circle, FontWeight, Group, Line, Paragraph, Path, Rect, vec, type SkParagraph, type SkTypefaceFontProvider } from '@shopify/react-native-skia';
 import type { SharedValue } from 'react-native-reanimated';
 import { useDerivedValue } from 'react-native-reanimated';
 import { ArtSlot } from '../art/ArtSlot';
@@ -7,6 +7,7 @@ import { booklet, itemText } from '../content/booklet';
 import { t } from '../content/strings';
 import type { BookletPage, BookletSeal } from '../content/types';
 import { Fade } from '../scene/Fade';
+import { RoundMark } from './RoundMark';
 import { makeParagraph, useSceneFonts, type TextSpec } from '../scene/fonts';
 import { C } from '../scene/palette';
 import { Para } from '../scene/Para';
@@ -107,45 +108,9 @@ function layoutPage(provider: SkTypefaceFontProvider, page: BookletPage, r: Box)
   return out;
 }
 
-function symbolPath(kind: BookletSeal['symbol'], cx: number, cy: number) {
-  const p = Skia.PathBuilder.Make();
-  if (kind === 'anchor') {
-    p.addCircle(cx, cy - 9, 2.6);
-    p.moveTo(cx, cy - 6).lineTo(cx, cy + 9);
-    p.moveTo(cx - 6, cy - 3).lineTo(cx + 6, cy - 3);
-    p.moveTo(cx - 9, cy + 2).quadTo(cx - 7, cy + 10, cx, cy + 10).quadTo(cx + 7, cy + 10, cx + 9, cy + 2);
-  } else if (kind === 'wheat') {
-    p.moveTo(cx, cy + 11).lineTo(cx, cy - 10);
-    for (let i = 0; i < 4; i++) {
-      const yy = cy - 7 + i * 4.5;
-      p.addOval({ x: cx - 6.5, y: yy - 1.6, width: 6, height: 3.2 });
-      p.addOval({ x: cx + 0.5, y: yy - 1.6, width: 6, height: 3.2 });
-    }
-  } else if (kind === 'crescent') {
-    const moon = Skia.PathBuilder.Make().addCircle(cx - 2, cy, 8).build();
-    const bite = Skia.PathBuilder.Make().addCircle(cx + 1.2, cy, 6.6).build();
-    const crescent = Skia.Path.MakeFromOp(moon, bite, PathOp.Difference);
-    if (crescent) p.addPath(crescent);
-    p.addCircle(cx + 6.5, cy, 1.7);
-  }
-  return p.build();
-}
-
 /** A seal or postmark as the Şube wants it, drawn the same way the letters draw theirs. */
 export function SealExample({ seal, cx, cy, scale = SEAL_SCALE }: { seal: BookletSeal; cx: number; cy: number; scale?: number }) {
-  const { sealFont } = useSceneFonts();
-  const ring = useMemo(() => Skia.PathBuilder.Make().addCircle(cx, cy, SEAL_R - 8).build(), [cx, cy]);
-  const sym = useMemo(() => (seal.symbol ? symbolPath(seal.symbol, cx, cy) : null), [seal.symbol, cx, cy]);
-  return (
-    <Group transform={[{ scale }]} origin={{ x: cx, y: cy }} opacity={0.85}>
-      <Circle cx={cx} cy={cy} r={SEAL_R} style="stroke" strokeWidth={2.2} color={seal.color} />
-      {seal.double && <Circle cx={cx} cy={cy} r={SEAL_R - 2.6} style="stroke" strokeWidth={0.8} color={seal.color} />}
-      <Circle cx={cx} cy={cy} r={SEAL_R - 14} style="stroke" strokeWidth={1} color={seal.color} />
-      <TextPath path={ring} text={`${seal.legend} · `} font={sealFont} color={seal.color} />
-      {sym && <Path path={sym} style={seal.symbol === 'crescent' ? 'fill' : 'stroke'} strokeWidth={1.4} color={seal.color} />}
-      {seal.center && <Para text={seal.center} x={cx - 17} y={cy - 8} width={34} family="Cormorant" size={8} color={seal.color} weight={FontWeight.Bold} align="center" lineHeight={0.9} />}
-    </Group>
-  );
+  return <RoundMark cx={cx} cy={cy} scale={scale} color={seal.color} legend={seal.legend} symbol={seal.symbol} center={seal.center} double={seal.double} />;
 }
 
 function PageView({ page, r }: { page: BookletPage; r: Box }) {

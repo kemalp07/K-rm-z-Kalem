@@ -10,12 +10,14 @@ import { roughRect } from '../scene/rough';
 import { SealExample } from './Booklet';
 
 /** The card at full size, drawn around the origin's top-left; it is baked once and moved as an image. */
-export const CARD = { w: 236, h: 206 };
+/** Room for six samples, two by two. */
+export const CARD = { w: 236, h: 280 };
 /** What the card's raster covers, shadow included. */
 export const CARD_REGION: Box = { x: -14, y: -12, w: CARD.w + 26, h: CARD.h + 28 };
 /** Tucked under the window while not in use, at this fraction of its size. */
-export const CARD_HOME = { x: 74, y: 250, scale: 0.42, rot: -0.05 };
-const SEAL_SCALE = 0.86;
+export const CARD_HOME = { x: 74, y: 250, scale: 0.33, rot: -0.05 };
+// Same size as on a letter (letterLayout's seal r over the full 32): read them with the glass.
+const SEAL_SCALE = 19 / 32;
 
 /** The card's face: title, then its seals two by two with what each belongs to. */
 export function SampleCardFace({ card }: { card: Card & { seals: BookletSeal[] } }) {
@@ -29,12 +31,12 @@ export function SampleCardFace({ card }: { card: Card & { seals: BookletSeal[] }
         <Shadow dx={-3} dy={4} blur={4} color="rgba(0,0,0,0.55)" />
       </Path>
       <Path path={inner} style="stroke" strokeWidth={0.8} color="rgba(43,33,24,0.45)" />
-      <Para text={card.title} x={0} y={13} width={CARD.w} family="Cormorant" size={12} color={C.ink} weight={FontWeight.Bold} letterSpacing={1.4} align="center" />
-      {card.seals.slice(0, 4).map((s, i) => {
+      <Para text={card.title} x={0} y={13} width={CARD.w} family="Cormorant" size={11} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} align="center" />
+      {card.seals.slice(0, 6).map((s, i) => {
         const cx = 10 + cellW * (i % 2) + cellW / 2;
         const top = 36 + Math.floor(i / 2) * rowH;
         return (
-          <Group key={s.legend}>
+          <Group key={`${s.legend}${i}`}>
             <SealExample seal={s} cx={cx} cy={top + 28} scale={SEAL_SCALE} />
             <Para text={s.caption} x={cx - cellW / 2} y={top + 59} width={cellW} family="Cormorant" size={10} color={C.inkFaded} italic align="center" />
           </Group>

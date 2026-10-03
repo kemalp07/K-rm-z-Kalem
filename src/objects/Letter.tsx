@@ -16,7 +16,6 @@ import {
   Rect,
   Shadow,
   Skia,
-  TextPath,
   vec,
   type SkPath,
   type Transforms3d,
@@ -26,12 +25,11 @@ import { hasArt, TintedArt } from '../art/ArtSlot';
 import type { Decision, Letter as LetterData, PaperMark } from '../content/types';
 import { t } from '../content/strings';
 import type { Rect as R } from '../logic/censor';
-import { useSceneFonts } from '../scene/fonts';
+import { MARK_R, RoundMark } from './RoundMark';
 import { C, STAMP_INK } from '../scene/palette';
 import { between, rng } from '../scene/rand';
 import { blob, roughRect, shakyLine } from '../scene/rough';
 import { paperStyleOf, type Laid, type LaidSegment, type LetterLayout } from './letterLayout';
-import { StampMark } from './StampMark';
 import { Fade } from '../scene/Fade';
 
 // Noise squeezed into a pale band, so multiplying it only dusts the paper.
@@ -45,6 +43,8 @@ export interface LetterProps {
   strokes: SkPath[];
   /** The stroke being drawn right now, if any. */
   livePath?: SharedValue<SkPath>;
+  /** Today's date as the decision stamp prints it ("7 MAYIS 331"). */
+  today?: string;
   /** Sentence under the pen, while a stroke is going on. */
   hint?: SharedValue<PenHint>;
   /** Pen work fading under the eraser. */
@@ -280,35 +280,21 @@ function Jasmine({ x, y, seed }: { x: number; y: number; seed: string }) {
 }
 
 function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout['seal']> }) {
-  const { sealFont } = useSceneFonts();
   const seal = letter.seal!;
-  const ring = useMemo(() => {
-    return Skia.PathBuilder.Make().addCircle(at.cx, at.cy, at.r - 8).build();
-  }, [at]);
-  const star = useMemo(() => {
-    const p = Skia.PathBuilder.Make();
-    for (let i = 0; i < 10; i++) {
-      const a = -Math.PI / 2 + (i * Math.PI) / 5;
-      const rr = i % 2 ? 4 : 9;
-      const px = at.cx + Math.cos(a) * rr;
-      const py = at.cy + Math.sin(a) * rr;
-      if (i === 0) p.moveTo(px, py);
-      else p.lineTo(px, py);
-    }
-    p.close();
-    return p.build();
-  }, [at]);
+  const worn = useMemo(() => [...letter.id].reduce((a, c) => a + c.charCodeAt(0), 0) % 97, [letter.id]);
   return (
-    <Group layer transform={[{ rotate: -0.18 }, { scaleX: seal.mirrored ? -1 : 1 }]} origin={{ x: at.cx, y: at.cy }} opacity={0.82}>
-      <Circle cx={at.cx} cy={at.cy} r={at.r} style="stroke" strokeWidth={2.2} color={seal.color} />
-      <Circle cx={at.cx} cy={at.cy} r={at.r - 14} style="stroke" strokeWidth={1} color={seal.color} />
-      <TextPath path={ring} text={`${seal.legend} · `} font={sealFont} color={seal.color} />
-      <Path path={star} color={seal.color} />
-      {/* Uneven pressure: eat holes into the impression */}
-      <Rect x={at.cx - at.r - 4} y={at.cy - at.r - 4} width={at.r * 2 + 8} height={at.r * 2 + 8} blendMode="dstOut" opacity={0.6}>
-        <FractalNoise freqX={0.09} freqY={0.09} octaves={2} seed={3} />
-      </Rect>
-    </Group>
+    <RoundMark
+      cx={at.cx}
+      cy={at.cy}
+      scale={at.r / MARK_R}
+      rotate={-0.18}
+      color={seal.color}
+      legend={seal.legend}
+      symbol={seal.symbol ?? 'star'}
+      double={seal.double}
+      mirrored={seal.mirrored}
+      worn={worn}
+    />
   );
 }
 
@@ -398,6 +384,9 @@ export function LetterStill({ letter, layout }: { letter: LetterData; layout: Le
       {layout.segments.map((s) => (s.seg.kind === 'hiddenInk' ? null : <Block key={s.seg.id} laid={s} />))}
       {layout.signature && <Block laid={layout.signature} />}
       {layout.seal && <Seal letter={letter} at={layout.seal} />}
+      {layout.postmark && (
+        <RoundMark cx={layout.postmark.cx} cy={layout.postmark.cy} scale={layout.postmark.r / MARK_R} rotate={layout.postmark.rot} color={layout.postmark.color ?? '#1f1a17'} legend={`${layout.postmark.office} ★`} center={layout.postmark.date} worn={(letter.id.length * 13) % 97} opacity={0.78} />
+      )}
     </Group>
   );
 }
@@ -450,7 +439,7 @@ function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<Pen
 /** Area a letter can paint on, shadow included — what gets rasterised. */
 export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
 
-function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hint, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
+function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hint, today, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
   return (
     <Group>
       {still ?? <LetterStill letter={letter} layout={layout} />}
@@ -464,7 +453,7 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hin
       )}
       {hint && <SentenceHints segments={layout.segments} hint={hint} />}
       {livePath && <CensorStroke path={livePath} />}
-      {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} imprintIn={imprintIn} />}
+      {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} imprintIn={imprintIn} today={today} />}
     </Group>
   );
 }
@@ -477,25 +466,18 @@ export interface ImprintAt {
   rot: number;
 }
 
-const IMPRINT = { w: 130, h: 46 };
+/** The clerk's rubber stamp face, at the scale it lands on the paper. */
+const IMPRINT_SCALE = 1.2;
+const IMPRINT = { w: MARK_R * 2 * IMPRINT_SCALE, h: MARK_R * 2 * IMPRINT_SCALE };
 
 /** The decision stamp landing on the letter: it settles from slightly larger and the ink comes up. */
-function Imprint({ imprint, letter, imprintIn }: { imprint: ImprintAt; letter: LetterData; imprintIn: SharedValue<number> }) {
+function Imprint({ imprint, letter, imprintIn, today }: { imprint: ImprintAt; letter: LetterData; imprintIn: SharedValue<number>; today?: string }) {
   const { d, x: cx, y: cy, rot } = imprint;
   const transform = useDerivedValue<Transforms3d>(() => [{ translateX: cx }, { translateY: cy }, { scale: 1.1 - 0.1 * imprintIn.value }, { translateX: -cx }, { translateY: -cy }]);
+  const worn = useMemo(() => [...letter.id].reduce((a, c) => a + c.charCodeAt(0), 7) % 97, [letter.id]);
   return (
     <Fade opacity={imprintIn} transform={transform}>
-      <StampMark
-        x={cx - IMPRINT.w / 2}
-        y={cy - IMPRINT.h / 2}
-        w={IMPRINT.w}
-        h={IMPRINT.h}
-        label={t(`decision.${d}`)}
-        color={STAMP_INK[d]}
-        rotate={rot}
-        seed={`imprint-${letter.id}`}
-        size={d === 'reported' ? 16 : 19}
-      />
+      <RoundMark cx={cx} cy={cy} scale={IMPRINT_SCALE} rotate={rot} color={STAMP_INK[d]} legend={t('imprint.ring')} band={t(`decision.${d}`)} foot={today} double worn={worn} opacity={0.9} />
     </Fade>
   );
 }

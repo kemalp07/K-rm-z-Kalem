@@ -434,14 +434,16 @@
       ],
       "seal": {
         "legend": "ŞARK TİCARET · GALATA",
-        "color": "#5b2e4a"
+        "color": "#1f1a17",
+        "symbol": "anchor",
+        "double": true
       },
       "inspectables": [
         {
           "id": "seal",
           "target": "seal",
           "anomaly": true,
-          "note": "Mühür halkasındaki yazı ters kazınmış; baskı ayna gibi okunuyor. Bir kumpanya kendi mührünü böyle yaptırmaz."
+          "note": "Kumpanya mührü siyah basılmış. Kumpanyalar mor mürekkep kullanır; numune kartına bak."
         },
         {
           "id": "date",

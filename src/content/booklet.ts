@@ -30,12 +30,14 @@ export const newPages = (day: number, source: Booklet = booklet) =>
 export function sampleCards(day: number, source: Booklet = booklet): (SampleCard & { seals: BookletSeal[] })[] {
   return source.cards
     .filter((c) => c.day <= day)
-    .map((c) => {
-      const page = source.pages.find((p) => p.id === c.page);
-      const block = page?.blocks.find((b) => b.t === 'seals');
-      if (!block || block.t !== 'seals') throw new Error(`content/booklet.json: card "${c.id}" needs page "${c.page}" with seals`);
-      return { ...c, seals: block.items };
-    });
+    .map((c) => ({
+      ...c,
+      seals: c.pages.flatMap((id) => {
+        const block = source.pages.find((p) => p.id === id)?.blocks.find((b) => b.t === 'seals');
+        if (!block || block.t !== 'seals') throw new Error(`content/booklet.json: card "${c.id}" needs page "${id}" with seals`);
+        return block.items;
+      }),
+    }));
 }
 
 /** Reasons on the slip by `day`; like the booklet's rules, they arrive with what they are about. */

@@ -150,7 +150,7 @@
     {
       "id": "damgalar",
       "n": 4,
-      "day": 4,
+      "day": 1,
       "title": "POSTA DAMGALARI",
       "blocks": [
         {
@@ -429,7 +429,7 @@
               "text": "Pul: olmalı mı, doğru mu yapışmış?"
             },
             {
-              "day": 4,
+              "day": 1,
               "text": "Damga: şube ve tarih tutuyor mu?"
             },
             {
@@ -459,11 +459,14 @@
   ],
   "cards": [
     {
-      "id": "muhur",
+      "id": "numune",
       "day": 1,
-      "title": "MÜHÜR NUMUNELERİ",
-      "note": "Talimatname, Sahife 6",
-      "page": "muhur_ornek"
+      "title": "MÜHÜR VE DAMGA NUMUNELERİ",
+      "note": "Talimatname, Sahife 4 ve 6",
+      "pages": [
+        "muhur_ornek",
+        "damgalar"
+      ]
     }
   ],
   "reasonSlip": {

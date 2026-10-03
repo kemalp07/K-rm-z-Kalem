@@ -23,6 +23,7 @@ import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
+import { postmarkOf } from '../content/postmark';
 import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
@@ -127,8 +128,8 @@ export function DeskScreen() {
     [openLetter?.id],
   );
   const layout = useMemo(
-    () => (openLetter ? layoutLetter(fonts.provider, openLetter, segments, LAYOUT.letter) : null),
-    [fonts.provider, openLetter, segments],
+    () => (openLetter ? layoutLetter(fonts.provider, openLetter, segments, LAYOUT.letter, postmarkOf(openLetter, day.calendar.rumi)) : null),
+    [fonts.provider, openLetter, segments, day.calendar.rumi],
   );
   const strokes = useMemo(
     () => (state.open ? (savedStrokes[state.open] ?? []).map((s) => Skia.Path.MakeFromSVGString(s)).filter((p): p is SkPath => !!p) : []),
@@ -832,6 +833,8 @@ export function DeskScreen() {
     );
   }
 
+  // "7 Mayıs 1331" as a rubber stamp carries it: "7 MAYIS 331".
+  const stampDate = day.calendar.rumi.toLocaleUpperCase('tr').replace(/ 1(3\d\d)$/, ' $1');
   const letterNode =
     openLetter && layout && progress ? (
       <Fade transform={letterTransform} opacity={letterOpacity} bounds={region}>
@@ -843,6 +846,7 @@ export function DeskScreen() {
           strokes={strokes}
           livePath={drawing ? livePath : undefined}
           hint={drawing ? penHint : undefined}
+          today={stampDate}
           heat={heat}
           warm={warm}
           imprint={imprint ?? undefined}

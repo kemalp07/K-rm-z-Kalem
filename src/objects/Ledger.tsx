@@ -41,7 +41,7 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
     const texts = rows.map((letter) => {
       const p = state.letters[letter.id]!;
       const decision = p.decision!;
-      const what = (target: string) => t(target === 'seal' ? 'target.seal' : 'target.date');
+      const what = (target: string) => t(`target.${target as 'seal' | 'date' | 'postmark'}`);
       const extra = [
         p.censored.length ? t('ledger.censored', { n: p.censored.length }) : '',
         // Harmless sentences blacked out cost the family their words; the ledger says so.

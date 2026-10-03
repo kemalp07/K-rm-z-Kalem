@@ -245,7 +245,9 @@
       ],
       "seal": {
         "legend": "ŞARK TİCARRET · GALATA",
-        "color": "#5b2e4a"
+        "color": "#5b2e4a",
+        "symbol": "anchor",
+        "double": true
       },
       "inspectables": [
         {
