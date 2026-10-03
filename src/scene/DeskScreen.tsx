@@ -896,11 +896,11 @@ export function DeskScreen() {
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
-      <Stamps enabled={stampsEnabled} />
+      <Stamps enabled={stampsEnabled} carried={pressing} />
     </FontsBridge>,
     STAMPS_REGION,
     fit.scale,
-    `stamps:${stampsEnabled}`,
+    `stamps:${stampsEnabled}:${pressing}`,
   );
 
   return (

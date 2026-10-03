@@ -1,47 +1,80 @@
 import { useMemo } from 'react';
-import { BlurMask, Circle, Group, Path, RadialGradient, Shadow, vec, type Transforms3d } from '@shopify/react-native-skia';
+import { BlurMask, Circle, FontWeight, Group, LinearGradient, RadialGradient, RoundedRect, Shadow, vec, type Transforms3d } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { ArtSlot, PlacedArt, placed } from '../art/ArtSlot';
-import type { ArtSlotId } from '../art/slots';
 import { t } from '../content/strings';
 import type { Decision } from '../content/types';
 import type { Rect } from '../logic/censor';
-import { STAMP_INK } from '../scene/palette';
-import { roughRect } from '../scene/rough';
+import { C, STAMP_INK } from '../scene/palette';
+import { Para } from '../scene/Para';
 import { LAYOUT } from '../scene/world';
-import { StampMark } from './StampMark';
 import { Fade } from '../scene/Fade';
 
 export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'];
-const TILT: Record<Decision, number> = { delivered: -0.05, held: 0.035, stopped: -0.025, reported: 0.06 };
 
-/** The four sample impressions under the letter, each on its own scrap of card. */
-export function stampSlots(): { d: Decision; rect: Rect }[] {
-  const { x, y, w, h } = LAYOUT.stamps;
-  const gap = 8;
-  const sw = (w - gap * 3) / 4;
-  return DECISIONS.map((d, i) => ({ d, rect: { x: x + i * (sw + gap), y: y + 6, w: sw, h: h - 12 } }));
+const KNOB_DY = 28;
+const PLATE = { w: 86, h: 28, dy: 58 };
+
+/** The four rubber stamps in a row under the letter, each above a small brass plate naming it. */
+export function stampSlots(): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
+  const { x, y, w } = LAYOUT.stamps;
+  const sw = w / 4;
+  return DECISIONS.map((d, i) => {
+    const cx = x + sw * (i + 0.5);
+    return {
+      d,
+      rect: { x: cx - 40, y, w: 80, h: PLATE.dy + PLATE.h },
+      knob: { x: cx, y: y + KNOB_DY },
+      plate: { x: cx - PLATE.w / 2, y: y + PLATE.dy, w: PLATE.w, h: PLATE.h },
+    };
+  });
 }
 
-/** The four rubber stamps, each standing on a card that shows its impression. */
-export function Stamps({ enabled }: { enabled: boolean }) {
-  const slots = useMemo(stampSlots, []);
-  const cards = useMemo(() => slots.map((s) => roughRect({ x: s.rect.x - 3, y: s.rect.y - 3, w: s.rect.w + 6, h: s.rect.h + 6 }, `card-${s.d}`, 0.9)), [slots]);
+/** Brass plate, the small kind: one engraved word. */
+function Plate({ r, label }: { r: Rect; label: string }) {
   return (
-    <Fade opacity={enabled ? 1 : 0.4}>
-      {slots.map((s, i) => (
-        <Group key={s.d} transform={[{ rotate: TILT[s.d] }]} origin={{ x: s.rect.x + s.rect.w / 2, y: s.rect.y + s.rect.h / 2 }}>
-          <ArtSlot slot={`card_${i + 1}` as ArtSlotId} rect={{ x: s.rect.x - 4, y: s.rect.y - 3, w: s.rect.w + 8, h: s.rect.h + 6 }} shadow>
-            <Path path={cards[i]!} color="#e2d5b8">
-              <Shadow dx={-2} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
-            </Path>
-          </ArtSlot>
-          <StampMark x={s.rect.x + 4} y={s.rect.y + 6} w={s.rect.w - 8} h={s.rect.h - 12} label={t(`decision.${s.d}`)} color={STAMP_INK[s.d]} rotate={0} seed={`sample-${s.d}`} size={s.d === 'reported' ? 10.5 : 13.5} opacity={0.8} />
+    <Group>
+      <ArtSlot slot="brass_plate" rect={r} shadow>
+        <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={2}>
+          <LinearGradient start={vec(r.x, r.y)} end={vec(r.x + r.w * 0.6, r.y + r.h)} colors={[C.brassLight, C.brass, C.brassDark, C.brass]} positions={[0, 0.35, 0.7, 1]} />
+          <Shadow dx={-1.5} dy={2} blur={2} color="rgba(0,0,0,0.6)" />
+        </RoundedRect>
+      </ArtSlot>
+      {/* Engraving: dark fill with a lit lower lip, so the letters read as cut. */}
+      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 5.6} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
+      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 6.2} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
+    </Group>
+  );
+}
+
+/**
+ * The stamps standing in their row. A ring of the stamp's ink on the wood shows where
+ * each one stands, and stays when it is picked up.
+ */
+export function Stamps({ enabled, carried }: { enabled: boolean; carried: Decision | null }) {
+  const slots = useMemo(stampSlots, []);
+  return (
+    <Fade opacity={enabled ? 1 : 0.45}>
+      {slots.map((s) => (
+        <Group key={s.d}>
+          <Circle cx={s.knob.x} cy={s.knob.y + 1} r={26} style="stroke" strokeWidth={2.4} color={STAMP_INK[s.d]} opacity={0.45}>
+            <BlurMask blur={1.2} style="normal" />
+          </Circle>
+          {carried !== s.d && (
+            <Group transform={[{ translateX: s.knob.x }, { translateY: s.knob.y }]}>
+              <PlacedArt slot="stamp" shadow={RESTING}>
+                <Circle cx={0} cy={0} r={22} color="#4a2c15" />
+              </PlacedArt>
+            </Group>
+          )}
+          <Plate r={s.plate} label={t(`decision.${s.d}`)} />
         </Group>
       ))}
     </Fade>
   );
 }
+
+const RESTING = { transform: [{ translateX: -3 }, { translateY: 4 }], opacity: 0.55, restBlur: 3 };
 
 /**
  * The rubber stamp in hand: it follows the finger, raised, and comes down as the finger
@@ -54,10 +87,7 @@ export function StampPress({ pressing, progress, x, y }: { pressing: Decision | 
 }
 
 /** Where a stamp rests on its card. */
-export const stampHome = (d: Decision) => {
-  const r = stampSlots().find((s) => s.d === d)!.rect;
-  return { x: r.x + r.w / 2, y: r.y + r.h / 2 };
-};
+export const stampHome = (d: Decision) => stampSlots().find((s) => s.d === d)!.knob;
 
 const STAMP_ART = placed('stamp');
 

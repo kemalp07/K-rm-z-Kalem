@@ -34,7 +34,7 @@ export const LAYOUT = {
   plate: { x: 816, y: 497, w: 150, h: 60 },
   letter: { x: 300, y: 22, w: 360, h: 410 },
   dropZone: { x: 270, y: 10, w: 420, h: 440 },
-  stamps: { x: 296, y: 446, w: 368, h: 64 },
+  stamps: { x: 296, y: 440, w: 368, h: 86 },
   items: { x: 196, y: 458, w: 100, h: 90 },
   /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
   lamp: { cx: 905, baseY: 96, flameY: 96 },
