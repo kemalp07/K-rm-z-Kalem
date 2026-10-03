@@ -29,7 +29,8 @@ import { MARK_R, RoundMark } from './RoundMark';
 import { C, STAMP_INK } from '../scene/palette';
 import { between, rng } from '../scene/rand';
 import { blob, roughRect, shakyLine } from '../scene/rough';
-import { paperStyleOf, type Laid, type LaidSegment, type LetterLayout } from './letterLayout';
+import { closeCorner, paperStyleOf, type Laid, type LaidSegment, type LetterLayout } from './letterLayout';
+import { Para } from '../scene/Para';
 import { Fade } from '../scene/Fade';
 
 // Noise squeezed into a pale band, so multiplying it only dusts the paper.
@@ -384,9 +385,34 @@ export function LetterStill({ letter, layout }: { letter: LetterData; layout: Le
       {layout.segments.map((s) => (s.seg.kind === 'hiddenInk' ? null : <Block key={s.seg.id} laid={s} />))}
       {layout.signature && <Block laid={layout.signature} />}
       {layout.seal && <Seal letter={letter} at={layout.seal} />}
+      {letter.kind !== 'paket' && <CloseCorner paper={layout.paper} />}
       {layout.postmark && (
         <RoundMark cx={layout.postmark.cx} cy={layout.postmark.cy} scale={layout.postmark.r / MARK_R} rotate={layout.postmark.rot} color={layout.postmark.color ?? '#1f1a17'} legend={`${layout.postmark.office} ★`} center={layout.postmark.date} worn={(letter.id.length * 13) % 97} opacity={0.78} />
       )}
+    </Group>
+  );
+}
+
+/** A dog-ear at the bottom right: touch it and the letter goes back into its envelope. */
+function CloseCorner({ paper }: { paper: R }) {
+  const c = closeCorner(paper);
+  const fold = useMemo(() => {
+    const b = Skia.PathBuilder.Make();
+    b.moveTo(c.x + c.w, c.y).lineTo(c.x, c.y + c.h).lineTo(c.x + c.w, c.y + c.h).close();
+    return b.build();
+  }, [c.x, c.y, c.w, c.h]);
+  const flap = useMemo(() => {
+    const b = Skia.PathBuilder.Make();
+    b.moveTo(c.x + c.w, c.y).lineTo(c.x, c.y + c.h).lineTo(c.x + 4, c.y + 4).close();
+    return b.build();
+  }, [c.x, c.y, c.w, c.h]);
+  return (
+    <Group>
+      <Path path={fold} color="#3a2a1c" opacity={0.85} />
+      <Path path={flap} color="#e2d4b2">
+        <Shadow dx={1.5} dy={1.5} blur={2} color="rgba(0,0,0,0.45)" />
+      </Path>
+      <Para text={t('letter.close')} x={c.x - 64} y={c.y + c.h - 15} width={58} family="Caveat" size={12} color="rgba(60,45,30,0.7)" align="right" />
     </Group>
   );
 }

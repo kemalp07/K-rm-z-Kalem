@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d, Rect } from '@shopify/react-native-skia';
+import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY } from '../content/loader';
-import type { Decision, HelpId } from '../content/types';
+import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { eveningBill, flagsOf, purseOf } from '../logic/dayFlow';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
@@ -33,7 +33,7 @@ import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
-import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
+import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
@@ -70,8 +70,19 @@ type Drag =
   | { kind: 'next' };
 
 const PEN_IN_HAND_ANGLE = 0.5;
-/** How large the turned-over envelope is shown. */
-const ENV_ZOOM = 2.3;
+/** How large the envelope is shown when its letter is folded back in. */
+const ENV_ZOOM = 1.75;
+const ENV_TOP = 120;
+/** Front and back of the envelope, side by side over where the letter lies. */
+const envRects = (l: LetterContent) => {
+  const { w, h } = envelopeSize(l);
+  const W = w * ENV_ZOOM;
+  const H = h * ENV_ZOOM;
+  return [
+    { x: WORLD.w / 2 - W - 10, y: ENV_TOP, w: W, h: H },
+    { x: WORLD.w / 2 + 10, y: ENV_TOP, w: W, h: H },
+  ];
+};
 const STAMP_HOLD_MS = 450;
 /** How long a carried stamp must rest over the paper before it starts to come down. */
 const STAMP_REST_MS = 140;
@@ -239,6 +250,8 @@ export function DeskScreen() {
 
   // Fresh coverage and heat for each letter that lands on the desk.
   useEffect(() => {
+    setEnvView(false);
+    envViewIn.value = 0;
     resetCoverage();
     heatLocal.current = {};
     warmRef.current = false;
@@ -430,6 +443,12 @@ export function DeskScreen() {
     helpIn.value = withTiming(0, { duration: 420, easing: GLIDE });
     setTimeout(() => setHelp(null), 420);
   }, [helpIn]);
+  /** Out of the envelope again and back onto the desk. */
+  const openLetterAgain = () => {
+    envViewIn.value = withTiming(0, { duration: 460, easing: GLIDE });
+    setTimeout(() => setEnvView(false), 460);
+    playSfx('paper', 0.4);
+  };
   /** First time a tool is touched, its note opens instead; returns true when it did. */
   const introduce = (id: HelpId) => {
     if (useGame.getState().seenHelp.includes(id)) return false;
@@ -473,10 +492,10 @@ export function DeskScreen() {
     const g = useGame.getState();
     const s = g.state;
 
-    if (envView) {
+    // The letter is back in its envelope: touching the envelope takes it out again.
+    if (envView && openLetter && envRects(openLetter).some((r) => inRect(p, r, 4))) {
       drag.current = null;
-      envViewIn.value = withTiming(0, { duration: 300, easing: GLIDE });
-      setTimeout(() => setEnvView(false), 300);
+      openLetterAgain();
       return;
     }
 
@@ -594,11 +613,11 @@ export function DeskScreen() {
       return;
     }
 
-    const oe = LAYOUT.openedEnvelope;
-    if (s.open && openLetter?.kind !== 'paket' && inRect(p, oe, 4) && !penInHand.current) {
+    if (s.open && layout && !envView && openLetter?.kind !== 'paket' && inRect(p, closeCorner(layout.paper), 4)) {
+      if (penInHand.current) penHome();
       setEnvView(true);
-      envViewIn.value = withTiming(1, { duration: 450, easing: SETTLE });
-      playSfx('paper', 0.4);
+      envViewIn.value = withTiming(1, { duration: 520, easing: SETTLE });
+      playSfx('paper', 0.5);
       return;
     }
 
@@ -609,7 +628,7 @@ export function DeskScreen() {
     }
 
     if (s.open && layout) {
-      if (penInHand.current && inRect(p, LAYOUT.letter)) {
+      if (penInHand.current && !envView && inRect(p, LAYOUT.letter)) {
         drag.current = { kind: 'pen-stroke', last: p, points: [p], done: [] };
         penHint.value = { hover: '', done: [] };
         setDrawing(true);
@@ -618,7 +637,7 @@ export function DeskScreen() {
         playSfx('pen', 0.5);
         return;
       }
-      const slot = stampSlots().find((sl) => inRect(p, sl.rect, 4));
+      const slot = envView ? undefined : stampSlots().find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
         if (introduce('stamps')) return;
         if (penInHand.current) penHome();
@@ -854,12 +873,21 @@ export function DeskScreen() {
       { translateX: o.x + e.dx * out },
       { translateY: o.y + e.dy * out + (1 - v) * 22 },
       { rotate: e.rot * out + (1 - v) * -0.02 },
-      { scale: 0.96 + 0.04 * v },
+      // Folded back into the envelope: it shrinks down toward it and is gone.
+      { translateY: envViewIn.value * 150 },
+      { scale: (0.96 + 0.04 * v) * (1 - 0.6 * envViewIn.value) },
       { translateX: -o.x },
       { translateY: -o.y },
     ];
   });
-  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value));
+  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value) * (1 - envViewIn.value));
+  const envTurn = useDerivedValue<Transforms3d>(() => [
+    { translateX: WORLD.w / 2 },
+    { translateY: ENV_TOP + 120 },
+    { scale: 0.7 + 0.3 * envViewIn.value },
+    { translateX: -WORLD.w / 2 },
+    { translateY: -(ENV_TOP + 120) },
+  ]);
   const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
     return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R * lensK - 2).build();
@@ -951,6 +979,27 @@ export function DeskScreen() {
       <BakedImage baked={cardImage} />
     </Group>
   ) : null;
+  // The letter folded back: its envelope, front and back side by side, where the letter lay.
+  const envNode = envView && openLetter ? (
+    <Fade opacity={envViewIn} transform={envTurn}>
+      {[0, 1].map((side) => {
+        const r = envRects(openLetter)[side]!;
+        return (
+          <Group key={side} transform={[{ translateX: r.x }, { translateY: r.y }, { scale: ENV_ZOOM }]}>
+            {side === 0 ? (
+              <>
+                <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
+                <EnvelopeAddress letter={openLetter} />
+              </>
+            ) : (
+              <EnvelopeBack letter={openLetter} />
+            )}
+          </Group>
+        );
+      })}
+      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Caveat" size={17} color="rgba(236,222,192,0.85)" align="center" />
+    </Fade>
+  ) : null;
   const pile = useBaked(
     <FontsBridge fonts={fonts}>
       {/* Envelopes, bottom of the pile first */}
@@ -968,17 +1017,10 @@ export function DeskScreen() {
             </Group>
           );
         })}
-      {/* The envelope of the letter being read, put aside face up */}
-      {openLetter && openLetter.kind !== 'paket' && (
-        <Group transform={[{ translateX: LAYOUT.openedEnvelope.x }, { translateY: LAYOUT.openedEnvelope.y }, { rotate: LAYOUT.openedEnvelope.rot }, { scale: LAYOUT.openedEnvelope.scale }]}>
-          <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
-          <EnvelopeAddress letter={openLetter} />
-        </Group>
-      )}
     </FontsBridge>,
     PILE_REGION,
     fit.scale,
-    `pile:${stackIds.join(',')}|${dragId}|${state.open}`,
+    `pile:${stackIds.join(',')}|${dragId}`,
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
@@ -999,6 +1041,7 @@ export function DeskScreen() {
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
             {letterNode}
+            {envNode}
             {cardNode}
             <StampPress pressing={pressing} progress={stampProgress} x={stampX} y={stampY} />
 
@@ -1017,6 +1060,7 @@ export function DeskScreen() {
                 <BakedImage baked={pile} />
                 <BakedImage baked={stampCards} />
                 {letterNode}
+                {envNode}
                 {cardNode}
               </Group>
               <Circle cx={magX} cy={magY} r={LENS_R * lensK} color="rgba(255,230,190,0.04)" />
@@ -1032,20 +1076,6 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {envView && openLetter && (
-              <Fade opacity={envViewIn}>
-                <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="rgba(5,4,3,0.55)" />
-                {/* Front on the left, back on the right, as if turned over in the hand */}
-                <Group transform={[{ translateX: WORLD.w / 2 - envelopeSize(openLetter).w * ENV_ZOOM - 16 }, { translateY: 150 }, { scale: ENV_ZOOM }]}>
-                  <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
-                  <EnvelopeAddress letter={openLetter} />
-                </Group>
-                <Group transform={[{ translateX: WORLD.w / 2 + 16 }, { translateY: 150 }, { scale: ENV_ZOOM }]}>
-                  <EnvelopeBack letter={openLetter} />
-                </Group>
-                <Para text={t('envelope.close')} x={0} y={150 + envelopeSize(openLetter).h * ENV_ZOOM + 24} width={WORLD.w} family="Caveat" size={16} color="rgba(232,218,190,0.75)" align="center" />
-              </Fade>
-            )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}

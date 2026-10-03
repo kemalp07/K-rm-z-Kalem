@@ -252,6 +252,9 @@ function attempt(
   return out;
 }
 
+/** The folded corner at the paper's bottom right that puts the letter back in its envelope. */
+export const closeCorner = (paper: Rect): Rect => ({ x: paper.x + paper.w - 34, y: paper.y + paper.h - 34, w: 34, h: 34 });
+
 /** What the red pencil can ring on this letter; `anomaly` from the letter's inspectables. */
 export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] {
   const wrong = new Set((letter.inspectables ?? []).filter((i) => i.anomaly).map((i) => i.target));

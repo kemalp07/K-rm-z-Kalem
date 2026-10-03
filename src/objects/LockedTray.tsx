@@ -12,7 +12,7 @@ const GHOST_EDGE = 'rgba(180,160,120,0.22)';
 /** Tools not yet issued: grille, cipher disc, code book — outlines in a dark tray, out of reach. */
 export function LockedTray() {
   const r = LAYOUT.tray;
-  const tag = useMemo(() => roughRect({ x: r.x + 96, y: r.y + r.h - 22, w: 78, h: 17 }, 'tray-tag', 0.6), [r]);
+  const tag = useMemo(() => roughRect({ x: r.x + 18, y: r.y + r.h - 26, w: r.w - 36, h: 20 }, 'tray-tag', 0.6), [r]);
   const disc = { cx: r.x + 118, cy: r.y + 44, r: 28 };
   return (
     <Group>
@@ -65,8 +65,8 @@ export function LockedTray() {
         <Line p1={vec(r.x + 156, r.y + 18)} p2={vec(r.x + 156, r.y + 74)} strokeWidth={0.8} color={GHOST_EDGE} />
       </Group>
 
-      <Path path={tag} color="rgba(200,185,150,0.28)" />
-      <Para text={t('tray.locked')} x={r.x + 96} y={r.y + r.h - 21} width={78} family="Caveat" size={11} color="rgba(30,20,10,0.75)" align="center" />
+      <Path path={tag} color="rgba(214,198,160,0.8)" />
+      <Para text={t('tray.locked')} x={r.x + 18} y={r.y + r.h - 25} width={r.w - 36} family="Caveat" size={14} color="#2e2418" align="center" />
     </Group>
   );
 }
