@@ -1,0 +1,277 @@
+{
+  "id": "pool_cepheden_000065",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Manisalı",
+    "age": 33,
+    "hometown": "Manisa",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Osman",
+    "relation": "oğlu",
+    "location": "Manisa, Akhisar kazası, Ağılönü karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "high",
+  "length_target": 113,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Osman'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Size geçen ay bir kâğıt yolladım, hiç cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Nenene selam söyle, ellerinden öperim, benim için merak etmesin, sağ salim ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Evdekilere de tembih et, sana ve kardeşine iyi baksın, tarlanın sürümünü vaktiyle bitirsinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Karnımız tok şükür, yemeğimiz her gün çıkıyor, bizi düşünmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Biz üç gündür deniz gören kumlu bir sırttayız.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyden demirci İbrahim üçüncü tabur sekizinci bölüğe düştü, dün onu gördüm, selamı var.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün gece bizim mangadan beş kişi eksildi, gerisi sağlam.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralarda otlar iyice yeşerdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Koyunları yaylaya çıkarma vakti geldi, emmin size arka çıksın, tek başınıza o işin altından kalkamazsınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Nenenin dizleri kıştan beri ağrıyordur, suyu kuyudan evdekiler çeksin, kadını yormayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Mektubun cevabını tez yazın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizi Allah'a emanet ettim.",
+  "signature": {
+    "text": "Baban Nail"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Manisa, Akhisar kazası, Ağılönü karyesi, Muhtar İlyas Ağa vasıtasıyla Osman'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Manisalı, 33, çiftçi, er (Manisa, Akhisar kazası, Ağılönü karyesi)\nAlıcı: Oğlu Osman, Manisa, Akhisar kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 22 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: utangaç, karısına adıyla seslenemez\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: aç kaldıklarını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: çok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Manisa",
+        "occupation": "çiftçi",
+        "epithet": "Manisalı",
+        "place": "Akhisar kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Osman",
+        "gender": "erkek",
+        "age": 11,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akhisar kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Manisa, Akhisar kazası, Ağılönü karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "high",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "22 Nisan 1331",
+      "closing": "",
+      "home_address": "Manisa, Akhisar kazası, Ağılönü karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5674,
+      "output": 3320
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Nisan 1331\nHİTAP: Oğlum Osman'a\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Size geçen ay bir kâğıt yolladım, hiç cevap gelmedi. Nenene selam söyle, ellerinden öperim, benim için merak etmesin, sağ salim ayaktayız. Evdekilere de tembih et, sana ve kardeşine iyi baksın, tarlanın sürümünü vaktiyle bitirsinler. Karnımız tok şükür, yemeğimiz her gün çıkıyor, bizi düşünmeyin. ⟦Biz üç gündür deniz gören kumlu bir sırttayız.⟧ ⟦Köyden demirci İbrahim üçüncü tabur sekizinci bölüğe düştü, dün onu gördüm, selamı var.⟧ ⟦Dün gece bizim mangadan beş kişi eksildi, gerisi sağlam.⟧ Buralarda otlar iyice yeşerdi. Koyunları yaylaya çıkarma vakti geldi, emmin size arka çıksın, tek başınıza o işin altından kalkamazsınız. Nenenin dizleri kıştan beri ağrıyordur, suyu kuyudan evdekiler çeksin, kadını yormayın. Mektubun cevabını tez yazın.\nKAPANIŞ: Hepinizi Allah'a emanet ettim.\nİMZA: Baban Nail\nZARF: Manisa, Akhisar kazası, Ağılönü karyesi, Muhtar İlyas Ağa vasıtasıyla Osman'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "113 kelime, hedef 113 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:54+00:00",
+    "tokens": {
+      "input": 4331,
+      "output": 4208
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektubun dili, kelime seçimi ve cümle yapısı 1915 yılına ve orta okuryazar bir köylüye tamamen uygundur.",
+      "olculuk": "Duygular doğrudan ifade edilmemiş, bunun yerine somut işler ve tembihler üzerinden ustaca hissettirilmiştir.",
+      "okuryazarlik": "Orta okuryazar birinin yazacağı gibi, sade, anlaşılır ve düzgün cümleler kullanılmış, yazım kurallarına uyulmuştur.",
+      "somutluk": "Mektup, 'tarlanın sürümü', 'koyunları yaylaya çıkarma', 'suyu kuyudan çekmek' gibi somut ve döneme uygun ayrıntılarla doludur.",
+      "sadakat": "İstekte 'Dikkatsizlik: çok' denmesine rağmen mektupta hiçbir askerî bilgi sansürden kaçmamış, tümü ⟦ ⟧ içine alınarak isteğin bu önemli kısmı yerine getirilmemiştir.",
+      "sahicilik": "Köy hayatına dair endişelerle cephedeki durumun birleşimi ve karısına 'evdekiler' diye seslenmesi mektubu son derece sahici kılmıştır."
+    },
+    "issues": [
+      {
+        "line": "⟦Biz üç gündür deniz gören kumlu bir sırttayız.⟧",
+        "problem": "İstekte 'Dikkatsizlik: çok' (2-3 kaçak bilgi) istenmişti; bu konum bilgisi, yazarın farkında olmadan sızdıracağı bir ayrıntı olmalıydı ama sansür için işaretlenmiş.",
+        "suggestion": "Biz üç gündür deniz gören kumlu bir sırttayız."
+      },
+      {
+        "line": "⟦Dün gece bizim mangadan beş kişi eksildi, gerisi sağlam.⟧",
+        "problem": "Bu zayiat bilgisi, 'dikkatsizlik' için ikinci bir örnek olmalıydı; ancak sansür için işaretlenerek isteğe uyulmamıştır.",
+        "suggestion": "Dün gece bizim mangadan beş kişi eksildi, gerisi sağlam."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T17:22:54+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "id": "pool_cepheye_000102",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Kevser",
+    "epithet": "Çankırılı",
+    "age": 15,
+    "hometown": "Çankırı",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Eyüp",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 62,
+  "hand": "careful",
+  "header": {
+    "text": "Söğütlü, 8 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendim Eyüp'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubu yazıyorum, inşallah iyisindir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim Sarıkız dün gece buzağıladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Alnı sakar, dişi bir buzağı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sabahları ahıra inip onlara bakıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sana köylüyle bir bohça yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "İçine kıştan ördüğüm yün çorapla kalın atkıyı koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Geceleri soğuk olur oralarda, sarın da üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Hoca efendiye bir de muska yazdırdım, geldiğinde boynuna as, hiç çıkarma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocuğun da selamı var, şimdi beşiğinde uyuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim köyde başkaca havadis yok.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile.",
+  "signature": {
+    "text": "Zevcen Kevser"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Çankırılı Eyüp'e",
+    "sensitive": false
+  },
+  "package": [
+    "muska",
+    "yün çorap",
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kevser, Çankırılı, 15, çiftçi (Çankırı, Çerkeş kazası, Söğütlü karyesi)\nAlıcı: Kocası Onbaşı Eyüp, cephede\nYön: cepheye\nTarih: 8 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: ineğin buzağılaması\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: muska, yün çorap, el örgüsü atkı\nKapanış: Selam ve dua ile\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Kevser",
+        "gender": "kadın",
+        "age": 15,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "epithet": "Çankırılı",
+        "place": "Çerkeş kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Eyüp",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çerkeş kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "ineğin buzağılaması",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": [
+        "muska",
+        "yün çorap",
+        "el örgüsü atkı"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "8 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "Çankırı, Çerkeş kazası, Söğütlü karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5777,
+      "output": 2681
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Söğütlü, 8 Mayıs 1331\nHİTAP: Efendim Eyüp'e\nGÖVDE: Mektubu yazıyorum, inşallah iyisindir. Bizim Sarıkız dün gece buzağıladı. Alnı sakar, dişi bir buzağı. Sabahları ahıra inip onlara bakıyorum. Sana köylüyle bir bohça yolladım. İçine kıştan ördüğüm yün çorapla kalın atkıyı koydum. Geceleri soğuk olur oralarda, sarın da üşütme. Hoca efendiye bir de muska yazdırdım, geldiğinde boynuna as, hiç çıkarma. Çocuğun da selamı var, şimdi beşiğinde uyuyor. Bizim köyde başkaca havadis yok.\nKAPANIŞ: Selam ve dua ile.\nİMZA: Zevcen Kevser\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Çankırılı Eyüp'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 62 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:52+00:00",
+    "tokens": {
+      "input": 4228,
+      "output": 2883
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili ve üslubu, modern ifadelerden arınmış olmasıyla başarılıdır.",
+      "olculuk": "Duygular adlandırılmamış, somut eylemler ve sade ifadelerle hissettirilmiş; bu, istekle tam uyumludur.",
+      "okuryazarlik": "Orta okuryazarlığa genel olarak uyulsa da, 'Zevcen' kelimesi 15 yaşındaki bir köylü kız için biraz fazla resmi kalmaktadır.",
+      "somutluk": "Mektup, 'Sarıkız', 'alnı sakar buzağı', 'yün çorap' gibi somut ve gündelik ayrıntılarla doludur.",
+      "sadakat": "İstekteki konu, uzunluk, saklanan bilgi ve kapanış dahil tüm maddelere harfiyen uyulmuştur.",
+      "sahicilik": "Mektup, abartıdan uzak, gerçekçi ve dönemin ruhunu yansıtan sahici bir tona sahiptir."
+    },
+    "issues": [
+      {
+        "line": "İMZA: Zevcen Kevser",
+        "problem": "'Zevcen' kelimesi, orta okuryazar 15 yaşındaki bir karakter için fazla resmi ve kâtip ağzı bir ifadedir; mektubun genelindeki sadelikle çelişir.",
+        "suggestion": "İMZA: Karın Kevser"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:33:52+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

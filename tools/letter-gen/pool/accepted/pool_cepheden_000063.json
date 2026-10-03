@@ -1,0 +1,288 @@
+{
+  "id": "pool_cepheden_000063",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Veli",
+    "epithet": "Demirci",
+    "age": 37,
+    "hometown": "Adana",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Gülizar",
+    "relation": "kız kardeşi",
+    "location": "Adana, Karaisalı kazası, Yenice karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "high",
+  "length_target": 94,
+  "hand": "elegant",
+  "header": {
+    "text": "Arıburnu, 23 Nisan 1331",
+    "sensitive": true
+  },
+  "salutation": "Kardeşim Gülizar Hanım'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğin mektubu dün sabah aldım, okuyunca ziyadesiyle memnun oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde ahval nicedir?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hacı emmim gilin tarlasına suyu kim veriyor, dükkânın kilidi sağlam mıdır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Arada bir yağlayın ki pas tutmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Muhtarın oğlunun düğünü ne oldu, kimleri çağırdılar?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Benim sıhhatim yerindedir, hiç meraklanmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Lakin",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "bizim taburdan geriye seksen kişi ancak kaldık.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Yaralıları da hemen şu arkadaki sığ dereye taşıyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen nişanlım Zeynep'e de hususi selamımı söyle, sakın ola ümidini kesmesin, işlediği çeyizini sandıkta bekletsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "İnşallah bu günler tez geçer.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kahveci Rıza'ya ve cemaate de çok selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Abin Veli"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Adana, Karaisalı kazası, Yenice karyesi, İmam Hasan Efendi vasıtasıyla Gülizar Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Veli, Demirci, 37, demirci, er (Adana, Karaisalı kazası, Yenice karyesi)\nAlıcı: Kız kardeşi Gülizar Hanım, Adana, Karaisalı kazası, Yenice karyesi\nYön: cepheden\nTarih: 23 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: meraklı, köyden herkesi sorar\nKonu: nişanlısının beklemesini istemek\nSakladığı: ayağında yara açıldığını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: çok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Çabuk cevap yaz\nUzunluk: 94",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Veli",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": "demirci",
+        "epithet": "Demirci",
+        "place": "Karaisalı kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Gülizar",
+        "gender": "kadın",
+        "age": 39,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karaisalı kazası, Yenice karyesi"
+      },
+      "recipient_location": "Adana, Karaisalı kazası, Yenice karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "high",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "orta",
+      "length_target": 94,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "23 Nisan 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Adana, Karaisalı kazası, Yenice karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5688,
+      "output": 3352
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Arıburnu⟧, 23 Nisan 1331\nHİTAP: Kardeşim Gülizar Hanım'a,\nGÖVDE: Evvela selam eder, iki gözlerinden hasretle öperim. Gönderdiğin mektubu dün sabah aldım, okuyunca ziyadesiyle memnun oldum. Köyde ahval nicedir? Hacı emmim gilin tarlasına suyu kim veriyor, dükkânın kilidi sağlam mıdır? Arada bir yağlayın ki pas tutmasın. Muhtarın oğlunun düğünü ne oldu, kimleri çağırdılar? Benim sıhhatim yerindedir, hiç meraklanmayın. Lakin ⟦bizim taburdan geriye seksen kişi ancak kaldık.⟧ ⟦Yaralıları da hemen şu arkadaki sığ dereye taşıyoruz.⟧ Sen nişanlım Zeynep'e de hususi selamımı söyle, sakın ola ümidini kesmesin, işlediği çeyizini sandıkta bekletsin. İnşallah bu günler tez geçer. Kahveci Rıza'ya ve cemaate de çok selam ederim.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Abin Veli\nZARF: Adana, Karaisalı kazası, Yenice karyesi, İmam Hasan Efendi vasıtasıyla Gülizar Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "92 kelime, hedef 94 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Arıburnu, 23 Nisan 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000017 ile ortak: \"evvela selam eder iki gözlerinden hasretle\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:34+00:00",
+    "tokens": {
+      "input": 4302,
+      "output": 3881
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'ahval' ve 'ziyadesiyle' gibi kelimelerle istekteki 'yüksek okuryazar' profiline ve döneme uygundur.",
+      "olculuk": "'Hasretle' kelimesiyle duygu doğrudan adlandırılmış, bu da kurala göre ölçülülüğü bir miktar zayıflatmıştır.",
+      "okuryazarlik": "Kelime seçimi ve cümle yapısı, dönemin okumuş bir kişisinin kaleminden çıkmış gibi duruyor.",
+      "somutluk": "Dükkân kilidi, tarla suyu, çeyiz sandığı gibi ayrıntılar mektuba güçlü bir somutluk katmış.",
+      "sadakat": "İstekteki konu, ton, hassas bilgi ve dikkatsizlik seviyesi dahil tüm unsurlar mektuba doğru yansıtılmış.",
+      "sahicilik": "Köy hayatının pratik dertleriyle cephedeki durumun iç içe geçmesi mektubu oldukça sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Kardeşim Gülizar Hanım'a,",
+        "problem": "Hitap satırının sonundaki virgül modern bir kullanım olup dönemin mektuplarında genellikle bulunmaz.",
+        "suggestion": "Kardeşim Gülizar Hanım'a"
+      },
+      {
+        "line": "GÖVDE: Evvela selam eder, iki gözlerinden hasretle öperim.",
+        "problem": "Kural 4'e göre duygu adlandırılmamalıdır; 'hasretle' kelimesi bu kuralı ihlal etmektedir.",
+        "suggestion": "Evvela selam eder, iki gözlerinden öperim."
+      },
+      {
+        "line": "KAPANIŞ: Çabuk cevap yaz.",
+        "problem": "Kapanış cümlesinin sonundaki nokta, dönemin mektup alışkanlıklarına göre zorunlu değildir ve modern bir etkidir.",
+        "suggestion": "Çabuk cevap yaz"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:22:34+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

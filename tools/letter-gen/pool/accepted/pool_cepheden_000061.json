@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheden_000061",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hilmi",
+    "epithet": "Erzurumlu",
+    "age": 26,
+    "hometown": "Erzurum",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Fikriye",
+    "relation": "nişanlısı",
+    "location": "Erzurum, Hasankale kazası, Ağılönü karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 77,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 10 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Fikriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Hilmi der ki: Fikriye, evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buraya geleli aylar geçti, bölüğe gelen giden posta çoktur ama sizden bir satır kâğıt çıkmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan buralarda yol gözler, hiç mi aklınıza gelmedim?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim hâlim vaktim yerindedir, tasalanmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Yaz yaklaşıyor, dükkânın kepengi kapalıdır ama o tarladaki arpayı kim biçecek?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tırpan işini kime verdiniz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Emmi oğullarına söyleyin de ekinler ziyan olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dükkândaki örs pas tutmasın, körüğü iyi sarın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Cevap yollayın da içim ferahlasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "",
+    "seal": "Hilmi"
+  },
+  "note": {
+    "text": "İşbu mektubu Hilmi kardeşimin ağzından yazdım. Çadır komşusu Salih Hoca.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Erzurum, Hasankale kazası, Ağılönü karyesi, İmam Kadir Efendi vasıtasıyla Fikriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hilmi, Erzurumlu, 26, demirci, er (Erzurum, Hasankale kazası, Ağılönü karyesi)\nAlıcı: Nişanlısı Fikriye Hanım, Erzurum, Hasankale kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 10 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hilmi",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Erzurum",
+        "occupation": "demirci",
+        "epithet": "Erzurumlu",
+        "place": "Hasankale kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Fikriye",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hasankale kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Erzurum, Hasankale kazası, Ağılönü karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "10 Mayıs 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Erzurum, Hasankale kazası, Ağılönü karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5705,
+      "output": 3464
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 10 Mayıs 1331\nHİTAP: Nişanlım Fikriye Hanım'a\nGÖVDE: Hilmi der ki: Fikriye, evvela selam eder, hatırını sorarım. Buraya geleli aylar geçti, bölüğe gelen giden posta çoktur ama sizden bir satır kâğıt çıkmadı. İnsan buralarda yol gözler, hiç mi aklınıza gelmedim? Benim hâlim vaktim yerindedir, tasalanmayın. Yaz yaklaşıyor, dükkânın kepengi kapalıdır ama o tarladaki arpayı kim biçecek? Tırpan işini kime verdiniz? Emmi oğullarına söyleyin de ekinler ziyan olmasın. Dükkândaki örs pas tutmasın, körüğü iyi sarın. Cevap yollayın da içim ferahlasın.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: (mühür: Hilmi)\nNOT: İşbu mektubu Hilmi kardeşimin ağzından yazdım. Çadır komşusu Salih Hoca.\nZARF: Erzurum, Hasankale kazası, Ağılönü karyesi, İmam Kadir Efendi vasıtasıyla Fikriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "71 kelime, hedef 77 (-8%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:16+00:00",
+    "tokens": {
+      "input": 4314,
+      "output": 3093
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler ('kâğıt', 'tasalanmayın', 'emmi oğulları') döneme ve karakterin sosyal çevresine tamamen uygundur.",
+      "olculuk": "Sitem duygusu, 'hiç mi aklınıza gelmedim?' gibi sorularla ve somut beklentilerle hissettirilmiş, doğrudan adlandırılmamıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin doğrudan ve pratik endişeleri, mektubu yazan hocanın daha kalıplı diliyle ('Hilmi der ki', 'İşbu mektubu') başarılı bir şekilde birleştirilmiştir.",
+      "somutluk": "Mektup, demirci ve çiftçi hayatına özgü (arpa, tırpan, örs, körük) son derece somut ve canlı ayrıntılarla doludur.",
+      "sadakat": "İsteğe büyük ölçüde sadık kalınmış ancak 'Dikkatsizlik: yok' kuralına rağmen askeri bir terim olan 'bölük' kelimesi sansürsüz bırakılmıştır.",
+      "sahicilik": "Pratik kaygılarla (ekin, dükkân) kişisel sitemin iç içe geçtiği, bir kâtip tarafından yazıldığı belli olan bu metin, gerçek bir mektup hissi vermektedir."
+    },
+    "issues": [
+      {
+        "line": "Buraya geleli aylar geçti, bölüğe gelen giden posta çoktur ama sizden bir satır kâğıt çıkmadı.",
+        "problem": "İstekte 'Dikkatsizlik: yok' belirtilmesine rağmen, askeri bir terim olan 'bölüğe' kelimesi sansür kurallarına aykırı olarak açıkça yazılmıştır.",
+        "suggestion": "Buraya geleli aylar geçti, ⟦bölüğe⟧ gelen giden posta çoktur ama sizden bir satır kâğıt çıkmadı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:22:16+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

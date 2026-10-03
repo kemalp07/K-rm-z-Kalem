@@ -1,0 +1,302 @@
+{
+  "id": "pool_cepheye_000071",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hasan",
+    "epithet": "Eskişehirli",
+    "age": 61,
+    "hometown": "Eskişehir",
+    "occupation": "çiftçi",
+    "relation": "amcası"
+  },
+  "recipient": {
+    "name": "Lütfi",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 127,
+  "hand": "dictated",
+  "header": {
+    "text": "Yenice, 20 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Yeğenim Lütfi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Lütfi yeğenim, gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nasılsın, iyi misin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizler sağız çok şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bu kâğıdı komşunun oğlu mektepli Ali'ye yazdırıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dün şehre inen arabacıyla sana bir çıkın yolladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yengen içine iki çift yün çorap, biraz ceviz, bir de geçen güzden kalan elma kurularından koydu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hepsini birden yeme, idareli git.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim ufaklıklar, Ayşe ile Mehmet seni çok soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Mehmet senin eski çarıkları giymeye kalkıyor, ayağına büyük geliyor ama çamurda onlarla geziyor kerata.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bu hafta yağmurlar pek yaman vurdu, ahırın damı biraz aktı, çamurla sıvadık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarlaya yayan gidip geliyoruz bugünler, bizim emektarlar yok artık, kendi gücümüzle yürüyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen oralarda kendini sakın, ayağını çıplak basma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bize kâğıt yollamayı unutma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köydeki komşular hep tek tek selam ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Yengenin de çok selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Sıhhatine dikkat et, bizi de merakta bırakma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Kendine mukayet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "",
+    "seal": "Hasan"
+  },
+  "note": {
+    "text": "Hasan amcanın dediklerini ben yazdım Lütfi abi, ellerinden öperim. Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Lütfi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hasan, Eskişehirli, 61, çiftçi (Eskişehir, Sivrihisar kazası, Yenice karyesi)\nAlıcı: Yeğeni Er Lütfi, cephede\nYön: cepheye\nTarih: 20 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: paketle gönderilen şeyler\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Duanı eksik etme\nUzunluk: 127",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 61,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "epithet": "Eskişehirli",
+        "place": "Sivrihisar kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sivrihisar kazası, Yenice karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "paketle gönderilen şeyler",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 127,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Mayıs 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Eskişehir, Sivrihisar kazası, Yenice karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5778,
+      "output": 6826
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Yenice, 20 Mayıs 1331\nHİTAP: Yeğenim Lütfi'ye\nGÖVDE: Lütfi yeğenim, gözlerinden öperim. Nasılsın, iyi misin. Bizler sağız çok şükür. Bu kâğıdı komşunun oğlu mektepli Ali'ye yazdırıyorum. Dün şehre inen arabacıyla sana bir çıkın yolladık. Yengen içine iki çift yün çorap, biraz ceviz, bir de geçen güzden kalan elma kurularından koydu. Hepsini birden yeme, idareli git. Bizim ufaklıklar, Ayşe ile Mehmet seni çok soruyor. Mehmet senin eski çarıkları giymeye kalkıyor, ayağına büyük geliyor ama çamurda onlarla geziyor kerata. Bu hafta yağmurlar pek yaman vurdu, ahırın damı biraz aktı, çamurla sıvadık. Tarlaya yayan gidip geliyoruz bugünler, bizim emektarlar yok artık, kendi gücümüzle yürüyoruz. Sen oralarda kendini sakın, ayağını çıplak basma. Bize kâğıt yollamayı unutma. Köydeki komşular hep tek tek selam ediyor. Yengenin de çok selamı var. Sıhhatine dikkat et, bizi de merakta bırakma. Kendine mukayet ol.\nKAPANIŞ: Duanı eksik etme.\nİMZA: (mühür: Hasan)\nNOT: Hasan amcanın dediklerini ben yazdım Lütfi abi, ellerinden öperim. Ali.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Lütfi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "126 kelime, hedef 127 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:08+00:00",
+    "tokens": {
+      "input": 4386,
+      "output": 2614
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('çıkın', 'kerata', 'mukayet ol') döneme uygundur ve modern bir kelime içermemektedir.",
+      "olculuk": "Duygular somut olaylar ve üstü kapalı ifadelerle ('bizim emektarlar yok artık') aktarılmış, doğrudan duygu beyanından kaçınılmıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin mektepli bir çocuğa yazdırdığı mektup yapısı, konuşanın sade dili ve yazanın düzgün imlasıyla başarıyla yansıtılmıştır.",
+      "somutluk": "Mektup, yün çorap, elma kurusu, ahırın akan damı gibi gündelik hayata dair çok sayıda somut ve canlı ayrıntı içermektedir.",
+      "sadakat": "Mektup, konu, ton, saklanan bilgi, yazım biçimi ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uymaktadır.",
+      "sahicilik": "Hayvanların alındığını ima eden üstü kapalı anlatım ve yazan çocuğun eklediği not gibi detaylar mektuba yüksek bir sahicilik katmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:08+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000074",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sadık",
+    "epithet": "Giresunlu",
+    "age": 26,
+    "hometown": "Giresun",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "dayısı",
+    "location": "Giresun, Tirebolu kazası, Bahçecik karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 78,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Dayım Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sadık der ki, dayıma çok selam ederim ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen yolladığınız paket elime ulaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Yün çorapları giyiyorum sağ olasınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İçindeki fındıkları da arkadaşlara dağıttım yedik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim param bitti, cepte metelik kalmadı, nasıl oldu anlamadım ama idare ediyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde herkes nasıldır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kel Osman'ın kahvesinde oturanlara, emmilerime, yengelerime hep selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim mısır tarlasını kim sürüyor, İdris emmi öküzleri verdi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Burada denizin tam karşısında siperde bekliyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Herkesin tek tek hâlini hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "İmam efendiye de selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Sadık"
+  },
+  "note": {
+    "text": "İşbu mektubu Sadık kardeşimin ağzından yazdım. Trabzonlu Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Giresun, Tirebolu kazası, Bahçecik karyesi, Muhtar Hasan Ağa vasıtasıyla Talat'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sadık, Giresunlu, 26, çiftçi, er (Giresun, Tirebolu kazası, Bahçecik karyesi)\nAlıcı: Dayısı Talat, Giresun, Tirebolu kazası, Bahçecik karyesi\nYön: cepheden\nTarih: 17 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: meraklı, köyden herkesi sorar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Cevabını bekliyorum\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Giresun",
+        "occupation": "çiftçi",
+        "epithet": "Giresunlu",
+        "place": "Tirebolu kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 41,
+        "relation": "dayısı",
+        "rank": null,
+        "hometown": "Giresun",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tirebolu kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Giresun, Tirebolu kazası, Bahçecik karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "17 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Giresun, Tirebolu kazası, Bahçecik karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5858,
+      "output": 3471
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 17 Mayıs 1331\nHİTAP: Dayım Talat'a\nGÖVDE: Sadık der ki, dayıma çok selam ederim ellerinden öperim. Geçen yolladığınız paket elime ulaştı. Yün çorapları giyiyorum sağ olasınız. İçindeki fındıkları da arkadaşlara dağıttım yedik. Benim param bitti, cepte metelik kalmadı, nasıl oldu anlamadım ama idare ediyorum. Köyde herkes nasıldır? Kel Osman'ın kahvesinde oturanlara, emmilerime, yengelerime hep selam eyle. Bizim mısır tarlasını kim sürüyor, İdris emmi öküzleri verdi mi? ⟦Burada denizin tam karşısında siperde bekliyoruz.⟧ Herkesin tek tek hâlini hatırını sorarım. İmam efendiye de selam eyle.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Sadık)\nNOT: İşbu mektubu Sadık kardeşimin ağzından yazdım. Trabzonlu Ali.\nZARF: Giresun, Tirebolu kazası, Bahçecik karyesi, Muhtar Hasan Ağa vasıtasıyla Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "76 kelime, hedef 78 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:28+00:00",
+    "tokens": {
+      "input": 4293,
+      "output": 2972
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('metelik kalmadı', 'selam eyle') döneme uygundur, modern bir kelime yoktur.",
+      "olculuk": "Duygular adlandırılmamış, somut olaylar ve sorular üzerinden merak ve hasret hissettirilmiştir.",
+      "okuryazarlik": "Yazdıran kişinin sade dili, 'Sadık der ki' kalıbı ve kâtibin notu, istekle tam uyumludur.",
+      "somutluk": "Mektup; çorap, fındık, mısır tarlası, öküzler gibi son derece somut ve gündelik detaylar içermektedir.",
+      "sadakat": "İstekte belirtilen tüm unsurlar (konu, ton, yazma biçimi, saklanan bilgi, dikkatsizlik) mektupta doğru bir şekilde işlenmiştir.",
+      "sahicilik": "Köy hayatına dair detaylar, selam zinciri ve askerin basit endişeleri mektubu son derece sahici kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "⟦Burada denizin tam karşısında siperde bekliyoruz.⟧",
+        "problem": "Askerî bir sır olan birliğin konumu ('denizin tam karşısında') ifşa edilmektedir. Bu, sansürün kesinlikle engelleyeceği bir bilgidir.",
+        "suggestion": "Yer bildiren bu cümle tamamen çıkarılmalı veya 'Burada vazifemizin başındayız, bekliyoruz.' gibi genel bir ifadeyle değiştirilmelidir."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:24:28+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

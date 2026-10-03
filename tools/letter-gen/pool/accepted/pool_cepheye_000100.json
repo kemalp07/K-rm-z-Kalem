@@ -1,0 +1,306 @@
+{
+  "id": "pool_cepheye_000100",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Meryem",
+    "epithet": "Erzurumlu",
+    "age": 31,
+    "hometown": "Erzurum",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Eşref",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 127,
+  "hand": "dictated",
+  "header": {
+    "text": "Kiğı, 11 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Zevcim Eşref'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "İşbu mektubu Meryem'in ağzından yazıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Meryem der ki: Zevcim Eşref, evvela selam eder, iki ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız, bir eksiğimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kaç zamandır köyün odasına haber gelir, senin adın hiç okunmaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hocaya her vakit sorarım, kâğıdı çıkmadı der.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gözümüz yola bakar oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Acaba kâğıdın mı bitti, yoksa fırsat mı bulamadın?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kötü bir şey düşünmem, sağlığın yerindedir inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Biz buralarda iyiyiz, merak edilecek halimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Geçen hafta koyunları yaylaya çıkardılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kıştan kalan bulgurumuz yetiyor, unumuzu da değirmende çektirdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Oğlan büyüyor, tarlada amcasına yardım eder oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Buralara sıcaklar bastırdı, arpa boy veriyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Komşu Fatma'nın kızı evlendi, onlara da bir tas pekmez götürdük.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Senin emanet bıraktığın her şey yerli yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Hemen bir kelam yazıp yolla, hoca efendi okusun da sesini duyalım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Meryem"
+  },
+  "note": {
+    "text": "Mektubu ben kaleme aldım, Allah tez vakitte kavuştursun. İmam Hafız Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Erzurumlu Eşref'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Meryem Hanım, Erzurumlu, 31, çiftçi (Erzurum, Kiğı kazası, Ortaköy karyesi)\nAlıcı: Kocası Çavuş Eşref, cephede\nYön: cepheye\nTarih: 11 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: az konuşur, her şeyi iyi gösterir\nKonu: mektup gelmediği için endişe\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Cevabını bekliyorum\nUzunluk: 127",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Meryem",
+        "gender": "kadın",
+        "age": 31,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": "çiftçi",
+        "epithet": "Erzurumlu",
+        "place": "Kiğı kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Eşref",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kiğı kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 127,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "11 Haziran 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Erzurum, Kiğı kazası, Ortaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5669,
+      "output": 2011
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kiğı, 11 Haziran 1331\nHİTAP: Muhterem Zevcim Eşref'e\nGÖVDE: İşbu mektubu Meryem'in ağzından yazıyorum. Meryem der ki: Zevcim Eşref, evvela selam eder, iki ellerinden öperim. Benim hâlimi sorarsan şükür ayaktayız, bir eksiğimiz yoktur. Kaç zamandır köyün odasına haber gelir, senin adın hiç okunmaz. Hocaya her vakit sorarım, kâğıdı çıkmadı der. Gözümüz yola bakar oldu. Acaba kâğıdın mı bitti, yoksa fırsat mı bulamadın? Kötü bir şey düşünmem, sağlığın yerindedir inşallah. Biz buralarda iyiyiz, merak edilecek halimiz yoktur. Geçen hafta koyunları yaylaya çıkardılar. Kıştan kalan bulgurumuz yetiyor, unumuzu da değirmende çektirdik. Oğlan büyüyor, tarlada amcasına yardım eder oldu. Buralara sıcaklar bastırdı, arpa boy veriyor. Komşu Fatma'nın kızı evlendi, onlara da bir tas pekmez götürdük. Senin emanet bıraktığın her şey yerli yerinde. Hemen bir kelam yazıp yolla, hoca efendi okusun da sesini duyalım.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Meryem)\nNOT: Mektubu ben kaleme aldım, Allah tez vakitte kavuştursun. İmam Hafız Ali.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Erzurumlu Eşref'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "121 kelime, hedef 127 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000035 ile ortak: \"evvela selam eder iki ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:33+00:00",
+    "tokens": {
+      "input": 4382,
+      "output": 3043
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil genel olarak döneme uygun, ancak 'zevcim' kelimesi köylü ağzından ziyade kâtip üslubuna yakın duruyor.",
+      "olculuk": "Endişe, 'adın okunmaz', 'kâğıdın mı bitti' gibi somut eylem ve sorularla adlandırılmadan çok iyi hissettirilmiş.",
+      "okuryazarlik": "Yazdıran kişi (Meryem) ve yazan (hoca) arasındaki ses ayrımı, mühür kullanımı ve hocanın notu istekle tam uyumlu.",
+      "somutluk": "Mektup, yayla, bulgur, un, tarla işleri, komşu düğünü gibi son derece somut ve mevsime uygun ayrıntılarla dolu.",
+      "sadakat": "Gönderen, alıcı, konu, yazma biçimi, kapanış ve uzunluk dahil olmak üzere isteğin tüm unsurlarına harfiyen uyulmuş.",
+      "sahicilik": "Kişisel endişe ile köy hayatından haberlerin birleşimi, mektubu yapaylıktan uzak ve son derece sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Muhterem Zevcim Eşref'e",
+        "problem": "'Muhterem Zevcim' hitabı, bir köy hocasının bile Meryem adına kullanması için fazla resmî ve kâtip ağzıdır.",
+        "suggestion": "Efendime Eşref'e"
+      },
+      {
+        "line": "Kötü bir şey düşünmem, sağlığın yerindedir inşallah.",
+        "problem": "İlk kısım ('Kötü bir şey düşünmem') endişeyi dolaylı yoldan adlandırarak 'duygu adlandırma' yasağını sınırdan ihlal ediyor.",
+        "suggestion": "Sağlığın yerindedir inşallah."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:33:33+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

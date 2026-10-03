@@ -1,0 +1,301 @@
+{
+  "id": "pool_cepheye_000091",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fevziye",
+    "epithet": "Konyalı",
+    "age": 66,
+    "hometown": "Konya",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Sabri",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 98,
+  "hand": "dictated",
+  "header": {
+    "text": "Esentepe, 21 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Çavuş Sabri'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Sabri mektubunu hocaya okuttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nasılsın, iyi misin, ayağında yaran var mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Yemek veriyorlar mı, üstün başın pek mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Gece soğuk mu oluyor?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim aklım hep sende.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Burayı sorarsan, ben tek başıma koca tarlaya yetişemiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ot yolma zamanı geldi geçiyor, gücüm yetmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Topal Hasan tarlayı icara istiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Vereyim mi, ne dersin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Güzden ne kadar buğday isteyeyim?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tohumluğu onlar mı koysun, bizden mi çıksın?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen oradan bana bir yol göster.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Geçim zorlaştı, gazyağı bulamıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Emmin gilin kızının düğünü olacak yakında.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Komşulara mektubunu söyledim, hepsi selam ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Hızlı cevap yaz, beni merakta bırakma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Sağlıcakla kal.",
+  "signature": {
+    "text": "",
+    "seal": "Fevziye"
+  },
+  "note": {
+    "text": "İşbu mektup Fevziye ananın sözleriyle yazılmıştır. İmam İsmail.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Konyalı Sabri'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fevziye Hanım, Konyalı, 66, çiftçi (Konya, Ilgın kazası, Esentepe karyesi)\nAlıcı: Oğlu Çavuş Sabri, cephede\nYön: cepheye\nTarih: 21 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: genç ve heyecanlı, çok soru sorar\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Sağlıcakla kal\nUzunluk: 98",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fevziye",
+        "gender": "kadın",
+        "age": 66,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": "çiftçi",
+        "epithet": "Konyalı",
+        "place": "Ilgın kazası, Esentepe karyesi"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ilgın kazası, Esentepe karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 98,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "21 Mayıs 1331",
+      "closing": "Sağlıcakla kal",
+      "home_address": "Konya, Ilgın kazası, Esentepe karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5682,
+      "output": 2228
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Esentepe, 21 Mayıs 1331\nHİTAP: Oğlum Çavuş Sabri'ye\nGÖVDE: Oğlum Sabri mektubunu hocaya okuttum. Nasılsın, iyi misin, ayağında yaran var mı? Yemek veriyorlar mı, üstün başın pek mi? Gece soğuk mu oluyor? Benim aklım hep sende. Burayı sorarsan, ben tek başıma koca tarlaya yetişemiyorum. Ot yolma zamanı geldi geçiyor, gücüm yetmiyor. Topal Hasan tarlayı icara istiyor. Vereyim mi, ne dersin? Güzden ne kadar buğday isteyeyim? Tohumluğu onlar mı koysun, bizden mi çıksın? Sen oradan bana bir yol göster. Geçim zorlaştı, gazyağı bulamıyoruz. Emmin gilin kızının düğünü olacak yakında. Komşulara mektubunu söyledim, hepsi selam ediyor. Hızlı cevap yaz, beni merakta bırakma.\nKAPANIŞ: Sağlıcakla kal.\nİMZA: (mühür: Fevziye)\nNOT: İşbu mektup Fevziye ananın sözleriyle yazılmıştır. İmam İsmail.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Konyalı Sabri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "91 kelime, hedef 98 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:42+00:00",
+    "tokens": {
+      "input": 4309,
+      "output": 3702
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan 'icar', 'gazyağı', 'emmin gil' gibi kelimeler ve genel üslup döneme tamamen uygundur, modern hiçbir ifade yoktur.",
+      "olculuk": "Duygular, askerin hâlini merak eden somut sorularla ve pratik kaygılarla hissettirilmiş, doğrudan duygu beyanından kaçınılmıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen bir ananın köy hocasına yazdırdığı mektup biçimi, ananın sade dili ile hocanın düzgün yazısını birleştirerek başarıyla yansıtılmıştır.",
+      "somutluk": "Tarla kirası, tohumluk, gazyağı sıkıntısı ve komşu düğünü gibi ayrıntılar mektubu son derece somut ve gerçekçi kılmıştır.",
+      "sadakat": "Mektup; konu, uzunluk, saklanan bilgi, kapanış cümlesi ve yazım biçimi dahil olmak üzere isteğin tüm unsurlarına harfiyen uymaktadır.",
+      "sahicilik": "Mektup genel olarak çok sahici ancak selam kısmı daha kişisel olabilirdi; dönemin mektuplarında genellikle selam gönderilen kişilerin adları tek tek sayılırdı."
+    },
+    "issues": [
+      {
+        "line": "Komşulara mektubunu söyledim, hepsi selam ediyor.",
+        "problem": "Selam bölümü fazla geneldir; dönemin mektuplarında genellikle selam gönderilen veya selamı iletilen kişilerin isimleri tek tek sayılarak daha kişisel bir bağ kurulurdu.",
+        "suggestion": "Emminlere, Topal Hasan'a selamını söyledim. Onların da sana çok selamı var."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:42+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

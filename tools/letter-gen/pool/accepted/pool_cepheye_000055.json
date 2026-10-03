@@ -1,0 +1,279 @@
+{
+  "id": "pool_cepheye_000055",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fikriye",
+    "epithet": "Harputlu",
+    "age": 46,
+    "hometown": "Harput",
+    "occupation": "çamaşırcı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Şaban",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 117,
+  "hand": "careful",
+  "header": {
+    "text": "Gölcük, 20 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Şaban'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela kucak dolusu selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim hâlimizi sorarsan maşallahımız var, yuvarlanıp gidiyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Senin o yaramaz küçük oğlan geçen hafta ayaklandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Yürüdüğüne sevineyim mi ağlayayım mı bilemedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dün komşu Hatun teyzenin peşinden seğirtip kadının eteğine yapışmış, az kalsın koca leğeni deviriyordu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Evde ne kadar tas tarak varsa hepsini kapı önüne taşıyor, zapt edemiyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Gelin de peşinde koşturmaktan helak oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben yine göl kenarında çamaşır dövüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sabun ateş pahası olmuş, küllü suyla idare ediyoruz artık, ellerim iyice kayışa döndü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen buraları hiç dert etme, biz bu ufaklık ile başa çıkıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşin Fatma da selam ediyor, o da yün eğiriyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kahveci Hasan emmin hep seni soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bir eksiğin gediğin varsa köyden yollayalım, sen yeter ki haber ver.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Anan Fikriye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Harputlu Şaban'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikriye Hanım, Harputlu, 46, çamaşırcı (Harput, Palu kazası, Gölcük karyesi)\nAlıcı: Oğlu Er Şaban, cephede\nYön: cepheye\nTarih: 20 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çocuğun ilk adımları\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Hakkını helal et\nUzunluk: 117",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fikriye",
+        "gender": "kadın",
+        "age": 46,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": "çamaşırcı",
+        "epithet": "Harputlu",
+        "place": "Palu kazası, Gölcük karyesi"
+      },
+      "recipient": {
+        "name": "Şaban",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Palu kazası, Gölcük karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 117,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Mayıs 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Harput, Palu kazası, Gölcük karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5661,
+      "output": 5839
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Gölcük, 20 Mayıs 1331\nHİTAP: Oğlum Şaban'a\nGÖVDE: Evvela kucak dolusu selam eder, iki gözlerinden öperim. Bizim hâlimizi sorarsan maşallahımız var, yuvarlanıp gidiyoruz. Senin o yaramaz küçük oğlan geçen hafta ayaklandı. Yürüdüğüne sevineyim mi ağlayayım mı bilemedim. Dün komşu Hatun teyzenin peşinden seğirtip kadının eteğine yapışmış, az kalsın koca leğeni deviriyordu. Evde ne kadar tas tarak varsa hepsini kapı önüne taşıyor, zapt edemiyoruz. Gelin de peşinde koşturmaktan helak oldu. Ben yine göl kenarında çamaşır dövüyorum. Sabun ateş pahası olmuş, küllü suyla idare ediyoruz artık, ellerim iyice kayışa döndü. Sen buraları hiç dert etme, biz bu ufaklık ile başa çıkıyoruz. Kardeşin Fatma da selam ediyor, o da yün eğiriyor. Kahveci Hasan emmin hep seni soruyor. Bir eksiğin gediğin varsa köyden yollayalım, sen yeter ki haber ver.\nKAPANIŞ: Hakkını helal et.\nİMZA: Anan Fikriye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Harputlu Şaban'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "117 kelime, hedef 117 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:30+00:00",
+    "tokens": {
+      "input": 4311,
+      "output": 4466
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil, 'ayaklandı', 'seğirtmek', 'ateş pahası' gibi ifadelerle döneme ve karaktere tamamen uygundur; modern bir kelime içermemektedir.",
+      "olculuk": "Duygular, torununun yaramazlıkları ve sabun sıkıntısı gibi somut olaylar üzerinden adlandırılmadan, ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Mektup 'orta okuryazarlık' seviyesine genel olarak uysa da, hiçbir imla hatası veya küçük dil sürçmesi içermemesi onu biraz fazla kusursuz kılmaktadır.",
+      "somutluk": "Mektup, 'küllü su', 'kayışa dönen eller', 'tas tarak', 'yün eğirmek' gibi gündelik hayata dair çok sayıda somut ayrıntıyla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, ton, karakter, uzunluk ve kapanış ifadesi dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Şakacı bir dille anlatılan torun haberi ile üstü kapalı değinilen geçim derdinin birleşimi, mektuba klişelerden uzak ve son derece sahici bir ses katmıştır."
+    },
+    "issues": [
+      {
+        "line": "Evde ne kadar tas tarak varsa hepsini kapı önüne taşıyor, zapt edemiyoruz.",
+        "problem": "Metin, 'orta okuryazarlık' seviyesi için fazla hatasızdır; dönemin yaygın fonetik yazım alışkanlıklarından birini eklemek sahiciliği artırabilir.",
+        "suggestion": "Evde ne kadar tas tarak varsa hepsini kapı önüne taşıyo, zapt edemiyoruz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:30+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

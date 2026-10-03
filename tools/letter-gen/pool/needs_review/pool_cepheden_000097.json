@@ -1,0 +1,247 @@
+{
+  "id": "pool_cepheden_000097",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ramazan",
+    "epithet": "Sinoplu",
+    "age": 36,
+    "hometown": "Sinop",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Kâmil",
+    "relation": "oğlu",
+    "location": "Sinop, Boyabat kazası, Kızılca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 60,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 13 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Kâmil'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözünden hasretle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Rabbim seni her türlü kazadan beladan esirgesin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sorarsan bin şükür ayaktayız, bugünlerde çadırda yatıp dinleniyorum, bölükte ağır işimiz yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sen her sabah mektebe gidiyor musun?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hocanın sözünden sakın çıkma, Kuran cüzünü iyi belle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Allah sana zihin açıklığı versin yavrum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Anana, dedene hürmet ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Cümlesine selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Baban Ramazan"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Sinop, Boyabat kazası, Kızılca karyesi, İmam Hasan Efendi vasıtasıyla Kâmil'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ramazan, Sinoplu, 36, çiftçi, onbaşı (Sinop, Boyabat kazası, Kızılca karyesi)\nAlıcı: Oğlu Kâmil, Sinop, Boyabat kazası, Kızılca karyesi\nYön: cepheden\nTarih: 13 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: dualı, sık sık dua eder\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Cevabını bekliyorum\nUzunluk: 60",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ramazan",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Sinop",
+        "occupation": "çiftçi",
+        "epithet": "Sinoplu",
+        "place": "Boyabat kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Kâmil",
+        "gender": "erkek",
+        "age": 12,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Sinop",
+        "occupation": null,
+        "epithet": null,
+        "place": "Boyabat kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Sinop, Boyabat kazası, Kızılca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 60,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "13 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Sinop, Boyabat kazası, Kızılca karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5671,
+      "output": 2655
+    },
+    "attempts": 6,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 13 Mayıs 1331\nHİTAP: Oğlum Kâmil'e\nGÖVDE: Evvela selam eder, iki gözünden hasretle öperim. Rabbim seni her türlü kazadan beladan esirgesin inşallah. Benim hâlimi sorarsan bin şükür ayaktayız, bugünlerde çadırda yatıp dinleniyorum, bölükte ağır işimiz yok. Sen her sabah mektebe gidiyor musun? Hocanın sözünden sakın çıkma, Kuran cüzünü iyi belle. Allah sana zihin açıklığı versin yavrum. Anana, dedene hürmet ederim. Cümlesine selam söyle.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Baban Ramazan\nZARF: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hasan Efendi vasıtasıyla Kâmil'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "56 kelime, hedef 60 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000009 ile ortak: \"öperim rabbim seni her türlü kazadan\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:19+00:00",
+    "tokens": {
+      "input": 4188,
+      "output": 3346
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 3,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime dağarcığı ve ifadeler, hiçbir anakronizm olmadan 1915 dönemine tamamen uygundur.",
+      "olculuk": "Mektup çoğunlukla ölçülü olsa da, 'hasretle' kelimesiyle duyguyu göstermek yerine doğrudan adlandırmaktadır.",
+      "okuryazarlik": "Mektubun net ama basit cümle yapısı ve kelime seçimi, istenen 'orta' okuryazarlık seviyesine mükemmel uyum sağlamaktadır.",
+      "somutluk": "Mektup 'mektep' ve 'çadır' gibi birkaç somut ayrıntı içerse de, daha çok genel ifadeler ve soyut tavsiyeler üzerine kuruludur.",
+      "sadakat": "Mektup; yazarın sesi, saklanan bilgi, kapanış cümlesi ve kelime sayısı dahil olmak üzere istekteki her bir maddeye kusursuz bir şekilde uymaktadır.",
+      "sahicilik": "Yazarın hastalığını saklama biçimi, babacan endişesi ve döneme uygun dualı dili, mektubu son derece gerçekçi ve inandırıcı kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Evvela selam eder, iki gözünden hasretle öperim.",
+        "problem": "Duyguyu adlandırma kuralını ihlal ederek 'hasret' kelimesi doğrudan kullanılmıştır.",
+        "suggestion": "Evvela selam eder, iki gözünden öperim."
+      },
+      {
+        "line": "Anana, dedene hürmet ederim.",
+        "problem": "Bir babanın oğluna kendi ailesinden bahsederken kullandığı 'hürmet ederim' ifadesi, orta okuryazar bir köylü için biraz fazla resmî ve kâtip ağzı kalmaktadır.",
+        "suggestion": "Ananın ve dedenin ellerinden öperim."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

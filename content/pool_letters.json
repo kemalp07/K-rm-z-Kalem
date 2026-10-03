@@ -8857,6 +8857,314 @@
       "date": "15 Haziran 1331"
     },
     {
+      "id": "pool_cepheden_000100",
+      "tier": "pool",
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şükrü",
+        "epithet": "Balıkesirli",
+        "age": 31,
+        "hometown": "Balıkesir",
+        "occupation": "çiftçi",
+        "rank": "onbaşı",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Melek",
+        "relation": "nişanlısı",
+        "location": "Balıkesir, Bigadiç kazası, Kocaköy karyesi",
+        "gender": "kadın",
+        "age": 26
+      },
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "carelessness": "low",
+      "hand": "dictated",
+      "header": {
+        "text": "Ordu-yı Hümayun, 15 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Nişanlım Melek Hanım'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela mahsus selam eder, o güzel hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim hâlimi sual edersen, aslanlar gibi ayaktayım, hiçbir derdim yoktur.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Yolladığın paketi kâtip efendiyle beraber açtık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "O kalın yün çorapları ayağıma geçirdim, paşa giyse inan ki böyle rahat edemez.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Hele o kuru incirler pek makbule geçti, cephede ağzımız tatlandı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Geçen gün",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "topçu taburundan",
+          "kind": "sensitive",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Kocaköylü İbrahim'i gördüm, senin kulaklarını çınlattık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Burada keyfim pek yerinde, günlerim hep yiyip içmekle geçiyor sanırsın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Köydekilere, anana, babana hürmetlerimi sunarım.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Selam ve dua ile.",
+      "signature": {
+        "text": "",
+        "seal": "Şükrü"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Balıkesir, Bigadiç kazası, Kocaköy karyesi, İmam Ali Efendi vasıtasıyla Melek Hanım'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "15 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheden_000101",
+      "tier": "pool",
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "epithet": "Çoban",
+        "age": 38,
+        "hometown": "Kütahya",
+        "occupation": "çoban",
+        "rank": "er",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Seher",
+        "relation": "annesi",
+        "location": "Kütahya, Eşme kazası, Dereköy karyesi",
+        "gender": "kadın",
+        "age": 60
+      },
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "none",
+      "carelessness": "low",
+      "hand": "dictated",
+      "header": {
+        "text": "Ordu-yı Hümayun, 1 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem validem Seher Hanım'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, mübarek ellerinizden kemal-i hürmetle öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim hâlimi sual ederseniz, Allah'a şükür sağlığım yerindedir,",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Seddülbahir'de",
+          "kind": "sensitive",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "beklemekteyiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Vakit yaklaşıyor, harmanı ekinleri kim biçecek?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Kara Hasan yardım eder mi, yoksa köyden ırgat mı tutacaksınız?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ambar boş kalmasın, tarlayı sakın sahipsiz komayın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Geceleri buraların havası soğuk oluyor, gözüm hep bizim köyün gizli dağ yollarında.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Buralar bana dar geliyor gayrı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Dualarınızı eksik etmeyiniz.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Baki selam ve hürmetle.",
+      "signature": {
+        "text": "",
+        "seal": "Nail"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Kütahya, Eşme kazası, Dereköy karyesi, İmam Efendi vasıtasıyla Seher Hanım'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "1 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheden_000102",
+      "tier": "pool",
+      "direction": "cepheden",
+      "sender": {
+        "name": "Adem",
+        "epithet": "Niğdeli",
+        "age": 22,
+        "hometown": "Niğde",
+        "occupation": "çiftçi",
+        "rank": "onbaşı",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Melek",
+        "relation": "annesi",
+        "location": "Niğde, Bor kazası, Sarıyar karyesi",
+        "gender": "kadın",
+        "age": 45
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "low",
+      "hand": "careful",
+      "header": {
+        "text": "Ordu-yı Hümayun, 29 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Validem Melek Hanım'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela mahsus selam eder, hatırınızı sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim hâlimi sorarsan şükür turp gibiyim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Buralarda dert edilecek bir şey yok, yiyip içip yatıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Sadece karşımızda koca bir deniz var, gemilere bakıp duruyoruz.",
+          "kind": "sensitive",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Köyde havalar ısınmıştır.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Aşağı tarlaya bostanı ektiniz mi?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Hasan emmim tek başına o tarlanın hakkından gelemez, beli çabuk ağrır ihtiyarın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Keşke bir yolunu bulup gelsem de şu çapayı ben vursam.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Cümle komşulara selam söyle.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hepinizin gözlerinden öperim, Allah'a emanet olun.",
+      "signature": {
+        "text": "Oğlun Adem"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Niğde, Bor kazası, Sarıyar karyesi, İmam Efendi vasıtasıyla Melek Hanım'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "29 Nisan 1331"
+    },
+    {
       "id": "pool_cepheye_000001",
       "tier": "pool",
       "direction": "cepheye",
@@ -13390,6 +13698,5295 @@
       },
       "package": null,
       "date": "16 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000051",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Asım",
+        "epithet": "Malatyalı",
+        "age": 53,
+        "hometown": "Malatya",
+        "occupation": "çoban",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Rauf",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 25
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Söğütlü, 3 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Rauf'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "mektubunu aldık sağolasın bizim buralarda ekinler sarardı arpa biçmeye başlıyacaz evdeki senin oğlanı yürütmeye başladı geçen gün çardağın orda iki adım attı düştü ben de kollarından tutup kaldırdım ağlamadı hiç maşallah babası gibi sağlam olcak. sana köyün hocasına bi muska yazdırdım bir de yün eldiven koydum bohçaya oraların gecesi ayaz olurmuş ellerin üşümesin. oğlan biraz huysuz bu aralar uyumuyo pek ama diş çıkarıyo ondandır. emmilerin selam eder ben sürüleri yaylaya vuracam haftaya buraları düşünme eksiğimiz yoktur koyunların sütü yerindedir başka yazacak sözüm kalmadı hakkını helal et mektupsuz bırakma bizi",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Baban Asım"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Söğütlülü Rauf'a",
+        "sensitive": false
+      },
+      "package": [
+        "muska",
+        "yün eldiven"
+      ],
+      "date": "3 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000052",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ümmühan",
+        "epithet": "Balıkesirli",
+        "age": 29,
+        "hometown": "Balıkesir",
+        "occupation": "çiftçi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "İzzet",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 34
+      },
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Alacahan, 27 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Zevcim İzzet'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Ümmühan der ki: Kocam İzzet, mektubunu okuttuk, sağlığına sevindik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Kardeşim Ali'ye de kâğıt geldi, onu da askere çağırıyorlar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Haftaya yola çıkacak.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Orada havalar nasıldır, ona ne saralım yollayalım?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Çorap yetsin mi, kalın hırka koyalım mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Senin yanına gelir mi, aynı yere mi düşersiniz?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Anam durmadan ona bir şeyler dikiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Sen nasılsın, yemeğiniz çıkıyor mu?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Peksimet veriyorlar mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Gece uyku uyur musunuz?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Köyde herkesin sana selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Çabuk cevap yaz, Ali gitmeden yetişsin.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "",
+        "seal": "Ümmühan"
+      },
+      "note": {
+        "text": "İşbu kâğıdı Ümmühan gelinin ağzından ben yazdım. Köyden selamlar. Muhtar.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Balıkesirli Onbaşı İzzet'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "27 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000054",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazife",
+        "epithet": "Adanalı",
+        "age": 48,
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "İsmail",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 23
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Çukurören, 26 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum İsmail'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Gözlerinden öperim oğlum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Mektubun geldi okuduk sevindik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizim buralarda herşey eyi sen merak etmeyesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Tarlada işler yolunda gidiyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Pamuklar büyüdü çapasını bitirdik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Küçük Hasan geçen gün ayağa kalktı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Kapının önünde iki adım atıp düştü hepimiz güldük.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Artık emeklemeyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Pabuç almak lazım yakında.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Haticenin de selamı var o da eyi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Havalar ısındı buralar çok sıcak sen orda nasılsın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Su bulabiliyormusun.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Yemekler eyimi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Bizim ambar dolu şükür unumuz var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Köyde herkez kendi halinde.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Sen içini ferah tut hepimiz duacıyız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s17",
+          "text": "Sadece sen sağ salim gel diye bekleyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s18",
+          "text": "Başka bir sıkıntımız yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s19",
+          "text": "Komşu Emine teyzenin de kızı evlendi geçen hafta düğün yaptık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s20",
+          "text": "Emmioğlu Veliye de selam söyle görürsen.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Duanı eksik etme.",
+      "signature": {
+        "text": "Anan Nazife"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı İsmail'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "26 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000055",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fikriye",
+        "epithet": "Harputlu",
+        "age": 46,
+        "hometown": "Harput",
+        "occupation": "çamaşırcı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Şaban",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 22
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Gölcük, 20 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Şaban'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela kucak dolusu selam eder, iki gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim hâlimizi sorarsan maşallahımız var, yuvarlanıp gidiyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Senin o yaramaz küçük oğlan geçen hafta ayaklandı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Yürüdüğüne sevineyim mi ağlayayım mı bilemedim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Dün komşu Hatun teyzenin peşinden seğirtip kadının eteğine yapışmış, az kalsın koca leğeni deviriyordu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Evde ne kadar tas tarak varsa hepsini kapı önüne taşıyor, zapt edemiyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Gelin de peşinde koşturmaktan helak oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Ben yine göl kenarında çamaşır dövüyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Sabun ateş pahası olmuş, küllü suyla idare ediyoruz artık, ellerim iyice kayışa döndü.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sen buraları hiç dert etme, biz bu ufaklık ile başa çıkıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Kardeşin Fatma da selam ediyor, o da yün eğiriyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Kahveci Hasan emmin hep seni soruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Bir eksiğin gediğin varsa köyden yollayalım, sen yeter ki haber ver.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hakkını helal et.",
+      "signature": {
+        "text": "Anan Fikriye"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Harputlu Şaban'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "20 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000056",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Lütfi",
+        "epithet": "Eskişehirli",
+        "age": 40,
+        "hometown": "Eskişehir",
+        "occupation": "kayıkçı",
+        "relation": "erkek kardeşi",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Yusuf",
+        "relation": "ağabeyi",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 41
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Sarıyar, 24 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Ağabeyim Yusuf'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Biz burada ne haldeyiz hiç sormuyon.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Kayığı nehire indirdim ama su bu sene pek deli akıyo karşıya geçen yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Anam her gün kapıya çıkıp yolu bekliyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Herkezin köyüne mektubu geliyo seninki yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Asıl diyeceğim senin nişan işi tehlikeye bindi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Kızın babası Bekir emmi geçen kahvede mırın kırın etmiş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Askerden sağ döneceği belli değil kız evde kurudu diyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Nişanı bozacak nerdeyse.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Anam çok ağladı kahretti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Bir satır kâğıt yolla da yaşadığını bilsinler adamın ağzı kapansın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Yüzüğünü geri verecekler diye korkuyoz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Gideli kaç ay oldu insan bir selam yollamaz mı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Buraları düşünme anamın Ayşe halamın çok selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Çabuk kâğıt yaz şu Bekir emmiye muhtarın yanında okutalım da adam kendi gözüyle bir görsün.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını bekliyorum.",
+      "signature": {
+        "text": "Kardeşin Lütfi"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Yusuf'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "24 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000057",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "epithet": "Giresunlu",
+        "age": 60,
+        "hometown": "Giresun",
+        "occupation": "çiftçi",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Kemal",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 43
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Kurtköy, 16 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Kemal'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Oğlum Kemal mektubunu aldım okudum bizde iyiyiz merak etmeyesin buralarda havalar ısındı fındık dalları pıtrak gibi doldu ama toplayacak kimse kalmadı köyde kollarım pek ağrıyo bahçeye inemeyorum geçen gün muhtar Emine ninenin kapısına vardı elinde kağıtla oğlu Süleyman vurulmuş şehit künyesi gelmiş kadıncağız sabahtan beri avluda taşın üstünde oturuyo hiç konuşmuyo köyün kadınları toplandık yanına vardık elinden tuttum buzhane gibiydi sen kendine eyi bak yavrum geceleri üstünü ört havalar orda nasıldır bilmeyorum sana geçen seneden kalan fındıktan kavurdum bir beze sardım Kör Aliyle yollayacam inşallah eline çabuk geçer babanın mezarına gittim sana dua ettim otlarını yoldum köyden herkez sana selam ediyo Ayşe yengen hatırını soruyo tez zamanda dön.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Baki selam.",
+      "signature": {
+        "text": "Anan Nazlı"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Giresunlu Kemal'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "16 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000058",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Behiye",
+        "epithet": "Ebe",
+        "age": 30,
+        "hometown": "Niğde",
+        "occupation": "ebe",
+        "relation": "nişanlısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Bayram",
+        "relation": "nişanlısı",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 37
+      },
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Karaağaç, 29 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Nişanlım Bayram'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Behiye der ki: Evvela selam eder, iki gözünden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bayram, benim hâlimi sorarsan şükür ayaktayım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Burada her şeyin bereketi kaçtı, saymakla bitmez.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Çarşıda un bulamıyoruz, değirmenci buğday yok diyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Geçen ay arpanın kilesi on kuruştu, dün on iki dediler.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Şeker desen köyde kimsede kalmadı, pekmezle idare ediyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Tuzun okkası bile ateş pahası.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Babam yatar, çok selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Geçen gün ebelik için Çukur mahalleye gittim, gelini sağ salim doğurttum, üç kuruş verdiler, o da iki somun ekmek etmedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sandıktaki ceviz oyması çeyizlikleri çıkardım, güvelenmesin diye tek tek havalandırdım, katladım geri koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Sen nasılsın, urbanda yırtık sökük var mı, ayağında çarık durur mu, bir bir yaz bana.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Tez cevap yolla.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "",
+        "seal": "Behiye"
+      },
+      "note": {
+        "text": "İşbu kâğıdı Behiye kızımın ağzından yazdım. İmam Salih.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Ürgüplü Er Bayram'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "29 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000059",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Niyazi",
+        "epithet": "Kastamonulu",
+        "age": 21,
+        "hometown": "Kastamonu",
+        "occupation": "çiftçi",
+        "relation": "erkek kardeşi",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Şevket",
+        "relation": "ağabeyi",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 28
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Ilıca, 18 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Ağabeyim Şevket'e,",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubun elimize geçti, keyfimiz yerine geldi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim buralarda harp yok ama Bakkal Hüsnü'nün hücumu var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Geçen seneden kalan veresiye defterini açmış, her gün kapıyı aşındırıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Neymiş, alacağı varmış.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Dedim bekle, ağabeyim cepheden gümüş mecidiye yollayacak.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Adamın bıyıkları titredi sinirden.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Sen de tez zamanda dön de gel, yoksa tarladaki arpayı tümden Hüsnü'ye kaptıracağız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Arpalar sarardı, haftaya orağı vururum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Evde herkesin selamı var, anama hiç tasalanma diyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sıcak bastırdı, insanın canı pek yemek de istemiyor, ağaçtan erik dut ne bulursak öyle geçiştiriyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Komşular hep seni soruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Borç işini dert etme, gerekirse katırı satar yine öderim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Dayım da şehre inip kereste satacakmış, belki oradan üç beş kuruş koparırım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Sen sağ salim dön yeter.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Gözüm yolda.",
+      "signature": {
+        "text": "Kardeşin Niyazi"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İnebolulu Şevket'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "18 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000060",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Salih",
+        "epithet": "Çoban",
+        "age": 50,
+        "hometown": "Eskişehir",
+        "occupation": "çoban",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "İzzet",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 21
+      },
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Yazıköy, 23 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem Oğlum İzzet'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Bais-i tahrir-i mektubum şudur ki, evvela mahsus selam eder, o pak alınlarından bus eylerim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Gönderdiğin mektubu aldık, ferahladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Oğlum İzzet, küçük kardeşin Veli'yi de askere çağırdılar, salı sabahı şubeye teslim oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Kardeşin gidince koca hanede ananla ikimiz kaldık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Sürüden üç toklu sattım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "İkisiyle bakkal Hamdi'ye olan yirmi iki kuruş borcumuzu tamamıyla kapattım, kalanıyla da iki çuval un aldım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ağılda yirmi yedi sağmal, on dört kuzu kaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Dört tavuğu tilki kaptı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "İki teneke yağ çıkardık, birini kasabadaki tüccara yolladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Dün muhtara geçen senenin öşrünü saydım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Koyunları yaylaya çıkarmak için Hasan'ın oğlunu tutacağım lakin üç kuruş yevmiye ister.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Anan her gece sabahlara kadar yün eğirir, kardeşinin heybesine pestil ile tütün koydu, inşallah eline geçer.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Veli'yi görürsen sahip çık.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hepinizin gözlerinden öperim.",
+      "signature": {
+        "text": "",
+        "seal": "Salih"
+      },
+      "note": {
+        "text": "İşbu kâğıt Salih Ağa'nın arzusu vechile tarafımdan kaleme alınmıştır.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Yazıköylü İzzet'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "23 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000061",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Esma",
+        "epithet": "Çamaşırcı",
+        "age": 54,
+        "hometown": "İzmir",
+        "occupation": "çamaşırcı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 32
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Karşıyaka, 19 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Bekir'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubunu aldım, okudum ferahladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim sarı inek nihayet buzağıladı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Alnı ak, sağlıklı bir dişi verdi bize.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Sütü artınca yoğurt çalıp komşuya da satıyorum, üç beş kuruş ayırıyorum köşeye.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Havalar ısındı, çamaşır eskisinden biraz daha rahat kuruyor ama sabun bulmak iyice zorlaştı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Mahallede herkesin selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Sen nasılsın, yemeğiniz suyunuz yetiyor mu?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Bizi hiç merak etme, evde her şey bıraktığın gibi, bir eksiğimiz yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Sen canına mukayyet ol.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Gözüm yolda.",
+      "signature": {
+        "text": "Annen Esma"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı İzmirli Bekir'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "19 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000062",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Vesile",
+        "epithet": "Bursalı",
+        "age": 34,
+        "hometown": "Bursa",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Hamdi",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 37
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Dereköy, 26 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Efendim Hamdi'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Mektubunu okuduk çok sevindik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizim halimizi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Köyde İbrahim ağanın kızı Ümmühan gelin oluyo karşı köye verdiler yakında düğün var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Hatice nene vefat etdi geçen salı Allah rahmet eylesin mekanı cennet olsun.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Başka önemli bişey yok köyümüzde.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Zeytinler çiçek açdı ananla onlara bakıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Yağmur az yağdı bu sene biraz kuraklık var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Gönderdiğin parayı aldım kasap Rıza'ya olan borcu kapattım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Evdekiler bütün komşular herkez sana çok selam ediyo.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Karın Vesile"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bursalı Hamdi'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "26 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000064",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fikriye",
+        "epithet": "Kayserili",
+        "age": 18,
+        "hometown": "Kayseri",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Talat",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 19
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Bahçecik, 21 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Zevcim Talat'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Gönderdiğin kâğıdı aldım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizim hâlimizi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Sarıkız üç gün evvel buzağıladı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Bir dişi dana verdi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Sütü şimdilik yavruya yetiyor, sağmıyorum yavru emsin de ele avuca gelsin diye.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ahırın kapısını akşamları sıkıca kilitliyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Komşulardan kimseye de pek bahsetmedim buzağıdan, şimdilik içeride sessizce duruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Havalar iyice ısındı, ekinler diz boyu oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Gündüzleri tarlada ot yolmaya gidiyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Kayınbabamın dizleri yine ağrıyor, evden pek çıkamıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Evde unumuz var, şimdilik idare ediyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Sen nasılsın, yemeğin suyun nasıldır?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Bizi hiç merak etmeyesin.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Zevcen Fikriye"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Everekli Talat'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "21 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000065",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Dürdane",
+        "epithet": "Dokumacı",
+        "age": 41,
+        "hometown": "Dersaadet",
+        "occupation": "dokumacı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Talat",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 23
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Üsküdar, 25 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Talat'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Kaç vakittir senden kâğıt gelmedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Gözüm kapıda kaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Kardeşin yürüdü.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Geçen gün tezgâhın başındaydım, bir baktım duvara tutuna tutuna yanıma kadar gelmiş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Ayakları yere sağlam basıyor maşallah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Bizim halimizi sorarsan iyiyiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Komşu Hacer teyzen biraz bulgur getirdi, dün onu kaynattık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Fırınların önü epey kalabalık bu aralar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Mahallede herkes seni soruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Tezgâhta iki top bez dokudum, onları verip sana tütün alacağım, posta bulunca yollarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Kardeşlerine mukayyet oluyorum, sen bizi hiç düşünme.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hepinizin gözlerinden öperim.",
+      "signature": {
+        "text": "Anan Dürdane"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Talat'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "25 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000066",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hilmi",
+        "epithet": "Kırşehirli",
+        "age": 47,
+        "hometown": "Kırşehir",
+        "occupation": "çiftçi",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Ömer",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 24
+      },
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Sarıyar, 5 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Ömer'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela sana çok selam eder, hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "İşbu kâğıdı baban Hilmi'nin ağzından yazıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Ömer, benim hâlimi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Şehre indim geçen, gaz yağı ateş pahası olmuş, cebimdeki kuruş yetmedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Borç harç idare ediyoruz, sen tarlayı düşünme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Ahmet Ağa alacağından laf açıp duruyor, bir çare bakacağız elbet.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Senin oğlan geçen hafta avluda tay tay durdu, bugün de kapıya kadar ilk adımını attı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Yere pek sağlam basıyor maşallah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Sana mektupla beraber bir çıkın yolladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "İçine anan kuru ekmekle güzden kalan pestilden koydu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "O pestili pazarda satsam iki kuruş ederdi, borcumuzun birazını kapatırdı ama anan dinlemedi, mecbur sana yolladık.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Ellerinden öperim.",
+      "signature": {
+        "text": "Baban",
+        "seal": "Hilmi"
+      },
+      "note": {
+        "text": "Allah evladınızı size bağışlasın, İmam Hakkı.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kırşehirli Er Ömer'e",
+        "sensitive": false
+      },
+      "package": [
+        "kuru ekmek",
+        "pestil"
+      ],
+      "date": "5 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000067",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "epithet": "Adanalı",
+        "age": 35,
+        "hometown": "Adana",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Kâmil",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 36
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "carelessness": "none",
+      "hand": "elegant",
+      "header": {
+        "text": "Gökçeören, 12 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem zevcim Kâmil Efendi'ye,",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubunu aldık, ziyadesiyle memnun olduk.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Geçen hafta şehre inen Hacı Veli ile sana bir çıkın yolladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "İçine tütün, biraz ceviz, bir de kendi ellerimle diktiğim pamuklu gömleği koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Buralarda havalar iyice ısındı, ekin biçmeye başladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Harman yerinde işler biraz ağır gidiyor ama bir hal çaresine bakıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Çocuklar iyidir, ellerinden öper.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Evde merak edilecek bir husus yoktur.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Sen nasılsın?",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Zevcen Nazlı"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Gökçeörenli Kâmil'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "12 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000068",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ali",
+        "epithet": "Harputlu",
+        "age": 8,
+        "hometown": "Harput",
+        "occupation": "ırgat",
+        "relation": "oğlu",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "İlyas",
+        "relation": "babası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 24
+      },
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Eğrisu, 11 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Babam İlyas'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Ali der ki: Babacığım ellerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Mektubun geldi, okuttuk.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizim evde iki inek, dört koyun, on bir tavuk kaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Abim Hasan'ı da askere çağırdılar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Salı günü torbasına üç okka bulgur, beş baş soğan, iki çift yün çorap koyduk.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "O da gitti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Evde anam, ben, iki küçük bacım kaldık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Dört kişiyiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "İşler bana düştü, merak etme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Anamın selamı var.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını bekliyorum.",
+      "signature": {
+        "text": "",
+        "seal": "Ali"
+      },
+      "note": {
+        "text": "İşbu kâğıdı Ali'nin ağzından yazdım. Muhtar.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Harputlu İlyas'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "11 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000069",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Dursun",
+        "epithet": "İstanbullu",
+        "age": 58,
+        "hometown": "Dersaadet",
+        "occupation": "kahveci",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Recep",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 25
+      },
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Dersaadet, 12 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Recep'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Oğlum Recep gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Kaç vakittir postacı sokağa uğramaz oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Dükkânı erken kapatıp kapıda bekliyorum, kâğıdın gelmiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Bir yaramazlık yoktur inşallah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Benim hâlimi sorarsan şükür ayaktayım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Kahveyi her gün açıyorum ama gelen giden azaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Şeker iyice karaborsa oldu, çayı acı içiyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Fırınların önü çok kalabalık, ekmek sırası bitmiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Biz idare ediyoruz, sen kendini düşün.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Havalar ısındı, oralarda suyunuz yemeğiniz nasıldır yazasın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Kardeşin Ayşe de seni çok soruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Bize tez elden bir iki satır yolla da gözümüz yollarda kalmasın.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Baban",
+        "seal": "Dursun"
+      },
+      "note": {
+        "text": "İşbu mektubu Dursun Amca'nın ağzından ben yazdım. Komşunuz İsmail.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı İstanbullu Recep'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "12 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000070",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Münevver",
+        "epithet": "Erzurumlu",
+        "age": 21,
+        "hometown": "Erzurum",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Nazım",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 21
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Sarıyar, 29 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Kocam Nazım'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Nazım kocam ellerinden öperim hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Sana kağıt yolladım cevap gelmedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Hoca efendiye gittim sana muska yazdırdım onu da beze sardım yolluyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Boynundan çıkarma kurşun değmesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Her gece sana ve bizim köylü çocuklara dua ediyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Bizim Sarıyar'dan gidenler nicedir beraber misiniz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Bekir emminin oğlu Veli sağ mı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Topalın Hasan'ı gördün mü hiç.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Onların da anaları avratları yolda izde bana sorup duruyo haber bekliyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Buralar bahar oldu karlar eridi çamur bitti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Ben anamgile geçtim ordan yazıyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Koyunları yaylaya sürecez yakında gücümüz yetmiyo ama napacan.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Köyde erkek kalmadı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Senin tütün bitti dediler kahveciden aldım pakete koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Muskayı sakın atma hep tak.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Bizi merak etme sağlığımız yerinde.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Gözüm yolda.",
+      "signature": {
+        "text": "Avradın Münevver"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Erzurumlu Nazım'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "29 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000071",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hasan",
+        "epithet": "Eskişehirli",
+        "age": 61,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "relation": "amcası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Lütfi",
+        "relation": "yeğeni",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 27
+      },
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Yenice, 20 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Yeğenim Lütfi'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Lütfi yeğenim, gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Nasılsın, iyi misin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizler sağız çok şükür.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Bu kâğıdı komşunun oğlu mektepli Ali'ye yazdırıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Dün şehre inen arabacıyla sana bir çıkın yolladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Yengen içine iki çift yün çorap, biraz ceviz, bir de geçen güzden kalan elma kurularından koydu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Hepsini birden yeme, idareli git.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Bizim ufaklıklar, Ayşe ile Mehmet seni çok soruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Mehmet senin eski çarıkları giymeye kalkıyor, ayağına büyük geliyor ama çamurda onlarla geziyor kerata.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Bu hafta yağmurlar pek yaman vurdu, ahırın damı biraz aktı, çamurla sıvadık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Tarlaya yayan gidip geliyoruz bugünler, bizim emektarlar yok artık, kendi gücümüzle yürüyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Sen oralarda kendini sakın, ayağını çıplak basma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Bize kâğıt yollamayı unutma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Köydeki komşular hep tek tek selam ediyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Yengenin de çok selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Sıhhatine dikkat et, bizi de merakta bırakma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s17",
+          "text": "Kendine mukayet ol.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Duanı eksik etme.",
+      "signature": {
+        "text": "",
+        "seal": "Hasan"
+      },
+      "note": {
+        "text": "Hasan amcanın dediklerini ben yazdım Lütfi abi, ellerinden öperim. Ali.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Lütfi'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "20 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000072",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hanife",
+        "epithet": "Adanalı",
+        "age": 24,
+        "hometown": "Adana",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Mustafa",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 34
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Karacaören, 27 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Kocam Mustafa'ya",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mustafa, geçen ay yazdığım kâğıda cevap gelmedi, eline geçmedi mi?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Sarıkız iki gün evvel buzağıladı, erkek doğurdu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Sütünü satıp bakkal Halil’e olan borcun birazını kapattım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Kalanı için harman sonunu bekleyecek ama çok sıkıştırıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Havalar ısındı ama siper geceleri soğuk olur diye pakete bir çift yün çorap koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Çocuk şimdilik uyuyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Eline üç beş kuruş geçerse kâğıdın içine koy yolla, elde avuçta kalmadı.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Duanı eksik etme.",
+      "signature": {
+        "text": "Karın Hanife"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı Mustafa'ya",
+        "sensitive": false
+      },
+      "package": [
+        "yün çorap"
+      ],
+      "date": "27 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000073",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Emine",
+        "epithet": "Sivaslı",
+        "age": 48,
+        "hometown": "Sivas",
+        "occupation": "çiftçi",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Tayyar",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 27
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Ortaköy, 14 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Tayyar'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Oğlum Tayyar evvela selam eder, iki gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Gittiğinden beri senden bir ufak kâğıt gelmedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "İmamın evine posta geldikçe kapısına dikiliyorum, senin adın hiç çıkmıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "İnsan anasına bir iki satır yazmaz mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Ellerin kırılmadı ya, bir selam yolla da bilelim sağ mısın ölü müsün.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Buraları sorarsan bildiğin gibi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Koyunların yününü kırktık, yünleri derede yıkadım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Değirmende un sırası pek çok oluyor, dün sabahtan ta akşama kadar bekledim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Hacıların kızı kuyu başında küpünü kırmış, bütün köy onu konuşuyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Küçük Hasan kucağımdan inmiyor bu ara.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Hep uyku hâlinde, pek sesi çıkmıyor, iştahı da kesildi ama iyidir, yaramazlık etmiyor meraklanma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Köyün erkekleri gidince ağır işler kadınların yaşlıların omuzlarına bindi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Güzden kalan pestilleri bir beze sardım, bohçaya koydum sana yolluyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Arkadaşlarınla yiyin, ağzınız tatlansın.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hepinizin gözlerinden öperim.",
+      "signature": {
+        "text": "Annen Emine"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Tayyar'a",
+        "sensitive": false
+      },
+      "package": [
+        "pestil"
+      ],
+      "date": "14 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000074",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Münevver",
+        "epithet": "Eskişehirli",
+        "age": 26,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "relation": "kız kardeşi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Arif",
+        "relation": "kardeşi",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 22
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Ortaköy, 11 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Kardaşım Arif'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Arif kardaşım nasılsın iyi misin buraları sorarsan bizde iyiyiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Dün köyden on kişiyi daha aldılar küçük kardaşın Hasanıda çağırdılar oda sülüslüğünü aldı gidecek yarın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Evde hiç erkek kalmadı hepicimiz tarladayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Arpa sarardı biçmeye başlıyacaz yakında amma kollarım çok ağrıyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Sen orda nasılsın yemeğin suyun varmı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Sana bi bez torba kuru üzüm koydum İbrahim ağayla yolladım yersin güç olursun.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Anam çok ağladı arkandan heç susmuyo gidesinden beri.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Onu merak etme ben bakıyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Bize tez cevap yaz kaadın gelince anam ferahlar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Bizim için tasa etme idare ediyoz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Komşu kızı Emineye selam.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Gözüm yolda.",
+      "signature": {
+        "text": "Ablan Münevver"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Arif'e",
+        "sensitive": false
+      },
+      "package": [
+        "kuru üzüm"
+      ],
+      "date": "11 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000076",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Elif",
+        "epithet": "Malatyalı",
+        "age": 18,
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Zeki",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 27
+      },
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Malatya, 20 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem zevcim Zeki'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, hatırını sual eylerim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "İşbu mektubu çarşıda arzuhalci efendiye yazdırıyorum, kulağını açıp iyi dinleyesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Köyde günden güne sela veriliyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Aşağı mahallede evlerin kapısı kapandı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Herkes sıtma mıdır nedir bir derde düştü yatıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Bizde şükür hastalık yok, oğlanın da bir şeyi yok, döşekte sessizce uyuyor, aklın sakın burada kalmasın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Sen oradan bana çabuk haber yollayasın, mektubu geciktirmeyesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Evde para bitti, arpalar sarardı harman zamanı geldi çattı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Amelenin yevmiyesi ateş pahası.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "O tarlayı kim biçecek, nasıl kaldıracağız onu da açıkça yazasın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Pakete bir kese kavrulmuş leblebi koydurttum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Kendini sakınasın.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Baki selam.",
+      "signature": {
+        "text": "",
+        "seal": "Elif"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hekimhanlı Zeki'ye",
+        "sensitive": false
+      },
+      "package": [
+        "leblebi"
+      ],
+      "date": "20 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000077",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Tevfik",
+        "epithet": "Afyonlu",
+        "age": 8,
+        "hometown": "Afyon",
+        "occupation": "çiftçi",
+        "relation": "oğlu",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Hamdi",
+        "relation": "babası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 26
+      },
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Dinar, 12 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem pederim Hamdi Efendi'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Muhterem pederim, evvela mahsus selam eder, mübarek ellerinizden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Mahdumunuz Tevfik der ki: Tahir Ağa'ya olan iki lira borcun günü geçti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Tarladaki arpayı biçtik, on altı şinik çıktı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Dördünü tohumluk ayırdık, gerisini kasabadaki zahireciye yetmiş kuruşa verdik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Paranın hepsini Tahir Ağa'ya götürdüm, tamamı bitmeden defterden silmem, kalanını tez getirin dedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Anam kara ineğin buzağısını satalım diyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Satarsak kışın ne yiyeceğiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Bakkal Rıza da dükkandaki doksan kuruşu istiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Emmim versin dedim, o da bende yok dedi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Dört kuruş da arzuhalciye verdim bu kâğıt için.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Sen oradan bir çare bulamazsan buzağıyı perşembe pazara çekeceğim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Başka yolumuz kalmadı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Validemin ve kız kardeşimin mahsus selamları vardır.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Kalemim kısa, sözüm uzun.",
+      "signature": {
+        "text": "",
+        "seal": "Tevfik"
+      },
+      "note": {
+        "text": "İşbu kâğıt mahdumunuzun ifadeleriyle kaleme alınmıştır. Dinar arzuhalcisi.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Afyonlu Er Hamdi'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "12 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000078",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zübeyde",
+        "epithet": "Kırşehirli",
+        "age": 62,
+        "hometown": "Kırşehir",
+        "occupation": "ev hanımı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Davut",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 34
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "carelessness": "none",
+      "hand": "elegant",
+      "header": {
+        "text": "Hacılar, 19 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Davut'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela mektubuma başlar, iki gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim Sarı Kız nihayet inadını kırdı, geçen perşembe bir buzağı verdi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Anası gibi aksi suratlı bir kerata, maşallahı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Sütü pek bol, senin payını komşu çocuklarına dağıtıyorum, döndüğünde benden alacaklısın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Muhtarın şehre ineceğini duyunca alelacele bu kâğıdı karaladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Çıkına çok sevdiğin kuru üzümle biraz da pestil kattım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Hocaya yazdırdığım muskayı da diktim, göğsünden eksik etmeyesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Buraları hiç merak etme.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Kalemim kısa, sözüm uzun.",
+      "signature": {
+        "text": "Validen Zübeyde"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hacılarlı Davut'a",
+        "sensitive": false
+      },
+      "package": [
+        "pestil",
+        "kuru üzüm",
+        "muska"
+      ],
+      "date": "19 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000080",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "epithet": "Kayserili",
+        "age": 18,
+        "hometown": "Kayseri",
+        "occupation": "terzi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Ramazan",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 23
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Ortaköy, 10 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Zevcim Ramazan'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, hatırını sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Gittiğinden beri gözüm yollarda, postacı köye her geldiğinde elim boş dönüyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "İnsan karısına iki satır bir kâğıt yollamaz mı, unuttun mu bizi orada?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Benim hâlimi sorarsan şükür ayaktayım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Havalar ısındı, ekinler boy attı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Sabahtan akşama tarlada çapa vuruyorum, ot yolmaktan ellerim nasır bağladı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Kaynatam yaşlı, işin çoğu bana kalıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Komşu kadınlarla imece usulü bitirmeye çalışıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Sana bu kâğıtla beraber bir bohça hazırladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "İçine kendi ellerimle ördüğüm yün çorapları koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Bir de çarık aldım, eskidikçe giyersin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Biraz da kuru ekmek ekledim, nöbette yersin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Daha başka bir şey koyamadım, idare et.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Bari mektubu alınca sağ olduğunu yazıp bana hemen geri gönder.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını acele bekliyorum.",
+      "signature": {
+        "text": "Zevcen Nazlı"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kayserili Er Ramazan'a",
+        "sensitive": false
+      },
+      "package": [
+        "bir çift çarık",
+        "yün çorap",
+        "kuru ekmek"
+      ],
+      "date": "10 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000082",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Seher",
+        "epithet": "Manisalı",
+        "age": 31,
+        "hometown": "Manisa",
+        "occupation": "ırgat",
+        "relation": "kız kardeşi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Ahmet",
+        "relation": "kardeşi",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 30
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Eğrisu, 26 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Kardeşim Ahmet'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Gideli aylar oldu bir ufak kağıt yollamadın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Okuma yazma biliyon niye yazmıyon elin mi kırıldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Beklemekten yorulduk köyün yoluna bakmaktan gözümüz karardı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Geçen gün köyün hocasına gittim sana bir musga yazdırdım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Bu mektubun içine koydum onu boynuna as sakın çıkarma üstünde kalsın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Geceleri hep dua ediyom Allah seni esirgesin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Burada havalar ısındı bağlarda yaprak seyreltme işi bitiyo salkımlar ufak ufak göründü.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Hasan emmiler haftaya kızlarını gelin ediyo davul çalıncak ama pek neşe yok herkez dertli.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Tarlada iş çok yoruluyoz ama aç değiliz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Senin sevdiğin kuru incirlerden üç beş tane koydum pakete afiyetle ye.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Bize kendini unutturma sağmısın ölü müsün bilelim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Herkez sana selam ediyo.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Çabuk cevap yaz.",
+      "signature": {
+        "text": "Ablan Seher"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Manisalı Ahmet'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "26 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000083",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hüsniye",
+        "epithet": "İzmirli",
+        "age": 25,
+        "hometown": "İzmir",
+        "occupation": "dokumacı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Hilmi",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 32
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "İzmir, 12 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Efendime",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Efendime selam ederim ellerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim halimi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Dokuma tezgahında işler azaldı iplik zor bulunuyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Geçim biraz zorlaştı bu sıra.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Tarlayı kiralığa verdik Deli Hasan'a.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Ordan gelen kuruşla idare edeyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ben de anamın yanına göçtüm şimdilk onun odasında kaleyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Zaten o ev bana çok büyük geliyodu tek başıma sığamadım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Sen hiç merak etmeyesin biz bir yolunu buluruz herşeyin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sana biraz sarma tütün buldum pakete koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "İçersin de bizi hatırlarsın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Haziran sıcağı bastırdı buralara nefes alınmıyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Sen nasılsın oralarda suyunuz yemeğiniz eyi midir.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Herkez sana selam ediyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Karşı komşunun büyük kızı evlendi dün onun çalgısı vardı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Allah seni sağ salim getirsin.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet olasın.",
+      "signature": {
+        "text": "Zevcen Hüsniye"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, İzmirli Er Hilmi'ye",
+        "sensitive": false
+      },
+      "package": [
+        "tütün"
+      ],
+      "date": "12 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000084",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zehra",
+        "epithet": "Kırşehirli",
+        "age": 8,
+        "hometown": "Kırşehir",
+        "occupation": "çiftçi",
+        "relation": "kızı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Zekeriya",
+        "relation": "babası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 30
+      },
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Alacahan, 2 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem pederim Zekeriya'ya",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Zehra kızın der ki: Evvela ellerinden hürmetle öper, dualarını beklerim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizi sorarsan şükür evdeyiz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Giden ay yolladığın kâğıdı aldık, sevindik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Baba, kardeşim Ali geçen cuma tay tay durdu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Kendi başına iki üç adım atıyor artık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Anam tarlada arpa biçerken ben ona bakıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Yürüyor ama çabuk yoruluyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Beşiğe yatırınca akşama kadar hiç uyanmıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Eskisi gibi ağlamıyor da, uslu uslu yatıyor hep.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sen hiç merak etme, ben ona çok iyi bakıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Anamın da selamı var.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Çarşıya inmişken bu kâğıdı yazdırdım.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Baki hürmetle ellerinden öperim.",
+      "signature": {
+        "text": "",
+        "seal": "Zehra"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Avanoslu Onbaşı Zekeriya'ya",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "2 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000086",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hakkı",
+        "epithet": "Eskişehirli",
+        "age": 76,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 42
+      },
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Çamlıca, 15 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem oğlum Çavuş Sabri,",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela hasretle gözlerinden öper, sıhhat ve afiyette olmanı Cenab-ı Hak'tan niyaz eylerim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Yolladığın mektubu aldık, okuttuk, sağlığına şükrettik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizi sual edersen, hamdolsun ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Komşumuz Yusuf Ağa'nın büyük oğlu Halil'in künyesi geçen cuma köye ulaştı, şehit düşmüş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Allah gani gani rahmet eylesin, babası taziyeye gelene ağzını açıp tek kelam etmez oldu, kahveye de çıkmıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Sen siperde kendini sakın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ananın ördüğü kalın yün atkıyı da bu kâğıtla beraber yolladık, geceleri boynuna sarasın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Haftaya arpa hasadına gireceğiz, gün sayarız.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Duanı eksik etme.",
+      "signature": {
+        "text": "Pederin",
+        "seal": "Hakkı"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Sabri'ye",
+        "sensitive": false
+      },
+      "package": [
+        "el örgüsü atkı"
+      ],
+      "date": "15 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000087",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Behiye",
+        "epithet": "İzmirli",
+        "age": 49,
+        "hometown": "İzmir",
+        "occupation": "ev hanımı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 29
+      },
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "İzmir, 26 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem oğlum Bekir Çavuş'a,",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela cenab-ı Hakk'tan sıhhat ve selametini diler, gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Geçen ay yolladığın mektup elimize vasıl oldu, çarşıda okuttum, afiyette olduğunu öğrenip şükrettik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizim buralarda ahval bildiğin gibidir, fazlaca bir lafımız yoktur.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Nisan yağmurları kesilince toprak tavını aldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Gün doğmadan kalkıp komşu kadınlarla beraber tarlaya iniyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Sığır kuyruğu ve ayrık otu pek sarmış, gün boyu çapa vurup ot yolmaktan yoruluruz lakin ekinin nefes alması elzemdir.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Hava iyice ısınmadan tarlanın işinin bitmesi lazım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Bu sene ahırın işi de pek kalmadı, bütün vakti tarlaya veririz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Akşam ezanından sonra evimize çekilip otururuz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sana bu kâğıtla beraber bir küçük bohça yolluyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Geceleri siperde serinlik çökerse giyesin diye kıştan ördüğüm yün eldivenleri koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Biraz da kuşburnu marmelatı sardım, peksimetin yanına katık edersin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Asker ocağında kendine iyi mukayet ol.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Mahalledeki komşuların cümlesi sana selam eder, duacıdır.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Baki selam ve dua ile, Allah'a emanet ol.",
+      "signature": {
+        "text": "Validen",
+        "seal": "Behiye"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş İzmirli Bekir'e",
+        "sensitive": false
+      },
+      "package": [
+        "yün eldiven",
+        "kuşburnu marmelatı"
+      ],
+      "date": "26 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000088",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Ahmet",
+        "epithet": "Çorumlu",
+        "age": 76,
+        "hometown": "Çorum",
+        "occupation": "çoban",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Hayri",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 44
+      },
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Ilıca, 12 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Çavuş Hayri'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Ahmet der ki: Evvela oğlum gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "İki kâğıt yolladım senden hiç ses çıkmadı, gözümüz yolda kaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Dün Köse Hasan'ın oğlu Yusuf'un künyesi geldi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Karısı feryat figan.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Sen nasılsın?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Koyunları yaylaya çıkardım ama aklım hep sende.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Arpa biçilecek, köyde adam kalmadı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Bizim evde herkes sağ salim, senin oğlan da içeride uyuyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Hasan ağalara taziyeye gittik, köyün içi kara yas.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Ne olur bir kâğıt yolla, sağ mısın bilelim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Un azaldı, değirmene ineceğim yarın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Karabaş geçen gece sürüye dalan kurdu boğdu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Yusuf'un anası yataklara düştü.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Bir kâğıt yaz aklımızı alma bizim.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını bekliyorum.",
+      "signature": {
+        "text": "",
+        "seal": "Ahmet"
+      },
+      "note": {
+        "text": "İşbu kâğıdı Ahmet emminin ağzından ben yazdım, Allah evladına kavuştursun. Köy hocası Süleyman.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Çorumlu Hayri'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "12 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000089",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hacer",
+        "epithet": "Amasyalı",
+        "age": 19,
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "relation": "kız kardeşi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "relation": "ağabeyi",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 20
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Yeniköy, 26 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Ağabeyim Sabri'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, ellerinden hürmetle öperim ağabey.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Gönderdiğin kâğıdı aldık, okuduk sevindik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Bizi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Köydeki havadisleri sormuşsun.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Demirci Rüstem’in kızı Elif’i Çamlıca’ya gelin ettik, davulsuz zurnasız gitti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Deli Bekir’in ihtiyarı da geçen hafta vefat etti, toprağa verdik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Bizim sıpalar iyiler, ellerinden öperler.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Küçük Ali iyice azıttı, söz dinlemiyor, sokakta itlerle koşturup çamura bulanıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Dayım gelip kulağını çekecek diyorum da öyle korkup susuyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Bizi hiç düşünme, her gün bulgur kaynatıp bir tas mercimekle doyuyoruz, karnımız tok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Yağmurlar bu sene dinmedi, tarlada ayrık otları diz boyu oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Sen oralarda kendine iyi bak, yün içliğini giy.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Köydeki herkese selamını söyledim, hepsi dua ediyor.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah darda koymasın, tez zamanda dön.",
+      "signature": {
+        "text": "Kardeşin Hacer"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Sabri'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "26 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000090",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sultan",
+        "epithet": "Maraşlı",
+        "age": 36,
+        "hometown": "Maraş",
+        "occupation": "ev hanımı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Hayri",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 37
+      },
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Gölcük, 8 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem zevcim Hayri Efendi'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Sultan teyzem der ki: Evvela selam eder, hatırınızı sorarım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim hâlimizi sorarsanız şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Geçen ay Hıdrellez günü avludaki ceviz ağacının altına kilimi serdik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Bulgur pilavı kaynattım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Sininin başına oturduk lakin senin tahta kaşığın sandıkta bekledi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Çocuklar dilsiz gibi yemeğe kaşık çaldı, sofradan erken kalktılar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Küçük kızın Ayşe beşiğinde uslu yatıyor, abisi tarlada bana yardım ediyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Arpayı biçmeye hazırlanıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Giden postayla sana bir bohça yolladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "İçine güzden sardığım pestilleri, bir torba kuru üzüm koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Bir de gece nöbetlerinde boynuna sarasın diye yün atkı ördüm.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Karabaş inek yavruladı, sütü bol.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Bahar yağmurlarında evin damı aktıydı, toprak çekip sıvadık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Herkesin sana selamı var.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Kusura bakma, kâğıt bitti.",
+      "signature": {
+        "text": "",
+        "seal": "Sultan"
+      },
+      "note": {
+        "text": "İşbu mektubu Sultan teyzemin ağzından mektepli İsmail yazdı.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Maraşlı Hayri'ye",
+        "sensitive": false
+      },
+      "package": [
+        "kuru üzüm",
+        "el örgüsü atkı",
+        "pestil"
+      ],
+      "date": "8 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000091",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fevziye",
+        "epithet": "Konyalı",
+        "age": 66,
+        "hometown": "Konya",
+        "occupation": "çiftçi",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 38
+      },
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Esentepe, 21 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Çavuş Sabri'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Oğlum Sabri mektubunu hocaya okuttum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Nasılsın, iyi misin, ayağında yaran var mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Yemek veriyorlar mı, üstün başın pek mi?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Gece soğuk mu oluyor?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Benim aklım hep sende.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Burayı sorarsan, ben tek başıma koca tarlaya yetişemiyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Ot yolma zamanı geldi geçiyor, gücüm yetmiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Topal Hasan tarlayı icara istiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Vereyim mi, ne dersin?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Güzden ne kadar buğday isteyeyim?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Tohumluğu onlar mı koysun, bizden mi çıksın?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Sen oradan bana bir yol göster.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Geçim zorlaştı, gazyağı bulamıyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Emmin gilin kızının düğünü olacak yakında.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Komşulara mektubunu söyledim, hepsi selam ediyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Hızlı cevap yaz, beni merakta bırakma.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Sağlıcakla kal.",
+      "signature": {
+        "text": "",
+        "seal": "Fevziye"
+      },
+      "note": {
+        "text": "İşbu mektup Fevziye ananın sözleriyle yazılmıştır. İmam İsmail.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Konyalı Sabri'ye",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "21 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000092",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sadık",
+        "epithet": "Terzi",
+        "age": 54,
+        "hometown": "Balıkesir",
+        "occupation": "terzi",
+        "relation": "dayısı",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Ali",
+        "relation": "yeğeni",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 41
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Ilıca, 12 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Ali'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Ali yeğenim gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim halimi sorarsan şükür dükkanı açıp kapatıyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Köyde herkez eyi merak etme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Kardeşin Hasan'ın da kağıdı geldi.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Yaşı tuttu diye çağırdılar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Dün şubeye gidip ismini yazdırdı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Haftaya o da yolcu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Giderken senin yanına düşer belkim Allah bilir.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Biz buralarda iyiyiz dert edilecek bişey yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "İşler tıkırında gidiyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Sana pakette bir kese kağıdı leblebi koydum bide kalıp sabun var orda çamaşırını yuv.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Sağ salim dönmeni bekleyoz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Başka diycek lafım yok.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Amcan Sadık"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Ilıcalı Ali'ye",
+        "sensitive": false
+      },
+      "package": [
+        "leblebi",
+        "bir parça sabun"
+      ],
+      "date": "12 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000093",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şerife",
+        "epithet": "Denizlili",
+        "age": 28,
+        "hometown": "Denizli",
+        "occupation": "çamaşırcı",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Mahmut",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 29
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Ağılönü, 30 Nisan 1331",
+        "sensitive": false
+      },
+      "salutation": "Kocam Mahmut'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mahmut mektubunu aldım iki kere okudum ben iyiyim çamaşıra gidiyom her gün geçen cuma Rıza efendinin dört gömleği yedi çarşafını yıkadım on kuruş verdi üç kuruşa sabun aldım beş kuruşunu da köşeye sakladım evin damı akıyodu onu çamurla sıvadım iki günümü aldı kardeşim Aliye de askerlik kaadı geldi çağırdılar hazırlık yapıyo daha gitmedi buralarda sen onu hiç düşünme bulgur çuvalında iki okka bişey kaldı onu da idare ediyoz dün komşu Ayşenin kızı evlendi üç tepsi börek açtılar bize de altı dilim verdiler havalar ısındı sinekler çoğaldı",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Çabuk cevap yaz ellerinden öperim.",
+      "signature": {
+        "text": "Karın Şerife"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Denizlili Mahmut'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "30 Nisan 1331"
+    },
+    {
+      "id": "pool_cepheye_000094",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fadime",
+        "epithet": "Ankaralı",
+        "age": 25,
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Fehmi",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 28
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Bahçecik, 20 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem zevcim Fehmi'ye",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder, iki gözlerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Mektubun epeydir gelmedi, inşallah sıhhatin yerindedir, vaktin iyidir.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Burada havalar ısındı, köyde arpa biçilmeye başlandı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Buğdaylar da sarardı, ekinler bu sene pek bereketli.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Herkes harmana iniyor, biz de nasibimizde ne varsa onu toplayacağız, sen hiç buraları merak etme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Gönderdiğim çıkına az biraz kuru ekmek ile kıştan ördüğüm yün eldiveni koydum, gurbet elde giyersin.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cenab-ı Hak seni korusun, duasındayız.",
+      "signature": {
+        "text": "Zevcen Fadime"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bahçecikli Fehmi'ye",
+        "sensitive": false
+      },
+      "package": [
+        "kuru ekmek",
+        "yün eldiven"
+      ],
+      "date": "20 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000096",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Medine",
+        "epithet": "Kütahyalı",
+        "age": 20,
+        "hometown": "Kütahya",
+        "occupation": "ev hanımı",
+        "relation": "nişanlısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Hasan",
+        "relation": "nişanlısı",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 20
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Akpınar, 8 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Nişanlım Hasan'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubunu aldım, çok sevindim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Sen nasılsın, orada günlerin nasıl geçiyor?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Geceleri üstüne örtecek bir şeyin var mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Ayağındaki çarıklar delindi mi?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Burada arpayı biçmeye başladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Boyları bu sene dizimi geçiyor, başaklar dolgun.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Buğdaylar da iyice sarardı, haftaya ona da gireriz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Babamın tırpanını amcam bileyledi, bu sene ekinleri o kaldıracak.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Tarlada iş çok ama hallediyoruz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Anan da iyi, geçende ona taze yoğurt götürdüm.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Sen ne zaman döneceksin?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Yemeğiniz yeterli mi, su bulabiliyor musunuz?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Bolca mektup yolla, çabuk cevap yaz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Bizleri merak etme.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Allah'a emanet ol.",
+      "signature": {
+        "text": "Medine"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Simavlı Hasan'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "8 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000097",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Safiye",
+        "epithet": "Ankaralı",
+        "age": 52,
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Süleyman",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 29
+      },
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Gökçeören, 19 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Süleyman'a",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Safiye der ki: Gözümün nuru Süleyman, mektubunu okuttuk, iyi olduğunu anladık.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Lakin benim gözüme uyku girmiyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Yemek yetiyor mu?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Geceleri üstüne örtecek bir şeyin var mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Geçen yağan yağmurda ıslandın mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Potinlerin delindi mi?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Dün köye haber geldi, Demircilerin İsmail şehit düşmüş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Anası kapının önünde yollara bakıp duruyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Haberi duyunca elimdeki ekmeği düşürdüm.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Sen nasılsın, yanında köylümüzden kimler var?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Çavuşun sana ilişiyor mu?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Güzden kalan kavurgayı koydum pakete, eline ulaştı mı?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Bize tez cevap yolla, gözümü yolda koma.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını bekliyorum.",
+      "signature": {
+        "text": "",
+        "seal": "Safiye"
+      },
+      "note": {
+        "text": "İşbu mektup Safiye Hanım'ın sözleriyle yazılmıştır. İmam Hafız Ali.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ankaralı Süleyman'a",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "19 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000098",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hilmi",
+        "epithet": "İstanbullu",
+        "age": 64,
+        "hometown": "Dersaadet",
+        "occupation": "terzi",
+        "relation": "babası",
+        "gender": "erkek"
+      },
+      "recipient": {
+        "name": "Şakir",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 32
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Dersaadet, 17 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Şakir'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubunu aldık okuduk.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "İyiymişsin.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Dükkanı açıyom her sabah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Çırak Mehmet gitti tek başıma kaldım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "İşler kesat zatı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Kumaş bulunmuyo iplik pahalı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Dikiş makinası da bozuldu geçende.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Ekmek sırası çok uzadı bu ara.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Geçen hafta köye gittim senin ekinlere bakmaya.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Tarla yeşermiş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Arpalar boy atmış ama çapa lazım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Kim çapalıcak bilmeyom.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Dayın hastalandı yatıyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Anan sabahtan akşama kadar ağlıyo sus diyom susmuyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Gözlerini bozacak kör olucak.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Kendine dikkat et.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s17",
+          "text": "Orda burda üşütme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s18",
+          "text": "Çoraplarını yünlü giy.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s19",
+          "text": "Hasan'ın oğlu Ali de ordaymış görürsen selam söyle.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s20",
+          "text": "Ahmet Ağa'nın selamı var sordu seni.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s21",
+          "text": "Aklın burda kalmasın tarlayı bi şekil halledicem.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s22",
+          "text": "Komşunun oğlu Veli yardım edicek belki.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s23",
+          "text": "Hasat vakti gelmeden dönersin inşallah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s24",
+          "text": "Bize mektup yazmayı unutma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s25",
+          "text": "Posta gecikiyo zaten.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s26",
+          "text": "İki satır yaz yeter.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s27",
+          "text": "Paranı boşa harcama.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s28",
+          "text": "Zabitlerinin sözünden çıkma.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hakkını helal et.",
+      "signature": {
+        "text": "Baban Hilmi"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İstanbullu Şakir'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "17 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000099",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Mükerrem",
+        "epithet": "Denizlili",
+        "age": 42,
+        "hometown": "Denizli",
+        "occupation": "ev hanımı",
+        "relation": "annesi",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Rüstem",
+        "relation": "oğlu",
+        "location": "Çanakkale cephesi",
+        "rank": "er",
+        "gender": "erkek",
+        "age": 22
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "carelessness": "none",
+      "hand": "hurried",
+      "header": {
+        "text": "Çukurören, 17 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Oğlum Rüstem'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Evvela selam eder iki gözlerinden öperim oğlum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Benim halimi sorarsan şükür ayaktayız.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Kaç ay oldu senden bir kâğıt gelmeyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Gözüm yollarda kaldı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Komşu Fadime'nin oğlundan kâğıt gelmiş kahvede okuttular.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Ondan sordurdum seni bilmeyorum demiş.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Bize niye yazmadın kâğıt mı yok oralarda kalem mi bitti.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Koca köyde mektup bekleyen bir ben kaldım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Babanın öksürüğü yine tuttu yatıyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Un bitti komşudan ödünç aldım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Değirmene gidecek kimse kalmadı köyde herkez darda.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Kirazlar oldu kurutuyom sana yollıycam komşu İbrahim emmin postaya vercek.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Havalar ısındı burada yün çoraplarını giyme artık ayakların yara olmasın.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Kardeşin Ayşe'nin selamı var abime söyle çabuk gelsin deyo.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Bizi merak etme biz iyiyiz bir eksiğimiz yok.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Sade senden bir haber bekleyorum başka bir şey istemem.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s17",
+          "text": "Sen orda kendine mukayyet ol.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Hakkını helal et.",
+      "signature": {
+        "text": "Anan Mükerrem"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Denizlili Er Rüstem'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "17 Mayıs 1331"
+    },
+    {
+      "id": "pool_cepheye_000100",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Meryem",
+        "epithet": "Erzurumlu",
+        "age": 31,
+        "hometown": "Erzurum",
+        "occupation": "çiftçi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Eşref",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "çavuş",
+        "gender": "erkek",
+        "age": 31
+      },
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "carelessness": "none",
+      "hand": "dictated",
+      "header": {
+        "text": "Kiğı, 11 Haziran 1331",
+        "sensitive": false
+      },
+      "salutation": "Muhterem Zevcim Eşref'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "İşbu mektubu Meryem'in ağzından yazıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Meryem der ki: Zevcim Eşref, evvela selam eder, iki ellerinden öperim.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Benim hâlimi sorarsan şükür ayaktayız, bir eksiğimiz yoktur.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Kaç zamandır köyün odasına haber gelir, senin adın hiç okunmaz.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Hocaya her vakit sorarım, kâğıdı çıkmadı der.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "Gözümüz yola bakar oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Acaba kâğıdın mı bitti, yoksa fırsat mı bulamadın?",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Kötü bir şey düşünmem, sağlığın yerindedir inşallah.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Biz buralarda iyiyiz, merak edilecek halimiz yoktur.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Geçen hafta koyunları yaylaya çıkardılar.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s11",
+          "text": "Kıştan kalan bulgurumuz yetiyor, unumuzu da değirmende çektirdik.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s12",
+          "text": "Oğlan büyüyor, tarlada amcasına yardım eder oldu.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s13",
+          "text": "Buralara sıcaklar bastırdı, arpa boy veriyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s14",
+          "text": "Komşu Fatma'nın kızı evlendi, onlara da bir tas pekmez götürdük.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s15",
+          "text": "Senin emanet bıraktığın her şey yerli yerinde.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s16",
+          "text": "Hemen bir kelam yazıp yolla, hoca efendi okusun da sesini duyalım.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Cevabını bekliyorum.",
+      "signature": {
+        "text": "",
+        "seal": "Meryem"
+      },
+      "note": {
+        "text": "Mektubu ben kaleme aldım, Allah tez vakitte kavuştursun. İmam Hafız Ali.",
+        "sensitive": false
+      },
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Erzurumlu Eşref'e",
+        "sensitive": false
+      },
+      "package": null,
+      "date": "11 Haziran 1331"
+    },
+    {
+      "id": "pool_cepheye_000102",
+      "tier": "pool",
+      "direction": "cepheye",
+      "sender": {
+        "name": "Kevser",
+        "epithet": "Çankırılı",
+        "age": 15,
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "relation": "karısı",
+        "gender": "kadın"
+      },
+      "recipient": {
+        "name": "Eyüp",
+        "relation": "kocası",
+        "location": "Çanakkale cephesi",
+        "rank": "onbaşı",
+        "gender": "erkek",
+        "age": 21
+      },
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "carelessness": "none",
+      "hand": "careful",
+      "header": {
+        "text": "Söğütlü, 8 Mayıs 1331",
+        "sensitive": false
+      },
+      "salutation": "Efendim Eyüp'e",
+      "segments": [
+        {
+          "id": "s1",
+          "text": "Mektubu yazıyorum, inşallah iyisindir.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s2",
+          "text": "Bizim Sarıkız dün gece buzağıladı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s3",
+          "text": "Alnı sakar, dişi bir buzağı.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s4",
+          "text": "Sabahları ahıra inip onlara bakıyorum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s5",
+          "text": "Sana köylüyle bir bohça yolladım.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s6",
+          "text": "İçine kıştan ördüğüm yün çorapla kalın atkıyı koydum.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s7",
+          "text": "Geceleri soğuk olur oralarda, sarın da üşütme.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s8",
+          "text": "Hoca efendiye bir de muska yazdırdım, geldiğinde boynuna as, hiç çıkarma.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s9",
+          "text": "Çocuğun da selamı var, şimdi beşiğinde uyuyor.",
+          "kind": "normal",
+          "para": 0
+        },
+        {
+          "id": "s10",
+          "text": "Bizim köyde başkaca havadis yok.",
+          "kind": "normal",
+          "para": 0
+        }
+      ],
+      "closing": "Selam ve dua ile.",
+      "signature": {
+        "text": "Zevcen Kevser"
+      },
+      "note": null,
+      "envelope": {
+        "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Çankırılı Eyüp'e",
+        "sensitive": false
+      },
+      "package": [
+        "muska",
+        "yün çorap",
+        "el örgüsü atkı"
+      ],
+      "date": "8 Mayıs 1331"
     }
   ]
 }

@@ -1,0 +1,326 @@
+{
+  "id": "pool_cepheye_000054",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazife",
+    "epithet": "Adanalı",
+    "age": 48,
+    "hometown": "Adana",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "İsmail",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 108,
+  "hand": "hurried",
+  "header": {
+    "text": "Çukurören, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum İsmail'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gözlerinden öperim oğlum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun geldi okuduk sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim buralarda herşey eyi sen merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Tarlada işler yolunda gidiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Pamuklar büyüdü çapasını bitirdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Küçük Hasan geçen gün ayağa kalktı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kapının önünde iki adım atıp düştü hepimiz güldük.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Artık emeklemeyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Pabuç almak lazım yakında.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Haticenin de selamı var o da eyi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Havalar ısındı buralar çok sıcak sen orda nasılsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Su bulabiliyormusun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Yemekler eyimi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Bizim ambar dolu şükür unumuz var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Köyde herkez kendi halinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Sen içini ferah tut hepimiz duacıyız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Sadece sen sağ salim gel diye bekleyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Başka bir sıkıntımız yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Komşu Emine teyzenin de kızı evlendi geçen hafta düğün yaptık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s20",
+      "text": "Emmioğlu Veliye de selam söyle görürsen.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Anan Nazife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı İsmail'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazife Hanım, Adanalı, 48, çiftçi (Adana, Kozan kazası, Çukurören karyesi)\nAlıcı: Oğlu Er İsmail, cephede\nYön: cepheye\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: çocuğun ilk adımları\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 108",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazife",
+        "gender": "kadın",
+        "age": 48,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "epithet": "Adanalı",
+        "place": "Kozan kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "İsmail",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kozan kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 108,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Mayıs 1331",
+      "closing": "",
+      "home_address": "Adana, Kozan kazası, Çukurören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5653,
+      "output": 2136
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Çukurören, 26 Mayıs 1331\nHİTAP: Oğlum İsmail'e\nGÖVDE: Gözlerinden öperim oğlum. Mektubun geldi okuduk sevindik. Bizim buralarda herşey eyi sen merak etmeyesin. Tarlada işler yolunda gidiyo. Pamuklar büyüdü çapasını bitirdik. Küçük Hasan geçen gün ayağa kalktı. Kapının önünde iki adım atıp düştü hepimiz güldük. Artık emeklemeyo. Pabuç almak lazım yakında. Haticenin de selamı var o da eyi. Havalar ısındı buralar çok sıcak sen orda nasılsın. Su bulabiliyormusun. Yemekler eyimi. Bizim ambar dolu şükür unumuz var. Köyde herkez kendi halinde. Sen içini ferah tut hepimiz duacıyız. Sadece sen sağ salim gel diye bekleyoruz. Başka bir sıkıntımız yok. Komşu Emine teyzenin de kızı evlendi geçen hafta düğün yaptık. Emmioğlu Veliye de selam söyle görürsen.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Anan Nazife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı İsmail'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 108 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:20+00:00",
+    "tokens": {
+      "input": 4273,
+      "output": 3712
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı genel olarak döneme uygun olsa da 'işler yolunda gidiyor' gibi bir iki ifade modern bir tını taşıyor.",
+      "olculuk": "Duygular çoğunlukla somut olaylarla gösterilse de 'Sadece sen sağ salim gel diye bekleyoruz' cümlesi kaygıyı doğrudan ifade ediyor.",
+      "okuryazarlik": "İstenen düşük okuryazarlık seviyesi; kısa cümleler, noktalama eksiklikleri ve tutarlı imla hatalarıyla kusursuz bir şekilde yansıtılmış.",
+      "somutluk": "Mektup, pamuk çapası, yürümeye başlayan çocuk, dolu ambar ve komşu düğünü gibi son derece somut ve gündelik ayrıntılarla dolu.",
+      "sadakat": "Mektup; konu, saklanan bilgi, uzunluk ve yazım biçimi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uyuyor.",
+      "sahicilik": "Köy hayatından haberler, askerin hâline dair endişeli sorular ve selamlarla örülü mektup, gerçek bir insanın kaleminden çıkmış gibi sahici duruyor."
+    },
+    "issues": [
+      {
+        "line": "Tarlada işler yolunda gidiyo.",
+        "problem": "'İşler yolunda gitmek' ifadesi, dönemin köylü dili için biraz kalıpsal ve modern kaçıyor.",
+        "suggestion": "Tarlanın işini gücünü gördük."
+      },
+      {
+        "line": "Sadece sen sağ salim gel diye bekleyoruz.",
+        "problem": "Cümle, 'az konuşan' bir karakterin kaygısını ifade etmek için fazla doğrudan ve 'sadece' kelimesiyle biraz modern duruyor.",
+        "suggestion": "Tek beklediğimiz senin sağ salim dönmen."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:20+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

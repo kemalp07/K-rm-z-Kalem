@@ -1,0 +1,207 @@
+{
+  "id": "pool_cepheye_000093",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Şerife",
+    "epithet": "Denizlili",
+    "age": 28,
+    "hometown": "Denizli",
+    "occupation": "çamaşırcı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Mahmut",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 91,
+  "hand": "hurried",
+  "header": {
+    "text": "Ağılönü, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Kocam Mahmut'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mahmut mektubunu aldım iki kere okudum ben iyiyim çamaşıra gidiyom her gün geçen cuma Rıza efendinin dört gömleği yedi çarşafını yıkadım on kuruş verdi üç kuruşa sabun aldım beş kuruşunu da köşeye sakladım evin damı akıyodu onu çamurla sıvadım iki günümü aldı kardeşim Aliye de askerlik kaadı geldi çağırdılar hazırlık yapıyo daha gitmedi buralarda sen onu hiç düşünme bulgur çuvalında iki okka bişey kaldı onu da idare ediyoz dün komşu Ayşenin kızı evlendi üç tepsi börek açtılar bize de altı dilim verdiler havalar ısındı sinekler çoğaldı",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz ellerinden öperim.",
+  "signature": {
+    "text": "Karın Şerife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Denizlili Mahmut'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şerife Hanım, Denizlili, 28, çamaşırcı (Denizli, Acıpayam kazası, Ağılönü karyesi)\nAlıcı: Kocası Onbaşı Mahmut, cephede\nYön: cepheye\nTarih: 30 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: kardeşin de askere çağrılması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 91",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Şerife",
+        "gender": "kadın",
+        "age": 28,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": "çamaşırcı",
+        "epithet": "Denizlili",
+        "place": "Acıpayam kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Mahmut",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Acıpayam kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 91,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "30 Nisan 1331",
+      "closing": "",
+      "home_address": "Denizli, Acıpayam kazası, Ağılönü karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5664,
+      "output": 2914
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ağılönü, 30 Nisan 1331\nHİTAP: Kocam Mahmut'a\nGÖVDE: Mahmut mektubunu aldım iki kere okudum ben iyiyim çamaşıra gidiyom her gün geçen cuma Rıza efendinin dört gömleği yedi çarşafını yıkadım on kuruş verdi üç kuruşa sabun aldım beş kuruşunu da köşeye sakladım evin damı akıyodu onu çamurla sıvadım iki günümü aldı kardeşim Aliye de askerlik kaadı geldi çağırdılar hazırlık yapıyo daha gitmedi buralarda sen onu hiç düşünme bulgur çuvalında iki okka bişey kaldı onu da idare ediyoz dün komşu Ayşenin kızı evlendi üç tepsi börek açtılar bize de altı dilim verdiler havalar ısındı sinekler çoğaldı\nKAPANIŞ: Çabuk cevap yaz ellerinden öperim.\nİMZA: Karın Şerife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Denizlili Mahmut'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "86 kelime, hedef 91 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:59+00:00",
+    "tokens": {
+      "input": 4239,
+      "output": 3291
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, döneme ve karakterin sosyal sınıfına tamamen uygun, hiçbir modern ifade içermiyor.",
+      "olculuk": "Duygular doğrudan söylenmemiş, somut detaylar ve endişeli bir tembih üzerinden çok başarılı bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık; noktalama eksikliği, fonetik imla hataları ve bağlaçsız sıralanan cümlelerle çok tutarlı bir şekilde yansıtılmış.",
+      "somutluk": "Mektup, çamaşır sayısı, kazanılan para, kalan bulgur gibi son derece somut ve gündelik ayrıntılarla dolu.",
+      "sadakat": "Mektup, uzunluk, konu, saklanan bilgi ve karakterin titizliği dahil olmak üzere istekteki tüm unsurlara harfiyen uyuyor.",
+      "sahicilik": "Mektup genel olarak çok sahici, ancak bir eşin kocasına 'ellerinden öperim' demesi pek yaygın olmadığından kapanış kısmı zayıf kalmış."
+    },
+    "issues": [
+      {
+        "line": "KAPANIŞ: Çabuk cevap yaz ellerinden öperim.",
+        "problem": "Bir kadın kocasına 'ellerinden öperim' demez; bu ifade anne, baba gibi büyüklere hürmet için kullanılır.",
+        "suggestion": "Çabuk cevap yaz. Gözlerinden öperim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:59+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

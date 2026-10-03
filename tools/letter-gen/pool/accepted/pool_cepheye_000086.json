@@ -1,0 +1,256 @@
+{
+  "id": "pool_cepheye_000086",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hakkı",
+    "epithet": "Eskişehirli",
+    "age": 76,
+    "hometown": "Eskişehir",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Sabri",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "scribe",
+  "writer": "çarşıdaki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 75,
+  "hand": "dictated",
+  "header": {
+    "text": "Çamlıca, 15 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem oğlum Çavuş Sabri,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela hasretle gözlerinden öper, sıhhat ve afiyette olmanı Cenab-ı Hak'tan niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığın mektubu aldık, okuttuk, sağlığına şükrettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizi sual edersen, hamdolsun ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Komşumuz Yusuf Ağa'nın büyük oğlu Halil'in künyesi geçen cuma köye ulaştı, şehit düşmüş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Allah gani gani rahmet eylesin, babası taziyeye gelene ağzını açıp tek kelam etmez oldu, kahveye de çıkmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sen siperde kendini sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ananın ördüğü kalın yün atkıyı da bu kâğıtla beraber yolladık, geceleri boynuna sarasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Haftaya arpa hasadına gireceğiz, gün sayarız.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Pederin",
+    "seal": "Hakkı"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Sabri'ye",
+    "sensitive": false
+  },
+  "package": [
+    "el örgüsü atkı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hakkı, Eskişehirli, 76, çiftçi (Eskişehir, Sivrihisar kazası, Çamlıca karyesi)\nAlıcı: Oğlu Çavuş Sabri, cephede\nYön: cepheye\nTarih: 15 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: çarşıdaki arzuhalci)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: komşunun oğlunun şehit haberi\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: el örgüsü atkı\nKapanış: Duanı eksik etme\nUzunluk: 75",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hakkı",
+        "gender": "erkek",
+        "age": 76,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "epithet": "Eskişehirli",
+        "place": "Sivrihisar kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "gender": "erkek",
+        "age": 42,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sivrihisar kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 75,
+      "package": [
+        "el örgüsü atkı"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "15 Haziran 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Eskişehir, Sivrihisar kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5856,
+      "output": 3352
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Çamlıca, 15 Haziran 1331\nHİTAP: Muhterem oğlum Çavuş Sabri,\nGÖVDE: Evvela hasretle gözlerinden öper, sıhhat ve afiyette olmanı Cenab-ı Hak'tan niyaz eylerim. Yolladığın mektubu aldık, okuttuk, sağlığına şükrettik. Bizi sual edersen, hamdolsun ayaktayız. Komşumuz Yusuf Ağa'nın büyük oğlu Halil'in künyesi geçen cuma köye ulaştı, şehit düşmüş. Allah gani gani rahmet eylesin, babası taziyeye gelene ağzını açıp tek kelam etmez oldu, kahveye de çıkmıyor. Sen siperde kendini sakın. Ananın ördüğü kalın yün atkıyı da bu kâğıtla beraber yolladık, geceleri boynuna sarasın. Haftaya arpa hasadına gireceğiz, gün sayarız.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Pederin (mühür: Hakkı)\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Sabri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "77 kelime, hedef 75 (+3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:33+00:00",
+    "tokens": {
+      "input": 4299,
+      "output": 3113
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, kâtibin yazdığı bir mektuba uygun şekilde \"Cenab-ı Hak'tan niyaz eylerim\", \"künyesi ulaşmak\" gibi kalıplarla dönemi başarıyla yansıtıyor.",
+      "olculuk": "Duygular, komşunun yası gibi somut durumlar üzerinden dolaylı yoldan ve ölçülü bir şekilde aktarılmış, doğrudan duygu ifadesinden kaçınılmış.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin arzuhalciye yazdırdığı mektup formatı, kullanılan resmi dil ve imza biçimiyle isteğe tam olarak uyuyor.",
+      "somutluk": "Mektup, komşunun kahveye çıkmaması, yün atkı ve arpa hasadı gibi gündelik ve somut ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "İstekle genel olarak uyumlu olsa da, imza formatı belirtilen kuraldan küçük bir sapma gösteriyor.",
+      "sahicilik": "Kâtibin resmi dili ile babanın sade endişelerinin (oğlunu sakınması, atkı yollaması) birleşimi mektuba sahici bir hava katmış."
+    },
+    "issues": [
+      {
+        "line": "İMZA: (mühür: Hakkı) Pederin",
+        "problem": "Okuma yazma bilmeyenler için belirlenen imza kuralı '(mühür: İsim)' şeklindedir; sona eklenen \"Pederin\" kelimesi bu kurala göre fazladır ve kâtibin zaten hitapta ve metinde belirttiği ilişkiyi gereksiz yere tekrar eder.",
+        "suggestion": "İMZA: (mühür: Hakkı)"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:33+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "pool_cepheye_000063",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zarife",
+    "epithet": "Bursalı",
+    "age": 44,
+    "hometown": "Bursa",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Abdullah",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 113,
+  "hand": "hurried",
+  "header": {
+    "text": "Eğrisu, 13 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Abdullah'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Abdullah gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan yorgunum kemiklerim sızlıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde herkez kendi derdine düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sana bu kayıdı yazıyom çünki Fatma'nın babası huysuzluk ediyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dün anasıgil bize geldi nişanı bozcaklar nerdeyse.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Asker yolu beklemek zor diyolar kızı başkasına verceklermiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ben çok yalvardım biraz daha sabredin diyom ama dinlemeyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Söz kestiğimiz bilezikleri isteyorlar bende para ne gezer şimdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Un zaten bitmek üzere komşudan borç alarak idare ediyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tarlaya bakacak adamda yok tek başıma ugraşıp duruyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Geceleri hiç uyku girmiyo gözüme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kızın babasına bir mektup yazda yolla bari senin sözüne inansınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Yoksa Fatma elden gitcek bilesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Geçen kasabaya indim basma alcam ateş pahası alamadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "İçim çok darlanıyom oğlum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Tez vakitte dön inşallah.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "",
+    "seal": "Zarife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Bursalı Abdullah'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zarife Hanım, Bursalı, 44, ev hanımı (Bursa, Mihalıç kazası, Eğrisu karyesi)\nAlıcı: Oğlu Er Abdullah, cephede\nYön: cepheye\nTarih: 13 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: yaşlı ve yorgun, kısa yazar\nKonu: nişanın bozulması tehlikesi\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zarife",
+        "gender": "kadın",
+        "age": 44,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": "ev hanımı",
+        "epithet": "Bursalı",
+        "place": "Mihalıç kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Abdullah",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mihalıç kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "13 Mayıs 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Bursa, Mihalıç kazası, Eğrisu karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5666,
+      "output": 2887
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Eğrisu, 13 Mayıs 1331\nHİTAP: Oğlum Abdullah'a\nGÖVDE: Oğlum Abdullah gözlerinden öperim. Benim halimi sorarsan yorgunum kemiklerim sızlıyo. Köyde herkez kendi derdine düştü. Sana bu kayıdı yazıyom çünki Fatma'nın babası huysuzluk ediyo. Dün anasıgil bize geldi nişanı bozcaklar nerdeyse. Asker yolu beklemek zor diyolar kızı başkasına verceklermiş. Ben çok yalvardım biraz daha sabredin diyom ama dinlemeyolar. Söz kestiğimiz bilezikleri isteyorlar bende para ne gezer şimdi. Un zaten bitmek üzere komşudan borç alarak idare ediyom. Tarlaya bakacak adamda yok tek başıma ugraşıp duruyom. Geceleri hiç uyku girmiyo gözüme. Kızın babasına bir mektup yazda yolla bari senin sözüne inansınlar. Yoksa Fatma elden gitcek bilesin. Geçen kasabaya indim basma alcam ateş pahası alamadım. İçim çok darlanıyom oğlum. Tez vakitte dön inşallah.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: (mühür: Zarife)\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Bursalı Abdullah'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "110 kelime, hedef 113 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:14+00:00",
+    "tokens": {
+      "input": 4314,
+      "output": 3443
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı çoğunlukla döneme uygun ve tutarlı, modern bir ifadeye rastlanmıyor.",
+      "olculuk": "Mektup genel olarak ölçülü olsa da 'yorgunum' ve 'içim çok darlanıyom' gibi duyguyu doğrudan adlandıran ifadeler içeriyor.",
+      "okuryazarlik": "İstekte belirtilen düşük okuryazarlık seviyesi; kısa cümleler, imla hataları ve basit kelime seçimiyle kusursuz yansıtılmış.",
+      "somutluk": "Unun bitmesi, borç alınması, ateş pahası basma gibi gündelik ve somut ayrıntılar mektubu çok güçlendirmiş.",
+      "sadakat": "Mektup; konu, uzunluk, saklanan bilgi ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uyuyor.",
+      "sahicilik": "Mektup, somut dertleri ve tutarlı karakter sesiyle oldukça sahici, ancak doğrudan duygu ifadesi bu hissi bir nebze zayıflatıyor."
+    },
+    "issues": [
+      {
+        "line": "Sana bu kayıdı yazıyom çünki Fatma'nın babası huysuzluk ediyo.",
+        "problem": "'Kayıt' kelimesi 'kâğıt' için yapılan bir hata olarak pek olası değil; 'kaat' veya 'kağıt' gibi yanlış yazımlar daha yaygındır.",
+        "suggestion": "Sana bu kaadı yazıyom çünki Fatma'nın babası huysuzluk ediyo."
+      },
+      {
+        "line": "İçim çok darlanıyom oğlum.",
+        "problem": "Bu cümle, 'duyguyu adlandırma' kuralını ihlal eden çok doğrudan bir ifadedir; duygunun somut olaylarla hissettirilmesi gerekir.",
+        "suggestion": "Bu dertlerle yediğim lokmadan bir şey anlamıyom oğlum."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

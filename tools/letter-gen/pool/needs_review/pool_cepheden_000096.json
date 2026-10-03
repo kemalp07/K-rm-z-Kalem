@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheden_000096",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hafız",
+    "epithet": "Malatyalı",
+    "age": 22,
+    "hometown": "Malatya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Melek",
+    "relation": "karısı",
+    "location": "Malatya, Darende kazası, Söğütlü karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 84,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 8 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Melek'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Melek gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Allahın selamı üstünüze olsun inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ben çok eyiyim Rabbime şükürler olsun ayaklarım sapasağlamdır postallarla geziyom taş üstünde hiç merak etmeyesin beni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İki gündür deniz kenarında siper kazıyoz",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "kardaşlarla omuz omuza.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sizi çok düşünüyom arpa sararmıştır yakında buğday da gelir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hasadı kim kaldıracak tarlada anama tek bırakma ekinleri zay etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Emmi oğulları tırpanla yardım ediyo mu sana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Allah onlardan razı olsun eyer ediyolarsa.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köydeki herkeze çokca selam eylerim cami hocasına da söyleyin büyüklerin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Duanızı eksik etmeyin ben buralarda hep ediyom inşallah kavuşuruz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile",
+  "signature": {
+    "text": "Kocan Hafız"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Malatya, Darende kazası, Söğütlü karyesi, İmam Hüseyin Efendi vasıtasıyla Melek Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hafız, Malatyalı, 22, çiftçi, er (Malatya, Darende kazası, Söğütlü karyesi)\nAlıcı: Karısı Melek Hanım, Malatya, Darende kazası, Söğütlü karyesi\nYön: cepheden\nTarih: 8 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dualı, sık sık dua eder\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Selam ve dua ile\nUzunluk: 84",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hafız",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "epithet": "Malatyalı",
+        "place": "Darende kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Melek",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Darende kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Malatya, Darende kazası, Söğütlü karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 84,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "8 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "Malatya, Darende kazası, Söğütlü karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5675,
+      "output": 4504
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 8 Mayıs 1331\nHİTAP: Melek'e\nGÖVDE: Melek gözlerinden öperim. Allahın selamı üstünüze olsun inşallah. Ben çok eyiyim Rabbime şükürler olsun ayaklarım sapasağlamdır postallarla geziyom taş üstünde hiç merak etmeyesin beni. ⟦İki gündür deniz kenarında siper kazıyoz⟧ kardaşlarla omuz omuza. Sizi çok düşünüyom arpa sararmıştır yakında buğday da gelir. Hasadı kim kaldıracak tarlada anama tek bırakma ekinleri zay etmeyin. Emmi oğulları tırpanla yardım ediyo mu sana. Allah onlardan razı olsun eyer ediyolarsa. Köydeki herkeze çokca selam eylerim cami hocasına da söyleyin büyüklerin ellerinden öperim. Duanızı eksik etmeyin ben buralarda hep ediyom inşallah kavuşuruz.\nKAPANIŞ: Selam ve dua ile\nİMZA: Kocan Hafız\nZARF: Malatya, Darende kazası, Söğütlü karyesi, İmam Hüseyin Efendi vasıtasıyla Melek Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "86 kelime, hedef 84 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:06+00:00",
+    "tokens": {
+      "input": 4268,
+      "output": 4396
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, döneme uygun kelimeler ve düşük okuryazarlığa has imla hatalarıyla ('geziyom', 'eyer', 'herkeze') kusursuz bir şekilde yansıtılmış.",
+      "olculuk": "Duygular doğrudan söylenmek yerine, ayağının sağlam olduğunu aşırı vurgulayarak ve hasatla ilgili endişelerini dile getirerek ustaca hissettirilmiş.",
+      "okuryazarlik": "İstekte belirtilen 'düşük okuryazarlık' seviyesi; basit cümle yapısı, tekrarlayan imla hataları ve noktalama eksiklikleri ile tutarlı bir şekilde uygulanmış.",
+      "somutluk": "Mektup; 'postal', 'arpa', 'buğday', 'tırpan' gibi gündelik hayata dair somut ve döneme uygun nesnelerle zenginleştirilmiş.",
+      "sadakat": "Mektup konu, ton ve karakterin sakladığı sır gibi ana unsurlara sadık kalsa da, 'dikkatsizlik: az' isteğini yerine getirmeyip tüm hassas bilgiyi sansürleyerek isteğin önemli bir detayını atlamıştır.",
+      "sahicilik": "Karakterin endişelerini, dualarını ve sakladığı sırrı yansıtma biçimi, mektubu yapaylıktan uzak ve son derece gerçekçi kılıyor."
+    },
+    "issues": [
+      {
+        "line": "⟦İki gündür deniz kenarında siper kazıyoz⟧ kardaşlarla omuz omuza.",
+        "problem": "İstekte 'dikkatsizlik: az' belirtilmesine rağmen, bu satırdaki tüm hassas askeri bilgi (süre, yer, eylem) sansürlenmiş; bu durum 'dikkatsizlik: yok' anlamına gelir ve isteğe aykırıdır.",
+        "suggestion": "İki gündür siper kazıyoz ⟦deniz kenarında⟧ kardaşlarla omuz omuza."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

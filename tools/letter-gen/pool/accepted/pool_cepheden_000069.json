@@ -1,0 +1,241 @@
+{
+  "id": "pool_cepheden_000069",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Adem",
+    "epithet": "Harputlu",
+    "age": 25,
+    "hometown": "Harput",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Bekir",
+    "relation": "oğlu",
+    "location": "Harput, Çemişgezek kazası, Bahçecik karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "high",
+  "length_target": 64,
+  "hand": "hurried",
+  "header": {
+    "text": "Arıburnu, 6 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Oğlum Bekir'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Bekir kâğıdı alınca anana nenene oku benim sağ olduğumu bilsinler merak etmesinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim çadırlar denizin hemen kenarında karşı kıyıdan koca gemiler top atıyo.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Siz nasılsınız kömür bitti mi ocak ne alemde körük sağlam mı",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dün bizim takımdan on kişi tepeye siper kazmaya giti",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dükkanı iyi kitleyin demirleri paslandırmayın sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hasan emmine selam söyle dayın gile gittiniz mi Bana tütün yollayın kâğıdım bityo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile.",
+  "signature": {
+    "text": "Baban Adem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Harput, Çemişgezek kazası, Bahçecik karyesi, İmam Süleyman Efendi vasıtasıyla Bekir'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Adem, Harputlu, 25, demirci, er (Harput, Çemişgezek kazası, Bahçecik karyesi)\nAlıcı: Oğlu Bekir, Harput, Çemişgezek kazası, Bahçecik karyesi\nYön: cepheden\nTarih: 6 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: genç ve heyecanlı, çok soru sorar\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: korktuğunu\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nKapanış: Selam ve dua ile\nUzunluk: 64",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Adem",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Harput",
+        "occupation": "demirci",
+        "epithet": "Harputlu",
+        "place": "Çemişgezek kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 9,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çemişgezek kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Harput, Çemişgezek kazası, Bahçecik karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "korktuğunu",
+      "carelessness": "high",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "kısa",
+      "length_target": 64,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "6 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "Harput, Çemişgezek kazası, Bahçecik karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5691,
+      "output": 2990
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Arıburnu⟧, 6 Mayıs 1331\nHİTAP: Oğlum Bekir'e\nGÖVDE: Oğlum Bekir kâğıdı alınca anana nenene oku benim sağ olduğumu bilsinler merak etmesinler. ⟦Bizim çadırlar denizin hemen kenarında karşı kıyıdan koca gemiler top atıyo.⟧ Siz nasılsınız kömür bitti mi ocak ne alemde körük sağlam mı ⟦Dün bizim takımdan on kişi tepeye siper kazmaya giti⟧ Dükkanı iyi kitleyin demirleri paslandırmayın sakın. Hasan emmine selam söyle dayın gile gittiniz mi Bana tütün yollayın kâğıdım bityo.\nKAPANIŞ: Selam ve dua ile.\nİMZA: Baban Adem\nZARF: Harput, Çemişgezek kazası, Bahçecik karyesi, İmam Süleyman Efendi vasıtasıyla Bekir'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "63 kelime, hedef 64 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Arıburnu, 6 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:07+00:00",
+    "tokens": {
+      "input": 4224,
+      "output": 3991
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil ve imla, düşük okuryazar bir köylünün 1915'teki üslubunu kusursuz yansıtıyor.",
+      "olculuk": "Duygular adlandırılmamış, korku gizlenmiş ve heyecan somut sorularla hissettirilmiştir.",
+      "okuryazarlik": "Kısa ve devrik cümleler, imla hataları ve noktalama eksikliği, istenen düşük okuryazarlık seviyesine tam uyuyor.",
+      "somutluk": "Demirci ocağı, körük, kömür gibi mesleğe özgü somut detaylar mektubu zenginleştiriyor.",
+      "sadakat": "Mektup; uzunluk, konu, ton, dikkatsizlik seviyesi ve hassas bilgi türü dahil isteğin tüm unsurlarına harfiyen sadık kalmıştır.",
+      "sahicilik": "Pratik kaygılarla dolu, hızlıca yazılmış hissi veren mektup, cephedeki genç bir zanaatkarın sesi olarak çok sahici duruyor."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Arıburnu, 6 Mayıs 1331⟧",
+        "problem": "Sansür işareti (⟦ ⟧) askerî olmayan bir bilgiyi, yani tarihi de içine alıyor.",
+        "suggestion": "BAŞLIK: ⟦Arıburnu⟧, 6 Mayıs 1331"
+      },
+      {
+        "line": "GÖVDE: ... ⟦Dün bizim takımdan on kişi tepeye siper kazmaya giti⟧ ...",
+        "problem": "Sansür işareti (⟦ ⟧) askerî olmayan bir bilgiyi, yani 'Dün' kelimesini de içine alıyor.",
+        "suggestion": "GÖVDE: ... Dün ⟦bizim takımdan on kişi tepeye siper kazmaya giti⟧ ..."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:24:07+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

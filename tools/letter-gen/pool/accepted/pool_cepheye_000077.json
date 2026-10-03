@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000077",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Tevfik",
+    "epithet": "Afyonlu",
+    "age": 8,
+    "hometown": "Afyon",
+    "occupation": "çiftçi",
+    "relation": "oğlu"
+  },
+  "recipient": {
+    "name": "Hamdi",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "postane önündeki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 105,
+  "hand": "dictated",
+  "header": {
+    "text": "Dinar, 12 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Hamdi Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Muhterem pederim, evvela mahsus selam eder, mübarek ellerinizden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mahdumunuz Tevfik der ki: Tahir Ağa'ya olan iki lira borcun günü geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Tarladaki arpayı biçtik, on altı şinik çıktı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dördünü tohumluk ayırdık, gerisini kasabadaki zahireciye yetmiş kuruşa verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Paranın hepsini Tahir Ağa'ya götürdüm, tamamı bitmeden defterden silmem, kalanını tez getirin dedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Anam kara ineğin buzağısını satalım diyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Satarsak kışın ne yiyeceğiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bakkal Rıza da dükkandaki doksan kuruşu istiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Emmim versin dedim, o da bende yok dedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Dört kuruş da arzuhalciye verdim bu kâğıt için.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen oradan bir çare bulamazsan buzağıyı perşembe pazara çekeceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Başka yolumuz kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Validemin ve kız kardeşimin mahsus selamları vardır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "",
+    "seal": "Tevfik"
+  },
+  "note": {
+    "text": "İşbu kâğıt mahdumunuzun ifadeleriyle kaleme alınmıştır. Dinar arzuhalcisi.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Afyonlu Er Hamdi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Tevfik, Afyonlu, 8, çiftçi (Afyon, Dinar kazası, Kuzören karyesi)\nAlıcı: Babası Er Hamdi, cephede\nYön: cepheye\nTarih: 12 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: postane önündeki arzuhalci)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: borcun ödenmesi için ne yapılacağı\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 105",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Tevfik",
+        "gender": "erkek",
+        "age": 8,
+        "relation": "oğlu",
+        "rank": null,
+        "hometown": "Afyon",
+        "occupation": "çiftçi",
+        "epithet": "Afyonlu",
+        "place": "Dinar kazası, Kuzören karyesi"
+      },
+      "recipient": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Afyon",
+        "occupation": null,
+        "epithet": null,
+        "place": "Dinar kazası, Kuzören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "borcun ödenmesi için ne yapılacağı",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 105,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "12 Haziran 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Afyon, Dinar kazası, Kuzören karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5742,
+      "output": 4030
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Dinar, 12 Haziran 1331\nHİTAP: Muhterem pederim Hamdi Efendi'ye\nGÖVDE: Muhterem pederim, evvela mahsus selam eder, mübarek ellerinizden öperim. Mahdumunuz Tevfik der ki: Tahir Ağa'ya olan iki lira borcun günü geçti. Tarladaki arpayı biçtik, on altı şinik çıktı. Dördünü tohumluk ayırdık, gerisini kasabadaki zahireciye yetmiş kuruşa verdik. Paranın hepsini Tahir Ağa'ya götürdüm, tamamı bitmeden defterden silmem, kalanını tez getirin dedi. Anam kara ineğin buzağısını satalım diyor. Satarsak kışın ne yiyeceğiz. Bakkal Rıza da dükkandaki doksan kuruşu istiyor. Emmim versin dedim, o da bende yok dedi. Dört kuruş da arzuhalciye verdim bu kâğıt için. Sen oradan bir çare bulamazsan buzağıyı perşembe pazara çekeceğim. Başka yolumuz kalmadı. Validemin ve kız kardeşimin mahsus selamları vardır.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: (mühür: Tevfik)\nNOT: İşbu kâğıt mahdumunuzun ifadeleriyle kaleme alınmıştır. Dinar arzuhalcisi.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Afyonlu Er Hamdi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "102 kelime, hedef 105 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"evvela mahsus selam eder mübarek ellerinizden\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:58+00:00",
+    "tokens": {
+      "input": 4357,
+      "output": 3319
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'mahdumunuz', 'şinik', 'arzuhalci' gibi kelimelerle dönemi kusursuz yansıtıyor ve modern ifadelerden tamamen arınmış.",
+      "olculuk": "Duygusal çaresizlik, borçların ve satılacak buzağının somut dökümü üzerinden adlandırılmadan, ölçülü bir şekilde hissettiriliyor.",
+      "okuryazarlik": "Arzuhalciye yazdırılan mektup biçimi, kâtibin resmi dili ('işbu kâğıt') ile çocuğun sade anlatımını birleştirerek mükemmel uygulanmış.",
+      "somutluk": "Mektup, borç miktarları, arpa ölçüsü, buzağı ve pazar günü gibi son derece somut ve gündelik ayrıntılarla dolu.",
+      "sadakat": "Verilen tüm isteklere (yazma biçimi, karakterin titizliği, konu, kapanış cümlesi, imza) harfiyen uyulmuş.",
+      "sahicilik": "Arzuhalciye ödenen paranın bile hesaba katılması gibi ince detaylar mektuba yüksek bir sahicilik katıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:58+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

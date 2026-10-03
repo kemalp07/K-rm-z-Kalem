@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheden_000099",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hakkı",
+    "epithet": "Nalbant",
+    "age": 27,
+    "hometown": "İzmir",
+    "occupation": "nalbant",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Server",
+    "relation": "babası",
+    "location": "İzmir, Karataş, Turan mahallesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 67,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 25 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Pederim Server'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Hakkı der ki: Birinci kâğıdıma cevap vermedin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Yolladığınız paketi nihayet aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Çoraplar elime geçti, tütün de iyi geldi, sağ olasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benden yana merak edilecek bir şey yok, işim gücüm yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dükkânı boş bırakma, o çırağı sıkı tut.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Atların nallarına iyi baksın, sakın eksik iş yapmasın, müşteriyi kaçırmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben sağlamım, ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bir daha mektup yazınca içine biraz daha tütün sarıp yollayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile.",
+  "signature": {
+    "text": "",
+    "seal": "Hakkı"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Hakkı'nın ağzından yazdım. Arkadaşı Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "İzmir, Karataş, Turan mahallesi, Bakkal Hasan Efendi vasıtasıyla Nalbant Server'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hakkı, Nalbant, 27, nalbant, er (İzmir, Karataş, Turan mahallesi)\nAlıcı: Babası Server, İzmir, Karataş, Turan mahallesi\nYön: cepheden\nTarih: 25 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: izninin iptal edildiğini\nHassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Selam ve dua ile\nUzunluk: 67",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hakkı",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "İzmir",
+        "occupation": "nalbant",
+        "epithet": "Nalbant",
+        "place": "Karataş, Turan mahallesi"
+      },
+      "recipient": {
+        "name": "Server",
+        "gender": "erkek",
+        "age": 55,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "İzmir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karataş, Turan mahallesi"
+      },
+      "recipient_location": "İzmir, Karataş, Turan mahallesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "low",
+      "sensitive_info": "hastaneye kaldırılan arkadaşlarının sayısı",
+      "length_label": "kısa",
+      "length_target": 67,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "25 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "İzmir, Karataş, Turan mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5619,
+      "output": 3541
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İzmir",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 25 Mayıs 1331\nHİTAP: Pederim Server'e\nGÖVDE: Hakkı der ki: Birinci kâğıdıma cevap vermedin. Yolladığınız paketi nihayet aldım. Çoraplar elime geçti, tütün de iyi geldi, sağ olasın. Benden yana merak edilecek bir şey yok, işim gücüm yerinde. Dükkânı boş bırakma, o çırağı sıkı tut. Atların nallarına iyi baksın, sakın eksik iş yapmasın, müşteriyi kaçırmasın. ⟦Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.⟧ Ben sağlamım, ayaktayım. Bir daha mektup yazınca içine biraz daha tütün sarıp yollayın.\nKAPANIŞ: Selam ve dua ile.\nİMZA: (mühür: Hakkı)\nNOT: İşbu kâğıdı Hakkı'nın ağzından yazdım. Arkadaşı Ali.\nZARF: İzmir, Karataş, Turan mahallesi, Bakkal Hasan Efendi vasıtasıyla Nalbant Server'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "66 kelime, hedef 67 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:28+00:00",
+    "tokens": {
+      "input": 4259,
+      "output": 2603
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve kelimeler ('kâğıt', 'çırak', 'sağ olasın') döneme uygundur ve modern ifadeler içermemektedir.",
+      "olculuk": "Duygular adlandırılmamış, karakterin sert ve emredici tonu somut talimatlar ve kısa cümlelerle başarıyla yansıtılmıştır.",
+      "okuryazarlik": "Yazdırma formatı ve mühür kullanımı doğru olsa da, 'Pederim' hitabı karakterin kaba ve doğrudan ses tonu için biraz fazla resmî kalmıştır.",
+      "somutluk": "Mektup, çorap, tütün, dükkân, çırak ve at nalları gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "İstekte belirtilen 'Dikkatsizlik: az' kuralı uygulanmamış; hassas bilgi sansürlenmiş olarak gösterilmiş, oysa bir bilginin sansürden kaçması gerekiyordu.",
+      "sahicilik": "Karakterin dükkânıyla ilgili endişeleri ve emirleri mektubu sahici kılıyor, ancak 'dikkatsizlik' kuralının yanlış uygulanması gerçekçiliği bir miktar azaltıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Pederim Server'e",
+        "problem": "Okuma yazma bilmeyen ve sert bir tona sahip karakterin ağzından yazdırılan bir mektup için 'Pederim' hitabı fazla resmîdir.",
+        "suggestion": "Karakterin sesine daha uygun olan 'Babam Server'e' veya sadece 'Baba' kullanılabilirdi."
+      },
+      {
+        "line": "GÖVDE: ... ⟦Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.⟧ ...",
+        "problem": "İstekte 'Dikkatsizlik: az' deniyordu, bu da bir askerî bilginin sansürcüden kaçması (yani ⟦ ⟧ işareti olmadan yazılması) gerektiği anlamına gelir. Bu haliyle mektup 'Dikkatsizlik: yok' kuralına uymaktadır.",
+        "suggestion": "Bu cümlenin 'Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.' şeklinde, sansür işareti olmadan yazılması isteğe daha uygun olurdu."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

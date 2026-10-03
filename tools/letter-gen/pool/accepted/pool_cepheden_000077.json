@@ -1,0 +1,282 @@
+{
+  "id": "pool_cepheden_000077",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Halil",
+    "epithet": "Aydınlı",
+    "age": 26,
+    "hometown": "Aydın",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zübeyde",
+    "relation": "annesi",
+    "location": "Aydın, Çine kazası, Kocaköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 101,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 13 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Zübeyde Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Halil der ki: Evvela ellerinden öper, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buraya geleli aylar oldu, bir kâğıt yollamadınız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyün yolunu mu unuttunuz, yoksa bizi mi sildiniz defterden?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İnsan sağ mısın diye bir satır yazdırır da yollar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen gün bizim bölüğe bizim köyden Topal Hasan’ın oğlu Mustafa düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Onu görünce köyü görmüş gibi oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dediğine göre arpa biçimi başlamış, incirler de irileşmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim aklım hep oralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralar çok sıcak, toz toprak içindeyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Geceleri gürültüden uyku girmiyor gözüme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Mustafa da alışamadı daha.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "İnsan bir haber bekliyor, gözümüz yollarda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bir daha mektup yazmazsanız hakkımı helal etmem.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Anacığım ne olur muhtara git de iki satır yazdır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "",
+    "seal": "Halil"
+  },
+  "note": {
+    "text": "İşbu mektubu Halil'in lisanından yazdım. Alay İmamı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Aydın, Çine kazası, Kocaköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Zübeyde Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Halil, Aydınlı, 26, dokumacı, er (Aydın, Çine kazası, Kocaköy karyesi)\nAlıcı: Annesi Zübeyde Hanım, Aydın, Çine kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 13 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Halil",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": "dokumacı",
+        "epithet": "Aydınlı",
+        "place": "Çine kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Zübeyde",
+        "gender": "kadın",
+        "age": 45,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çine kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Aydın, Çine kazası, Kocaköy karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "korktuğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "13 Haziran 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Aydın, Çine kazası, Kocaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5690,
+      "output": 3285
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 13 Haziran 1331\nHİTAP: Validem Zübeyde Hanım'a\nGÖVDE: Halil der ki: Evvela ellerinden öper, hatırını sorarım. Buraya geleli aylar oldu, bir kâğıt yollamadınız. Köyün yolunu mu unuttunuz, yoksa bizi mi sildiniz defterden? İnsan sağ mısın diye bir satır yazdırır da yollar. Geçen gün bizim bölüğe bizim köyden Topal Hasan’ın oğlu Mustafa düştü. Onu görünce köyü görmüş gibi oldum. Dediğine göre arpa biçimi başlamış, incirler de irileşmiş. Benim aklım hep oralarda. Buralar çok sıcak, toz toprak içindeyiz. Geceleri gürültüden uyku girmiyor gözüme. Mustafa da alışamadı daha. İnsan bir haber bekliyor, gözümüz yollarda kaldı. Bir daha mektup yazmazsanız hakkımı helal etmem. Anacığım ne olur muhtara git de iki satır yazdır.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: (mühür: Halil)\nNOT: İşbu mektubu Halil'in lisanından yazdım. Alay İmamı.\nZARF: Aydın, Çine kazası, Kocaköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Zübeyde Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "100 kelime, hedef 101 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:36+00:00",
+    "tokens": {
+      "input": 4338,
+      "output": 3703
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('kâğıt yollamak', 'defterden silmek', 'bölüğe düşmek') döneme tamamen uygundur.",
+      "olculuk": "Sitem ve korku gibi duygular doğrudan adlandırılmadan, sitemli sorular ve 'geceki gürültü' gibi somut durumlar üzerinden ustaca hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin ağzından çıkan sade ifadeler ile mektubu yazan imamın daha kalıplı dili ('Validem', 'İşbu mektup') başarıyla birleştirilmiştir.",
+      "somutluk": "Mektup, 'Topal Hasan'ın oğlu Mustafa', 'arpa biçimi', 'irileşmiş incirler' gibi canlı ve yöreye özgü somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, ton, yazım biçimi, uzunluk ve istenen kapanış cümlesi dahil olmak üzere isteğin tüm ayrıntılarına harfiyen uymaktadır.",
+      "sahicilik": "Köyden gelen bir haberle canlanan memleket hasreti ve mektup alamamanın getirdiği sitemkâr ama yine de ana özlemiyle dolu ton, mektubu son derece gerçekçi kılmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:24:36+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

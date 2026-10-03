@@ -1,0 +1,284 @@
+{
+  "id": "pool_cepheye_000089",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hacer",
+    "epithet": "Amasyalı",
+    "age": 19,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Sabri",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 104,
+  "hand": "careful",
+  "header": {
+    "text": "Yeniköy, 26 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Sabri'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, ellerinden hürmetle öperim ağabey.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğin kâğıdı aldık, okuduk sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köydeki havadisleri sormuşsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Demirci Rüstem’in kızı Elif’i Çamlıca’ya gelin ettik, davulsuz zurnasız gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Deli Bekir’in ihtiyarı da geçen hafta vefat etti, toprağa verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim sıpalar iyiler, ellerinden öperler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Küçük Ali iyice azıttı, söz dinlemiyor, sokakta itlerle koşturup çamura bulanıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dayım gelip kulağını çekecek diyorum da öyle korkup susuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizi hiç düşünme, her gün bulgur kaynatıp bir tas mercimekle doyuyoruz, karnımız tok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yağmurlar bu sene dinmedi, tarlada ayrık otları diz boyu oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen oralarda kendine iyi bak, yün içliğini giy.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Köydeki herkese selamını söyledim, hepsi dua ediyor.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah darda koymasın, tez zamanda dön.",
+  "signature": {
+    "text": "Kardeşin Hacer"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Sabri'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hacer Hanım, Amasyalı, 19, çiftçi (Amasya, Gümüşhacıköy kazası, Yeniköy karyesi)\nAlıcı: Ağabeyi Onbaşı Sabri, cephede\nYön: cepheye\nTarih: 26 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: köyden haberler, kim evlendi kim öldü\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hacer",
+        "gender": "kadın",
+        "age": 19,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Gümüşhacıköy kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Sabri",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gümüşhacıköy kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "köyden haberler, kim evlendi kim öldü",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Nisan 1331",
+      "closing": "",
+      "home_address": "Amasya, Gümüşhacıköy kazası, Yeniköy karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5664,
+      "output": 3337
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 26 Nisan 1331\nHİTAP: Ağabeyim Sabri'ye\nGÖVDE: Evvela selam eder, ellerinden hürmetle öperim ağabey. Gönderdiğin kâğıdı aldık, okuduk sevindik. Bizi sorarsan şükür ayaktayız. Köydeki havadisleri sormuşsun. Demirci Rüstem’in kızı Elif’i Çamlıca’ya gelin ettik, davulsuz zurnasız gitti. Deli Bekir’in ihtiyarı da geçen hafta vefat etti, toprağa verdik. Bizim sıpalar iyiler, ellerinden öperler. Küçük Ali iyice azıttı, söz dinlemiyor, sokakta itlerle koşturup çamura bulanıyor. Dayım gelip kulağını çekecek diyorum da öyle korkup susuyor. Bizi hiç düşünme, her gün bulgur kaynatıp bir tas mercimekle doyuyoruz, karnımız tok. Yağmurlar bu sene dinmedi, tarlada ayrık otları diz boyu oldu. Sen oralarda kendine iyi bak, yün içliğini giy. Köydeki herkese selamını söyledim, hepsi dua ediyor.\nKAPANIŞ: Allah darda koymasın, tez zamanda dön.\nİMZA: Kardeşin Hacer\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Amasyalı Sabri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "102 kelime, hedef 104 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:16+00:00",
+    "tokens": {
+      "input": 4310,
+      "output": 2915
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Birkaç kelime (\"hürmetle\", \"vefat etti\") karakterin okuryazarlık seviyesi için biraz fazla resmî kalsa da genel olarak dil kullanımı döneme uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, somut olaylar ve endişeler üzerinden başarıyla hissettirilmiştir.",
+      "okuryazarlik": "Mektubun dili ve yapısı 'orta okuryazar' seviyesine genel olarak uymakla birlikte, imla hatası olmaması ve bazı resmî kelimeler seviyeyi bir tık yukarı çekmektedir.",
+      "somutluk": "Mektup, 'ayrık otları', 'çamur', 'bulgur', 'yün içlik' gibi gündelik hayata dair çok sayıda somut ayrıntı içermektedir.",
+      "sadakat": "Mektup, uzunluk, konu, saklanan bilgi ve karakter sesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uymaktadır.",
+      "sahicilik": "Köy hayatından verilen haberler, yaramaz çocuk tasviri ve üstü kapalı endişelerle mektup son derece gerçekçi ve klişelerden uzaktır."
+    },
+    "issues": [
+      {
+        "line": "Evvela selam eder, ellerinden hürmetle öperim ağabey.",
+        "problem": "'Hürmetle' kelimesi, 'orta okuryazar' ve 'kaba ama sevecen' bir köylü kadın için fazla resmî ve kâtip ağzı bir ifadedir.",
+        "suggestion": "Evvela selam eder, ellerinden öperim ağabey."
+      },
+      {
+        "line": "Deli Bekir’in ihtiyarı da geçen hafta vefat etti, toprağa verdik.",
+        "problem": "'Vefat etti' kelimesi, karakterin profili için biraz kitabi kalmaktadır; 'öldü' veya 'rahmetli oldu' gibi daha gündelik ifadeler daha doğal olurdu.",
+        "suggestion": "Deli Bekir’in ihtiyarı da geçen hafta rahmetli oldu, toprağa verdik."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:16+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

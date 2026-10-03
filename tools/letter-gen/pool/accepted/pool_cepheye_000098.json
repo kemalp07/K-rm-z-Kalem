@@ -1,0 +1,376 @@
+{
+  "id": "pool_cepheye_000098",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hilmi",
+    "epithet": "İstanbullu",
+    "age": 64,
+    "hometown": "Dersaadet",
+    "occupation": "terzi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Şakir",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 124,
+  "hand": "hurried",
+  "header": {
+    "text": "Dersaadet, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Şakir'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldık okuduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İyiymişsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dükkanı açıyom her sabah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çırak Mehmet gitti tek başıma kaldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "İşler kesat zatı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kumaş bulunmuyo iplik pahalı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dikiş makinası da bozuldu geçende.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ekmek sırası çok uzadı bu ara.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geçen hafta köye gittim senin ekinlere bakmaya.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tarla yeşermiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Arpalar boy atmış ama çapa lazım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kim çapalıcak bilmeyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Dayın hastalandı yatıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Anan sabahtan akşama kadar ağlıyo sus diyom susmuyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Gözlerini bozacak kör olucak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Kendine dikkat et.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Orda burda üşütme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Çoraplarını yünlü giy.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Hasan'ın oğlu Ali de ordaymış görürsen selam söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s20",
+      "text": "Ahmet Ağa'nın selamı var sordu seni.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s21",
+      "text": "Aklın burda kalmasın tarlayı bi şekil halledicem.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s22",
+      "text": "Komşunun oğlu Veli yardım edicek belki.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s23",
+      "text": "Hasat vakti gelmeden dönersin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s24",
+      "text": "Bize mektup yazmayı unutma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s25",
+      "text": "Posta gecikiyo zaten.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s26",
+      "text": "İki satır yaz yeter.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s27",
+      "text": "Paranı boşa harcama.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s28",
+      "text": "Zabitlerinin sözünden çıkma.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Baban Hilmi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İstanbullu Şakir'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hilmi, İstanbullu, 64, terzi (Dersaadet, Üsküdar, Valide-i Atik mahallesi)\nAlıcı: Oğlu Er Şakir, cephede\nYön: cepheye\nTarih: 17 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sert, emir verir gibi yazar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 124",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hilmi",
+        "gender": "erkek",
+        "age": 64,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": "terzi",
+        "epithet": "İstanbullu",
+        "place": "Üsküdar, Valide-i Atik mahallesi"
+      },
+      "recipient": {
+        "name": "Şakir",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Üsküdar, Valide-i Atik mahallesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 124,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "17 Mayıs 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Dersaadet, Üsküdar, Valide-i Atik mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5844,
+      "output": 4427
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Dersaadet, 17 Mayıs 1331\nHİTAP: Oğlum Şakir'e\nGÖVDE: Mektubunu aldık okuduk. İyiymişsin. Dükkanı açıyom her sabah. Çırak Mehmet gitti tek başıma kaldım. İşler kesat zatı. Kumaş bulunmuyo iplik pahalı. Dikiş makinası da bozuldu geçende. Ekmek sırası çok uzadı bu ara. Geçen hafta köye gittim senin ekinlere bakmaya. Tarla yeşermiş. Arpalar boy atmış ama çapa lazım. Kim çapalıcak bilmeyom. Dayın hastalandı yatıyo. Anan sabahtan akşama kadar ağlıyo sus diyom susmuyo. Gözlerini bozacak kör olucak. Kendine dikkat et. Orda burda üşütme. Çoraplarını yünlü giy. Hasan'ın oğlu Ali de ordaymış görürsen selam söyle. Ahmet Ağa'nın selamı var sordu seni. Aklın burda kalmasın tarlayı bi şekil halledicem. Komşunun oğlu Veli yardım edicek belki. Hasat vakti gelmeden dönersin inşallah. Bize mektup yazmayı unutma. Posta gecikiyo zaten. İki satır yaz yeter. Paranı boşa harcama. Zabitlerinin sözünden çıkma.\nKAPANIŞ: Hakkını helal et.\nİMZA: Baban Hilmi\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İstanbullu Şakir'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "123 kelime, hedef 124 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:24+00:00",
+    "tokens": {
+      "input": 4352,
+      "output": 3097
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Birkaç küçük kelime seçimi (\"zatı\", \"bi şekil\") dışında dil döneme ve karaktere çok uygun.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, sert ve somut ifadelerle (ananın ağlaması, emirler) çok başarılı bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık; kısa cümleler, fonetik yazımlar (\"açıyom\", \"bilmeyom\") ve basit kelime dağarcığı ile tutarlı bir şekilde yansıtılmış.",
+      "somutluk": "Mektup, dikiş makinesi, ekmek sırası, arpa, çapa gibi gündelik ve somut ayrıntılarla dolu.",
+      "sadakat": "Mektup; karakter, konu, ton, uzunluk ve saklanan bilgi dahil olmak üzere isteğin tüm unsurlarına harfiyen uyuyor.",
+      "sahicilik": "Sert ama endişeli baba karakteri, şehir ve köy hayatının iç içe geçmiş dertleri ile son derece gerçekçi ve klişeden uzak bir portre çiziyor."
+    },
+    "issues": [
+      {
+        "line": "İşler kesat zatı.",
+        "problem": "\"zatı\" kelimesi bu bağlamda anlamsız ve dönemin konuşma diline pek uymuyor; muhtemelen \"zaten\"in hatalı yazımı düşünülmüş ama o bile cümleyi tam oturtmuyor.",
+        "suggestion": "İşler de kesat."
+      },
+      {
+        "line": "Aklın burda kalmasın tarlayı bi şekil halledicem.",
+        "problem": "\"bi şekil\" ifadesi kulağa modern geliyor ve dönemin dilinde yaygın bir kullanım değil.",
+        "suggestion": "Aklın burda kalmasın, tarlanın bir çaresine bakarım."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:33:24+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "id": "pool_cepheden_000089",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Server",
+    "epithet": "Kütahyalı",
+    "age": 36,
+    "hometown": "Kütahya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamiyet",
+    "relation": "kız kardeşi",
+    "location": "Kütahya, Gediz kazası, Kavak karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 96,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Hamiyet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, hatırınızı sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsanız şükür ayaktayız, bir sıkıntımız yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bütün gün çadırda gölgede yatıp dinleniyorum, keyfim yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İkinci taburdan Gedizli Mehmet",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "de yanımda, onun da selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde arpa biçimi başlamıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Koca öküzü ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Güzden beri zayıftı, eğer işe yaramıyorsa harman vakti satıp parasını köşeye koyun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Seneye yenisini alırız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tarlayı kime ektirdiniz, kim kaldıracak?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Geçenki borç için emmime söyle, kendini sıkıntıya sokmasın, buğday para edince ödenir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çocukların gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Ahmet büyümüş müdür, anama yardım etsin, suyu o taşısın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köydeki komşulara, kahveci Rıza'ya selamım vardır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Buraları hiç merak etmeyin, yemeğimiz suyumuz boldur.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Kardeşin Server"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kütahya, Gediz kazası, Kavak karyesi, Muhtar Süleyman Ağa vasıtasıyla Hamiyet Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Server, Kütahyalı, 36, çiftçi, er (Kütahya, Gediz kazası, Kavak karyesi)\nAlıcı: Kız kardeşi Hamiyet Hanım, Kütahya, Gediz kazası, Kavak karyesi\nYön: cepheden\nTarih: 20 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: az konuşur, her şeyi iyi gösterir\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Hakkını helal et\nUzunluk: 96",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Server",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "çiftçi",
+        "epithet": "Kütahyalı",
+        "place": "Gediz kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Hamiyet",
+        "gender": "kadın",
+        "age": 27,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gediz kazası, Kavak karyesi"
+      },
+      "recipient_location": "Kütahya, Gediz kazası, Kavak karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "hasta yattığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 96,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "20 Haziran 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Kütahya, Gediz kazası, Kavak karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5675,
+      "output": 3975
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Haziran 1331\nHİTAP: Kardeşim Hamiyet'e\nGÖVDE: Evvela selam eder, hatırınızı sorarım. Benim hâlimi sorarsanız şükür ayaktayız, bir sıkıntımız yoktur. Bütün gün çadırda gölgede yatıp dinleniyorum, keyfim yerindedir. ⟦İkinci taburdan Gedizli Mehmet⟧ de yanımda, onun da selamı var. Köyde arpa biçimi başlamıştır. Koca öküzü ne yaptınız? Güzden beri zayıftı, eğer işe yaramıyorsa harman vakti satıp parasını köşeye koyun. Seneye yenisini alırız. Tarlayı kime ektirdiniz, kim kaldıracak? Geçenki borç için emmime söyle, kendini sıkıntıya sokmasın, buğday para edince ödenir. Çocukların gözlerinden öperim. Ahmet büyümüş müdür, anama yardım etsin, suyu o taşısın. Köydeki komşulara, kahveci Rıza'ya selamım vardır. Buraları hiç merak etmeyin, yemeğimiz suyumuz boldur.\nKAPANIŞ: Hakkını helal et.\nİMZA: Kardeşin Server\nZARF: Kütahya, Gediz kazası, Kavak karyesi, Muhtar Süleyman Ağa vasıtasıyla Hamiyet Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 96 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000051 ile ortak: \"evvela selam eder hatırınızı sorarım benim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:19+00:00",
+    "tokens": {
+      "input": 4307,
+      "output": 3260
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kelime dağarcığı ve ifadeler, herhangi bir modern veya anakronik kullanım olmadan 1915 yılına tamamen uygundur.",
+      "olculuk": "Mektup, yazarın hastalığını gizleme biçiminde olduğu gibi, durumu ve duyguyu somut ayrıntılar ve sorular aracılığıyla ustaca göstermektedir.",
+      "okuryazarlik": "Yazım stili, 'orta okuryazar' tanımına mükemmel bir şekilde uymaktadır: basit veya aşırı karmaşık olmayan, dikkatli bir yazarı yansıtan açık ve doğrudan cümleler kullanılmıştır.",
+      "somutluk": "Metin, öküzden hasada ve köydeki kişilere kadar çiftlik hayatının ve askerin ortamının somut ayrıntılarıyla zengindir.",
+      "sadakat": "Mektup, konu, uzunluk, gizlenen bilgi ve belirli kapanış cümlesi dahil olmak üzere isteğin tüm kısıtlamalarına kusursuz bir şekilde uymaktadır.",
+      "sahicilik": "Mektup çok otantik hissettiriyor, ancak birkaç ifade ('keyfim yerindedir', 'selamım vardır') tarif edilen karakter için biraz fazla parlak veya resmi kalıyor."
+    },
+    "issues": [
+      {
+        "line": "Bütün gün çadırda gölgede yatıp dinleniyorum, keyfim yerindedir.",
+        "problem": "'Keyfim yerindedir' ifadesi, hem karakterin suskun doğasına hem de dönemin köylü diline göre biraz fazla neşeli ve şehirli kalıyor.",
+        "suggestion": "'Halim vaktim yerinde' ya da cümlenin 'dinleniyorum' ile bitmesi daha doğal olurdu."
+      },
+      {
+        "line": "Köydeki komşulara, kahveci Rıza'ya selamım vardır.",
+        "problem": "'...selamım vardır' kalıbı, orta okuryazar bir köylü için biraz resmi bir ifadedir.",
+        "suggestion": "'...selam söyleyin' veya '...hepsine selam ederim' daha yaygın ve karakterle uyumlu olurdu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:19+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

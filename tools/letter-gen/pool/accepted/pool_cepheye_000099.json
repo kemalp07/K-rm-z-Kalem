@@ -1,0 +1,298 @@
+{
+  "id": "pool_cepheye_000099",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Mükerrem",
+    "epithet": "Denizlili",
+    "age": 42,
+    "hometown": "Denizli",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Rüstem",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 121,
+  "hand": "hurried",
+  "header": {
+    "text": "Çukurören, 17 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Rüstem'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder iki gözlerinden öperim oğlum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kaç ay oldu senden bir kâğıt gelmeyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Gözüm yollarda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Komşu Fadime'nin oğlundan kâğıt gelmiş kahvede okuttular.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ondan sordurdum seni bilmeyorum demiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bize niye yazmadın kâğıt mı yok oralarda kalem mi bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Koca köyde mektup bekleyen bir ben kaldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Babanın öksürüğü yine tuttu yatıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Un bitti komşudan ödünç aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Değirmene gidecek kimse kalmadı köyde herkez darda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kirazlar oldu kurutuyom sana yollıycam komşu İbrahim emmin postaya vercek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Havalar ısındı burada yün çoraplarını giyme artık ayakların yara olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kardeşin Ayşe'nin selamı var abime söyle çabuk gelsin deyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Bizi merak etme biz iyiyiz bir eksiğimiz yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Sade senden bir haber bekleyorum başka bir şey istemem.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Sen orda kendine mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Anan Mükerrem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Denizlili Er Rüstem'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Mükerrem Hanım, Denizlili, 42, ev hanımı (Denizli, Sarayköy kazası, Çukurören karyesi)\nAlıcı: Oğlu Er Rüstem, cephede\nYön: cepheye\nTarih: 17 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: ağırbaşlı, kalıplara sadık\nKonu: mektup gelmediği için endişe\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Hakkını helal et\nUzunluk: 121",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Mükerrem",
+        "gender": "kadın",
+        "age": 42,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": "ev hanımı",
+        "epithet": "Denizlili",
+        "place": "Sarayköy kazası, Çukurören karyesi"
+      },
+      "recipient": {
+        "name": "Rüstem",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sarayköy kazası, Çukurören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 121,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "17 Mayıs 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Denizli, Sarayköy kazası, Çukurören karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5730,
+      "output": 3060
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Çukurören, 17 Mayıs 1331\nHİTAP: Oğlum Rüstem'e\nGÖVDE: Evvela selam eder iki gözlerinden öperim oğlum. Benim halimi sorarsan şükür ayaktayız. Kaç ay oldu senden bir kâğıt gelmeyo. Gözüm yollarda kaldı. Komşu Fadime'nin oğlundan kâğıt gelmiş kahvede okuttular. Ondan sordurdum seni bilmeyorum demiş. Bize niye yazmadın kâğıt mı yok oralarda kalem mi bitti. Koca köyde mektup bekleyen bir ben kaldım. Babanın öksürüğü yine tuttu yatıyor. Un bitti komşudan ödünç aldım. Değirmene gidecek kimse kalmadı köyde herkez darda. Kirazlar oldu kurutuyom sana yollıycam komşu İbrahim emmin postaya vercek. Havalar ısındı burada yün çoraplarını giyme artık ayakların yara olmasın. Kardeşin Ayşe'nin selamı var abime söyle çabuk gelsin deyo. Bizi merak etme biz iyiyiz bir eksiğimiz yok. Sade senden bir haber bekleyorum başka bir şey istemem. Sen orda kendine mukayyet ol.\nKAPANIŞ: Hakkını helal et.\nİMZA: Anan Mükerrem\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Denizlili Er Rüstem'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "119 kelime, hedef 121 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:50+00:00",
+    "tokens": {
+      "input": 4328,
+      "output": 3935
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime seçimi, 'mukayyet ol' gibi kalıplar ve fonetik imla hataları 1915 kırsal dilini kusursuz yansıtmaktadır.",
+      "olculuk": "Duygular doğrudan adlandırılmak yerine sorular, somut endişeler ve haberler aracılığıyla ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "İstekle uyumlu olarak, kısa ve devrik cümleler, tutarlı imla hataları ve basit kelime dağarcığı düşük okuryazarlık seviyesini başarıyla canlandırmaktadır.",
+      "somutluk": "Mektup, kiraz kurutmak, komşudan un almak, yün çoraplar gibi köy hayatına dair canlı ve somut ayrıntılarla doludur.",
+      "sadakat": "Konu, saklanan bilgi, karakterin sesi, kapanış ve uzunluk dahil olmak üzere istekteki tüm maddelere harfiyen uyulmuştur.",
+      "sahicilik": "Endişe, gündelik haberler ve annelik içgüdülerinin birleşimi, mektubu klişelerden uzak, son derece gerçekçi ve dokunaklı kılmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:33:50+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

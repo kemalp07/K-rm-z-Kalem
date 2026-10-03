@@ -1,0 +1,285 @@
+{
+  "id": "pool_cepheden_000075",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Eyüp",
+    "epithet": "Rizeli",
+    "age": 38,
+    "hometown": "Rize",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Zekiye",
+    "relation": "annesi",
+    "location": "Rize, Atina kazası, Taşpınar karyesi"
+  },
+  "writes": "scribe",
+  "writer": "alay kâtibi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 120,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Valide-i muhteremem Zekiye Hanımefendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Valide-i muhteremem Zekiye Hanımefendi'nin mübarek ellerinden kemal-i hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Evvela selam eder, sıhhat ve afiyette daim olmanızı Cenab-ı Hak'tan niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Validem, geçen yolladığım kâğıdı almışsınız, pek sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim keyfim gayet yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Burada padişahın peksimetini yiyip ense yapıyoruz, inanın kahveci dükkânından daha rahatım, semirdim bile.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gündüzleri denize sıfır şu meşhur sırtta oturup karşıdaki vapurlara bakıyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Asıl diyeceğim şudur ki, bizim nişanlı kıza sıkı tembih et, sağa sola bakmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "\"Eyüp ihtiyar oldu, gayrı dönmez\" deyip de başkasına varmaya kalkmasın sakın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Saçımda akla da dönsem onu alacağım, çeyizini işlesin dursun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim dükkânın çatısı akıyordu, dayımoğlu Hasan'a söyle kiremitleri aktarsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yağmurda içerisi göl olmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Mahalledeki komşulara, kahve ahalisine selamımı ilet.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kalemim kısa, kelamım uzundur lakin kâğıt bitti.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve hürmetle ellerinizden öperim.",
+  "signature": {
+    "text": "",
+    "seal": "Eyüp"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Rize, Atina kazası, Taşpınar karyesi, Muhtar vasıtasıyla Zekiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Eyüp, Rizeli, 38, kahveci, er (Rize, Atina kazası, Taşpınar karyesi)\nAlıcı: Annesi Zekiye Hanım, Rize, Atina kazası, Taşpınar karyesi\nYön: cepheden\nTarih: 16 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: alay kâtibi)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: nişanlısının beklemesini istemek\nSakladığı: hasta yattığını\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 120",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Eyüp",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Rize",
+        "occupation": "kahveci",
+        "epithet": "Rizeli",
+        "place": "Atina kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Zekiye",
+        "gender": "kadın",
+        "age": 58,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Atina kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Rize, Atina kazası, Taşpınar karyesi",
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "hasta yattığını",
+      "carelessness": "low",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "uzun",
+      "length_target": 120,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "closing": "",
+      "home_address": "Rize, Atina kazası, Taşpınar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5765,
+      "output": 3520
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 16 Haziran 1331\nHİTAP: Valide-i muhteremem Zekiye Hanımefendi'ye\nGÖVDE: Valide-i muhteremem Zekiye Hanımefendi'nin mübarek ellerinden kemal-i hürmetle öperim. Evvela selam eder, sıhhat ve afiyette daim olmanızı Cenab-ı Hak'tan niyaz eylerim. Validem, geçen yolladığım kâğıdı almışsınız, pek sevindim. Benim keyfim gayet yerinde. Burada padişahın peksimetini yiyip ense yapıyoruz, inanın kahveci dükkânından daha rahatım, semirdim bile. ⟦Gündüzleri denize sıfır şu meşhur sırtta oturup karşıdaki vapurlara bakıyoruz.⟧ Asıl diyeceğim şudur ki, bizim nişanlı kıza sıkı tembih et, sağa sola bakmasın. \"Eyüp ihtiyar oldu, gayrı dönmez\" deyip de başkasına varmaya kalkmasın sakın. Saçımda akla da dönsem onu alacağım, çeyizini işlesin dursun. Bizim dükkânın çatısı akıyordu, dayımoğlu Hasan'a söyle kiremitleri aktarsın. Yağmurda içerisi göl olmasın. Mahalledeki komşulara, kahve ahalisine selamımı ilet. Kalemim kısa, kelamım uzundur lakin kâğıt bitti.\nKAPANIŞ: Baki selam ve hürmetle ellerinizden öperim.\nİMZA: (mühür: Eyüp)\nZARF: Rize, Atina kazası, Taşpınar karyesi, Muhtar vasıtasıyla Zekiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "117 kelime, hedef 120 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000055 ile ortak: \"olmanızı cenab ı hak'tan niyaz eylerim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:12+00:00",
+    "tokens": {
+      "input": 4426,
+      "output": 3140
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Birkaç modern ifade dışında (\"denize sıfır\") dil kullanımı döneme büyük ölçüde uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, şakacı bir tonla ve somut dertlerle etkili bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Kâtibin resmi dili ile okuma yazma bilmeyen gönderenin şahsi ve sade üslubu arasındaki geçiş çok başarılıdır.",
+      "somutluk": "Dükkânın akan çatısı, kiremitler, peksimet gibi gündelik ve somut ayrıntılar mektubu zenginleştirmiştir.",
+      "sadakat": "Mektup; konu, ton, saklanan bilgi ve dikkatsizlik seviyesi dahil olmak üzere istekteki tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Kâtibin ağzından \"kâğıt bitti\" klişesi ve bir modern ifade dışında mektup son derece sahici hissettirmektedir."
+    },
+    "issues": [
+      {
+        "line": "Gündüzleri denize sıfır şu meşhur sırtta oturup karşıdaki vapurlara bakıyoruz.",
+        "problem": "\"Denize sıfır\" ifadesi modern bir kullanımdır ve \"meşhur sırt\" dikkatsizlik için biraz fazla belirgindir.",
+        "suggestion": "Gündüzleri denize bakan bir tepeden karşıdaki vapurları seyreyliyoruz."
+      },
+      {
+        "line": "Kalemim kısa, kelamım uzundur lakin kâğıt bitti.",
+        "problem": "Bu kapanış klişesi, mektubu kendisi yazan biri için uygundur; para karşılığı yazan bir kâtibin \"kâğıdının bitmesi\" pek olası değildir ve sahiciliği zedeler.",
+        "suggestion": "Kâtibin de başka işi varmış, şimdilik bu kadar yazdırabildim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:24:12+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

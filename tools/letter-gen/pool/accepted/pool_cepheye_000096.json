@@ -1,0 +1,285 @@
+{
+  "id": "pool_cepheye_000096",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Medine",
+    "epithet": "Kütahyalı",
+    "age": 20,
+    "hometown": "Kütahya",
+    "occupation": "ev hanımı",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Hasan",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 81,
+  "hand": "careful",
+  "header": {
+    "text": "Akpınar, 8 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Hasan'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldım, çok sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sen nasılsın, orada günlerin nasıl geçiyor?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geceleri üstüne örtecek bir şeyin var mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Ayağındaki çarıklar delindi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Burada arpayı biçmeye başladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Boyları bu sene dizimi geçiyor, başaklar dolgun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Buğdaylar da iyice sarardı, haftaya ona da gireriz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Babamın tırpanını amcam bileyledi, bu sene ekinleri o kaldıracak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Tarlada iş çok ama hallediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Anan da iyi, geçende ona taze yoğurt götürdüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen ne zaman döneceksin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Yemeğiniz yeterli mi, su bulabiliyor musunuz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bolca mektup yolla, çabuk cevap yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Bizleri merak etme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Medine"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Simavlı Hasan'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Medine Hanım, Kütahyalı, 20, ev hanımı (Kütahya, Simav kazası, Akpınar karyesi)\nAlıcı: Nişanlısı Onbaşı Hasan, cephede\nYön: cepheye\nTarih: 8 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: genç ve heyecanlı, çok soru sorar\nKonu: ekinlerin durumunu bildirmek\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Medine",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": "ev hanımı",
+        "epithet": "Kütahyalı",
+        "place": "Simav kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Simav kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "8 Haziran 1331",
+      "closing": "",
+      "home_address": "Kütahya, Simav kazası, Akpınar karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5656,
+      "output": 3194
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Akpınar, 8 Haziran 1331\nHİTAP: Nişanlım Hasan'a\nGÖVDE: Mektubunu aldım, çok sevindim. Sen nasılsın, orada günlerin nasıl geçiyor? Geceleri üstüne örtecek bir şeyin var mı? Ayağındaki çarıklar delindi mi? Burada arpayı biçmeye başladık. Boyları bu sene dizimi geçiyor, başaklar dolgun. Buğdaylar da iyice sarardı, haftaya ona da gireriz. Babamın tırpanını amcam bileyledi, bu sene ekinleri o kaldıracak. Tarlada iş çok ama hallediyoruz. Anan da iyi, geçende ona taze yoğurt götürdüm. Sen ne zaman döneceksin? Yemeğiniz yeterli mi, su bulabiliyor musunuz? Bolca mektup yolla, çabuk cevap yaz. Bizleri merak etme.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Medine\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Simavlı Hasan'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 81 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:00+00:00",
+    "tokens": {
+      "input": 4232,
+      "output": 1929
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Bir kelime dışında dil kullanımı döneme uygundur, modern bir ifade bulunmamaktadır.",
+      "olculuk": "Duygular doğrudan adlandırılmak yerine somut sorular ve haberlerle çok başarılı bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Mektubun dili, cümle yapısı ve kelime seçimi istenen 'orta' okuryazarlık seviyesine tam olarak uymaktadır.",
+      "somutluk": "Mektup, tırpan, çarık, arpa başağı gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup, babanın ölümünü ustaca gizlemesi ve diğer tüm isteklere uymasıyla talebe tamamen sadıktır.",
+      "sahicilik": "Genç bir nişanlının endişesi, heyecanı ve köy hayatına dair verdiği haberler mektubu son derece sahici kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Tarlada iş çok ama hallediyoruz.",
+        "problem": "'Hallediyoruz' kelimesi kulağa biraz modern geliyor, dönemin ruhuna tam uymuyor.",
+        "suggestion": "Tarlada iş çok ama üstesinden geliyoruz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:33:00+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

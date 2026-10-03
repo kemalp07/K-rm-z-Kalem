@@ -1,8 +1,8 @@
 # Mektup havuzu raporu
 
-İnceleme: 44 çağrı, 212,731 girdi + 132,059 çıktı token, maliyet: fiyat girilmedi
+İnceleme: 101 çağrı, 434,026 girdi + 336,467 çıktı token, maliyet: fiyat girilmedi
 
-Toplam 96 mektup: 82 kabul, 10 elle bakılacak, 4 red.
+Toplam 197 mektup: 163 kabul, 25 elle bakılacak, 9 red.
 
 ## Elle bakılacaklar
 
@@ -322,6 +322,577 @@ Zarf: Amasya, Ladik kazası, Yenice karyesi, Muhtar Salih Ağa vasıtasıyla Vel
 - «Bana hepsi için bir bir yaz. Sürekli soruyorsun deme, aklım hep orada.» — "Sürekli" kelimesi modern bir ifadedir, o dönemde bu anlamda kullanılmaz. → _Bana hepsi için bir bir yaz. Boyuna soruyorsun deme, aklım hep orada._
 - «Sıcak fena bastırdı, tepeden ⟦denizi izleyip⟧ kavruluyoruz.» — "İzlemek" kelimesinin "seyretmek/bakmak" anlamında kullanımı modern bir anlamsal kaymadır; o dönemde daha çok "iz sürmek" anlamındaydı. → _Sıcak fena bastırdı, tepeden ⟦denize bakıp⟧ kavruluyoruz._
 
+### pool_cepheden_000051 · Denizlili Yusuf → Emine (annesi)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Yusuf, Denizlili, 34, çiftçi, er (Denizli, Acıpayam kazası, Alacahan karyesi)
+Alıcı: Annesi Emine Hanım, Denizli, Acıpayam kazası, Alacahan karyesi
+Yön: cepheden
+Tarih: 14 Haziran 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: ağırbaşlı, kalıplara sadık
+Konu: yeni doğan çocuğuna ad koymak
+Sakladığı: korktuğunu
+Hassas bilgi: yok
+Dikkatsizlik: az
+Önceki durum: ilk mektup
+Kapanış: Çabuk cevap yaz
+Uzunluk: 93
+```
+</details>
+
+```
+Ordu-yı Hümayun, 14 Haziran 1331
+
+Anam Emine'ye
+
+Evvela selam eder hatırınızı sorarım benim halimi sorarsanız şükür eyiyim. Şimdiye avradın vakti yetmiştir çocuk sağ doğduysa oğlan olursa adını Hasan koyun babamın adı olsun kız olursa Elif olsun. Burda havalar çok isindi toz toprak içindeyiz hep. ⟦Üç gündür siperden hiç çıkmadık.⟧ Siz beni merak etmeyin aslan gibiyiz. Arpa zamanı geldi kim biçecek o tarlayı düşünüyom hep. Köylülerden kimseyi görmedim daha. Koyunları kırktınız mı yünü satınca İbrahim agaya olan borcu ödeyin hemen. Emmime dayıma yengeme hepisine çok selam ederim. Çocuğun yüzünü görmek nasip olur inşşallah hepimize. Köyün hocasına da selam eylen dua etsin bize.
+
+Çabuk cevap yaz.
+Oğlun Yusuf
+
+Zarf: Denizli, Acıpayam kazası, Alacahan karyesi, Muhtar Veli Ağa vasıtasıyla Emine Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Dil, döneme uygun; modern kelime yok ve kullanılan argo/hatalar ('eyiyim', 'düşünüyom') inandırıcı. |
+| Ölçülülük | 5 | Duygular ('korku', 'hasret') doğrudan adlandırılmamış, somut kaygılar ve temennilerle etkili bir şekilde hissettirilmiş. |
+| Okuryazarlık uyumu | 5 | İstekte belirtilen 'düşük okuryazarlık' seviyesi, noktalama eksikliği, basit cümle yapısı ve hafif imla hatalarıyla başarıyla yansıtılmış. |
+| Somutluk | 5 | Mektup, arpa hasadı, koyun yünü, borç ödeme ve çocuğa ad koyma gibi gündelik ve somut ayrıntılarla zenginleştirilmiş. |
+| İsteğe sadakat | 3 | İsteğin 'Dikkatsizlik: az' kuralına uyulmamış; mektupta sansürcünün gözünden kaçması gereken küçük bir askerî ayrıntı bulunmuyor. |
+| Sahicilik | 5 | Mektup, cephedeki bir askerin pratik kaygıları ile ailevi meseleleri birleştiren tonuyla son derece sahici ve klişelerden uzak. |
+
+Önerilen düzeltmeler:
+- «Burda havalar çok isindi toz toprak içindeyiz hep.» — İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta sansürcünün gözünden kaçabilecek, ⟦ ⟧ işareti dışında kalmış küçük bir askerî ayrıntı (yer, durum, vb.) bulunmuyor. → _Bu satır, 'Burda havalar çok isindi, karşı tepelerden duman eksik olmuyor.' gibi, konumu veya durumu ima eden küçük bir ayrıntı içerecek şekilde değiştirilebilirdi._
+
+### pool_cepheden_000053 · Çankırılı Kadir → Hamdi (erkek kardeşi)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Kadir, Çankırılı, 31, ırgat, er (Çankırı, Kalecik kazası, Alacahan karyesi)
+Alıcı: Erkek kardeşi Hamdi, Çankırı, Kalecik kazası, Alacahan karyesi
+Yön: cepheden
+Tarih: 29 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: yaşlı ve yorgun, kısa yazar
+Konu: yemeklerin ve ekmeğin azlığı (üstü örtülü)
+Sakladığı: kaçmayı düşündüğünü
+Hassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı
+Dikkatsizlik: az
+Önceki durum: cevapsız kaldı (1.)
+Uzunluk: 62
+```
+</details>
+
+```
+Ordu-yı Hümayun, 29 Mayıs 1331
+
+Kardeşim Hamdi
+
+Kardeşim Hamdi sana selâm ederim Kaç gün oldu kâğıt yazeyorum senden cevap gelmedi Sağ mısın nicesin bilmeyorum Benim halim dersen yorgunum buralar çok karanlık ⟦Dünkü hücumda on beş kişi yaralandı⟧ Bizim peksimetleri suya banıp yiyoz o da adam başı yarım Köyde un bulabiliyonuz mu Harman vakti yaklaştı Geceleri hep gözüm o yollara dalıyo insanın kalkıp gidesi geliyo Emmioğluna selâm söyle
+
+Baki selâm
+Abin Kadir
+
+Zarf: Çankırı, Kalecik kazası, Alacahan karyesi, İmam Hüseyin Efendi vasıtasıyla Hamdi'ye
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Dil, kelime seçimi (peksimet, nicesin) ve imla hataları (yazeyorum, bilmeyorum) döneme ve karaktere tamamen uygundur. |
+| Ölçülülük | 5 | Yorgunluk ve hasret gibi duygular doğrudan söylenmek yerine somut durumlar ve üstü kapalı ifadelerle (gözüm o yollara dalıyo) hissettirilmiştir. |
+| Okuryazarlık uyumu | 5 | İstekteki 'düşük' okuryazarlık seviyesi; kısa, bağlaçsız cümleler, noktalama eksikliği ve tutarlı imla hatalarıyla başarıyla yansıtılmıştır. |
+| Somutluk | 5 | Mektup, 'peksimet', 'un', 'harman vakti' gibi gündelik ve somut ayrıntılarla zenginleştirilerek anlatılan durumu elle tutulur kılmıştır. |
+| İsteğe sadakat | 3 | Mektup çoğu isteğe uysa da, 'Dikkatsizlik: az' kuralına uymamış ve sansürcünün yakalaması gereken hiçbir başıboş askerî bilgi bırakmamıştır. |
+| Sahicilik | 4 | Genel olarak çok sahici olsa da, 'buralar çok karanlık' ifadesi düşük okuryazar bir ırgat için biraz fazla edebi ve sembolik durmaktadır. |
+
+Önerilen düzeltmeler:
+- «Benim halim dersen yorgunum buralar çok karanlık» — 'buralar çok karanlık' ifadesi, karakterin düşük okuryazarlığı için fazla mecazi ve 'anlamlı' bir ifadedir; somut bir gözlem daha inandırıcı olurdu. → _Benim halim dersen yorgunum. Gece gündüz siperdeyiz, nefes alamıyoz._
+- «BAŞLIK: Ordu-yı Hümayun, 29 Mayıs 1331» — İstekte 'Dikkatsizlik: az' belirtilmesine rağmen mektupta sansürden kaçan hiçbir askerî bilgi yoktur; bu satır, yer adı eklenerek bu dikkatsizliği gösterebilirdi. → _BAŞLIK: ⟦Arıburnu⟧, 29 Mayıs 1331_
+
+### pool_cepheden_000070 · Denizlili Sefer → Hilmi (babası)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Sefer, Denizlili, 19, çiftçi, er (Denizli, Sarayköy kazası, Karacaören karyesi)
+Alıcı: Babası Hilmi, Denizli, Sarayköy kazası, Karacaören karyesi
+Yön: cepheden
+Tarih: 23 Nisan 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: orta
+Ses: kaba ama sevecen, çocuklarına düşkün
+Konu: Hıdrellez'i uzakta geçirmek
+Sakladığı: yok
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: önceki mektup normal ulaştı
+Kapanış: Cevabını bekliyorum
+Uzunluk: 94
+```
+</details>
+
+```
+Ordu-yı Hümayun, 23 Nisan 1331
+
+Pederim Hilmi'ye
+
+Pederim, gönderdiğin mektubu vaktiyle aldım, sağ olasın. Benim hâlimi sorarsanız şükür ayaktayız, bir derdimiz yoktur. Bugün memlekette Hıdrellez. Bizim aşağı mahallenin harman yerinde ateşler yakılmıştır şimdi. Çocuklar ne âlemde? Küçük Ali palazlanmış mıdır, kızın öksürüğü geçti mi? Onları benim yerime koklayıp alınlarından öp. Şenlikte şekerlerini incirlerini eksik etme. Yaz yaklaşıyor, ekinler sararmaya başlar, arpa biçme işini kiminle halledeceksiniz? Koca Halil amca öküzlerini sizin tarlaya da koşar mı? Aklım hep orada ama beni dert etmeyin, günümüz asker ocağında geçip gidiyor. Validemin ellerinden öperim. Zevceme selam söyle, evlatlara mukayyet olsun, ateşin etrafında koştururken avludan dışarı salmasın.
+
+Cevabını bekliyorum.
+Oğlun Sefer
+
+Zarf: Denizli, Sarayköy kazası, Karacaören karyesi, Muhtar Salih Ağa vasıtasıyla Hilmi'ye
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | Kullanılan kelimeler döneme uygun ancak karakterin okuryazarlık seviyesi için bir miktar fazla resmî. |
+| Ölçülülük | 5 | Duygular doğrudan adlandırılmamış, somut kaygılar ve selamlar üzerinden başarıyla hissettirilmiş. |
+| Okuryazarlık uyumu | 3 | Orta okuryazar bir çiftçi için 'pederim', 'zevcem' ve 'mukayyet olmak' gibi ifadeler biraz fazla kitabi kalıyor. |
+| Somutluk | 5 | Hıdrellez ateşi, harman yeri, arpa biçme, komşunun öküzleri gibi ayrıntılar mektubu son derece somut kılmış. |
+| İsteğe sadakat | 5 | İstekteki konu, uzunluk, kapanış cümlesi ve diğer tüm kurallara harfiyen uyulmuş. |
+| Sahicilik | 4 | Mektup genel olarak sahici bir his veriyor ancak kelime seçimi karakterle tam örtüşmediği için mükemmel değil. |
+
+Önerilen düzeltmeler:
+- «HİTAP: Pederim Hilmi'ye» — 'Pederim' kelimesi, orta okuryazar bir köylünün babasına hitap biçimi için fazla resmîdir. → _Daha doğal bir ifade olan 'Babam Hilmi'ye' veya sadece 'Babam'a' kullanılabilirdi._
+- «GÖVDE: ...Zevceme selam söyle, evlatlara mukayyet olsun...» — 'Zevcem' ve 'mukayyet olsun' ifadeleri, karakterin belirtilen sosyal ve eğitim seviyesi için ağdalı kalmaktadır. → _Bunun yerine 'Bizim avrata selam söyle, çocuklara göz kulak olsun' gibi daha sade bir dil tercih edilebilirdi._
+
+### pool_cepheden_000078 · Çoban Niyazi → Esma (karısı)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Niyazi, Çoban, 34, çoban, er (Yozgat, Akdağmadeni kazası, Gökçeören karyesi)
+Alıcı: Karısı Esma Hanım, Yozgat, Akdağmadeni kazası, Gökçeören karyesi
+Yön: cepheden
+Tarih: 19 Haziran 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: sitemkâr, mektup gelmemesinden yakınır
+Konu: bostanın ekilip ekilmediğini sormak
+Sakladığı: bir kavgaya karışıp ceza aldığını
+Hassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu
+Dikkatsizlik: az
+Önceki durum: önceki mektup normal ulaştı
+Uzunluk: 92
+```
+</details>
+
+```
+Ordu-yı Hümayun, 19 Haziran 1331
+
+Esma'ya
+
+Esma sana okadar kâğıt yolladım niye cevap yazmıyosun insan köyden gelen birini bulur yollar gözüm yollarda kaldı köyden kimse gelmeyo gelsede bana kâğıt getirmiyor. Benim sağlığım eyi keder etme havalar çok ısındı burda su bulmak pek zor oluyo. Bostanı ektiniz mi kuraklık vurmadan sulayın çocuklara mukayet ol sarı koyun kuzladı mı onuda yaz bana. Güzden kalan borcu ödedin mi bakkal Halil'e. Bizim köyden ⟦Kör Yusuf'u üçüncü tabura vermişler⟧ dün onu gördüm selamı var size. Gece nöbetler uzun geçiyo. Kâğıt yaz merakta koma beni emmim oğullarına da selam söyle.
+
+Allah'a emanet olun.
+Kocan Niyazi
+
+Zarf: Yozgat, Akdağmadeni kazası, Gökçeören karyesi, İmam Ali Efendi vasıtasıyla Esma Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Kullanılan kelimeler, imla hataları ve cümle yapıları 1915'in düşük okuryazar diline tamamen uygundur. |
+| Ölçülülük | 4 | Duygular çoğunlukla dolaylı yoldan hissettirilse de "keder etme" ve "merakta koma" gibi ifadeler biraz fazla doğrudan kalmıştır. |
+| Okuryazarlık uyumu | 5 | İstenen düşük okuryazarlık seviyesi; imla hataları, basit kelimeler ve kısa cümlelerle başarılı bir şekilde yansıtılmıştır. |
+| Somutluk | 5 | Bostan, sarı koyun, bakkala olan borç gibi gündelik ve somut ayrıntılar mektubu son derece canlı kılmıştır. |
+| İsteğe sadakat | 3 | Mektup, istenen uzunluğun altında kalmış ve "dikkatsizlik: az" kuralına uyarak sansürden kaçacak küçük bir askerî detay eklememiştir. |
+| Sahicilik | 5 | Sitem, gündelik kaygılar ve selamların birleşimi, mektuba gerçek bir köylü askerin kaleminden çıkmış hissi vermektedir. |
+
+Önerilen düzeltmeler:
+- «Benim sağlığım eyi keder etme havalar çok ısındı burda su bulmak pek zor oluyo.» — "keder etme" ifadesi duyguyu doğrudan adlandırarak "göster, anlatma" kuralını hafifçe ihlal ediyor. → _Benim sağlığım eyi, aklın bende kalmasın. Havalar çok ısındı burda su bulmak pek zor oluyo._
+- «Kâğıt yaz merakta koma beni emmim oğullarına da selam söyle.» — "merakta koma beni" ifadesi yazarın endişesini doğrudan söyleyerek ölçülülükten biraz uzaklaşıyor. → _Kâğıt yaz da senden bir haber alayım, emmim oğullarına da selam söyle._
+- «GÖVDE» — İstekte "dikkatsizlik: az" belirtilmesine rağmen, mektupta sansürcünün gözünden kaçması gereken (⟦ ⟧ işareti dışında kalan) hiçbir askerî bilgi sızıntısı bulunmuyor. → _"Gece nöbetler uzun geçiyo" cümlesi yerine "Burda Kireçtepe'de gece nöbetler uzun geçiyo" gibi yeri belli eden küçük bir dikkatsizlik eklenebilirdi._
+
+### pool_cepheden_000079 · Bakkal İlyas → Makbule (annesi)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: İlyas, Bakkal, 21, bakkal, onbaşı (Dersaadet, Fatih, Çarşamba mahallesi)
+Alıcı: Annesi Makbule Hanım, Dersaadet, Fatih, Çarşamba mahallesi
+Yön: cepheden
+Tarih: 25 Nisan 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: orta
+Ses: sitemkâr, mektup gelmemesinden yakınır
+Konu: tarladaki öküzün satılıp satılmayacağı
+Sakladığı: izninin iptal edildiğini
+Hassas bilgi: yok
+Dikkatsizlik: çok
+Önceki durum: cevapsız kaldı (1.)
+Kapanış: Baki selam
+Uzunluk: 62
+```
+</details>
+
+```
+Ordu-yı Hümayun, 25 Nisan 1331
+
+Validem Makbule Hanım'a
+
+Ellerinden hürmetle öperim. Buraya geleli kaç vakit oldu, yolladığım kâğıtlara hiç cevap vermiyorsunuz. İnsan bir satır mektup yazmaz mı? Hâliniz nicedir bilmiyorum. Köydeki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız? Onu satıp dükkânın toptancıya olan borcunu kapatın. ⟦Biz dört gündür aynı sırtta bekliyoruz.⟧ ⟦Gece yarısı aşağıdan peksimet getirdiler.⟧ Benim sağlığım yerinde. ⟦Bizim taburun yarısı hastalandı⟧ ama ben ayaktayım.
+
+Baki selam.
+Oğlun İlyas
+
+Zarf: Dersaadet, Fatih, Çarşamba mahallesi, Kahveci Salih Efendi vasıtasıyla Makbule Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | "Hürmetle" gibi kelimeler bir oğul için fazla resmî olsa da genel olarak dil döneme uygun ve modern ifade yok. |
+| Ölçülülük | 5 | Duygular doğrudan söylenmek yerine sitemkâr sorularla ve somut dertlerle hissettiriliyor, abartıdan kaçınılmış. |
+| Okuryazarlık uyumu | 3 | "Orta" okuryazarlık için dil ve cümle yapısı fazla düzgün; "Validem" ve "hürmetle" gibi ifadeler kâtip diline daha yakın. |
+| Somutluk | 3 | Öküz, borç gibi somut öğeler var ama İstanbullu bir bakkal için "köydeki tarla" detayı havada kalıyor ve karaktere yabancı duruyor. |
+| İsteğe sadakat | 4 | İstenen uzunluğun (%15'ten fazla) altında kalınması dışında sitem, konu, dikkatsizlik gibi temel unsurlar isteğe uygun. |
+| Sahicilik | 3 | Resmî dil ile dikkatsizce verilen askerî bilgilerin birleşimi ve karakterin geçmişine uymayan detaylar mektubun bütünlüğünü zayıflatıyor. |
+
+Önerilen düzeltmeler:
+- «Ellerinden hürmetle öperim.» — "Hürmetle" kelimesi bir oğlun annesine yazarken kullanacağı bir ifade için fazla resmî ve soğuktur, daha çok kâtip dilini andırır. → _Validem, evvela ellerinden öperim._
+- «Köydeki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız?» — Gönderen Fatih'te bir bakkal olduğu için "köydeki tarla" ifadesi bağlamdan kopuk ve genel duruyor, karakterin gerçekliğine uymuyor. → _Bolu'daki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız?_
+- «⟦Bizim taburun yarısı hastalandı⟧ ama ben ayaktayım.» — Bu bilgi hem çok tehlikeli bir askerî sır hem de anneyi gereksiz yere paniğe sevk edecek kadar doğrudan ve kaba söylenmiş. → _Buraların havası çok kişiye dokundu, ama ben hamdolsun iyiyim, merak etme._
+
+### pool_cepheden_000085 · Kayserili Ramazan → Meryem (karısı)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Ramazan, Kayserili, 29, çiftçi, er (Kayseri, Bünyan kazası, Taşpınar karyesi)
+Alıcı: Karısı Meryem Hanım, Kayseri, Bünyan kazası, Taşpınar karyesi
+Yön: cepheden
+Tarih: 22 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: titiz, her şeyi tek tek sayar
+Konu: yemeklerin ve ekmeğin azlığı (üstü örtülü)
+Sakladığı: yaralandığını
+Hassas bilgi: birliğin yakında yer değiştireceği
+Dikkatsizlik: az
+Önceki durum: ilk mektup
+Kapanış: Kusura bakma, kâğıt bitti
+Uzunluk: 102
+```
+</details>
+
+```
+Ordu-yı Hümayun, 22 Mayıs 1331
+
+Zevcem Meryem'e
+
+Meryem selam ederim çocukların gözünden öperim. Ben eyiyim merak etmen. Köyde havalar ısınmıştır arpa hasadı yaklaştı. Hasan ağaya olan on kuruş borcu verdin mi onu unutma. Çatının aktığı yeri çamurla sıvadınız mı. Ahırdaki saman yetti mi. Bizim burda tayın yetiyo şükür. Bazen kuru peksimet yiyoz bazen de az bulgur kaynatıyoz. Suyu idareli içiyoz. Siz köyde un bulursanız ekmeği bol yapın çocuklara sakın kısmayın. Benim sol kol biraz tutulmuş sargılı duruyo ondan hep yatıyom çadırda nöbet yazmıyolar. ⟦Haftaya bizi burdan ileriye başka vadiye alacaklarmış⟧ o zamana kol da geçer. Çoraplarım delindi yün ipin varsa bi çift ör yolla güz gelince lazım olur.
+
+Kusura bakma, kâğıt bitti.
+Kocan Ramazan
+
+Zarf: Kayseri, Bünyan kazası, Taşpınar karyesi, İmam Salih Efendi vasıtasıyla Meryem Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | Dil kullanımı genel olarak başarılı ancak 'Zevcem' hitabı, düşük okuryazar bir köylü için fazla resmî kalıyor. |
+| Ölçülülük | 5 | Duygular adlandırılmadan, somut ayrıntılar ve üstü örtülü ifadelerle çok başarılı bir şekilde hissettirilmiş. |
+| Okuryazarlık uyumu | 4 | Kısa cümleler, imla hataları ve noktalama eksiklikleri istenen düşük okuryazarlık seviyesine uyuyor, sadece hitap biraz sırıtmış. |
+| Somutluk | 5 | Mektup, borç, akan çatı, peksimet ve delik çorap gibi gündelik ve somut ayrıntılarla dolu, bu da onu sahici kılıyor. |
+| İsteğe sadakat | 3 | İsteğin ana unsurlarına uyulmuş ancak 'Dikkatsizlik: az' kuralı gereği sansürcünün gözünden kaçacak küçük bir askerî detaya yer verilmemiş. |
+| Sahicilik | 5 | Mektup, bir çiftçi-askerin endişelerini, ihtiyaçlarını ve düşünce tarzını klişelere düşmeden çok gerçekçi bir şekilde yansıtıyor. |
+
+Önerilen düzeltmeler:
+- «HİTAP: Zevcem Meryem'e» — 'Zevcem' kelimesi, mektubu kendisi yazan ve okuryazarlığı düşük bir köylünün ağzına pek uymayan, kâtip veya okumuş ağzı bir ifadedir. → _HİTAP: Meryem'e_
+- «(Mektubun tamamı)» — İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta sansür işaretleri ⟦ ⟧ dışında kalmış, yazarın farkında olmadan sızdırdığı hiçbir askerî ayrıntı (yer, manzara, sayı vb.) bulunmuyor. → _Gövdeye 'Burdan deniz görünüyo.' gibi yeri belli eden masum bir cümle eklenebilir veya başlık '⟦Arıburnu⟧, 22 Mayıs 1331' olarak değiştirilebilirdi._
+
+### pool_cepheden_000092 · Demirci Eyüp → Hacer (annesi)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Eyüp, Demirci, 26, demirci, er (Sinop, Boyabat kazası, Kızılca karyesi)
+Alıcı: Annesi Hacer Hanım, Sinop, Boyabat kazası, Kızılca karyesi
+Yön: cepheden
+Tarih: 15 Haziran 1331
+Yazma biçimi: yazdırıyor (yazan: alay imamı)
+Okuryazarlık: yok
+Ses: kaba ama sevecen, çocuklarına düşkün
+Konu: izin alma umudu
+Sakladığı: izninin iptal edildiğini
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: cevapsız kaldı (1.)
+Uzunluk: 82
+```
+</details>
+
+```
+Ordu-yı Hümayun, 15 Haziran 1331
+
+Validem Hacer Hanım'a
+
+Eyüp der ki: Anacığım evvela selam eder, mübarek ellerinden öperim. Sana evvelden de bir kâğıt yolladım, cevabı gelmedi. Benim hâlim vaktim yerindedir, meraklanma. Havalar buralarda epeyce ısındı. Kumandanlardan izin kâğıdı koparmaya uğraşıyorum. Hayırlısıyla köye gelirsem dükkânın ocağını bir yakarım inşallah. Ali'min, Zeynep'imin gözlerinden ayrı ayrı öperim. Onları sakın ola dövmeyesin, yaramazlık edip seni yorsalar da kızma. Pabuçları eskimiştir, şehre inince çarıkçıdan veresiye alsınlar, ben gelince borcunu öderim. Bütün komşulara, kahveci Rıza emmiye çokça selam eyle.
+
+Hakkını helal et, duanı eksik etme.
+(mühür: Eyüp)
+
+Not: İşbu mektup Eyüp'ün kendi sözüyle yazılmıştır. İmam Hüseyin.
+
+Zarf: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hüseyin Efendi vasıtasıyla Hacer Hanım'a
+```
+
+**Kontrol uyarıları**
+
+- ⚠ **Tekrar**: pool_cepheden_000020 ile ortak: "evvela selam eder mübarek ellerinden öperim"
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Kullanılan dil ve kelimeler (kâğıt yollamak, hal vakit, veresiye) döneme tamamen uygundur, modern bir ifade yoktur. |
+| Ölçülülük | 5 | Duygular doğrudan adlandırılmamış, bunun yerine çocuklarla ilgili somut endişeler ve eve dönme hayali üzerinden ustaca hissettirilmiştir. |
+| Okuryazarlık uyumu | 5 | Mektubun alay imamı tarafından yazdırıldığı, kullanılan dil (Validem), yapı (Eyüp der ki:) ve sondaki not ile kusursuz bir şekilde yansıtılmıştır. |
+| Somutluk | 5 | Demirci dükkânının ocağı, pabuç, çarıkçıdan veresiye alınması gibi ayrıntılar mektuba güçlü bir somutluk katmaktadır. |
+| İsteğe sadakat | 5 | Mektup; konu, ton, uzunluk, yazım biçimi ve istenen diğer tüm unsurlar açısından isteğe tamamen sadıktır. |
+| Sahicilik | 3 | Mektubun metni çok sahici olmakla birlikte, zarf adresindeki mantık hatası (mektubu cephede yazan imamın köyde teslimat aracısı olması) genel gerçekçiliği zedelemektedir. |
+
+Önerilen düzeltmeler:
+- «ZARF: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hüseyin Efendi vasıtasıyla Hacer Hanım'a» — Mektubu cephede yazan alay imamı Hüseyin Efendi, aynı zamanda mektubun köydeki alıcısına ulaştırılacağı aracı kişi olamaz. → _Aracı kişi köyden biri olmalıdır. Örneğin: "Köy muhtarı vasıtasıyla Hacer Hanım'a"._
+
+### pool_cepheden_000096 · Malatyalı Hafız → Melek (karısı)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Hafız, Malatyalı, 22, çiftçi, er (Malatya, Darende kazası, Söğütlü karyesi)
+Alıcı: Karısı Melek Hanım, Malatya, Darende kazası, Söğütlü karyesi
+Yön: cepheden
+Tarih: 8 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: dualı, sık sık dua eder
+Konu: hasadı kimin kaldıracağını sormak
+Sakladığı: ayağında yara açıldığını
+Hassas bilgi: yok
+Dikkatsizlik: az
+Önceki durum: ilk mektup
+Kapanış: Selam ve dua ile
+Uzunluk: 84
+```
+</details>
+
+```
+Ordu-yı Hümayun, 8 Mayıs 1331
+
+Melek'e
+
+Melek gözlerinden öperim. Allahın selamı üstünüze olsun inşallah. Ben çok eyiyim Rabbime şükürler olsun ayaklarım sapasağlamdır postallarla geziyom taş üstünde hiç merak etmeyesin beni. ⟦İki gündür deniz kenarında siper kazıyoz⟧ kardaşlarla omuz omuza. Sizi çok düşünüyom arpa sararmıştır yakında buğday da gelir. Hasadı kim kaldıracak tarlada anama tek bırakma ekinleri zay etmeyin. Emmi oğulları tırpanla yardım ediyo mu sana. Allah onlardan razı olsun eyer ediyolarsa. Köydeki herkeze çokca selam eylerim cami hocasına da söyleyin büyüklerin ellerinden öperim. Duanızı eksik etmeyin ben buralarda hep ediyom inşallah kavuşuruz.
+
+Selam ve dua ile
+Kocan Hafız
+
+Zarf: Malatya, Darende kazası, Söğütlü karyesi, İmam Hüseyin Efendi vasıtasıyla Melek Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Dil, döneme uygun kelimeler ve düşük okuryazarlığa has imla hatalarıyla ('geziyom', 'eyer', 'herkeze') kusursuz bir şekilde yansıtılmış. |
+| Ölçülülük | 5 | Duygular doğrudan söylenmek yerine, ayağının sağlam olduğunu aşırı vurgulayarak ve hasatla ilgili endişelerini dile getirerek ustaca hissettirilmiş. |
+| Okuryazarlık uyumu | 5 | İstekte belirtilen 'düşük okuryazarlık' seviyesi; basit cümle yapısı, tekrarlayan imla hataları ve noktalama eksiklikleri ile tutarlı bir şekilde uygulanmış. |
+| Somutluk | 5 | Mektup; 'postal', 'arpa', 'buğday', 'tırpan' gibi gündelik hayata dair somut ve döneme uygun nesnelerle zenginleştirilmiş. |
+| İsteğe sadakat | 3 | Mektup konu, ton ve karakterin sakladığı sır gibi ana unsurlara sadık kalsa da, 'dikkatsizlik: az' isteğini yerine getirmeyip tüm hassas bilgiyi sansürleyerek isteğin önemli bir detayını atlamıştır. |
+| Sahicilik | 5 | Karakterin endişelerini, dualarını ve sakladığı sırrı yansıtma biçimi, mektubu yapaylıktan uzak ve son derece gerçekçi kılıyor. |
+
+Önerilen düzeltmeler:
+- «⟦İki gündür deniz kenarında siper kazıyoz⟧ kardaşlarla omuz omuza.» — İstekte 'dikkatsizlik: az' belirtilmesine rağmen, bu satırdaki tüm hassas askeri bilgi (süre, yer, eylem) sansürlenmiş; bu durum 'dikkatsizlik: yok' anlamına gelir ve isteğe aykırıdır. → _İki gündür siper kazıyoz ⟦deniz kenarında⟧ kardaşlarla omuz omuza._
+
+### pool_cepheden_000097 · Sinoplu Ramazan → Kâmil (oğlu)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Ramazan, Sinoplu, 36, çiftçi, onbaşı (Sinop, Boyabat kazası, Kızılca karyesi)
+Alıcı: Oğlu Kâmil, Sinop, Boyabat kazası, Kızılca karyesi
+Yön: cepheden
+Tarih: 13 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: orta
+Ses: dualı, sık sık dua eder
+Konu: çocuğunun mektebe gidip gitmediğini sormak
+Sakladığı: hasta yattığını
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: ilk mektup
+Kapanış: Cevabını bekliyorum
+Uzunluk: 60
+```
+</details>
+
+```
+Ordu-yı Hümayun, 13 Mayıs 1331
+
+Oğlum Kâmil'e
+
+Evvela selam eder, iki gözünden hasretle öperim. Rabbim seni her türlü kazadan beladan esirgesin inşallah. Benim hâlimi sorarsan bin şükür ayaktayız, bugünlerde çadırda yatıp dinleniyorum, bölükte ağır işimiz yok. Sen her sabah mektebe gidiyor musun? Hocanın sözünden sakın çıkma, Kuran cüzünü iyi belle. Allah sana zihin açıklığı versin yavrum. Anana, dedene hürmet ederim. Cümlesine selam söyle.
+
+Cevabını bekliyorum.
+Baban Ramazan
+
+Zarf: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hasan Efendi vasıtasıyla Kâmil'e
+```
+
+**Kontrol uyarıları**
+
+- ⚠ **Tekrar**: pool_cepheye_000009 ile ortak: "öperim rabbim seni her türlü kazadan"
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Kelime dağarcığı ve ifadeler, hiçbir anakronizm olmadan 1915 dönemine tamamen uygundur. |
+| Ölçülülük | 4 | Mektup çoğunlukla ölçülü olsa da, 'hasretle' kelimesiyle duyguyu göstermek yerine doğrudan adlandırmaktadır. |
+| Okuryazarlık uyumu | 5 | Mektubun net ama basit cümle yapısı ve kelime seçimi, istenen 'orta' okuryazarlık seviyesine mükemmel uyum sağlamaktadır. |
+| Somutluk | 3 | Mektup 'mektep' ve 'çadır' gibi birkaç somut ayrıntı içerse de, daha çok genel ifadeler ve soyut tavsiyeler üzerine kuruludur. |
+| İsteğe sadakat | 5 | Mektup; yazarın sesi, saklanan bilgi, kapanış cümlesi ve kelime sayısı dahil olmak üzere istekteki her bir maddeye kusursuz bir şekilde uymaktadır. |
+| Sahicilik | 5 | Yazarın hastalığını saklama biçimi, babacan endişesi ve döneme uygun dualı dili, mektubu son derece gerçekçi ve inandırıcı kılmaktadır. |
+
+Önerilen düzeltmeler:
+- «Evvela selam eder, iki gözünden hasretle öperim.» — Duyguyu adlandırma kuralını ihlal ederek 'hasret' kelimesi doğrudan kullanılmıştır. → _Evvela selam eder, iki gözünden öperim._
+- «Anana, dedene hürmet ederim.» — Bir babanın oğluna kendi ailesinden bahsederken kullandığı 'hürmet ederim' ifadesi, orta okuryazar bir köylü için biraz fazla resmî ve kâtip ağzı kalmaktadır. → _Ananın ve dedenin ellerinden öperim._
+
+### pool_cepheden_000098 · Konyalı Murat → Sıdıka (annesi)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Murat, Konyalı, 34, ırgat, er (Konya, Ilgın kazası, Dereköy karyesi)
+Alıcı: Annesi Sıdıka Hanım, Konya, Ilgın kazası, Dereköy karyesi
+Yön: cepheden
+Tarih: 7 Haziran 1331
+Yazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)
+Okuryazarlık: yok
+Ses: şakacı, dertli şeyleri bile hafife alır
+Konu: nişanlısının beklemesini istemek
+Sakladığı: bir kavgaya karışıp ceza aldığını
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: önceki mektup normal ulaştı
+Kapanış: Hepinizin gözlerinden öperim
+Uzunluk: 68
+```
+</details>
+
+```
+Ordu-yı Hümayun, 7 Haziran 1331
+
+Validem Sıdıka Hanım'a
+
+Murat der ki: Anacığım ellerinden öperim. Benim keyfim beyde yok, buralarda yiyip yatıyoruz gölgede, bol bol da taş taşıyoruz. Geçen yolladığın kâğıt elime geçti, okuttum sağ olun. Bizim kıza söyleyin sakın daralmasın, beni beklesin. Çerçi Yakup'un oğluna falan varırsa vallahi yakarım o köyü. Az daha sabretsin, döneyim telli duvakla alacağım onu. Arpa sararmıştır şimdi, tırpanı vururken beni de anın. Beni merak etmeyin, işim tıkırında.
+
+Hepinizin gözlerinden öperim.
+(mühür: Murat)
+
+Not: İşbu kâğıdı Murat'ın ağzından ben yazdım. Arkadaşı Konyalı Veli.
+
+Zarf: Konya, Ilgın kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Sıdıka Hanım'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 3 | Mektup, 'daralmasın' ve 'işim tıkırında' gibi döneme ait olduğundan şüphelenilen, modern hissettiren birkaç ifade içeriyor. |
+| Ölçülülük | 5 | Duygular doğrudan söylenmemiş, şakacı bir tonun ardına gizlenmiş dert ve hasretle çok ölçülü bir şekilde hissettirilmiş. |
+| Okuryazarlık uyumu | 5 | Okuma yazma bilmeyen birinin mektup yazdırması 'Murat der ki' ve kâtip notuyla usulüne uygun şekilde yansıtılmış. |
+| Somutluk | 5 | Mektup 'taş taşımak', 'Çerçi Yakup'un oğlu', 'sararan arpa' gibi somut ve döneme uygun ayrıntılarla dolu. |
+| İsteğe sadakat | 5 | İstekteki şakacı ton, nişanlıya mesaj, yazdırılma biçimi ve kapanış cümlesi gibi tüm unsurlara harfiyen uyulmuş. |
+| Sahicilik | 4 | Şakayla karışık tehditler, köy hayatına yapılan göndermeler ve genel ton mektubu oldukça sahici kılıyor, sadece birkaç kelime akışı bozuyor. |
+
+Önerilen düzeltmeler:
+- «Bizim kıza söyleyin sakın daralmasın, beni beklesin.» — Tek başına 'daralmak' fiilinin bu anlamda kullanımı modern bir his veriyor; dönemin ruhuna 'içi daralmak' daha uygundur. → _Bizim kıza söyleyin, sakın içi daralmasın, beni beklesin._
+- «Beni merak etmeyin, işim tıkırında.» — 'İşim tıkırında' tabiri, dönemin dilinden çok modern bir argo ifade gibi duruyor. → _Beni merak etmeyin, halim vaktim yerinde şükür._
+
+### pool_cepheden_000099 · Nalbant Hakkı → Server (babası)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Hakkı, Nalbant, 27, nalbant, er (İzmir, Karataş, Turan mahallesi)
+Alıcı: Babası Server, İzmir, Karataş, Turan mahallesi
+Yön: cepheden
+Tarih: 25 Mayıs 1331
+Yazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)
+Okuryazarlık: yok
+Ses: sert, emir verir gibi yazar
+Konu: çorapların ve paketin geldiğini haber vermek
+Sakladığı: izninin iptal edildiğini
+Hassas bilgi: hastaneye kaldırılan arkadaşlarının sayısı
+Dikkatsizlik: az
+Önceki durum: cevapsız kaldı (1.)
+Kapanış: Selam ve dua ile
+Uzunluk: 67
+```
+</details>
+
+```
+Ordu-yı Hümayun, 25 Mayıs 1331
+
+Pederim Server'e
+
+Hakkı der ki: Birinci kâğıdıma cevap vermedin. Yolladığınız paketi nihayet aldım. Çoraplar elime geçti, tütün de iyi geldi, sağ olasın. Benden yana merak edilecek bir şey yok, işim gücüm yerinde. Dükkânı boş bırakma, o çırağı sıkı tut. Atların nallarına iyi baksın, sakın eksik iş yapmasın, müşteriyi kaçırmasın. ⟦Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.⟧ Ben sağlamım, ayaktayım. Bir daha mektup yazınca içine biraz daha tütün sarıp yollayın.
+
+Selam ve dua ile.
+(mühür: Hakkı)
+
+Not: İşbu kâğıdı Hakkı'nın ağzından yazdım. Arkadaşı Ali.
+
+Zarf: İzmir, Karataş, Turan mahallesi, Bakkal Hasan Efendi vasıtasıyla Nalbant Server'e
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Kullanılan dil ve kelimeler ('kâğıt', 'çırak', 'sağ olasın') döneme uygundur ve modern ifadeler içermemektedir. |
+| Ölçülülük | 5 | Duygular adlandırılmamış, karakterin sert ve emredici tonu somut talimatlar ve kısa cümlelerle başarıyla yansıtılmıştır. |
+| Okuryazarlık uyumu | 4 | Yazdırma formatı ve mühür kullanımı doğru olsa da, 'Pederim' hitabı karakterin kaba ve doğrudan ses tonu için biraz fazla resmî kalmıştır. |
+| Somutluk | 5 | Mektup, çorap, tütün, dükkân, çırak ve at nalları gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir. |
+| İsteğe sadakat | 3 | İstekte belirtilen 'Dikkatsizlik: az' kuralı uygulanmamış; hassas bilgi sansürlenmiş olarak gösterilmiş, oysa bir bilginin sansürden kaçması gerekiyordu. |
+| Sahicilik | 4 | Karakterin dükkânıyla ilgili endişeleri ve emirleri mektubu sahici kılıyor, ancak 'dikkatsizlik' kuralının yanlış uygulanması gerçekçiliği bir miktar azaltıyor. |
+
+Önerilen düzeltmeler:
+- «HİTAP: Pederim Server'e» — Okuma yazma bilmeyen ve sert bir tona sahip karakterin ağzından yazdırılan bir mektup için 'Pederim' hitabı fazla resmîdir. → _Karakterin sesine daha uygun olan 'Babam Server'e' veya sadece 'Baba' kullanılabilirdi._
+- «GÖVDE: ... ⟦Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.⟧ ...» — İstekte 'Dikkatsizlik: az' deniyordu, bu da bir askerî bilginin sansürcüden kaçması (yani ⟦ ⟧ işareti olmadan yazılması) gerektiği anlamına gelir. Bu haliyle mektup 'Dikkatsizlik: yok' kuralına uymaktadır. → _Bu cümlenin 'Bizim takımdan sekiz kişiyi hastaneye kaldırdılar.' şeklinde, sansür işareti olmadan yazılması isteğe daha uygun olurdu._
+
 ### pool_cepheye_000022 · Aydınlı Mükerrem → Nazım (ağabeyi)
 
 <details><summary>İstek</summary>
@@ -540,12 +1111,225 @@ Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Ta
 - «Komşu Hacı amcanlar hep döşekte, giden gidenin ardı kesilmedi.» — İstekte salgının üstü örtülü anlatılması istenmişti ancak ölümler açıkça yazılarak hem bu kural hem de cepheye giden mektuplarda moral bozucu haber yasağı ihlal edilmiş. → _Komşu Hacı amcanlar hep döşekte, köyde herkesin üstünde bir ağırlık var, yatan zor kalkıyor._
 - «Sen oradan az daha para denkleştirip yolla, kışlık un alacak akçe kalmadı elde.» — Askerin moralini bozacak derecede açlık ve yokluk beyanı cephe mektuplarında sansür kurallarına aykırıdır. → _Sen oradan az daha para denkleştirip yolla, kışlık un için zahireciye şimdiden peşinat vermek icap eder._
 
+### pool_cepheye_000063 · Bursalı Zarife → Abdullah (oğlu)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Zarife Hanım, Bursalı, 44, ev hanımı (Bursa, Mihalıç kazası, Eğrisu karyesi)
+Alıcı: Oğlu Er Abdullah, cephede
+Yön: cepheye
+Tarih: 13 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: yaşlı ve yorgun, kısa yazar
+Konu: nişanın bozulması tehlikesi
+Sakladığı: kardeşinin de cepheye gittiğini
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: ilk mektup
+Kapanış: Kalemim kısa, sözüm uzun
+Uzunluk: 113
+```
+</details>
+
+```
+Eğrisu, 13 Mayıs 1331
+
+Oğlum Abdullah'a
+
+Oğlum Abdullah gözlerinden öperim. Benim halimi sorarsan yorgunum kemiklerim sızlıyo. Köyde herkez kendi derdine düştü. Sana bu kayıdı yazıyom çünki Fatma'nın babası huysuzluk ediyo. Dün anasıgil bize geldi nişanı bozcaklar nerdeyse. Asker yolu beklemek zor diyolar kızı başkasına verceklermiş. Ben çok yalvardım biraz daha sabredin diyom ama dinlemeyolar. Söz kestiğimiz bilezikleri isteyorlar bende para ne gezer şimdi. Un zaten bitmek üzere komşudan borç alarak idare ediyom. Tarlaya bakacak adamda yok tek başıma ugraşıp duruyom. Geceleri hiç uyku girmiyo gözüme. Kızın babasına bir mektup yazda yolla bari senin sözüne inansınlar. Yoksa Fatma elden gitcek bilesin. Geçen kasabaya indim basma alcam ateş pahası alamadım. İçim çok darlanıyom oğlum. Tez vakitte dön inşallah.
+
+Kalemim kısa, sözüm uzun.
+(mühür: Zarife)
+
+Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Bursalı Abdullah'a
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | Dil kullanımı çoğunlukla döneme uygun ve tutarlı, modern bir ifadeye rastlanmıyor. |
+| Ölçülülük | 3 | Mektup genel olarak ölçülü olsa da 'yorgunum' ve 'içim çok darlanıyom' gibi duyguyu doğrudan adlandıran ifadeler içeriyor. |
+| Okuryazarlık uyumu | 5 | İstekte belirtilen düşük okuryazarlık seviyesi; kısa cümleler, imla hataları ve basit kelime seçimiyle kusursuz yansıtılmış. |
+| Somutluk | 5 | Unun bitmesi, borç alınması, ateş pahası basma gibi gündelik ve somut ayrıntılar mektubu çok güçlendirmiş. |
+| İsteğe sadakat | 5 | Mektup; konu, uzunluk, saklanan bilgi ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uyuyor. |
+| Sahicilik | 4 | Mektup, somut dertleri ve tutarlı karakter sesiyle oldukça sahici, ancak doğrudan duygu ifadesi bu hissi bir nebze zayıflatıyor. |
+
+Önerilen düzeltmeler:
+- «Sana bu kayıdı yazıyom çünki Fatma'nın babası huysuzluk ediyo.» — 'Kayıt' kelimesi 'kâğıt' için yapılan bir hata olarak pek olası değil; 'kaat' veya 'kağıt' gibi yanlış yazımlar daha yaygındır. → _Sana bu kaadı yazıyom çünki Fatma'nın babası huysuzluk ediyo._
+- «İçim çok darlanıyom oğlum.» — Bu cümle, 'duyguyu adlandırma' kuralını ihlal eden çok doğrudan bir ifadedir; duygunun somut olaylarla hissettirilmesi gerekir. → _Bu dertlerle yediğim lokmadan bir şey anlamıyom oğlum._
+
+### pool_cepheye_000079 · Erzurumlu Habibe → Ömer (kocası)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Habibe Hanım, Erzurumlu, 16, çiftçi (Erzurum, Kiğı kazası, Sarıyar karyesi)
+Alıcı: Kocası Er Ömer, cephede
+Yön: cepheye
+Tarih: 14 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: utangaç, karısına adıyla seslenemez
+Konu: komşunun oğlunun şehit haberi
+Sakladığı: kardeşinin de cepheye gittiğini
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: önceki mektup normal ulaştı
+Kapanış: Duanı eksik etme
+Uzunluk: 126
+```
+</details>
+
+```
+Sarıyar, 14 Mayıs 1331
+
+Efendime
+
+Mektubun geçen cuma muhtarın eline ulaştı okuttuk çok şükür sağlığın yerindeymiş. Buralarda karlar yeni kalkıyo yollar hep çamur oldu. Tarlaya inecez tohum az kaldı idare ediyoz. Evvelki gün köyün aşağından bi feryat koptu İmam efendi kağat getirmiş Hacıların Veli şehid düşmüş dediler. Anası saçını başını yoldu avluda çok ağladık yığıldı kaldı eşikte. Veli'nin urbalarını sandıktan çıkarıp fakir fukaraya dağıttılar. Allah sana ömür versin sağ salim dönesin evine ocağına. Ben şimdilik anamın evinde duruyom Babam tarlayı sürcek bu sene öküzün biri hastalandı yattı. Benim halim eyidir beni merak etmeyesin. Gece yün eğiriyom çorap dokuycam sana yollamak için. Sarı inek yavruladı dişi bi buzağı verdi sütünü sağdım küpe bastım peyniri kışa kalsın deyi. Buralarda başkaca bi havadis yoktur. Geceleri dua ediyom cemaatnen herkez askerlere selavat getiriyo.
+
+Duanı eksik etme.
+Zevcen Habibe
+
+Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kiğılı Ömer'e
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | Dil kullanımı 'Zevcen' kelimesi dışında döneme ve karaktere uygun, modern bir ifade içermiyor. |
+| Ölçülülük | 5 | Duygular doğrudan adlandırılmıyor, olaylar ve somut eylemler üzerinden başarıyla hissettiriliyor. |
+| Okuryazarlık uyumu | 3 | İmla hataları ve ağız özellikleri başarılı olsa da, 'okuttuk' ve 'Zevcen' kelimeleri yazarın okuryazarlık seviyesiyle çelişiyor. |
+| Somutluk | 5 | Mektup, köy hayatına dair (kar, çamur, tohum, öküz, buzağı, peynir) son derece somut ve canlı ayrıntılarla dolu. |
+| İsteğe sadakat | 4 | İsteğin ana hatlarına (konu, saklanan bilgi, uzunluk) uyulmuş ancak yazarın okuryazarlığına dair çelişkiler sadakati düşürüyor. |
+| Sahicilik | 4 | Mektubun genel akışı ve dili sahici hissettirse de, okuryazarlıkla ilgili tutarsızlıklar bu hissi biraz zayıflatıyor. |
+
+Önerilen düzeltmeler:
+- «Mektubun geçen cuma muhtarın eline ulaştı okuttuk çok şükür sağlığın yerindeymiş.» — İstekte mektubu 'kendisi yazıyor' denmesine rağmen 'okuttuk' ifadesi, mektubu okuyamadığını ima ediyor ve bir çelişki yaratıyor. → _Mektubun geçen cuma muhtarın elinden aldım, okudum. Çok şükür sağlığın yerindeymiş._
+- «İMZA: Zevcen Habibe» — 'Zevcen' kelimesi, okumuş kişilerin veya kâtiplerin kullandığı resmi bir ifadedir; düşük okuryazarlığa sahip 16 yaşındaki bir köylü kızının kullanması pek olası değildir. → _İMZA: Habibe'n_
+
+### pool_cepheye_000095 · Harputlu Kevser → Nuri (kocası)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Kevser Hanım, Harputlu, 25, ev hanımı (Harput, Çemişgezek kazası, Kızılca karyesi)
+Alıcı: Kocası Er Nuri, cephede
+Yön: cepheye
+Tarih: 15 Mayıs 1331
+Yazma biçimi: kendisi yazıyor
+Okuryazarlık: düşük
+Ses: şakacı, dertli şeyleri bile hafife alır
+Konu: Hıdrellez'de sofrada boş kalan yer
+Sakladığı: nişanlısının başkasıyla evlendirileceğini
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: cevapsız kaldı (2.)
+Kapanış: Hepinizin gözlerinden öperim
+Uzunluk: 95
+```
+</details>
+
+```
+Kızılca, 15 Mayıs 1331
+
+Nuri Efendi'ye
+
+Nuri efendi bu sana ikinci kağıdım ses yok. Postacı yoldamı uyudu naptı bilmeyorum. Hıdrellez geldi geçti biz madımak aşı kaynattık komşularla bahçede yedik. Sofrada senin yerin boştu. Kardeşin İbrahim senin mindere kuruldu senin payınıda yedi maşallah şişiyo buralarda tosun gibi oldu. Gelsende görsen. Çatı gene aktı yağmurda leğen koydum altına sonra çamurla sıvadım hallettim. Şeker bulunmuyo pazarda bitti çayı kuru dut ile içiyoz ağzımız tatlanıyo hiç fena olmuyo. Sen nasılsın oralarda keyfin yerindemi. Bizi dert etme çok iyiyiz tavuklara yem veriyoz. Bir kağıt karala yolla bize çok üşenme oralarda. Siperdeki arkadaşlarınada selam söyle.
+
+Hepinizin gözlerinden öperim.
+Karın Kevser
+
+Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı Nuri'ye
+```
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 4 | Dil genel olarak döneme uygun, ancak 'hallettim' ve 'keyfin yerinde mi' gibi ifadeler modern tınlıyor. |
+| Ölçülülük | 5 | Duygular doğrudan adlandırılmamış, hasret ve endişe somut olaylar ve şakacı bir dille ustaca hissettirilmiş. |
+| Okuryazarlık uyumu | 5 | İmla hataları, kısa cümleler ve sade kelime seçimi, istenen düşük okuryazarlık seviyesiyle tamamen uyumlu. |
+| Somutluk | 5 | Madımak aşı, akan çatı, leğen, kuru dut gibi gündelik ve somut ayrıntılar mektubu çok canlı kılmış. |
+| İsteğe sadakat | 3 | İstek 'Dikkatsizlik: yok' demesine rağmen mektupta sansürün yakalayacağı 'Siperdeki' kelimesi kullanılmış. |
+| Sahicilik | 5 | Şakacı bir dille anlatılan gündelik sıkıntılar ve aile içi dinamikler mektuba klişelerden uzak, sahici bir ses katmış. |
+
+Önerilen düzeltmeler:
+- «Nuri efendi bu sana ikinci kağıdım ses yok.» — Hitapta kullanılan 'efendi' kelimesi özel isme dahil bir saygı ifadesi olduğu için büyük harfle başlamalıdır. → _Nuri Efendi bu sana ikinci kağıdım ses yok._
+- «Siperdeki arkadaşlarınada selam söyle.» — İstekte 'Dikkatsizlik: yok' belirtilmiş, yani mektupta hiçbir askerî bilgi olmamalıdır. 'Siper' kelimesi doğrudan askerî bir terimdir ve sansürlenmesi gerekir. → _Oradaki arkadaşlarına da selam söyle._
+
+### pool_cepheye_000101 · Sivaslı Hayriye → Sadık (kocası)
+
+<details><summary>İstek</summary>
+
+```
+[MEKTUP İSTEĞİ]
+Gönderen: Hayriye Hanım, Sivaslı, 18, çiftçi (Sivas, Divriği kazası, Akpınar karyesi)
+Alıcı: Kocası Er Sadık, cephede
+Yön: cepheye
+Tarih: 16 Haziran 1331
+Yazma biçimi: yazdırıyor (yazan: köy hocası)
+Okuryazarlık: yok
+Ses: dualı, sık sık dua eder
+Konu: kardeşin de askere çağrılması
+Sakladığı: evde un kalmadığını
+Hassas bilgi: yok
+Dikkatsizlik: yok
+Önceki durum: önceki mektup normal ulaştı
+Kapanış: Allah'a emanet ol
+Uzunluk: 101
+```
+</details>
+
+```
+Akpınar, 16 Haziran 1331
+
+Efendim Sadık'a
+
+İşbu mektubu Hayriye'nin ağzından yazarım. Efendim Sadık, evvela selam eder, iki ellerinden öperim. Cenab-ı Hak seni ve cemi askerimizi kazadan beladan esirgesin. Yolladığın kâğıdı hoca efendi okudu, sağlığına çok şükrettik. Geçen cuma kardeşim Hüseyin'i de askere çağırdılar, şubeye teslim oldu. Anam ardı sıra ağladı, Allah devlete millete zeval vermesin dedik yolladık. Havalar pek ısındı, arpa sarardı biçmeye başlayacağız. Güzlük buğdayı haftaya kiminle kaldıracağım diye gece gündüz düşünür dururum. Komşu Emine'nin gelini sabah doğum yaptı, bir kızı oldu. Ahırdaki sarı inek de sütten kesildi, sürüyle yaylaya kattık. Rabbim darda koymasın, tez vakitte selametle köyümüze dönesin inşallah. Sabah akşam seccade başında duacınım.
+
+Allah'a emanet ol.
+(mühür: Hayriye)
+
+Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Sivaslı Sadık'a
+```
+
+**Kontrol uyarıları**
+
+- ⚠ **Tekrar**: pool_cepheye_000035 ile ortak: "evvela selam eder iki ellerinden öperim"
+
+**Eleştirmen**
+
+| Ölçüt | Puan | Gerekçe |
+|---|---|---|
+| Dönem dili | 5 | Dil ve ifadeler döneme uygundur, modern bir kelime veya anlatım içermemektedir. |
+| Ölçülülük | 3 | Duygular genel olarak ölçülü olsa da, hasatla ilgili endişe cümlesi askeri kaygılandıracak kadar açıktır. |
+| Okuryazarlık uyumu | 5 | Okuma yazma bilmeyen birinin köy hocasına mektup yazdırması, hem hocanın dilinin hem de mektubu yazdıranın sesinin karışmasıyla başarılı bir şekilde yansıtılmıştır. |
+| Somutluk | 5 | Mektup, arpa hasadı, komşunun doğumu ve sütten kesilen inek gibi gündelik hayata dair somut ayrıntılarla doludur. |
+| İsteğe sadakat | 3 | İsteğin 'sakladığı' kısmına sadık kalınmamış, evdeki zorluğa (ve unsuzluğun nedenine) dair çok bariz bir ipucu verilmiştir. |
+| Sahicilik | 4 | Hitaptaki küçük bir uygunsuzluk ve saklanması gereken bilginin sızdırılması dışında mektup oldukça sahici bir tondadır. |
+
+Önerilen düzeltmeler:
+- «Efendim Sadık, evvela selam eder, iki ellerinden öperim.» — “Ellerinden öpmek” bir eş için değil, anne-baba gibi büyükler için kullanılan bir saygı ifadesidir. Bir kadın kocasına “gözlerinden öperim” der. → _Efendim Sadık, evvela selam eder, hasretle gözlerinden öperim._
+- «Güzlük buğdayı haftaya kiminle kaldıracağım diye gece gündüz düşünür dururum.» — Bu cümle, istekte “saklanması” istenen evdeki zorluk (“un kalmadığı”) hakkında çok bariz bir ipucu vererek askerin moralini bozabilir. → _Buğdaylar da başak verdi, Allah bereketini esirgemesin, bir çaresine bakacağız inşallah._
+
 ## Reddedilenler
 
 - **pool_cepheden_000042** — eleştirmen: Ölçülülük 2
+- **pool_cepheden_000052** — eleştirmen: İsteğe sadakat 1, Sahicilik 2
+- **pool_cepheden_000065** — eleştirmen: İsteğe sadakat 2
+- **pool_cepheden_000066** — eleştirmen: İsteğe sadakat 2
 - **pool_cepheye_000007** — Yasak kelimeler: geçen: tamamdır
 - **pool_cepheye_000032** — eleştirmen: Ölçülülük 2
 - **pool_cepheye_000045** — eleştirmen: İsteğe sadakat 2
+- **pool_cepheye_000075** — eleştirmen: İsteğe sadakat 2
+- **pool_cepheye_000085** — eleştirmen: İsteğe sadakat 2
 
 ## İstatistik
 
@@ -553,118 +1337,119 @@ Zarf: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Eskişehirli Ta
 
 | | Sayı |
 |---|---|
-| accepted | 82 |
-| needs_review | 10 |
-| rejected | 4 |
+| accepted | 163 |
+| needs_review | 25 |
+| rejected | 9 |
 
 **Yön**
 
 | | Sayı |
 |---|---|
-| cepheden | 49 |
-| cepheye | 47 |
+| cepheden | 100 |
+| cepheye | 97 |
 
 **Dikkatsizlik**
 
 | | Sayı |
 |---|---|
-| yok | 65 |
-| az | 22 |
-| çok | 9 |
+| yok | 137 |
+| az | 44 |
+| çok | 16 |
 
 **Okuryazarlık**
 
 | | Sayı |
 |---|---|
-| az | 40 |
-| okuma yazma yok | 28 |
-| orta | 18 |
-| iyi | 10 |
+| okuma yazma yok | 69 |
+| az | 68 |
+| orta | 44 |
+| iyi | 16 |
 
 **Memleket**
 
 | | Sayı |
 |---|---|
-| Kastamonu | 6 |
-| Niğde | 6 |
-| Manisa | 5 |
-| Amasya | 5 |
-| Rize | 4 |
-| Aydın | 4 |
-| Konya | 4 |
-| Bursa | 4 |
-| Kırşehir | 4 |
-| Ankara | 3 |
-| Yozgat | 3 |
-| Çorum | 3 |
-| Çankırı | 3 |
-| Afyon | 3 |
+| Niğde | 9 |
+| Erzurum | 8 |
+| Konya | 8 |
+| Amasya | 8 |
+| Kırşehir | 8 |
+| Eskişehir | 8 |
+| Ankara | 7 |
+| Kastamonu | 7 |
+| Çorum | 7 |
+| Manisa | 7 |
+| Rize | 7 |
+| Aydın | 7 |
+| Denizli | 7 |
+| Bursa | 7 |
+| Kütahya | 7 |
+| Adana | 7 |
+| Yozgat | 6 |
+| Dersaadet | 6 |
+| Çankırı | 6 |
+| Malatya | 6 |
+| Kayseri | 6 |
+| Sinop | 5 |
+| İzmir | 5 |
+| Balıkesir | 5 |
+| Harput | 5 |
+| Afyon | 4 |
+| Diyarbekir | 4 |
+| Maraş | 4 |
 | Trabzon | 3 |
-| Malatya | 3 |
-| Diyarbekir | 3 |
-| Kayseri | 3 |
-| Maraş | 3 |
-| Kütahya | 3 |
-| Eskişehir | 3 |
-| Erzurum | 2 |
-| Dersaadet | 2 |
-| Denizli | 2 |
-| Sinop | 2 |
+| Isparta | 3 |
+| Giresun | 3 |
+| Sivas | 3 |
+| Bolu | 2 |
 | Tokat | 2 |
-| Bolu | 1 |
-| İzmir | 1 |
-| Balıkesir | 1 |
-| Harput | 1 |
-| Giresun | 1 |
-| Isparta | 1 |
-| Sivas | 1 |
-| Adana | 1 |
 
 **En çok kullanılan isimler**
 
 | | Sayı |
 |---|---|
-| Kemal | 5 |
-| Şükrü | 4 |
-| Bekir | 4 |
-| Hamide | 4 |
-| Fikri | 4 |
-| Sait | 4 |
-| Reşit | 4 |
-| Emin | 4 |
-| Hamiyet | 4 |
-| Elif | 3 |
+| Kemal | 7 |
+| Bekir | 7 |
+| Talat | 7 |
+| Fikri | 6 |
+| İzzet | 6 |
+| Nail | 6 |
+| Hilmi | 6 |
+| Şükrü | 5 |
+| Hamide | 5 |
+| Kadriye | 5 |
 
 **En sık uyarılar**
 
 | | Sayı |
 |---|---|
-| Tekrar (warn) | 23 |
+| Tekrar (warn) | 54 |
+| Hassas bilgi dengesi (warn) | 1 |
 | Yasak kelimeler (fail) | 1 |
 
 **En sık kapanışlar**
 
 | | Sayı |
 |---|---|
-| Allah'a emanet ol. | 27 |
-| Allah'a emanet olun. | 17 |
-| Cevabını bekliyorum. | 6 |
-| Çabuk cevap yaz. | 4 |
-| Baki selam. | 4 |
-| Gözlerinden öperim. | 3 |
-| Baki selam ve dua ile. | 2 |
-| Cevabını tez yazın. | 2 |
+| Allah'a emanet ol. | 42 |
+| Allah'a emanet olun. | 18 |
+| Cevabını bekliyorum. | 17 |
+| Çabuk cevap yaz. | 10 |
+| Hepinizin gözlerinden öperim. | 10 |
+| Baki selam. | 9 |
+| Duanı eksik etme. | 9 |
+| Hakkını helal et. | 8 |
 
 **En sık açılışlar**
 
 | | Sayı |
 |---|---|
-| Evvela selam eder | 16 |
-| Evvela mahsus selam eder | 6 |
+| Evvela selam eder | 33 |
+| Evvela mahsus selam eder | 10 |
+| Evvela selam eder hatırını sorarım | 3 |
+| Mektubunu aldım | 3 |
+| Mektubunu aldık okuduk | 2 |
+| Mektubunu aldık | 2 |
+| Muhterem pederim | 2 |
 | Evvela gözlerinden öperim kızım | 1 |
-| Mektubunuzu vaktinde aldım | 1 |
-| Tayyar der ki: Evvela selam eder | 1 |
-| Evvela ellerinden öperim hatırını sorarı | 1 |
-| Mektup atım cevap gelmedi kâat mı yok bi | 1 |
-| Halime kardaşım mektubun ve paketin geld | 1 |
 

@@ -1,0 +1,325 @@
+{
+  "id": "pool_cepheden_000066",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Şakir",
+    "epithet": "Çorumlu",
+    "age": 24,
+    "hometown": "Çorum",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Ümmühan",
+    "relation": "nişanlısı",
+    "location": "Çorum, Osmancık kazası, Yeniköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 127,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 28 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Ümmühan'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Şakir der ki: Nasılsın, iyi misin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Anamgiller nasıl?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Tarla sürüldü mü?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sarı ineği sattınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bakkal Halil'e olan borcu nittiniz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben size bu ay hiç para yollayamadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bizim buralarda elde avuçta kalmadı, hepsi bir çırpıda uçup gitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "O borcu faiziyle mi istiyor Halil?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Dayımdan biraz borç alsın anam, harmana kadar idare etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sen de sakın daralma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bizim köyden Topal Hasan'ın oğlu Ali'yi gördüm, bizim alayın üçüncü taburundaymış, o da sağ salim.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Düğün parasını ne yapacağız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Ekinler nasıl, boy verdi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Arpayı bu sene kim biçecek?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Suyun başındaki tarlaya bostan ettiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Kardeşin Hüseyin askere çağrıldı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Geçen güzden kalan bulgur bitti mi, un yetiyor mu onu da yaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s20",
+      "text": "Emmime, dayıma, köyümüzün büyüklerine ayrı ayrı selam gönderirim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "",
+    "seal": "Şakir"
+  },
+  "note": {
+    "text": "İşbu mektubu Şakir kardeşimin ağzından kaleme aldım. Allah kavuştursun. Hafız İbrahim.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Çorum, Osmancık kazası, Yeniköy karyesi, İmam Rıza Efendi vasıtasıyla Ümmühan Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şakir, Çorumlu, 24, çiftçi, er (Çorum, Osmancık kazası, Yeniköy karyesi)\nAlıcı: Nişanlısı Ümmühan Hanım, Çorum, Osmancık kazası, Yeniköy karyesi\nYön: cepheden\nTarih: 28 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: genç ve heyecanlı, çok soru sorar\nKonu: köydeki borcun nasıl ödeneceği\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Çabuk cevap yaz\nUzunluk: 127",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şakir",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": "çiftçi",
+        "epithet": "Çorumlu",
+        "place": "Osmancık kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Ümmühan",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Osmancık kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çorum, Osmancık kazası, Yeniköy karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "köydeki borcun nasıl ödeneceği",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "uzun",
+      "length_target": 127,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "28 Nisan 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Çorum, Osmancık kazası, Yeniköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5763,
+      "output": 3500
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 28 Nisan 1331\nHİTAP: Nişanlım Ümmühan'a\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Benim hâlimi sorarsan şükür ayaktayız. Şakir der ki: Nasılsın, iyi misin? Anamgiller nasıl? Tarla sürüldü mü? Sarı ineği sattınız mı? Bakkal Halil'e olan borcu nittiniz? Ben size bu ay hiç para yollayamadım. Bizim buralarda elde avuçta kalmadı, hepsi bir çırpıda uçup gitti. O borcu faiziyle mi istiyor Halil? Dayımdan biraz borç alsın anam, harmana kadar idare etsin. Sen de sakın daralma. ⟦Bizim köyden Topal Hasan'ın oğlu Ali'yi gördüm, bizim alayın üçüncü taburundaymış, o da sağ salim.⟧ Düğün parasını ne yapacağız? Ekinler nasıl, boy verdi mi? Arpayı bu sene kim biçecek? Suyun başındaki tarlaya bostan ettiniz mi? Kardeşin Hüseyin askere çağrıldı mı? Geçen güzden kalan bulgur bitti mi, un yetiyor mu onu da yaz. Emmime, dayıma, köyümüzün büyüklerine ayrı ayrı selam gönderirim.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: (mühür: Şakir)\nNOT: İşbu mektubu Şakir kardeşimin ağzından kaleme aldım. Allah kavuştursun. Hafız İbrahim.\nZARF: Çorum, Osmancık kazası, Yeniköy karyesi, İmam Rıza Efendi vasıtasıyla Ümmühan Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "127 kelime, hedef 127 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:55+00:00",
+    "tokens": {
+      "input": 4408,
+      "output": 4260
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, döneme uygun; 'nittiniz' gibi yöresel dokunuşlar ve kâtip dili ('işbu mektup') yerinde kullanılmış.",
+      "olculuk": "Duygular doğrudan söylenmek yerine somut sorular ve endişeler üzerinden başarıyla hissettirilmiş.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin mektup yazdırma biçimi ('Şakir der ki', kâtip notu, mühür) kurallara tam uyuyor.",
+      "somutluk": "Mektup, sarı inek, bakkal borcu, harman, bulgur gibi köy hayatına dair somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "İsteğin 'Dikkatsizlik: az' kuralına uyulmamış; sansürlenmesi gereken bilgi doğru tespit edilmiş ama sansürden kaçırılmamış.",
+      "sahicilik": "Kâtibin resmi dili ile mektubu yazdıranın telaşlı ve samimi sesinin iç içe geçmesi mektuba yüksek bir sahicilik katıyor."
+    },
+    "issues": [
+      {
+        "line": "⟦Bizim köyden Topal Hasan'ın oğlu Ali'yi gördüm, bizim alayın üçüncü taburundaymış, o da sağ salim.⟧",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta hiçbir askerî bilgi sansürden kaçırılmamış. Bu cümledeki hassas bilgi (üçüncü tabur) ⟦ ⟧ içine alınarak 'dikkatsizlik' kuralı ihlal edilmiş.",
+        "suggestion": "İsteğe uymak için bu cümlenin sansürden kaçması, yani ⟦ ⟧ işaretleri olmadan yazılması gerekirdi: 'Bizim köyden Topal Hasan'ın oğlu Ali'yi gördüm, bizim alayın üçüncü taburundaymış, o da sağ salim.'"
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T17:22:55+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

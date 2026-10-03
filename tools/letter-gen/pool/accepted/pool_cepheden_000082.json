@@ -1,0 +1,235 @@
+{
+  "id": "pool_cepheden_000082",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Celal",
+    "epithet": "Erzurumlu",
+    "age": 31,
+    "hometown": "Erzurum",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Seher",
+    "relation": "karısı",
+    "location": "Erzurum, Tercan kazası, Söğütlü karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 113,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Seher'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Seher sana selam ederim koca kış gecti senden bir kagıt gelmeyo gecen ay yazdıgım mektup elinize varmış muhtar öyle dedi ama sizden ses yok insan bir satır yazdırır köye gelen giden oluyo biz burda yola bakıyoz da hep bos cıkıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Tarlayı ne yaptınız Erzurumun karları erimiştir simdi çifte kim koşacak koca öküzü satacanız mı eger emmim ogullariyla gelip yardım etmezse satmayın dursun yaza kadar sabredin ahırda otu vardır elbet.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Satarsanız parayı cabuk ziyan etmeyin sehirde seker gaz yagı ates pahasi olmus diyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim halimi sorarsan iyiyim ayaktayım maşallahım var kimsede bir dert yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen cocuklara iyi bak üstlerini sıkı ört emmime halama komsulara selam söyle çabuk cevap yaz merakta koma beni.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "Kocan Celal"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Erzurum, Tercan kazası, Söğütlü karyesi, Muhtar vasıtasıyla Seher Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Celal, Erzurumlu, 31, çiftçi, çavuş (Erzurum, Tercan kazası, Söğütlü karyesi)\nAlıcı: Karısı Seher Hanım, Erzurum, Tercan kazası, Söğütlü karyesi\nYön: cepheden\nTarih: 30 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Celal",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Erzurum",
+        "occupation": "çiftçi",
+        "epithet": "Erzurumlu",
+        "place": "Tercan kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 28,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tercan kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Erzurum, Tercan kazası, Söğütlü karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "30 Nisan 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Erzurum, Tercan kazası, Söğütlü karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5694,
+      "output": 3713
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 30 Nisan 1331\nHİTAP: Seher'e\nGÖVDE: Seher sana selam ederim koca kış gecti senden bir kagıt gelmeyo gecen ay yazdıgım mektup elinize varmış muhtar öyle dedi ama sizden ses yok insan bir satır yazdırır köye gelen giden oluyo biz burda yola bakıyoz da hep bos cıkıyo. Tarlayı ne yaptınız Erzurumun karları erimiştir simdi çifte kim koşacak koca öküzü satacanız mı eger emmim ogullariyla gelip yardım etmezse satmayın dursun yaza kadar sabredin ahırda otu vardır elbet. Satarsanız parayı cabuk ziyan etmeyin sehirde seker gaz yagı ates pahasi olmus diyolar. Benim halimi sorarsan iyiyim ayaktayım maşallahım var kimsede bir dert yok. Sen cocuklara iyi bak üstlerini sıkı ört emmime halama komsulara selam söyle çabuk cevap yaz merakta koma beni.\nKAPANIŞ: Hakkını helal et.\nİMZA: Kocan Celal\nZARF: Erzurum, Tercan kazası, Söğütlü karyesi, Muhtar vasıtasıyla Seher Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "111 kelime, hedef 113 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:16+00:00",
+    "tokens": {
+      "input": 4307,
+      "output": 3195
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'gelmeyo', 'kagıt', 'koma' gibi kelimelerle ve genel üslupla dönemi ve yöreyi başarıyla yansıtmaktadır.",
+      "olculuk": "Sitem ve endişe gibi duygular, doğrudan adlandırılmak yerine 'yola bakıyoz da hep bos cıkıyo' gibi somut eylemlerle etkili bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Kısa ve devrik cümleler, noktalama eksiklikleri ve tutarlı imla hataları ('gelmeyo', 'bakıyoz') istenen düşük okuryazarlık seviyesine tam olarak uymaktadır.",
+      "somutluk": "Mektup; öküz, tarla, kar, ot, şeker, gaz yağı gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, ton, saklanan bilgi, kapanış ve uzunluk dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen sadık kalmıştır.",
+      "sahicilik": "Mektup genel olarak çok sahici hissettirse de, bilginin nasıl ulaştığına dair bir ayrıntı mektubun inandırıcılığını bir miktar zayıflatmaktadır."
+    },
+    "issues": [
+      {
+        "line": "gecen ay yazdıgım mektup elinize varmış muhtar öyle dedi ama sizden ses yok",
+        "problem": "Cephedeki bir askere muhtarın bu bilgiyi nasıl ulaştırdığı belirsizdir; bu ifade, anlatı kolaylığı gibi durmakta ve mektubun gerçekçiliğini biraz azaltmaktadır.",
+        "suggestion": "Köyden gelenler mektubumun elinize vardığını söyledi ama sizden bir haber çıkmadı."
+      },
+      {
+        "line": "Benim halimi sorarsan iyiyim ayaktayım maşallahım var kimsede bir dert yok.",
+        "problem": "'Kimsede bir dert yok' ifadesi, savaş koşulları için fazla genel ve sansürü geçmek için söylenmiş kalıp bir söz gibi duruyor.",
+        "suggestion": "Benim halimi sorarsan iyiyim ayaktayım maşallahım var. Bizim bölüktekiler de şimdilik sağlam."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:16+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

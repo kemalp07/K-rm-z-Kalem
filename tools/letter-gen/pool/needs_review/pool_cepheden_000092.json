@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheden_000092",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Eyüp",
+    "epithet": "Demirci",
+    "age": 26,
+    "hometown": "Sinop",
+    "occupation": "demirci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hacer",
+    "relation": "annesi",
+    "location": "Sinop, Boyabat kazası, Kızılca karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 82,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Hacer Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Eyüp der ki: Anacığım evvela selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana evvelden de bir kâğıt yolladım, cevabı gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlim vaktim yerindedir, meraklanma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Havalar buralarda epeyce ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kumandanlardan izin kâğıdı koparmaya uğraşıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hayırlısıyla köye gelirsem dükkânın ocağını bir yakarım inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ali'min, Zeynep'imin gözlerinden ayrı ayrı öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Onları sakın ola dövmeyesin, yaramazlık edip seni yorsalar da kızma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Pabuçları eskimiştir, şehre inince çarıkçıdan veresiye alsınlar, ben gelince borcunu öderim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bütün komşulara, kahveci Rıza emmiye çokça selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et, duanı eksik etme.",
+  "signature": {
+    "text": "",
+    "seal": "Eyüp"
+  },
+  "note": {
+    "text": "İşbu mektup Eyüp'ün kendi sözüyle yazılmıştır. İmam Hüseyin.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Sinop, Boyabat kazası, Kızılca karyesi, İmam Hüseyin Efendi vasıtasıyla Hacer Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Eyüp, Demirci, 26, demirci, er (Sinop, Boyabat kazası, Kızılca karyesi)\nAlıcı: Annesi Hacer Hanım, Sinop, Boyabat kazası, Kızılca karyesi\nYön: cepheden\nTarih: 15 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: izin alma umudu\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 82",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Eyüp",
+        "gender": "erkek",
+        "age": 26,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Sinop",
+        "occupation": "demirci",
+        "epithet": "Demirci",
+        "place": "Boyabat kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Hacer",
+        "gender": "kadın",
+        "age": 51,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Sinop",
+        "occupation": null,
+        "epithet": null,
+        "place": "Boyabat kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Sinop, Boyabat kazası, Kızılca karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "izin alma umudu",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 82,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "15 Haziran 1331",
+      "closing": "",
+      "home_address": "Sinop, Boyabat kazası, Kızılca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5668,
+      "output": 2822
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Haziran 1331\nHİTAP: Validem Hacer Hanım'a\nGÖVDE: Eyüp der ki: Anacığım evvela selam eder, mübarek ellerinden öperim. Sana evvelden de bir kâğıt yolladım, cevabı gelmedi. Benim hâlim vaktim yerindedir, meraklanma. Havalar buralarda epeyce ısındı. Kumandanlardan izin kâğıdı koparmaya uğraşıyorum. Hayırlısıyla köye gelirsem dükkânın ocağını bir yakarım inşallah. Ali'min, Zeynep'imin gözlerinden ayrı ayrı öperim. Onları sakın ola dövmeyesin, yaramazlık edip seni yorsalar da kızma. Pabuçları eskimiştir, şehre inince çarıkçıdan veresiye alsınlar, ben gelince borcunu öderim. Bütün komşulara, kahveci Rıza emmiye çokça selam eyle.\nKAPANIŞ: Hakkını helal et, duanı eksik etme.\nİMZA: (mühür: Eyüp)\nNOT: İşbu mektup Eyüp'ün kendi sözüyle yazılmıştır. İmam Hüseyin.\nZARF: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hüseyin Efendi vasıtasıyla Hacer Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "75 kelime, hedef 82 (-9%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000020 ile ortak: \"evvela selam eder mübarek ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:29+00:00",
+    "tokens": {
+      "input": 4299,
+      "output": 3169
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve kelimeler (kâğıt yollamak, hal vakit, veresiye) döneme tamamen uygundur, modern bir ifade yoktur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, bunun yerine çocuklarla ilgili somut endişeler ve eve dönme hayali üzerinden ustaca hissettirilmiştir.",
+      "okuryazarlik": "Mektubun alay imamı tarafından yazdırıldığı, kullanılan dil (Validem), yapı (Eyüp der ki:) ve sondaki not ile kusursuz bir şekilde yansıtılmıştır.",
+      "somutluk": "Demirci dükkânının ocağı, pabuç, çarıkçıdan veresiye alınması gibi ayrıntılar mektuba güçlü bir somutluk katmaktadır.",
+      "sadakat": "Mektup; konu, ton, uzunluk, yazım biçimi ve istenen diğer tüm unsurlar açısından isteğe tamamen sadıktır.",
+      "sahicilik": "Mektubun metni çok sahici olmakla birlikte, zarf adresindeki mantık hatası (mektubu cephede yazan imamın köyde teslimat aracısı olması) genel gerçekçiliği zedelemektedir."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Sinop, Boyabat kazası, Kızılca karyesi, İmam Hüseyin Efendi vasıtasıyla Hacer Hanım'a",
+        "problem": "Mektubu cephede yazan alay imamı Hüseyin Efendi, aynı zamanda mektubun köydeki alıcısına ulaştırılacağı aracı kişi olamaz.",
+        "suggestion": "Aracı kişi köyden biri olmalıdır. Örneğin: \"Köy muhtarı vasıtasıyla Hacer Hanım'a\"."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

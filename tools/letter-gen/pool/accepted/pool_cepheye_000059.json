@@ -1,0 +1,290 @@
+{
+  "id": "pool_cepheye_000059",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Niyazi",
+    "epithet": "Kastamonulu",
+    "age": 21,
+    "hometown": "Kastamonu",
+    "occupation": "çiftçi",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Şevket",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 111,
+  "hand": "careful",
+  "header": {
+    "text": "Ilıca, 18 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Şevket'e,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun elimize geçti, keyfimiz yerine geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim buralarda harp yok ama Bakkal Hüsnü'nün hücumu var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen seneden kalan veresiye defterini açmış, her gün kapıyı aşındırıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Neymiş, alacağı varmış.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dedim bekle, ağabeyim cepheden gümüş mecidiye yollayacak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Adamın bıyıkları titredi sinirden.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen de tez zamanda dön de gel, yoksa tarladaki arpayı tümden Hüsnü'ye kaptıracağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Arpalar sarardı, haftaya orağı vururum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evde herkesin selamı var, anama hiç tasalanma diyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sıcak bastırdı, insanın canı pek yemek de istemiyor, ağaçtan erik dut ne bulursak öyle geçiştiriyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Komşular hep seni soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Borç işini dert etme, gerekirse katırı satar yine öderim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Dayım da şehre inip kereste satacakmış, belki oradan üç beş kuruş koparırım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Sen sağ salim dön yeter.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözüm yolda.",
+  "signature": {
+    "text": "Kardeşin Niyazi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İnebolulu Şevket'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Niyazi, Kastamonulu, 21, çiftçi (Kastamonu, İnebolu kazası, Ilıca karyesi)\nAlıcı: Ağabeyi Er Şevket, cephede\nYön: cepheye\nTarih: 18 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: borcun ödenmesi için ne yapılacağı\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Gözüm yolda\nUzunluk: 111",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Niyazi",
+        "gender": "erkek",
+        "age": 21,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Kastamonu",
+        "occupation": "çiftçi",
+        "epithet": "Kastamonulu",
+        "place": "İnebolu kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Şevket",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kastamonu",
+        "occupation": null,
+        "epithet": null,
+        "place": "İnebolu kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "borcun ödenmesi için ne yapılacağı",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 111,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "18 Haziran 1331",
+      "closing": "Gözüm yolda",
+      "home_address": "Kastamonu, İnebolu kazası, Ilıca karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5673,
+      "output": 3559
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ilıca, 18 Haziran 1331\nHİTAP: Ağabeyim Şevket'e,\nGÖVDE: Mektubun elimize geçti, keyfimiz yerine geldi. Bizim buralarda harp yok ama Bakkal Hüsnü'nün hücumu var. Geçen seneden kalan veresiye defterini açmış, her gün kapıyı aşındırıyor. Neymiş, alacağı varmış. Dedim bekle, ağabeyim cepheden gümüş mecidiye yollayacak. Adamın bıyıkları titredi sinirden. Sen de tez zamanda dön de gel, yoksa tarladaki arpayı tümden Hüsnü'ye kaptıracağız. Arpalar sarardı, haftaya orağı vururum. Evde herkesin selamı var, anama hiç tasalanma diyorum. Sıcak bastırdı, insanın canı pek yemek de istemiyor, ağaçtan erik dut ne bulursak öyle geçiştiriyoruz. Komşular hep seni soruyor. Borç işini dert etme, gerekirse katırı satar yine öderim. Dayım da şehre inip kereste satacakmış, belki oradan üç beş kuruş koparırım. Sen sağ salim dön yeter.\nKAPANIŞ: Gözüm yolda.\nİMZA: Kardeşin Niyazi\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er İnebolulu Şevket'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "110 kelime, hedef 111 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:54+00:00",
+    "tokens": {
+      "input": 4321,
+      "output": 4227
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'gümüş mecidiye' ve 'orağı vurmak' gibi ifadelerle döneme tamamen uygun ve hiçbir modern kelime içermiyor.",
+      "olculuk": "Mektup genel olarak ölçülü ve duyguları dolaylı yoldan hissettiriyor ancak bir satırda kural dışı sahne tarifine yaklaşan bir ifade kullanılmış.",
+      "okuryazarlik": "Yazım tarzı, orta okuryazar bir çiftçinin sade, akıcı ama karmaşık olmayan diliyle birebir örtüşüyor.",
+      "somutluk": "Mektup, 'veresiye defteri', 'arpa', 'katır' ve 'kereste' gibi köy hayatına dair somut ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "Mektup; konu, ton, saklanan bilgi ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uyuyor.",
+      "sahicilik": "Şakacı bir dille ciddi bir konuyu anlatması ve kötü haberi ustaca gizlemesi mektubu son derece sahici ve insani kılıyor."
+    },
+    "issues": [
+      {
+        "line": "Adamın bıyıkları titredi sinirden.",
+        "problem": "Bu ifade, kural dışı olan anlatıcı bakış açısıyla yapılmış bir sahne tarifine benziyor.",
+        "suggestion": "Adam lafı duyunca pek bir sinirlendi."
+      },
+      {
+        "line": "Sıcak bastırdı, insanın canı pek yemek de istemiyor, ağaçtan erik dut ne bulursak öyle geçiştiriyoruz.",
+        "problem": "'İnsanın canı' şeklindeki genelleyici ifade, dönemin kişisel diline göre biraz modern tınlıyor.",
+        "suggestion": "Sıcak bastırdı, kimsenin canı pek yemek istemiyor, ağaçtan erik dut ne bulursak öyle geçiştiriyoruz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:54+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

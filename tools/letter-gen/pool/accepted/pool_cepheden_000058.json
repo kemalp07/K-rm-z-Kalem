@@ -1,0 +1,289 @@
+{
+  "id": "pool_cepheden_000058",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sefer",
+    "epithet": "Ispartalı",
+    "age": 44,
+    "hometown": "Isparta",
+    "occupation": "çiftçi",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Eyüp",
+    "relation": "dayısı",
+    "location": "Isparta, Yalvaç kazası, Kuzören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 117,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 4 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem dayım Eyüp Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür iyiyim, bir yaramız derdimiz yoktur, ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Memleketten ayrılalı aklım hep evde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen güzden bizim evin damı akıyordu, Mayıs yağmurları bastırmadan çamurunu karıp sıvadınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "İçeri su alırsa un çuvalları ziyan olur, gözünüzü seveyim ihmal etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Köyde herkesin keyfi nasıldır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Topal Halil'in kahvesinde toplanıp yine çay içiyor musunuz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Deli Ömer'in koyunları yaylaya çıktı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hasat zamanı yaklaşıyor, ekinlerin boyu ne âlemde?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim tarlayı sürecek öküz bulabildiniz mi, yoksa İbrahim emmiden mi istediniz?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Buralarda günler yavaş geçip gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizim memleketliler var, akşamları oturup köyü konuşuyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Yengeme, çocuklara, köyümüzün büyüklerine tek tek selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Hakkınızı helal edin, buralar gurbetliktir.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Yeğenin Çavuş Sefer"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Isparta, Yalvaç kazası, Kuzören karyesi, Muhtar vasıtasıyla Eyüp Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sefer, Ispartalı, 44, çiftçi, çavuş (Isparta, Yalvaç kazası, Kuzören karyesi)\nAlıcı: Dayısı Eyüp, Isparta, Yalvaç kazası, Kuzören karyesi\nYön: cepheden\nTarih: 4 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: meraklı, köyden herkesi sorar\nKonu: evin damının akmasından endişe\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Duanı eksik etme\nUzunluk: 117",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sefer",
+        "gender": "erkek",
+        "age": 44,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Isparta",
+        "occupation": "çiftçi",
+        "epithet": "Ispartalı",
+        "place": "Yalvaç kazası, Kuzören karyesi"
+      },
+      "recipient": {
+        "name": "Eyüp",
+        "gender": "erkek",
+        "age": 57,
+        "relation": "dayısı",
+        "rank": null,
+        "hometown": "Isparta",
+        "occupation": null,
+        "epithet": null,
+        "place": "Yalvaç kazası, Kuzören karyesi"
+      },
+      "recipient_location": "Isparta, Yalvaç kazası, Kuzören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "evin damının akmasından endişe",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 117,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "4 Mayıs 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Isparta, Yalvaç kazası, Kuzören karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5670,
+      "output": 3744
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 4 Mayıs 1331\nHİTAP: Muhterem dayım Eyüp Ağa'ya\nGÖVDE: Evvela selam eder mübarek ellerinden öperim. Benim hâlimi sorarsan şükür iyiyim, bir yaramız derdimiz yoktur, ayaktayız. Memleketten ayrılalı aklım hep evde kaldı. Geçen güzden bizim evin damı akıyordu, Mayıs yağmurları bastırmadan çamurunu karıp sıvadınız mı? İçeri su alırsa un çuvalları ziyan olur, gözünüzü seveyim ihmal etmeyin. Köyde herkesin keyfi nasıldır? Topal Halil'in kahvesinde toplanıp yine çay içiyor musunuz? Deli Ömer'in koyunları yaylaya çıktı mı? Hasat zamanı yaklaşıyor, ekinlerin boyu ne âlemde? Bizim tarlayı sürecek öküz bulabildiniz mi, yoksa İbrahim emmiden mi istediniz? Buralarda günler yavaş geçip gidiyor. Bizim memleketliler var, akşamları oturup köyü konuşuyoruz. Yengeme, çocuklara, köyümüzün büyüklerine tek tek selam ederim. Hakkınızı helal edin, buralar gurbetliktir.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Yeğenin Çavuş Sefer\nZARF: Isparta, Yalvaç kazası, Kuzören karyesi, Muhtar vasıtasıyla Eyüp Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "107 kelime, hedef 117 (-9%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000020 ile ortak: \"evvela selam eder mübarek ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:53+00:00",
+    "tokens": {
+      "input": 4332,
+      "output": 3280
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil genel olarak döneme uygun olsa da 'keyfi nasıldır' ifadesi modern bir tınıya sahip ve 'hasat zamanı' Mayıs ayı için erkendir.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, bunun yerine köy hayatına dair somut ve endişeli sorularla hasret ve merak hissettirilmiştir.",
+      "okuryazarlik": "Orta okuryazar seviyesine uygun, sade ve anlaşılır bir dil kullanılmış ancak bir iki küçük imla hatası eklenerek daha sahici kılınabilirdi.",
+      "somutluk": "Mektup, akan dam, un çuvalları, kahvehane, yaylaya çıkan koyunlar ve ödünç alınan öküz gibi son derece somut ve canlı ayrıntılarla doludur.",
+      "sadakat": "Mektup, uzunluk, konu, saklanan bilgi, ton ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Bir çiftçinin savaştayken aklının evinde, tarlasında ve köyündeki gündelik işlerde kalması çok gerçekçi bir endişe olarak yansıtılmıştır."
+    },
+    "issues": [
+      {
+        "line": "Köyde herkesin keyfi nasıldır?",
+        "problem": "Bu soru kalıbı, dönemin mektup diline göre biraz fazla modern ve doğrudan bir ifadedir.",
+        "suggestion": "Köyde ahali nasıldır, herkesin hâli keyfi yerinde midir?"
+      },
+      {
+        "line": "Hasat zamanı yaklaşıyor, ekinlerin boyu ne âlemde?",
+        "problem": "Mayıs ayı, hasat zamanı için erkendir; bu dönem daha çok ekinlerin büyüme ve yeşerme vaktidir.",
+        "suggestion": "Ekinler yeşerdi mi, boyları ne âlemde?"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:21:53+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheden_000078",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Niyazi",
+    "epithet": "Çoban",
+    "age": 34,
+    "hometown": "Yozgat",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Esma",
+    "relation": "karısı",
+    "location": "Yozgat, Akdağmadeni kazası, Gökçeören karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 92,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 19 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Esma'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Esma sana okadar kâğıt yolladım niye cevap yazmıyosun insan köyden gelen birini bulur yollar gözüm yollarda kaldı köyden kimse gelmeyo gelsede bana kâğıt getirmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim sağlığım eyi keder etme havalar çok ısındı burda su bulmak pek zor oluyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bostanı ektiniz mi kuraklık vurmadan sulayın çocuklara mukayet ol sarı koyun kuzladı mı onuda yaz bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Güzden kalan borcu ödedin mi bakkal Halil'e.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim köyden",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kör Yusuf'u üçüncü tabura vermişler",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "dün onu gördüm selamı var size.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Gece nöbetler uzun geçiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kâğıt yaz merakta koma beni emmim oğullarına da selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Kocan Niyazi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Yozgat, Akdağmadeni kazası, Gökçeören karyesi, İmam Ali Efendi vasıtasıyla Esma Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Niyazi, Çoban, 34, çoban, er (Yozgat, Akdağmadeni kazası, Gökçeören karyesi)\nAlıcı: Karısı Esma Hanım, Yozgat, Akdağmadeni kazası, Gökçeören karyesi\nYön: cepheden\nTarih: 19 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 92",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Niyazi",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Yozgat",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Akdağmadeni kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Esma",
+        "gender": "kadın",
+        "age": 26,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Yozgat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akdağmadeni kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Yozgat, Akdağmadeni kazası, Gökçeören karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "orta",
+      "length_target": 92,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "19 Haziran 1331",
+      "closing": "",
+      "home_address": "Yozgat, Akdağmadeni kazası, Gökçeören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5698,
+      "output": 3502
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 19 Haziran 1331\nHİTAP: Esma'ya\nGÖVDE: Esma sana okadar kâğıt yolladım niye cevap yazmıyosun insan köyden gelen birini bulur yollar gözüm yollarda kaldı köyden kimse gelmeyo gelsede bana kâğıt getirmiyor. Benim sağlığım eyi keder etme havalar çok ısındı burda su bulmak pek zor oluyo. Bostanı ektiniz mi kuraklık vurmadan sulayın çocuklara mukayet ol sarı koyun kuzladı mı onuda yaz bana. Güzden kalan borcu ödedin mi bakkal Halil'e. Bizim köyden ⟦Kör Yusuf'u üçüncü tabura vermişler⟧ dün onu gördüm selamı var size. Gece nöbetler uzun geçiyo. Kâğıt yaz merakta koma beni emmim oğullarına da selam söyle.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Kocan Niyazi\nZARF: Yozgat, Akdağmadeni kazası, Gökçeören karyesi, İmam Ali Efendi vasıtasıyla Esma Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "88 kelime, hedef 92 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:47+00:00",
+    "tokens": {
+      "input": 4278,
+      "output": 3770
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler, imla hataları ve cümle yapıları 1915'in düşük okuryazar diline tamamen uygundur.",
+      "olculuk": "Duygular çoğunlukla dolaylı yoldan hissettirilse de \"keder etme\" ve \"merakta koma\" gibi ifadeler biraz fazla doğrudan kalmıştır.",
+      "okuryazarlik": "İstenen düşük okuryazarlık seviyesi; imla hataları, basit kelimeler ve kısa cümlelerle başarılı bir şekilde yansıtılmıştır.",
+      "somutluk": "Bostan, sarı koyun, bakkala olan borç gibi gündelik ve somut ayrıntılar mektubu son derece canlı kılmıştır.",
+      "sadakat": "Mektup, istenen uzunluğun altında kalmış ve \"dikkatsizlik: az\" kuralına uyarak sansürden kaçacak küçük bir askerî detay eklememiştir.",
+      "sahicilik": "Sitem, gündelik kaygılar ve selamların birleşimi, mektuba gerçek bir köylü askerin kaleminden çıkmış hissi vermektedir."
+    },
+    "issues": [
+      {
+        "line": "Benim sağlığım eyi keder etme havalar çok ısındı burda su bulmak pek zor oluyo.",
+        "problem": "\"keder etme\" ifadesi duyguyu doğrudan adlandırarak \"göster, anlatma\" kuralını hafifçe ihlal ediyor.",
+        "suggestion": "Benim sağlığım eyi, aklın bende kalmasın. Havalar çok ısındı burda su bulmak pek zor oluyo."
+      },
+      {
+        "line": "Kâğıt yaz merakta koma beni emmim oğullarına da selam söyle.",
+        "problem": "\"merakta koma beni\" ifadesi yazarın endişesini doğrudan söyleyerek ölçülülükten biraz uzaklaşıyor.",
+        "suggestion": "Kâğıt yaz da senden bir haber alayım, emmim oğullarına da selam söyle."
+      },
+      {
+        "line": "GÖVDE",
+        "problem": "İstekte \"dikkatsizlik: az\" belirtilmesine rağmen, mektupta sansürcünün gözünden kaçması gereken (⟦ ⟧ işareti dışında kalan) hiçbir askerî bilgi sızıntısı bulunmuyor.",
+        "suggestion": "\"Gece nöbetler uzun geçiyo\" cümlesi yerine \"Burda Kireçtepe'de gece nöbetler uzun geçiyo\" gibi yeri belli eden küçük bir dikkatsizlik eklenebilirdi."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

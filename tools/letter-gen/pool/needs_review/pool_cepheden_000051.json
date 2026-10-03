@@ -1,0 +1,260 @@
+{
+  "id": "pool_cepheden_000051",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yusuf",
+    "epithet": "Denizlili",
+    "age": 34,
+    "hometown": "Denizli",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Emine",
+    "relation": "annesi",
+    "location": "Denizli, Acıpayam kazası, Alacahan karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 93,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 14 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Emine'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder hatırınızı sorarım benim halimi sorarsanız şükür eyiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Şimdiye avradın vakti yetmiştir çocuk sağ doğduysa oğlan olursa adını Hasan koyun babamın adı olsun kız olursa Elif olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Burda havalar çok isindi toz toprak içindeyiz hep.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Üç gündür siperden hiç çıkmadık.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Siz beni merak etmeyin aslan gibiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Arpa zamanı geldi kim biçecek o tarlayı düşünüyom hep.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köylülerden kimseyi görmedim daha.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Koyunları kırktınız mı yünü satınca İbrahim agaya olan borcu ödeyin hemen.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Emmime dayıma yengeme hepisine çok selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çocuğun yüzünü görmek nasip olur inşşallah hepimize.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köyün hocasına da selam eylen dua etsin bize.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Oğlun Yusuf"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Denizli, Acıpayam kazası, Alacahan karyesi, Muhtar Veli Ağa vasıtasıyla Emine Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yusuf, Denizlili, 34, çiftçi, er (Denizli, Acıpayam kazası, Alacahan karyesi)\nAlıcı: Annesi Emine Hanım, Denizli, Acıpayam kazası, Alacahan karyesi\nYön: cepheden\nTarih: 14 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: ağırbaşlı, kalıplara sadık\nKonu: yeni doğan çocuğuna ad koymak\nSakladığı: korktuğunu\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Çabuk cevap yaz\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Denizli",
+        "occupation": "çiftçi",
+        "epithet": "Denizlili",
+        "place": "Acıpayam kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Emine",
+        "gender": "kadın",
+        "age": 51,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Acıpayam kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Denizli, Acıpayam kazası, Alacahan karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "yeni doğan çocuğuna ad koymak",
+      "hidden": "korktuğunu",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "14 Haziran 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Denizli, Acıpayam kazası, Alacahan karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5671,
+      "output": 3870
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 14 Haziran 1331\nHİTAP: Anam Emine'ye\nGÖVDE: Evvela selam eder hatırınızı sorarım benim halimi sorarsanız şükür eyiyim. Şimdiye avradın vakti yetmiştir çocuk sağ doğduysa oğlan olursa adını Hasan koyun babamın adı olsun kız olursa Elif olsun. Burda havalar çok isindi toz toprak içindeyiz hep. ⟦Üç gündür siperden hiç çıkmadık.⟧ Siz beni merak etmeyin aslan gibiyiz. Arpa zamanı geldi kim biçecek o tarlayı düşünüyom hep. Köylülerden kimseyi görmedim daha. Koyunları kırktınız mı yünü satınca İbrahim agaya olan borcu ödeyin hemen. Emmime dayıma yengeme hepisine çok selam ederim. Çocuğun yüzünü görmek nasip olur inşşallah hepimize. Köyün hocasına da selam eylen dua etsin bize.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Oğlun Yusuf\nZARF: Denizli, Acıpayam kazası, Alacahan karyesi, Muhtar Veli Ağa vasıtasıyla Emine Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "94 kelime, hedef 93 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:20+00:00",
+    "tokens": {
+      "input": 4258,
+      "output": 3158
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, döneme uygun; modern kelime yok ve kullanılan argo/hatalar ('eyiyim', 'düşünüyom') inandırıcı.",
+      "olculuk": "Duygular ('korku', 'hasret') doğrudan adlandırılmamış, somut kaygılar ve temennilerle etkili bir şekilde hissettirilmiş.",
+      "okuryazarlik": "İstekte belirtilen 'düşük okuryazarlık' seviyesi, noktalama eksikliği, basit cümle yapısı ve hafif imla hatalarıyla başarıyla yansıtılmış.",
+      "somutluk": "Mektup, arpa hasadı, koyun yünü, borç ödeme ve çocuğa ad koyma gibi gündelik ve somut ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "İsteğin 'Dikkatsizlik: az' kuralına uyulmamış; mektupta sansürcünün gözünden kaçması gereken küçük bir askerî ayrıntı bulunmuyor.",
+      "sahicilik": "Mektup, cephedeki bir askerin pratik kaygıları ile ailevi meseleleri birleştiren tonuyla son derece sahici ve klişelerden uzak."
+    },
+    "issues": [
+      {
+        "line": "Burda havalar çok isindi toz toprak içindeyiz hep.",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta sansürcünün gözünden kaçabilecek, ⟦ ⟧ işareti dışında kalmış küçük bir askerî ayrıntı (yer, durum, vb.) bulunmuyor.",
+        "suggestion": "Bu satır, 'Burda havalar çok isindi, karşı tepelerden duman eksik olmuyor.' gibi, konumu veya durumu ima eden küçük bir ayrıntı içerecek şekilde değiştirilebilirdi."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

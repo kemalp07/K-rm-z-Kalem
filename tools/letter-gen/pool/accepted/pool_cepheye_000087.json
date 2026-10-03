@@ -1,0 +1,289 @@
+{
+  "id": "pool_cepheye_000087",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Behiye",
+    "epithet": "İzmirli",
+    "age": 49,
+    "hometown": "İzmir",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Bekir",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "scribe",
+  "writer": "çarşıdaki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 130,
+  "hand": "dictated",
+  "header": {
+    "text": "İzmir, 26 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem oğlum Bekir Çavuş'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela cenab-ı Hakk'tan sıhhat ve selametini diler, gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığın mektup elimize vasıl oldu, çarşıda okuttum, afiyette olduğunu öğrenip şükrettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim buralarda ahval bildiğin gibidir, fazlaca bir lafımız yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Nisan yağmurları kesilince toprak tavını aldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Gün doğmadan kalkıp komşu kadınlarla beraber tarlaya iniyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sığır kuyruğu ve ayrık otu pek sarmış, gün boyu çapa vurup ot yolmaktan yoruluruz lakin ekinin nefes alması elzemdir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hava iyice ısınmadan tarlanın işinin bitmesi lazım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bu sene ahırın işi de pek kalmadı, bütün vakti tarlaya veririz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Akşam ezanından sonra evimize çekilip otururuz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sana bu kâğıtla beraber bir küçük bohça yolluyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Geceleri siperde serinlik çökerse giyesin diye kıştan ördüğüm yün eldivenleri koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Biraz da kuşburnu marmelatı sardım, peksimetin yanına katık edersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Asker ocağında kendine iyi mukayet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Mahalledeki komşuların cümlesi sana selam eder, duacıdır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve dua ile, Allah'a emanet ol.",
+  "signature": {
+    "text": "Validen",
+    "seal": "Behiye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş İzmirli Bekir'e",
+    "sensitive": false
+  },
+  "package": [
+    "yün eldiven",
+    "kuşburnu marmelatı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Behiye Hanım, İzmirli, 49, ev hanımı (İzmir, Karataş, Turan mahallesi)\nAlıcı: Oğlu Çavuş Bekir, cephede\nYön: cepheye\nTarih: 26 Nisan 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: çarşıdaki arzuhalci)\nOkuryazarlık: yok\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: çapa ve ot yolma işleri\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: yün eldiven, kuşburnu marmelatı\nUzunluk: 130",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Behiye",
+        "gender": "kadın",
+        "age": 49,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "İzmir",
+        "occupation": "ev hanımı",
+        "epithet": "İzmirli",
+        "place": "Karataş, Turan mahallesi"
+      },
+      "recipient": {
+        "name": "Bekir",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "İzmir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karataş, Turan mahallesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "none",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "çapa ve ot yolma işleri",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 130,
+      "package": [
+        "yün eldiven",
+        "kuşburnu marmelatı"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Nisan 1331",
+      "closing": "",
+      "home_address": "İzmir, Karataş, Turan mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5914,
+      "output": 3226
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Şehir hayatı · İzmir",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: İzmir, 26 Nisan 1331\nHİTAP: Muhterem oğlum Bekir Çavuş'a,\nGÖVDE: Evvela cenab-ı Hakk'tan sıhhat ve selametini diler, gözlerinden öperim. Geçen ay yolladığın mektup elimize vasıl oldu, çarşıda okuttum, afiyette olduğunu öğrenip şükrettik. Bizim buralarda ahval bildiğin gibidir, fazlaca bir lafımız yoktur. Nisan yağmurları kesilince toprak tavını aldı. Gün doğmadan kalkıp komşu kadınlarla beraber tarlaya iniyoruz. Sığır kuyruğu ve ayrık otu pek sarmış, gün boyu çapa vurup ot yolmaktan yoruluruz lakin ekinin nefes alması elzemdir. Hava iyice ısınmadan tarlanın işinin bitmesi lazım. Bu sene ahırın işi de pek kalmadı, bütün vakti tarlaya veririz. Akşam ezanından sonra evimize çekilip otururuz. Sana bu kâğıtla beraber bir küçük bohça yolluyorum. Geceleri siperde serinlik çökerse giyesin diye kıştan ördüğüm yün eldivenleri koydum. Biraz da kuşburnu marmelatı sardım, peksimetin yanına katık edersin. Asker ocağında kendine iyi mukayet ol. Mahalledeki komşuların cümlesi sana selam eder, duacıdır.\nKAPANIŞ: Baki selam ve dua ile, Allah'a emanet ol.\nİMZA: (mühür: Behiye) Validen\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş İzmirli Bekir'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "130 kelime, hedef 130 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000039 ile ortak: \"öperim geçen ay yolladığın mektup elimize\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:52+00:00",
+    "tokens": {
+      "input": 4412,
+      "output": 3286
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektup, 'vasıl olmak', 'ahval', 'elzemdir', 'mukayet olmak' gibi ifadelerle dönemin dilini ve bir arzuhalcinin üslubunu başarıyla yansıtıyor; modern bir kelime içermiyor.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, gönderilen eldiven ve marmelat gibi somut eylemler ve 'fazlaca bir lafımız yoktur' gibi ölçülü ifadelerle hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin ağzından bir arzuhalcinin yazdığı mektup formatına tam uyuyor; dil kâtibin, içerik ise mektubu yazdıranın dünyasına ait.",
+      "somutluk": "'Sığır kuyruğu', 'ayrık otu', 'kuşburnu marmelatı' ve 'yün eldiven' gibi ayrıntılar mektuba yüksek bir somutluk ve yaşanmışlık katıyor.",
+      "sadakat": "Gönderen, alıcı, tarih, konu, saklanan bilgi, paket içeriği ve kâtibe yazdırma biçimi gibi isteğin tüm unsurlarına harfiyen sadık kalınmıştır.",
+      "sahicilik": "Klişelerden uzak durarak, özellikle 'ahırın işi de pek kalmadı' gibi üstü kapalı bir ifadeyle saklanan kötü haberi hissettirerek çok sahici bir karakter portresi çiziyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:31:52+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

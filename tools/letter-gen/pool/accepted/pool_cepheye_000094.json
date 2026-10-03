@@ -1,0 +1,239 @@
+{
+  "id": "pool_cepheye_000094",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fadime",
+    "epithet": "Ankaralı",
+    "age": 25,
+    "hometown": "Ankara",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Fehmi",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 61,
+  "hand": "careful",
+  "header": {
+    "text": "Bahçecik, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Fehmi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubun epeydir gelmedi, inşallah sıhhatin yerindedir, vaktin iyidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Burada havalar ısındı, köyde arpa biçilmeye başlandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Buğdaylar da sarardı, ekinler bu sene pek bereketli.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Herkes harmana iniyor, biz de nasibimizde ne varsa onu toplayacağız, sen hiç buraları merak etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gönderdiğim çıkına az biraz kuru ekmek ile kıştan ördüğüm yün eldiveni koydum, gurbet elde giyersin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cenab-ı Hak seni korusun, duasındayız.",
+  "signature": {
+    "text": "Zevcen Fadime"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bahçecikli Fehmi'ye",
+    "sensitive": false
+  },
+  "package": [
+    "kuru ekmek",
+    "yün eldiven"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fadime Hanım, Ankaralı, 25, çiftçi (Ankara, Ayaş kazası, Bahçecik karyesi)\nAlıcı: Kocası Onbaşı Fehmi, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: ağırbaşlı, kalıplara sadık\nKonu: ekinlerin durumunu bildirmek\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nPaket: kuru ekmek, yün eldiven\nUzunluk: 61",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fadime",
+        "gender": "kadın",
+        "age": 25,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "epithet": "Ankaralı",
+        "place": "Ayaş kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Fehmi",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ayaş kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "ekinlerin durumunu bildirmek",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 61,
+      "package": [
+        "kuru ekmek",
+        "yün eldiven"
+      ],
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "20 Haziran 1331",
+      "closing": "",
+      "home_address": "Ankara, Ayaş kazası, Bahçecik karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5830,
+      "output": 2203
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Bahçecik, 20 Haziran 1331\nHİTAP: Muhterem zevcim Fehmi'ye\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Mektubun epeydir gelmedi, inşallah sıhhatin yerindedir, vaktin iyidir. Burada havalar ısındı, köyde arpa biçilmeye başlandı. Buğdaylar da sarardı, ekinler bu sene pek bereketli. Herkes harmana iniyor, biz de nasibimizde ne varsa onu toplayacağız, sen hiç buraları merak etme. Gönderdiğim çıkına az biraz kuru ekmek ile kıştan ördüğüm yün eldiveni koydum, gurbet elde giyersin.\nKAPANIŞ: Cenab-ı Hak seni korusun, duasındayız.\nİMZA: Zevcen Fadime\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bahçecikli Fehmi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "59 kelime, hedef 61 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:57+00:00",
+    "tokens": {
+      "input": 4219,
+      "output": 2748
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler (muhterem zevcim, sıhhat, Cenab-ı Hak) döneme ve karakterin okuryazarlık seviyesine tam olarak uymaktadır.",
+      "olculuk": "Duygular, doğrudan söylenmek yerine somut durumlar (mektubun gelmemesi, hasat) üzerinden ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Mektubun dili, kalıplara bağlılığı ve cümle yapısı, istekte belirtilen 'orta' okuryazarlığa sahip 'ağırbaşlı' bir karakterle birebir uyumludur.",
+      "somutluk": "Arpa, buğday, harman, kuru ekmek ve yün eldiven gibi somut ayrıntılar mektubu dönemin köy hayatına başarılı bir şekilde oturtmaktadır.",
+      "sadakat": "Mektup; konu, saklanan bilgi, ton, uzunluk ve diğer tüm unsurlarıyla isteğe harfiyen sadık kalmıştır.",
+      "sahicilik": "Standart kalıplar, somut detaylar ve saklanan acının 'nasibimizde ne varsa' ifadesiyle üstü kapalı geçiştirilmesi mektuba yüksek bir sahicilik katmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:57+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

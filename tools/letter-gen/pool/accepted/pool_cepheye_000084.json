@@ -1,0 +1,269 @@
+{
+  "id": "pool_cepheye_000084",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zehra",
+    "epithet": "Kırşehirli",
+    "age": 8,
+    "hometown": "Kırşehir",
+    "occupation": "çiftçi",
+    "relation": "kızı"
+  },
+  "recipient": {
+    "name": "Zekeriya",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "scribe",
+  "writer": "çarşıdaki arzuhalci",
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 80,
+  "hand": "dictated",
+  "header": {
+    "text": "Alacahan, 2 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Zekeriya'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Zehra kızın der ki: Evvela ellerinden hürmetle öper, dualarını beklerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizi sorarsan şükür evdeyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Giden ay yolladığın kâğıdı aldık, sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Baba, kardeşim Ali geçen cuma tay tay durdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kendi başına iki üç adım atıyor artık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Anam tarlada arpa biçerken ben ona bakıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yürüyor ama çabuk yoruluyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Beşiğe yatırınca akşama kadar hiç uyanmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Eskisi gibi ağlamıyor da, uslu uslu yatıyor hep.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen hiç merak etme, ben ona çok iyi bakıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Anamın da selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çarşıya inmişken bu kâğıdı yazdırdım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki hürmetle ellerinden öperim.",
+  "signature": {
+    "text": "",
+    "seal": "Zehra"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Avanoslu Onbaşı Zekeriya'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zehra, Kırşehirli, 8, çiftçi (Kırşehir, Avanos kazası, Alacahan karyesi)\nAlıcı: Babası Onbaşı Zekeriya, cephede\nYön: cepheye\nTarih: 2 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: çarşıdaki arzuhalci)\nOkuryazarlık: düşük\nSes: dertli, ama dertlerini söylemez\nKonu: çocuğun ilk adımları\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 80",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zehra",
+        "gender": "kadın",
+        "age": 8,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "çiftçi",
+        "epithet": "Kırşehirli",
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Zekeriya",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Avanos kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "çarşıdaki arzuhalci",
+      "literacy": "low",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 80,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "2 Haziran 1331",
+      "closing": "",
+      "home_address": "Kırşehir, Avanos kazası, Alacahan karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5727,
+      "output": 3532
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Alacahan, 2 Haziran 1331\nHİTAP: Muhterem pederim Zekeriya'ya\nGÖVDE: Zehra kızın der ki: Evvela ellerinden hürmetle öper, dualarını beklerim. Bizi sorarsan şükür evdeyiz. Giden ay yolladığın kâğıdı aldık, sevindik. Baba, kardeşim Ali geçen cuma tay tay durdu. Kendi başına iki üç adım atıyor artık. Anam tarlada arpa biçerken ben ona bakıyorum. Yürüyor ama çabuk yoruluyor. Beşiğe yatırınca akşama kadar hiç uyanmıyor. Eskisi gibi ağlamıyor da, uslu uslu yatıyor hep. Sen hiç merak etme, ben ona çok iyi bakıyorum. Anamın da selamı var. Çarşıya inmişken bu kâğıdı yazdırdım.\nKAPANIŞ: Baki hürmetle ellerinden öperim.\nİMZA: (mühür: Zehra)\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Avanoslu Onbaşı Zekeriya'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 80 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:42+00:00",
+    "tokens": {
+      "input": 4251,
+      "output": 3021
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Scribe'ın resmi dili ('muhterem pederim', 'hürmetle') ile çocuğun sade dili ('tay tay durdu') döneme uygun şekilde harmanlanmış.",
+      "olculuk": "Çocuğun hasta olduğu bilgisi, 'akşama kadar uyanmıyor', 'uslu uslu yatıyor' gibi endişe verici ama masum gözlemlerle, duygu adlandırılmadan ustaca hissettirilmiş.",
+      "okuryazarlik": "Mektup, arzuhalci tarafından yazıldığını 'Zehra kızın der ki:' girişi, resmi tonu ve mühür kullanımıyla belli ederken, içerik 8 yaşındaki bir çocuğun bakış açısını koruyor.",
+      "somutluk": "Mektup 'arpa biçmek', 'tay tay durmak', 'beşiğe yatırmak' gibi gündelik hayata dair somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "İstekteki tüm unsurlar (yazan, alıcı, konu, saklanan bilgi, yazım biçimi, uzunluk) mektuba eksiksiz ve doğru bir şekilde yansıtılmış.",
+      "sahicilik": "Hasta bir bebeğin uyuşukluğunu 'uslu durmak' olarak yorumlayan bir çocuğun anlatımı, mektubu son derece dokunaklı ve gerçekçi kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:31:42+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "id": "pool_cepheden_000094",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "İzzet",
+    "epithet": "Bursalı",
+    "age": 36,
+    "hometown": "Bursa",
+    "occupation": "bakkal",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Akile",
+    "relation": "annesi",
+    "location": "Bursa, Mihalıç kazası, Sarıkaya karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 90,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 3 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Akile Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen yolladığım kâğıt elinize geçmiş, cevabını okudum ferahladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlim vaktim pek yerindedir, siperde rahatımız iyi, hiç keder etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kardeşim Hasan'ın askerlik celbi yaklaşmış.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buralar pek ona göre değil, anlarsın ya.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Onu askerlik şubesinden ne yapıp edip tehir ettirin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bedel lazımsa benden para bekleme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Benim cüzdanda ne varsa geçen ay kaybettim, nasip olmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Siz harman vakti ambardaki arpayı satın, muhtara söyleyin bir çaresine baksın, çocuğu yollamasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim köyden fırıncının oğlu Salih dördüncü tabura düşmüş.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Onu daha göremedim ama geçen gün selamı geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Dükkânın anahtarı Hasan'da kalsın, veresiyeleri ufaktan toplasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim, duanızı eksik etmeyin.",
+  "signature": {
+    "text": "Oğlun İzzet"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Bursa, Mihalıç kazası, Sarıkaya karyesi, Muhtar Recep Ağa vasıtasıyla Akile Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İzzet, Bursalı, 36, bakkal, çavuş (Bursa, Mihalıç kazası, Sarıkaya karyesi)\nAlıcı: Annesi Akile Hanım, Bursa, Mihalıç kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 3 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: az konuşur, her şeyi iyi gösterir\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 90",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "İzzet",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Bursa",
+        "occupation": "bakkal",
+        "epithet": "Bursalı",
+        "place": "Mihalıç kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Akile",
+        "gender": "kadın",
+        "age": 55,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mihalıç kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Bursa, Mihalıç kazası, Sarıkaya karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "orta",
+      "length_target": 90,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "3 Haziran 1331",
+      "closing": "",
+      "home_address": "Bursa, Mihalıç kazası, Sarıkaya karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5741,
+      "output": 3531
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 3 Haziran 1331\nHİTAP: Validem Akile Hanım'a\nGÖVDE: Evvela mahsus selam eder, mübarek ellerinden öperim. Geçen yolladığım kâğıt elinize geçmiş, cevabını okudum ferahladım. Benim hâlim vaktim pek yerindedir, siperde rahatımız iyi, hiç keder etmeyin. Kardeşim Hasan'ın askerlik celbi yaklaşmış. Buralar pek ona göre değil, anlarsın ya. Onu askerlik şubesinden ne yapıp edip tehir ettirin. Bedel lazımsa benden para bekleme. Benim cüzdanda ne varsa geçen ay kaybettim, nasip olmadı. Siz harman vakti ambardaki arpayı satın, muhtara söyleyin bir çaresine baksın, çocuğu yollamasınlar. ⟦Bizim köyden fırıncının oğlu Salih dördüncü tabura düşmüş.⟧ Onu daha göremedim ama geçen gün selamı geldi. Dükkânın anahtarı Hasan'da kalsın, veresiyeleri ufaktan toplasın.\nKAPANIŞ: Hepinizin gözlerinden öperim, duanızı eksik etmeyin.\nİMZA: Oğlun İzzet\nZARF: Bursa, Mihalıç kazası, Sarıkaya karyesi, Muhtar Recep Ağa vasıtasıyla Akile Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "96 kelime, hedef 90 (+7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:54+00:00",
+    "tokens": {
+      "input": 4323,
+      "output": 4222
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler (mahsus selam, kâğıt, celp, tehir) döneme uygundur ve modern bir ifade içermemektedir.",
+      "olculuk": "Duygular 'Buralar pek ona göre değil' gibi dolaylı ve ölçülü ifadelerle aktarılmış, abartıdan kaçınılmıştır.",
+      "okuryazarlik": "Cümle yapısı ve kelime seçimi, istekte belirtilen 'orta okuryazar' bakkal profiline tam olarak uymaktadır.",
+      "somutluk": "Mektup, 'ambardaki arpa', 'dükkânın anahtarı', 'veresiyeler' gibi somut ve gündelik ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup ana konuya, gizlenen bilgiye ve karakterin sesine sadık kalsa da, istekteki 'Dikkatsizlik: az' kuralını yerine getirmemiştir.",
+      "sahicilik": "Pratik kaygılar, kişisel bir örtbas ve gündelik haberlerin birleşimi mektuba oldukça sahici bir nitelik katmıştır."
+    },
+    "issues": [
+      {
+        "line": "Benim hâlim vaktim pek yerindedir, siperde rahatımız iyi, hiç keder etmeyin.",
+        "problem": "İstekte 'Dikkatsizlik: az' olarak belirtilmesine rağmen, mektupta yazarın farkında olmadan sızdırdığı ve sansürcünün gözünden kaçabilecek küçük bir askerî ayrıntı (yer, zaman, sayı vb.) bulunmamaktadır.",
+        "suggestion": "Bu cümleye yeri belli eden küçük bir ipucu eklenebilirdi, örneğin: 'Benim hâlim vaktim pek yerindedir, ⟦Conkbayırı'na bakan⟧ bu siperde rahatımız iyi, hiç keder etmeyin.'"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:54+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

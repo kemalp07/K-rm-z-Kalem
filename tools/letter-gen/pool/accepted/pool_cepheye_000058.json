@@ -1,0 +1,271 @@
+{
+  "id": "pool_cepheye_000058",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Behiye",
+    "epithet": "Ebe",
+    "age": 30,
+    "hometown": "Niğde",
+    "occupation": "ebe",
+    "relation": "nişanlısı"
+  },
+  "recipient": {
+    "name": "Bayram",
+    "relation": "nişanlısı",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 116,
+  "hand": "dictated",
+  "header": {
+    "text": "Karaağaç, 29 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Bayram'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Behiye der ki: Evvela selam eder, iki gözünden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bayram, benim hâlimi sorarsan şükür ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Burada her şeyin bereketi kaçtı, saymakla bitmez.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Çarşıda un bulamıyoruz, değirmenci buğday yok diyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen ay arpanın kilesi on kuruştu, dün on iki dediler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Şeker desen köyde kimsede kalmadı, pekmezle idare ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Tuzun okkası bile ateş pahası.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Babam yatar, çok selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geçen gün ebelik için Çukur mahalleye gittim, gelini sağ salim doğurttum, üç kuruş verdiler, o da iki somun ekmek etmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sandıktaki ceviz oyması çeyizlikleri çıkardım, güvelenmesin diye tek tek havalandırdım, katladım geri koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen nasılsın, urbanda yırtık sökük var mı, ayağında çarık durur mu, bir bir yaz bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Tez cevap yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Behiye"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Behiye kızımın ağzından yazdım. İmam Salih.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Ürgüplü Er Bayram'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Behiye Hanım, Ebe, 30, ebe (Niğde, Ürgüp kazası, Karaağaç karyesi)\nAlıcı: Nişanlısı Er Bayram, cephede\nYön: cepheye\nTarih: 29 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: fiyatların artması, un bulunamaması\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 116",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Behiye",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": "ebe",
+        "epithet": "Ebe",
+        "place": "Ürgüp kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Bayram",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ürgüp kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "fiyatların artması, un bulunamaması",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 116,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "29 Nisan 1331",
+      "closing": "",
+      "home_address": "Niğde, Ürgüp kazası, Karaağaç karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5660,
+      "output": 2332
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Karaağaç, 29 Nisan 1331\nHİTAP: Nişanlım Bayram'a\nGÖVDE: Behiye der ki: Evvela selam eder, iki gözünden öperim. Bayram, benim hâlimi sorarsan şükür ayaktayım. Burada her şeyin bereketi kaçtı, saymakla bitmez. Çarşıda un bulamıyoruz, değirmenci buğday yok diyor. Geçen ay arpanın kilesi on kuruştu, dün on iki dediler. Şeker desen köyde kimsede kalmadı, pekmezle idare ediyoruz. Tuzun okkası bile ateş pahası. Babam yatar, çok selamı var. Geçen gün ebelik için Çukur mahalleye gittim, gelini sağ salim doğurttum, üç kuruş verdiler, o da iki somun ekmek etmedi. Sandıktaki ceviz oyması çeyizlikleri çıkardım, güvelenmesin diye tek tek havalandırdım, katladım geri koydum. Sen nasılsın, urbanda yırtık sökük var mı, ayağında çarık durur mu, bir bir yaz bana. Tez cevap yolla.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Behiye)\nNOT: İşbu kâğıdı Behiye kızımın ağzından yazdım. İmam Salih.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Ürgüplü Er Bayram'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "108 kelime, hedef 116 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000005 ile ortak: \"der ki evvela selam eder iki\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:44+00:00",
+    "tokens": {
+      "input": 4327,
+      "output": 2874
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (urban, okka, kile, somun) ve genel ifade biçimi dönemin dilini başarıyla yansıtmaktadır.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, artan fiyatlar, geçim derdi ve nişanlının ihtiyaçlarına yönelik somut sorularla etkili bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin köy imamına mektup yazdırması, 'Behiye der ki' ifadesi ve imamın son notuyla kusursuzca canlandırılmıştır.",
+      "somutluk": "Mektup, arpanın kuruşu, ebelik ücretiyle alınamayan ekmek ve havalandırılan çeyizlikler gibi canlı ve somut ayrıntılarla zengindir.",
+      "sadakat": "Mektup, konu, karakterin titiz sesi, yazdırılma biçimi ve babasının ölümünü saklama detayı dahil olmak üzere isteğin tüm unsurlarına tam olarak uymaktadır.",
+      "sahicilik": "Ekonomik zorlukların dökümü, kişisel endişeler ve üstü kapalı kötü haberin birleşimi, mektuba yapaylıktan uzak, son derece sahici bir nitelik kazandırmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:44+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

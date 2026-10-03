@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000083",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Niyazi",
+    "epithet": "Aydınlı",
+    "age": 38,
+    "hometown": "Aydın",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Kadriye",
+    "relation": "annesi",
+    "location": "Aydın, Nazilli kazası, Söğütlü karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 80,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 18 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Kadriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Niyazi der ki: Benim hâlim vaktim yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bir kâğıt yolladım, cevabı gelmedi, gözüm yolda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim bölüğe köyden Demircilerin Süleyman düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dün sabah geldi, kavuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Onun sırtında kaputu, ayağında çarığı, elinde bir kese kuru inciri vardı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İncirleri bölüştük, bana altı tane düştü, ikisini yedim, dördünü yarına sakladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim zeytinliği budadılar mı, dalları kim topladı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bakkal Halil'e on iki kuruş borcumuz vardı, o ne oldu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ahırın çatısı aktıydı, kiremitleri dizdiler mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Hepsini sırasıyla kâğıda dökün.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "",
+    "seal": "Niyazi"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Söğütlülü Niyazi'nin sözüyle çadır arkadaşı Hoca İbrahim yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Aydın, Nazilli kazası, Söğütlü karyesi, İmam Hafız Efendi vasıtasıyla Kadriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Niyazi, Aydınlı, 38, çiftçi, er (Aydın, Nazilli kazası, Söğütlü karyesi)\nAlıcı: Annesi Kadriye Hanım, Aydın, Nazilli kazası, Söğütlü karyesi\nYön: cepheden\nTarih: 18 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Çabuk cevap yaz\nUzunluk: 80",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Niyazi",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": "çiftçi",
+        "epithet": "Aydınlı",
+        "place": "Nazilli kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Kadriye",
+        "gender": "kadın",
+        "age": 58,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Nazilli kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Aydın, Nazilli kazası, Söğütlü karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 80,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "18 Mayıs 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Aydın, Nazilli kazası, Söğütlü karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5699,
+      "output": 2769
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 18 Mayıs 1331\nHİTAP: Validem Kadriye Hanım'a\nGÖVDE: Evvela selam eder, iki ellerinden öperim. Niyazi der ki: Benim hâlim vaktim yerindedir. Bir kâğıt yolladım, cevabı gelmedi, gözüm yolda kaldı. Bizim bölüğe köyden Demircilerin Süleyman düştü. Dün sabah geldi, kavuştuk. Onun sırtında kaputu, ayağında çarığı, elinde bir kese kuru inciri vardı. İncirleri bölüştük, bana altı tane düştü, ikisini yedim, dördünü yarına sakladım. Bizim zeytinliği budadılar mı, dalları kim topladı? Bakkal Halil'e on iki kuruş borcumuz vardı, o ne oldu? Ahırın çatısı aktıydı, kiremitleri dizdiler mi? Hepsini sırasıyla kâğıda dökün.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: (mühür: Niyazi)\nNOT: İşbu kâğıdı Söğütlülü Niyazi'nin sözüyle çadır arkadaşı Hoca İbrahim yazdı.\nZARF: Aydın, Nazilli kazası, Söğütlü karyesi, İmam Hafız Efendi vasıtasıyla Kadriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "80 kelime, hedef 80 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000035 ile ortak: \"evvela selam eder iki ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:29+00:00",
+    "tokens": {
+      "input": 4333,
+      "output": 3418
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektup, dönemin dilini \"kâğıt\", \"bölük\", \"kese\", \"kuruş\" gibi kelimelerle ve modern ifadelerden kaçınarak kusursuz yansıtıyor.",
+      "olculuk": "Duygular \"gözüm yolda kaldı\" gibi ifadelerle dolaylı olarak hissettirilmiş, abartıdan ve doğrudan duygu adlandırmaktan kaçınılmıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin endişeleri (borç, çatı) ile mektubu yazan hocanın dili (\"Validem\", \"İşbu kâğıdı...\") uyum içinde verilmiştir.",
+      "somutluk": "Kuru incir sayısı, bakkal borcu, ahırın çatısı gibi somut ve gündelik ayrıntılar mektuba sahicilik katıyor.",
+      "sadakat": "Mektup; titiz ses tonu, hemşehriden bahsetme, önceki mektubun cevapsız kalması ve istenen kapanış cümlesi dahil isteğin tüm unsurlarına sadıktır.",
+      "sahicilik": "Karakterin titizliği, evdeki işlere dair endişeleri ve küçük detayları sayması (altı incir) onu klişeden uzak, gerçek bir insan gibi hissettiriyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:29+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "id": "pool_cepheden_000101",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Çoban",
+    "age": 38,
+    "hometown": "Kütahya",
+    "occupation": "çoban",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Seher",
+    "relation": "annesi",
+    "location": "Kütahya, Eşme kazası, Dereköy karyesi"
+  },
+  "writes": "scribe",
+  "writer": "alay kâtibi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 61,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 1 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem validem Seher Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinizden kemal-i hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual ederseniz, Allah'a şükür sağlığım yerindedir,",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Seddülbahir'de",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "beklemekteyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Vakit yaklaşıyor, harmanı ekinleri kim biçecek?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kara Hasan yardım eder mi, yoksa köyden ırgat mı tutacaksınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ambar boş kalmasın, tarlayı sakın sahipsiz komayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Geceleri buraların havası soğuk oluyor, gözüm hep bizim köyün gizli dağ yollarında.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralar bana dar geliyor gayrı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Dualarınızı eksik etmeyiniz.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam ve hürmetle.",
+  "signature": {
+    "text": "",
+    "seal": "Nail"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kütahya, Eşme kazası, Dereköy karyesi, İmam Efendi vasıtasıyla Seher Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Çoban, 38, çoban, er (Kütahya, Eşme kazası, Dereköy karyesi)\nAlıcı: Annesi Seher Hanım, Kütahya, Eşme kazası, Dereköy karyesi\nYön: cepheden\nTarih: 1 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: alay kâtibi)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 61",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kütahya",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Eşme kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 60,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eşme kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Kütahya, Eşme kazası, Dereköy karyesi",
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 61,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "1 Mayıs 1331",
+      "closing": "",
+      "home_address": "Kütahya, Eşme kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5741,
+      "output": 2319
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 1 Mayıs 1331\nHİTAP: Muhterem validem Seher Hanım'a\nGÖVDE: Evvela selam eder, mübarek ellerinizden kemal-i hürmetle öperim. Benim hâlimi sual ederseniz, Allah'a şükür sağlığım yerindedir, ⟦Seddülbahir'de⟧ beklemekteyiz. Vakit yaklaşıyor, harmanı ekinleri kim biçecek? Kara Hasan yardım eder mi, yoksa köyden ırgat mı tutacaksınız? Ambar boş kalmasın, tarlayı sakın sahipsiz komayın. Geceleri buraların havası soğuk oluyor, gözüm hep bizim köyün gizli dağ yollarında. Buralar bana dar geliyor gayrı. Dualarınızı eksik etmeyiniz.\nKAPANIŞ: Baki selam ve hürmetle.\nİMZA: (mühür: Nail)\nZARF: Kütahya, Eşme kazası, Dereköy karyesi, İmam Efendi vasıtasıyla Seher Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 61 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"hürmetle öperim benim halimi sual ederseniz\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:49+00:00",
+    "tokens": {
+      "input": 4242,
+      "output": 3593
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, kâtip ağzıyla (kemal-i hürmetle) gönderenin sade ifadelerini (harmanı kim biçecek) başarıyla harmanlayarak dönemi kusursuz yansıtıyor.",
+      "olculuk": "Mektup, saklanan duyguyu adlandırmak yerine imayla (gizli dağ yolları) hissettirse de, bir satırda bu ölçüyü biraz aşıyor.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin kâtibe yazdırdığı mektup formatı, kullanılan dil ve mühürlü imza ile tam olarak karşılanmış.",
+      "somutluk": "Mektup; harman, ırgat, ambar, tarla gibi köylü hayatına dair somut ve gündelik ayrıntılarla dolu.",
+      "sadakat": "Mektup; konu, uzunluk, yazım biçimi, saklanan niyet ve dikkatsizlik detayı dahil olmak üzere isteğin tüm unsurlarına harfiyen uyuyor.",
+      "sahicilik": "Mektup genel olarak çok sahici hissettirse de, bir cümledeki doğrudan ifade, mektubun geri kalanındaki ince işlenmiş dolaylı anlatımı hafifçe zedeliyor."
+    },
+    "issues": [
+      {
+        "line": "Buralar bana dar geliyor gayrı.",
+        "problem": "Bu cümle, bir önceki satırda 'gizli dağ yolları' ile ustaca ima edilen kaçma arzusunu ve sıkışmışlık hissini fazla doğrudan dile getiriyor.",
+        "suggestion": "Bu cümlenin tamamen çıkarılması, bir önceki cümlenin imasını daha güçlü ve tek başına bırakacağı için daha etkili olurdu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:27:49+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

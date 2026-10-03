@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheden_000088",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Sabri",
+    "epithet": "Adanalı",
+    "age": 27,
+    "hometown": "Adana",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Kadriye",
+    "relation": "kız kardeşi",
+    "location": "Adana, Ceyhan kazası, Dereköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "low",
+  "length_target": 98,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Hemşirem Kadriye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, sıhhatinizi dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bu sana yolladığım ikinci kâğıt, henüz bir cevap alamadım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buranın yazı bizim Çukurova'ya benzemez, toz toprak içinde bekliyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen ay Hıdrellez'di, köyde ateşler yanmış, dilekler tutulmuştur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ben o gün bir kuru peksimetle eski günleri yâd ettim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim tezgahı ne yaptınız, çürümesin depoda, çadır bezleriyle üstünü iyice örtün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Pamuk ipliği bulursan komşu kızlarına ver, boş durmasınlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Mustafa'nın anasına uğra, tütün kesesi bende duruyor, dönünce kendisine veririm, şimdilik emanettir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dün bizim taburu biraz geriye çektiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ondan mıdır bilmem, omuzlarımda koca bir yük var sanki, elim kaleme zor gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çocukların gözlerinden öperim, enişteme selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Kardeşin Sabri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Adana, Ceyhan kazası, Dereköy karyesi, İmam Recep Efendi vasıtasıyla Kadriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sabri, Adanalı, 27, dokumacı, er (Adana, Ceyhan kazası, Dereköy karyesi)\nAlıcı: Kız kardeşi Kadriye Hanım, Adana, Ceyhan kazası, Dereköy karyesi\nYön: cepheden\nTarih: 15 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: yaşlı ve yorgun, kısa yazar\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: arkadaşının öldüğünü gördüğünü\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (2.)\nKapanış: Allah'a emanet ol\nUzunluk: 98",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Sabri",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": "dokumacı",
+        "epithet": "Adanalı",
+        "place": "Ceyhan kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Kadriye",
+        "gender": "kadın",
+        "age": 16,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ceyhan kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Adana, Ceyhan kazası, Dereköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "arkadaşının öldüğünü gördüğünü",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 98,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "15 Haziran 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Adana, Ceyhan kazası, Dereköy karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5682,
+      "output": 5044
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Haziran 1331\nHİTAP: Muhterem Hemşirem Kadriye'ye\nGÖVDE: Evvela selam eder, sıhhatinizi dilerim. Bu sana yolladığım ikinci kâğıt, henüz bir cevap alamadım. Buranın yazı bizim Çukurova'ya benzemez, toz toprak içinde bekliyoruz. Geçen ay Hıdrellez'di, köyde ateşler yanmış, dilekler tutulmuştur. Ben o gün bir kuru peksimetle eski günleri yâd ettim. Bizim tezgahı ne yaptınız, çürümesin depoda, çadır bezleriyle üstünü iyice örtün. Pamuk ipliği bulursan komşu kızlarına ver, boş durmasınlar. Mustafa'nın anasına uğra, tütün kesesi bende duruyor, dönünce kendisine veririm, şimdilik emanettir. ⟦Dün bizim taburu biraz geriye çektiler.⟧ Ondan mıdır bilmem, omuzlarımda koca bir yük var sanki, elim kaleme zor gidiyor. Çocukların gözlerinden öperim, enişteme selam söyle.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Kardeşin Sabri\nZARF: Adana, Ceyhan kazası, Dereköy karyesi, İmam Recep Efendi vasıtasıyla Kadriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "97 kelime, hedef 98 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:03+00:00",
+    "tokens": {
+      "input": 4313,
+      "output": 3346
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil genelde döneme uygun, ancak 'omuzlarımda koca bir yük' ifadesi biraz modern bir klişe gibi duruyor.",
+      "olculuk": "Duygular somut detaylarla (kuru peksimet, emanet tütün kesesi) çok iyi hissettirilmiş, yalnızca bir satırda duygu adlandırmaya yaklaşılmış.",
+      "okuryazarlik": "İstekteki 'yüksek okuryazar' tanımına 'muhterem hemşirem', 'yâd ettim' gibi ifadeler ve düzgün cümle yapısıyla tam uyuyor.",
+      "somutluk": "Mektup, 'Çukurova', 'kuru peksimet', 'dokuma tezgahı', 'pamuk ipliği' gibi gündelik ve somut ayrıntılarla dolu.",
+      "sadakat": "İstekteki konu, saklanan bilgi, dikkatsizlik detayı, ton ve kapanış dahil tüm maddelere harfiyen uyulmuş.",
+      "sahicilik": "Arkadaşının ölümünü 'emanet' bir eşya üzerinden ima etmesi ve mesleğine dair endişeleri mektubu çok sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "Ondan mıdır bilmem, omuzlarımda koca bir yük var sanki, elim kaleme zor gidiyor.",
+        "problem": "'Omuzlarımda koca bir yük' metaforu hem modern bir klişedir hem de duyguyu adlandırmaya çok yaklaşarak ölçülülük kuralını zedeler.",
+        "suggestion": "Ondan mıdır bilmem, içime bir ağırlık çöktü, elim kalemi zor tutuyor."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:03+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

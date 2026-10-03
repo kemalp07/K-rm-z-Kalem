@@ -1,0 +1,294 @@
+{
+  "id": "pool_cepheden_000052",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Haydar",
+    "epithet": "Çorumlu",
+    "age": 40,
+    "hometown": "Çorum",
+    "occupation": "kahveci",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Raziye",
+    "relation": "annesi",
+    "location": "Çorum, Osmancık kazası, Ağılönü karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 86,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Raziye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "İşbu mektup Çorumlu Haydar'ın dilinden yazılmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Anacığım, evvela ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Şükür hayattayız, nefes alıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Beni merak etmeyesin diye bu kâğıdı karalattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dükkânın anahtarı Mustafa'da kalmıştı, çatı akıtıyordu, ona söyle kiremitleri aktarsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kahvenin vergisini denkleştirebildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hasan'la Zeynep'in gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Hasan dükkânın önündeki sediri onarsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocuklar geceleri aklıma geldikçe sabaha kadar tütün sarıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Buranın işi bitecek gibi değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bazen diyorum gece vakti kalkıp köye doğru yürüsem...",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Tövbe estağfurullah, başımıza iş almayalım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kızlara mukayyet olun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kahveye gelen ahbaba selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Bana çabuk kâğıt yollayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "",
+    "seal": "Haydar"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Haydar Onbaşı'nın ricası üzerine ben kaleme aldım, cümlenize selam ederim. Alay İmamı Hafız Ömer.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Çorum, Osmancık kazası, Ağılönü karyesi, İmam Şükrü Efendi vasıtasıyla Raziye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Haydar, Çorumlu, 40, kahveci, onbaşı (Çorum, Osmancık kazası, Ağılönü karyesi)\nAlıcı: Annesi Raziye Hanım, Çorum, Osmancık kazası, Ağılönü karyesi\nYön: cepheden\nTarih: 30 Nisan 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 86",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Haydar",
+        "gender": "erkek",
+        "age": 40,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Çorum",
+        "occupation": "kahveci",
+        "epithet": "Çorumlu",
+        "place": "Osmancık kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Raziye",
+        "gender": "kadın",
+        "age": 63,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Osmancık kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Çorum, Osmancık kazası, Ağılönü karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 86,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "30 Nisan 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Çorum, Osmancık kazası, Ağılönü karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5688,
+      "output": 3753
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 30 Nisan 1331\nHİTAP: Validem Raziye Hanım'a\nGÖVDE: İşbu mektup Çorumlu Haydar'ın dilinden yazılmıştır. Anacığım, evvela ellerinden öperim. Şükür hayattayız, nefes alıyoruz. Beni merak etmeyesin diye bu kâğıdı karalattım. Dükkânın anahtarı Mustafa'da kalmıştı, çatı akıtıyordu, ona söyle kiremitleri aktarsın. Kahvenin vergisini denkleştirebildiniz mi? Hasan'la Zeynep'in gözlerinden öperim. Hasan dükkânın önündeki sediri onarsın. Çocuklar geceleri aklıma geldikçe sabaha kadar tütün sarıyorum. Buranın işi bitecek gibi değil. Bazen diyorum gece vakti kalkıp köye doğru yürüsem... Tövbe estağfurullah, başımıza iş almayalım. Kızlara mukayyet olun. Kahveye gelen ahbaba selam eyle. Bana çabuk kâğıt yollayın.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: (mühür: Haydar)\nNOT: İşbu kâğıdı Haydar Onbaşı'nın ricası üzerine ben kaleme aldım, cümlenize selam ederim. Alay İmamı Hafız Ömer.\nZARF: Çorum, Osmancık kazası, Ağılönü karyesi, İmam Şükrü Efendi vasıtasıyla Raziye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "82 kelime, hedef 86 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:23+00:00",
+    "tokens": {
+      "input": 4358,
+      "output": 3432
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 1,
+      "sahicilik": 2
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler ('karalattım', 'denkleştirmek', 'mukayyet olmak') döneme uygundur ve modern bir ifade içermemektedir.",
+      "olculuk": "Duygular çoğunlukla somut eylemlerle ('sabaha kadar tütün sarıyorum') iyi hissettirilmiş, ancak firar düşüncesinin açıkça yazılması ölçülülüğü bozmuştur.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin alay imamına yazdırdığı mektup formatı, kâtibin üslubu ile Haydar'ın sade dilinin karışımıyla başarılı bir şekilde yansıtılmıştır.",
+      "somutluk": "Mektup, akan çatı, kiremit, kahve vergisi, sedir gibi gündelik ve somut ayrıntılarla doludur, bu da mektubu son derece gerçekçi kılmaktadır.",
+      "sadakat": "İstekte karakterin firar düşüncesini 'sakladığı' belirtilmesine rağmen, bu düşünce mektupta açıkça yazılarak isteğin en temel kurallarından biri ihlal edilmiştir.",
+      "sahicilik": "Pratik kaygılar ve yorgunluk hissi mektubu sahici kılsa da, bir askerin alay imamına yazdırdığı mektuba firar iması bile eklemesi gerçekçiliği ciddi şekilde zedelemektedir."
+    },
+    "issues": [
+      {
+        "line": "Bazen diyorum gece vakti kalkıp köye doğru yürüsem... Tövbe estağfurullah, başımıza iş almayalım.",
+        "problem": "Bu satır, istekte 'Sakladığı' olarak belirtilen ve mektupta yer almaması gereken firar düşüncesini açıkça ifade ediyor. Bir asker, özellikle mektubunu bir alay imamına yazdırırken, bu kadar tehlikeli bir düşünceyi kâğıda dökmez.",
+        "suggestion": "Bu cümle tamamen çıkarılmalı ve yerine yorgunluğu veya belirsizliği daha üstü kapalı ifade eden bir cümle eklenmelidir, örneğin: 'Buranın işi ne vakit biter, Allah bilir.'"
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T17:21:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

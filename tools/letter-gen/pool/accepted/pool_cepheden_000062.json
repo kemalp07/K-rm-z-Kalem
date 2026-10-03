@@ -1,0 +1,247 @@
+{
+  "id": "pool_cepheden_000062",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kadir",
+    "epithet": "Aydınlı",
+    "age": 21,
+    "hometown": "Aydın",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Fikriye",
+    "relation": "annesi",
+    "location": "Aydın, Söke kazası, Dereköy karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 63,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 3 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Fikriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim vücut sıhhatim yerindedir, hiç merak etmeyesiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Haziran gelmeden arpa biçilecek.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Koca tarlaya tırpan için yevmiyeyle kimi tutacaksınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hasan Emmi'ye söyleyin, hak neyse baştan konuşun, sonra niza çıkmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Aşağı bağdaki otlar zamanında yolundu mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hasattan tohumluğu ayırmayı katiyen unutmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ahırdaki saman yetti mi, kiremitler aktarıldı mı, hepsini bana tek tek kâğıda yazdırın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "",
+    "seal": "Kadir"
+  },
+  "note": {
+    "text": "İşbu mektubu Sökeli Kadir'in iltiması üzerine bendeniz kaleme aldım. Bölük Kâtibi.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Aydın, Söke kazası, Dereköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Fikriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kadir, Aydınlı, 21, çiftçi, er (Aydın, Söke kazası, Dereköy karyesi)\nAlıcı: Annesi Fikriye Hanım, Aydın, Söke kazası, Dereköy karyesi\nYön: cepheden\nTarih: 3 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Duanı eksik etme\nUzunluk: 63",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kadir",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Aydın",
+        "occupation": "çiftçi",
+        "epithet": "Aydınlı",
+        "place": "Söke kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Fikriye",
+        "gender": "kadın",
+        "age": 40,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Aydın",
+        "occupation": null,
+        "epithet": null,
+        "place": "Söke kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Aydın, Söke kazası, Dereköy karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 63,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "3 Mayıs 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Aydın, Söke kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5740,
+      "output": 2809
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 3 Mayıs 1331\nHİTAP: Muhterem Validem Fikriye Hanım'a\nGÖVDE: Evvela mahsus selam eder, mübarek ellerinizden kemal-i hürmetle öperim. Benim vücut sıhhatim yerindedir, hiç merak etmeyesiniz. Haziran gelmeden arpa biçilecek. Koca tarlaya tırpan için yevmiyeyle kimi tutacaksınız? Hasan Emmi'ye söyleyin, hak neyse baştan konuşun, sonra niza çıkmasın. Aşağı bağdaki otlar zamanında yolundu mu? Hasattan tohumluğu ayırmayı katiyen unutmayın. Ahırdaki saman yetti mi, kiremitler aktarıldı mı, hepsini bana tek tek kâğıda yazdırın.\nKAPANIŞ: Duanı eksik etme.\nİMZA: (mühür: Kadir)\nNOT: İşbu mektubu Sökeli Kadir'in iltiması üzerine bendeniz kaleme aldım. Bölük Kâtibi.\nZARF: Aydın, Söke kazası, Dereköy karyesi, Muhtar İbrahim Ağa vasıtasıyla Fikriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 63 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"evvela mahsus selam eder mübarek ellerinizden\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:17+00:00",
+    "tokens": {
+      "input": 4268,
+      "output": 2590
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtibin kullanacağı 'kemal-i hürmetle', 'niza', 'işbu mektup' gibi ifadeler yerinde ve doğru kullanılmış, modern hiçbir kelime yoktur.",
+      "olculuk": "Endişe ve hasret, doğrudan söylenmek yerine çiftlik işleriyle ilgili sıralanan somut sorularla çok ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin kâtibe yazdırdığı mektup formatı; kâtibin resmî dili, mektup sahibinin pratik kaygıları, mühür ve kâtip notuyla kusursuz uygulanmıştır.",
+      "somutluk": "Mektup; arpa, tırpan, yevmiye, bağ, saman, kiremit gibi tamamen somut ve mevsime uygun tarım detayları üzerine kurulmuştur.",
+      "sadakat": "Mektup; konu, ton, uzunluk, yazım biçimi, kapanış cümlesi ve hassas bilgi içermemesi gibi isteğin tüm unsurlarına tam olarak sadıktır.",
+      "sahicilik": "Titiz bir çiftçinin zihnindeki pratik endişelerin bir kâtibin resmî diliyle birleşimi, mektubu son derece sahici ve klişelerden uzak kılmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:22:17+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

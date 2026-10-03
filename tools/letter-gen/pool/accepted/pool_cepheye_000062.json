@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000062",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Vesile",
+    "epithet": "Bursalı",
+    "age": 34,
+    "hometown": "Bursa",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Hamdi",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 74,
+  "hand": "hurried",
+  "header": {
+    "text": "Dereköy, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendim Hamdi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Mektubunu okuduk çok sevindik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim halimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde İbrahim ağanın kızı Ümmühan gelin oluyo karşı köye verdiler yakında düğün var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hatice nene vefat etdi geçen salı Allah rahmet eylesin mekanı cennet olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Başka önemli bişey yok köyümüzde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Zeytinler çiçek açdı ananla onlara bakıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Yağmur az yağdı bu sene biraz kuraklık var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Gönderdiğin parayı aldım kasap Rıza'ya olan borcu kapattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Evdekiler bütün komşular herkez sana çok selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Karın Vesile"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bursalı Hamdi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Vesile Hanım, Bursalı, 34, ev hanımı (Bursa, Gemlik kazası, Dereköy karyesi)\nAlıcı: Kocası Onbaşı Hamdi, cephede\nYön: cepheye\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: ağırbaşlı, kalıplara sadık\nKonu: köyden haberler, kim evlendi kim öldü\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 74",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Vesile",
+        "gender": "kadın",
+        "age": 34,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Bursa",
+        "occupation": "ev hanımı",
+        "epithet": "Bursalı",
+        "place": "Gemlik kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Bursa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gemlik kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "köyden haberler, kim evlendi kim öldü",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 74,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "26 Mayıs 1331",
+      "closing": "",
+      "home_address": "Bursa, Gemlik kazası, Dereköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5658,
+      "output": 3058
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Dereköy, 26 Mayıs 1331\nHİTAP: Efendim Hamdi'ye\nGÖVDE: Evvela selam eder hatırını sorarım. Mektubunu okuduk çok sevindik. Bizim halimizi sorarsan şükür ayaktayız. Köyde İbrahim ağanın kızı Ümmühan gelin oluyo karşı köye verdiler yakında düğün var. Hatice nene vefat etdi geçen salı Allah rahmet eylesin mekanı cennet olsun. Başka önemli bişey yok köyümüzde. Zeytinler çiçek açdı ananla onlara bakıyoruz. Yağmur az yağdı bu sene biraz kuraklık var. Gönderdiğin parayı aldım kasap Rıza'ya olan borcu kapattım. Evdekiler bütün komşular herkez sana çok selam ediyo.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Karın Vesile\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Bursalı Hamdi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "74 kelime, hedef 74 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:15+00:00",
+    "tokens": {
+      "input": 4211,
+      "output": 3538
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Mektupta modern bir kelime veya ifade bulunmuyor ve 'etdi', 'oluyo', 'herkez' gibi döneme uygun imla hataları yerinde kullanılmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, haberler (ölüm, düğün) ve durumlar (kuraklık, borç) ölçülü bir dille aktarılmış.",
+      "okuryazarlik": "Kısa cümleler, basit kelimeler ve tutarlı imla hataları, istenen düşük okuryazarlık seviyesini başarıyla yansıtıyor.",
+      "somutluk": "Mektup zeytinlerin çiçek açması, kasaba olan borç, kuraklık gibi gündelik ve somut ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "Mektup, konu, uzunluk, yazma biçimi ve saklanan bilgi dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uyuyor.",
+      "sahicilik": "Mektup, dönemin mektup unsurlarını (düğün, ölüm, tarım, borç) bir araya getirdiği için biraz formülsel hissettirse de dil kullanımı sayesinde sahiciliğini koruyor."
+    },
+    "issues": [
+      {
+        "line": "Hatice nene vefat etdi geçen salı Allah rahmet eylesin mekanı cennet olsun.",
+        "problem": "İki ayrı kalıp dua ('Allah rahmet eylesin', 'mekanı cennet olsun') art arda kullanılarak cümle, düşük okuryazar birinin üslubuna göre biraz uzun ve basmakalıp hale gelmiş.",
+        "suggestion": "Hatice nene geçen salı vefat etdi. Allah rahmet eylesin."
+      },
+      {
+        "line": "Evdekiler bütün komşular herkez sana çok selam ediyo.",
+        "problem": "'Bütün komşular' ve 'herkez' ifadeleri aynı anlama geldiği için cümlede gereksiz bir tekrar oluşturuyor.",
+        "suggestion": "Anan, komşular, herkez sana çok selam ediyo."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:29:15+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

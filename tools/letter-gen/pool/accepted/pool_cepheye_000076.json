@@ -1,0 +1,280 @@
+{
+  "id": "pool_cepheye_000076",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Elif",
+    "epithet": "Malatyalı",
+    "age": 18,
+    "hometown": "Malatya",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Zeki",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "scribe",
+  "writer": "postane önündeki arzuhalci",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 95,
+  "hand": "dictated",
+  "header": {
+    "text": "Malatya, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Zeki'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, hatırını sual eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İşbu mektubu çarşıda arzuhalci efendiye yazdırıyorum, kulağını açıp iyi dinleyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde günden güne sela veriliyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Aşağı mahallede evlerin kapısı kapandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Herkes sıtma mıdır nedir bir derde düştü yatıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizde şükür hastalık yok, oğlanın da bir şeyi yok, döşekte sessizce uyuyor, aklın sakın burada kalmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen oradan bana çabuk haber yollayasın, mektubu geciktirmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Evde para bitti, arpalar sarardı harman zamanı geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Amelenin yevmiyesi ateş pahası.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "O tarlayı kim biçecek, nasıl kaldıracağız onu da açıkça yazasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Pakete bir kese kavrulmuş leblebi koydurttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kendini sakınasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "",
+    "seal": "Elif"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hekimhanlı Zeki'ye",
+    "sensitive": false
+  },
+  "package": [
+    "leblebi"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Elif Hanım, Malatyalı, 18, çiftçi (Malatya, Hekimhan kazası, Bahçecik karyesi)\nAlıcı: Kocası Er Zeki, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: postane önündeki arzuhalci)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: köydeki salgın hastalık (üstü örtülü)\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: leblebi\nKapanış: Baki selam\nUzunluk: 95",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Elif",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "çiftçi",
+        "epithet": "Malatyalı",
+        "place": "Hekimhan kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Zeki",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Hekimhan kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "scribe",
+      "writer": "postane önündeki arzuhalci",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "köydeki salgın hastalık (üstü örtülü)",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 95,
+      "package": [
+        "leblebi"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "20 Haziran 1331",
+      "closing": "Baki selam",
+      "home_address": "Malatya, Hekimhan kazası, Bahçecik karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5849,
+      "output": 3534
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Malatya, 20 Haziran 1331\nHİTAP: Muhterem zevcim Zeki'ye\nGÖVDE: Evvela selam eder, hatırını sual eylerim. İşbu mektubu çarşıda arzuhalci efendiye yazdırıyorum, kulağını açıp iyi dinleyesin. Köyde günden güne sela veriliyor. Aşağı mahallede evlerin kapısı kapandı. Herkes sıtma mıdır nedir bir derde düştü yatıyor. Bizde şükür hastalık yok, oğlanın da bir şeyi yok, döşekte sessizce uyuyor, aklın sakın burada kalmasın. Sen oradan bana çabuk haber yollayasın, mektubu geciktirmeyesin. Evde para bitti, arpalar sarardı harman zamanı geldi çattı. Amelenin yevmiyesi ateş pahası. O tarlayı kim biçecek, nasıl kaldıracağız onu da açıkça yazasın. Pakete bir kese kavrulmuş leblebi koydurttum. Kendini sakınasın.\nKAPANIŞ: Baki selam.\nİMZA: (mühür: Elif)\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hekimhanlı Zeki'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 95 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:52+00:00",
+    "tokens": {
+      "input": 4302,
+      "output": 4288
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektup, 'arzuhalci', 'sela verilmek', 'ateş pahası' gibi 1915 dönemine tam uygun kelimeler ve ifadeler kullanıyor.",
+      "olculuk": "Mektup, duyguları doğrudan adlandırmak yerine 'sela veriliyor', 'evlerin kapısı kapandı' gibi somut imgelerle endişeyi ve aciliyeti ustaca hissettiriyor.",
+      "okuryazarlik": "Metin, bir kâtibin 'muhterem zevcim', 'sual eylerim' gibi kalıplarıyla karakterin 'kulağını açıp dinle' gibi doğrudan ve sert sesini başarıyla harmanlayarak 'kâtibe yazdırma' biçimine tam uyuyor.",
+      "somutluk": "Mektup, sararan arpalar, amele yevmiyesi ve bir kese leblebi gibi elle tutulur ayrıntılarla dolu, bu da anlatılan durumu gerçekçi kılıyor.",
+      "sadakat": "Mektup; gönderenin sert tonu, kâtibe yazdırma biçimi, salgın konusu, leblebi paketi ve istenen kapanış sözü dahil olmak üzere isteğin her unsurunu kusursuzca yerine getiriyor.",
+      "sahicilik": "Kâtibin resmî diliyle kadının dolaysız ve talepkâr sesinin karışımı ve çocuğun 'sessizce uyuduğuna' dair ince bir endişe barındıran detay, son derece inandırıcı bir karakter yaratıyor."
+    },
+    "issues": [
+      {
+        "line": "O tarlayı kim biçecek, nasıl kaldıracağız onu da açıkça yazasın.",
+        "problem": "Cümle, bir soruyu ve bir emri biraz garip bir şekilde birleştiriyor; dikte edilen bir söz için bile hafifçe doğal durmuyor.",
+        "suggestion": "O tarlayı kim biçecek, nasıl kaldıracağız? Bu işe ne diyeceksen açıkça yaz."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:52+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

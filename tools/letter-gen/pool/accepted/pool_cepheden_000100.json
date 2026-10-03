@@ -1,0 +1,257 @@
+{
+  "id": "pool_cepheden_000100",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Şükrü",
+    "epithet": "Balıkesirli",
+    "age": 31,
+    "hometown": "Balıkesir",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Melek",
+    "relation": "nişanlısı",
+    "location": "Balıkesir, Bigadiç kazası, Kocaköy karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 72,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Nişanlım Melek Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, o güzel hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual edersen, aslanlar gibi ayaktayım, hiçbir derdim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Yolladığın paketi kâtip efendiyle beraber açtık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "O kalın yün çorapları ayağıma geçirdim, paşa giyse inan ki böyle rahat edemez.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Hele o kuru incirler pek makbule geçti, cephede ağzımız tatlandı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Geçen gün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "topçu taburundan",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kocaköylü İbrahim'i gördüm, senin kulaklarını çınlattık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Burada keyfim pek yerinde, günlerim hep yiyip içmekle geçiyor sanırsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köydekilere, anana, babana hürmetlerimi sunarım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Selam ve dua ile.",
+  "signature": {
+    "text": "",
+    "seal": "Şükrü"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Balıkesir, Bigadiç kazası, Kocaköy karyesi, İmam Ali Efendi vasıtasıyla Melek Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Şükrü, Balıkesirli, 31, çiftçi, onbaşı (Balıkesir, Bigadiç kazası, Kocaköy karyesi)\nAlıcı: Nişanlısı Melek Hanım, Balıkesir, Bigadiç kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 15 Mayıs 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Selam ve dua ile\nUzunluk: 72",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Şükrü",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Balıkesir",
+        "occupation": "çiftçi",
+        "epithet": "Balıkesirli",
+        "place": "Bigadiç kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Melek",
+        "gender": "kadın",
+        "age": 26,
+        "relation": "nişanlısı",
+        "rank": null,
+        "hometown": "Balıkesir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bigadiç kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Balıkesir, Bigadiç kazası, Kocaköy karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "hasta yattığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 72,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "15 Mayıs 1331",
+      "closing": "Selam ve dua ile",
+      "home_address": "Balıkesir, Bigadiç kazası, Kocaköy karyesi",
+      "soldier_relation": "nişanlısı",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5860,
+      "output": 3444
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Mayıs 1331\nHİTAP: Nişanlım Melek Hanım'a\nGÖVDE: Evvela mahsus selam eder, o güzel hatırını sorarım. Benim hâlimi sual edersen, aslanlar gibi ayaktayım, hiçbir derdim yoktur. Yolladığın paketi kâtip efendiyle beraber açtık. O kalın yün çorapları ayağıma geçirdim, paşa giyse inan ki böyle rahat edemez. Hele o kuru incirler pek makbule geçti, cephede ağzımız tatlandı. Geçen gün ⟦topçu taburundan⟧ Kocaköylü İbrahim'i gördüm, senin kulaklarını çınlattık. Burada keyfim pek yerinde, günlerim hep yiyip içmekle geçiyor sanırsın. Köydekilere, anana, babana hürmetlerimi sunarım.\nKAPANIŞ: Selam ve dua ile.\nİMZA: (mühür: Şükrü)\nZARF: Balıkesir, Bigadiç kazası, Kocaköy karyesi, İmam Ali Efendi vasıtasıyla Melek Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "72 kelime, hedef 72 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000095 ile ortak: \"hatırını sorarım benim halimi sual edersen\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:32+00:00",
+    "tokens": {
+      "input": 4280,
+      "output": 2995
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kâtibin ağzına uygun 'mahsus selam, sual edersen, makbule geçti' gibi kalıplar ve halk ağzından 'aslanlar gibi' deyimiyle dönemin dili kusursuz yakalanmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış; istenen şakacı ton, abartılı bir iyilik hâli tasviriyle ve somut olaylarla (çorap, incir) yansıtılmış.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin kâtibe yazdırdığı mektup formatı, hem kâtibin kalıplı dili hem de gönderenin basit mesajıyla (ve mühürle) mükemmel şekilde yansıtılmış.",
+      "somutluk": "Mektup 'kalın yün çoraplar', 'kuru incirler', 'Kocaköylü İbrahim' gibi soyut ifadelerden uzak, son derece somut ve canlı ayrıntılar içeriyor.",
+      "sadakat": "İstekte belirtilen konu, ton, saklanan bilgi, dikkatsizlik seviyesi ve kapanış cümlesi dahil tüm maddelere eksiksiz uyulmuş.",
+      "sahicilik": "Kâtiple paketi beraber açma gibi ince bir ayrıntı ve zorlukları şakayla geçiştirme çabası, mektuba klişelerden uzak, çok sahici bir hava katmış."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:27:32+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

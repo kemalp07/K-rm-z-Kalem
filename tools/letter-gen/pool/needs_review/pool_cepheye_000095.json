@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheye_000095",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Kevser",
+    "epithet": "Harputlu",
+    "age": 25,
+    "hometown": "Harput",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Nuri",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 95,
+  "hand": "hurried",
+  "header": {
+    "text": "Kızılca, 15 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Nuri Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Nuri efendi bu sana ikinci kağıdım ses yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Postacı yoldamı uyudu naptı bilmeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hıdrellez geldi geçti biz madımak aşı kaynattık komşularla bahçede yedik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sofrada senin yerin boştu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Kardeşin İbrahim senin mindere kuruldu senin payınıda yedi maşallah şişiyo buralarda tosun gibi oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gelsende görsen.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çatı gene aktı yağmurda leğen koydum altına sonra çamurla sıvadım hallettim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Şeker bulunmuyo pazarda bitti çayı kuru dut ile içiyoz ağzımız tatlanıyo hiç fena olmuyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sen nasılsın oralarda keyfin yerindemi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizi dert etme çok iyiyiz tavuklara yem veriyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bir kağıt karala yolla bize çok üşenme oralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Siperdeki arkadaşlarınada selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "Karın Kevser"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı Nuri'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kevser Hanım, Harputlu, 25, ev hanımı (Harput, Çemişgezek kazası, Kızılca karyesi)\nAlıcı: Kocası Er Nuri, cephede\nYön: cepheye\nTarih: 15 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: nişanlısının başkasıyla evlendirileceğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 95",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Kevser",
+        "gender": "kadın",
+        "age": 25,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Harput",
+        "occupation": "ev hanımı",
+        "epithet": "Harputlu",
+        "place": "Çemişgezek kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Nuri",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Harput",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çemişgezek kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "nişanlısının başkasıyla evlendirileceğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 95,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "15 Mayıs 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Harput, Çemişgezek kazası, Kızılca karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5682,
+      "output": 4324
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kızılca, 15 Mayıs 1331\nHİTAP: Nuri Efendi'ye\nGÖVDE: Nuri efendi bu sana ikinci kağıdım ses yok. Postacı yoldamı uyudu naptı bilmeyorum. Hıdrellez geldi geçti biz madımak aşı kaynattık komşularla bahçede yedik. Sofrada senin yerin boştu. Kardeşin İbrahim senin mindere kuruldu senin payınıda yedi maşallah şişiyo buralarda tosun gibi oldu. Gelsende görsen. Çatı gene aktı yağmurda leğen koydum altına sonra çamurla sıvadım hallettim. Şeker bulunmuyo pazarda bitti çayı kuru dut ile içiyoz ağzımız tatlanıyo hiç fena olmuyo. Sen nasılsın oralarda keyfin yerindemi. Bizi dert etme çok iyiyiz tavuklara yem veriyoz. Bir kağıt karala yolla bize çok üşenme oralarda. Siperdeki arkadaşlarınada selam söyle.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: Karın Kevser\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kızılcalı Nuri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "93 kelime, hedef 95 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:07+00:00",
+    "tokens": {
+      "input": 4293,
+      "output": 3127
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil genel olarak döneme uygun, ancak 'hallettim' ve 'keyfin yerinde mi' gibi ifadeler modern tınlıyor.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, hasret ve endişe somut olaylar ve şakacı bir dille ustaca hissettirilmiş.",
+      "okuryazarlik": "İmla hataları, kısa cümleler ve sade kelime seçimi, istenen düşük okuryazarlık seviyesiyle tamamen uyumlu.",
+      "somutluk": "Madımak aşı, akan çatı, leğen, kuru dut gibi gündelik ve somut ayrıntılar mektubu çok canlı kılmış.",
+      "sadakat": "İstek 'Dikkatsizlik: yok' demesine rağmen mektupta sansürün yakalayacağı 'Siperdeki' kelimesi kullanılmış.",
+      "sahicilik": "Şakacı bir dille anlatılan gündelik sıkıntılar ve aile içi dinamikler mektuba klişelerden uzak, sahici bir ses katmış."
+    },
+    "issues": [
+      {
+        "line": "Nuri efendi bu sana ikinci kağıdım ses yok.",
+        "problem": "Hitapta kullanılan 'efendi' kelimesi özel isme dahil bir saygı ifadesi olduğu için büyük harfle başlamalıdır.",
+        "suggestion": "Nuri Efendi bu sana ikinci kağıdım ses yok."
+      },
+      {
+        "line": "Siperdeki arkadaşlarınada selam söyle.",
+        "problem": "İstekte 'Dikkatsizlik: yok' belirtilmiş, yani mektupta hiçbir askerî bilgi olmamalıdır. 'Siper' kelimesi doğrudan askerî bir terimdir ve sansürlenmesi gerekir.",
+        "suggestion": "Oradaki arkadaşlarına da selam söyle."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

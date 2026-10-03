@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000069",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Dursun",
+    "epithet": "İstanbullu",
+    "age": 58,
+    "hometown": "Dersaadet",
+    "occupation": "kahveci",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Recep",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 78,
+  "hand": "dictated",
+  "header": {
+    "text": "Dersaadet, 12 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Recep'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Recep gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kaç vakittir postacı sokağa uğramaz oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Dükkânı erken kapatıp kapıda bekliyorum, kâğıdın gelmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bir yaramazlık yoktur inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim hâlimi sorarsan şükür ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kahveyi her gün açıyorum ama gelen giden azaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Şeker iyice karaborsa oldu, çayı acı içiyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Fırınların önü çok kalabalık, ekmek sırası bitmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Biz idare ediyoruz, sen kendini düşün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Havalar ısındı, oralarda suyunuz yemeğiniz nasıldır yazasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kardeşin Ayşe de seni çok soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bize tez elden bir iki satır yolla da gözümüz yollarda kalmasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Baban",
+    "seal": "Dursun"
+  },
+  "note": {
+    "text": "İşbu mektubu Dursun Amca'nın ağzından ben yazdım. Komşunuz İsmail.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı İstanbullu Recep'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Dursun, İstanbullu, 58, kahveci (Dersaadet, Kasımpaşa, Yahya Kâhya mahallesi)\nAlıcı: Oğlu Onbaşı Recep, cephede\nYön: cepheye\nTarih: 12 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: mektup gelmediği için endişe\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 78",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Dursun",
+        "gender": "erkek",
+        "age": 58,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": "kahveci",
+        "epithet": "İstanbullu",
+        "place": "Kasımpaşa, Yahya Kâhya mahallesi"
+      },
+      "recipient": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kasımpaşa, Yahya Kâhya mahallesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "mektup gelmediği için endişe",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 78,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "12 Mayıs 1331",
+      "closing": "",
+      "home_address": "Dersaadet, Kasımpaşa, Yahya Kâhya mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5617,
+      "output": 2072
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Dersaadet, 12 Mayıs 1331\nHİTAP: Oğlum Recep'e\nGÖVDE: Oğlum Recep gözlerinden öperim. Kaç vakittir postacı sokağa uğramaz oldu. Dükkânı erken kapatıp kapıda bekliyorum, kâğıdın gelmiyor. Bir yaramazlık yoktur inşallah. Benim hâlimi sorarsan şükür ayaktayım. Kahveyi her gün açıyorum ama gelen giden azaldı. Şeker iyice karaborsa oldu, çayı acı içiyoruz. Fırınların önü çok kalabalık, ekmek sırası bitmiyor. Biz idare ediyoruz, sen kendini düşün. Havalar ısındı, oralarda suyunuz yemeğiniz nasıldır yazasın. Kardeşin Ayşe de seni çok soruyor. Bize tez elden bir iki satır yolla da gözümüz yollarda kalmasın.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Dursun) Baban\nNOT: İşbu mektubu Dursun Amca'nın ağzından ben yazdım. Komşunuz İsmail.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı İstanbullu Recep'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 78 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:07+00:00",
+    "tokens": {
+      "input": 4285,
+      "output": 4644
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil, 'karaborsa', 'kâğıt', 'yaramazlık' gibi kelimelerle 1915 İstanbul'una tam olarak uyuyor ve hiçbir modern ifade içermiyor.",
+      "olculuk": "Endişe, 'dükkânı erken kapatıp kapıda bekliyorum' gibi somut eylemlerle gösterilmiş, duygu doğrudan adlandırılmamış.",
+      "okuryazarlik": "Mektup, okuma yazma bilmeyen bir babanın ağzından bir çocuğa yazdırılmış hissini başarıyla veriyor, ancak imza formatı kurala tam uymuyor.",
+      "somutluk": "Savaş zamanı İstanbul'undaki hayat, 'şekerin karaborsaya düşmesi', 'acı çay' ve 'fırın sırası' gibi canlı ve somut ayrıntılarla anlatılmış.",
+      "sadakat": "İstekteki tüm unsurlar (konu, gizlenen bilgi, yazım biçimi, karakterler, uzunluk) mektuba eksiksiz ve doğru bir şekilde yansıtılmış.",
+      "sahicilik": "Yaşlı bir babanın endişesi, gündelik hayatın zorlukları ve komşunun yazdığı not ile mektup son derece gerçekçi ve dokunaklı bir his veriyor."
+    },
+    "issues": [
+      {
+        "line": "İMZA: (mühür: Dursun) Baban",
+        "problem": "Okuma yazma bilmeyenler için imza kuralı '(mühür: İsim)' şeklindedir; 'Baban' kelimesinin bu teknik notasyonla birleştirilmesi biraz yapay durmaktadır.",
+        "suggestion": "Daha doğal bir kullanım için imza satırına sadece `Baban` yazılıp, mühürün varlığı okuyucunun anlamasına bırakılabilir veya kurala sıkıca bağlı kalarak sadece `(mühür: Dursun)` kullanılabilirdi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:07+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

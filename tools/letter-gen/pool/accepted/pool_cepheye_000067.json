@@ -1,0 +1,250 @@
+{
+  "id": "pool_cepheye_000067",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazlı",
+    "epithet": "Adanalı",
+    "age": 35,
+    "hometown": "Adana",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Kâmil",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 61,
+  "hand": "elegant",
+  "header": {
+    "text": "Gökçeören, 12 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Kâmil Efendi'ye,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubunu aldık, ziyadesiyle memnun olduk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen hafta şehre inen Hacı Veli ile sana bir çıkın yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İçine tütün, biraz ceviz, bir de kendi ellerimle diktiğim pamuklu gömleği koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Buralarda havalar iyice ısındı, ekin biçmeye başladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Harman yerinde işler biraz ağır gidiyor ama bir hal çaresine bakıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çocuklar iyidir, ellerinden öper.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Evde merak edilecek bir husus yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen nasılsın?",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Nazlı"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Gökçeörenli Kâmil'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazlı Hanım, Adanalı, 35, ev hanımı (Adana, Karaisalı kazası, Gökçeören karyesi)\nAlıcı: Kocası Er Kâmil, cephede\nYön: cepheye\nTarih: 12 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: dertli, ama dertlerini söylemez\nKonu: paketle gönderilen şeyler\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Allah'a emanet ol\nUzunluk: 61",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "gender": "kadın",
+        "age": 35,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "ev hanımı",
+        "epithet": "Adanalı",
+        "place": "Karaisalı kazası, Gökçeören karyesi"
+      },
+      "recipient": {
+        "name": "Kâmil",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karaisalı kazası, Gökçeören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "paketle gönderilen şeyler",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 61,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "12 Haziran 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Adana, Karaisalı kazası, Gökçeören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5764,
+      "output": 2313
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Gökçeören, 12 Haziran 1331\nHİTAP: Muhterem zevcim Kâmil Efendi'ye,\nGÖVDE: Mektubunu aldık, ziyadesiyle memnun olduk. Geçen hafta şehre inen Hacı Veli ile sana bir çıkın yolladım. İçine tütün, biraz ceviz, bir de kendi ellerimle diktiğim pamuklu gömleği koydum. Buralarda havalar iyice ısındı, ekin biçmeye başladık. Harman yerinde işler biraz ağır gidiyor ama bir hal çaresine bakıyoruz. Çocuklar iyidir, ellerinden öper. Evde merak edilecek bir husus yoktur. Sen nasılsın?\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Zevcen Nazlı\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Gökçeörenli Kâmil'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "58 kelime, hedef 61 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:46+00:00",
+    "tokens": {
+      "input": 4197,
+      "output": 3777
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime seçimi ve cümle yapıları ('ziyadesiyle memnun olduk', 'merak edilecek bir husus yoktur') dönemin okumuş diline tamamen uygundur.",
+      "olculuk": "Mektup, 'işler biraz ağır gidiyor' gibi somut bir ifadeyle derdini imâ ederek duygusal adlandırmadan ve abartıdan kaçınmıştır.",
+      "okuryazarlik": "Kullanılan dil ('muhterem zevcim', 'husus') ve düzgün cümle yapısı, istekte belirtilen 'yüksek' okuryazarlık seviyesiyle tam uyumludur.",
+      "somutluk": "Paketin içindekiler (tütün, ceviz, gömlek) ve tarım işleri (ekin biçme, harman yeri) gibi elle tutulur ayrıntılar mektubu somut kılmaktadır.",
+      "sadakat": "Mektup, istenen konu, ton ve gizlenen bilgi dahil olmak üzere isteğin neredeyse tüm unsurlarına sadıktır, ancak gövde uzunluğu istenenden belirgin şekilde kısadır.",
+      "sahicilik": "Pratik haberlerle saklanan büyük bir kederin birleşimi, mektuba klişelerden uzak, gerçek bir insan tarafından yazılmış hissi vermektedir."
+    },
+    "issues": [
+      {
+        "line": "GÖVDE: Mektubunu aldık, ziyadesiyle memnun olduk. Geçen hafta şehre inen Hacı Veli ile sana bir çıkın yolladım. İçine tütün, biraz ceviz, bir de kendi ellerimle diktiğim pamuklu gömleği koydum. Buralarda havalar iyice ısındı, ekin biçmeye başladık. Harman yerinde işler biraz ağır gidiyor ama bir hal çaresine bakıyoruz. Çocuklar iyidir, ellerinden öper. Evde merak edilecek bir husus yoktur. Sen nasılsın?",
+        "problem": "Gövde metni 49 kelimedir ve istenen 61 kelimelik hedeften %15'ten daha fazla sapma göstermektedir.",
+        "suggestion": "Metni istenen uzunluğa yaklaştırmak için paketle ilgili 'İnşallah eline sağlam ulaşır.' veya selamlarla ilgili 'Komşulara selamını ilettim.' gibi kısa bir cümle eklenebilirdi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:29:46+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

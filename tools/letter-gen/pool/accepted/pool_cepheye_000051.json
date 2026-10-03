@@ -1,0 +1,214 @@
+{
+  "id": "pool_cepheye_000051",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Asım",
+    "epithet": "Malatyalı",
+    "age": 53,
+    "hometown": "Malatya",
+    "occupation": "çoban",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Rauf",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 93,
+  "hand": "hurried",
+  "header": {
+    "text": "Söğütlü, 3 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Rauf'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "mektubunu aldık sağolasın bizim buralarda ekinler sarardı arpa biçmeye başlıyacaz evdeki senin oğlanı yürütmeye başladı geçen gün çardağın orda iki adım attı düştü ben de kollarından tutup kaldırdım ağlamadı hiç maşallah babası gibi sağlam olcak. sana köyün hocasına bi muska yazdırdım bir de yün eldiven koydum bohçaya oraların gecesi ayaz olurmuş ellerin üşümesin. oğlan biraz huysuz bu aralar uyumuyo pek ama diş çıkarıyo ondandır. emmilerin selam eder ben sürüleri yaylaya vuracam haftaya buraları düşünme eksiğimiz yoktur koyunların sütü yerindedir başka yazacak sözüm kalmadı hakkını helal et mektupsuz bırakma bizi",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Baban Asım"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Söğütlülü Rauf'a",
+    "sensitive": false
+  },
+  "package": [
+    "muska",
+    "yün eldiven"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Asım, Malatyalı, 53, çoban (Malatya, Akçadağ kazası, Söğütlü karyesi)\nAlıcı: Oğlu Onbaşı Rauf, cephede\nYön: cepheye\nTarih: 3 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: çocuğun ilk adımları\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: muska, yün eldiven\nKapanış: Allah'a emanet ol\nUzunluk: 93",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Asım",
+        "gender": "erkek",
+        "age": 53,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Malatya",
+        "occupation": "çoban",
+        "epithet": "Malatyalı",
+        "place": "Akçadağ kazası, Söğütlü karyesi"
+      },
+      "recipient": {
+        "name": "Rauf",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Malatya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Akçadağ kazası, Söğütlü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 93,
+      "package": [
+        "muska",
+        "yün eldiven"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "3 Haziran 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Malatya, Akçadağ kazası, Söğütlü karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5776,
+      "output": 3484
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Söğütlü, 3 Haziran 1331\nHİTAP: Oğlum Rauf'a\nGÖVDE: mektubunu aldık sağolasın bizim buralarda ekinler sarardı arpa biçmeye başlıyacaz evdeki senin oğlanı yürütmeye başladı geçen gün çardağın orda iki adım attı düştü ben de kollarından tutup kaldırdım ağlamadı hiç maşallah babası gibi sağlam olcak. sana köyün hocasına bi muska yazdırdım bir de yün eldiven koydum bohçaya oraların gecesi ayaz olurmuş ellerin üşümesin. oğlan biraz huysuz bu aralar uyumuyo pek ama diş çıkarıyo ondandır. emmilerin selam eder ben sürüleri yaylaya vuracam haftaya buraları düşünme eksiğimiz yoktur koyunların sütü yerindedir başka yazacak sözüm kalmadı hakkını helal et mektupsuz bırakma bizi\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Baban Asım\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Söğütlülü Rauf'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 93 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:52+00:00",
+    "tokens": {
+      "input": 4261,
+      "output": 2730
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler, imla hataları ve cümle yapısı döneme ve karakterin profiline tamamen uygundur.",
+      "olculuk": "Duygular (gurur, endişe) doğrudan söylenmek yerine somut olaylar ve bahanelerle (diş çıkarma) ustaca hissettirilmiştir.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi, noktalama işareti kullanılmaması, birleşik cümleler ve hafif imla hatalarıyla ('başlıyacaz', 'olcak') çok başarılı bir şekilde yansıtılmıştır.",
+      "somutluk": "Mektup, arpa biçmek, çardak, muska, yün eldiven, sürüleri yaylaya vurmak gibi köy hayatına dair somut ve canlı ayrıntılarla doludur.",
+      "sadakat": "Mektup; konu, karakterin sesi, saklanan bilgi, paket içeriği ve kapanış cümlesi dahil olmak üzere istekteki tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Mektup, oğluna torununun ilk adımlarını anlatan utangaç bir babanın yazabileceği gibi samimi, doğal ve klişelerden uzak bir tona sahiptir."
+    },
+    "issues": [
+      {
+        "line": "GÖVDE: ...evdeki senin oğlanı yürütmeye başladı...",
+        "problem": "Fiil seçimi biraz tuhaf; \"yürütmek\" (birini yürüyüşe çıkarmak, bir şeyi işletmek) yerine, çocuğun kendi eylemini anlatan \"yürümek\" daha doğal olurdu.",
+        "suggestion": "...evdeki senin oğlan yürümeye başladı..."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:27:52+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "pool_cepheden_000053",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kadir",
+    "epithet": "Çankırılı",
+    "age": 31,
+    "hometown": "Çankırı",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamdi",
+    "relation": "erkek kardeşi",
+    "location": "Çankırı, Kalecik kazası, Alacahan karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 62,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 29 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Hamdi",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kardeşim Hamdi sana selâm ederim Kaç gün oldu kâğıt yazeyorum senden cevap gelmedi Sağ mısın nicesin bilmeyorum Benim halim dersen yorgunum buralar çok karanlık",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Dünkü hücumda on beş kişi yaralandı",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim peksimetleri suya banıp yiyoz o da adam başı yarım Köyde un bulabiliyonuz mu Harman vakti yaklaştı Geceleri hep gözüm o yollara dalıyo insanın kalkıp gidesi geliyo Emmioğluna selâm söyle",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selâm",
+  "signature": {
+    "text": "Abin Kadir"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çankırı, Kalecik kazası, Alacahan karyesi, İmam Hüseyin Efendi vasıtasıyla Hamdi'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kadir, Çankırılı, 31, ırgat, er (Çankırı, Kalecik kazası, Alacahan karyesi)\nAlıcı: Erkek kardeşi Hamdi, Çankırı, Kalecik kazası, Alacahan karyesi\nYön: cepheden\nTarih: 29 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: yaşlı ve yorgun, kısa yazar\nKonu: yemeklerin ve ekmeğin azlığı (üstü örtülü)\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kadir",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çankırı",
+        "occupation": "ırgat",
+        "epithet": "Çankırılı",
+        "place": "Kalecik kazası, Alacahan karyesi"
+      },
+      "recipient": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 33,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kalecik kazası, Alacahan karyesi"
+      },
+      "recipient_location": "Çankırı, Kalecik kazası, Alacahan karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "yemeklerin ve ekmeğin azlığı (üstü örtülü)",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "29 Mayıs 1331",
+      "closing": "",
+      "home_address": "Çankırı, Kalecik kazası, Alacahan karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5685,
+      "output": 2528
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 29 Mayıs 1331\nHİTAP: Kardeşim Hamdi\nGÖVDE: Kardeşim Hamdi sana selâm ederim Kaç gün oldu kâğıt yazeyorum senden cevap gelmedi Sağ mısın nicesin bilmeyorum Benim halim dersen yorgunum buralar çok karanlık ⟦Dünkü hücumda on beş kişi yaralandı⟧ Bizim peksimetleri suya banıp yiyoz o da adam başı yarım Köyde un bulabiliyonuz mu Harman vakti yaklaştı Geceleri hep gözüm o yollara dalıyo insanın kalkıp gidesi geliyo Emmioğluna selâm söyle\nKAPANIŞ: Baki selâm\nİMZA: Abin Kadir\nZARF: Çankırı, Kalecik kazası, Alacahan karyesi, İmam Hüseyin Efendi vasıtasıyla Hamdi'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "60 kelime, hedef 62 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:17+00:00",
+    "tokens": {
+      "input": 4202,
+      "output": 2587
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, kelime seçimi (peksimet, nicesin) ve imla hataları (yazeyorum, bilmeyorum) döneme ve karaktere tamamen uygundur.",
+      "olculuk": "Yorgunluk ve hasret gibi duygular doğrudan söylenmek yerine somut durumlar ve üstü kapalı ifadelerle (gözüm o yollara dalıyo) hissettirilmiştir.",
+      "okuryazarlik": "İstekteki 'düşük' okuryazarlık seviyesi; kısa, bağlaçsız cümleler, noktalama eksikliği ve tutarlı imla hatalarıyla başarıyla yansıtılmıştır.",
+      "somutluk": "Mektup, 'peksimet', 'un', 'harman vakti' gibi gündelik ve somut ayrıntılarla zenginleştirilerek anlatılan durumu elle tutulur kılmıştır.",
+      "sadakat": "Mektup çoğu isteğe uysa da, 'Dikkatsizlik: az' kuralına uymamış ve sansürcünün yakalaması gereken hiçbir başıboş askerî bilgi bırakmamıştır.",
+      "sahicilik": "Genel olarak çok sahici olsa da, 'buralar çok karanlık' ifadesi düşük okuryazar bir ırgat için biraz fazla edebi ve sembolik durmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Benim halim dersen yorgunum buralar çok karanlık",
+        "problem": "'buralar çok karanlık' ifadesi, karakterin düşük okuryazarlığı için fazla mecazi ve 'anlamlı' bir ifadedir; somut bir gözlem daha inandırıcı olurdu.",
+        "suggestion": "Benim halim dersen yorgunum. Gece gündüz siperdeyiz, nefes alamıyoz."
+      },
+      {
+        "line": "BAŞLIK: Ordu-yı Hümayun, 29 Mayıs 1331",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmesine rağmen mektupta sansürden kaçan hiçbir askerî bilgi yoktur; bu satır, yer adı eklenerek bu dikkatsizliği gösterebilirdi.",
+        "suggestion": "BAŞLIK: ⟦Arıburnu⟧, 29 Mayıs 1331"
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

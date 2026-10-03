@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000068",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Nail",
+    "epithet": "Çorumlu",
+    "age": 29,
+    "hometown": "Çorum",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Veli",
+    "relation": "babası",
+    "location": "Çorum, Sungurlu kazası, Karaağaç karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 82,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 31 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem pederim Veli Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nail der ki: Baba, geçen yolladığın kâğıdı hocaya okuttum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlim vaktim yerindedir, merak edilecek bir şeyim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Haziran geldi, arpalar sararmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Buğday biçimine belki bana izin verirler diye bekliyorum, yüzbaşıya arz edeceğim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Olmazsa Kör Hasan'ın oğlunu yevmiyeyle tutun, ekin tarlada dökülmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Güzden kalan vergi borcunu ne yaptınız, kahveciye olan hesabı kapattınız mı, onu da yazasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün sargı yerinde bizim taburdan İbrahim'i gördüm.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim burada yediğim içtiğim yerindedir, ayaklarım sapasağlam yere basıyor şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Cümleten selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "",
+    "seal": "Nail"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Nail kardeşimin lisanından fakir yazdım.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Çorum, Sungurlu kazası, Karaağaç karyesi, İmam Hüseyin Efendi vasıtasıyla Veli Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nail, Çorumlu, 29, çiftçi, er (Çorum, Sungurlu kazası, Karaağaç karyesi)\nAlıcı: Babası Veli, Çorum, Sungurlu kazası, Karaağaç karyesi\nYön: cepheden\nTarih: 31 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: yaşlı ve yorgun, kısa yazar\nKonu: izin alma umudu\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 82",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Nail",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": "çiftçi",
+        "epithet": "Çorumlu",
+        "place": "Sungurlu kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Veli",
+        "gender": "erkek",
+        "age": 55,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sungurlu kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çorum, Sungurlu kazası, Karaağaç karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "izin alma umudu",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 82,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "31 Mayıs 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Çorum, Sungurlu kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5686,
+      "output": 4014
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 31 Mayıs 1331\nHİTAP: Muhterem pederim Veli Ağa'ya\nGÖVDE: Evvela selam eder, mübarek ellerinden öperim. Nail der ki: Baba, geçen yolladığın kâğıdı hocaya okuttum. Benim hâlim vaktim yerindedir, merak edilecek bir şeyim yoktur. Haziran geldi, arpalar sararmıştır. Buğday biçimine belki bana izin verirler diye bekliyorum, yüzbaşıya arz edeceğim. Olmazsa Kör Hasan'ın oğlunu yevmiyeyle tutun, ekin tarlada dökülmesin. Güzden kalan vergi borcunu ne yaptınız, kahveciye olan hesabı kapattınız mı, onu da yazasın. ⟦Dün sargı yerinde bizim taburdan İbrahim'i gördüm.⟧ Benim burada yediğim içtiğim yerindedir, ayaklarım sapasağlam yere basıyor şükür. Cümleten selam eyle.\nKAPANIŞ: Hakkını helal et.\nİMZA: (mühür: Nail)\nNOT: İşbu kâğıdı Nail kardeşimin lisanından fakir yazdım.\nZARF: Çorum, Sungurlu kazası, Karaağaç karyesi, İmam Hüseyin Efendi vasıtasıyla Veli Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "82 kelime, hedef 82 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000012 ile ortak: \"benim halim vaktim yerindedir merak edilecek\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:23:08+00:00",
+    "tokens": {
+      "input": 4310,
+      "output": 3452
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'arz etmek', 'yevmiye', 'işbu kâğıt' gibi ifadelerle döneme ve yazdırılan mektup tarzına tamamen uygun.",
+      "olculuk": "Duygular (endişe, umut) somut olaylar üzerinden anlatılmış, yarasını saklamak için söylediği 'ayaklarım sapasağlam' cümlesiyle ölçülülük korunmuş.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin hocaya yazdırdığı mektup formatı ('Nail der ki', kâtip notu, mühür) kusursuz uygulanmış.",
+      "somutluk": "Mektup, 'arpa', 'buğday biçimi', 'yevmiye', 'vergi borcu', 'kahveciye hesap' gibi son derece somut ve gerçekçi ayrıntılarla dolu.",
+      "sadakat": "İstekteki tüm unsurlar (konu, saklanan bilgi, dikkatsizlik, kapanış, yazma biçimi) mektuba eksiksiz ve doğru bir şekilde yansıtılmış.",
+      "sahicilik": "Çiftçi bir askerin zihninin yarısının tarlada, yarısının cephede olması ve ailesini endişelendirmemek için yalan söylemesi mektubu çok sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "⟦Dün sargı yerinde bizim taburdan İbrahim'i gördüm.⟧",
+        "problem": "Sansür kuralına göre ⟦ ⟧ içine yalnızca askerî bilginin kendisi alınmalıdır; cümlenin tamamı değil.",
+        "suggestion": "Dün sargı yerinde bizim ⟦taburdan⟧ İbrahim'i gördüm."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:23:08+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

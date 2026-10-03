@@ -1,0 +1,273 @@
+{
+  "id": "pool_cepheye_000101",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hayriye",
+    "epithet": "Sivaslı",
+    "age": 18,
+    "hometown": "Sivas",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Sadık",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "köy hocası",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 101,
+  "hand": "dictated",
+  "header": {
+    "text": "Akpınar, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendim Sadık'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "İşbu mektubu Hayriye'nin ağzından yazarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Efendim Sadık, evvela selam eder, iki ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Cenab-ı Hak seni ve cemi askerimizi kazadan beladan esirgesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Yolladığın kâğıdı hoca efendi okudu, sağlığına çok şükrettik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen cuma kardeşim Hüseyin'i de askere çağırdılar, şubeye teslim oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Anam ardı sıra ağladı, Allah devlete millete zeval vermesin dedik yolladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Havalar pek ısındı, arpa sarardı biçmeye başlayacağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Güzlük buğdayı haftaya kiminle kaldıracağım diye gece gündüz düşünür dururum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Komşu Emine'nin gelini sabah doğum yaptı, bir kızı oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ahırdaki sarı inek de sütten kesildi, sürüyle yaylaya kattık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Rabbim darda koymasın, tez vakitte selametle köyümüze dönesin inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sabah akşam seccade başında duacınım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Hayriye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Sivaslı Sadık'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hayriye Hanım, Sivaslı, 18, çiftçi (Sivas, Divriği kazası, Akpınar karyesi)\nAlıcı: Kocası Er Sadık, cephede\nYön: cepheye\nTarih: 16 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: köy hocası)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: kardeşin de askere çağrılması\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Allah'a emanet ol\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hayriye",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Sivas",
+        "occupation": "çiftçi",
+        "epithet": "Sivaslı",
+        "place": "Divriği kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Sivas",
+        "occupation": null,
+        "epithet": null,
+        "place": "Divriği kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köy hocası",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Sivas, Divriği kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5671,
+      "output": 3351
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Akpınar, 16 Haziran 1331\nHİTAP: Efendim Sadık'a\nGÖVDE: İşbu mektubu Hayriye'nin ağzından yazarım. Efendim Sadık, evvela selam eder, iki ellerinden öperim. Cenab-ı Hak seni ve cemi askerimizi kazadan beladan esirgesin. Yolladığın kâğıdı hoca efendi okudu, sağlığına çok şükrettik. Geçen cuma kardeşim Hüseyin'i de askere çağırdılar, şubeye teslim oldu. Anam ardı sıra ağladı, Allah devlete millete zeval vermesin dedik yolladık. Havalar pek ısındı, arpa sarardı biçmeye başlayacağız. Güzlük buğdayı haftaya kiminle kaldıracağım diye gece gündüz düşünür dururum. Komşu Emine'nin gelini sabah doğum yaptı, bir kızı oldu. Ahırdaki sarı inek de sütten kesildi, sürüyle yaylaya kattık. Rabbim darda koymasın, tez vakitte selametle köyümüze dönesin inşallah. Sabah akşam seccade başında duacınım.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Hayriye)\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Sivaslı Sadık'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 101 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheye_000035 ile ortak: \"evvela selam eder iki ellerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:33:50+00:00",
+    "tokens": {
+      "input": 4309,
+      "output": 3013
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 3,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil ve ifadeler döneme uygundur, modern bir kelime veya anlatım içermemektedir.",
+      "olculuk": "Duygular genel olarak ölçülü olsa da, hasatla ilgili endişe cümlesi askeri kaygılandıracak kadar açıktır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin köy hocasına mektup yazdırması, hem hocanın dilinin hem de mektubu yazdıranın sesinin karışmasıyla başarılı bir şekilde yansıtılmıştır.",
+      "somutluk": "Mektup, arpa hasadı, komşunun doğumu ve sütten kesilen inek gibi gündelik hayata dair somut ayrıntılarla doludur.",
+      "sadakat": "İsteğin 'sakladığı' kısmına sadık kalınmamış, evdeki zorluğa (ve unsuzluğun nedenine) dair çok bariz bir ipucu verilmiştir.",
+      "sahicilik": "Hitaptaki küçük bir uygunsuzluk ve saklanması gereken bilginin sızdırılması dışında mektup oldukça sahici bir tondadır."
+    },
+    "issues": [
+      {
+        "line": "Efendim Sadık, evvela selam eder, iki ellerinden öperim.",
+        "problem": "“Ellerinden öpmek” bir eş için değil, anne-baba gibi büyükler için kullanılan bir saygı ifadesidir. Bir kadın kocasına “gözlerinden öperim” der.",
+        "suggestion": "Efendim Sadık, evvela selam eder, hasretle gözlerinden öperim."
+      },
+      {
+        "line": "Güzlük buğdayı haftaya kiminle kaldıracağım diye gece gündüz düşünür dururum.",
+        "problem": "Bu cümle, istekte “saklanması” istenen evdeki zorluk (“un kalmadığı”) hakkında çok bariz bir ipucu vererek askerin moralini bozabilir.",
+        "suggestion": "Buğdaylar da başak verdi, Allah bereketini esirgemesin, bir çaresine bakacağız inşallah."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

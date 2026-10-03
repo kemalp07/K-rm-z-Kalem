@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheden_000091",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Fikri",
+    "epithet": "Kâtip",
+    "age": 32,
+    "hometown": "Adana",
+    "occupation": "kâtip",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Cemile",
+    "relation": "annesi",
+    "location": "Adana, Kozan kazası, Sarıkaya karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 101,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 8 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem validem Cemile Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Muhterem validem, evvela ellerinizden hürmetle öper, sıhhatinizi Hak'tan niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım kâğıt elinize geçmiş, şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralarda bahar çabuk bitti, Hıdrellez'i bensiz kutladınız bu sene.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köy meydanında ateş yaktınız mı, çocuklar üzerinden atladı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim aklım hep o günlerde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Havalar birden ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çukurova da yanıyordur şimdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Pamuk fidesi ne âlemde, ırgat bulabildiniz mi tarlaya?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kasaba pazarında gazyağı ne kadar oldu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Hasat vakti zor olacak zira gençler uzakta.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Beni hiç merak etmeyin, günlerim istirahatle geçiyor, pek yorulmuyorum bugünlerde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çadırda oturup size kâğıt yazıyorum bol bol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Yemeklerimiz muntazam çıkıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Kardeşim Ali'ye, yengeme, köy odasındaki ahbaplara selamlarımı iletin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "Oğlun Fikri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Adana, Kozan kazası, Sarıkaya karyesi, Muhtar vasıtasıyla Cemile Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikri, Kâtip, 32, kâtip, onbaşı (Adana, Kozan kazası, Sarıkaya karyesi)\nAlıcı: Annesi Cemile Hanım, Adana, Kozan kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 8 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: telaşlı, bir konudan ötekine atlar\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: yaralandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 101",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 32,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Adana",
+        "occupation": "kâtip",
+        "epithet": "Kâtip",
+        "place": "Kozan kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Cemile",
+        "gender": "kadın",
+        "age": 52,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kozan kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Adana, Kozan kazası, Sarıkaya karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "telaşlı, bir konudan ötekine atlar",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "yaralandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 101,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "8 Haziran 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Adana, Kozan kazası, Sarıkaya karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5681,
+      "output": 4272
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 8 Haziran 1331\nHİTAP: Muhterem validem Cemile Hanım'a\nGÖVDE: Muhterem validem, evvela ellerinizden hürmetle öper, sıhhatinizi Hak'tan niyaz eylerim. Geçen ay yolladığım kâğıt elinize geçmiş, şükür. Buralarda bahar çabuk bitti, Hıdrellez'i bensiz kutladınız bu sene. Köy meydanında ateş yaktınız mı, çocuklar üzerinden atladı mı? Benim aklım hep o günlerde kaldı. Havalar birden ısındı. Çukurova da yanıyordur şimdi. Pamuk fidesi ne âlemde, ırgat bulabildiniz mi tarlaya? Kasaba pazarında gazyağı ne kadar oldu? Hasat vakti zor olacak zira gençler uzakta. Beni hiç merak etmeyin, günlerim istirahatle geçiyor, pek yorulmuyorum bugünlerde. Çadırda oturup size kâğıt yazıyorum bol bol. Yemeklerimiz muntazam çıkıyor. Kardeşim Ali'ye, yengeme, köy odasındaki ahbaplara selamlarımı iletin.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: Oğlun Fikri\nZARF: Adana, Kozan kazası, Sarıkaya karyesi, Muhtar vasıtasıyla Cemile Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "97 kelime, hedef 101 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:19+00:00",
+    "tokens": {
+      "input": 4318,
+      "output": 2417
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve kelimeler ('niyaz eylerim', 'zira', 'muntazam') döneme ve karakterin okuryazarlık seviyesine tamamen uygundur.",
+      "olculuk": "Duygular doğrudan söylenmek yerine somut ayrıntılar ve sorularla (Hıdrellez ateşi, pamuk fidesi) ustaca hissettirilmiştir.",
+      "okuryazarlik": "Mektup, 'yüksek' okuryazar bir kâtibin kaleminden çıkmış gibi duran resmi tonu ve seçkin kelimeleriyle istekle tam uyumludur.",
+      "somutluk": "Pamuk fidesi, ırgat, gazyağı fiyatı gibi gündelik ve somut ayrıntılar mektuba güçlü bir gerçeklik katmaktadır.",
+      "sadakat": "Mektup; konu, ton (konudan konuya atlama), saklanan bilgi (yaralanma) ve kapanış dahil olmak üzere isteğin tüm maddelerine harfiyen uymaktadır.",
+      "sahicilik": "Yaralı olduğunu 'istirahatle geçiyor' diyerek saklaması ve memleketin dertleriyle cephedeki durumu birleştirmesi mektubu son derece sahici kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:19+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

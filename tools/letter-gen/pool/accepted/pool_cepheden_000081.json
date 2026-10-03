@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000081",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hafız",
+    "epithet": "Yozgatlı",
+    "age": 34,
+    "hometown": "Yozgat",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Feride",
+    "relation": "annesi",
+    "location": "Yozgat, Sorgun kazası, Esentepe karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 122,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 23 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Feride Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, mübarek ellerinizden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen yolladığın mektubu okudum, köyün ahvalini öğrendim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Benim hâlimi sorarsan şükür ayaktayız, bir sıkıntımız yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Anacığım, pederimle yola çıkmadan evvel harmanda sarı öküz yüzünden aramızda geçen laflar hiç aklımdan çıkmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "O vakit cahillik ettim, babamın sözünü dinlemedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Şimdi gurbet elde insan daha iyi anlıyor her şeyi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Pederime söyle, o günkü inadımı bağışlasın, bana hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Onun dediği gibi güzlük tohumu tarlaya erken atsaydık nisan yağmuruna tam yetişirdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Buralarda işler bildiğin gibi, günler beklemekle geçip gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Hıdrellez de geldi, köyde şenlik kurulur ateş yakılır şimdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim tarlanın alt başındaki yıkık çiti onardınız mı, komşunun sürüsü girmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Emmime, dayıma, köy odasındakilere ayrı ayrı selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Pederimin de ellerinden öperim, duasını eksik etmesin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Oğlun Hafız"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Yozgat, Sorgun kazası, Esentepe karyesi, Muhtar vasıtasıyla Feride Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hafız, Yozgatlı, 34, çiftçi, er (Yozgat, Sorgun kazası, Esentepe karyesi)\nAlıcı: Annesi Feride Hanım, Yozgat, Sorgun kazası, Esentepe karyesi\nYön: cepheden\nTarih: 23 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Allah'a emanet ol\nUzunluk: 122",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hafız",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Yozgat",
+        "occupation": "çiftçi",
+        "epithet": "Yozgatlı",
+        "place": "Sorgun kazası, Esentepe karyesi"
+      },
+      "recipient": {
+        "name": "Feride",
+        "gender": "kadın",
+        "age": 62,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Yozgat",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sorgun kazası, Esentepe karyesi"
+      },
+      "recipient_location": "Yozgat, Sorgun kazası, Esentepe karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 122,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "23 Nisan 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Yozgat, Sorgun kazası, Esentepe karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5681,
+      "output": 3935
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 23 Nisan 1331\nHİTAP: Validem Feride Hanım'a\nGÖVDE: Evvela selam eder, mübarek ellerinizden öperim. Geçen yolladığın mektubu okudum, köyün ahvalini öğrendim. Benim hâlimi sorarsan şükür ayaktayız, bir sıkıntımız yoktur. Anacığım, pederimle yola çıkmadan evvel harmanda sarı öküz yüzünden aramızda geçen laflar hiç aklımdan çıkmıyor. O vakit cahillik ettim, babamın sözünü dinlemedim. Şimdi gurbet elde insan daha iyi anlıyor her şeyi. Pederime söyle, o günkü inadımı bağışlasın, bana hakkını helal etsin. Onun dediği gibi güzlük tohumu tarlaya erken atsaydık nisan yağmuruna tam yetişirdi. Buralarda işler bildiğin gibi, günler beklemekle geçip gidiyor. Hıdrellez de geldi, köyde şenlik kurulur ateş yakılır şimdi. Bizim tarlanın alt başındaki yıkık çiti onardınız mı, komşunun sürüsü girmesin. Emmime, dayıma, köy odasındakilere ayrı ayrı selam eylerim. Pederimin de ellerinden öperim, duasını eksik etmesin.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Oğlun Hafız\nZARF: Yozgat, Sorgun kazası, Esentepe karyesi, Muhtar vasıtasıyla Feride Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "117 kelime, hedef 122 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:27+00:00",
+    "tokens": {
+      "input": 4353,
+      "output": 2427
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime seçimi ve cümle yapısı, herhangi bir modern ifade barındırmadan 1915 yılına tamamen uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, babadan helallik isteme eylemi ve geçmişe yönelik bir pişmanlık üzerinden ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Mektup, istenen 'orta' okuryazarlık seviyesine uygun olarak ne çok basit ne de çok süslü, anlaşılır ve düzgün cümlelerle yazılmıştır.",
+      "somutluk": "Mektup, 'sarı öküz', 'güzlük tohumu', 'yıkık çit' gibi köy hayatına dair somut ve canlı ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, uzunluk, saklanan bilgi ve karakterin sesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uymaktadır.",
+      "sahicilik": "Pratik bir pişmanlığın, zirai bir kaygının ve standart selamların birleşimi, mektubu klişelerden uzak ve son derece gerçekçi kılmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:27+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

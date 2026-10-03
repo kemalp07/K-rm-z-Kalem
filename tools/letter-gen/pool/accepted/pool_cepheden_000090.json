@@ -1,0 +1,256 @@
+{
+  "id": "pool_cepheden_000090",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Halil",
+    "epithet": "Rizeli",
+    "age": 34,
+    "hometown": "Rize",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Necibe",
+    "relation": "annesi",
+    "location": "Rize, Atina kazası, Sarıyar karyesi"
+  },
+  "writes": "scribe",
+  "writer": "alay kâtibi",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 77,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 7 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Valideciğim Necibe Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela Cenab-ı Hakk'a emanet olmanızı diler, mübarek ellerinizden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual ederseniz, Allah'a bin şükür sağlığım yerindedir, dualarınız bereketiyle ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Rabbim cümlenizi muhafaza buyursun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Haziran geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim çayırın otunu biçmeye kim gidecek?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hasan emmim mi el atacak yoksa köylüden amele mi tutacaksınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "İnekleri sağ salim yaylaya çıkardınız mı, bana muhakkak kâğıt yazdırın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Dün akşam bizim taburu dere yatağına indirdiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Geceleri hep bizim yeşil yaylaları, o serin suları rüyamda görüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Allah hakkımızda hayırlısını nasip eylesin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Bizi unutma.",
+  "signature": {
+    "text": "",
+    "seal": "Halil"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Rize, Atina kazası, Sarıyar karyesi, İmam İlyas Efendi vasıtasıyla Necibe Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Halil, Rizeli, 34, çoban, onbaşı (Rize, Atina kazası, Sarıyar karyesi)\nAlıcı: Annesi Necibe Hanım, Rize, Atina kazası, Sarıyar karyesi\nYön: cepheden\nTarih: 7 Haziran 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: alay kâtibi)\nOkuryazarlık: yok\nSes: dualı, sık sık dua eder\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Bizi unutma\nUzunluk: 77",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Halil",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Rize",
+        "occupation": "çoban",
+        "epithet": "Rizeli",
+        "place": "Atina kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Necibe",
+        "gender": "kadın",
+        "age": 57,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Rize",
+        "occupation": null,
+        "epithet": null,
+        "place": "Atina kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Rize, Atina kazası, Sarıyar karyesi",
+      "writes": "scribe",
+      "writer": "alay kâtibi",
+      "literacy": "none",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 77,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "7 Haziran 1331",
+      "closing": "Bizi unutma",
+      "home_address": "Rize, Atina kazası, Sarıyar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5739,
+      "output": 3911
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 7 Haziran 1331\nHİTAP: Muhterem Valideciğim Necibe Hanım'a\nGÖVDE: Evvela Cenab-ı Hakk'a emanet olmanızı diler, mübarek ellerinizden hürmetle öperim. Benim hâlimi sual ederseniz, Allah'a bin şükür sağlığım yerindedir, dualarınız bereketiyle ayaktayız. Rabbim cümlenizi muhafaza buyursun. Haziran geldi çattı. Bizim çayırın otunu biçmeye kim gidecek? Hasan emmim mi el atacak yoksa köylüden amele mi tutacaksınız? İnekleri sağ salim yaylaya çıkardınız mı, bana muhakkak kâğıt yazdırın. ⟦Dün akşam bizim taburu dere yatağına indirdiler.⟧ Geceleri hep bizim yeşil yaylaları, o serin suları rüyamda görüyorum. Allah hakkımızda hayırlısını nasip eylesin.\nKAPANIŞ: Bizi unutma.\nİMZA: (mühür: Halil)\nZARF: Rize, Atina kazası, Sarıyar karyesi, İmam İlyas Efendi vasıtasıyla Necibe Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "78 kelime, hedef 77 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000006 ile ortak: \"mübarek ellerinizden hürmetle öperim benim halimi\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:14+00:00",
+    "tokens": {
+      "input": 4282,
+      "output": 2371
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, kâtibin kullandığı kalıplar ('Cenab-ı Hakk', 'sual etmek') ile köylünün sade dili ('çayırın otu') arasında başarılı bir denge kurarak dönemi yansıtıyor.",
+      "olculuk": "Hasret duygusu, 'çok özledim' gibi doğrudan ifadeler yerine, yayla ve serin sularla ilgili somut bir rüya üzerinden hissettiriliyor.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin ücretli kâtibe yazdırdığı mektup tarzı, kâtibin ağdalı dili ile Halil'in basit ve somut endişelerinin iç içe geçmesiyle kusursuz yansıtılmış.",
+      "somutluk": "Mektup 'çayırın otu', 'Hasan emmim', 'amele tutmak', 'inekleri yaylaya çıkarmak' gibi gündelik ve somut ayrıntılarla dolu.",
+      "sadakat": "İstekteki tüm unsurlar (kâtibe yazdırma, dua tonu, hasat konusu, 'az' dikkatsizlik, kapanış cümlesi) mektuba eksiksiz ve doğru bir şekilde yansıtılmış.",
+      "sahicilik": "Kâtibin resmi dili ile Halil'in pratik kaygıları ve ani, yalın kapanış cümlesi arasındaki tezat, mektuba çok gerçekçi bir hava katmış."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:14+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

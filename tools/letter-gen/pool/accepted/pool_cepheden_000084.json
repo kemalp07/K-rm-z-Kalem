@@ -1,0 +1,276 @@
+{
+  "id": "pool_cepheden_000084",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ahmet",
+    "epithet": "Terzi",
+    "age": 27,
+    "hometown": "Kırşehir",
+    "occupation": "terzi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Gülizar",
+    "relation": "annesi",
+    "location": "Kırşehir, Keskin kazası, Yenice karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "high",
+  "length_target": 63,
+  "hand": "dictated",
+  "header": {
+    "text": "Seddülbahir, 29 Mayıs 1331",
+    "sensitive": true
+  },
+  "salutation": "Anam Gülizar'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ahmet der ki: Anacığım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Çocukların gözlerinden öperim, nasıllar?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Avrat onlara iyi baksın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bu sene Hıdrellez'de köyde yoktum, ateşten kim atladı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim keyfim yerinde, pek yorulmuyorum bugünlerde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Gece yarısı ay batarken nöbeti devralıyoruz",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": ", ondan sonra sabah oluyor zaten.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim taburda seksen kişi kaldık",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": ", hep bizim köylü uşaklar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kumanyayı da ikindi vakti katırla getiriyorlar",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": ".",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kızlara de babanız dönerken entarilik basma alacak.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Ahmet"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Yeniyapanlı Onbaşı Hasan yazdı. Teyze ellerinden öperim.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Kırşehir, Keskin kazası, Yenice karyesi, İmam Salih Efendi vasıtasıyla Gülizar Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ahmet, Terzi, 27, terzi, er (Kırşehir, Keskin kazası, Yenice karyesi)\nAlıcı: Annesi Gülizar Hanım, Kırşehir, Keskin kazası, Yenice karyesi\nYön: cepheden\nTarih: 29 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: Hıdrellez'i uzakta geçirmek\nSakladığı: yaralandığını\nHassas bilgi: gece hangi saatte nöbet değiştiği\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nKapanış: Cevabını bekliyorum\nUzunluk: 63",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ahmet",
+        "gender": "erkek",
+        "age": 27,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kırşehir",
+        "occupation": "terzi",
+        "epithet": "Terzi",
+        "place": "Keskin kazası, Yenice karyesi"
+      },
+      "recipient": {
+        "name": "Gülizar",
+        "gender": "kadın",
+        "age": 53,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keskin kazası, Yenice karyesi"
+      },
+      "recipient_location": "Kırşehir, Keskin kazası, Yenice karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "Hıdrellez'i uzakta geçirmek",
+      "hidden": "yaralandığını",
+      "carelessness": "high",
+      "sensitive_info": "gece hangi saatte nöbet değiştiği",
+      "length_label": "kısa",
+      "length_target": 63,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "29 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Kırşehir, Keskin kazası, Yenice karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5688,
+      "output": 2267
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 29 Mayıs 1331\nHİTAP: Anam Gülizar'a\nGÖVDE: Ahmet der ki: Anacığım ellerinden öperim. Çocukların gözlerinden öperim, nasıllar? Avrat onlara iyi baksın. Bu sene Hıdrellez'de köyde yoktum, ateşten kim atladı? Benim keyfim yerinde, pek yorulmuyorum bugünlerde. ⟦Gece yarısı ay batarken nöbeti devralıyoruz⟧, ondan sonra sabah oluyor zaten. ⟦Bizim taburda seksen kişi kaldık⟧, hep bizim köylü uşaklar. ⟦Kumanyayı da ikindi vakti katırla getiriyorlar⟧. Kızlara de babanız dönerken entarilik basma alacak.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Ahmet)\nNOT: İşbu kâğıdı Yeniyapanlı Onbaşı Hasan yazdı. Teyze ellerinden öperim.\nZARF: Kırşehir, Keskin kazası, Yenice karyesi, İmam Salih Efendi vasıtasıyla Gülizar Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "61 kelime, hedef 63 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "4 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 29 Mayıs 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:37+00:00",
+    "tokens": {
+      "input": 4263,
+      "output": 3222
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ('avrat', 'uşaklar', 'entarilik basma') ve ifadeler döneme ve karaktere tamamen uygundur.",
+      "olculuk": "Duygular, Hıdrellez sorusu ve kızlarına olan vaadi gibi somut ayrıntılar üzerinden abartısız ve etkili bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin mektup yazdırması ('Ahmet der ki'), kâtibin notu ve mühür kullanımı ile kusursuz bir şekilde yansıtılmıştır.",
+      "somutluk": "Hıdrellez ateşi, katırla gelen kumanya, entarilik basma gibi ayrıntılar mektuba güçlü bir somutluk ve canlılık katmaktadır.",
+      "sadakat": "Mektup; konu, saklanan bilgi, hassas bilgi, dikkatsizlik seviyesi ve kapanış cümlesi dahil olmak üzere isteğin tüm unsurlarını eksiksiz karşılamaktadır.",
+      "sahicilik": "Kaba ama sevecen ton, farkında olmadan sızdırılan askeri bilgiler ve kişisel notlar birleşerek mektubu son derece gerçekçi kılmıştır."
+    },
+    "issues": [
+      {
+        "line": "⟦Bizim taburda seksen kişi kaldık⟧ , hep bizim köylü uşaklar.",
+        "problem": "Cümlenin yapısı, taburda kalan seksen kişinin tamamının aynı köyden olduğu gibi gerçek dışı bir anlam yaratıyor.",
+        "suggestion": "İki fikri ayırmak daha gerçekçi olurdu: 'Bizim taburda seksen kişi kadar kaldık. İçlerinde bizim köyden uşaklar da var, halleri iyi.'"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:37+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

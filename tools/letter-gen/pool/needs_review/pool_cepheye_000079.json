@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000079",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Habibe",
+    "epithet": "Erzurumlu",
+    "age": 16,
+    "hometown": "Erzurum",
+    "occupation": "çiftçi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Ömer",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 126,
+  "hand": "hurried",
+  "header": {
+    "text": "Sarıyar, 14 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Efendime",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mektubun geçen cuma muhtarın eline ulaştı okuttuk çok şükür sağlığın yerindeymiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buralarda karlar yeni kalkıyo yollar hep çamur oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Tarlaya inecez tohum az kaldı idare ediyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Evvelki gün köyün aşağından bi feryat koptu İmam efendi kağat getirmiş Hacıların Veli şehid düşmüş dediler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Anası saçını başını yoldu avluda çok ağladık yığıldı kaldı eşikte.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Veli'nin urbalarını sandıktan çıkarıp fakir fukaraya dağıttılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Allah sana ömür versin sağ salim dönesin evine ocağına.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben şimdilik anamın evinde duruyom Babam tarlayı sürcek bu sene öküzün biri hastalandı yattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim halim eyidir beni merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gece yün eğiriyom çorap dokuycam sana yollamak için.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sarı inek yavruladı dişi bi buzağı verdi sütünü sağdım küpe bastım peyniri kışa kalsın deyi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Buralarda başkaca bi havadis yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Geceleri dua ediyom cemaatnen herkez askerlere selavat getiriyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Zevcen Habibe"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kiğılı Ömer'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Habibe Hanım, Erzurumlu, 16, çiftçi (Erzurum, Kiğı kazası, Sarıyar karyesi)\nAlıcı: Kocası Er Ömer, cephede\nYön: cepheye\nTarih: 14 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: komşunun oğlunun şehit haberi\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Duanı eksik etme\nUzunluk: 126",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Habibe",
+        "gender": "kadın",
+        "age": 16,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": "çiftçi",
+        "epithet": "Erzurumlu",
+        "place": "Kiğı kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Ömer",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kiğı kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 126,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "14 Mayıs 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Erzurum, Kiğı kazası, Sarıyar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5671,
+      "output": 6507
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 14 Mayıs 1331\nHİTAP: Efendime\nGÖVDE: Mektubun geçen cuma muhtarın eline ulaştı okuttuk çok şükür sağlığın yerindeymiş. Buralarda karlar yeni kalkıyo yollar hep çamur oldu. Tarlaya inecez tohum az kaldı idare ediyoz. Evvelki gün köyün aşağından bi feryat koptu İmam efendi kağat getirmiş Hacıların Veli şehid düşmüş dediler. Anası saçını başını yoldu avluda çok ağladık yığıldı kaldı eşikte. Veli'nin urbalarını sandıktan çıkarıp fakir fukaraya dağıttılar. Allah sana ömür versin sağ salim dönesin evine ocağına. Ben şimdilik anamın evinde duruyom Babam tarlayı sürcek bu sene öküzün biri hastalandı yattı. Benim halim eyidir beni merak etmeyesin. Gece yün eğiriyom çorap dokuycam sana yollamak için. Sarı inek yavruladı dişi bi buzağı verdi sütünü sağdım küpe bastım peyniri kışa kalsın deyi. Buralarda başkaca bi havadis yoktur. Geceleri dua ediyom cemaatnen herkez askerlere selavat getiriyo.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Zevcen Habibe\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kiğılı Ömer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "124 kelime, hedef 126 (-2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:14+00:00",
+    "tokens": {
+      "input": 4356,
+      "output": 3377
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı 'Zevcen' kelimesi dışında döneme ve karaktere uygun, modern bir ifade içermiyor.",
+      "olculuk": "Duygular doğrudan adlandırılmıyor, olaylar ve somut eylemler üzerinden başarıyla hissettiriliyor.",
+      "okuryazarlik": "İmla hataları ve ağız özellikleri başarılı olsa da, 'okuttuk' ve 'Zevcen' kelimeleri yazarın okuryazarlık seviyesiyle çelişiyor.",
+      "somutluk": "Mektup, köy hayatına dair (kar, çamur, tohum, öküz, buzağı, peynir) son derece somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "İsteğin ana hatlarına (konu, saklanan bilgi, uzunluk) uyulmuş ancak yazarın okuryazarlığına dair çelişkiler sadakati düşürüyor.",
+      "sahicilik": "Mektubun genel akışı ve dili sahici hissettirse de, okuryazarlıkla ilgili tutarsızlıklar bu hissi biraz zayıflatıyor."
+    },
+    "issues": [
+      {
+        "line": "Mektubun geçen cuma muhtarın eline ulaştı okuttuk çok şükür sağlığın yerindeymiş.",
+        "problem": "İstekte mektubu 'kendisi yazıyor' denmesine rağmen 'okuttuk' ifadesi, mektubu okuyamadığını ima ediyor ve bir çelişki yaratıyor.",
+        "suggestion": "Mektubun geçen cuma muhtarın elinden aldım, okudum. Çok şükür sağlığın yerindeymiş."
+      },
+      {
+        "line": "İMZA: Zevcen Habibe",
+        "problem": "'Zevcen' kelimesi, okumuş kişilerin veya kâtiplerin kullandığı resmi bir ifadedir; düşük okuryazarlığa sahip 16 yaşındaki bir köylü kızının kullanması pek olası değildir.",
+        "suggestion": "İMZA: Habibe'n"
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

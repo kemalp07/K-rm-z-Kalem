@@ -1,0 +1,258 @@
+{
+  "id": "pool_cepheye_000078",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Zübeyde",
+    "epithet": "Kırşehirli",
+    "age": 62,
+    "hometown": "Kırşehir",
+    "occupation": "ev hanımı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Davut",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 69,
+  "hand": "elegant",
+  "header": {
+    "text": "Hacılar, 19 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Davut'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mektubuma başlar, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim Sarı Kız nihayet inadını kırdı, geçen perşembe bir buzağı verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Anası gibi aksi suratlı bir kerata, maşallahı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sütü pek bol, senin payını komşu çocuklarına dağıtıyorum, döndüğünde benden alacaklısın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Muhtarın şehre ineceğini duyunca alelacele bu kâğıdı karaladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çıkına çok sevdiğin kuru üzümle biraz da pestil kattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hocaya yazdırdığım muskayı da diktim, göğsünden eksik etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Buraları hiç merak etme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "Validen Zübeyde"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hacılarlı Davut'a",
+    "sensitive": false
+  },
+  "package": [
+    "pestil",
+    "kuru üzüm",
+    "muska"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zübeyde Hanım, Kırşehirli, 62, ev hanımı (Kırşehir, Mucur kazası, Hacılar karyesi)\nAlıcı: Oğlu Er Davut, cephede\nYön: cepheye\nTarih: 19 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: ineğin buzağılaması\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: pestil, kuru üzüm, muska\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 69",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Zübeyde",
+        "gender": "kadın",
+        "age": 62,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "ev hanımı",
+        "epithet": "Kırşehirli",
+        "place": "Mucur kazası, Hacılar karyesi"
+      },
+      "recipient": {
+        "name": "Davut",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mucur kazası, Hacılar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "ineğin buzağılaması",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 69,
+      "package": [
+        "pestil",
+        "kuru üzüm",
+        "muska"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "19 Mayıs 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Kırşehir, Mucur kazası, Hacılar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5784,
+      "output": 1860
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Hacılar, 19 Mayıs 1331\nHİTAP: Oğlum Davut'a\nGÖVDE: Evvela mektubuma başlar, iki gözlerinden öperim. Bizim Sarı Kız nihayet inadını kırdı, geçen perşembe bir buzağı verdi. Anası gibi aksi suratlı bir kerata, maşallahı var. Sütü pek bol, senin payını komşu çocuklarına dağıtıyorum, döndüğünde benden alacaklısın. Muhtarın şehre ineceğini duyunca alelacele bu kâğıdı karaladım. Çıkına çok sevdiğin kuru üzümle biraz da pestil kattım. Hocaya yazdırdığım muskayı da diktim, göğsünden eksik etmeyesin. Buraları hiç merak etme.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: Validen Zübeyde\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Hacılarlı Davut'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "65 kelime, hedef 69 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:02+00:00",
+    "tokens": {
+      "input": 4237,
+      "output": 3063
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ('kerata', 'çıkın', 'valide') ve genel üslup döneme tamamen uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, şakacı ve somut ayrıntılarla (buzağı, süt, muska) ustaca hissettirilmiştir.",
+      "okuryazarlik": "Yüksek okuryazarlığa genel olarak uyulsa da, açılış cümlesi ('mektubuma başlar') biraz acemice durmaktadır.",
+      "somutluk": "Mektup, ineğin adı ('Sarı Kız'), buzağının huyu, gönderilen yiyecekler gibi canlı ve somut detaylarla doludur.",
+      "sadakat": "Mektup; konu, ton, uzunluk, saklanan bilgi ve paket içeriği dahil olmak üzere isteğin tüm maddelerine harfiyen uymaktadır.",
+      "sahicilik": "Şakacı ama sevecen anne sesi, kişisel detaylarla birleşerek mektubu son derece gerçekçi ve klişelerden uzak kılmıştır."
+    },
+    "issues": [
+      {
+        "line": "Evvela mektubuma başlar, iki gözlerinden öperim.",
+        "problem": "Yüksek okuryazarlığa sahip biri için 'mektubuma başlar' ifadesi gereksiz ve biraz acemice bir başlangıçtır.",
+        "suggestion": "Daha doğal ve döneme uygun bir başlangıç 'Evvela selam eder, iki gözlerinden öperim.' şeklinde olabilirdi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:31:02+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "pool_cepheden_000076",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Talat",
+    "epithet": "Amasyalı",
+    "age": 25,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Şadiye",
+    "relation": "annesi",
+    "location": "Amasya, Vezirköprü kazası, Çamlıca karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 103,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 1 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Şadiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Talat der ki: Evvela kıymetli anacığımın mübarek ellerinden hürmetle öper, hayır duasını dilerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sual ederseniz, Allah'a bin şükür ayaktayız, yiyip içiyoruz, hiçbir eksiğimiz yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Haziran ayı geldi çattı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Memlekette arpalar iyice sararmıştır, yakında buğdaya da sıra gelir, oraklar ellere alınır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Ben buralarda hep bunu meraktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Tarlaya kim girecek, o ekinleri kim biçecek, harmanı kim kaldıracak?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Emmim oğulları yardım eder mi, yoksa köyden amele mi tutacaksınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Kendi başınıza kalıp da perişan olmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Evdekilere, bizim geline de çokça selam söyle, çocuklara iyi baksın, üstlerini başlarını eksik etmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Köydeki komşulara, akrabalara hususi selamlarımı ilet.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Benim için hiç tasa etmeyin, rahatım yerindedir.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "",
+    "seal": "Talat"
+  },
+  "note": {
+    "text": "İşbu mektubu Talat kardeşimin arzusu üzere kaleme aldım. Çadır arkadaşı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Amasya, Vezirköprü kazası, Çamlıca karyesi, İmam Salih Efendi vasıtasıyla Şadiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Talat, Amasyalı, 25, çiftçi, er (Amasya, Vezirköprü kazası, Çamlıca karyesi)\nAlıcı: Annesi Şadiye Hanım, Amasya, Vezirköprü kazası, Çamlıca karyesi\nYön: cepheden\nTarih: 1 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: utangaç, karısına adıyla seslenemez\nKonu: hasadı kimin kaldıracağını sormak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Duanı eksik etme\nUzunluk: 103",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 25,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Vezirköprü kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Şadiye",
+        "gender": "kadın",
+        "age": 52,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Vezirköprü kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Amasya, Vezirköprü kazası, Çamlıca karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "hasadı kimin kaldıracağını sormak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 103,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "1 Haziran 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Amasya, Vezirköprü kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5698,
+      "output": 2786
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 1 Haziran 1331\nHİTAP: Validem Şadiye Hanım'a\nGÖVDE: Talat der ki: Evvela kıymetli anacığımın mübarek ellerinden hürmetle öper, hayır duasını dilerim. Benim hâlimi sual ederseniz, Allah'a bin şükür ayaktayız, yiyip içiyoruz, hiçbir eksiğimiz yoktur. Haziran ayı geldi çattı. Memlekette arpalar iyice sararmıştır, yakında buğdaya da sıra gelir, oraklar ellere alınır. Ben buralarda hep bunu meraktayım. Tarlaya kim girecek, o ekinleri kim biçecek, harmanı kim kaldıracak? Emmim oğulları yardım eder mi, yoksa köyden amele mi tutacaksınız? Kendi başınıza kalıp da perişan olmayın. Evdekilere, bizim geline de çokça selam söyle, çocuklara iyi baksın, üstlerini başlarını eksik etmesin. Köydeki komşulara, akrabalara hususi selamlarımı ilet. Benim için hiç tasa etmeyin, rahatım yerindedir.\nKAPANIŞ: Duanı eksik etme.\nİMZA: (mühür: Talat)\nNOT: İşbu mektubu Talat kardeşimin arzusu üzere kaleme aldım. Çadır arkadaşı.\nZARF: Amasya, Vezirköprü kazası, Çamlıca karyesi, İmam Salih Efendi vasıtasıyla Şadiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "100 kelime, hedef 103 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:24:31+00:00",
+    "tokens": {
+      "input": 4361,
+      "output": 4269
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'sual etmek', 'amele', 'tasa', 'işbu' gibi kelimelerle döneme ve yazdırılan mektup formatına tamamen uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış; hasat endişesi ve 'bizim gelin' gibi dolaylı ifadelerle karakterin ruh hali başarıyla yansıtılmıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin endişeleri ile mektubu yazan eğitimli kişinin ('hoca efendi') dili ('validem', 'kaleme aldım') çok uyumlu bir şekilde bir araya getirilmiştir.",
+      "somutluk": "Mektup, 'arpalar', 'orak', 'harman', 'emmim oğulları' gibi çiftçilik hayatına dair son derece somut ve canlı ayrıntılar içermektedir.",
+      "sadakat": "Konu, üslup, gizlenen bilgi, yazım biçimi ve kapanış cümlesi dahil olmak üzere isteğin tüm maddelerine eksiksiz sadık kalınmıştır.",
+      "sahicilik": "Genel olarak çok sahici olsa da, açılış cümlesindeki aşırı süslülük ve bir ifadedeki hafif tuhaflık mektubu az da olsa yapay kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Evvela kıymetli anacığımın mübarek ellerinden hürmetle öper, hayır duasını dilerim.",
+        "problem": "Açılış cümlesi, bir katip için bile biraz fazla süslü ve yoğun ('kıymetli', 'mübarek', 'hürmetle'); bu durum ifadenin doğallığını bir miktar azaltıyor.",
+        "suggestion": "Daha standart ve akıcı bir ifade kullanılabilir: 'Evvela muhterem validemin mübarek ellerinden öper, hayır duasını beklerim.'"
+      },
+      {
+        "line": "Ben buralarda hep bunu meraktayım.",
+        "problem": "Bu ifade dilbilgisi olarak hatalı olmasa da dönemin yazılı dili için biraz tuhaf bir kullanımdır ve kulağa tam doğal gelmemektedir.",
+        "suggestion": "Daha yaygın bir kullanım tercih edilebilir: 'Ben buralarda hep bunu merak ederim.' ya da 'Aklım fikrim hep o iştedir.'"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:24:31+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

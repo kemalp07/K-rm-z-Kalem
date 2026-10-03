@@ -1,0 +1,298 @@
+{
+  "id": "pool_cepheye_000070",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Münevver",
+    "epithet": "Erzurumlu",
+    "age": 21,
+    "hometown": "Erzurum",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Nazım",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 110,
+  "hand": "hurried",
+  "header": {
+    "text": "Sarıyar, 29 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Kocam Nazım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Nazım kocam ellerinden öperim hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana kağıt yolladım cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hoca efendiye gittim sana muska yazdırdım onu da beze sardım yolluyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Boynundan çıkarma kurşun değmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Her gece sana ve bizim köylü çocuklara dua ediyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim Sarıyar'dan gidenler nicedir beraber misiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bekir emminin oğlu Veli sağ mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Topalın Hasan'ı gördün mü hiç.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Onların da anaları avratları yolda izde bana sorup duruyo haber bekliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Buralar bahar oldu karlar eridi çamur bitti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Ben anamgile geçtim ordan yazıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Koyunları yaylaya sürecez yakında gücümüz yetmiyo ama napacan.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Köyde erkek kalmadı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Senin tütün bitti dediler kahveciden aldım pakete koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Muskayı sakın atma hep tak.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "Bizi merak etme sağlığımız yerinde.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözüm yolda.",
+  "signature": {
+    "text": "Avradın Münevver"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Erzurumlu Nazım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Münevver Hanım, Erzurumlu, 21, ev hanımı (Erzurum, Kiğı kazası, Sarıyar karyesi)\nAlıcı: Kocası Er Nazım, cephede\nYön: cepheye\nTarih: 29 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: meraklı, köyden herkesi sorar\nKonu: muska ve dualar\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Gözüm yolda\nUzunluk: 110",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Münevver",
+        "gender": "kadın",
+        "age": 21,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": "ev hanımı",
+        "epithet": "Erzurumlu",
+        "place": "Kiğı kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Nazım",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kiğı kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "meraklı, köyden herkesi sorar",
+      "topic": "muska ve dualar",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 110,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "29 Nisan 1331",
+      "closing": "Gözüm yolda",
+      "home_address": "Erzurum, Kiğı kazası, Sarıyar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5760,
+      "output": 2622
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 29 Nisan 1331\nHİTAP: Kocam Nazım'a\nGÖVDE: Nazım kocam ellerinden öperim hatırını sorarım. Sana kağıt yolladım cevap gelmedi. Hoca efendiye gittim sana muska yazdırdım onu da beze sardım yolluyom. Boynundan çıkarma kurşun değmesin. Her gece sana ve bizim köylü çocuklara dua ediyom. Bizim Sarıyar'dan gidenler nicedir beraber misiniz. Bekir emminin oğlu Veli sağ mı. Topalın Hasan'ı gördün mü hiç. Onların da anaları avratları yolda izde bana sorup duruyo haber bekliyo. Buralar bahar oldu karlar eridi çamur bitti. Ben anamgile geçtim ordan yazıyom. Koyunları yaylaya sürecez yakında gücümüz yetmiyo ama napacan. Köyde erkek kalmadı. Senin tütün bitti dediler kahveciden aldım pakete koydum. Muskayı sakın atma hep tak. Bizi merak etme sağlığımız yerinde.\nKAPANIŞ: Gözüm yolda.\nİMZA: Avradın Münevver\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Erzurumlu Nazım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 110 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:11+00:00",
+    "tokens": {
+      "input": 4287,
+      "output": 3277
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, \"avrat, emmi, yolluyom, napacan\" gibi kelimeler ve ifadelerle döneme ve yöreye tamamen uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, bunun yerine muska gönderme, dua etme ve haber bekleme gibi eylemlerle ustaca hissettirilmiştir.",
+      "okuryazarlik": "İmla hataları, noktalama eksiklikleri ve basit cümle yapısı, istekte belirtilen düşük okuryazarlık seviyesini kusursuz bir şekilde yansıtmaktadır.",
+      "somutluk": "Mektup; muska, eriyen karlar, yaylaya sürülecek koyunlar ve paketlenen tütün gibi somut ve gündelik ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, istenen kapanış cümlesi, saklanan bilgi ve belirtilen kelime sayısı dahil olmak üzere isteğin tüm maddelerine harfiyen uymaktadır.",
+      "sahicilik": "Köydeki diğer kadınların endişesini aktarması ve eve dair zorluklara üstü kapalı değinmesi mektuba büyük bir sahicilik katmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Nazım kocam ellerinden öperim hatırını sorarım.",
+        "problem": "Hitap ile kalıp açılış cümlesi tek bir ifade içinde birleşerek hafif bir akıcılık sorunu yaratmış.",
+        "suggestion": "Açılışı iki ayrı cümle olarak kurmak daha doğal olabilir: \"Nazım kocam. Evvela selam eder, ellerinden öperim.\""
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:11+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "id": "pool_cepheden_000079",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "İlyas",
+    "epithet": "Bakkal",
+    "age": 21,
+    "hometown": "Dersaadet",
+    "occupation": "bakkal",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Makbule",
+    "relation": "annesi",
+    "location": "Dersaadet, Fatih, Çarşamba mahallesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "high",
+  "length_target": 62,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 25 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Makbule Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ellerinden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buraya geleli kaç vakit oldu, yolladığım kâğıtlara hiç cevap vermiyorsunuz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan bir satır mektup yazmaz mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hâliniz nicedir bilmiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köydeki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Onu satıp dükkânın toptancıya olan borcunu kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Biz dört gündür aynı sırtta bekliyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Gece yarısı aşağıdan peksimet getirdiler.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Benim sağlığım yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim taburun yarısı hastalandı",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "ama ben ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Oğlun İlyas"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Dersaadet, Fatih, Çarşamba mahallesi, Kahveci Salih Efendi vasıtasıyla Makbule Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: İlyas, Bakkal, 21, bakkal, onbaşı (Dersaadet, Fatih, Çarşamba mahallesi)\nAlıcı: Annesi Makbule Hanım, Dersaadet, Fatih, Çarşamba mahallesi\nYön: cepheden\nTarih: 25 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Baki selam\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "İlyas",
+        "gender": "erkek",
+        "age": 21,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Dersaadet",
+        "occupation": "bakkal",
+        "epithet": "Bakkal",
+        "place": "Fatih, Çarşamba mahallesi"
+      },
+      "recipient": {
+        "name": "Makbule",
+        "gender": "kadın",
+        "age": 43,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Fatih, Çarşamba mahallesi"
+      },
+      "recipient_location": "Dersaadet, Fatih, Çarşamba mahallesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "25 Nisan 1331",
+      "closing": "Baki selam",
+      "home_address": "Dersaadet, Fatih, Çarşamba mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5630,
+      "output": 2724
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 25 Nisan 1331\nHİTAP: Validem Makbule Hanım'a\nGÖVDE: Ellerinden hürmetle öperim. Buraya geleli kaç vakit oldu, yolladığım kâğıtlara hiç cevap vermiyorsunuz. İnsan bir satır mektup yazmaz mı? Hâliniz nicedir bilmiyorum. Köydeki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız? Onu satıp dükkânın toptancıya olan borcunu kapatın. ⟦Biz dört gündür aynı sırtta bekliyoruz.⟧ ⟦Gece yarısı aşağıdan peksimet getirdiler.⟧ Benim sağlığım yerinde. ⟦Bizim taburun yarısı hastalandı⟧ ama ben ayaktayım.\nKAPANIŞ: Baki selam.\nİMZA: Oğlun İlyas\nZARF: Dersaadet, Fatih, Çarşamba mahallesi, Kahveci Salih Efendi vasıtasıyla Makbule Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "59 kelime, hedef 62 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "3 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:01+00:00",
+    "tokens": {
+      "input": 4239,
+      "output": 3891
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 3,
+      "somutluk": 3,
+      "sadakat": 4,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "\"Hürmetle\" gibi kelimeler bir oğul için fazla resmî olsa da genel olarak dil döneme uygun ve modern ifade yok.",
+      "olculuk": "Duygular doğrudan söylenmek yerine sitemkâr sorularla ve somut dertlerle hissettiriliyor, abartıdan kaçınılmış.",
+      "okuryazarlik": "\"Orta\" okuryazarlık için dil ve cümle yapısı fazla düzgün; \"Validem\" ve \"hürmetle\" gibi ifadeler kâtip diline daha yakın.",
+      "somutluk": "Öküz, borç gibi somut öğeler var ama İstanbullu bir bakkal için \"köydeki tarla\" detayı havada kalıyor ve karaktere yabancı duruyor.",
+      "sadakat": "İstenen uzunluğun (%15'ten fazla) altında kalınması dışında sitem, konu, dikkatsizlik gibi temel unsurlar isteğe uygun.",
+      "sahicilik": "Resmî dil ile dikkatsizce verilen askerî bilgilerin birleşimi ve karakterin geçmişine uymayan detaylar mektubun bütünlüğünü zayıflatıyor."
+    },
+    "issues": [
+      {
+        "line": "Ellerinden hürmetle öperim.",
+        "problem": "\"Hürmetle\" kelimesi bir oğlun annesine yazarken kullanacağı bir ifade için fazla resmî ve soğuktur, daha çok kâtip dilini andırır.",
+        "suggestion": "Validem, evvela ellerinden öperim."
+      },
+      {
+        "line": "Köydeki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız?",
+        "problem": "Gönderen Fatih'te bir bakkal olduğu için \"köydeki tarla\" ifadesi bağlamdan kopuk ve genel duruyor, karakterin gerçekliğine uymuyor.",
+        "suggestion": "Bolu'daki tarlanın işi n'oldu, o ihtiyar öküzü satacak mısınız?"
+      },
+      {
+        "line": "⟦Bizim taburun yarısı hastalandı⟧ ama ben ayaktayım.",
+        "problem": "Bu bilgi hem çok tehlikeli bir askerî sır hem de anneyi gereksiz yere paniğe sevk edecek kadar doğrudan ve kaba söylenmiş.",
+        "suggestion": "Buraların havası çok kişiye dokundu, ama ben hamdolsun iyiyim, merak etme."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "id": "pool_cepheden_000086",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kemal",
+    "epithet": "Dokumacı",
+    "age": 33,
+    "hometown": "Erzurum",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Bahri",
+    "relation": "erkek kardeşi",
+    "location": "Erzurum, Tortum kazası, Kocaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "high",
+  "length_target": 126,
+  "hand": "careful",
+  "header": {
+    "text": "Seddülbahir, 16 Haziran 1331",
+    "sensitive": true
+  },
+  "salutation": "Kardeşim Bahri'ye,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, iki gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buraya geleli kaç ay oldu, birinizden bile tek bir kâğıt parçası gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan gurbette köyünden bir ses bekliyor, postacı her gün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "siperlerin ardındaki yoldan",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "geçiyor, benim elim hep boş kalıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hiç mi kalem tutan olmadı etrafınızda?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Geçen gün",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "bizim tabura",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hacıların İbrahim düştü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Onu karşımda görünce köye varmış gibi oldum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köyden çıkalı çok olmamış, sağlığı yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Oturup uzun uzun memleketi konuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Dokuma tezgâhını ne yaptınız, dükkanda çürümesin, üstünü kalın kilimle sıkıca örtün.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "İbrahim'in babası Nuri Ağa kasabadaki tüccara olan borcunu denkleştirip ödeyebilmiş mi, çocuk onu soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "Haziran geldi,",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s16",
+      "text": "suyumuzu gece karanlığında sahildeki kuyudan katırlarla taşıyorlar.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s17",
+      "text": "Siz buraları düşünmeyin, ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s18",
+      "text": "Emmime, halama, köyün büyüklerine selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s19",
+      "text": "Sizden tek isteğim bir satır cevap yollamanızdır.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Bizi unutma.",
+  "signature": {
+    "text": "Ağabeyin Kemal"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Erzurum, Tortum kazası, Kocaköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Bahri'ye",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kemal, Dokumacı, 33, dokumacı, er (Erzurum, Tortum kazası, Kocaköy karyesi)\nAlıcı: Erkek kardeşi Bahri, Erzurum, Tortum kazası, Kocaköy karyesi\nYön: cepheden\nTarih: 16 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: köyden aynı bölüğe düşen hemşehrisinden haber\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: çok\nÖnceki durum: ilk mektup\nKapanış: Bizi unutma\nUzunluk: 126",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Erzurum",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "Tortum kazası, Kocaköy karyesi"
+      },
+      "recipient": {
+        "name": "Bahri",
+        "gender": "erkek",
+        "age": 32,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Erzurum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Tortum kazası, Kocaköy karyesi"
+      },
+      "recipient_location": "Erzurum, Tortum kazası, Kocaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "köyden aynı bölüğe düşen hemşehrisinden haber",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "high",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 126,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "16 Haziran 1331",
+      "closing": "Bizi unutma",
+      "home_address": "Erzurum, Tortum kazası, Kocaköy karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5686,
+      "output": 3373
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 16 Haziran 1331\nHİTAP: Kardeşim Bahri'ye,\nGÖVDE: Evvela selam eder, iki gözlerinden öperim. Buraya geleli kaç ay oldu, birinizden bile tek bir kâğıt parçası gelmedi. İnsan gurbette köyünden bir ses bekliyor, postacı her gün ⟦siperlerin ardındaki yoldan⟧ geçiyor, benim elim hep boş kalıyor. Hiç mi kalem tutan olmadı etrafınızda? Geçen gün ⟦bizim tabura⟧ Hacıların İbrahim düştü. Onu karşımda görünce köye varmış gibi oldum. Köyden çıkalı çok olmamış, sağlığı yerinde. Oturup uzun uzun memleketi konuştuk. Dokuma tezgâhını ne yaptınız, dükkanda çürümesin, üstünü kalın kilimle sıkıca örtün. İbrahim'in babası Nuri Ağa kasabadaki tüccara olan borcunu denkleştirip ödeyebilmiş mi, çocuk onu soruyor. Haziran geldi, ⟦suyumuzu gece karanlığında sahildeki kuyudan katırlarla taşıyorlar.⟧ Siz buraları düşünmeyin, ayaktayız. Emmime, halama, köyün büyüklerine selam ederim. Sizden tek isteğim bir satır cevap yollamanızdır.\nKAPANIŞ: Bizi unutma.\nİMZA: Ağabeyin Kemal\nZARF: Erzurum, Tortum kazası, Kocaköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Bahri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "118 kelime, hedef 126 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "warn",
+      "detail": "4 hassas parça, dikkatsizlik 'high' için beklenen 2–3"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 16 Haziran 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000007 ile ortak: \"evvela selam eder iki gözlerinden öperim\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:56+00:00",
+    "tokens": {
+      "input": 4360,
+      "output": 3439
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler döneme uygundur, modern veya anakronik bir kullanım yoktur.",
+      "olculuk": "Sitem duygusu, 'çok üzgünüm' gibi doğrudan ifadelerle değil, mektup gelmemesine dair sorular ve beklentilerle ölçülü bir şekilde gösterilmiştir.",
+      "okuryazarlik": "Cümle yapısı ve kelime seçimi 'orta' okuryazarlık seviyesiyle uyumlu, ancak dönemin yazımını daha iyi yansıtmak için küçük bir imla hatası eklenebilirdi.",
+      "somutluk": "Dokuma tezgâhı, tüccara olan borç, katırlarla su taşınması gibi somut ayrıntılar mektuba canlılık katmıştır.",
+      "sadakat": "İstekteki tüm maddelere (ton, konu, dikkatsizlik seviyesi, kapanış, uzunluk) eksiksiz bir şekilde uyulmuştur.",
+      "sahicilik": "Mektubun geneli sahici hissettirse de, cepheye 'her gün' postacı gelmesi detayı dönemin şartları için gerçekçi değildir ve sahiciliği zedelemiştir."
+    },
+    "issues": [
+      {
+        "line": "İnsan gurbette köyünden bir ses bekliyor, postacı her gün ⟦siperlerin ardındaki yoldan⟧ geçiyor, benim elim hep boş kalıyor.",
+        "problem": "1915'te cepheye postanın 'her gün' ulaşması mümkün değildi. Posta hizmeti çok daha yavaş ve düzensizdi. Bu ifade mektubun gerçekçiliğini azaltıyor.",
+        "suggestion": "'her gün' ifadesini 'ne zaman posta gelse' veya 'postacı göründükçe' gibi daha belirsiz ve gerçekçi bir ifadeyle değiştirin."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:56+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

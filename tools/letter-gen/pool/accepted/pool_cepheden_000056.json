@@ -1,0 +1,261 @@
+{
+  "id": "pool_cepheden_000056",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Fikri",
+    "epithet": "Ispartalı",
+    "age": 19,
+    "hometown": "Isparta",
+    "occupation": "kahveci",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Nefise",
+    "relation": "annesi",
+    "location": "Isparta, Yalvaç kazası, Akpınar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "low",
+  "length_target": 86,
+  "hand": "elegant",
+  "header": {
+    "text": "Ordu-yı Hümayun, 24 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem Validem Nefise Hanım'a,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela Cenab-ı Hakk'a hamd eder, mübarek ellerinden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Rabbim dualarınızı üzerimizden eksik etmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen mektubunuzu şükürler olsun okudum, yavrumun sağ salim dünyaya geldiğini müjdelemişsiniz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Allah vatana millete hayırlı evlat kılsın, ömrü uzun olsun inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Çocuğun adını merhum babamın ismi olan Hasan koyun, dedesinin adıyla yaşasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bu ay elime para geçmedi, biraz borcum vardı maaşı denkleştiremedim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "O yüzden size birkaç kuruş yollayamıyorum, Cenab-ı Hak rızkınızı bereketlendirsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bulunduğumuz sırttan karşı kıyı ve deniz apaçık görünüyor.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Rüzgârı serttir lakin Allah'ın izniyle dayanıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bütün komşulara selam eylerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Oğlun Fikri"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Isparta, Yalvaç kazası, Akpınar karyesi, İmam Ali Efendi vasıtasıyla Nefise Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikri, Ispartalı, 19, kahveci, er (Isparta, Yalvaç kazası, Akpınar karyesi)\nAlıcı: Annesi Nefise Hanım, Isparta, Yalvaç kazası, Akpınar karyesi\nYön: cepheden\nTarih: 24 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: dualı, sık sık dua eder\nKonu: yeni doğan çocuğuna ad koymak\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Çabuk cevap yaz\nUzunluk: 86",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Fikri",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Isparta",
+        "occupation": "kahveci",
+        "epithet": "Ispartalı",
+        "place": "Yalvaç kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Nefise",
+        "gender": "kadın",
+        "age": 43,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Isparta",
+        "occupation": null,
+        "epithet": null,
+        "place": "Yalvaç kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Isparta, Yalvaç kazası, Akpınar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "dualı, sık sık dua eder",
+      "topic": "yeni doğan çocuğuna ad koymak",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "low",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "orta",
+      "length_target": 86,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "24 Mayıs 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Isparta, Yalvaç kazası, Akpınar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5758,
+      "output": 2771
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 24 Mayıs 1331\nHİTAP: Muhterem Validem Nefise Hanım'a,\nGÖVDE: Evvela Cenab-ı Hakk'a hamd eder, mübarek ellerinden hürmetle öperim. Rabbim dualarınızı üzerimizden eksik etmesin. Geçen mektubunuzu şükürler olsun okudum, yavrumun sağ salim dünyaya geldiğini müjdelemişsiniz. Allah vatana millete hayırlı evlat kılsın, ömrü uzun olsun inşallah. Çocuğun adını merhum babamın ismi olan Hasan koyun, dedesinin adıyla yaşasın. Bu ay elime para geçmedi, biraz borcum vardı maaşı denkleştiremedim. O yüzden size birkaç kuruş yollayamıyorum, Cenab-ı Hak rızkınızı bereketlendirsin. ⟦Bulunduğumuz sırttan karşı kıyı ve deniz apaçık görünüyor.⟧ Rüzgârı serttir lakin Allah'ın izniyle dayanıyoruz. Bütün komşulara selam eylerim.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Oğlun Fikri\nZARF: Isparta, Yalvaç kazası, Akpınar karyesi, İmam Ali Efendi vasıtasıyla Nefise Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "86 kelime, hedef 86 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:47+00:00",
+    "tokens": {
+      "input": 4315,
+      "output": 3009
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Bir ifade dışında dil kullanımı döneme uygundur, modern bir kelime veya kavram içermemektedir.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, olaylar ve dualar üzerinden ölçülü bir dille aktarılmıştır.",
+      "okuryazarlik": "Yüksek okuryazarlık seviyesine uygun kelime seçimi ve cümle yapısı istekle tam uyumludur.",
+      "somutluk": "Çocuğa ad koyma, para gönderememe bahanesi ve manzara betimlemesi gibi somut ayrıntılar mektubu zenginleştiriyor.",
+      "sadakat": "Konu, saklanan bilgi, hassas bilgi, dikkatsizlik seviyesi ve kapanış cümlesi dahil tüm isteklere harfiyen uyulmuştur.",
+      "sahicilik": "Dindar ve okumuş bir askerin cepheden yollayacağı mektup için kullanılan dil ve anlatılanlar son derece gerçekçidir."
+    },
+    "issues": [
+      {
+        "line": "Bu ay elime para geçmedi, biraz borcum vardı maaşı denkleştiremedim.",
+        "problem": "“Maaşı denkleştiremedim” ifadesi, modern bir ekonomik deyim olan “ucu ucuna getirememek” gibi tınlıyor ve dönemin diline tam oturmuyor.",
+        "suggestion": "Bu ay elime para geçmedi, biraz borcum vardı, maaşım ona gitti."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:21:47+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

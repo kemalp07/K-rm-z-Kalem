@@ -1,0 +1,207 @@
+{
+  "id": "pool_cepheye_000057",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazlı",
+    "epithet": "Giresunlu",
+    "age": 60,
+    "hometown": "Giresun",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Kemal",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 106,
+  "hand": "hurried",
+  "header": {
+    "text": "Kurtköy, 16 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Kemal'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Kemal mektubunu aldım okudum bizde iyiyiz merak etmeyesin buralarda havalar ısındı fındık dalları pıtrak gibi doldu ama toplayacak kimse kalmadı köyde kollarım pek ağrıyo bahçeye inemeyorum geçen gün muhtar Emine ninenin kapısına vardı elinde kağıtla oğlu Süleyman vurulmuş şehit künyesi gelmiş kadıncağız sabahtan beri avluda taşın üstünde oturuyo hiç konuşmuyo köyün kadınları toplandık yanına vardık elinden tuttum buzhane gibiydi sen kendine eyi bak yavrum geceleri üstünü ört havalar orda nasıldır bilmeyorum sana geçen seneden kalan fındıktan kavurdum bir beze sardım Kör Aliyle yollayacam inşallah eline çabuk geçer babanın mezarına gittim sana dua ettim otlarını yoldum köyden herkez sana selam ediyo Ayşe yengen hatırını soruyo tez zamanda dön.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Anan Nazlı"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Giresunlu Kemal'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazlı Hanım, Giresunlu, 60, çiftçi (Giresun, Keşap kazası, Kurtköy karyesi)\nAlıcı: Oğlu Çavuş Kemal, cephede\nYön: cepheye\nTarih: 16 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: yaşlı ve yorgun, kısa yazar\nKonu: komşunun oğlunun şehit haberi\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Baki selam\nUzunluk: 106",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "gender": "kadın",
+        "age": 60,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Giresun",
+        "occupation": "çiftçi",
+        "epithet": "Giresunlu",
+        "place": "Keşap kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 43,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Giresun",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keşap kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "komşunun oğlunun şehit haberi",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 106,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "16 Haziran 1331",
+      "closing": "Baki selam",
+      "home_address": "Giresun, Keşap kazası, Kurtköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5672,
+      "output": 3645
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Kurtköy, 16 Haziran 1331\nHİTAP: Oğlum Kemal'e\nGÖVDE: Oğlum Kemal mektubunu aldım okudum bizde iyiyiz merak etmeyesin buralarda havalar ısındı fındık dalları pıtrak gibi doldu ama toplayacak kimse kalmadı köyde kollarım pek ağrıyo bahçeye inemeyorum geçen gün muhtar Emine ninenin kapısına vardı elinde kağıtla oğlu Süleyman vurulmuş şehit künyesi gelmiş kadıncağız sabahtan beri avluda taşın üstünde oturuyo hiç konuşmuyo köyün kadınları toplandık yanına vardık elinden tuttum buzhane gibiydi sen kendine eyi bak yavrum geceleri üstünü ört havalar orda nasıldır bilmeyorum sana geçen seneden kalan fındıktan kavurdum bir beze sardım Kör Aliyle yollayacam inşallah eline çabuk geçer babanın mezarına gittim sana dua ettim otlarını yoldum köyden herkez sana selam ediyo Ayşe yengen hatırını soruyo tez zamanda dön.\nKAPANIŞ: Baki selam.\nİMZA: Anan Nazlı\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Giresunlu Kemal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "108 kelime, hedef 106 (+2%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:24+00:00",
+    "tokens": {
+      "input": 4297,
+      "output": 3515
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı, yazım hataları ve kelime seçimi 1915'teki düşük okuryazar bir köylü kadının ağzına tam uyuyor.",
+      "olculuk": "Duygular somut olaylarla etkili bir şekilde gösterilmiş, ancak kuralda belirtilen 'en fazla bir metafor' ilkesi 'pıtrak gibi' ve 'buzhane gibiydi' benzetmeleriyle aşılmış.",
+      "okuryazarlik": "İstekle uyumlu olarak, noktalama eksikliği, birleşik cümleler ve 'inemeyorum, herkez' gibi yazım hatalarıyla düşük okuryazarlık seviyesi başarıyla yansıtılmış.",
+      "somutluk": "Fındık dalları, taşın üstünde oturan komşu, kavrulmuş fındık ve mezar otları gibi ayrıntılar mektuba güçlü bir somutluk katıyor.",
+      "sadakat": "Mektup, konu, gizlenen bilgi, uzunluk ve karakterin sesi dahil olmak üzere isteğin tüm maddelerine harfiyen sadık kalmış.",
+      "sahicilik": "Yaşlı bir ananın endişesi, yorgunluğu ve köy hayatının acı gerçekliği, klişelerden uzak, dokunaklı ve gerçekçi bir dille anlatılmış."
+    },
+    "issues": [
+      {
+        "line": "elinden tuttum buzhane gibiydi",
+        "problem": "Mektupta 'pıtrak gibi' benzetmesiyle birlikte ikinci bir benzetme kullanılmış; kurala göre en fazla bir metafor/benzetme kullanılmalıdır.",
+        "suggestion": "İkinci benzetmeyi kaldırmak ya da daha sade bir ifade kullanmak daha uygun olurdu, örneğin: 'elinden tuttum, buz gibiydi'."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:24+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

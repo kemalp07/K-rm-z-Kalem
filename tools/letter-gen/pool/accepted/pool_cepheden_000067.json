@@ -1,0 +1,289 @@
+{
+  "id": "pool_cepheden_000067",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Lütfi",
+    "epithet": "Kütahyalı",
+    "age": 43,
+    "hometown": "Kütahya",
+    "occupation": "bakkal",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Rukiye",
+    "relation": "annesi",
+    "location": "Kütahya, Eşme kazası, Ilıca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 126,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 5 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Rukiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Validem ellerinden hürmetle öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nasılsınız, keyfiniz yerinde mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Beni merak edesiniz diye yazmıyorum, burada yiyip içip yatıyoruz, peksimetten yanaklarım şişti maşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Yürümekten tabanlarımız biraz yoruluyor ama turp gibiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim küçük oğlanın askerlik celbi gelmiş diye duydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Anacığım, kahveci Tahir Efendi'ye bir selam söyleyin, onun askerlik şubesinde tanıdıkları vardı, belki bir yolunu bulur da tecil ettirir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Dükkânın başında duracak adam lazım, veresiye defterini fareler kemirmesin sonra.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Tuz gazyağı eksikse toptancıdan şimdiden çekin, seneye fiyatlar uçar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Şekerin çuvalı kaç kuruş oldu orada?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim köyden Hüseyin'i gördüm geçen gün,",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "ikinci tabur dördüncü bölüğe",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "vermişler onu, anasına söyleyin sağlığı sıhhati pek yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Kardeşimi ne yapıp edip dükkânda tutun, bana burada bir Kütahyalı yeter de artar bile.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Konu komşuya çokça selam ederim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Baki selam.",
+  "signature": {
+    "text": "Oğlun Çavuş Lütfi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kütahya, Eşme kazası, Ilıca karyesi, İmam Hasan Efendi vasıtasıyla Rukiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Lütfi, Kütahyalı, 43, bakkal, çavuş (Kütahya, Eşme kazası, Ilıca karyesi)\nAlıcı: Annesi Rukiye Hanım, Kütahya, Eşme kazası, Ilıca karyesi\nYön: cepheden\nTarih: 5 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: ayağında yara açıldığını\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Baki selam\nUzunluk: 126",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 43,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Kütahya",
+        "occupation": "bakkal",
+        "epithet": "Kütahyalı",
+        "place": "Eşme kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Rukiye",
+        "gender": "kadın",
+        "age": 73,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eşme kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Kütahya, Eşme kazası, Ilıca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "ayağında yara açıldığını",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "uzun",
+      "length_target": 126,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "5 Haziran 1331",
+      "closing": "Baki selam",
+      "home_address": "Kütahya, Eşme kazası, Ilıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5700,
+      "output": 3459
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 5 Haziran 1331\nHİTAP: Validem Rukiye Hanım'a\nGÖVDE: Validem ellerinden hürmetle öperim. Nasılsınız, keyfiniz yerinde mi? Beni merak edesiniz diye yazmıyorum, burada yiyip içip yatıyoruz, peksimetten yanaklarım şişti maşallah. Yürümekten tabanlarımız biraz yoruluyor ama turp gibiyim. Bizim küçük oğlanın askerlik celbi gelmiş diye duydum. Anacığım, kahveci Tahir Efendi'ye bir selam söyleyin, onun askerlik şubesinde tanıdıkları vardı, belki bir yolunu bulur da tecil ettirir. Dükkânın başında duracak adam lazım, veresiye defterini fareler kemirmesin sonra. Tuz gazyağı eksikse toptancıdan şimdiden çekin, seneye fiyatlar uçar. Şekerin çuvalı kaç kuruş oldu orada? Bizim köyden Hüseyin'i gördüm geçen gün, ⟦ikinci tabur dördüncü bölüğe⟧ vermişler onu, anasına söyleyin sağlığı sıhhati pek yerinde. Kardeşimi ne yapıp edip dükkânda tutun, bana burada bir Kütahyalı yeter de artar bile. Konu komşuya çokça selam ederim.\nKAPANIŞ: Baki selam.\nİMZA: Oğlun Çavuş Lütfi\nZARF: Kütahya, Eşme kazası, Ilıca karyesi, İmam Hasan Efendi vasıtasıyla Rukiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "117 kelime, hedef 126 (-7%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:23:12+00:00",
+    "tokens": {
+      "input": 4378,
+      "output": 4169
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (peksimet, celp, tecil, veresiye) ve ifadeler (turp gibiyim) döneme ve karaktere tamamen uygundur.",
+      "olculuk": "Duygular ve zorluklar, adlandırılmadan, şakacı bir tonla ve somut detaylarla çok ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Dil, 'orta' okuryazar seviyesine uygundur; cümleler ne çok basit ne de çok karmaşıktır, anlatım akıcı ve doğaldır.",
+      "somutluk": "Mektup; veresiye defteri, tuz, gazyağı, şeker çuvalı gibi gündelik ve somut nesnelerle dolu, bu da mektubu canlı kılmaktadır.",
+      "sadakat": "İsteğin neredeyse tüm unsurları (konu, ton, saklanan bilgi, uzunluk) karşılanmış ancak 'Dikkatsizlik: az' kuralı uygulanmamıştır.",
+      "sahicilik": "Karakterin esnaf kimliği, ağabeylik endişesi ve savaş koşullarını hafife alan tavrı çok sahici bir portre çizmektedir."
+    },
+    "issues": [
+      {
+        "line": "Bütünüyle mektup",
+        "problem": "Mektup, istekteki 'Dikkatsizlik: az' talimatına uymuyor; sansürcünün yakalaması gereken hiçbir askerî bilgi (yer adı, birlik detayı vb.) gözden kaçırılmamış, mektup fazla dikkatli yazılmıştır.",
+        "suggestion": "Yazarın dikkatsizliğini yansıtmak için küçük bir askerî ayrıntı sansürsüz bırakılabilirdi. Örneğin başlığa '⟦Arıburnu⟧, 5 Haziran 1331' yazılabilir ya da gövdede '...⟦ikinci tabura⟧ vermişler, dördüncü bölükteymiş...' gibi bir ifade kullanılabilirdi."
+      },
+      {
+        "line": "Validem ellerinden hürmetle öperim.",
+        "problem": "'Hürmetle' kelimesi, bir oğulun annesine yazdığı mektup için biraz fazla resmîdir ve daha çok kâtip dilini andırmaktadır.",
+        "suggestion": "Daha samimi bir açılış tercih edilebilirdi, örneğin: 'Anacığım, evvela o mübarek ellerinden öperim.' veya kısaca 'Validem, ellerinden öperim.'"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:23:12+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

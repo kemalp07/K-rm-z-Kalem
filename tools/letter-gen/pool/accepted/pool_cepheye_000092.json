@@ -1,0 +1,296 @@
+{
+  "id": "pool_cepheye_000092",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sadık",
+    "epithet": "Terzi",
+    "age": 54,
+    "hometown": "Balıkesir",
+    "occupation": "terzi",
+    "relation": "dayısı"
+  },
+  "recipient": {
+    "name": "Ali",
+    "relation": "yeğeni",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 76,
+  "hand": "hurried",
+  "header": {
+    "text": "Ilıca, 12 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Ali'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ali yeğenim gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim halimi sorarsan şükür dükkanı açıp kapatıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde herkez eyi merak etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kardeşin Hasan'ın da kağıdı geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Yaşı tuttu diye çağırdılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Dün şubeye gidip ismini yazdırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Haftaya o da yolcu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Giderken senin yanına düşer belkim Allah bilir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Biz buralarda iyiyiz dert edilecek bişey yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İşler tıkırında gidiyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sana pakette bir kese kağıdı leblebi koydum bide kalıp sabun var orda çamaşırını yuv.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sağ salim dönmeni bekleyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Başka diycek lafım yok.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Amcan Sadık"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Ilıcalı Ali'ye",
+    "sensitive": false
+  },
+  "package": [
+    "leblebi",
+    "bir parça sabun"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sadık, Terzi, 54, terzi (Balıkesir, Burhaniye kazası, Ilıca karyesi)\nAlıcı: Yeğeni Çavuş Ali, cephede\nYön: cepheye\nTarih: 12 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: az konuşur, her şeyi iyi gösterir\nKonu: kardeşin de askere çağrılması\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: leblebi, bir parça sabun\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 54,
+        "relation": "dayısı",
+        "rank": null,
+        "hometown": "Balıkesir",
+        "occupation": "terzi",
+        "epithet": "Terzi",
+        "place": "Burhaniye kazası, Ilıca karyesi"
+      },
+      "recipient": {
+        "name": "Ali",
+        "gender": "erkek",
+        "age": 41,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Balıkesir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Burhaniye kazası, Ilıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": [
+        "leblebi",
+        "bir parça sabun"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "12 Mayıs 1331",
+      "closing": "",
+      "home_address": "Balıkesir, Burhaniye kazası, Ilıca karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5768,
+      "output": 2814
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ilıca, 12 Mayıs 1331\nHİTAP: Ali'ye\nGÖVDE: Ali yeğenim gözlerinden öperim. Benim halimi sorarsan şükür dükkanı açıp kapatıyom. Köyde herkez eyi merak etme. Kardeşin Hasan'ın da kağıdı geldi. Yaşı tuttu diye çağırdılar. Dün şubeye gidip ismini yazdırdı. Haftaya o da yolcu. Giderken senin yanına düşer belkim Allah bilir. Biz buralarda iyiyiz dert edilecek bişey yok. İşler tıkırında gidiyo. Sana pakette bir kese kağıdı leblebi koydum bide kalıp sabun var orda çamaşırını yuv. Sağ salim dönmeni bekleyoz. Başka diycek lafım yok.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Amcan Sadık\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Ilıcalı Ali'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "73 kelime, hedef 76 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000015 ile ortak: \"gözlerinden öperim benim halimi sorarsan şükür\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:41+00:00",
+    "tokens": {
+      "input": 4231,
+      "output": 3002
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı genel olarak başarılı ancak 'işler tıkırında' gibi modern çağrışımlı bir iki ifade daha döneme uygun hale getirilebilirdi.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, 'merak etme' gibi küçük bir istisna dışında ölçülü bir dil kullanılmış.",
+      "okuryazarlik": "İstekle uyumlu olarak, düşük okuryazarlığa işaret eden imla hataları ve basit cümle yapısı başarıyla yansıtılmış.",
+      "somutluk": "Leblebi, sabun, dükkan gibi gündelik ve somut ayrıntılar mektubun gerçekçiliğini artırmış.",
+      "sadakat": "Mektup; konu, karakter, saklanan bilgi ve paket içeriği dahil olmak üzere isteğin tüm unsurlarına tam olarak sadık kalmış.",
+      "sahicilik": "Karakterin az konuşan yapısı, yöresel ağzı ve haber verme biçimi mektubu son derece sahici kılmış."
+    },
+    "issues": [
+      {
+        "line": "Köyde herkez eyi merak etme.",
+        "problem": "Kurala göre duygu adlandırmaktan kaçınılması gerekirken, 'merak etme' ifadesi doğrudan alıcının duygusuna yönelik bir telkindir.",
+        "suggestion": "Köyde herkezin selamı var, herkes eyidir."
+      },
+      {
+        "line": "Biz buralarda iyiyiz dert edilecek bişey yok.",
+        "problem": "Saklanan bir olumsuzluk varken 'dert edilecek bir şey yok' demek, özellikle az konuşan bir karakter için fazla bariz bir örtme çabasıdır.",
+        "suggestion": "Biz buralarda iyiyiz. Anan da eyi, selamı var."
+      },
+      {
+        "line": "İşler tıkırında gidiyo.",
+        "problem": "Bu ifade, savaş döneminin zorlukları ve karakterin suskun yapısıyla çelişen, fazla neşeli ve modern bir tınıya sahiptir.",
+        "suggestion": "Dükkanda işler bildiğin gibi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:41+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

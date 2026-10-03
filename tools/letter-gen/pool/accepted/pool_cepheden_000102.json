@@ -1,0 +1,259 @@
+{
+  "id": "pool_cepheden_000102",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Adem",
+    "epithet": "Niğdeli",
+    "age": 22,
+    "hometown": "Niğde",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Melek",
+    "relation": "annesi",
+    "location": "Niğde, Bor kazası, Sarıyar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 66,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 29 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Melek Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela mahsus selam eder, hatırınızı sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlimi sorarsan şükür turp gibiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralarda dert edilecek bir şey yok, yiyip içip yatıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sadece karşımızda koca bir deniz var, gemilere bakıp duruyoruz.",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Köyde havalar ısınmıştır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Aşağı tarlaya bostanı ektiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Hasan emmim tek başına o tarlanın hakkından gelemez, beli çabuk ağrır ihtiyarın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Keşke bir yolunu bulup gelsem de şu çapayı ben vursam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Cümle komşulara selam söyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim, Allah'a emanet olun.",
+  "signature": {
+    "text": "Oğlun Adem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Niğde, Bor kazası, Sarıyar karyesi, İmam Efendi vasıtasıyla Melek Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Adem, Niğdeli, 22, çiftçi, onbaşı (Niğde, Bor kazası, Sarıyar karyesi)\nAlıcı: Annesi Melek Hanım, Niğde, Bor kazası, Sarıyar karyesi\nYön: cepheden\nTarih: 29 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: bostanın ekilip ekilmediğini sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 66",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Adem",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Niğde",
+        "occupation": "çiftçi",
+        "epithet": "Niğdeli",
+        "place": "Bor kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Melek",
+        "gender": "kadın",
+        "age": 45,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bor kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Niğde, Bor kazası, Sarıyar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "bostanın ekilip ekilmediğini sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "bulunduğu yeri ele veren bir manzara (karşı kıyı, deniz, bir sırt ya da dere)",
+      "length_label": "kısa",
+      "length_target": 66,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "29 Nisan 1331",
+      "closing": "",
+      "home_address": "Niğde, Bor kazası, Sarıyar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5687,
+      "output": 2174
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 29 Nisan 1331\nHİTAP: Validem Melek Hanım'a\nGÖVDE: Evvela mahsus selam eder, hatırınızı sorarım. Benim hâlimi sorarsan şükür turp gibiyim. Buralarda dert edilecek bir şey yok, yiyip içip yatıyoruz. ⟦Sadece karşımızda koca bir deniz var, gemilere bakıp duruyoruz.⟧ Köyde havalar ısınmıştır. Aşağı tarlaya bostanı ektiniz mi? Hasan emmim tek başına o tarlanın hakkından gelemez, beli çabuk ağrır ihtiyarın. Keşke bir yolunu bulup gelsem de şu çapayı ben vursam. Cümle komşulara selam söyle.\nKAPANIŞ: Hepinizin gözlerinden öperim, Allah'a emanet olun.\nİMZA: Oğlun Adem\nZARF: Niğde, Bor kazası, Sarıyar karyesi, İmam Efendi vasıtasıyla Melek Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "64 kelime, hedef 66 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000051 ile ortak: \"selam eder hatırınızı sorarım benim halimi\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:52+00:00",
+    "tokens": {
+      "input": 4230,
+      "output": 3438
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'turp gibiyim' gibi deyimlerle döneme ve karaktere uygun, modern ifadeler içermiyor.",
+      "olculuk": "Duygular ('eve dönme isteği') adlandırılmadan, somut bir eylem ('çapayı ben vursam') üzerinden ustaca hissettirilmiş.",
+      "okuryazarlik": "'Validem' kelimesi orta okuryazar bir çiftçinin tonu için biraz fazla resmî kalsa da genel dil seviyesi tutarlı.",
+      "somutluk": "Mektup, 'bostan', 'aşağı tarla', 'çapa', 'Hasan emmim' gibi somut ve gündelik ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "İsteğin ana hatlarına (konu, ton, gizlenen bilgi) sadık kalınmış ancak 'Dikkatsizlik: az' kuralı uygulanmamış, sansürden kaçan bir detay eklenmemiş.",
+      "sahicilik": "Tehlikeyi hafife alan şakacı ton ile eve ve tarlaya dair endişenin birleşimi, mektubu oldukça sahici kılıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Validem Melek Hanım'a",
+        "problem": "'Validem' kelimesi, orta okuryazar bir çiftçinin annesine hitabı için fazla resmî ve kâtip ağzıdır.",
+        "suggestion": "HİTAP: Anama / Anacığıma"
+      },
+      {
+        "line": "GÖVDE: Evvela mahsus selam eder, hatırınızı sorarım...",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta sansürcünün gözünden kaçmış (⟦ ⟧ işareti dışında kalmış) hiçbir askerî bilgi bulunmuyor.",
+        "suggestion": "Başlığa '⟦Arıburnu⟧' gibi bir yer adı eklenerek veya gövdede 'Burada deniz kenarındayız' gibi bir ifade ⟦ ⟧ işareti dışında bırakılarak dikkatsizlik kuralı uygulanabilirdi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:27:52+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

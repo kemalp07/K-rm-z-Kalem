@@ -1,0 +1,292 @@
+{
+  "id": "pool_cepheye_000090",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Sultan",
+    "epithet": "Maraşlı",
+    "age": 36,
+    "hometown": "Maraş",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Hayri",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "komşunun mektebe giden oğlu",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 117,
+  "hand": "dictated",
+  "header": {
+    "text": "Gölcük, 8 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem zevcim Hayri Efendi'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Sultan teyzem der ki: Evvela selam eder, hatırınızı sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim hâlimizi sorarsanız şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen ay Hıdrellez günü avludaki ceviz ağacının altına kilimi serdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bulgur pilavı kaynattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sininin başına oturduk lakin senin tahta kaşığın sandıkta bekledi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çocuklar dilsiz gibi yemeğe kaşık çaldı, sofradan erken kalktılar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Küçük kızın Ayşe beşiğinde uslu yatıyor, abisi tarlada bana yardım ediyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Arpayı biçmeye hazırlanıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Giden postayla sana bir bohça yolladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İçine güzden sardığım pestilleri, bir torba kuru üzüm koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bir de gece nöbetlerinde boynuna sarasın diye yün atkı ördüm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Karabaş inek yavruladı, sütü bol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Bahar yağmurlarında evin damı aktıydı, toprak çekip sıvadık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Herkesin sana selamı var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kusura bakma, kâğıt bitti.",
+  "signature": {
+    "text": "",
+    "seal": "Sultan"
+  },
+  "note": {
+    "text": "İşbu mektubu Sultan teyzemin ağzından mektepli İsmail yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Maraşlı Hayri'ye",
+    "sensitive": false
+  },
+  "package": [
+    "kuru üzüm",
+    "el örgüsü atkı",
+    "pestil"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Sultan Hanım, Maraşlı, 36, ev hanımı (Maraş, Elbistan kazası, Gölcük karyesi)\nAlıcı: Kocası Er Hayri, cephede\nYön: cepheye\nTarih: 8 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: komşunun mektebe giden oğlu)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: Hıdrellez'de sofrada boş kalan yer\nSakladığı: kardeşinin de cepheye gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: kuru üzüm, el örgüsü atkı, pestil\nKapanış: Kusura bakma, kâğıt bitti\nUzunluk: 117",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Sultan",
+        "gender": "kadın",
+        "age": 36,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Maraş",
+        "occupation": "ev hanımı",
+        "epithet": "Maraşlı",
+        "place": "Elbistan kazası, Gölcük karyesi"
+      },
+      "recipient": {
+        "name": "Hayri",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Maraş",
+        "occupation": null,
+        "epithet": null,
+        "place": "Elbistan kazası, Gölcük karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "komşunun mektebe giden oğlu",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "Hıdrellez'de sofrada boş kalan yer",
+      "hidden": "kardeşinin de cepheye gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 117,
+      "package": [
+        "kuru üzüm",
+        "el örgüsü atkı",
+        "pestil"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "8 Haziran 1331",
+      "closing": "Kusura bakma, kâğıt bitti",
+      "home_address": "Maraş, Elbistan kazası, Gölcük karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5801,
+      "output": 2886
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Gölcük, 8 Haziran 1331\nHİTAP: Muhterem zevcim Hayri Efendi'ye\nGÖVDE: Sultan teyzem der ki: Evvela selam eder, hatırınızı sorarım. Bizim hâlimizi sorarsanız şükür ayaktayız. Geçen ay Hıdrellez günü avludaki ceviz ağacının altına kilimi serdik. Bulgur pilavı kaynattım. Sininin başına oturduk lakin senin tahta kaşığın sandıkta bekledi. Çocuklar dilsiz gibi yemeğe kaşık çaldı, sofradan erken kalktılar. Küçük kızın Ayşe beşiğinde uslu yatıyor, abisi tarlada bana yardım ediyor. Arpayı biçmeye hazırlanıyoruz. Giden postayla sana bir bohça yolladım. İçine güzden sardığım pestilleri, bir torba kuru üzüm koydum. Bir de gece nöbetlerinde boynuna sarasın diye yün atkı ördüm. Karabaş inek yavruladı, sütü bol. Bahar yağmurlarında evin damı aktıydı, toprak çekip sıvadık. Herkesin sana selamı var.\nKAPANIŞ: Kusura bakma, kâğıt bitti.\nİMZA: (mühür: Sultan)\nNOT: İşbu mektubu Sultan teyzemin ağzından mektepli İsmail yazdı.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Maraşlı Hayri'ye"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 117 (-14%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:31+00:00",
+    "tokens": {
+      "input": 4363,
+      "output": 3140
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, dönemin köy ve mektep ağzını hiçbir modern ifade olmadan başarıyla yansıtıyor.",
+      "olculuk": "Duygular, 'senin tahta kaşığın sandıkta bekledi' gibi somut ve dokunaklı bir imgeyle, adlandırılmadan ustaca hissettiriliyor.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin ağzından mektepli bir çocuğun yazdığı mektup dinamiği, dil ve imza kullanımıyla kusursuz yansıtılmış.",
+      "somutluk": "Mektup, ceviz ağacı, bulgur pilavı, akan dam gibi gündelik hayata dair çok sayıda somut ayrıntı içeriyor.",
+      "sadakat": "Mektup, konu, ton, yazım biçimi, kelime sayısı ve paket içeriği dahil olmak üzere isteğin tüm maddelerine harfiyen uyuyor.",
+      "sahicilik": "Sıradan köy haberleri ile hasretin ince bir şekilde işlenmesi, mektubu klişelerden uzak ve son derece sahici kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:32:31+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

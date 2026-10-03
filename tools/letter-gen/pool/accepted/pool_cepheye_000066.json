@@ -1,0 +1,284 @@
+{
+  "id": "pool_cepheye_000066",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hilmi",
+    "epithet": "Kırşehirli",
+    "age": 47,
+    "hometown": "Kırşehir",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Ömer",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "dictated",
+  "writer": "mahalle imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 97,
+  "hand": "dictated",
+  "header": {
+    "text": "Sarıyar, 5 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Ömer'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela sana çok selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "İşbu kâğıdı baban Hilmi'nin ağzından yazıyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ömer, benim hâlimi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Şehre indim geçen, gaz yağı ateş pahası olmuş, cebimdeki kuruş yetmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Borç harç idare ediyoruz, sen tarlayı düşünme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahmet Ağa alacağından laf açıp duruyor, bir çare bakacağız elbet.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Senin oğlan geçen hafta avluda tay tay durdu, bugün de kapıya kadar ilk adımını attı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Yere pek sağlam basıyor maşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana mektupla beraber bir çıkın yolladık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İçine anan kuru ekmekle güzden kalan pestilden koydu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "O pestili pazarda satsam iki kuruş ederdi, borcumuzun birazını kapatırdı ama anan dinlemedi, mecbur sana yolladık.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden öperim.",
+  "signature": {
+    "text": "Baban",
+    "seal": "Hilmi"
+  },
+  "note": {
+    "text": "Allah evladınızı size bağışlasın, İmam Hakkı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kırşehirli Er Ömer'e",
+    "sensitive": false
+  },
+  "package": [
+    "kuru ekmek",
+    "pestil"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hilmi, Kırşehirli, 47, çiftçi (Kırşehir, Keskin kazası, Sarıyar karyesi)\nAlıcı: Oğlu Er Ömer, cephede\nYön: cepheye\nTarih: 5 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: mahalle imamı)\nOkuryazarlık: yok\nSes: hesapçı, para ve borçtan söz eder\nKonu: çocuğun ilk adımları\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: kuru ekmek, pestil\nKapanış: Ellerinden öperim\nUzunluk: 97",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hilmi",
+        "gender": "erkek",
+        "age": 47,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "çiftçi",
+        "epithet": "Kırşehirli",
+        "place": "Keskin kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Ömer",
+        "gender": "erkek",
+        "age": 24,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Keskin kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "mahalle imamı",
+      "literacy": "none",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 97,
+      "package": [
+        "kuru ekmek",
+        "pestil"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "5 Mayıs 1331",
+      "closing": "Ellerinden öperim",
+      "home_address": "Kırşehir, Keskin kazası, Sarıyar karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5837,
+      "output": 5125
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 5 Mayıs 1331\nHİTAP: Oğlum Ömer'e\nGÖVDE: Evvela sana çok selam eder, hatırını sorarım. İşbu kâğıdı baban Hilmi'nin ağzından yazıyorum. Ömer, benim hâlimi sorarsan şükür ayaktayız. Şehre indim geçen, gaz yağı ateş pahası olmuş, cebimdeki kuruş yetmedi. Borç harç idare ediyoruz, sen tarlayı düşünme. Ahmet Ağa alacağından laf açıp duruyor, bir çare bakacağız elbet. Senin oğlan geçen hafta avluda tay tay durdu, bugün de kapıya kadar ilk adımını attı. Yere pek sağlam basıyor maşallah. Sana mektupla beraber bir çıkın yolladık. İçine anan kuru ekmekle güzden kalan pestilden koydu. O pestili pazarda satsam iki kuruş ederdi, borcumuzun birazını kapatırdı ama anan dinlemedi, mecbur sana yolladık.\nKAPANIŞ: Ellerinden öperim.\nİMZA: (mühür: Hilmi) Baban\nNOT: Allah evladınızı size bağışlasın, İmam Hakkı.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kırşehirli Er Ömer'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "97 kelime, hedef 97 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:44+00:00",
+    "tokens": {
+      "input": 4302,
+      "output": 3619
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, deyimler ('ateş pahası', 'tay tay durmak') ve kelime seçimi ('işbu', 'çıkın') döneme tamamen uygundur.",
+      "olculuk": "Duygular ve karakter özellikleri ('hesapçı' baba) adlandırılmadan, somut olaylar üzerinden başarıyla gösterilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin imam aracılığıyla mektup yazdırması, hem kâtibin hem de mektup sahibinin sesinin duyulmasıyla çok iyi yansıtılmıştır.",
+      "somutluk": "Mektup, gaz yağı fiyatı, borç alınan komşu, çocuğun ilk adımları ve pakete konan pestil gibi canlı ve somut ayrıntılarla doludur.",
+      "sadakat": "İsteğin neredeyse tüm unsurlarına uyulmuş, ancak kapanışta istenen 'ellerinden öperim' ifadesi babadan oğula bağlamına göre düzeltilmemiştir.",
+      "sahicilik": "Kapanıştaki 'ellerinden öperim' ifadesi bir babanın oğluna yazarken kullanacağı bir hitap olmadığından sahiciliği bir miktar zayıflatmaktadır."
+    },
+    "issues": [
+      {
+        "line": "KAPANIŞ: Ellerinden öperim.",
+        "problem": "Bir baba, kendisinden küçük olan oğluna saygı ifadesi olan 'ellerinden öperim' demez; bu ifade büyüklere kullanılır.",
+        "suggestion": "Gözlerinden öperim."
+      },
+      {
+        "line": "İMZA: (mühür: Hilmi) Baban",
+        "problem": "İmza formatı biraz karışık; mühür bilgisinin ve 'Baban' ifadesinin konumu daha net olabilir.",
+        "suggestion": "Baban (mühür: Hilmi)"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:29:44+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "pool_cepheye_000056",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Lütfi",
+    "epithet": "Eskişehirli",
+    "age": 40,
+    "hometown": "Eskişehir",
+    "occupation": "kayıkçı",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Yusuf",
+    "relation": "ağabeyi",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 114,
+  "hand": "hurried",
+  "header": {
+    "text": "Sarıyar, 24 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Ağabeyim Yusuf'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Biz burada ne haldeyiz hiç sormuyon.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kayığı nehire indirdim ama su bu sene pek deli akıyo karşıya geçen yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Anam her gün kapıya çıkıp yolu bekliyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Herkezin köyüne mektubu geliyo seninki yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Asıl diyeceğim senin nişan işi tehlikeye bindi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kızın babası Bekir emmi geçen kahvede mırın kırın etmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Askerden sağ döneceği belli değil kız evde kurudu diyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Nişanı bozacak nerdeyse.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Anam çok ağladı kahretti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bir satır kâğıt yolla da yaşadığını bilsinler adamın ağzı kapansın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Yüzüğünü geri verecekler diye korkuyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Gideli kaç ay oldu insan bir selam yollamaz mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Buraları düşünme anamın Ayşe halamın çok selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Çabuk kâğıt yaz şu Bekir emmiye muhtarın yanında okutalım da adam kendi gözüyle bir görsün.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Kardeşin Lütfi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Yusuf'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Lütfi, Eskişehirli, 40, kayıkçı (Eskişehir, Seyitgazi kazası, Sarıyar karyesi)\nAlıcı: Ağabeyi Çavuş Yusuf, cephede\nYön: cepheye\nTarih: 24 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: nişanın bozulması tehlikesi\nSakladığı: borç için tarlanın elden gittiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Cevabını bekliyorum\nUzunluk: 114",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Lütfi",
+        "gender": "erkek",
+        "age": 40,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "kayıkçı",
+        "epithet": "Eskişehirli",
+        "place": "Seyitgazi kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 41,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Seyitgazi kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "nişanın bozulması tehlikesi",
+      "hidden": "borç için tarlanın elden gittiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 114,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "24 Nisan 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Eskişehir, Seyitgazi kazası, Sarıyar karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5821,
+      "output": 4287
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Yer · Kuzey sırtı ve iskele (oyun içi)",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Sarıyar, 24 Nisan 1331\nHİTAP: Ağabeyim Yusuf'a\nGÖVDE: Biz burada ne haldeyiz hiç sormuyon. Kayığı nehire indirdim ama su bu sene pek deli akıyo karşıya geçen yok. Anam her gün kapıya çıkıp yolu bekliyo. Herkezin köyüne mektubu geliyo seninki yok. Asıl diyeceğim senin nişan işi tehlikeye bindi. Kızın babası Bekir emmi geçen kahvede mırın kırın etmiş. Askerden sağ döneceği belli değil kız evde kurudu diyo. Nişanı bozacak nerdeyse. Anam çok ağladı kahretti. Bir satır kâğıt yolla da yaşadığını bilsinler adamın ağzı kapansın. Yüzüğünü geri verecekler diye korkuyoz. Gideli kaç ay oldu insan bir selam yollamaz mı. Buraları düşünme anamın Ayşe halamın çok selamı var. Çabuk kâğıt yaz şu Bekir emmiye muhtarın yanında okutalım da adam kendi gözüyle bir görsün.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Kardeşin Lütfi\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Eskişehirli Yusuf'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "111 kelime, hedef 114 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:28:20+00:00",
+    "tokens": {
+      "input": 4299,
+      "output": 3486
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil, argo ve yazım hataları (sormuyon, herkezin, akıyo) dönemin düşük okuryazar köy diline tamamen uygundur.",
+      "olculuk": "Duygular, adlandırılmak yerine somut eylemlerle (kapıda beklemek, mırın kırın etmek) ve basit köylü benzetmeleriyle (evde kurudu) hissettirilmiştir.",
+      "okuryazarlik": "Kısa cümleler, hafif ve tutarlı imla hataları ve basit kelime seçimi, istekte belirtilen düşük okuryazarlık seviyesiyle kusursuz bir uyum içindedir.",
+      "somutluk": "Mektup; kayık, nehir, kahve, Bekir emmi, yüzük gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, ton, uzunluk, kapanış cümlesi ve karakterin sakladığı bilgi dahil olmak üzere isteğin tüm maddelerine harfiyen uymaktadır.",
+      "sahicilik": "Sorunun sunuluş şekli ve önerilen çözüm (mektubu muhtarın yanında okutmak), dönemin köy hayatının sosyal dinamiklerini yansıtan sahici bir tablo çizmektedir."
+    },
+    "issues": [
+      {
+        "line": "Buraları düşünme anamın Ayşe halamın çok selamı var.",
+        "problem": "Cümle, iki ayrı fikri (teselli ve selam) dilbilgisi açısından zayıf bir şekilde birleştiriyor ve bu haliyle kulağa biraz yapay geliyor.",
+        "suggestion": "Buraları düşünme. Anamın, Ayşe halamın sana çok selamı var."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:28:20+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

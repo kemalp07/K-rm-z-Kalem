@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheden_000072",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Recep",
+    "epithet": "Balıkesirli",
+    "age": 23,
+    "hometown": "Balıkesir",
+    "occupation": "çiftçi",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Zarife",
+    "relation": "annesi",
+    "location": "Balıkesir, Balya kazası, Ortaköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 112,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 11 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Anam Zarife'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Anam mektubunu aldım okudum sevindim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Buralar çok sıcak oldu toz toprak içindeyiz ama şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sen çocuklara eği bak ayakları çıplak gezmesinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kızım Ayşe'yle küçük oğlanın gözlerinden öperim onlara pekmez verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim nişanlı kızı da görürsen ona de ki Recep sağ salim gelicek az daha sabretsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çeyizini dizsin beni beklesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Köyde harman vakti geldi arpa biçimi başlamıştır kim biçiyo tarlayı kim yardım ediyo yaz bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben burda rahatım bir kavgamız gürültümüz yok eği yeyip içiyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dayımgil size yardım ediyo mu onlara çok selam söyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Geçen mektupta yazmışsın inek buzağılamış sütünü çocuklara içirin sakın satmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Nişanlıya tembih et beni beklesin caymasın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Bizi unutma.",
+  "signature": {
+    "text": "Oğlun Recep"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Balıkesir, Balya kazası, Ortaköy karyesi, Muhtar Hasan Ağa vasıtasıyla Zarife Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Recep, Balıkesirli, 23, çiftçi, onbaşı (Balıkesir, Balya kazası, Ortaköy karyesi)\nAlıcı: Annesi Zarife Hanım, Balıkesir, Balya kazası, Ortaköy karyesi\nYön: cepheden\nTarih: 11 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: nişanlısının beklemesini istemek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Bizi unutma\nUzunluk: 112",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Recep",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Balıkesir",
+        "occupation": "çiftçi",
+        "epithet": "Balıkesirli",
+        "place": "Balya kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Zarife",
+        "gender": "kadın",
+        "age": 41,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Balıkesir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Balya kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Balıkesir, Balya kazası, Ortaköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 112,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "11 Haziran 1331",
+      "closing": "Bizi unutma",
+      "home_address": "Balıkesir, Balya kazası, Ortaköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5686,
+      "output": 3221
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 11 Haziran 1331\nHİTAP: Anam Zarife'ye\nGÖVDE: Anam mektubunu aldım okudum sevindim. Buralar çok sıcak oldu toz toprak içindeyiz ama şükür ayaktayız. Sen çocuklara eği bak ayakları çıplak gezmesinler. Kızım Ayşe'yle küçük oğlanın gözlerinden öperim onlara pekmez verin. Bizim nişanlı kızı da görürsen ona de ki Recep sağ salim gelicek az daha sabretsin. Çeyizini dizsin beni beklesin. Köyde harman vakti geldi arpa biçimi başlamıştır kim biçiyo tarlayı kim yardım ediyo yaz bana. Ben burda rahatım bir kavgamız gürültümüz yok eği yeyip içiyoruz. Dayımgil size yardım ediyo mu onlara çok selam söyle. Geçen mektupta yazmışsın inek buzağılamış sütünü çocuklara içirin sakın satmayın. Nişanlıya tembih et beni beklesin caymasın.\nKAPANIŞ: Bizi unutma.\nİMZA: Oğlun Recep\nZARF: Balıkesir, Balya kazası, Ortaköy karyesi, Muhtar Hasan Ağa vasıtasıyla Zarife Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "100 kelime, hedef 112 (-11%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:23:45+00:00",
+    "tokens": {
+      "input": 4293,
+      "output": 3758
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kelime seçimi, basit cümle yapısı ve imla hataları dönemin düşük okuryazarlı köylü diline tamamen uygundur.",
+      "olculuk": "Duygular doğrudan söylenmek yerine somut istekler ve tekrarlar üzerinden hissettirilmiş, abartıdan kaçınılmıştır.",
+      "okuryazarlik": "İstekte belirtilen düşük okuryazarlık seviyesi; imla hataları, noktalama eksiklikleri ve basit hitapla başarılı bir şekilde yansıtılmıştır.",
+      "somutluk": "Mektup; pekmez, arpa biçimi, buzağılayan inek gibi gündelik ve somut ayrıntılarla zenginleştirilerek sahicilik kazanmıştır.",
+      "sadakat": "Mektup; konu, saklanan bilgi, karakterin sesi ve kapanış cümlesi dahil olmak üzere isteğin tüm maddelerine eksiksiz uymaktadır.",
+      "sahicilik": "Genel olarak çok sahici olsa da 'eği yeyip içiyoruz' ifadesi biraz genel kalmış, daha somut bir askerlik detayıyla güçlendirilebilirdi."
+    },
+    "issues": [
+      {
+        "line": "Ben burda rahatım bir kavgamız gürültümüz yok eği yeyip içiyoruz.",
+        "problem": "'eği yeyip içiyoruz' ifadesi, bir askerin mektubu için biraz fazla genel ve kalıp bir rahatlatma cümlesi gibi duruyor, somutluğu azaltıyor.",
+        "suggestion": "Ben burda rahatım, bir kavgamız gürültümüz yok. Kumanyamız vaktinde geliyo, aç değiliz şükür."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:23:45+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

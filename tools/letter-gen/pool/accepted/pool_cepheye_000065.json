@@ -1,0 +1,274 @@
+{
+  "id": "pool_cepheye_000065",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Dürdane",
+    "epithet": "Dokumacı",
+    "age": 41,
+    "hometown": "Dersaadet",
+    "occupation": "dokumacı",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 86,
+  "hand": "careful",
+  "header": {
+    "text": "Üsküdar, 25 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Kaç vakittir senden kâğıt gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Gözüm kapıda kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kardeşin yürüdü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen gün tezgâhın başındaydım, bir baktım duvara tutuna tutuna yanıma kadar gelmiş.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ayakları yere sağlam basıyor maşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim halimizi sorarsan iyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Komşu Hacer teyzen biraz bulgur getirdi, dün onu kaynattık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Fırınların önü epey kalabalık bu aralar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Mahallede herkes seni soruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tezgâhta iki top bez dokudum, onları verip sana tütün alacağım, posta bulunca yollarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kardeşlerine mukayyet oluyorum, sen bizi hiç düşünme.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "Anan Dürdane"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Talat'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Dürdane Hanım, Dokumacı, 41, dokumacı (Dersaadet, Üsküdar, Selamsız mahallesi)\nAlıcı: Oğlu Er Talat, cephede\nYön: cepheye\nTarih: 25 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: kaba ama sevecen, çocuklarına düşkün\nKonu: çocuğun ilk adımları\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 86",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Dürdane",
+        "gender": "kadın",
+        "age": 41,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": "dokumacı",
+        "epithet": "Dokumacı",
+        "place": "Üsküdar, Selamsız mahallesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Üsküdar, Selamsız mahallesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "kaba ama sevecen, çocuklarına düşkün",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 86,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "25 Nisan 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Dersaadet, Üsküdar, Selamsız mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5612,
+      "output": 1600
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Üsküdar, 25 Nisan 1331\nHİTAP: Oğlum Talat'a\nGÖVDE: Evvela selam eder hatırını sorarım. Kaç vakittir senden kâğıt gelmedi. Gözüm kapıda kaldı. Kardeşin yürüdü. Geçen gün tezgâhın başındaydım, bir baktım duvara tutuna tutuna yanıma kadar gelmiş. Ayakları yere sağlam basıyor maşallah. Bizim halimizi sorarsan iyiyiz. Komşu Hacer teyzen biraz bulgur getirdi, dün onu kaynattık. Fırınların önü epey kalabalık bu aralar. Mahallede herkes seni soruyor. Tezgâhta iki top bez dokudum, onları verip sana tütün alacağım, posta bulunca yollarım. Kardeşlerine mukayyet oluyorum, sen bizi hiç düşünme.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: Anan Dürdane\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "75 kelime, hedef 86 (-13%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:28+00:00",
+    "tokens": {
+      "input": 4236,
+      "output": 3431
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('kâğıt gelmedi', 'mukayyet olmak', 'posta bulunca') döneme tamamen uygun, modern bir kelime veya anlatım bozukluğu içermiyor.",
+      "olculuk": "Duygular ('gözüm kapıda kaldı') doğrudan adlandırılmak yerine somut durumlarla ustaca hissettirilmiş, abartıdan ve ağdalı ifadelerden kaçınılmış.",
+      "okuryazarlik": "İstekteki 'orta okuryazar' profiline tam uyan, ne çok basit ne de süslü, gündelik dilde akıcı ve anlaşılır cümleler kurulmuş.",
+      "somutluk": "Mektup; tezgâh, bulgur, fırın kuyruğu, bez topu gibi karakterin hayatına özgü, somut ve inandırıcı ayrıntılarla zenginleştirilmiş.",
+      "sadakat": "İstekte belirtilen konu, saklanan bilgi, karakterin sesi, kapanış cümlesi ve kelime sayısı gibi tüm unsurlara harfiyen uyulmuş.",
+      "sahicilik": "Mektup genel olarak çok sahici bir his verse de, zarf adresinde askerin kimliğini netleştirecek bir lakabın (ör. Üsküdarlı) eksik olması küçük bir kusurdur."
+    },
+    "issues": [
+      {
+        "line": "ZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Talat'a",
+        "problem": "Asker adresinde, aynı isimde başka askerler olabileceği için karışıklığı önlemek amacıyla genellikle memleket veya baba adı gibi bir lakap eklenirdi.",
+        "suggestion": "ZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Üsküdarlı Talat'a"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:29:28+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

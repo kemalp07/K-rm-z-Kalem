@@ -1,0 +1,264 @@
+{
+  "id": "pool_cepheden_000071",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Eşref",
+    "epithet": "Kahveci",
+    "age": 37,
+    "hometown": "Niğde",
+    "occupation": "kahveci",
+    "rank": "çavuş"
+  },
+  "recipient": {
+    "name": "Fadime",
+    "relation": "karısı",
+    "location": "Niğde, Ürgüp kazası, Akpınar karyesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 76,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 12 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Fadime Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Eşref çavuş der ki: Buraya geleli kaç ay oldu, köyden bir satır kâğıt gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Posta dağılırken hep adım okunur diye bekliyorum, çıkmıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Pederimle kahvedeki o bakır semaver yüzünden darılmıştık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Gidip elini öpün, Eşref kusur etti deyin, hakkını helal etsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Dünya hâlidir, yarın ne olacağı bilinmez.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Benim sağlığım yerindedir, sapa sağlamım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim takımda on beş kişi kaldık",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "lakin gücümüz kuvvetimiz yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Arpa biçimine başlamışsınızdır, tarlaya ırgat tutun, yevmiyesini kahvenin çekmecesinden verin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ali'nin, kızın gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Eşref"
+  },
+  "note": {
+    "text": "İşbu mektup Eşref Çavuş'un isteği üzerine tarafımdan yazılmıştır. Alay İmamı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Niğde, Ürgüp kazası, Akpınar karyesi, İmam Salih Efendi vasıtasıyla Fadime Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Eşref, Kahveci, 37, kahveci, çavuş (Niğde, Ürgüp kazası, Akpınar karyesi)\nAlıcı: Karısı Fadime Hanım, Niğde, Ürgüp kazası, Akpınar karyesi\nYön: cepheden\nTarih: 12 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: babasıyla eski bir dargınlığı gidermek\nSakladığı: yaralandığını\nHassas bilgi: kaç kişi kaldıkları ya da kaç kişinin yaralandığı\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Allah'a emanet ol\nUzunluk: 76",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Eşref",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Niğde",
+        "occupation": "kahveci",
+        "epithet": "Kahveci",
+        "place": "Ürgüp kazası, Akpınar karyesi"
+      },
+      "recipient": {
+        "name": "Fadime",
+        "gender": "kadın",
+        "age": 32,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Niğde",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ürgüp kazası, Akpınar karyesi"
+      },
+      "recipient_location": "Niğde, Ürgüp kazası, Akpınar karyesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "babasıyla eski bir dargınlığı gidermek",
+      "hidden": "yaralandığını",
+      "carelessness": "low",
+      "sensitive_info": "kaç kişi kaldıkları ya da kaç kişinin yaralandığı",
+      "length_label": "kısa",
+      "length_target": 76,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "12 Haziran 1331",
+      "closing": "Allah'a emanet ol",
+      "home_address": "Niğde, Ürgüp kazası, Akpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5700,
+      "output": 3870
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 12 Haziran 1331\nHİTAP: Zevcem Fadime Hanım'a\nGÖVDE: Eşref çavuş der ki: Buraya geleli kaç ay oldu, köyden bir satır kâğıt gelmedi. Posta dağılırken hep adım okunur diye bekliyorum, çıkmıyor. Pederimle kahvedeki o bakır semaver yüzünden darılmıştık. Gidip elini öpün, Eşref kusur etti deyin, hakkını helal etsin. Dünya hâlidir, yarın ne olacağı bilinmez. Benim sağlığım yerindedir, sapa sağlamım. ⟦Bizim takımda on beş kişi kaldık⟧ lakin gücümüz kuvvetimiz yerinde. Arpa biçimine başlamışsınızdır, tarlaya ırgat tutun, yevmiyesini kahvenin çekmecesinden verin. Ali'nin, kızın gözlerinden öperim.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Eşref)\nNOT: İşbu mektup Eşref Çavuş'un isteği üzerine tarafımdan yazılmıştır. Alay İmamı.\nZARF: Niğde, Ürgüp kazası, Akpınar karyesi, İmam Salih Efendi vasıtasıyla Fadime Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "74 kelime, hedef 76 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:23:39+00:00",
+    "tokens": {
+      "input": 4321,
+      "output": 3026
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('pederim', 'kâğıt', 'ırgat', 'yevmiye') döneme tamamen uygundur, modern bir kelime yoktur.",
+      "olculuk": "Duygular doğrudan adlandırılmak yerine ('bekliyorum, çıkmıyor') eylemler ve durumlar üzerinden ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazması olmayan birinin alay imamına mektup yazdırması ('Eşref çavuş der ki', 'İşbu mektup...') ve imza olarak mühür kullanılması isteğe tam uymaktadır.",
+      "somutluk": "Anlaşmazlığın 'bakır semaver' üzerinden anlatılması ve 'arpa biçimi', 'kahvenin çekmecesi' gibi ayrıntılar mektuba somutluk katmıştır.",
+      "sadakat": "İsteğin neredeyse tüm unsurları (ses, konu, saklanan bilgi) karşılanmış ancak 'Dikkatsizlik: az' kuralı tam uygulanmamıştır.",
+      "sahicilik": "Aile içi dargınlık, cepheden gelen sitem ve köydeki işlere dair endişelerin birleşimi mektubu son derece sahici kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: Ordu-yı Hümayun, 12 Haziran 1331",
+        "problem": "Mektup, 'Dikkatsizlik: az' isteğine rağmen sansürcünün yakalaması gereken ama işaretlenmemiş hiçbir askerî bilgi kaçırmıyor; istenen hassas bilgi doğru şekilde işaretlenmiş, ancak ek bir dikkatsizlik unsuru yok.",
+        "suggestion": "Dikkatsizlik unsurunu eklemek için başlık 'BAŞLIK: ⟦Arıburnu⟧, 12 Haziran 1331' olarak değiştirilebilirdi; bu, yazarın farkında olmadan bulunduğu yeri ifşa etmesi olurdu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:23:39+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

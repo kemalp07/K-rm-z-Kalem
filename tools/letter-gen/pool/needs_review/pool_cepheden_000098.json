@@ -1,0 +1,251 @@
+{
+  "id": "pool_cepheden_000098",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Murat",
+    "epithet": "Konyalı",
+    "age": 34,
+    "hometown": "Konya",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Sıdıka",
+    "relation": "annesi",
+    "location": "Konya, Ilgın kazası, Dereköy karyesi"
+  },
+  "writes": "dictated",
+  "writer": "bölükten okuma yazma bilen bir arkadaşı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 68,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 7 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Sıdıka Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Murat der ki: Anacığım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim keyfim beyde yok, buralarda yiyip yatıyoruz gölgede, bol bol da taş taşıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geçen yolladığın kâğıt elime geçti, okuttum sağ olun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Bizim kıza söyleyin sakın daralmasın, beni beklesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Çerçi Yakup'un oğluna falan varırsa vallahi yakarım o köyü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Az daha sabretsin, döneyim telli duvakla alacağım onu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Arpa sararmıştır şimdi, tırpanı vururken beni de anın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Beni merak etmeyin, işim tıkırında.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "",
+    "seal": "Murat"
+  },
+  "note": {
+    "text": "İşbu kâğıdı Murat'ın ağzından ben yazdım. Arkadaşı Konyalı Veli.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Konya, Ilgın kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Sıdıka Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Murat, Konyalı, 34, ırgat, er (Konya, Ilgın kazası, Dereköy karyesi)\nAlıcı: Annesi Sıdıka Hanım, Konya, Ilgın kazası, Dereköy karyesi\nYön: cepheden\nTarih: 7 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: bölükten okuma yazma bilen bir arkadaşı)\nOkuryazarlık: yok\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: nişanlısının beklemesini istemek\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 68",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Murat",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Konya",
+        "occupation": "ırgat",
+        "epithet": "Konyalı",
+        "place": "Ilgın kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Sıdıka",
+        "gender": "kadın",
+        "age": 55,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ilgın kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Konya, Ilgın kazası, Dereköy karyesi",
+      "writes": "dictated",
+      "writer": "bölükten okuma yazma bilen bir arkadaşı",
+      "literacy": "none",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 68,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "7 Haziran 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Konya, Ilgın kazası, Dereköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5697,
+      "output": 1883
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 7 Haziran 1331\nHİTAP: Validem Sıdıka Hanım'a\nGÖVDE: Murat der ki: Anacığım ellerinden öperim. Benim keyfim beyde yok, buralarda yiyip yatıyoruz gölgede, bol bol da taş taşıyoruz. Geçen yolladığın kâğıt elime geçti, okuttum sağ olun. Bizim kıza söyleyin sakın daralmasın, beni beklesin. Çerçi Yakup'un oğluna falan varırsa vallahi yakarım o köyü. Az daha sabretsin, döneyim telli duvakla alacağım onu. Arpa sararmıştır şimdi, tırpanı vururken beni de anın. Beni merak etmeyin, işim tıkırında.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: (mühür: Murat)\nNOT: İşbu kâğıdı Murat'ın ağzından ben yazdım. Arkadaşı Konyalı Veli.\nZARF: Konya, Ilgın kazası, Dereköy karyesi, İmam Hasan Efendi vasıtasıyla Sıdıka Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "64 kelime, hedef 68 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:27:22+00:00",
+    "tokens": {
+      "input": 4273,
+      "output": 3134
+    },
+    "scores": {
+      "donem_dili": 3,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Mektup, 'daralmasın' ve 'işim tıkırında' gibi döneme ait olduğundan şüphelenilen, modern hissettiren birkaç ifade içeriyor.",
+      "olculuk": "Duygular doğrudan söylenmemiş, şakacı bir tonun ardına gizlenmiş dert ve hasretle çok ölçülü bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin mektup yazdırması 'Murat der ki' ve kâtip notuyla usulüne uygun şekilde yansıtılmış.",
+      "somutluk": "Mektup 'taş taşımak', 'Çerçi Yakup'un oğlu', 'sararan arpa' gibi somut ve döneme uygun ayrıntılarla dolu.",
+      "sadakat": "İstekteki şakacı ton, nişanlıya mesaj, yazdırılma biçimi ve kapanış cümlesi gibi tüm unsurlara harfiyen uyulmuş.",
+      "sahicilik": "Şakayla karışık tehditler, köy hayatına yapılan göndermeler ve genel ton mektubu oldukça sahici kılıyor, sadece birkaç kelime akışı bozuyor."
+    },
+    "issues": [
+      {
+        "line": "Bizim kıza söyleyin sakın daralmasın, beni beklesin.",
+        "problem": "Tek başına 'daralmak' fiilinin bu anlamda kullanımı modern bir his veriyor; dönemin ruhuna 'içi daralmak' daha uygundur.",
+        "suggestion": "Bizim kıza söyleyin, sakın içi daralmasın, beni beklesin."
+      },
+      {
+        "line": "Beni merak etmeyin, işim tıkırında.",
+        "problem": "'İşim tıkırında' tabiri, dönemin dilinden çok modern bir argo ifade gibi duruyor.",
+        "suggestion": "Beni merak etmeyin, halim vaktim yerinde şükür."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

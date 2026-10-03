@@ -1,0 +1,274 @@
+{
+  "id": "pool_cepheye_000082",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Seher",
+    "epithet": "Manisalı",
+    "age": 31,
+    "hometown": "Manisa",
+    "occupation": "ırgat",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Ahmet",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 110,
+  "hand": "hurried",
+  "header": {
+    "text": "Eğrisu, 26 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Ahmet'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gideli aylar oldu bir ufak kağıt yollamadın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Okuma yazma biliyon niye yazmıyon elin mi kırıldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Beklemekten yorulduk köyün yoluna bakmaktan gözümüz karardı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen gün köyün hocasına gittim sana bir musga yazdırdım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bu mektubun içine koydum onu boynuna as sakın çıkarma üstünde kalsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Geceleri hep dua ediyom Allah seni esirgesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Burada havalar ısındı bağlarda yaprak seyreltme işi bitiyo salkımlar ufak ufak göründü.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Hasan emmiler haftaya kızlarını gelin ediyo davul çalıncak ama pek neşe yok herkez dertli.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Tarlada iş çok yoruluyoz ama aç değiliz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Senin sevdiğin kuru incirlerden üç beş tane koydum pakete afiyetle ye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bize kendini unutturma sağmısın ölü müsün bilelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Herkez sana selam ediyo.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Çabuk cevap yaz.",
+  "signature": {
+    "text": "Ablan Seher"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Manisalı Ahmet'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Seher Hanım, Manisalı, 31, ırgat (Manisa, Kasaba kazası, Eğrisu karyesi)\nAlıcı: Kardeşi Er Ahmet, cephede\nYön: cepheye\nTarih: 26 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: muska ve dualar\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Çabuk cevap yaz\nUzunluk: 110",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 31,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": "ırgat",
+        "epithet": "Manisalı",
+        "place": "Kasaba kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Ahmet",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kasaba kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "muska ve dualar",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 110,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "26 Mayıs 1331",
+      "closing": "Çabuk cevap yaz",
+      "home_address": "Manisa, Kasaba kazası, Eğrisu karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5757,
+      "output": 3338
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Eğrisu, 26 Mayıs 1331\nHİTAP: Kardeşim Ahmet'e\nGÖVDE: Gideli aylar oldu bir ufak kağıt yollamadın. Okuma yazma biliyon niye yazmıyon elin mi kırıldı. Beklemekten yorulduk köyün yoluna bakmaktan gözümüz karardı. Geçen gün köyün hocasına gittim sana bir musga yazdırdım. Bu mektubun içine koydum onu boynuna as sakın çıkarma üstünde kalsın. Geceleri hep dua ediyom Allah seni esirgesin. Burada havalar ısındı bağlarda yaprak seyreltme işi bitiyo salkımlar ufak ufak göründü. Hasan emmiler haftaya kızlarını gelin ediyo davul çalıncak ama pek neşe yok herkez dertli. Tarlada iş çok yoruluyoz ama aç değiliz. Senin sevdiğin kuru incirlerden üç beş tane koydum pakete afiyetle ye. Bize kendini unutturma sağmısın ölü müsün bilelim. Herkez sana selam ediyo.\nKAPANIŞ: Çabuk cevap yaz.\nİMZA: Ablan Seher\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Manisalı Ahmet'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 110 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:28+00:00",
+    "tokens": {
+      "input": 4274,
+      "output": 3679
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime seçimi, yöresel ağız kullanımı ve cümle yapısı döneme ve karaktere tamamen uygundur.",
+      "olculuk": "Duygular doğrudan adlandırılmak yerine sitem, somut eylemler ve gözlemlerle çok başarılı bir şekilde hissettirilmiş, ancak bir yerde duygu adı verilmiş.",
+      "okuryazarlik": "İstekte belirtilen düşük okuryazarlık seviyesi, tutarlı imla hataları, noktalama eksiklikleri ve basit cümlelerle kusursuz yansıtılmıştır.",
+      "somutluk": "Mektup, muska, bağ işleri, düğün ve kuru incir gibi gündelik hayata dair somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup; konu, ton, uzunluk, karakter ve kapanış cümlesi dahil olmak üzere istekteki tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Sitem, endişe ve gündelik hayat haberlerinin iç içe geçtiği mektup, dönemin gerçek bir insanının elinden çıkmış gibi sahicidir."
+    },
+    "issues": [
+      {
+        "line": "Beklemekten yorulduk köyün yoluna bakmaktan gözümüz karardı.",
+        "problem": "'Yorulduk' kelimesi, 'göster, adlandırma' kuralını hafifçe ihlal ederek duygusal bir durumu doğrudan adlandırıyor.",
+        "suggestion": "Köyün yoluna bakmaktan gözümüzde fer kalmadı."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:31:28+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

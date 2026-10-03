@@ -1,0 +1,290 @@
+{
+  "id": "pool_cepheye_000064",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Fikriye",
+    "epithet": "Kayserili",
+    "age": 18,
+    "hometown": "Kayseri",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 87,
+  "hand": "careful",
+  "header": {
+    "text": "Bahçecik, 21 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Talat'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gönderdiğin kâğıdı aldım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim hâlimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Sarıkız üç gün evvel buzağıladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bir dişi dana verdi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sütü şimdilik yavruya yetiyor, sağmıyorum yavru emsin de ele avuca gelsin diye.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ahırın kapısını akşamları sıkıca kilitliyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Komşulardan kimseye de pek bahsetmedim buzağıdan, şimdilik içeride sessizce duruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Havalar iyice ısındı, ekinler diz boyu oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Gündüzleri tarlada ot yolmaya gidiyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kayınbabamın dizleri yine ağrıyor, evden pek çıkamıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Evde unumuz var, şimdilik idare ediyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Sen nasılsın, yemeğin suyun nasıldır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Bizi hiç merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Zevcen Fikriye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Everekli Talat'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fikriye Hanım, Kayserili, 18, ev hanımı (Kayseri, Everek kazası, Bahçecik karyesi)\nAlıcı: Kocası Er Talat, cephede\nYön: cepheye\nTarih: 21 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: ineğin buzağılaması\nSakladığı: jandarmanın köye gelip hayvanları aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 87",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Fikriye",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": "ev hanımı",
+        "epithet": "Kayserili",
+        "place": "Everek kazası, Bahçecik karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 19,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Everek kazası, Bahçecik karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "ineğin buzağılaması",
+      "hidden": "jandarmanın köye gelip hayvanları aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 87,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "21 Mayıs 1331",
+      "closing": "",
+      "home_address": "Kayseri, Everek kazası, Bahçecik karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5661,
+      "output": 2663
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Bahçecik, 21 Mayıs 1331\nHİTAP: Zevcim Talat'a\nGÖVDE: Evvela selam eder, hatırını sorarım. Gönderdiğin kâğıdı aldım. Bizim hâlimizi sorarsan şükür ayaktayız. Sarıkız üç gün evvel buzağıladı. Bir dişi dana verdi. Sütü şimdilik yavruya yetiyor, sağmıyorum yavru emsin de ele avuca gelsin diye. Ahırın kapısını akşamları sıkıca kilitliyorum. Komşulardan kimseye de pek bahsetmedim buzağıdan, şimdilik içeride sessizce duruyor. Havalar iyice ısındı, ekinler diz boyu oldu. Gündüzleri tarlada ot yolmaya gidiyorum. Kayınbabamın dizleri yine ağrıyor, evden pek çıkamıyor. Evde unumuz var, şimdilik idare ediyoruz. Sen nasılsın, yemeğin suyun nasıldır? Bizi hiç merak etmeyesin.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Zevcen Fikriye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Everekli Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "83 kelime, hedef 87 (-5%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:29:23+00:00",
+    "tokens": {
+      "input": 4271,
+      "output": 3521
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kelime dağarcığı ve cümle yapıları, anakronik ifadeler içermeden 1915 dönemiyle tamamen uyumludur.",
+      "olculuk": "Duygular, melodramdan veya doğrudan duygusal beyanlardan kaçınarak somut eylemler ve sade cümleler aracılığıyla gösterilmiştir.",
+      "okuryazarlik": "Yazı stili genel olarak orta okuryazarlık seviyesine uymaktadır, ancak 'Zevcim/Zevcen' kullanımı genç bir köylü kadın için biraz fazla resmî olup kâtip veya okumuş kişi diline daha yakındır.",
+      "somutluk": "Mektup, yeni doğan buzağı, ekinlerin durumu ve evdeki erzak gibi elle tutulur, gündelik ayrıntılarla dolu olup sahneyi canlı kılmaktadır.",
+      "sadakat": "Mektup, ana konu, karakterin tonu ve saklanan bilginin ustaca işlenişi de dahil olmak üzere isteğin tüm kısıtlamalarına mükemmel bir şekilde uymaktadır.",
+      "sahicilik": "Mektup, özellikle kaygıyı kelimeler yerine pratik eylemlerle aktarma biçimiyle otantik hissettirmekte ve savaş zamanında bir insanın ihtiyatlı iletişimini yansıtmaktadır."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcim Talat'a",
+        "problem": "'Zevcim' kelimesi, daha çok kâtipler veya yüksek eğitimli kişiler tarafından kullanılan oldukça resmî bir ifadedir. Orta okuryazar olsa bile genç bir köylü kadın için biraz mesafeli durabilir.",
+        "suggestion": "Daha doğal ve kişisel bir ifade olan `Efendime` veya `Kocama` kullanılabilir."
+      },
+      {
+        "line": "İMZA: Zevcen Fikriye",
+        "problem": "Hitapta olduğu gibi, 'Zevcen' kelimesi de resmî bir ifadedir ve kişisel bir mektupta soğuk durabilir.",
+        "suggestion": "Dönemin yaygın ve doğal kullanımı olan `Karın Fikriye` veya sadece `Fikriye` daha uygun olur."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:29:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

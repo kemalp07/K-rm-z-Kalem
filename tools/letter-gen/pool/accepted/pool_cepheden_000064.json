@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000064",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Zekeriya",
+    "epithet": "Amasyalı",
+    "age": 38,
+    "hometown": "Amasya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Naciye",
+    "relation": "annesi",
+    "location": "Amasya, Ladik kazası, Sarıkaya karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 104,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 28 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Anacığım Naciye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Anacığım ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bu sana yolladığım ikinci kağıt.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Evvelkine cevap gelmedi elinize geçmedi mi yoksa muhtar mı okumadı bilemeyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim sağlığım yerinde merak edilecek bir halim yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Burada havalar iyice ısındı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kumandanımız belki harman vaktine doğru on beş gün izin verir diye bir laf dolanıyor köyün yolunu tutarım inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yüzümüz güler biraz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Köyde işler nasıl gidiyo boz katırın ayağı düzeldi mi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Değirmenci İdris ustaya olan un borcunu kapattınız mı yazın bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ufaklıklara selam ederim çocukların anası da iyi mi yorgunluktan uzak mı ona da selam söyle çocuklara mukayet olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çabuk cevap yollayın köyün halini bileyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Çatı akıtıyordu üstüne toprak attınız mı.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kalemim kısa, sözüm uzun.",
+  "signature": {
+    "text": "Oğlun Zekeriya"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Amasya, Ladik kazası, Sarıkaya karyesi, Muhtar Hasan Ağa vasıtasıyla Naciye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Zekeriya, Amasyalı, 38, çiftçi, er (Amasya, Ladik kazası, Sarıkaya karyesi)\nAlıcı: Annesi Naciye Hanım, Amasya, Ladik kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 28 Nisan 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: utangaç, karısına adıyla seslenemez\nKonu: izin alma umudu\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nKapanış: Kalemim kısa, sözüm uzun\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Zekeriya",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Amasya",
+        "occupation": "çiftçi",
+        "epithet": "Amasyalı",
+        "place": "Ladik kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Naciye",
+        "gender": "kadın",
+        "age": 64,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Amasya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ladik kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Amasya, Ladik kazası, Sarıkaya karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "utangaç, karısına adıyla seslenemez",
+      "topic": "izin alma umudu",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "28 Nisan 1331",
+      "closing": "Kalemim kısa, sözüm uzun",
+      "home_address": "Amasya, Ladik kazası, Sarıkaya karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5675,
+      "output": 4192
+    },
+    "attempts": 2,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 28 Nisan 1331\nHİTAP: Anacığım Naciye Hanım'a\nGÖVDE: Anacığım ellerinden öperim. Bu sana yolladığım ikinci kağıt. Evvelkine cevap gelmedi elinize geçmedi mi yoksa muhtar mı okumadı bilemeyorum. Benim sağlığım yerinde merak edilecek bir halim yoktur. Burada havalar iyice ısındı. Kumandanımız belki harman vaktine doğru on beş gün izin verir diye bir laf dolanıyor köyün yolunu tutarım inşallah. Yüzümüz güler biraz. Köyde işler nasıl gidiyo boz katırın ayağı düzeldi mi. Değirmenci İdris ustaya olan un borcunu kapattınız mı yazın bana. Ufaklıklara selam ederim çocukların anası da iyi mi yorgunluktan uzak mı ona da selam söyle çocuklara mukayet olsun. Çabuk cevap yollayın köyün halini bileyim. Çatı akıtıyordu üstüne toprak attınız mı.\nKAPANIŞ: Kalemim kısa, sözüm uzun.\nİMZA: Oğlun Zekeriya\nZARF: Amasya, Ladik kazası, Sarıkaya karyesi, Muhtar Hasan Ağa vasıtasıyla Naciye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 104 (-3%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:22:35+00:00",
+    "tokens": {
+      "input": 4286,
+      "output": 3671
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve cümle yapıları ('bilemeyorum', 'gidiyo', 'mukayet olsun') döneme tamamen uygun, modern bir ifade içermiyor.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, somut sorular ve 'yüzümüz güler biraz' gibi sade ifadelerle etkili bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi; eksik noktalama, hafif imla hataları ve basit, art arda dizilmiş cümlelerle çok başarılı bir şekilde yansıtılmış.",
+      "somutluk": "Mektup 'boz katırın ayağı', 'un borcu', 'akıtan çatı' gibi gündelik hayata dair somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "İsteğin geneline sadık kalınmış ancak 'Dikkatsizlik: yok' kuralına rağmen 'Kumandanımız' ve 'on beş gün' gibi askerî bilgiler içeriyor.",
+      "sahicilik": "Bir çiftçinin endişelerini, utangaçlığını ('çocukların anası') ve umudunu yansıtan dil, mektubu son derece gerçekçi kılıyor."
+    },
+    "issues": [
+      {
+        "line": "Kumandanımız belki harman vaktine doğru on beş gün izin verir diye bir laf dolanıyor köyün yolunu tutarım inşallah.",
+        "problem": "İstekte 'Dikkatsizlik: yok' belirtilmesine rağmen bu cümlede 'Kumandanımız' ve sayı belirten 'on beş gün' gibi askerî ayrıntılar yer alıyor. Bu, sansür kurallarının ihlalidir.",
+        "suggestion": "Belki harman vaktine doğru bir izin lafı var, nasip olursa köyün yolunu tutarım inşallah."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:22:35+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

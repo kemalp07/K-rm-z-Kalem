@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000055",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Musa",
+    "epithet": "Ankaralı",
+    "age": 37,
+    "hometown": "Ankara",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Nadide",
+    "relation": "karısı",
+    "location": "Ankara, Çubuk kazası, Kızılca karyesi"
+  },
+  "writes": "scribe",
+  "writer": "bölük kâtibi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 82,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 30 Nisan 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Nadide Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, sıhhatte olmanızı Cenab-ı Hak'tan niyaz eylerim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bilesin ki yolladığınız çıkın sağ salim elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İçindeki yün çorapları giydim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Havalar ısınmaya başladı lakin gece ayazında işe yarıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen evdeki işlere mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırdaki sarı öküzü iyi yemle, zayıf düşmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çatı akıtıyorsa Hasan ustayı çağır, yapsın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Parası neyse ben gelince veririm.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çocukların üstünü başını temiz tut, sokakta haylazlık etmesinler.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kimseden borç alıp da beni ele güne mahcup etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Tarla için emmime söyle, o halletsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Benim dönmemi bekleyip işleri sakın ola aksatmayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hakkını helal et.",
+  "signature": {
+    "text": "",
+    "seal": "Musa"
+  },
+  "note": {
+    "text": "İşbu mektup Musa'nın isteği üzerine bölük kâtibi tarafından kaleme alınmıştır.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ankara, Çubuk kazası, Kızılca karyesi, İmam Salih Efendi vasıtasıyla Nadide Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Musa, Ankaralı, 37, çiftçi, er (Ankara, Çubuk kazası, Kızılca karyesi)\nAlıcı: Karısı Nadide Hanım, Ankara, Çubuk kazası, Kızılca karyesi\nYön: cepheden\nTarih: 30 Nisan 1331\nYazma biçimi: kâtibe para verip yazdırıyor (yazan: bölük kâtibi)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: izninin iptal edildiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Hakkını helal et\nUzunluk: 82",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Musa",
+        "gender": "erkek",
+        "age": 37,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Ankara",
+        "occupation": "çiftçi",
+        "epithet": "Ankaralı",
+        "place": "Çubuk kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Nadide",
+        "gender": "kadın",
+        "age": 34,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Çubuk kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Ankara, Çubuk kazası, Kızılca karyesi",
+      "writes": "scribe",
+      "writer": "bölük kâtibi",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "izninin iptal edildiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 82,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "30 Nisan 1331",
+      "closing": "Hakkını helal et",
+      "home_address": "Ankara, Çubuk kazası, Kızılca karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5848,
+      "output": 3360
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 30 Nisan 1331\nHİTAP: Zevcem Nadide Hanım'a\nGÖVDE: Evvela selam eder, sıhhatte olmanızı Cenab-ı Hak'tan niyaz eylerim. Bilesin ki yolladığınız çıkın sağ salim elime geçti. İçindeki yün çorapları giydim. Havalar ısınmaya başladı lakin gece ayazında işe yarıyor. Sen evdeki işlere mukayyet ol. Ahırdaki sarı öküzü iyi yemle, zayıf düşmesin. Çatı akıtıyorsa Hasan ustayı çağır, yapsın. Parası neyse ben gelince veririm. Çocukların üstünü başını temiz tut, sokakta haylazlık etmesinler. Kimseden borç alıp da beni ele güne mahcup etmeyesin. Tarla için emmime söyle, o halletsin. Benim dönmemi bekleyip işleri sakın ola aksatmayın.\nKAPANIŞ: Hakkını helal et.\nİMZA: (mühür: Musa)\nNOT: İşbu mektup Musa'nın isteği üzerine bölük kâtibi tarafından kaleme alınmıştır.\nZARF: Ankara, Çubuk kazası, Kızılca karyesi, İmam Salih Efendi vasıtasıyla Nadide Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "83 kelime, hedef 82 (+1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:37+00:00",
+    "tokens": {
+      "input": 4304,
+      "output": 2230
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil (niyaz eylerim, mukayyet ol, mahcup etmek) döneme uygundur ve modern ifadeler içermemektedir.",
+      "olculuk": "Duygular adlandırılmamış, istenen sert ve emir veren ton somut talimatlarla başarıyla yansıtılmıştır.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin kâtibe yazdırdığı mektup tarzı (resmî dil ve köylü talimatlarının birleşimi, mühür, kâtip notu) kusursuzca yansıtılmıştır.",
+      "somutluk": "Mektup yün çorap, sarı öküz, akan çatı gibi gündelik ve somut ayrıntılarla zenginleştirilmiştir.",
+      "sadakat": "Mektup, konu, ton, uzunluk, yazma biçimi ve saklanan bilgi dahil olmak üzere isteğin tüm unsurlarına tam olarak uymaktadır.",
+      "sahicilik": "Karakterin sesi ile kâtibin üslubunun birleşimi, mektubu klişelerden uzak ve son derece gerçekçi kılmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:21:37+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

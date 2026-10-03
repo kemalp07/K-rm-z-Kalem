@@ -1,0 +1,282 @@
+{
+  "id": "pool_cepheden_000080",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Süleyman",
+    "epithet": "Diyarbekirli",
+    "age": 29,
+    "hometown": "Diyarbekir",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Tevfik",
+    "relation": "babası",
+    "location": "Diyarbekir, Palu kazası, Eğrisu karyesi"
+  },
+  "writes": "dictated",
+  "writer": "köylüsü bir onbaşı",
+  "literacy": "none",
+  "carelessness": "low",
+  "length_target": 81,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Babam Tevfik'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Süleyman der ki: Benim sağ olduğumu anama deyin, ağlayıp sızlamasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Boşuna merak edip duruyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Ben burda iyiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hastalığım falan yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Koyunların kırkım zamanı geldi, yünleri tüccar Musa'ya ucuza vermeyin, sıkı pazarlık edin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Yaylaya çıkarken sürünün başında Karabaş'ı eksik etmeyin, kurt inmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Çadırı sağlam kurun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bizim köyden Deli Hasan'ın oğlunu da dördüncü bölüğe ayırdılar",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "o da sağdır, anasına haber salın ağlamasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Emmim gile olan borcu bu ay kapatın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Avratla çocuklara iyi mukayet olun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Sözüme tembehime uyun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Beni düşünmeyin ben askerim işte burda.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "",
+    "seal": "Süleyman"
+  },
+  "note": {
+    "text": "İşbu mektubu onbaşı Ali yazdı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Diyarbekir, Palu kazası, Eğrisu karyesi, Muhtar Şeyhmus Ağa vasıtasıyla Tevfik Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Süleyman, Diyarbekirli, 29, çoban, onbaşı (Diyarbekir, Palu kazası, Eğrisu karyesi)\nAlıcı: Babası Tevfik, Diyarbekir, Palu kazası, Eğrisu karyesi\nYön: cepheden\nTarih: 15 Mayıs 1331\nYazma biçimi: yazdırıyor (yazan: köylüsü bir onbaşı)\nOkuryazarlık: yok\nSes: sert, emir verir gibi yazar\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: arkadaşının öldüğünü gördüğünü\nHassas bilgi: bir arkadaşının hangi taburda ya da bölükte olduğu\nDikkatsizlik: az\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Cevabını bekliyorum\nUzunluk: 81",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Süleyman",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Diyarbekir",
+        "occupation": "çoban",
+        "epithet": "Diyarbekirli",
+        "place": "Palu kazası, Eğrisu karyesi"
+      },
+      "recipient": {
+        "name": "Tevfik",
+        "gender": "erkek",
+        "age": 62,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Palu kazası, Eğrisu karyesi"
+      },
+      "recipient_location": "Diyarbekir, Palu kazası, Eğrisu karyesi",
+      "writes": "dictated",
+      "writer": "köylüsü bir onbaşı",
+      "literacy": "none",
+      "voice": "sert, emir verir gibi yazar",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "arkadaşının öldüğünü gördüğünü",
+      "carelessness": "low",
+      "sensitive_info": "bir arkadaşının hangi taburda ya da bölükte olduğu",
+      "length_label": "orta",
+      "length_target": 81,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "15 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Diyarbekir, Palu kazası, Eğrisu karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5700,
+      "output": 5340
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Mayıs 1331\nHİTAP: Babam Tevfik'e\nGÖVDE: Süleyman der ki: Benim sağ olduğumu anama deyin, ağlayıp sızlamasın. Boşuna merak edip duruyor. Ben burda iyiyim. Hastalığım falan yoktur. Koyunların kırkım zamanı geldi, yünleri tüccar Musa'ya ucuza vermeyin, sıkı pazarlık edin. Yaylaya çıkarken sürünün başında Karabaş'ı eksik etmeyin, kurt inmesin. Çadırı sağlam kurun. ⟦Bizim köyden Deli Hasan'ın oğlunu da dördüncü bölüğe ayırdılar⟧ o da sağdır, anasına haber salın ağlamasın. Emmim gile olan borcu bu ay kapatın. Avratla çocuklara iyi mukayet olun. Sözüme tembehime uyun. Beni düşünmeyin ben askerim işte burda.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: (mühür: Süleyman)\nNOT: İşbu mektubu onbaşı Ali yazdı.\nZARF: Diyarbekir, Palu kazası, Eğrisu karyesi, Muhtar Şeyhmus Ağa vasıtasıyla Tevfik Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "81 kelime, hedef 81 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "warn",
+      "detail": "pool_cepheden_000003 ile ortak: \"koyunların kırkım zamanı geldi yünleri tüccar\""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:09+00:00",
+    "tokens": {
+      "input": 4311,
+      "output": 4325
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'mukayet olmak' ve 'tembeh' gibi kelimelerle döneme tam uyum sağlamakta ve hiçbir modern ifade içermemektedir.",
+      "olculuk": "Duygular adlandırılmamış, karakterin sert ve emir veren tavrı üzerinden dolaylı olarak çok başarılı bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazma bilmeyen birinin ağzından, bir köylüsü tarafından yazılmış mektup formatı 'Süleyman der ki' ve kâtip notuyla kusursuz uygulanmıştır.",
+      "somutluk": "Koyun kırkımı, tüccar Musa, Karabaş isimli köpek ve borç meselesi gibi ayrıntılar mektuba yüksek bir somutluk katmaktadır.",
+      "sadakat": "Mektup; konu, ton, uzunluk, hassas bilgi ve dikkatsizlik seviyesi dahil olmak üzere istekte belirtilen tüm unsurlara harfiyen uymaktadır.",
+      "sahicilik": "Sert emirlerin arasına sıkışmış ev ve köy tasası, mektubu klişelerden uzaklaştırıp son derece gerçekçi ve sahici kılmaktadır."
+    },
+    "issues": [
+      {
+        "line": "Boşuna merak edip duruyor.",
+        "problem": "'-ip durmak' yapısı, dönemin daha doğrudan ve emir kipindeki ifadelerine kıyasla biraz daha modern bir konuşma dili hissi vermektedir.",
+        "suggestion": "Daha dönemsel ve karakterin tonuna uygun bir ifade 'Boşuna merak etmesin.' yahut 'Kendini boşuna yormasın.' olabilirdi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:25:09+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

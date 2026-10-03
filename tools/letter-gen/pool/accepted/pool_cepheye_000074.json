@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheye_000074",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Münevver",
+    "epithet": "Eskişehirli",
+    "age": 26,
+    "hometown": "Eskişehir",
+    "occupation": "çiftçi",
+    "relation": "kız kardeşi"
+  },
+  "recipient": {
+    "name": "Arif",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 89,
+  "hand": "hurried",
+  "header": {
+    "text": "Ortaköy, 11 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardaşım Arif'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Arif kardaşım nasılsın iyi misin buraları sorarsan bizde iyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Dün köyden on kişiyi daha aldılar küçük kardaşın Hasanıda çağırdılar oda sülüslüğünü aldı gidecek yarın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Evde hiç erkek kalmadı hepicimiz tarladayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Arpa sarardı biçmeye başlıyacaz yakında amma kollarım çok ağrıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sen orda nasılsın yemeğin suyun varmı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sana bi bez torba kuru üzüm koydum İbrahim ağayla yolladım yersin güç olursun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Anam çok ağladı arkandan heç susmuyo gidesinden beri.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Onu merak etme ben bakıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Bize tez cevap yaz kaadın gelince anam ferahlar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bizim için tasa etme idare ediyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Komşu kızı Emineye selam.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Gözüm yolda.",
+  "signature": {
+    "text": "Ablan Münevver"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Arif'e",
+    "sensitive": false
+  },
+  "package": [
+    "kuru üzüm"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Münevver Hanım, Eskişehirli, 26, çiftçi (Eskişehir, Sivrihisar kazası, Ortaköy karyesi)\nAlıcı: Kardeşi Er Arif, cephede\nYön: cepheye\nTarih: 11 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: dertli, ama dertlerini söylemez\nKonu: kardeşin de askere çağrılması\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: kuru üzüm\nKapanış: Gözüm yolda\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Münevver",
+        "gender": "kadın",
+        "age": 26,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Eskişehir",
+        "occupation": "çiftçi",
+        "epithet": "Eskişehirli",
+        "place": "Sivrihisar kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Arif",
+        "gender": "erkek",
+        "age": 22,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Eskişehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Sivrihisar kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "dertli, ama dertlerini söylemez",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": [
+        "kuru üzüm"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "11 Haziran 1331",
+      "closing": "Gözüm yolda",
+      "home_address": "Eskişehir, Sivrihisar kazası, Ortaköy karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5771,
+      "output": 3854
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ortaköy, 11 Haziran 1331\nHİTAP: Kardaşım Arif'e\nGÖVDE: Arif kardaşım nasılsın iyi misin buraları sorarsan bizde iyiyiz. Dün köyden on kişiyi daha aldılar küçük kardaşın Hasanıda çağırdılar oda sülüslüğünü aldı gidecek yarın. Evde hiç erkek kalmadı hepicimiz tarladayız. Arpa sarardı biçmeye başlıyacaz yakında amma kollarım çok ağrıyo. Sen orda nasılsın yemeğin suyun varmı. Sana bi bez torba kuru üzüm koydum İbrahim ağayla yolladım yersin güç olursun. Anam çok ağladı arkandan heç susmuyo gidesinden beri. Onu merak etme ben bakıyom. Bize tez cevap yaz kaadın gelince anam ferahlar. Bizim için tasa etme idare ediyoz. Komşu kızı Emineye selam.\nKAPANIŞ: Gözüm yolda.\nİMZA: Ablan Münevver\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Ortaköylü Arif'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "89 kelime, hedef 89 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:40+00:00",
+    "tokens": {
+      "input": 4264,
+      "output": 3911
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (sülüslük, tasa etme, ferahlar) ve ifadeler döneme uygun, modern bir ifadeye rastlanmıyor.",
+      "olculuk": "Duygular doğrudan adlandırılmıyor; zorluklar ('kollarım çok ağrıyo', 'evde hiç erkek kalmadı') somut durumlarla hissettiriliyor.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesi; birleşik cümleler, eksik noktalama ve 'başlıyacaz, ağrıyo, kaadın' gibi tutarlı imla hatalarıyla başarıyla yansıtılmış.",
+      "somutluk": "Mektup 'arpa', 'kuru üzüm', 'sülüslük' gibi gündelik hayata dair somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "İsteğin konusu, saklanan bilgi, yazma biçimi, okuryazarlık seviyesi ve kapanış cümlesi gibi tüm unsurlara harfiyen uyulmuş.",
+      "sahicilik": "Dilin doğallığı, imla hatalarının tutarlılığı ve endişelerin satır aralarına gizlenmesi mektubu son derece gerçekçi kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:40+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "pool_cepheden_000085",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ramazan",
+    "epithet": "Kayserili",
+    "age": 29,
+    "hometown": "Kayseri",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Meryem",
+    "relation": "karısı",
+    "location": "Kayseri, Bünyan kazası, Taşpınar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "low",
+  "length_target": 102,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 22 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Meryem'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Meryem selam ederim çocukların gözünden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Ben eyiyim merak etmen.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde havalar ısınmıştır arpa hasadı yaklaştı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hasan ağaya olan on kuruş borcu verdin mi onu unutma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Çatının aktığı yeri çamurla sıvadınız mı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ahırdaki saman yetti mi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim burda tayın yetiyo şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bazen kuru peksimet yiyoz bazen de az bulgur kaynatıyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Suyu idareli içiyoz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Siz köyde un bulursanız ekmeği bol yapın çocuklara sakın kısmayın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Benim sol kol biraz tutulmuş sargılı duruyo ondan hep yatıyom çadırda nöbet yazmıyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Haftaya bizi burdan ileriye başka vadiye alacaklarmış",
+      "kind": "sensitive",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "o zamana kol da geçer.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Çoraplarım delindi yün ipin varsa bi çift ör yolla güz gelince lazım olur.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Kusura bakma, kâğıt bitti.",
+  "signature": {
+    "text": "Kocan Ramazan"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Kayseri, Bünyan kazası, Taşpınar karyesi, İmam Salih Efendi vasıtasıyla Meryem Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ramazan, Kayserili, 29, çiftçi, er (Kayseri, Bünyan kazası, Taşpınar karyesi)\nAlıcı: Karısı Meryem Hanım, Kayseri, Bünyan kazası, Taşpınar karyesi\nYön: cepheden\nTarih: 22 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: titiz, her şeyi tek tek sayar\nKonu: yemeklerin ve ekmeğin azlığı (üstü örtülü)\nSakladığı: yaralandığını\nHassas bilgi: birliğin yakında yer değiştireceği\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nKapanış: Kusura bakma, kâğıt bitti\nUzunluk: 102",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ramazan",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": "çiftçi",
+        "epithet": "Kayserili",
+        "place": "Bünyan kazası, Taşpınar karyesi"
+      },
+      "recipient": {
+        "name": "Meryem",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bünyan kazası, Taşpınar karyesi"
+      },
+      "recipient_location": "Kayseri, Bünyan kazası, Taşpınar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "yemeklerin ve ekmeğin azlığı (üstü örtülü)",
+      "hidden": "yaralandığını",
+      "carelessness": "low",
+      "sensitive_info": "birliğin yakında yer değiştireceği",
+      "length_label": "orta",
+      "length_target": 102,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "22 Mayıs 1331",
+      "closing": "Kusura bakma, kâğıt bitti",
+      "home_address": "Kayseri, Bünyan kazası, Taşpınar karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5691,
+      "output": 2976
+    },
+    "attempts": 4,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 22 Mayıs 1331\nHİTAP: Zevcem Meryem'e\nGÖVDE: Meryem selam ederim çocukların gözünden öperim. Ben eyiyim merak etmen. Köyde havalar ısınmıştır arpa hasadı yaklaştı. Hasan ağaya olan on kuruş borcu verdin mi onu unutma. Çatının aktığı yeri çamurla sıvadınız mı. Ahırdaki saman yetti mi. Bizim burda tayın yetiyo şükür. Bazen kuru peksimet yiyoz bazen de az bulgur kaynatıyoz. Suyu idareli içiyoz. Siz köyde un bulursanız ekmeği bol yapın çocuklara sakın kısmayın. Benim sol kol biraz tutulmuş sargılı duruyo ondan hep yatıyom çadırda nöbet yazmıyolar. ⟦Haftaya bizi burdan ileriye başka vadiye alacaklarmış⟧ o zamana kol da geçer. Çoraplarım delindi yün ipin varsa bi çift ör yolla güz gelince lazım olur.\nKAPANIŞ: Kusura bakma, kâğıt bitti.\nİMZA: Kocan Ramazan\nZARF: Kayseri, Bünyan kazası, Taşpınar karyesi, İmam Salih Efendi vasıtasıyla Meryem Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 102 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça; istekte hassas bilgi verilmişti"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:25:49+00:00",
+    "tokens": {
+      "input": 4309,
+      "output": 3558
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 3,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil kullanımı genel olarak başarılı ancak 'Zevcem' hitabı, düşük okuryazar bir köylü için fazla resmî kalıyor.",
+      "olculuk": "Duygular adlandırılmadan, somut ayrıntılar ve üstü örtülü ifadelerle çok başarılı bir şekilde hissettirilmiş.",
+      "okuryazarlik": "Kısa cümleler, imla hataları ve noktalama eksiklikleri istenen düşük okuryazarlık seviyesine uyuyor, sadece hitap biraz sırıtmış.",
+      "somutluk": "Mektup, borç, akan çatı, peksimet ve delik çorap gibi gündelik ve somut ayrıntılarla dolu, bu da onu sahici kılıyor.",
+      "sadakat": "İsteğin ana unsurlarına uyulmuş ancak 'Dikkatsizlik: az' kuralı gereği sansürcünün gözünden kaçacak küçük bir askerî detaya yer verilmemiş.",
+      "sahicilik": "Mektup, bir çiftçi-askerin endişelerini, ihtiyaçlarını ve düşünce tarzını klişelere düşmeden çok gerçekçi bir şekilde yansıtıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcem Meryem'e",
+        "problem": "'Zevcem' kelimesi, mektubu kendisi yazan ve okuryazarlığı düşük bir köylünün ağzına pek uymayan, kâtip veya okumuş ağzı bir ifadedir.",
+        "suggestion": "HİTAP: Meryem'e"
+      },
+      {
+        "line": "(Mektubun tamamı)",
+        "problem": "İstekte 'Dikkatsizlik: az' belirtilmesine rağmen, mektupta sansür işaretleri ⟦ ⟧ dışında kalmış, yazarın farkında olmadan sızdırdığı hiçbir askerî ayrıntı (yer, manzara, sayı vb.) bulunmuyor.",
+        "suggestion": "Gövdeye 'Burdan deniz görünüyo.' gibi yeri belli eden masum bir cümle eklenebilir veya başlık '⟦Arıburnu⟧, 22 Mayıs 1331' olarak değiştirilebilirdi."
+      }
+    ]
+  },
+  "status": "needs_review",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    }
+  ]
+}

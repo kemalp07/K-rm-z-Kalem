@@ -1,0 +1,285 @@
+{
+  "id": "pool_cepheye_000075",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Rukiye",
+    "epithet": "Bolulu",
+    "age": 52,
+    "hometown": "Bolu",
+    "occupation": "çiftçi",
+    "relation": "annesi"
+  },
+  "recipient": {
+    "name": "Halil",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 102,
+  "hand": "careful",
+  "header": {
+    "text": "Çamlıca, 6 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Halil'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Geçen ay yolladığın mektubunu aldık.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim halimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Haziran ayına girdik, sıcaklar bastırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Tarladaki arpa sarardı ama benim gücüm tırpana hasada yetmiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Eline tırpan alacak kimse kalmadı buralarda.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Koca Ömer'le konuştum, bizim tarlayı bu sene yarıya verdim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Ekinleri onlar biçecek, harmanda buğdayın yarısını alacaklar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Başka çarem kalmadı, kışlık unumuz çıksın da gerisi dert değil.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Küçük Hasan sabahtan beri döşekte yatıyor, pek sesi çıkmıyor, uslu uyuyor merak etme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Çarşıda gazyağı çok pahalanmış, bulmak da zor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Akşamları lambayı erkenden söndürüp yatıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Senin yolladığın son parayı da bakkala olan tuz borcuna verdik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Orada kendine dikkat et, hastalanma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köydeki herkesin sana selamı var.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Anan Rukiye"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çamlıcalı Halil'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Rukiye Hanım, Bolulu, 52, çiftçi (Bolu, Gerede kazası, Çamlıca karyesi)\nAlıcı: Oğlu Er Halil, cephede\nYön: cepheye\nTarih: 6 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: içine kapanık, yalnız gerekeni yazar\nKonu: evin geçimi, tarlanın kiraya verilmesi\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 102",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Rukiye",
+        "gender": "kadın",
+        "age": 52,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Bolu",
+        "occupation": "çiftçi",
+        "epithet": "Bolulu",
+        "place": "Gerede kazası, Çamlıca karyesi"
+      },
+      "recipient": {
+        "name": "Halil",
+        "gender": "erkek",
+        "age": 29,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Bolu",
+        "occupation": null,
+        "epithet": null,
+        "place": "Gerede kazası, Çamlıca karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "içine kapanık, yalnız gerekeni yazar",
+      "topic": "evin geçimi, tarlanın kiraya verilmesi",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 102,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "6 Haziran 1331",
+      "closing": "",
+      "home_address": "Bolu, Gerede kazası, Çamlıca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5654,
+      "output": 2967
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Çamlıca, 6 Haziran 1331\nHİTAP: Oğlum Halil'e\nGÖVDE: Geçen ay yolladığın mektubunu aldık. Bizim halimizi sorarsan şükür ayaktayız. Haziran ayına girdik, sıcaklar bastırdı. Tarladaki arpa sarardı ama benim gücüm tırpana hasada yetmiyor. Eline tırpan alacak kimse kalmadı buralarda. Koca Ömer'le konuştum, bizim tarlayı bu sene yarıya verdim. Ekinleri onlar biçecek, harmanda buğdayın yarısını alacaklar. Başka çarem kalmadı, kışlık unumuz çıksın da gerisi dert değil. Küçük Hasan sabahtan beri döşekte yatıyor, pek sesi çıkmıyor, uslu uyuyor merak etme. Çarşıda gazyağı çok pahalanmış, bulmak da zor. Akşamları lambayı erkenden söndürüp yatıyoruz. Senin yolladığın son parayı da bakkala olan tuz borcuna verdik. Orada kendine dikkat et, hastalanma. Köydeki herkesin sana selamı var.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Anan Rukiye\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çamlıcalı Halil'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 102 (-1%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:36+00:00",
+    "tokens": {
+      "input": 4288,
+      "output": 2902
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 4,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 3
+    },
+    "reasons": {
+      "donem_dili": "Dönemin köy hayatına uygun, modern ifade içermeyen sade bir dil kullanılmış.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, zorluklar somut olaylarla anlatılmış, ancak hasta çocukla ilgili satır endişe verici.",
+      "okuryazarlik": "Mektup, istekte belirtilen 'orta okuryazar' seviyesine uygun, anlaşılır ve sade cümlelerle yazılmış.",
+      "somutluk": "Tarlanın yarıya verilmesi, gazyağı sıkıntısı, tuz borcu gibi gündelik ve somut ayrıntılar mektubu zenginleştirmiş.",
+      "sadakat": "İsteğin 'çocuğun hasta olduğunu sakladığı' kuralına uyulmamış, aksine endişe verici bir ifadeyle hastalık belli edilmiş.",
+      "sahicilik": "Hastalığı saklama biçimi biraz acemice ve klişe durduğu için karakterin pratik ve içine kapanık doğasıyla tam örtüşmüyor."
+    },
+    "issues": [
+      {
+        "line": "Küçük Hasan sabahtan beri döşekte yatıyor, pek sesi çıkmıyor, uslu uyuyor merak etme.",
+        "problem": "Bu cümle, isteğin 'çocuğun hasta olduğunu sakladığı' kuralını ihlal ediyor. Bu şekilde yazıldığında, askerin endişelenmesine sebep olur ve hastalığı saklamak yerine belli eder.",
+        "suggestion": "Hastalığı gerçekten saklamak için bu cümlenin tamamen çıkarılması veya 'Küçük Hasan da iyidir, ellerinden öper.' gibi endişe yaratmayacak genel bir ifadeyle değiştirilmesi gerekir."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T17:30:36+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

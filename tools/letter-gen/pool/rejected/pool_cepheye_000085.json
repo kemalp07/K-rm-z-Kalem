@@ -1,0 +1,267 @@
+{
+  "id": "pool_cepheye_000085",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Rüstem",
+    "epithet": "Sinoplu",
+    "age": 72,
+    "hometown": "Sinop",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Şaban",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 73,
+  "hand": "hurried",
+  "header": {
+    "text": "Gölcük, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Şaban'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Oğlum Şaban iki kâğıt yolladım cevap vermiyon.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Unuttun mu ihtiyar babanı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Buralar bildiğin gibi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Geçen Ayancık pazarına indim un kalmamış diyolar.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bakkal Hasan bir avuç şekeri altın bulmuş gibi saklıyo.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Cebimdeki paraya anca üç okka darı verdiler ona da şükür.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Bizim tarladaki arpayı biçmeye başladık ama benim canım pek iş istemiyo bu ara.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Koca gün minderde yatıyom.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Biraz öksürük var geçer gider.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Sen nasılsın kâğıt yaz bana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Paraya sıkışırsan söyle yollarım darıyı satıp.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "Baban Rüstem"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Sinoplu Şaban'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Rüstem, Sinoplu, 72, çiftçi (Sinop, Ayancık kazası, Gölcük karyesi)\nAlıcı: Oğlu Çavuş Şaban, cephede\nYön: cepheye\nTarih: 20 Haziran 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: fiyatların artması, un bulunamaması\nSakladığı: kendisinin hastalandığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 73",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Rüstem",
+        "gender": "erkek",
+        "age": 72,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Sinop",
+        "occupation": "çiftçi",
+        "epithet": "Sinoplu",
+        "place": "Ayancık kazası, Gölcük karyesi"
+      },
+      "recipient": {
+        "name": "Şaban",
+        "gender": "erkek",
+        "age": 42,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Sinop",
+        "occupation": null,
+        "epithet": null,
+        "place": "Ayancık kazası, Gölcük karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "fiyatların artması, un bulunamaması",
+      "hidden": "kendisinin hastalandığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 73,
+      "package": null,
+      "prev_state": "cevapsız kaldı (2.)",
+      "date": "20 Haziran 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Sinop, Ayancık kazası, Gölcük karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5668,
+      "output": 2246
+    },
+    "attempts": 8,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Gölcük, 20 Haziran 1331\nHİTAP: Oğlum Şaban'a\nGÖVDE: Oğlum Şaban iki kâğıt yolladım cevap vermiyon. Unuttun mu ihtiyar babanı. Buralar bildiğin gibi. Geçen Ayancık pazarına indim un kalmamış diyolar. Bakkal Hasan bir avuç şekeri altın bulmuş gibi saklıyo. Cebimdeki paraya anca üç okka darı verdiler ona da şükür. Bizim tarladaki arpayı biçmeye başladık ama benim canım pek iş istemiyo bu ara. Koca gün minderde yatıyom. Biraz öksürük var geçer gider. Sen nasılsın kâğıt yaz bana. Paraya sıkışırsan söyle yollarım darıyı satıp.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: Baban Rüstem\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Sinoplu Şaban'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "73 kelime, hedef 73 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:32:03+00:00",
+    "tokens": {
+      "input": 4220,
+      "output": 3054
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 2,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dil, 'vermiyon', 'yatıyom' gibi fonetik yazımlar ve sade kelimelerle döneme uygun, ancak 'bu ara' ifadesi modern bir tınıya sahip.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, 'bir avuç şekeri altın bulmuş gibi saklıyo' gibi somut ve sade bir benzetmeyle durum anlatılmış.",
+      "okuryazarlik": "Kısa cümleler, noktalama eksikliği ve fonetik yazımlar, istenen düşük okuryazarlık seviyesiyle tam uyumlu.",
+      "somutluk": "Ayancık pazarı, Bakkal Hasan, üç okka darı gibi gündelik ve somut ayrıntılar mektubu canlı kılıyor.",
+      "sadakat": "Mektup, yazarın hasta olduğunu saklaması gerekirken 'öksürük var' diyerek açıkça belirtmesi nedeniyle isteğin en önemli kurallarından birini ihlal ediyor.",
+      "sahicilik": "Mektup genel olarak gerçekçi bir köylü mektubu hissi veriyor, ancak hastalığını bu kadar açık etmesi karakterin direncini biraz zayıflatıyor."
+    },
+    "issues": [
+      {
+        "line": "ama benim canım pek iş istemiyo bu ara. Koca gün minderde yatıyom. Biraz öksürük var geçer gider.",
+        "problem": "İstekte yazarın hasta olduğunu saklaması istenmişken, bu cümleler yorgunluk, yatma ve öksürük gibi belirtileri açıkça ifade ederek bu kuralı bozuyor.",
+        "suggestion": "Bu cümleler yerine yaşlılığa dair genel bir ifade kullanılabilirdi, örneğin: 'Yaşlılık işte, eskisi gibi kuvvetim kalmadı.' Bu şekilde hem hastalık saklanmış hem de iş yapamama durumu açıklanmış olurdu."
+      }
+    ]
+  },
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "rejected",
+      "at": "2026-10-03T17:32:03+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

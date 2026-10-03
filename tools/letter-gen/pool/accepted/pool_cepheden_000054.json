@@ -1,0 +1,259 @@
+{
+  "id": "pool_cepheden_000054",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Bayram",
+    "epithet": "Konyalı",
+    "age": 34,
+    "hometown": "Konya",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hasan",
+    "relation": "amcası",
+    "location": "Konya, Karaman kazası, Sarıkaya karyesi"
+  },
+  "writes": "dictated",
+  "writer": "çadır arkadaşı bir hoca efendi",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 83,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 20 Haziran 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem amcam Hasan Ağa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela muhterem amcası Hasan Ağa'ya selam eder, mübarek ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bayram kardeşimin ahvali şükür iyidir, şöyle der: Emmiciğim hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Bizim burada halimiz vaktimiz yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Hastalığım yaram falan yoktur, merak etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim aklım köyde kaldı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Geçen kış yağmurlarda evin damı çok akıyordu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Arpa biçildikten sonra komşularla kerpiç karıp ocağın üstünü el birliğiyle aktarın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Direkler çürümesin, kışa sağlam girsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana bu ay birkaç kuruş harçlık yollayacaktım lakin denk getiremedim, cebim boş kaldı, kusuruma kalmayasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Harman bereketli olsun, tekmil komşulara selam söylen.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Sağlıcakla kal.",
+  "signature": {
+    "text": "",
+    "seal": "Bayram"
+  },
+  "note": {
+    "text": "İşbu mektubu Bayram'ın ricası üzerine ben kaleme aldım. Çadır arkadaşı İstanbullu Hafız Ali.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Konya, Karaman kazası, Sarıkaya karyesi, Muhtar Süleyman Ağa vasıtasıyla Hasan Ağa'ya",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Bayram, Konyalı, 34, çiftçi, er (Konya, Karaman kazası, Sarıkaya karyesi)\nAlıcı: Amcası Hasan, Konya, Karaman kazası, Sarıkaya karyesi\nYön: cepheden\nTarih: 20 Haziran 1331\nYazma biçimi: yazdırıyor (yazan: çadır arkadaşı bir hoca efendi)\nOkuryazarlık: yok\nSes: az konuşur, her şeyi iyi gösterir\nKonu: evin damının akmasından endişe\nSakladığı: parasını kumarda kaybettiğini\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nKapanış: Sağlıcakla kal\nUzunluk: 83",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Bayram",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Konya",
+        "occupation": "çiftçi",
+        "epithet": "Konyalı",
+        "place": "Karaman kazası, Sarıkaya karyesi"
+      },
+      "recipient": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 59,
+        "relation": "amcası",
+        "rank": null,
+        "hometown": "Konya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Karaman kazası, Sarıkaya karyesi"
+      },
+      "recipient_location": "Konya, Karaman kazası, Sarıkaya karyesi",
+      "writes": "dictated",
+      "writer": "çadır arkadaşı bir hoca efendi",
+      "literacy": "none",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "evin damının akmasından endişe",
+      "hidden": "parasını kumarda kaybettiğini",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 83,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "date": "20 Haziran 1331",
+      "closing": "Sağlıcakla kal",
+      "home_address": "Konya, Karaman kazası, Sarıkaya karyesi",
+      "soldier_relation": "yeğeni",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5744,
+      "output": 3008
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 20 Haziran 1331\nHİTAP: Muhterem amcam Hasan Ağa'ya\nGÖVDE: Evvela muhterem amcası Hasan Ağa'ya selam eder, mübarek ellerinden öperim. Bayram kardeşimin ahvali şükür iyidir, şöyle der: Emmiciğim hatırını sorarım. Bizim burada halimiz vaktimiz yerindedir. Hastalığım yaram falan yoktur, merak etmeyin. Benim aklım köyde kaldı. Geçen kış yağmurlarda evin damı çok akıyordu. Arpa biçildikten sonra komşularla kerpiç karıp ocağın üstünü el birliğiyle aktarın. Direkler çürümesin, kışa sağlam girsin. Sana bu ay birkaç kuruş harçlık yollayacaktım lakin denk getiremedim, cebim boş kaldı, kusuruma kalmayasın. Harman bereketli olsun, tekmil komşulara selam söylen.\nKAPANIŞ: Sağlıcakla kal.\nİMZA: (mühür: Bayram)\nNOT: İşbu mektubu Bayram'ın ricası üzerine ben kaleme aldım. Çadır arkadaşı İstanbullu Hafız Ali.\nZARF: Konya, Karaman kazası, Sarıkaya karyesi, Muhtar Süleyman Ağa vasıtasıyla Hasan Ağa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "80 kelime, hedef 83 (-4%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:21:19+00:00",
+    "tokens": {
+      "input": 4308,
+      "output": 3074
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Mektup, kâtibin kullandığı \"ahval, lakin, tekmil\" gibi kelimelerle Bayram'ın sade dilini başarıyla harmanlayarak dönemin ruhunu yansıtıyor.",
+      "olculuk": "Duygular doğrudan ifade edilmek yerine, damın akması endişesi ve para gönderememenin mahcubiyeti gibi somut durumlar üzerinden ustalıkla hissettiriliyor.",
+      "okuryazarlik": "Okuma yazma bilmeyen Bayram'ın ağzından çıkanlarla, mektubu yazan hocanın \"şöyle der:\", \"işbu mektup\" gibi kalıpları arasındaki ayrım çok sahici bir şekilde verilmiş.",
+      "somutluk": "Mektup, \"damın akması\", \"kerpiç karıp\", \"arpa biçilmesi\", \"direklerin çürümesi\" gibi gündelik ve somut ayrıntılarla dolu.",
+      "sadakat": "Mektup; konu, yazım biçimi, saklanan bilgi, karakterlerin okuryazarlık seviyesi ve kapanış cümlesi dahil olmak üzere istekteki tüm maddelere harfiyen uyuyor.",
+      "sahicilik": "Kâtip eliyle yazılan bir mektubun yapısı, para gönderememe bahanesi ve köydeki pratik bir soruna odaklanılması mektubu son derece gerçekçi kılıyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:21:19+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

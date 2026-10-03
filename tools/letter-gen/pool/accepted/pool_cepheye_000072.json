@@ -1,0 +1,243 @@
+{
+  "id": "pool_cepheye_000072",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hanife",
+    "epithet": "Adanalı",
+    "age": 24,
+    "hometown": "Adana",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Mustafa",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 62,
+  "hand": "careful",
+  "header": {
+    "text": "Karacaören, 27 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kocam Mustafa'ya",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Mustafa, geçen ay yazdığım kâğıda cevap gelmedi, eline geçmedi mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sarıkız iki gün evvel buzağıladı, erkek doğurdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sütünü satıp bakkal Halil’e olan borcun birazını kapattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kalanı için harman sonunu bekleyecek ama çok sıkıştırıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Havalar ısındı ama siper geceleri soğuk olur diye pakete bir çift yün çorap koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Çocuk şimdilik uyuyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Eline üç beş kuruş geçerse kâğıdın içine koy yolla, elde avuçta kalmadı.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Duanı eksik etme.",
+  "signature": {
+    "text": "Karın Hanife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı Mustafa'ya",
+    "sensitive": false
+  },
+  "package": [
+    "yün çorap"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hanife Hanım, Adanalı, 24, ev hanımı (Adana, Kozan kazası, Karacaören karyesi)\nAlıcı: Kocası Er Mustafa, cephede\nYön: cepheye\nTarih: 27 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: hesapçı, para ve borçtan söz eder\nKonu: ineğin buzağılaması\nSakladığı: çocuğun hasta olduğunu\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nPaket: yün çorap\nKapanış: Duanı eksik etme\nUzunluk: 62",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hanife",
+        "gender": "kadın",
+        "age": 24,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "ev hanımı",
+        "epithet": "Adanalı",
+        "place": "Kozan kazası, Karacaören karyesi"
+      },
+      "recipient": {
+        "name": "Mustafa",
+        "gender": "erkek",
+        "age": 34,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kozan kazası, Karacaören karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "hesapçı, para ve borçtan söz eder",
+      "topic": "ineğin buzağılaması",
+      "hidden": "çocuğun hasta olduğunu",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 62,
+      "package": [
+        "yün çorap"
+      ],
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "27 Mayıs 1331",
+      "closing": "Duanı eksik etme",
+      "home_address": "Adana, Kozan kazası, Karacaören karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5829,
+      "output": 2995
+    },
+    "attempts": 5,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar",
+      "Para gönderme"
+    ],
+    "raw": "BAŞLIK: Karacaören, 27 Mayıs 1331\nHİTAP: Kocam Mustafa'ya\nGÖVDE: Mustafa, geçen ay yazdığım kâğıda cevap gelmedi, eline geçmedi mi? Sarıkız iki gün evvel buzağıladı, erkek doğurdu. Sütünü satıp bakkal Halil’e olan borcun birazını kapattım. Kalanı için harman sonunu bekleyecek ama çok sıkıştırıyor. Havalar ısındı ama siper geceleri soğuk olur diye pakete bir çift yün çorap koydum. Çocuk şimdilik uyuyor. Eline üç beş kuruş geçerse kâğıdın içine koy yolla, elde avuçta kalmadı.\nKAPANIŞ: Duanı eksik etme.\nİMZA: Karın Hanife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı Mustafa'ya"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "62 kelime, hedef 62 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:30:17+00:00",
+    "tokens": {
+      "input": 4193,
+      "output": 3460
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler (kâğıt, buzağılamak, harman) ve ifadeler (elde avuçta kalmadı) döneme uygundur, modern bir ifade yoktur.",
+      "olculuk": "Mektup, duyguları isimlendirmek yerine borç, para ve çocuğun durumu gibi somut meseleler üzerinden endişeyi hissettirerek ölçüyü koruyor.",
+      "okuryazarlik": "Cümle yapısı ve kelime seçimi, istenen 'orta' okuryazarlık seviyesine tam olarak uymakta; ne çok basit ne de süslüdür.",
+      "somutluk": "Sarıkız adlı inek, Bakkal Halil, yün çorap gibi gündelik ve somut ayrıntılar mektubu son derece gerçekçi kılıyor.",
+      "sadakat": "Mektup; hesapçı ton, ineğin buzağılaması, saklanan hastalık, gönderilen paket ve kapanış cümlesi dahil isteğin tüm unsurlarını eksiksiz yerine getiriyor.",
+      "sahicilik": "Mektup, pratik kaygılarla kişisel endişeleri birleştiren ve klişelerden uzak duran yapısıyla gerçek bir insanın kaleminden çıkmış hissi veriyor."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:30:17+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

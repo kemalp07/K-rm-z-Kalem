@@ -1,0 +1,294 @@
+{
+  "id": "pool_cepheye_000080",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Nazlı",
+    "epithet": "Kayserili",
+    "age": 18,
+    "hometown": "Kayseri",
+    "occupation": "terzi",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Ramazan",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 104,
+  "hand": "careful",
+  "header": {
+    "text": "Ortaköy, 10 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Ramazan'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Gittiğinden beri gözüm yollarda, postacı köye her geldiğinde elim boş dönüyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İnsan karısına iki satır bir kâğıt yollamaz mı, unuttun mu bizi orada?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim hâlimi sorarsan şükür ayaktayım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Havalar ısındı, ekinler boy attı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Sabahtan akşama tarlada çapa vuruyorum, ot yolmaktan ellerim nasır bağladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kaynatam yaşlı, işin çoğu bana kalıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Komşu kadınlarla imece usulü bitirmeye çalışıyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Sana bu kâğıtla beraber bir bohça hazırladım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İçine kendi ellerimle ördüğüm yün çorapları koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bir de çarık aldım, eskidikçe giyersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Biraz da kuru ekmek ekledim, nöbette yersin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Daha başka bir şey koyamadım, idare et.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Bari mektubu alınca sağ olduğunu yazıp bana hemen geri gönder.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını acele bekliyorum.",
+  "signature": {
+    "text": "Zevcen Nazlı"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kayserili Er Ramazan'a",
+    "sensitive": false
+  },
+  "package": [
+    "bir çift çarık",
+    "yün çorap",
+    "kuru ekmek"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Nazlı Hanım, Kayserili, 18, terzi (Kayseri, Bünyan kazası, Ortaköy karyesi)\nAlıcı: Kocası Er Ramazan, cephede\nYön: cepheye\nTarih: 10 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: sitemkâr, mektup gelmemesinden yakınır\nKonu: çapa ve ot yolma işleri\nSakladığı: evde un kalmadığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: bir çift çarık, yün çorap, kuru ekmek\nUzunluk: 104",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Nazlı",
+        "gender": "kadın",
+        "age": 18,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Kayseri",
+        "occupation": "terzi",
+        "epithet": "Kayserili",
+        "place": "Bünyan kazası, Ortaköy karyesi"
+      },
+      "recipient": {
+        "name": "Ramazan",
+        "gender": "erkek",
+        "age": 23,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Kayseri",
+        "occupation": null,
+        "epithet": null,
+        "place": "Bünyan kazası, Ortaköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "sitemkâr, mektup gelmemesinden yakınır",
+      "topic": "çapa ve ot yolma işleri",
+      "hidden": "evde un kalmadığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 104,
+      "package": [
+        "bir çift çarık",
+        "yün çorap",
+        "kuru ekmek"
+      ],
+      "prev_state": "ilk mektup",
+      "date": "10 Mayıs 1331",
+      "closing": "",
+      "home_address": "Kayseri, Bünyan kazası, Ortaköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5774,
+      "output": 3244
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ortaköy, 10 Mayıs 1331\nHİTAP: Zevcim Ramazan'a\nGÖVDE: Evvela selam eder, hatırını sorarım. Gittiğinden beri gözüm yollarda, postacı köye her geldiğinde elim boş dönüyorum. İnsan karısına iki satır bir kâğıt yollamaz mı, unuttun mu bizi orada? Benim hâlimi sorarsan şükür ayaktayım. Havalar ısındı, ekinler boy attı. Sabahtan akşama tarlada çapa vuruyorum, ot yolmaktan ellerim nasır bağladı. Kaynatam yaşlı, işin çoğu bana kalıyor. Komşu kadınlarla imece usulü bitirmeye çalışıyoruz. Sana bu kâğıtla beraber bir bohça hazırladım. İçine kendi ellerimle ördüğüm yün çorapları koydum. Bir de çarık aldım, eskidikçe giyersin. Biraz da kuru ekmek ekledim, nöbette yersin. Daha başka bir şey koyamadım, idare et. Bari mektubu alınca sağ olduğunu yazıp bana hemen geri gönder.\nKAPANIŞ: Cevabını acele bekliyorum.\nİMZA: Zevcen Nazlı\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Kayserili Er Ramazan'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "104 kelime, hedef 104 (+0%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:31:24+00:00",
+    "tokens": {
+      "input": 4300,
+      "output": 3683
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan kelimeler ve ifadeler ('imece', 'bohça', 'çarık', 'kaynatam') döneme tamamen uygundur ve modern bir ifade içermemektedir.",
+      "olculuk": "Sitem ve endişe gibi duygular doğrudan adlandırılmak yerine, mektup gelmemesinden şikayet ve somut işlerin zorluğu üzerinden ustaca hissettirilmiştir.",
+      "okuryazarlik": "Cümle yapısı, kelime seçimi ve genel akıcılık, istekte belirtilen 'orta okuryazarlık' seviyesine tam olarak uymaktadır.",
+      "somutluk": "Mektup, 'çapa', 'ot yolma', 'nasır bağlamış eller', 'yün çorap' gibi gündelik hayata dair çok sayıda somut ayrıntı içermektedir.",
+      "sadakat": "Mektup; konu, ton, saklanan bilgi, paket içeriği ve uzunluk dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Hitap ve imzadaki 'Zevcim/Zevcen' kullanımı, mektubun geri kalanındaki samimi ve kırsal tona göre biraz fazla resmî kalarak tam sahiciliğe ulaşmasını küçük bir ölçüde engellemiştir."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Zevcim Ramazan'a / İMZA: Zevcen Nazlı",
+        "problem": "18 yaşındaki bir köylü kadının sitem dolu mektubu için 'Zevcim/Zevcen' ifadeleri bir miktar resmî ve kitabi durmaktadır.",
+        "suggestion": "Daha samimi ve yaygın olan 'Efendime' veya doğrudan 'Ramazan'ıma' hitabı ile 'Helalin Nazlı' imzası, mektubun tonuyla daha uyumlu olurdu."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:31:24+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

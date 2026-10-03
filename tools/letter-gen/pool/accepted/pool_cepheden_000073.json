@@ -1,0 +1,289 @@
+{
+  "id": "pool_cepheden_000073",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Halil",
+    "epithet": "Çankırılı",
+    "age": 33,
+    "hometown": "Çankırı",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Hamide",
+    "relation": "annesi",
+    "location": "Çankırı, Kalecik kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 97,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 11 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Hamide Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Evvela ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay bir kâğıt yolladım, cevabı gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Posta yavaş işliyor herhalde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim hâlimi sorarsan, maşallah turp gibiyim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Burada keyfimiz yerinde.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Karavanadan çıkan pek tatlı gelmiyor ana, senin tarhananın yerini tutmaz ama idare ediyoruz işte.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Karnımız tok sırtımız pek diyelim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Emine'ye çok selam söyleyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çeyiz sandığına bakıp dertlenmesin, biraz daha sabretsin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Ben dönünce o düğünü davullu zurnalı yapacağız inşallah.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sakın ola aklına başka şey getirmesin, beni beklesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Tarladaki taşları temizlettin mi Deli Hasan'a?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Üç kuruş vereceğim diye sızlanmasın, hakkı neyse ver.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Koyunların kırkım vakti geldi, yünleri Çerçi'ye ucuza kaptırmayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Hepinizin gözlerinden öperim.",
+  "signature": {
+    "text": "Oğlun Halil"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Çankırı, Kalecik kazası, Kurtköy karyesi, Muhtar Kadir Ağa vasıtasıyla Hamide Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Halil, Çankırılı, 33, çiftçi, er (Çankırı, Kalecik kazası, Kurtköy karyesi)\nAlıcı: Annesi Hamide Hanım, Çankırı, Kalecik kazası, Kurtköy karyesi\nYön: cepheden\nTarih: 11 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: nişanlısının beklemesini istemek\nSakladığı: aç kaldıklarını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (1.)\nKapanış: Hepinizin gözlerinden öperim\nUzunluk: 97",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Halil",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çankırı",
+        "occupation": "çiftçi",
+        "epithet": "Çankırılı",
+        "place": "Kalecik kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Hamide",
+        "gender": "kadın",
+        "age": 50,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Çankırı",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kalecik kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Çankırı, Kalecik kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "nişanlısının beklemesini istemek",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 97,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "date": "11 Mayıs 1331",
+      "closing": "Hepinizin gözlerinden öperim",
+      "home_address": "Çankırı, Kalecik kazası, Kurtköy karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:10+00:00",
+    "tokens": {
+      "input": 5681,
+      "output": 2584
+    },
+    "attempts": 8,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 11 Mayıs 1331\nHİTAP: Validem Hamide Hanım'a\nGÖVDE: Evvela ellerinden öperim. Geçen ay bir kâğıt yolladım, cevabı gelmedi. Posta yavaş işliyor herhalde. Benim hâlimi sorarsan, maşallah turp gibiyim. Burada keyfimiz yerinde. Karavanadan çıkan pek tatlı gelmiyor ana, senin tarhananın yerini tutmaz ama idare ediyoruz işte. Karnımız tok sırtımız pek diyelim. Emine'ye çok selam söyleyin. Çeyiz sandığına bakıp dertlenmesin, biraz daha sabretsin. Ben dönünce o düğünü davullu zurnalı yapacağız inşallah. Sakın ola aklına başka şey getirmesin, beni beklesin. Tarladaki taşları temizlettin mi Deli Hasan'a? Üç kuruş vereceğim diye sızlanmasın, hakkı neyse ver. Koyunların kırkım vakti geldi, yünleri Çerçi'ye ucuza kaptırmayın.\nKAPANIŞ: Hepinizin gözlerinden öperim.\nİMZA: Oğlun Halil\nZARF: Çankırı, Kalecik kazası, Kurtköy karyesi, Muhtar Kadir Ağa vasıtasıyla Hamide Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "91 kelime, hedef 97 (-6%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:23:51+00:00",
+    "tokens": {
+      "input": 4296,
+      "output": 3306
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dil, kelime seçimi ve ifadeler döneme tamamen uygun, modern hiçbir unsur içermiyor.",
+      "olculuk": "Duygular ve zorluklar (açlık) doğrudan söylenmek yerine somut detaylar ve üstü kapalı ifadelerle çok başarılı bir şekilde hissettiriliyor.",
+      "okuryazarlik": "Dilin sadeliği orta okuryazarlığa uygun ancak birkaç küçük imla veya noktalama hatasının olmaması onu biraz fazla 'temiz' kılıyor.",
+      "somutluk": "Mektup, karavana, tarhana, çeyiz sandığı, tarla, koyun gibi gündelik hayata dair somut ve canlı ayrıntılarla dolu.",
+      "sadakat": "Mektup; karakter, konu, saklanan bilgi, ton ve uzunluk dahil olmak üzere isteğin tüm unsurlarına harfiyen uyuyor.",
+      "sahicilik": "Karakterin şakacı ama endişeli tonu, evdeki işlerle ilgili talimatları ve nişanlısına mesajı birleşerek mektubu çok gerçekçi kılıyor."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Validem Hamide Hanım'a",
+        "problem": "Hitap, orta okuryazar bir çiftçinin annesine yazması için biraz fazla resmî; 'Validem' kelimesi daha çok kâtip veya okumuş dili hissi veriyor.",
+        "suggestion": "HİTAP: Anama Hamide Hanım'a"
+      },
+      {
+        "line": "Tarladaki taşları temizlettin mi Deli Hasan'a?",
+        "problem": "Cümlenin sonundaki soru işareti, orta okuryazar birinin yazısı için fazla düzgün; bu seviyede yazan biri soru işaretini sıklıkla unuturdu.",
+        "suggestion": "Tarladaki taşları temizlettin mi Deli Hasan'a."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:10+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:23:51+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

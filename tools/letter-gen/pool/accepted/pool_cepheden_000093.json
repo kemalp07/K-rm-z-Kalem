@@ -1,0 +1,284 @@
+{
+  "id": "pool_cepheden_000093",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Hamdi",
+    "epithet": "Ankaralı",
+    "age": 18,
+    "hometown": "Ankara",
+    "occupation": "dokumacı",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Eşref",
+    "relation": "erkek kardeşi",
+    "location": "Ankara, Beypazarı kazası, Kavak karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 113,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Mayıs 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Eşref'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kardeşim Eşref, evvela selam eder, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Günler burada hep aynı geçiyor, bir değişiklik yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sürekli bekliyoruz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "İnsan durduğu yerde yorulur mu, benim omuzlarım çöküyor, dizlerim sızlıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Sanki on sekiz değil de elli yaşına bastım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Geçen gün belki yakında birkaç gün izin kâğıdı yazarlar diye konuştuk.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Gözüm o kâğıtta.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Eğer verirlerse hemen yola düşer, kapıyı çalarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Dükkânda tezgâhların durumu nasıl?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "İplik bulup dokuma yapabiliyor musun, yoksa tezgâhlar boş mu yatıyor?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Çarşı pazar nasıldır?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Anama iyi bak, beni hiç merak etmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Burada kendi hâlimdeyim, sessiz sedasız günümü geçiriyorum, kimseye karıştığım ettiğim yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s14",
+      "text": "Köydeki büyüklerin ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s15",
+      "text": "İzin işi belli olursa yazarım yine.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Cevabını bekliyorum.",
+  "signature": {
+    "text": "Kardeşin Hamdi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ankara, Beypazarı kazası, Kavak karyesi, Muhtar Ali Ağa vasıtasıyla Eşref'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hamdi, Ankaralı, 18, dokumacı, er (Ankara, Beypazarı kazası, Kavak karyesi)\nAlıcı: Erkek kardeşi Eşref, Ankara, Beypazarı kazası, Kavak karyesi\nYön: cepheden\nTarih: 15 Mayıs 1331\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: yaşlı ve yorgun, kısa yazar\nKonu: izin alma umudu\nSakladığı: bir kavgaya karışıp ceza aldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nKapanış: Cevabını bekliyorum\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 18,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Ankara",
+        "occupation": "dokumacı",
+        "epithet": "Ankaralı",
+        "place": "Beypazarı kazası, Kavak karyesi"
+      },
+      "recipient": {
+        "name": "Eşref",
+        "gender": "erkek",
+        "age": 15,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Ankara",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beypazarı kazası, Kavak karyesi"
+      },
+      "recipient_location": "Ankara, Beypazarı kazası, Kavak karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "yaşlı ve yorgun, kısa yazar",
+      "topic": "izin alma umudu",
+      "hidden": "bir kavgaya karışıp ceza aldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "date": "15 Mayıs 1331",
+      "closing": "Cevabını bekliyorum",
+      "home_address": "Ankara, Beypazarı kazası, Kavak karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 7002,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T16:40:11+00:00",
+    "tokens": {
+      "input": 5675,
+      "output": 2601
+    },
+    "attempts": 3,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (bahar ve erken yaz)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Mayıs 1331\nHİTAP: Kardeşim Eşref'e\nGÖVDE: Kardeşim Eşref, evvela selam eder, hatırını sorarım. Günler burada hep aynı geçiyor, bir değişiklik yok. Sürekli bekliyoruz. İnsan durduğu yerde yorulur mu, benim omuzlarım çöküyor, dizlerim sızlıyor. Sanki on sekiz değil de elli yaşına bastım. Geçen gün belki yakında birkaç gün izin kâğıdı yazarlar diye konuştuk. Gözüm o kâğıtta. Eğer verirlerse hemen yola düşer, kapıyı çalarım. Dükkânda tezgâhların durumu nasıl? İplik bulup dokuma yapabiliyor musun, yoksa tezgâhlar boş mu yatıyor? Çarşı pazar nasıldır? Anama iyi bak, beni hiç merak etmesin. Burada kendi hâlimdeyim, sessiz sedasız günümü geçiriyorum, kimseye karıştığım ettiğim yok. Köydeki büyüklerin ellerinden öperim. İzin işi belli olursa yazarım yine.\nKAPANIŞ: Cevabını bekliyorum.\nİMZA: Kardeşin Hamdi\nZARF: Ankara, Beypazarı kazası, Kavak karyesi, Muhtar Ali Ağa vasıtasıyla Eşref'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "101 kelime, hedef 113 (-11%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "date": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-2.5-pro",
+    "reviewed_at": "2026-10-03T17:26:57+00:00",
+    "tokens": {
+      "input": 4295,
+      "output": 2784
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Kullanılan dil ve ifadeler ('izin kâğıdı', 'tezgâhlar', 'çarşı pazar') döneme uygundur ve modern bir kelime içermemektedir.",
+      "olculuk": "Duygular, 'omuzlarım çöküyor, dizlerim sızlıyor' gibi somut fiziksel hislerle adlandırılmadan aktarılmış ve abartıdan kaçınılmıştır.",
+      "okuryazarlik": "Orta okuryazarlık seviyesine uygun olarak cümleler sade, anlaşılır ve dilbilgisi açısından doğrudur; ne çok basit ne de çok süslüdür.",
+      "somutluk": "Mektup, 'iplik', 'tezgâh', 'izin kâğıdı' gibi somut nesnelere ve 'çarşı pazar' gibi gündelik hayatın ayrıntılarına odaklanmaktadır.",
+      "sadakat": "Mektup; konu, ton, uzunluk, saklanan bilgi ve kapanış cümlesi dahil olmak üzere istekte belirtilen tüm maddelere harfiyen uymaktadır.",
+      "sahicilik": "Savaşın getirdiği yorgunluk, eve dönme umudu ve işini merak etme gibi unsurların birleşimi mektuba son derece gerçekçi bir nitelik kazandırmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T16:40:11+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T17:26:57+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}
