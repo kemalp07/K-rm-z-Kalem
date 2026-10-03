@@ -75,7 +75,7 @@ def test_review_thresholds(settings, score, status):
 
 
 def test_failed_checks_reject_without_review(settings):
-    model = FakeModel(letter=GOOD_LETTER.replace("Ordu-yı Hümayun, ", ""))
+    model = FakeModel(letter=GOOD_LETTER.replace("Ordu-yı Hümayun, ⟦Seddülbahir⟧", "Seddülbahir"))
     pool, _, rres = _run(settings, model, count=1)
     rec = next(pool.all())
     assert rec["status"] == "rejected" and rec["review"] is None

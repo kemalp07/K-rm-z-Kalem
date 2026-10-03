@@ -69,6 +69,29 @@ def test_name_use_limit_counts_existing_pool(pools):
     assert max(names.values()) <= 4
 
 
+def test_reserved_names_are_never_used(pools):
+    s = Sampler(pools, seed=3, name_max_uses=10**6, reserved_names={"Ahmet", "Emine"})
+    for _ in range(500):
+        r = s.sample()
+        assert {r.sender.name, r.recipient.name}.isdisjoint({"Ahmet", "Emine"})
+
+
+def test_places_follow_the_address_patterns(pools):
+    for r in _many(pools, 300, seed=8):
+        assert r.home_address.startswith(r.sender.hometown + ", ")
+        assert r.home_address.endswith(("karyesi", "mahallesi"))
+        if r.direction == "cepheden":
+            assert r.recipient_location == r.home_address
+
+
+def test_occupations_fit_town_and_literacy(pools):
+    occ = {o["value"]: o for o in pools["occupations"]}
+    kinds = {h["name"]: h.get("kind", "village") for h in pools["hometowns"]}
+    for r in _many(pools, 1000, seed=21):
+        o = occ[r.sender.occupation]
+        assert o.get("where", kinds[r.sender.hometown]) == kinds[r.sender.hometown]
+
+
 def test_exhausted_names_raise(pools):
     s = Sampler(pools, seed=1, name_max_uses=1)
     with pytest.raises(Exception, match="tükendi"):

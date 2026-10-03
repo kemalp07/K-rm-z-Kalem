@@ -79,9 +79,16 @@ def test_narrator_traces(replacement):
 
 def test_sensitive_balance_by_carelessness():
     assert checks.check_sensitive_balance(make_record(carelessness="none"))["result"] == "warn"
-    clean = GOOD_LETTER.replace("⟦kuzeydeki sırta⟧", "kuzeydeki sırta").replace("NOT: ⟦Alay yarın yer değiştiriyor.⟧\n", "")
+    clean = (
+        GOOD_LETTER.replace("⟦kuzeydeki sırta⟧", "kuzeydeki sırta")
+        .replace("NOT: ⟦Alay yarın yer değiştiriyor.⟧\n", "")
+        .replace("Ordu-yı Hümayun, ⟦Seddülbahir⟧", "Ordu-yı Hümayun")
+    )
     assert checks.check_sensitive_balance(make_record(clean, carelessness="none"))["result"] == "pass"
     assert checks.check_sensitive_balance(make_record(clean, carelessness="low"))["result"] == "warn"
+    # the card's own "az" example: the only slip is the place in the header
+    header_slip = clean.replace("BAŞLIK: Ordu-yı Hümayun", "BAŞLIK: ⟦Arıburnu⟧")
+    assert checks.check_sensitive_balance(make_record(header_slip, carelessness="low"))["result"] == "pass"
 
 
 def test_military_header():
@@ -90,6 +97,9 @@ def test_military_header():
     assert checks.check_header(make_record(unmarked), CTX)["result"] == "fail"
     dated_only = GOOD_LETTER.replace("⟦Seddülbahir⟧, ", "")
     assert checks.check_header(make_record(dated_only), CTX)["result"] == "pass"
+    # the card's own "az" example heads the letter with the marked place instead
+    marked_place = GOOD_LETTER.replace("Ordu-yı Hümayun, ⟦Seddülbahir⟧", "⟦Arıburnu⟧")
+    assert checks.check_header(make_record(marked_place), CTX)["result"] == "pass"
     wrong = GOOD_LETTER.replace("Ordu-yı Hümayun, ⟦Seddülbahir⟧", "Siperden")
     assert checks.check_header(make_record(wrong), CTX)["result"] == "fail"
     assert checks.check_header(make_record(wrong, direction="cepheye"), CTX)["result"] == "pass"
@@ -99,6 +109,8 @@ def test_envelopes():
     assert checks.check_envelope(make_record())["result"] == "pass"
     mil = GOOD_LETTER.replace("ZARF: Sivas, Hafik kazası, Tuzhisar köyü, Fatma Hanım'a", "ZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, Mehmet'e")
     assert checks.check_envelope(make_record(mil, direction="cepheye"))["result"] == "pass"
+    placed = mil.replace("[..] Alay", "Çanakkale cephesi, [..] Alay")
+    assert checks.check_envelope(make_record(placed, direction="cepheye"))["result"] == "fail"
     invented = mil.replace("[..] Alay", "27. Alay")
     assert checks.check_envelope(make_record(invented, direction="cepheye"))["result"] == "fail"
     spelled = mil.replace("[..] Alay", "Yirmi Yedinci Alay").replace("[..] Tabur", "ikinci tabur")

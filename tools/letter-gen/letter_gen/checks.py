@@ -21,7 +21,9 @@ _HEADER_OK = {
     Ağustos Eylül Teşrinievvel Teşrinisani Kânunuevvel Kanunuevvel Pazar Pazartesi Salı Çarşamba Perşembe
     Cuma Cumartesi""".split()
 }
-_MILITARY_WORDS = ["alay", "tabur", "bölük", "bölüğ", "fırka", "kolordu", "ordu", "cephe", "müfreze", "batarya", "takım"]
+_MILITARY_WORDS = ["alay", "tabur", "bölük", "bölüğ", "fırka", "kolordu", "ordu", "müfreze", "batarya", "takım"]
+# The lorebook: a military address goes by unit only, never by place.
+_FRONT_PLACES = ["çanakkale", "cephe", "arıburnu", "seddülbahir", "anafarta", "kilitbahir", "gelibolu", "kafkas"]
 _HOME_WORDS = ["köy", "karye", "nahiye", "kaza", "mahalle", "sokağ", "sokak", "cadde", "çarşı", "hane", "kasaba", "şehr", "vilayet", "sancak"]
 _ORDINALS = r"(birinci|ikinci|üçüncü|dördüncü|beşinci|altıncı|yedinci|sekizinci|dokuzuncu|onuncu)"
 _NARRATOR = [
@@ -137,9 +139,9 @@ def expected_sensitive(carelessness: str) -> tuple[int, int]:
 
 
 def check_sensitive_balance(rec: dict[str, Any]) -> dict[str, str]:
+    # A slip can sit anywhere the card allows one: body, header (the place), note, envelope.
     n = sum(1 for s in rec.get("segments", []) if s["kind"] == "sensitive")
-    if (rec.get("note") or {}).get("sensitive"):
-        n += 1
+    n += sum(1 for k in ("header", "note", "envelope") if (rec.get(k) or {}).get("sensitive"))
     info = (rec["meta"].get("request_fields") or {}).get("sensitive_info", "yok")
     if fold(str(info)) != "yok":
         return result(PASS if n >= 1 else WARN, f"{n} hassas parça; istekte hassas bilgi verilmişti")
@@ -156,6 +158,10 @@ def check_header(rec: dict[str, Any], ctx: CheckContext) -> dict[str, str]:
     squash = lambda s: re.sub(r"[\s\-]", "", fold(s))  # noqa: E731
     prefix = ctx.military_header_prefix
     if not squash(text).startswith(squash(prefix)):
+        # The card's own example for "az" heads the letter with the place, marked: a slip
+        # the censor should catch, not a format error.
+        if header.get("sensitive"):
+            return result(PASS, f"yer adı başlıkta, ⟦ ⟧ içinde: {text[:50]!r}")
         return result(FAIL, f"başlık {prefix!r} ile başlamıyor: {text[:50]!r}")
     # Drop the prefix (whatever its spacing) and look for capitalised words that are not dates.
     rest = text
@@ -177,6 +183,9 @@ def check_envelope(rec: dict[str, Any]) -> dict[str, str]:
         stripped = re.sub(r"\[\s*\.{2,3}\s*\]", "", env)
         if re.search(r"\d", stripped) or re.search(_ORDINALS + r"\s+(alay|tabur|bölü|fırka|kolordu)", fold(stripped)):
             return result(FAIL, f"askerî adreste uydurulmuş birlik numarası: {env[:70]!r}")
+        places = [w for w in _FRONT_PLACES if w in f]
+        if places:
+            return result(FAIL, "askerî adreste yer adı (yalnız birlik yazılır): " + ", ".join(places))
         if not any(w in f for w in _MILITARY_WORDS):
             return result(WARN, f"askerî adres kalıbına benzemiyor: {env[:70]!r}")
         return result(PASS)

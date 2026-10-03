@@ -16,7 +16,7 @@ def settings(tmp_path: Path) -> Settings:
     for f in ("config.yaml", "pools.yaml"):
         shutil.copy(ROOT / f, tmp_path / f)
     config = yaml.safe_load((tmp_path / "config.yaml").read_text(encoding="utf-8"))
-    config["sources"] = {"card": str(FIX / "card.json"), "lorebook": str(FIX / "lorebook.json")}
+    config["sources"].update(card=str(FIX / "card.json"), lorebook=str(FIX / "lorebook.json"), author_note=str(FIX / "author_note.txt"))
     pools = yaml.safe_load((tmp_path / "pools.yaml").read_text(encoding="utf-8"))
     return Settings(root=tmp_path, config=config, pools=pools)
 

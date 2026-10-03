@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheden_000003",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Yusuf",
+    "epithet": "Çoban",
+    "age": 38,
+    "hometown": "Diyarbekir",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Hüsniye",
+    "relation": "karısı",
+    "location": "Diyarbekir, Silvan kazası, Kurtköy karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 66,
+  "hand": "hurried",
+  "header": {
+    "text": "Ordu-yı Hümayun, 15 Teşrinisani 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcem Hüsniye'ye",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Selam ederim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlim iyidir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Çadırda yatıyorum hiç yorulmuyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Köyde ne var ne yok?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Öküzü ne yaptınız?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Kışın yemi kalmaz satın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kaça verdiniz bana mektupta yazın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Bakkala borcu verdiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Tezeği yığdınız mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Hasan uslu duruyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Kızın öksürüğü geçti mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Anama emmime selam.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s13",
+      "text": "Çabuk cevap yollayın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Zevcin Yusuf"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Diyarbekir, Silvan kazası, Kurtköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Hüsniye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Yusuf, Çoban, 38, çoban, onbaşı (Diyarbekir, Silvan kazası, Kurtköy karyesi)\nAlıcı: Karısı Hüsniye Hanım, Diyarbekir, Silvan kazası, Kurtköy karyesi\nYön: cepheden\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: genç ve heyecanlı, çok soru sorar\nKonu: tarladaki öküzün satılıp satılmayacağı\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 66",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Yusuf",
+        "gender": "erkek",
+        "age": 38,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Diyarbekir",
+        "occupation": "çoban",
+        "epithet": "Çoban",
+        "place": "Silvan kazası, Kurtköy karyesi"
+      },
+      "recipient": {
+        "name": "Hüsniye",
+        "gender": "kadın",
+        "age": 36,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Diyarbekir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Silvan kazası, Kurtköy karyesi"
+      },
+      "recipient_location": "Diyarbekir, Silvan kazası, Kurtköy karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "tarladaki öküzün satılıp satılmayacağı",
+      "hidden": "hasta yattığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 66,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "home_address": "Diyarbekir, Silvan kazası, Kurtköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4821,
+      "output": 1990
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 15 Teşrinisani 1331\nHİTAP: Zevcem Hüsniye'ye\nGÖVDE: Selam ederim. Benim hâlim iyidir. Çadırda yatıyorum hiç yorulmuyorum. Köyde ne var ne yok? Öküzü ne yaptınız? Kışın yemi kalmaz satın. Kaça verdiniz bana mektupta yazın. Bakkala borcu verdiniz mi? Tezeği yığdınız mı? Hasan uslu duruyor mu? Kızın öksürüğü geçti mi? Anama emmime selam. Çabuk cevap yollayın.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Zevcin Yusuf\nZARF: Diyarbekir, Silvan kazası, Kurtköy karyesi, Muhtar Süleyman Ağa vasıtasıyla Hüsniye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "47 kelime, hedef 66 (-29%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4177,
+      "output": 1394
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem ruhuna aykırı veya modern hiçbir kelime barındırmayan, 1915 yılına uygun yalın bir Türkçe kullanılmıştır.",
+      "olculuk": "Duygular adlandırılmamış, abartılı edebî söylem ve metaforlara yer verilmeden doğrudan konuya girilmiştir.",
+      "okuryazarlik": "Düşük okuryazarlık seviyesine uygun olarak bağlaçsız, kısa ve peş peşe gelen yalın cümleler kurulmuştur.",
+      "somutluk": "Öküzün yemi, tezek yığını, bakkal borcu ve öksürük gibi somut köy hayatı ayrıntıları metni çok canlı kılmıştır.",
+      "sadakat": "Öküzün satışı meselesi, hastalığın çadırda dinlenme bahanesiyle gizlenmesi ve soru ağırlıklı ses isteğe bütünüyle sadıktır.",
+      "sahicilik": "Cephedeki bir askerin geride bıraktığı ocağına ve ailesine duyduğu telaşlı merak son derece sahici hissettirilmektedir."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

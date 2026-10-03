@@ -14,7 +14,7 @@ from .config import Settings
 from .llm import Runner, Usage
 from .parser import ParseError, parse
 from .sampler import Request, Sampler
-from .sources import Card, LoreEntry, find_entry, forbidden_words, load_card, load_lorebook
+from .sources import Card, LoreEntry, author_note, find_entry, forbidden_words, load_card, load_lorebook, reserved_names
 from .store import Pool
 
 
@@ -29,6 +29,8 @@ class Sources:
     forbidden: list[str]
     labels: list[str]
     unknown_labels: list[str]
+    reserved_names: set[str]
+    author_note: str
 
 
 def load_sources(settings: Settings) -> Sources:
@@ -39,8 +41,11 @@ def load_sources(settings: Settings) -> Sources:
     lore = load_lorebook(settings.lorebook_path)
     cfg = settings.config["checks"]
     words = forbidden_words(find_entry(lore, cfg["forbidden_entry_title"])) + list(cfg.get("extra_forbidden") or [])
-    labels, unknown = request_text.label_order(settings.pools, card.mes_example)
-    return Sources(card=card, lore=lore, forbidden=words, labels=labels, unknown_labels=unknown)
+    labels, unknown = request_text.label_order(settings.pools, card.first_mes, card.mes_example)
+    s = settings.config["sources"]
+    note = author_note(settings.path(s["author_note"]), s["author_note_section"]) if s.get("author_note") else ""
+    reserved = reserved_names(lore, s.get("character_entry_prefix", "Karakter"))
+    return Sources(card=card, lore=lore, forbidden=words, labels=labels, unknown_labels=unknown, reserved_names=reserved, author_note=note)
 
 
 @dataclass
@@ -57,6 +62,7 @@ def plan(settings: Settings, src: Sources, pool: Pool, count: int, direction: st
         seed=seed,
         name_max_uses=settings.config["sampler"]["name_max_uses"],
         used_names=pool.name_uses(),
+        reserved_names=src.reserved_names,
     )
     requests = sampler.batch(count, direction)
     ids = pool.next_ids([r.direction for r in requests])
@@ -64,7 +70,7 @@ def plan(settings: Settings, src: Sources, pool: Pool, count: int, direction: st
     out = []
     for letter_id, req in zip(ids, requests):
         text = request_text.render(req, settings.pools, src.labels)
-        out.append(Planned(letter_id, req, text, prompt_mod.build(src.card, src.lore, text, user_name)))
+        out.append(Planned(letter_id, req, text, prompt_mod.build(src.card, src.lore, text, user_name, src.author_note)))
     return out
 
 
@@ -206,3 +212,19 @@ async def review_pending(
         res.records.append(rec)
     res.review_usage = runner.usage
     return res
+
+
+def recheck(settings: Settings, src: Sources, pool: Pool) -> int:
+    """Re-run the rule checks on every letter and clear its review, keeping manual decisions."""
+    n = 0
+    others: list[tuple[str, str]] = []
+    for rec in sorted(pool.all(), key=lambda r: r["id"]):
+        if (rec.get("history") or [{}])[-1].get("by") == "manual":
+            continue
+        rec["review"] = None
+        apply_checks(rec, check_context(settings, src, list(others)))
+        if rec["status"] != "rejected":
+            others.append((rec["id"], record_mod.body_text(rec)))
+        pool.save(rec)
+        n += 1
+    return n

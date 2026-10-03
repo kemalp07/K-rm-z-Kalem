@@ -1,0 +1,293 @@
+{
+  "id": "pool_cepheye_000001",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hanife",
+    "epithet": "Kütahyalı",
+    "age": 23,
+    "hometown": "Kütahya",
+    "occupation": "çiftçi",
+    "relation": "kızı"
+  },
+  "recipient": {
+    "name": "Kemal",
+    "relation": "babası",
+    "location": "Çanakkale cephesi",
+    "rank": "çavuş"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "low",
+  "carelessness": "none",
+  "length_target": 105,
+  "hand": "hurried",
+  "header": {
+    "text": "Ağılönü, 14 Teşrinievvel 1331",
+    "sensitive": false
+  },
+  "salutation": "Babam Kemal'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bizim sarı oğlan yürümeye başladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Düşe kalka gidiyor yeni doğmuş buzağı gibi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dün Fatma ninenin su testisini devirdi kırdı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Durduk yere başımıza bir testi borcu çıkardı sıpa.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim hâlimiz iyi merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Harmanı bitirdik inek de buzağıladı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sana bohça yaptım yolluyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "İçine yün eldiven koydum ellerin donmasın.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Biraz tütün bir de kuru ekmek var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Suya banıp yersin gayrı.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Bizi düşünme burada her iş yolunda.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Ellerinden öperim.",
+  "signature": {
+    "text": "Kızın Hanife"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kütahyalı Kemal'e",
+    "sensitive": false
+  },
+  "package": [
+    "yün eldiven",
+    "tütün",
+    "kuru ekmek"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hanife Hanım, Kütahyalı, 23, çiftçi (Kütahya, Eşme kazası, Ağılönü karyesi)\nAlıcı: Babası Çavuş Kemal, cephede\nYön: cepheye\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: düşük\nSes: şakacı, dertli şeyleri bile hafife alır\nKonu: çocuğun ilk adımları\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nPaket: yün eldiven, tütün, kuru ekmek\nUzunluk: 105",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hanife",
+        "gender": "kadın",
+        "age": 23,
+        "relation": "kızı",
+        "rank": null,
+        "hometown": "Kütahya",
+        "occupation": "çiftçi",
+        "epithet": "Kütahyalı",
+        "place": "Eşme kazası, Ağılönü karyesi"
+      },
+      "recipient": {
+        "name": "Kemal",
+        "gender": "erkek",
+        "age": 42,
+        "relation": null,
+        "rank": "çavuş",
+        "hometown": "Kütahya",
+        "occupation": null,
+        "epithet": null,
+        "place": "Eşme kazası, Ağılönü karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "low",
+      "voice": "şakacı, dertli şeyleri bile hafife alır",
+      "topic": "çocuğun ilk adımları",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 105,
+      "package": [
+        "yün eldiven",
+        "tütün",
+        "kuru ekmek"
+      ],
+      "prev_state": "önceki mektup normal ulaştı",
+      "home_address": "Kütahya, Eşme kazası, Ağılönü karyesi",
+      "soldier_relation": "babası",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4924,
+      "output": 1967
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Ağılönü, 14 Teşrinievvel 1331\nHİTAP: Babam Kemal'e\nGÖVDE: Ellerinden öperim. Bizim sarı oğlan yürümeye başladı. Düşe kalka gidiyor yeni doğmuş buzağı gibi. Dün Fatma ninenin su testisini devirdi kırdı. Durduk yere başımıza bir testi borcu çıkardı sıpa. Bizim hâlimiz iyi merak etmeyesin. Harmanı bitirdik inek de buzağıladı. Sana bohça yaptım yolluyorum. İçine yün eldiven koydum ellerin donmasın. Biraz tütün bir de kuru ekmek var. Suya banıp yersin gayrı. Bizi düşünme burada her iş yolunda.\nKAPANIŞ: Ellerinden öperim.\nİMZA: Kızın Hanife\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Çavuş Kütahyalı Kemal'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "66 kelime, hedef 105 (-37%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4210,
+      "output": 1953
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönemine tamamen uygun, yabancı ya da modern hiçbir kelimeye yer vermeyen duru bir dil kullanılmış.",
+      "olculuk": "Duygular adlandırılmadan, çocuğun yaramazlığı ve gündelik neşe üzerinden çok ölçülü hissettirilmiş.",
+      "okuryazarlik": "Düşük okuryazarlık için cümleler ve noktalama işaretleri biraz fazla muntazam ve pürüzsüz kalmış.",
+      "somutluk": "Kırılan su testisi, kuru ekmeğin suya banılması ve buzağı gibi ayrıntılar anlatımı son derece somut kılmış.",
+      "sadakat": "İstenen tüm unsurlar eksiksiz işlenmiş fakat mektup hedeflenen 105 kelimenin bir miktar altında kalmış.",
+      "sahicilik": "Köylü kadınının şakacı ve hayat dolu sesi klişeye kaçmadan, gayet inandırıcı bir doğallıkla yakalanmış."
+    },
+    "issues": [
+      {
+        "line": "HİTAP: Babam Kemal'e",
+        "problem": "Dönem mektup adabında babaya hitap ederken rütbesi veya hafif bir hürmet ifadesi eklenmesi daha uygundur.",
+        "suggestion": "Babam Kemal Çavuş'a"
+      },
+      {
+        "line": "GÖVDE: Ellerinden öperim. Bizim sarı oğlan yürümeye başladı. Düşe kalka gidiyor yeni doğmuş buzağı gibi.",
+        "problem": "Düşük okuryazarlığa sahip bir köylü kadını için noktalama ve cümle geçişleri fazla kusursuzdur.",
+        "suggestion": "Ellerinden öperim bizim sarı oğlan yürümeye başladı gayrı düşe kalka gidiyor yeni doğmuş buzağı gibi."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

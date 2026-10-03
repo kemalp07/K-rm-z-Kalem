@@ -23,6 +23,8 @@ class Person:
     hometown: str | None = None
     occupation: str | None = None
     epithet: str | None = None
+    # Where at home: "Hafik kazası, Kızılca karyesi" / "Üsküdar, Selamsız mahallesi".
+    place: str | None = None
 
 
 @dataclass
@@ -42,6 +44,9 @@ class Request:
     length_label: str
     length_target: int
     package: list[str] | None = None
+    prev_state: str = ""
+    # Full home address line in the lorebook's pattern, without the go-between.
+    home_address: str = ""
     # How the soldier stands to the other person ("oğlu"), for the request text.
     soldier_relation: str = ""
     extra: dict[str, Any] = field(default_factory=dict)
@@ -89,6 +94,7 @@ class Sampler:
         seed: int,
         name_max_uses: int = 4,
         used_names: Counter[str] | None = None,
+        reserved_names: set[str] | None = None,
     ) -> None:
         self.p = pools
         self.rng = random.Random(seed)
@@ -96,6 +102,8 @@ class Sampler:
         # Uses across the whole pool so far, plus this run as it goes.
         self.used_names: Counter[str] = Counter(used_names or {})
         self.run_pairs: set[tuple[str, str]] = set()
+        # Main-story characters' names: a side letter must not borrow them.
+        self.reserved = set(reserved_names or ())
 
     # --- weighted helpers -------------------------------------------------------------
     def pick(self, items: list[Any], key: str | None = None) -> Any:
@@ -130,6 +138,7 @@ class Sampler:
             n
             for n in self.p["names"][gender]
             if n not in exclude
+            and n not in self.reserved
             and self.used_names[n] < self.name_max_uses
             and (hometown is None or (n, hometown) not in self.run_pairs)
         ]
@@ -137,8 +146,14 @@ class Sampler:
             raise SamplerError(f"{gender} isim havuzu tükendi (name_max_uses={self.name_max_uses})")
         return self.rng.choice(pool)
 
-    def _occupation(self, gender: str, age: int) -> dict[str, Any]:
-        options = [o for o in self.p["occupations"] if o.get("who", "hepsi") in ("hepsi", gender)]
+    def _occupation(self, gender: str, age: int, kind: str) -> dict[str, Any]:
+        options = [
+            o
+            for o in self.p["occupations"]
+            if o.get("who", "hepsi") in ("hepsi", gender)
+            and o.get("min_age", 0) <= age <= o.get("max_age", 200)
+            and o.get("where", kind) == kind
+        ]
         if age < 16:
             options = [o for o in options if _value(o) in ("talebe", "çoban", "ırgat", "çiftçi")] or options
         return self.pick(options)
@@ -170,6 +185,13 @@ class Sampler:
 
         hometown = self.rng.choice(self.p["hometowns"])
         town = hometown["name"]
+        if hometown.get("kind") == "city":
+            semt = self.rng.choice(sorted(hometown["semts"]))
+            mahalle = self.rng.choice(hometown["semts"][semt])
+            place = f"{semt}, {mahalle} mahallesi"
+        else:
+            place = f"{self.rng.choice(hometown['kazas'])} kazası, {self.rng.choice(self.p['villages'])} karyesi"
+        home_address = f"{town}, {place}"
 
         soldier_is_sender = direction == "cepheden"
         sender_gender = "erkek" if soldier_is_sender else rel["gender"]
@@ -179,7 +201,7 @@ class Sampler:
         recipient_gender = rel["gender"] if soldier_is_sender else "erkek"
         recipient_name = self._name(recipient_gender, None, exclude={sender_name})
 
-        occupation = self._occupation(sender_gender, sender_age)
+        occupation = self._occupation(sender_gender, sender_age, hometown.get("kind", "village"))
         writing = self._writing(occupation, sender_age)
 
         inverse = rel.get("inverse", "")
@@ -196,6 +218,7 @@ class Sampler:
             hometown=town,
             occupation=_value(occupation),
             epithet=self._epithet(hometown, occupation),
+            place=place,
         )
         recipient = Person(
             name=recipient_name,
@@ -204,8 +227,9 @@ class Sampler:
             relation=relation if soldier_is_sender else None,
             rank=None if soldier_is_sender else rank,
             hometown=town,
+            place=place,
         )
-        location = town if soldier_is_sender else self.pick_value(self.p["fronts"])
+        location = home_address if soldier_is_sender else self.pick_value(self.p["fronts"])
 
         length = self.pick(self.p["lengths"])
         package = None
@@ -219,17 +243,19 @@ class Sampler:
             recipient=recipient,
             recipient_location=location,
             writes=writing["writes"],
-            writer=None if writing["writes"] == "self" else self.rng.choice(self.p["writers"][direction]),
+            writer=None if writing["writes"] == "self" else self.rng.choice(self.p["writers"][writing["writes"]][direction]),
             literacy=writing["literacy"],
             voice=self.rng.choice(self.p["voices"]),
             topic=self.rng.choice(self.p["topics"][direction]),
-            hidden=self.rng.choice(self.p["hidden"][direction]),
+            hidden=self.pick_value(self.p["hidden"][direction]),
             carelessness=self.pick_value(self.p["carelessness"][direction]),
             sensitive_info=self.pick_value(self.p["sensitive_info"]),
             length_label=_value(length),
             length_target=self.rng.randint(*length["words"]),
             package=package,
             soldier_relation=inverse,
+            prev_state=self.pick_value(self.p["prev_state"]),
+            home_address=home_address,
         )
 
         self.used_names[sender_name] += 1

@@ -120,7 +120,7 @@ def readable(rec: dict[str, Any], mark_sensitive: bool = True, with_package: boo
     lines += ["\n\n".join(" ".join(v) for _, v in sorted(paras.items())), ""]
     lines.append(rec.get("closing") or "")
     sig = rec.get("signature") or {}
-    lines.append(sig.get("text", "") + (f" (mühür: {sig['seal']})" if sig.get("seal") else ""))
+    lines.append(" ".join(p for p in (sig.get("text", ""), f"(mühür: {sig['seal']})" if sig.get("seal") else "") if p))
     if rec.get("note"):
         lines += ["", "Not: " + m(rec["note"]["text"], rec["note"]["sensitive"])]
     if rec.get("envelope"):
@@ -128,3 +128,27 @@ def readable(rec: dict[str, Any], mark_sensitive: bool = True, with_package: boo
     if with_package and rec.get("package"):
         lines += ["Paket: " + ", ".join(rec["package"])]
     return "\n".join(lines).strip()
+
+
+def labelled(rec: dict[str, Any]) -> str:
+    """The letter in the card's output format (BAŞLIK: … ZARF: …), sensitive parts in ⟦ ⟧."""
+
+    def m(text: str, sensitive: bool) -> str:
+        return f"⟦{text}⟧" if sensitive else text
+
+    paras: dict[int, list[str]] = {}
+    for s in rec.get("segments", []):
+        paras.setdefault(s.get("para", 0), []).append(m(s["text"], s["kind"] == "sensitive"))
+    sig = rec.get("signature") or {}
+    signature = " ".join(p for p in (f"(mühür: {sig['seal']})" if sig.get("seal") else "", sig.get("text", "")) if p)
+    lines = [
+        "BAŞLIK: " + m(rec["header"]["text"], rec["header"]["sensitive"]),
+        "HİTAP: " + (rec.get("salutation") or ""),
+        "GÖVDE: " + "\n\n".join(" ".join(v) for _, v in sorted(paras.items())),
+        "KAPANIŞ: " + (rec.get("closing") or ""),
+        "İMZA: " + signature,
+    ]
+    if rec.get("note"):
+        lines.append("NOT: " + m(rec["note"]["text"], rec["note"]["sensitive"]))
+    lines.append("ZARF: " + m(rec["envelope"]["text"], rec["envelope"]["sensitive"]))
+    return "\n".join(lines)

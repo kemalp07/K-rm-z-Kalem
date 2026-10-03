@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000004",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hamdi",
+    "epithet": "Çorumlu",
+    "age": 67,
+    "hometown": "Çorum",
+    "occupation": "çiftçi",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "İsmet",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 91,
+  "hand": "elegant",
+  "header": {
+    "text": "Esentepe, 18 Teşrinievvel 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum İsmet'e,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Sana geçen ayın beşinde bir kâğıt yolladım, cevabı gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Meraktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Dün muhtara bir bohça teslim ettim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "İçine yarım okka dut pestili, iki kat bez, bir de yün kuşak koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Hepsini tek tek sardım, yolda ezilmesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Kardeşin Hasan'ın celbi geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Cuma günü cami avlusunda adını okudular.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Salı sabahı Osmancık'a şubeye teslim olacak, çarığını diktik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Biz kışlık zahireyi emminlerin ambarına taşıdık, bu kış onlarla oturacağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Senden acil bir satır haber beklerim.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Pederin Hamdi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çorumlu İsmet'e",
+    "sensitive": false
+  },
+  "package": [
+    "pestil"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hamdi, Çorumlu, 67, çiftçi (Çorum, Osmancık kazası, Esentepe karyesi)\nAlıcı: Oğlu Er İsmet, cephede\nYön: cepheye\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: titiz, her şeyi tek tek sayar\nKonu: kardeşin de askere çağrılması\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: cevapsız kaldı (2.)\nPaket: pestil\nUzunluk: 91",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hamdi",
+        "gender": "erkek",
+        "age": 67,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Çorum",
+        "occupation": "çiftçi",
+        "epithet": "Çorumlu",
+        "place": "Osmancık kazası, Esentepe karyesi"
+      },
+      "recipient": {
+        "name": "İsmet",
+        "gender": "erkek",
+        "age": 33,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Çorum",
+        "occupation": null,
+        "epithet": null,
+        "place": "Osmancık kazası, Esentepe karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "kardeşin de askere çağrılması",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 91,
+      "package": [
+        "pestil"
+      ],
+      "prev_state": "cevapsız kaldı (2.)",
+      "home_address": "Çorum, Osmancık kazası, Esentepe karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4905,
+      "output": 1830
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Esentepe, 18 Teşrinievvel 1331\nHİTAP: Oğlum İsmet'e,\nGÖVDE: Gözlerinden öperim. Sana geçen ayın beşinde bir kâğıt yolladım, cevabı gelmedi. Meraktayız. Dün muhtara bir bohça teslim ettim. İçine yarım okka dut pestili, iki kat bez, bir de yün kuşak koydum. Hepsini tek tek sardım, yolda ezilmesin. Kardeşin Hasan'ın celbi geldi. Cuma günü cami avlusunda adını okudular. Salı sabahı Osmancık'a şubeye teslim olacak, çarığını diktik. Biz kışlık zahireyi emminlerin ambarına taşıdık, bu kış onlarla oturacağız. Senden acil bir satır haber beklerim.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Pederin Hamdi\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Çorumlu İsmet'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "71 kelime, hedef 91 (-22%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4216,
+      "output": 1450
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 4,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili ve takvim kullanımı genel olarak başarılı olsa da 'acil' kelimesi 1915 mektupları için modern kaçmaktadır.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, telaş ve merak somut olgular üzerinden ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "Cümle yapıları düzgün ve kurallı olsa da istekte belirtilen yüksek okuryazarlık düzeyine kıyasla kelime dağarcığı biraz sade kalmıştır.",
+      "somutluk": "Pestil, bez, kuşak, cami avlusundaki celp ve ambar ayrıntılarıyla mektup son derece somut kılınmıştır.",
+      "sadakat": "Kardeşin celbi, cevapsız kalan önceki mektup ve evin satıldığının örtülü anlatımı isteğe birebir uymaktadır.",
+      "sahicilik": "Tek tek sayan titiz baba sesi ve köydeki durumu saklayarak aktarma biçimi son derece sahicidir."
+    },
+    "issues": [
+      {
+        "line": "Senden acil bir satır haber beklerim.",
+        "problem": "'Acil' kelimesi dönemin mektup adabına ve diline göre modern kalmaktadır.",
+        "suggestion": "Senden tez elden bir satır haber beklerim."
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "id": "pool_cepheye_000005",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Seher",
+    "epithet": "Manisalı",
+    "age": 20,
+    "hometown": "Manisa",
+    "occupation": "ev hanımı",
+    "relation": "karısı"
+  },
+  "recipient": {
+    "name": "Hüseyin",
+    "relation": "kocası",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 129,
+  "hand": "dictated",
+  "header": {
+    "text": "Yeniköy, 18 Teşrinievvel 1331",
+    "sensitive": false
+  },
+  "salutation": "Zevcim Hüseyin'e",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Seher der ki: Gözlerinden öperim, hatırını sorarım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Bayram sabahı tarhana kaynattım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Sofraya üç tas, üç kaşık koydum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Biri bana, biri anana, biri sana.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Senin tasın akşama kadar öylece boş durdu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Biz pılıyı pırtıyı topladık, emmingillere geçtik.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Alt odaya yerleştik, kışı orada çıkaracağız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "İki çuval bulgurumuz, bir küp pekmezimiz, otuz parça da odunumuz var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Hepsini saydım, idare edeceğiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Merak edilecek bir şey yok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Sen nasılsın, urbanda yırtık sökük var mı, haber yolla.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Seher"
+  },
+  "note": {
+    "text": "İşbu mektubu Seher kızımın ağzından yazdım. Muhtar.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Manisalı Hüseyin'e",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Seher Hanım, Manisalı, 20, ev hanımı (Manisa, Kasaba kazası, Yeniköy karyesi)\nAlıcı: Kocası Onbaşı Hüseyin, cephede\nYön: cepheye\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: titiz, her şeyi tek tek sayar\nKonu: bayramda sofrada boş kalan yer\nSakladığı: evin satıldığını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 129",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Seher",
+        "gender": "kadın",
+        "age": 20,
+        "relation": "karısı",
+        "rank": null,
+        "hometown": "Manisa",
+        "occupation": "ev hanımı",
+        "epithet": "Manisalı",
+        "place": "Kasaba kazası, Yeniköy karyesi"
+      },
+      "recipient": {
+        "name": "Hüseyin",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Manisa",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kasaba kazası, Yeniköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "bayramda sofrada boş kalan yer",
+      "hidden": "evin satıldığını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 129,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "home_address": "Manisa, Kasaba kazası, Yeniköy karyesi",
+      "soldier_relation": "kocası",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4810,
+      "output": 1806
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)"
+    ],
+    "raw": "BAŞLIK: Yeniköy, 18 Teşrinievvel 1331\nHİTAP: Zevcim Hüseyin'e\nGÖVDE: Seher der ki: Gözlerinden öperim, hatırını sorarım. Bayram sabahı tarhana kaynattım. Sofraya üç tas, üç kaşık koydum. Biri bana, biri anana, biri sana. Senin tasın akşama kadar öylece boş durdu. Biz pılıyı pırtıyı topladık, emmingillere geçtik. Alt odaya yerleştik, kışı orada çıkaracağız. İki çuval bulgurumuz, bir küp pekmezimiz, otuz parça da odunumuz var. Hepsini saydım, idare edeceğiz. Merak edilecek bir şey yok. Sen nasılsın, urbanda yırtık sökük var mı, haber yolla. \nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Seher)\nNOT: İşbu mektubu Seher kızımın ağzından yazdım. Muhtar.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Manisalı Hüseyin'e"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "71 kelime, hedef 129 (-45%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4247,
+      "output": 1246
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme ve kırsal muhite ait kelimeler son derece yerinde kullanılmış, modern hiçbir tabire yer verilmemiştir.",
+      "olculuk": "Hüzün ve hasret doğrudan adlandırılmadan, sofradaki boş tas ve sayılan erzak üzerinden incelikle hissettirilmiştir.",
+      "okuryazarlik": "Okuma yazması olmayan bir kadının köy muhtarına yazdırdığı anlatım kalıbı ve mühür kullanımı kurallara kusursuz uymuştur.",
+      "somutluk": "Tarhana, üç kaşık, iki çuval bulgur, küp, odun ve urba gibi detaylarla çok canlı ve somut bir dünya kurulmuştur.",
+      "sadakat": "İstekteki titiz karakter yapısı, bayram sofrası konusu ve evin satıldığının saklanması gibi tüm unsurlar eksiksiz işlenmiştir.",
+      "sahicilik": "Dönemin köy yaşantısını ve ayrılık kederini yapmacıklıktan uzak, son derece inandırıcı bir dille aksettirmektedir."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

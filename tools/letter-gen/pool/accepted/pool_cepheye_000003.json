@@ -1,0 +1,247 @@
+{
+  "id": "pool_cepheye_000003",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Hasan",
+    "epithet": "Kırşehirli",
+    "age": 65,
+    "hometown": "Kırşehir",
+    "occupation": "ırgat",
+    "relation": "babası"
+  },
+  "recipient": {
+    "name": "Sadık",
+    "relation": "oğlu",
+    "location": "Çanakkale cephesi",
+    "rank": "onbaşı"
+  },
+  "writes": "dictated",
+  "writer": "köyün muhtarı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 61,
+  "hand": "dictated",
+  "header": {
+    "text": "Karaağaç, 10 Teşrinievvel 1331",
+    "sensitive": false
+  },
+  "salutation": "Oğlum Sadık'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Baban Hasan der ki: Gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Hâlimizi sorarsan şükür ayaktayız.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Köyde bir dert peyda oldu.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Önce bebeleri tutuyor, sonra ihtiyarları.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Geçen hafta komşumuz Kır Abbas'ı toprağa verdik, emminin gelini de ağır yatıyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Biz iyiyiz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Sen kendi nefsine mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "",
+    "seal": "Hasan"
+  },
+  "note": {
+    "text": "İşbu mektubu yazdım. Muhtar.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kırşehirli Sadık'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Hasan, Kırşehirli, 65, ırgat (Kırşehir, Mucur kazası, Karaağaç karyesi)\nAlıcı: Oğlu Onbaşı Sadık, cephede\nYön: cepheye\nYazma biçimi: yazdırıyor (yazan: köyün muhtarı)\nOkuryazarlık: yok\nSes: ağırbaşlı, kalıplara sadık\nKonu: köydeki salgın hastalık (üstü örtülü)\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 61",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Hasan",
+        "gender": "erkek",
+        "age": 65,
+        "relation": "babası",
+        "rank": null,
+        "hometown": "Kırşehir",
+        "occupation": "ırgat",
+        "epithet": "Kırşehirli",
+        "place": "Mucur kazası, Karaağaç karyesi"
+      },
+      "recipient": {
+        "name": "Sadık",
+        "gender": "erkek",
+        "age": 36,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Kırşehir",
+        "occupation": null,
+        "epithet": null,
+        "place": "Mucur kazası, Karaağaç karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "dictated",
+      "writer": "köyün muhtarı",
+      "literacy": "none",
+      "voice": "ağırbaşlı, kalıplara sadık",
+      "topic": "köydeki salgın hastalık (üstü örtülü)",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "kısa",
+      "length_target": 61,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "home_address": "Kırşehir, Mucur kazası, Karaağaç karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4809,
+      "output": 1802
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)"
+    ],
+    "raw": "BAŞLIK: Karaağaç, 10 Teşrinievvel 1331\nHİTAP: Oğlum Sadık'a\nGÖVDE: Baban Hasan der ki: Gözlerinden öperim. Hâlimizi sorarsan şükür ayaktayız. Köyde bir dert peyda oldu. Önce bebeleri tutuyor, sonra ihtiyarları. Geçen hafta komşumuz Kır Abbas'ı toprağa verdik, emminin gelini de ağır yatıyor. Biz iyiyiz. Sen kendi nefsine mukayyet ol.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: (mühür: Hasan)\nNOT: İşbu mektubu yazdım. Muhtar.\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Onbaşı Kırşehirli Sadık'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "39 kelime, hedef 61 (-36%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4164,
+      "output": 1629
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "1915 yılına ve kırsal muhite uygun, hiçbir modern ifade barındırmayan doğal bir dönem Türkçesi kullanılmıştır.",
+      "olculuk": "Duygular adlandırılmamış, abartılı keder ifadelerine girilmeden acı haber vakur ve ölçülü aktarılmıştır.",
+      "okuryazarlik": "Okuma yazması olmayan bir köylünün muhtara yazdırdığı metin ve muhtarın eklediği not kurguya tam oturmaktadır.",
+      "somutluk": "Kır Abbas'ın vefatı ve emminin gelini gibi köy hayatına dair somut ve canlı ayrıntılara yer verilmiştir.",
+      "sadakat": "Salgın hastalığın üstü örtülü verilmesi, mühür kullanımı ve muhtar aracılığıyla yazdırma şartlarının tamamına uyulmuştur.",
+      "sahicilik": "Dönemin köy atmosferini ve cephedeki oğluna seslenen yaşlı bir babanın ağırbaşlı sesini kusursuz yansıtmaktadır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

@@ -129,7 +129,9 @@ def generate(
 
 
 @app.command()
-def review() -> None:
+def review(
+    redo: bool = typer.Option(False, "--redo", help="Kontrolleri yeniden çalıştır ve elle karar verilmemiş her mektubu yeniden incelet"),
+) -> None:
     """Henüz eleştirmenden geçmemiş mektupları incelet."""
     settings = load_settings(ROOT)
     src = _sources(settings)
@@ -139,6 +141,8 @@ def review() -> None:
     if missing:
         _fail("ortam değişkenleri eksik: " + ", ".join(missing))
     pool = Pool(settings.pool_dir)
+    if redo:
+        console.print(f"{pipeline.recheck(settings, src, pool)} mektup yeniden kontrol edildi.")
     runner = _runner(settings, env)
     res = asyncio.run(pipeline.review_pending(settings, src, pool, runner, env.review_model, progress=console.print))
     for e in res.errors:

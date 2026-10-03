@@ -1,1 +1,0 @@
-Mektup_Atolyesi.json ve Kirmizi_Kalem_Dunyasi.json bu klasöre konur.

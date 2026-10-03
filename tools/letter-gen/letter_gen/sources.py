@@ -22,6 +22,8 @@ class Card:
     mes_example: str
     post_history_instructions: str
     depth_prompt: str
+    # The greeting; this card uses it to show the full request template.
+    first_mes: str = ""
 
 
 @dataclass
@@ -47,6 +49,7 @@ def load_card(path: Path) -> Card:
         mes_example=data.get("mes_example", ""),
         post_history_instructions=data.get("post_history_instructions", ""),
         depth_prompt=depth or "",
+        first_mes=data.get("first_mes", ""),
     )
 
 
@@ -104,16 +107,19 @@ _QUOTED = re.compile(r"[\"“”«»'‘’]([^\"“”«»'‘’\n]{2,40})[\"�
 def forbidden_words(entry: LoreEntry | None) -> list[str]:
     """Pull the forbidden word list out of the language-rules entry.
 
-    Quoted items anywhere in the entry are taken first. Lines that mention "yasak" and
-    hold a colon-separated list ("Yasak kelimeler: a, b, c") are also read. The result is
-    shown in --dry-run so the extraction can be checked against the real file.
+    Quoted items anywhere in the entry are taken first. Lines that say "yasak" or
+    "kullanılmaz" and hold a colon-separated list ("… KULLANILMAZ (…): a, b, c") are also
+    read; parenthesised notes inside the list ("problem (bunun yerine: dert)") are the
+    allowed alternatives and are dropped. The result is shown in --dry-run so the
+    extraction can be checked against the real file.
     """
     if entry is None:
         return []
     found: list[str] = [m.group(1).strip() for m in _QUOTED.finditer(entry.content)]
     for line in entry.content.splitlines():
-        if "yasak" in fold(line) and ":" in line:
-            tail = line.split(":", 1)[1]
+        head = fold(line.split(":", 1)[0])
+        if ("yasak" in head or "kullanılmaz" in head) and ":" in line:
+            tail = re.sub(r"\([^)]*\)", "", line.split(":", 1)[1])
             for part in re.split(r"[,;/]| - ", tail):
                 part = part.strip(" .\t*-–•")
                 if part and len(part) <= 40 and not _QUOTED.search(part):
@@ -126,3 +132,28 @@ def forbidden_words(entry: LoreEntry | None) -> list[str]:
             seen.add(k)
             out.append(w)
     return out
+
+
+def reserved_names(entries: list[LoreEntry], title_prefix: str = "Karakter") -> set[str]:
+    """Names of the main story's characters: the keys of entries titled "Karakter · …"."""
+    p = fold(title_prefix)
+    names: set[str] = set()
+    for e in entries:
+        if fold(e.comment.strip()).startswith(p):
+            names.update(k.strip() for k in e.keys if k.strip())
+    return names
+
+
+def author_note(path: Path, section_title: str) -> str:
+    """The [ … ] note under the numbered heading that contains `section_title`."""
+    if not path.exists():
+        return ""
+    text = path.read_text(encoding="utf-8")
+    t = fold(section_title)
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if t in fold(line):
+            rest = "\n".join(lines[i + 1 :])
+            m = re.search(r"\[[^\[\]]*\]", rest, flags=re.S)
+            return m.group(0).strip() if m else ""
+    return ""

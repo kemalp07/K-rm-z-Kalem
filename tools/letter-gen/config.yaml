@@ -3,6 +3,12 @@
 sources:
   card: source/Mektup_Atolyesi.json
   lorebook: source/Kirmizi_Kalem_Dunyasi.json
+  # Author's Note templates; the note under this heading goes at the end of every request.
+  author_note: source/Author_Note_Sablonlari.txt
+  author_note_section: "YAN MEKTUP TOPLU ÜRETİM NOTU"
+  # Lorebook entries whose title starts with this are main-story characters;
+  # their names are never given to side letters.
+  character_entry_prefix: "Karakter"
 
 # What {{user}} and {{char}} become inside the card's texts.
 macros:

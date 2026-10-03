@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from .record import readable
+from .record import labelled
 from .sources import Card, LoreEntry
 
 CRITERIA = {
@@ -67,7 +67,7 @@ def user_prompt(rec: dict[str, Any]) -> str:
     criteria = "\n".join(f"- {k}: {v}" for k, v in CRITERIA.items())
     return (
         f"İSTEK:\n{rec['meta']['request']}\n\n"
-        f"MEKTUP:\n{readable(rec, with_package=False)}\n\n"
+        f"MEKTUP:\n{labelled(rec)}\n\n"
         "Şu ölçütleri 1–5 arası puanla ve her biri için tek cümlelik gerekçe yaz:\n"
         f"{criteria}\n\n"
         "Sonra sorunlu satırları listele: satırın kendisi (mektuptan aynen), sorun ve önerilen düzeltme. "

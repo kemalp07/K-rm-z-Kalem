@@ -1,0 +1,272 @@
+{
+  "id": "pool_cepheden_000005",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Ali",
+    "epithet": "Denizlili",
+    "age": 39,
+    "hometown": "Denizli",
+    "occupation": "kahveci",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Ümmühan",
+    "relation": "kız kardeşi",
+    "location": "Denizli, Acıpayam kazası, Sarıyar karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 97,
+  "hand": "careful",
+  "header": {
+    "text": "Seddülbahir, 18 Teşrinievvel 1331",
+    "sensitive": true
+  },
+  "salutation": "Kardeşim Ümmühan'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Selam ederim, gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Geçen ay yolladığım kâğıda cevap gelmedi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Merak ettim, inşallah sağlığınız yerindedir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Benim hâlimi sorarsan çok iyiyim, karnımız tok, hiçbir sıkıntımız yoktur.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Günler geçip gidiyor.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Bizim oğlanı soracaktım.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Mektebe gidiyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Muhakkak gitsin, dükkânda ziyan olmasın, okuma yazma bellesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Havalar buralarda iyice soğudu, kışlık odununuzu alabildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Kahvehaneyi ne yaptınız, kapısı kilitli mi durur?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Köydeki büyüklerimize, komşulara tek tek selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Abin Ali"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Denizli, Acıpayam kazası, Sarıyar karyesi, İmam Hasan Efendi vasıtasıyla Ümmühan Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Ali, Denizlili, 39, kahveci, onbaşı (Denizli, Acıpayam kazası, Sarıyar karyesi)\nAlıcı: Kız kardeşi Ümmühan Hanım, Denizli, Acıpayam kazası, Sarıyar karyesi\nYön: cepheden\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: az konuşur, her şeyi iyi gösterir\nKonu: çocuğunun mektebe gidip gitmediğini sormak\nSakladığı: kaçmayı düşündüğünü\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: cevapsız kaldı (1.)\nUzunluk: 97",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Ali",
+        "gender": "erkek",
+        "age": 39,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Denizli",
+        "occupation": "kahveci",
+        "epithet": "Denizlili",
+        "place": "Acıpayam kazası, Sarıyar karyesi"
+      },
+      "recipient": {
+        "name": "Ümmühan",
+        "gender": "kadın",
+        "age": 30,
+        "relation": "kız kardeşi",
+        "rank": null,
+        "hometown": "Denizli",
+        "occupation": null,
+        "epithet": null,
+        "place": "Acıpayam kazası, Sarıyar karyesi"
+      },
+      "recipient_location": "Denizli, Acıpayam kazası, Sarıyar karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "az konuşur, her şeyi iyi gösterir",
+      "topic": "çocuğunun mektebe gidip gitmediğini sormak",
+      "hidden": "kaçmayı düşündüğünü",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 97,
+      "package": null,
+      "prev_state": "cevapsız kaldı (1.)",
+      "home_address": "Denizli, Acıpayam kazası, Sarıyar karyesi",
+      "soldier_relation": "ağabeyi",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4825,
+      "output": 2071
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 18 Teşrinievvel 1331\nHİTAP: Kardeşim Ümmühan'a\nGÖVDE: Selam ederim, gözlerinden öperim. Geçen ay yolladığım kâğıda cevap gelmedi. Merak ettim, inşallah sağlığınız yerindedir. Benim hâlimi sorarsan çok iyiyim, karnımız tok, hiçbir sıkıntımız yoktur. Günler geçip gidiyor. Bizim oğlanı soracaktım. Mektebe gidiyor mu? Muhakkak gitsin, dükkânda ziyan olmasın, okuma yazma bellesin. Havalar buralarda iyice soğudu, kışlık odununuzu alabildiniz mi? Kahvehaneyi ne yaptınız, kapısı kilitli mi durur? Köydeki büyüklerimize, komşulara tek tek selam eyle. \nKAPANIŞ: Allah'a emanet olun.\nİMZA: Abin Ali\nZARF: Denizli, Acıpayam kazası, Sarıyar karyesi, İmam Hasan Efendi vasıtasıyla Ümmühan Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "64 kelime, hedef 97 (-34%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 18 Teşrinievvel 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4237,
+      "output": 1665
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "1915 yılına ve dönem ruhuna aykırı hiçbir modern sözcük ya da ifade barındırmıyor.",
+      "olculuk": "Duygular adlandırılmamış, her şeyi iyi gösterme gayreti abartısız ve dengeli bir dille aktarılmış.",
+      "okuryazarlik": "Orta düzey okuryazar bir kahvecinin kendi elinden çıkacak sadelikte ve düzgünlükte yazılmış.",
+      "somutluk": "Oğlanın mektebi, kışlık odun ve kahvehanenin kilitli kapısı gibi döneme ve karaktere özgü somut detaylar içeriyor.",
+      "sadakat": "Dikkatsizlik unsuru yer adında doğru işlenmiş ancak sansür işareti tarihe de taşırılarak kural ihlali yapılmış.",
+      "sahicilik": "Geride bıraktığı ailesini ve dükkânını dert edinen askerin sesi son derece samimi ve inandırıcı."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 18 Teşrinievvel 1331⟧",
+        "problem": "Tarih askerî bir bilgi değildir; yalnızca dikkatsizlik sonucu kaçırılan yer adı sansür parantezine alınmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 18 Teşrinievvel 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

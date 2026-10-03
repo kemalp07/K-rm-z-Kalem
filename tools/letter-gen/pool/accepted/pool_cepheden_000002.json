@@ -1,0 +1,267 @@
+{
+  "id": "pool_cepheden_000002",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Veli",
+    "epithet": "İstanbullu",
+    "age": 31,
+    "hometown": "Dersaadet",
+    "occupation": "çoban",
+    "rank": "onbaşı"
+  },
+  "recipient": {
+    "name": "Şadiye",
+    "relation": "annesi",
+    "location": "Dersaadet, Beşiktaş, Vişnezade mahallesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "none",
+  "length_target": 89,
+  "hand": "careful",
+  "header": {
+    "text": "Ordu-yı Hümayun, 5 Teşrinievvel 1331",
+    "sensitive": false
+  },
+  "salutation": "Validem Şadiye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Validem ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Ben sağ selamet ulaştım, yerime yerleştim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Hiç merak etmeyesin, karnım tok.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Siz nasılsınız, sağlığınız yerinde mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Pazar yerinde fiyatlar nasıl, kışlık odun kömür alabildiniz mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Komşumuz kahveci Hasan amca nasıl, dükkânı açıyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Memlekette bıraktığımız akbaşlı koyun kuzladı mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Beni hiç düşünme.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Kardeşlerimin gözlerinden öperim, komşulara ayrı ayrı selam eyle.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Tez zamanda cevap beklerim, her şeyi yazın.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olunuz.",
+  "signature": {
+    "text": "Oğlun Onbaşı Veli"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Dersaadet, Beşiktaş, Vişnezade mahallesi, Kahveci Hasan Efendi vasıtasıyla Şadiye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Veli, İstanbullu, 31, çoban, onbaşı (Dersaadet, Beşiktaş, Vişnezade mahallesi)\nAlıcı: Annesi Şadiye Hanım, Dersaadet, Beşiktaş, Vişnezade mahallesi\nYön: cepheden\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: genç ve heyecanlı, çok soru sorar\nKonu: annesine sağ olduğunu bildirmek\nSakladığı: yok\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nUzunluk: 89",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Veli",
+        "gender": "erkek",
+        "age": 31,
+        "relation": null,
+        "rank": "onbaşı",
+        "hometown": "Dersaadet",
+        "occupation": "çoban",
+        "epithet": "İstanbullu",
+        "place": "Beşiktaş, Vişnezade mahallesi"
+      },
+      "recipient": {
+        "name": "Şadiye",
+        "gender": "kadın",
+        "age": 61,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Beşiktaş, Vişnezade mahallesi"
+      },
+      "recipient_location": "Dersaadet, Beşiktaş, Vişnezade mahallesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "annesine sağ olduğunu bildirmek",
+      "hidden": "yok",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 89,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "home_address": "Dersaadet, Beşiktaş, Vişnezade mahallesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4862,
+      "output": 2060
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 5 Teşrinievvel 1331\nHİTAP: Validem Şadiye Hanım'a\nGÖVDE: Validem ellerinden öperim. Ben sağ selamet ulaştım, yerime yerleştim. Hiç merak etmeyesin, karnım tok. Siz nasılsınız, sağlığınız yerinde mi? Pazar yerinde fiyatlar nasıl, kışlık odun kömür alabildiniz mi? Komşumuz kahveci Hasan amca nasıl, dükkânı açıyor mu? Memlekette bıraktığımız akbaşlı koyun kuzladı mı? Beni hiç düşünme. Kardeşlerimin gözlerinden öperim, komşulara ayrı ayrı selam eyle. Tez zamanda cevap beklerim, her şeyi yazın.\nKAPANIŞ: Allah'a emanet olunuz.\nİMZA: Oğlun Onbaşı Veli\nZARF: Dersaadet, Beşiktaş, Vişnezade mahallesi, Kahveci Hasan Efendi vasıtasıyla Şadiye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "60 kelime, hedef 89 (-33%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4198,
+      "output": 1155
+    },
+    "scores": {
+      "donem_dili": 4,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 4
+    },
+    "reasons": {
+      "donem_dili": "Dönem dili ve takvim kullanımı genel olarak başarılıdır, ancak mahalle esnafına 'amca' hitabı o dönemin Dersaadet adabına göre biraz yenidir.",
+      "olculuk": "Hiçbir duygu açıkça adlandırılmamış, abartı ve benzetmelerden kaçınılarak hisler somut sorular üzerinden hissettirilmiştir.",
+      "okuryazarlik": "İstekteki orta seviye okuryazarlığa uygun şekilde sade, düzgün ve kurallı cümlelerle yazılmıştır.",
+      "somutluk": "Pazar fiyatı, odun kömür tedariki ve akbaşlı koyunun kuzulaması gibi döneme ve mesleğe has somut ayrıntılar çok iyi işlenmiştir.",
+      "sadakat": "İstek kartındaki heyecanlı ve soru soran ses tonuna, zarf kalıbına ve konuya bütünüyle sadık kalınmıştır.",
+      "sahicilik": "Gerçek bir evladın telaşını ve merakını yansıtan sahici bir mektuptur, yalnızca zarf ile metin arasındaki esnaf hitabı küçük bir tutarsızlık barındırır."
+    },
+    "issues": [
+      {
+        "line": "Komşumuz kahveci Hasan amca nasıl, dükkânı açıyor mu?",
+        "problem": "Zarfta 'Hasan Efendi' olarak geçen şehir esnafına gövdede 'amca' denmesi 1915 Dersaadet mahallesi hitap geleneğine göre modern kalmaktadır.",
+        "suggestion": "Komşumuz kahveci Hasan Efendi nasıl, dükkânı açıyor mu?"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

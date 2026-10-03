@@ -1,0 +1,42 @@
+KIRMIZI KALEM · AUTHOR'S NOTE ŞABLONLARI
+(Sohbet başına Author's Note alanına yapıştır. Önerilen: Insertion depth 1, rol: System.)
+
+────────────────────────────────
+1) GENEL KURAL NOTU (her sohbette sabit)
+────────────────────────────────
+[Atölye kuralları: Yalnızca istenen biçimde tek mektup yaz. 60–130 kelime. Duyguyu adlandırma; somut şeylerle hissettir. Metafor kullanma. Modern kelime ve soyadı yok. Okuryazarlığa sadık kal. Hassas bilgi yalnızca istekte varsa ve ⟦ ⟧ içinde. Şifre, gizli mesaj, akrostiş yazma. Okuma yazma bilmeyende İMZA: (mühür: İsim).]
+
+────────────────────────────────
+2) HAT DURUMU NOTU (ana yazışmaları üretirken, her mektupta güncelle)
+────────────────────────────────
+[Hat: Mehmet ↔ Hatice Hanım
+Sıradaki mektup: 4. mektup, yön: cepheye
+Şu ana kadar olanlar: 1) Mehmet çorapları aldığını yazdı (karalanmadan ulaştı). 2) Hatice kışlık hazırlıklardan bahsetti. 3) Mehmet'in mektubu KARALANMIŞ ulaştı, bir satırı siyah.
+Bu mektubun anı: Hatice mektubun kısa ve karalı gelmesini fark ediyor; sebebini bilmiyor.
+Gizli gerilim: Hatice evin borcunu saklıyor.
+Alıcının görmediği bilgi: Hatice, karalanan satırın içeriğini bilmiyor ("kuzeydeki sırt" ifadesini görmedi). Bu bilgiye hiçbir şekilde değinme.
+Okunabilen kelimeler: yok (karalama eksiksiz). [Karalama yarım kaldıysa: örn. "sırt" kelimesi okunuyor; Hatice bunu oğlunun sırtı sanabilir.]
+Bu mektupta YAPILMAYACAK: borçtan açıkça bahsetmek.]
+
+────────────────────────────────
+3) CEVAPSIZ ZİNCİR NOTU (bir mektup durdurulduğunda)
+────────────────────────────────
+[Hat: … · Durum: Karşı taraftan cevap gelmiyor. Bu, cevapsız kalan 1./2./3. mektup.
+1. cevapsız: merak ve küçük sitem, hayat devam ediyor.
+2. cevapsız: kısa, sorular artıyor, "bir satır yaz yeter" tonu.
+3. cevapsız: çok kısa, neredeyse sadece selam ve dua. Bundan sonra hat susar.]
+
+────────────────────────────────
+4) YAN MEKTUP TOPLU ÜRETİM NOTU (atölyeyle havuz doldururken)
+────────────────────────────────
+[Toplu üretim: Bu oturumda tek seferlik yan mektuplar üretiliyor. Her mektup farklı bir hayattan gelsin; aynı kalıpları ve aynı cümleleri tekrar etme. Mektupların çoğu sıradan olsun: hasat, borç, düğün, hastalık, fiyatlar, çocuklar. Hassas bilgi yalnızca istekte verilirse.]
+
+────────────────────────────────
+ÖNERİLEN AYARLAR
+────────────────────────────────
+• Persona: adı "Yazar", açıklaması boş.
+• Lorebook: Kirmizi_Kalem_Dunyasi'ni karta bağla (kart içe aktarılınca otomatik bağlanmazsa World Info'dan seç).
+• Sıcaklık 0.7–0.9; çok tekrar ederse repetition penalty'yi hafif artır.
+• Model yıldızlı eylem ya da açıklama eklemeye başlarsa: Character's Note (depth_prompt) ve post-history talimatı zaten bunu engelliyor; gerekirse 1 numaralı notu da ekle.
+• Dikkatsizlik bir karakter özelliği olabilir: dikkatsiz bir asker için çoğu mektupta "az", titiz bir kâtip için hep "yok" kullan. Her mektupta "çok" kullanma; karalama bir karar olmaktan çıkar.
+• Gizli katmanı (görünmez mürekkep, kod kelimeler, ters pul, parça bilgisi) mektup bittikten sonra elle ekle; atölyeye yazdırma.

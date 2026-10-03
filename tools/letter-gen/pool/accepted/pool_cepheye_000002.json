@@ -1,0 +1,278 @@
+{
+  "id": "pool_cepheye_000002",
+  "tier": "pool",
+  "direction": "cepheye",
+  "sender": {
+    "name": "Reşit",
+    "epithet": "Adanalı",
+    "age": 32,
+    "hometown": "Adana",
+    "occupation": "çiftçi",
+    "relation": "erkek kardeşi"
+  },
+  "recipient": {
+    "name": "Talat",
+    "relation": "kardeşi",
+    "location": "Çanakkale cephesi",
+    "rank": "er"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "high",
+  "carelessness": "none",
+  "length_target": 96,
+  "hand": "elegant",
+  "header": {
+    "text": "Dereköy, 5 Teşrinisani 1331",
+    "sensitive": false
+  },
+  "salutation": "Muhterem kardeşim Talat,",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Gözlerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Nasılsın, sıhhatin yerinde mi?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Geceleri nöbette çok üşüyor musun?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kumanya yetiyor mu?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Bizim Sarıkız dün sabaha karşı nihayet buzağıladı, alnı sakar bir dişi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Görsen nasıl sevinirdin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Güz ekimini de bitirdik sayılır.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Sen ne âlemdesin?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çorabın, mintanın sağlam mı?",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Bize yazamıyorsun diye zarfın içine mektup kâğıdı sardım, fırsat buldukça yaz, merakta bırakma.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s11",
+      "text": "Bizim evde her şey aynı, anamın sana çok selamı var.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s12",
+      "text": "Kendine mukayyet ol.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet ol.",
+  "signature": {
+    "text": "Ağabeyin Reşit"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı Talat'a",
+    "sensitive": false
+  },
+  "package": [
+    "mektup kâğıdı"
+  ],
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Reşit, Adanalı, 32, çiftçi (Adana, Kozan kazası, Dereköy karyesi)\nAlıcı: Kardeşi Er Talat, cephede\nYön: cepheye\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: yüksek\nSes: genç ve heyecanlı, çok soru sorar\nKonu: ineğin buzağılaması\nSakladığı: babasının öldüğünü\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: ilk mektup\nPaket: mektup kâğıdı\nUzunluk: 96",
+    "request_fields": {
+      "direction": "cepheye",
+      "sender": {
+        "name": "Reşit",
+        "gender": "erkek",
+        "age": 32,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Adana",
+        "occupation": "çiftçi",
+        "epithet": "Adanalı",
+        "place": "Kozan kazası, Dereköy karyesi"
+      },
+      "recipient": {
+        "name": "Talat",
+        "gender": "erkek",
+        "age": 30,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Adana",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kozan kazası, Dereköy karyesi"
+      },
+      "recipient_location": "Çanakkale cephesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "high",
+      "voice": "genç ve heyecanlı, çok soru sorar",
+      "topic": "ineğin buzağılaması",
+      "hidden": "babasının öldüğünü",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 96,
+      "package": [
+        "mektup kâğıdı"
+      ],
+      "prev_state": "ilk mektup",
+      "home_address": "Adana, Kozan kazası, Dereköy karyesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4908,
+      "output": 1945
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)",
+      "Paketler ve gönderilen eşyalar"
+    ],
+    "raw": "BAŞLIK: Dereköy, 5 Teşrinisani 1331\nHİTAP: Muhterem kardeşim Talat,\nGÖVDE: Gözlerinden öperim. Nasılsın, sıhhatin yerinde mi? Geceleri nöbette çok üşüyor musun? Kumanya yetiyor mu? Bizim Sarıkız dün sabaha karşı nihayet buzağıladı, alnı sakar bir dişi. Görsen nasıl sevinirdin. Güz ekimini de bitirdik sayılır. Sen ne âlemdesin? Çorabın, mintanın sağlam mı? Bize yazamıyorsun diye zarfın içine mektup kâğıdı sardım, fırsat buldukça yaz, merakta bırakma. Bizim evde her şey aynı, anamın sana çok selamı var. Kendine mukayyet ol.\nKAPANIŞ: Allah'a emanet ol.\nİMZA: Ağabeyin Reşit\nZARF: Ordu-yı Hümayun, [..] Alay, [..] Tabur, [..] Bölük, Er Kozanlı Talat'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "warn",
+      "detail": "66 kelime, hedef 96 (-31%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4209,
+      "output": 1774
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 5,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Dönem ruhunu bozan modern bir tabir yer almamış, kelime tercihleri 1915 Türkçesine tam uyum sağlamıştır.",
+      "olculuk": "Duygular doğrudan adlandırılmamış, kardeşlik bağı ve endişe somut sorular vasıtasıyla ölçülü bir şekilde hissettirilmiştir.",
+      "okuryazarlik": "İstenen yüksek okuryazarlık düzeyine uygun olarak akıcı, imlası düzgün ve dengeli cümleler kurulmuştur.",
+      "somutluk": "Sarıkızın buzağılaması, alnındaki sakarlık, mintan, çorap ve mektup kâğıdı gibi gündelik detaylar mektubu somutlaştırmıştır.",
+      "sadakat": "İstekteki çok soru soran ses, paket detayı, babanın ölümünün ustaca gizlenmesi ve zarf biçimi eksiksiz yansıtılmıştır.",
+      "sahicilik": "Bir ağabeyin cephedeki kardeşine duyduğu merak ve köydeki telaşı yapaylığa düşmeden, son derece doğal yansıtılmıştır."
+    },
+    "issues": []
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

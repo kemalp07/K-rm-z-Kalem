@@ -11,7 +11,7 @@
     "1": {
       "uid": 1,
       "comment": "Dil kuralları ve yasak kelimeler",
-      "content": "Modern kelime kullanma.\nYasak kelimeler: \"stres\", \"travma\", \"okey\"\nAyrıca yasak: depresyon, harika",
+      "content": "Modern kelime kullanma.\nYasak kelimeler: \"stres\", \"travma\", \"okey\"\nŞU KELİMELER KULLANILMAZ (modern): depresyon, problem (bunun yerine: dert, iş), harika",
       "key": [],
       "constant": true,
       "order": 10
@@ -34,6 +34,16 @@
       "constant": true,
       "order": 1,
       "disable": true
+    },
+    "4": {
+      "uid": 4,
+      "comment": "Karakter · Mehmet (Sivaslı)",
+      "content": "Mehmet ana karakterdir.",
+      "key": [
+        "Mehmet"
+      ],
+      "constant": false,
+      "order": 200
     }
   }
 }

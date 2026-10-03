@@ -1,0 +1,212 @@
+{
+  "id": "pool_cepheden_000004",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Kâmil",
+    "epithet": "İstanbullu",
+    "age": 20,
+    "hometown": "Dersaadet",
+    "occupation": "çiftçi",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Osman",
+    "relation": "erkek kardeşi",
+    "location": "Dersaadet, Kasımpaşa, Kulaksız mahallesi"
+  },
+  "writes": "dictated",
+  "writer": "alay imamı",
+  "literacy": "none",
+  "carelessness": "none",
+  "length_target": 113,
+  "hand": "dictated",
+  "header": {
+    "text": "Ordu-yı Hümayun, 12 Teşrinisani 1331",
+    "sensitive": false
+  },
+  "salutation": "Kardeşim Osman'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Kâmil der ki: Allah'ın selamı üzerine olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Allah'a şükür gönderdiğin paket elime geçti.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "İçinden çıkan yün çorapları giydim, Allah sizden razı olsun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Kuru yemişleri de aldım, Allah bereket versin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Benim hâlim Allah'ın izniyle iyidir, siz hiç merak etmeyin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Buralarda Allah'ın yardımı bizimledir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "Yemeklerimiz çıkıyor, Allah devlete zeval vermesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Anama ve komşulara Allah'ın selamını ilet.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "",
+    "seal": "Kâmil"
+  },
+  "note": {
+    "text": "İşbu mektubu Kâmil evladımızın ağzından kaleme aldım. Alay İmamı.",
+    "sensitive": false
+  },
+  "envelope": {
+    "text": "Dersaadet, Kasımpaşa, Kulaksız mahallesi, Bakkal Hüseyin Efendi vasıtasıyla Osman'a.",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Kâmil, İstanbullu, 20, çiftçi, er (Dersaadet, Kasımpaşa, Kulaksız mahallesi)\nAlıcı: Erkek kardeşi Osman, Dersaadet, Kasımpaşa, Kulaksız mahallesi\nYön: cepheden\nYazma biçimi: yazdırıyor (yazan: alay imamı)\nOkuryazarlık: yok\nSes: dualı, her cümleye Allah'ı katar\nKonu: çorapların ve paketin geldiğini haber vermek\nSakladığı: aç kaldıklarını\nHassas bilgi: yok\nDikkatsizlik: yok\nÖnceki durum: önceki mektup normal ulaştı\nUzunluk: 113",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Kâmil",
+        "gender": "erkek",
+        "age": 20,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Dersaadet",
+        "occupation": "çiftçi",
+        "epithet": "İstanbullu",
+        "place": "Kasımpaşa, Kulaksız mahallesi"
+      },
+      "recipient": {
+        "name": "Osman",
+        "gender": "erkek",
+        "age": 30,
+        "relation": "erkek kardeşi",
+        "rank": null,
+        "hometown": "Dersaadet",
+        "occupation": null,
+        "epithet": null,
+        "place": "Kasımpaşa, Kulaksız mahallesi"
+      },
+      "recipient_location": "Dersaadet, Kasımpaşa, Kulaksız mahallesi",
+      "writes": "dictated",
+      "writer": "alay imamı",
+      "literacy": "none",
+      "voice": "dualı, her cümleye Allah'ı katar",
+      "topic": "çorapların ve paketin geldiğini haber vermek",
+      "hidden": "aç kaldıklarını",
+      "carelessness": "none",
+      "sensitive_info": "yok",
+      "length_label": "uzun",
+      "length_target": 113,
+      "package": null,
+      "prev_state": "önceki mektup normal ulaştı",
+      "home_address": "Dersaadet, Kasımpaşa, Kulaksız mahallesi",
+      "soldier_relation": "kardeşi",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4984,
+      "output": 1582
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Şehir hayatı · İstanbul (savaş yılları)",
+      "Paketler ve gönderilen eşyalar",
+      "Karakter · Saadet ve nişanlısı"
+    ],
+    "raw": "BAŞLIK: Ordu-yı Hümayun, 12 Teşrinisani 1331\nHİTAP: Kardeşim Osman'a\nGÖVDE: Kâmil der ki: Allah'ın selamı üzerine olsun. Allah'a şükür gönderdiğin paket elime geçti. İçinden çıkan yün çorapları giydim, Allah sizden razı olsun. Kuru yemişleri de aldım, Allah bereket versin. Benim hâlim Allah'ın izniyle iyidir, siz hiç merak etmeyin. Buralarda Allah'ın yardımı bizimledir. Yemeklerimiz çıkıyor, Allah devlete zeval vermesin. Anama ve komşulara Allah'ın selamını ilet.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: (mühür: Kâmil)\nNOT: İşbu mektubu Kâmil evladımızın ağzından kaleme aldım. Alay İmamı.\nZARF: Dersaadet, Kasımpaşa, Kulaksız mahallesi, Bakkal Hüseyin Efendi vasıtasıyla Osman'a."
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "fail",
+      "detail": "54 kelime, hedef 113 (-52%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": ""
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "0 hassas parça, dikkatsizlik 'none' için beklenen 0"
+    },
+    "header": {
+      "result": "pass",
+      "detail": ""
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": ""
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": null,
+  "status": "rejected",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "rejected",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontrol: length"
+    }
+  ]
+}

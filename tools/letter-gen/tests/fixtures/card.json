@@ -12,6 +12,7 @@
         "prompt": "Duyguları adlandırma.",
         "depth": 2
       }
-    }
+    },
+    "first_mes": "Atölye hazır. Kalıp:\n\n[MEKTUP İSTEĞİ]\nGönderen: (isim, lakap, yaş, memleket)\nAlıcı: (isim, ilişki, nerede)\nYön: cepheden / cepheye\nYazma biçimi: kendisi yazıyor / yazdırıyor (yazan: …)\nOkuryazarlık: düşük / orta / yüksek\nSakladığı: (gizlediği)\nDikkatsizlik: yok / az / çok\nPaket: yok / (içindekiler)\nUzunluk: (kelime)\nVaryasyon: 1"
   }
 }

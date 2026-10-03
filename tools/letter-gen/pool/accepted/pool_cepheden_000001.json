@@ -1,0 +1,266 @@
+{
+  "id": "pool_cepheden_000001",
+  "tier": "pool",
+  "direction": "cepheden",
+  "sender": {
+    "name": "Fehmi",
+    "epithet": "Maraşlı",
+    "age": 28,
+    "hometown": "Maraş",
+    "occupation": "ırgat",
+    "rank": "er"
+  },
+  "recipient": {
+    "name": "Fikriye",
+    "relation": "annesi",
+    "location": "Maraş, Elbistan kazası, Kızılca karyesi"
+  },
+  "writes": "self",
+  "writer": null,
+  "literacy": "mid",
+  "carelessness": "low",
+  "length_target": 80,
+  "hand": "careful",
+  "header": {
+    "text": "Seddülbahir, 14 Teşrinisani 1331",
+    "sensitive": true
+  },
+  "salutation": "Validem Fikriye Hanım'a",
+  "segments": [
+    {
+      "id": "s1",
+      "text": "Ellerinden öperim.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s2",
+      "text": "Benim hâlim vaktim yerindedir, merak etmeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s3",
+      "text": "Kardeşim Hasan'ın yaşı geldi.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s4",
+      "text": "Onu askere sakın göndermeyesin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s5",
+      "text": "Gerekirse yukarı tarlayı, ambardaki kışlık buğdayı, sarı ineği satın, bedel parasını denkleştirin.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s6",
+      "text": "Ya da muhtara gidin, bir çare bulun.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s7",
+      "text": "O benim gibi kuvvetli değildir, buranın kışına dayanamaz.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s8",
+      "text": "Ben rahatım, kapalı sıcak yerdeyim, bütün gün dinleniyorum.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s9",
+      "text": "Çamaşırım, üstüm başım da temizdir.",
+      "kind": "normal",
+      "para": 0
+    },
+    {
+      "id": "s10",
+      "text": "Emmime, Hüseyin dayıma, komşulara tek tek selam eyle.",
+      "kind": "normal",
+      "para": 0
+    }
+  ],
+  "closing": "Allah'a emanet olun.",
+  "signature": {
+    "text": "Oğlun Fehmi"
+  },
+  "note": null,
+  "envelope": {
+    "text": "Maraş, Elbistan kazası, Kızılca karyesi, Muhtar Ahmet Ağa vasıtasıyla Fikriye Hanım'a",
+    "sensitive": false
+  },
+  "package": null,
+  "meta": {
+    "request": "[MEKTUP İSTEĞİ]\nGönderen: Fehmi, Maraşlı, 28, ırgat, er (Maraş, Elbistan kazası, Kızılca karyesi)\nAlıcı: Annesi Fikriye Hanım, Maraş, Elbistan kazası, Kızılca karyesi\nYön: cepheden\nYazma biçimi: kendisi yazıyor\nOkuryazarlık: orta\nSes: titiz, her şeyi tek tek sayar\nKonu: kardeşinin askere alınmaması için çare aramak\nSakladığı: hasta yattığını\nHassas bilgi: yok\nDikkatsizlik: az\nÖnceki durum: ilk mektup\nUzunluk: 80",
+    "request_fields": {
+      "direction": "cepheden",
+      "sender": {
+        "name": "Fehmi",
+        "gender": "erkek",
+        "age": 28,
+        "relation": null,
+        "rank": "er",
+        "hometown": "Maraş",
+        "occupation": "ırgat",
+        "epithet": "Maraşlı",
+        "place": "Elbistan kazası, Kızılca karyesi"
+      },
+      "recipient": {
+        "name": "Fikriye",
+        "gender": "kadın",
+        "age": 48,
+        "relation": "annesi",
+        "rank": null,
+        "hometown": "Maraş",
+        "occupation": null,
+        "epithet": null,
+        "place": "Elbistan kazası, Kızılca karyesi"
+      },
+      "recipient_location": "Maraş, Elbistan kazası, Kızılca karyesi",
+      "writes": "self",
+      "writer": null,
+      "literacy": "mid",
+      "voice": "titiz, her şeyi tek tek sayar",
+      "topic": "kardeşinin askere alınmaması için çare aramak",
+      "hidden": "hasta yattığını",
+      "carelessness": "low",
+      "sensitive_info": "yok",
+      "length_label": "orta",
+      "length_target": 80,
+      "package": null,
+      "prev_state": "ilk mektup",
+      "home_address": "Maraş, Elbistan kazası, Kızılca karyesi",
+      "soldier_relation": "oğlu",
+      "extra": {}
+    },
+    "seed": 1915,
+    "model": "gemini-3.1-pro-preview",
+    "createdAt": "2026-10-03T13:57:09+00:00",
+    "tokens": {
+      "input": 4816,
+      "output": 2018
+    },
+    "attempts": 1,
+    "finish": "STOP",
+    "lore": [
+      "SABİT · Dönem ve dünya",
+      "SABİT · Mektup adabı ve kalıplar",
+      "SABİT · Dil kuralları ve yasak kelimeler",
+      "SABİT · Sansür kuralları (ne hassastır)",
+      "SABİT · Yazma biçimleri ve mühürler",
+      "SABİT · Zarf adresleri",
+      "Cephe hayatı · Arıburnu / siper",
+      "Köy hayatı · Sivas / Anadolu köyü (Teşrinievvel)"
+    ],
+    "raw": "BAŞLIK: ⟦Seddülbahir⟧, 14 Teşrinisani 1331\nHİTAP: Validem Fikriye Hanım'a\nGÖVDE: Ellerinden öperim. Benim hâlim vaktim yerindedir, merak etmeyesin. Kardeşim Hasan'ın yaşı geldi. Onu askere sakın göndermeyesin. Gerekirse yukarı tarlayı, ambardaki kışlık buğdayı, sarı ineği satın, bedel parasını denkleştirin. Ya da muhtara gidin, bir çare bulun. O benim gibi kuvvetli değildir, buranın kışına dayanamaz. Ben rahatım, kapalı sıcak yerdeyim, bütün gün dinleniyorum. Çamaşırım, üstüm başım da temizdir. Emmime, Hüseyin dayıma, komşulara tek tek selam eyle.\nKAPANIŞ: Allah'a emanet olun.\nİMZA: Oğlun Fehmi\nZARF: Maraş, Elbistan kazası, Kızılca karyesi, Muhtar Ahmet Ağa vasıtasıyla Fikriye Hanım'a"
+  },
+  "checks": {
+    "format": {
+      "result": "pass",
+      "detail": ""
+    },
+    "length": {
+      "result": "pass",
+      "detail": "64 kelime, hedef 80 (-20%)"
+    },
+    "forbidden": {
+      "result": "pass",
+      "detail": ""
+    },
+    "literacy_words": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "narrator": {
+      "result": "pass",
+      "detail": ""
+    },
+    "sensitive_balance": {
+      "result": "pass",
+      "detail": "1 hassas parça, dikkatsizlik 'low' için beklenen 1"
+    },
+    "header": {
+      "result": "pass",
+      "detail": "yer adı başlıkta, ⟦ ⟧ içinde: 'Seddülbahir, 14 Teşrinisani 1331'"
+    },
+    "envelope": {
+      "result": "pass",
+      "detail": ""
+    },
+    "seal": {
+      "result": "pass",
+      "detail": "uygulanmadı"
+    },
+    "repetition": {
+      "result": "pass",
+      "detail": ""
+    }
+  },
+  "review": {
+    "model": "gemini-3.8-flash",
+    "reviewed_at": "2026-10-03T14:00:23+00:00",
+    "tokens": {
+      "input": 4219,
+      "output": 1755
+    },
+    "scores": {
+      "donem_dili": 5,
+      "olculuk": 5,
+      "okuryazarlik": 5,
+      "somutluk": 5,
+      "sadakat": 4,
+      "sahicilik": 5
+    },
+    "reasons": {
+      "donem_dili": "Döneme aykırı modern bir kelimeye yer verilmemiş, 1915 Anadolu Türkçesinin yalınlığı iyi korunmuştur.",
+      "olculuk": "Duygular adlandırılmadan, kardeşini koruma endişesi ve hastalığı örtbas etme çabası ölçülü verilmiştir.",
+      "okuryazarlik": "Orta okuryazarlıktaki bir erin elinden çıkmışçasına derli toplu ve anlaşılır bir üslup kurulmuştur.",
+      "somutluk": "Sarı inek, kışlık buğday ve yukarı tarla gibi somut köylü ayrıntıları metni zenginleştirmiştir.",
+      "sadakat": "İstekteki tüm unsurlar eksiksiz işlenmiş, fakat başlıkta tarihin de sansür köşeli ayraçlarına katılması küçük bir kural ihlali yaratmıştır.",
+      "sahicilik": "Hastane ortamını ailesine dinlenme ve rahatlık gibi gösteren askerin ruh hâli son derece inandırıcıdır."
+    },
+    "issues": [
+      {
+        "line": "BAŞLIK: ⟦Seddülbahir, 14 Teşrinisani 1331⟧",
+        "problem": "Tarihî ibare sansür kapsamında değildir, yalnızca yer adı olan Seddülbahir işarete alınmalıdır.",
+        "suggestion": "BAŞLIK: ⟦Seddülbahir⟧, 14 Teşrinisani 1331"
+      }
+    ]
+  },
+  "status": "accepted",
+  "parse_error": null,
+  "history": [
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:57:09+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T13:58:01+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    },
+    {
+      "status": "needs_review",
+      "at": "2026-10-03T13:59:40+00:00",
+      "by": "auto",
+      "note": "kontroller geçti, eleştirmen bekleniyor"
+    },
+    {
+      "status": "accepted",
+      "at": "2026-10-03T14:00:23+00:00",
+      "by": "auto",
+      "note": "eleştirmen"
+    }
+  ]
+}

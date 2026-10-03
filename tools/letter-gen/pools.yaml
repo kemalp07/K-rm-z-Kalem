@@ -3,35 +3,45 @@
 
 # --- İstek metni ---------------------------------------------------------------
 # [MEKTUP İSTEĞİ] bloğundaki etiketler ve hangi örnekleyici alanından dolduruldukları.
-# Kartın mes_example'ında bir [MEKTUP İSTEĞİ] örneği varsa etiket SIRASI oradan alınır;
-# kartta olup burada eşlemesi olmayan bir etiket --dry-run'da hata olarak gösterilir.
+# Etiket SIRASI kartın first_mes'indeki kalıptan (yoksa mes_example'dan) alınır.
+# Kartta olup burada eşlemesi olmayan etiket --dry-run'da uyarı olarak gösterilir.
+# Değeri boş kalan alan (ör. paketi olmayan mektupta Paket) istekten çıkarılır.
 request_header: "[MEKTUP İSTEĞİ]"
 request_labels:
-  Yön: direction
   Gönderen: sender
-  Gönderenin yaşı: sender_age
-  Memleketi: hometown
-  Mesleği: occupation
-  Rütbesi: rank
   Alıcı: recipient
-  Alıcının bulunduğu yer: recipient_location
+  Yön: direction
   Yazma biçimi: writes
-  Yazan: writer
   Okuryazarlık: literacy
   Ses: voice
   Konu: topic
-  Sakladığı şey: hidden
-  Dikkatsizlik: carelessness
+  Sakladığı: hidden
   Hassas bilgi: sensitive_info
-  Uzunluk: length
+  Dikkatsizlik: carelessness
+  Önceki durum: prev_state
+  Alıcının görmediği bilgi: unseen       # tek seferlik mektuplarda kullanılmaz
+  Okunabilen kelimeler: readable_words   # tek seferlik mektuplarda kullanılmaz
   Paket: package
+  Uzunluk: length
+  Varyasyon: variation                   # her istek tek mektup; satır yazılmaz
 
-# Alan değerlerinin istekte nasıl yazılacağı.
+# Alan değerlerinin istekte nasıl yazılacağı (kartın örneklerindeki gibi).
 labels:
-  direction: { cepheden: "cepheden eve", cepheye: "evden cepheye" }
-  writes: { self: "kendisi yazıyor", dictated: "söylüyor, başkası yazıyor", scribe: "arzuhalciye yazdırıyor" }
-  literacy: { none: "okuma yazma bilmiyor", low: "az biliyor", mid: "orta", high: "iyi okumuş" }
+  direction: { cepheden: "cepheden", cepheye: "cepheye" }
+  # {writer}: yazan kişi
+  writes: { self: "kendisi yazıyor", dictated: "yazdırıyor (yazan: {writer})", scribe: "kâtibe para verip yazdırıyor (yazan: {writer})" }
+  literacy: { none: "yok", low: "düşük", mid: "orta", high: "yüksek" }
   carelessness: { none: "yok", low: "az", high: "çok" }
+  # Kadın adlarının sonuna istekte ve hitapta eklenir (yetişkinlerde).
+  woman_title: "Hanım"
+  woman_title_min_age: 16
+  soldier_location: "cephede"
+
+prev_state:
+  - { value: "ilk mektup", weight: 35 }
+  - { value: "önceki mektup normal ulaştı", weight: 50 }
+  - { value: "cevapsız kaldı (1.)", weight: 10 }
+  - { value: "cevapsız kaldı (2.)", weight: 5 }
 
 # --- Ağırlıklar -------------------------------------------------------------------
 direction: [ { value: cepheden, weight: 1 }, { value: cepheye, weight: 1 } ]
@@ -63,17 +73,38 @@ writing_pairs:
 # Bu yaşın altındaki gönderen kendisi yazamaz (dictated ya da scribe olur).
 min_age_self_writing: 12
 
+# Yazan kişi: dictated = tanıdık biri yazar, scribe = parayla kâtip/arzuhalci.
 writers:
-  cepheden: [ "bölükten okuma yazma bilen bir arkadaşı", "alay imamı", "bölük kâtibi", "çadır arkadaşı bir hoca efendi" ]
-  cepheye:  [ "mahalle imamı", "köyün muhtarı", "çarşıdaki arzuhalci", "komşunun mektebe giden oğlu", "köy hocası" ]
+  dictated:
+    cepheden: [ "bölükten okuma yazma bilen bir arkadaşı", "alay imamı", "çadır arkadaşı bir hoca efendi", "köylüsü bir onbaşı" ]
+    cepheye:  [ "köyün muhtarı", "mahalle imamı", "komşunun mektebe giden oğlu", "köy hocası" ]
+  scribe:
+    cepheden: [ "alay kâtibi", "bölük kâtibi" ]
+    cepheye:  [ "çarşıdaki arzuhalci", "postane önündeki arzuhalci" ]
 
-voices: [ sade, ağırbaşlı, çekingen, dertli, şakacı, sert, dualı, telaşlı, resmî, utangaç ]
+voices:
+  - "az konuşur, her şeyi iyi gösterir"
+  - "kaba ama sevecen, çocuklarına düşkün"
+  - "dualı, sık sık dua eder"
+  - "şakacı, dertli şeyleri bile hafife alır"
+  - "titiz, her şeyi tek tek sayar"
+  - "sert, emir verir gibi yazar"
+  - "utangaç, karısına adıyla seslenemez"
+  - "dertli, ama dertlerini söylemez"
+  - "hesapçı, para ve borçtan söz eder"
+  - "telaşlı, cümleleri yarım bırakır"
+  - "ağırbaşlı, kalıplara sadık"
+  - "meraklı, köyden herkesi sorar"
+  - "sitemkâr, mektup gelmemesinden yakınır"
+  - "yaşlı ve yorgun, kısa yazar"
+  - "genç ve heyecanlı, çok soru sorar"
+  - "içine kapanık, yalnız gerekeni yazar"
 
-# Uzunluk: gövdenin kelime hedefi bu aralıktan seçilir.
+# Uzunluk: gövdenin kelime hedefi bu aralıktan seçilir (kart: 60–130 kelime).
 lengths:
-  - { value: kısa,  words: [60, 90],   weight: 35 }
-  - { value: orta,  words: [100, 150], weight: 45 }
-  - { value: uzun,  words: [160, 220], weight: 20 }
+  - { value: kısa,  words: [60, 80],   weight: 35 }
+  - { value: orta,  words: [80, 105],  weight: 45 }
+  - { value: uzun,  words: [105, 130], weight: 20 }
 
 # --- İlişkiler ---------------------------------------------------------------------
 # Hep ASKERE göre yazılır: "annesi" = askerin annesi. inverse: askerin o kişiye göre ne olduğu ("büyükse/küçükse" biçiminde de yazılabilir).
@@ -98,6 +129,8 @@ fronts: [ { value: "Çanakkale cephesi", weight: 1 } ]
 epithet_style: [ { value: hometown, weight: 60 }, { value: occupation, weight: 40 } ]
 
 # --- İsimler (soyadı YOK) -------------------------------------------------------------
+# Lorebook'ta "Karakter ·" girdisi olan adlar (ana hikâye karakterleri) çalışma anında
+# lorebook'tan okunur ve buradan otomatik olarak dışlanır.
 names:
   erkek: [ Mehmet, Ahmet, Ali, Hasan, Hüseyin, Mustafa, İbrahim, Osman, Halil, Rıza, Kâzım, Süleyman,
            Yusuf, Ömer, Salih, Bekir, Nuri, Şükrü, Tevfik, Cemal, Hakkı, Hamdi, Hilmi, Hulusi, İsmail,
@@ -111,66 +144,73 @@ names:
            Zarife, Hamide, Habibe, Dürdane ]
 
 # --- Memleketler ---------------------------------------------------------------------
-# adj: lakap için ("Sivaslı Mehmet").
+# adj: lakap ("Sivaslı Hasan"). kind: village → kaza + karye; city → semt + mahalle.
+# Zarf adresi ve istek bu yer bilgisinden kurulur (lorebook'taki adres kalıpları).
 hometowns:
-  - { name: Sivas,      adj: Sivaslı }
-  - { name: Konya,      adj: Konyalı }
-  - { name: Kastamonu,  adj: Kastamonulu }
-  - { name: Trabzon,    adj: Trabzonlu }
-  - { name: Erzurum,    adj: Erzurumlu }
-  - { name: Bursa,      adj: Bursalı }
-  - { name: Manisa,     adj: Manisalı }
-  - { name: Kayseri,    adj: Kayserili }
-  - { name: Ankara,     adj: Ankaralı }
-  - { name: Yozgat,     adj: Yozgatlı }
-  - { name: Çorum,      adj: Çorumlu }
-  - { name: Isparta,    adj: Ispartalı }
-  - { name: Balıkesir,  adj: Balıkesirli }
-  - { name: Diyarbekir, adj: Diyarbekirli }
-  - { name: Halep,      adj: Halepli }
-  - { name: Amasya,     adj: Amasyalı }
-  - { name: Tokat,      adj: Tokatlı }
-  - { name: Sinop,      adj: Sinoplu }
-  - { name: Kütahya,    adj: Kütahyalı }
-  - { name: Afyon,      adj: Afyonlu }
-  - { name: Denizli,    adj: Denizlili }
-  - { name: Aydın,      adj: Aydınlı }
-  - { name: Adana,      adj: Adanalı }
-  - { name: Maraş,      adj: Maraşlı }
-  - { name: Malatya,    adj: Malatyalı }
-  - { name: Harput,     adj: Harputlu }
-  - { name: Bolu,       adj: Bolulu }
-  - { name: Çankırı,    adj: Çankırılı }
-  - { name: Niğde,      adj: Niğdeli }
-  - { name: Kırşehir,   adj: Kırşehirli }
-  - { name: Rize,       adj: Rizeli }
-  - { name: Giresun,    adj: Giresunlu }
-  - { name: Edirne,     adj: Edirneli }
-  - { name: İzmit,      adj: İzmitli }
-  - { name: Eskişehir,  adj: Eskişehirli }
+  - { name: Sivas,      adj: Sivaslı,      kind: village, kazas: [Hafik, Zara, Divriği, Gürün, Koçhisar] }
+  - { name: Konya,      adj: Konyalı,      kind: village, kazas: [Akşehir, Ereğli, Karaman, Beyşehir, Ilgın] }
+  - { name: Kastamonu,  adj: Kastamonulu,  kind: village, kazas: [Tosya, İnebolu, Taşköprü, Daday, Araç] }
+  - { name: Trabzon,    adj: Trabzonlu,    kind: village, kazas: [Of, Sürmene, Akçaabat, Vakfıkebir, Maçka] }
+  - { name: Erzurum,    adj: Erzurumlu,    kind: village, kazas: [Hasankale, Tortum, İspir, Kiğı, Tercan] }
+  - { name: Bursa,      adj: Bursalı,      kind: village, kazas: [İnegöl, Gemlik, Mudanya, Mihalıç, Orhaneli] }
+  - { name: Manisa,     adj: Manisalı,     kind: village, kazas: [Akhisar, Salihli, Kasaba, Kırkağaç, Demirci] }
+  - { name: Kayseri,    adj: Kayserili,    kind: village, kazas: [İncesu, Everek, Bünyan, Talas] }
+  - { name: Ankara,     adj: Ankaralı,     kind: village, kazas: [Haymana, Ayaş, Beypazarı, Çubuk, Nallıhan] }
+  - { name: Yozgat,     adj: Yozgatlı,     kind: village, kazas: [Boğazlıyan, Akdağmadeni, Sorgun] }
+  - { name: Çorum,      adj: Çorumlu,      kind: village, kazas: [İskilip, Sungurlu, Osmancık, Mecitözü] }
+  - { name: Isparta,    adj: Ispartalı,    kind: village, kazas: [Eğirdir, Uluborlu, Yalvaç, Şarkikaraağaç] }
+  - { name: Balıkesir,  adj: Balıkesirli,  kind: village, kazas: [Edremit, Burhaniye, Bigadiç, Sındırgı, Balya] }
+  - { name: Diyarbekir, adj: Diyarbekirli, kind: village, kazas: [Silvan, Ergani, Lice, Palu] }
+  - { name: Amasya,     adj: Amasyalı,     kind: village, kazas: [Merzifon, Gümüşhacıköy, Ladik, Vezirköprü] }
+  - { name: Tokat,      adj: Tokatlı,      kind: village, kazas: [Zile, Niksar, Erbaa, Reşadiye] }
+  - { name: Sinop,      adj: Sinoplu,      kind: village, kazas: [Boyabat, Gerze, Ayancık] }
+  - { name: Kütahya,    adj: Kütahyalı,    kind: village, kazas: [Uşak, Gediz, Simav, Eşme] }
+  - { name: Afyon,      adj: Afyonlu,      kind: village, kazas: [Sandıklı, Dinar, Bolvadin, Emirdağ] }
+  - { name: Denizli,    adj: Denizlili,    kind: village, kazas: [Tavas, Buldan, Sarayköy, Acıpayam] }
+  - { name: Aydın,      adj: Aydınlı,      kind: village, kazas: [Nazilli, Söke, Çine, Bozdoğan] }
+  - { name: Adana,      adj: Adanalı,      kind: village, kazas: [Kozan, Ceyhan, Karaisalı] }
+  - { name: Maraş,      adj: Maraşlı,      kind: village, kazas: [Elbistan, Pazarcık, Andırın] }
+  - { name: Malatya,    adj: Malatyalı,    kind: village, kazas: [Hekimhan, Arapkir, Akçadağ, Darende] }
+  - { name: Harput,     adj: Harputlu,     kind: village, kazas: [Palu, Keban, Çemişgezek, Arapkir] }
+  - { name: Bolu,       adj: Bolulu,       kind: village, kazas: [Gerede, Mudurnu, Göynük, Düzce] }
+  - { name: Çankırı,    adj: Çankırılı,    kind: village, kazas: [Çerkeş, Kalecik, Ilgaz] }
+  - { name: Niğde,      adj: Niğdeli,      kind: village, kazas: [Bor, Aksaray, Ürgüp, Nevşehir] }
+  - { name: Kırşehir,   adj: Kırşehirli,   kind: village, kazas: [Mucur, Avanos, Keskin] }
+  - { name: Rize,       adj: Rizeli,       kind: village, kazas: [Atina, Hemşin, Çayeli] }
+  - { name: Giresun,    adj: Giresunlu,    kind: village, kazas: [Tirebolu, Görele, Şebinkarahisar, Keşap] }
+  - { name: Eskişehir,  adj: Eskişehirli,  kind: village, kazas: [Sivrihisar, Mihalıççık, Seyitgazi] }
+  - { name: Dersaadet,  adj: İstanbullu,   kind: city, semts: { Üsküdar: [Selamsız, Valide-i Atik, Ahmediye], Fatih: [Çarşamba, Karagümrük, Haydar], Eyüp: [Nişancı, Defterdar, Düğmeciler], Beşiktaş: [Sinanpaşa, Abbasağa, Vişnezade], Kasımpaşa: [Kulaksız, Camiikebir, Yahya Kâhya] } }
+  - { name: İzmir,      adj: İzmirli,      kind: city, semts: { Karşıyaka: [Soğukkuyu, Bahariye], Karataş: [Hasanpaşa, Turan], Eşrefpaşa: [Kadifekale, Tepecik], Basmane: [Gazi, İkiçeşmelik] } }
+
+# Köy adları (gerçek, yaygın köy adları; memlekete göre değişmeyen genel havuz).
+villages: [ Karacaören, Kızılca, Yenice, Akpınar, Sarıkaya, Kuzören, Eğrisu, Çamlıca, Kayadibi, Gölcük,
+            Bahçecik, Ilıca, Yeniköy, Kozluca, Dereköy, Çukurören, Hacılar, Karaağaç, Ortaköy, Sarıyar,
+            Esentepe, Gökçeören, Kavak, Taşpınar, Kurtköy, Yazıköy, Alacahan, Kocaköy, Ağılönü, Söğütlü ]
 
 # --- Meslekler -----------------------------------------------------------------------
 # literacy: bu meslekte izin verilen okuryazarlık düzeyleri (yoksa hepsi).
 # who: kim olabilir (erkek / kadın / hepsi). epithet: false → lakapta kullanılmaz.
+# min_age / max_age: bu meslek için yaş sınırı.
+# where: village / city — yalnızca o tür memlekette (yoksa ikisinde de).
 occupations:
-  - { value: çiftçi, epithet: false,      who: hepsi, weight: 30 }
-  - { value: çoban,       who: erkek, weight: 8 }
+  - { value: çiftçi, epithet: false,      who: hepsi, weight: 30, where: village, literacy: [none, low, mid] }
+  - { value: çoban,       who: erkek, weight: 8, where: village, literacy: [none, low] }
   - { value: nalbant,     who: erkek, weight: 3 }
   - { value: bakkal,      who: erkek, weight: 3, literacy: [low, mid, high] }
   - { value: kahveci,     who: erkek, weight: 3 }
-  - { value: hamal,       who: erkek, weight: 3 }
+  - { value: hamal,       who: erkek, weight: 3, where: city, literacy: [none, low] }
   - { value: terzi,       who: hepsi, weight: 3 }
-  - { value: imam,        who: erkek, weight: 2, literacy: [mid, high] }
+  - { value: imam,        who: erkek, weight: 2, literacy: [mid, high], min_age: 22 }
   - { value: kâtip,       who: erkek, weight: 1, literacy: [high] }
   - { value: muallim,     who: hepsi, weight: 1, literacy: [high] }
-  - { value: kayıkçı,     who: erkek, weight: 2 }
+  - { value: kayıkçı,     who: erkek, weight: 2, literacy: [none, low, mid] }
   - { value: demirci,     who: erkek, weight: 2 }
   - { value: dokumacı,    who: hepsi, weight: 3 }
-  - { value: ırgat, epithet: false,       who: hepsi, weight: 5 }
+  - { value: ırgat, epithet: false,       who: hepsi, weight: 5, where: village, literacy: [none, low] }
   - { value: ev hanımı, epithet: false,   who: kadın, weight: 25 }
   - { value: ebe,         who: kadın, weight: 2 }
   - { value: çamaşırcı,   who: kadın, weight: 2 }
-  - { value: talebe, epithet: false,      who: hepsi, weight: 2, literacy: [mid, high] }
+  - { value: talebe, epithet: false,      who: hepsi, weight: 2, literacy: [mid, high], max_age: 24 }
 
 # --- Konular ve saklanan şeyler (yöne göre) ---------------------------------------
 topics:
@@ -221,7 +261,7 @@ hidden:
     - "parasını kumarda kaybettiğini"
     - "kaçmayı düşündüğünü"
     - "ayağının donmak üzere olduğunu"
-    - "hiçbir şey saklamıyor"
+    - { value: "yok", weight: 2 }
   cepheye:
     - "babasının öldüğünü"
     - "evin satıldığını"
@@ -232,7 +272,7 @@ hidden:
     - "jandarmanın köye gelip hayvanları aldığını"
     - "kardeşinin de cepheye gittiğini"
     - "evde un kalmadığını"
-    - "hiçbir şey saklamıyor"
+    - { value: "yok", weight: 2 }
 
 # --- Paket (yalnızca cepheye giden mektuplar) ------------------------------------------
 package_chance: 0.3
