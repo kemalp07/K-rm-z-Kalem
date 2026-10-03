@@ -1,0 +1,242 @@
+# Örnekleyici havuzları. Kodu değiştirmeden genişletilebilir.
+# Ağırlıklı listelerde her öğe ya düz metin (ağırlık 1) ya da {value: …, weight: …} olabilir.
+
+# --- İstek metni ---------------------------------------------------------------
+# [MEKTUP İSTEĞİ] bloğundaki etiketler ve hangi örnekleyici alanından dolduruldukları.
+# Kartın mes_example'ında bir [MEKTUP İSTEĞİ] örneği varsa etiket SIRASI oradan alınır;
+# kartta olup burada eşlemesi olmayan bir etiket --dry-run'da hata olarak gösterilir.
+request_header: "[MEKTUP İSTEĞİ]"
+request_labels:
+  Yön: direction
+  Gönderen: sender
+  Gönderenin yaşı: sender_age
+  Memleketi: hometown
+  Mesleği: occupation
+  Rütbesi: rank
+  Alıcı: recipient
+  Alıcının bulunduğu yer: recipient_location
+  Yazma biçimi: writes
+  Yazan: writer
+  Okuryazarlık: literacy
+  Ses: voice
+  Konu: topic
+  Sakladığı şey: hidden
+  Dikkatsizlik: carelessness
+  Hassas bilgi: sensitive_info
+  Uzunluk: length
+  Paket: package
+
+# Alan değerlerinin istekte nasıl yazılacağı.
+labels:
+  direction: { cepheden: "cepheden eve", cepheye: "evden cepheye" }
+  writes: { self: "kendisi yazıyor", dictated: "söylüyor, başkası yazıyor", scribe: "arzuhalciye yazdırıyor" }
+  literacy: { none: "okuma yazma bilmiyor", low: "az biliyor", mid: "orta", high: "iyi okumuş" }
+  carelessness: { none: "yok", low: "az", high: "çok" }
+
+# --- Ağırlıklar -------------------------------------------------------------------
+direction: [ { value: cepheden, weight: 1 }, { value: cepheye, weight: 1 } ]
+
+carelessness:
+  cepheden: [ { value: none, weight: 50 }, { value: low, weight: 35 }, { value: high, weight: 15 } ]
+  cepheye:  [ { value: none, weight: 100 } ]
+
+rank: [ { value: er, weight: 60 }, { value: onbaşı, weight: 25 }, { value: çavuş, weight: 15 } ]
+
+# Askerin yaşı (rütbeye göre).
+soldier_age:
+  er: [18, 38]
+  onbaşı: [20, 40]
+  çavuş: [24, 45]
+
+# Hassas bilgi: "yok" ise modelin dikkatsizlik düzeyine göre kendisi kaçırması beklenir.
+sensitive_info: [ { value: "yok", weight: 1 } ]
+
+# Yazma biçimi ve okuryazarlık birlikte seçilir; imkânsız eşleşme bu tabloda yoktur.
+writing_pairs:
+  - { writes: self,     literacy: low,  weight: 30 }
+  - { writes: self,     literacy: mid,  weight: 25 }
+  - { writes: self,     literacy: high, weight: 10 }
+  - { writes: dictated, literacy: none, weight: 25 }
+  - { writes: scribe,   literacy: none, weight: 7 }
+  - { writes: scribe,   literacy: low,  weight: 3 }
+
+# Bu yaşın altındaki gönderen kendisi yazamaz (dictated ya da scribe olur).
+min_age_self_writing: 12
+
+writers:
+  cepheden: [ "bölükten okuma yazma bilen bir arkadaşı", "alay imamı", "bölük kâtibi", "çadır arkadaşı bir hoca efendi" ]
+  cepheye:  [ "mahalle imamı", "köyün muhtarı", "çarşıdaki arzuhalci", "komşunun mektebe giden oğlu", "köy hocası" ]
+
+voices: [ sade, ağırbaşlı, çekingen, dertli, şakacı, sert, dualı, telaşlı, resmî, utangaç ]
+
+# Uzunluk: gövdenin kelime hedefi bu aralıktan seçilir.
+lengths:
+  - { value: kısa,  words: [60, 90],   weight: 35 }
+  - { value: orta,  words: [100, 150], weight: 45 }
+  - { value: uzun,  words: [160, 220], weight: 20 }
+
+# --- İlişkiler ---------------------------------------------------------------------
+# Hep ASKERE göre yazılır: "annesi" = askerin annesi. inverse: askerin o kişiye göre ne olduğu ("büyükse/küçükse" biçiminde de yazılabilir).
+# age_offset: askerin yaşına eklenecek aralık (annesi askerden 16–30 yaş büyük).
+# min_age / max_age: bu kişinin olabileceği yaş sınırları.
+relations:
+  annesi:        { gender: kadın, inverse: oğlu, age_offset: [16, 30],  min_age: 34, max_age: 75, weight: { cepheden: 30, cepheye: 30 } }
+  babası:        { gender: erkek, inverse: oğlu, age_offset: [18, 35],  min_age: 36, max_age: 78, weight: { cepheden: 15, cepheye: 15 } }
+  karısı:        { gender: kadın, inverse: kocası, age_offset: [-10, 2],  min_age: 15, max_age: 45, weight: { cepheden: 25, cepheye: 25 }, soldier_min_age: 18 }
+  nişanlısı:     { gender: kadın, inverse: nişanlısı, age_offset: [-8, 0],   min_age: 15, max_age: 30, weight: { cepheden: 8,  cepheye: 6 } }
+  kız kardeşi:   { gender: kadın, inverse: "ağabeyi/kardeşi", age_offset: [-12, 10], min_age: 10, max_age: 55, weight: { cepheden: 6,  cepheye: 6 } }
+  erkek kardeşi: { gender: erkek, inverse: "ağabeyi/kardeşi", age_offset: [-12, 10], min_age: 10, max_age: 55, weight: { cepheden: 6,  cepheye: 6 } }
+  oğlu:          { gender: erkek, inverse: babası, age_offset: [-40, -16], min_age: 8, max_age: 30, weight: { cepheden: 4,  cepheye: 4 } }
+  kızı:          { gender: kadın, inverse: babası, age_offset: [-40, -16], min_age: 8, max_age: 30, weight: { cepheden: 4,  cepheye: 4 } }
+  amcası:        { gender: erkek, inverse: yeğeni, age_offset: [12, 35],  min_age: 32, max_age: 78, weight: { cepheden: 2,  cepheye: 3 } }
+  dayısı:        { gender: erkek, inverse: yeğeni, age_offset: [12, 35],  min_age: 32, max_age: 78, weight: { cepheden: 2,  cepheye: 3 } }
+
+# Cepheye giden mektupta askerin bulunduğu yer.
+fronts: [ { value: "Çanakkale cephesi", weight: 1 } ]
+
+# Gönderenin lakabı nasıl kurulur: memleketinden ya da mesleğinden.
+epithet_style: [ { value: hometown, weight: 60 }, { value: occupation, weight: 40 } ]
+
+# --- İsimler (soyadı YOK) -------------------------------------------------------------
+names:
+  erkek: [ Mehmet, Ahmet, Ali, Hasan, Hüseyin, Mustafa, İbrahim, Osman, Halil, Rıza, Kâzım, Süleyman,
+           Yusuf, Ömer, Salih, Bekir, Nuri, Şükrü, Tevfik, Cemal, Hakkı, Hamdi, Hilmi, Hulusi, İsmail,
+           İsmet, Kadir, Kemal, Lütfi, Mahmut, Murat, Musa, Nazım, Necip, Niyazi, Recep, Ramazan, Reşit,
+           Sabri, Sadık, Sait, Şaban, Şevket, Tahir, Talat, Veli, Yakup, Zeki, Arif, Asım, Bahri, Celal,
+           Dursun, Emin, Eyüp, Fehmi, Fikri, Hafız, Kâmil, Latif ]
+  kadın: [ Fatma, Ayşe, Emine, Hatice, Zeynep, Saadet, Şerife, Hanife, Naciye, Melek, Zehra, Gülsüm,
+           Fadime, Pakize, Hayriye, Hacer, Havva, Esma, Rukiye, Safiye, Sabiha, Şükriye, Nazife, Nefise,
+           Hüsniye, Münevver, Meryem, Medine, Makbule, Kadriye, Halime, Fikriye, Cemile, Behiye,
+           Ümmühan, Zekiye, Raziye, Refika, Nadide, Nuriye, Seher, Sıdıka, Şadiye, Vesile, Zübeyde,
+           Zarife, Hamide, Habibe, Dürdane ]
+
+# --- Memleketler ---------------------------------------------------------------------
+# adj: lakap için ("Sivaslı Mehmet").
+hometowns:
+  - { name: Sivas,      adj: Sivaslı }
+  - { name: Konya,      adj: Konyalı }
+  - { name: Kastamonu,  adj: Kastamonulu }
+  - { name: Trabzon,    adj: Trabzonlu }
+  - { name: Erzurum,    adj: Erzurumlu }
+  - { name: Bursa,      adj: Bursalı }
+  - { name: Manisa,     adj: Manisalı }
+  - { name: Kayseri,    adj: Kayserili }
+  - { name: Ankara,     adj: Ankaralı }
+  - { name: Yozgat,     adj: Yozgatlı }
+  - { name: Çorum,      adj: Çorumlu }
+  - { name: Isparta,    adj: Ispartalı }
+  - { name: Balıkesir,  adj: Balıkesirli }
+  - { name: Diyarbekir, adj: Diyarbekirli }
+  - { name: Halep,      adj: Halepli }
+  - { name: Amasya,     adj: Amasyalı }
+  - { name: Tokat,      adj: Tokatlı }
+  - { name: Sinop,      adj: Sinoplu }
+  - { name: Kütahya,    adj: Kütahyalı }
+  - { name: Afyon,      adj: Afyonlu }
+  - { name: Denizli,    adj: Denizlili }
+  - { name: Aydın,      adj: Aydınlı }
+  - { name: Adana,      adj: Adanalı }
+  - { name: Maraş,      adj: Maraşlı }
+  - { name: Malatya,    adj: Malatyalı }
+  - { name: Harput,     adj: Harputlu }
+  - { name: Bolu,       adj: Bolulu }
+  - { name: Çankırı,    adj: Çankırılı }
+  - { name: Niğde,      adj: Niğdeli }
+  - { name: Kırşehir,   adj: Kırşehirli }
+  - { name: Rize,       adj: Rizeli }
+  - { name: Giresun,    adj: Giresunlu }
+  - { name: Edirne,     adj: Edirneli }
+  - { name: İzmit,      adj: İzmitli }
+  - { name: Eskişehir,  adj: Eskişehirli }
+
+# --- Meslekler -----------------------------------------------------------------------
+# literacy: bu meslekte izin verilen okuryazarlık düzeyleri (yoksa hepsi).
+# who: kim olabilir (erkek / kadın / hepsi). epithet: false → lakapta kullanılmaz.
+occupations:
+  - { value: çiftçi, epithet: false,      who: hepsi, weight: 30 }
+  - { value: çoban,       who: erkek, weight: 8 }
+  - { value: nalbant,     who: erkek, weight: 3 }
+  - { value: bakkal,      who: erkek, weight: 3, literacy: [low, mid, high] }
+  - { value: kahveci,     who: erkek, weight: 3 }
+  - { value: hamal,       who: erkek, weight: 3 }
+  - { value: terzi,       who: hepsi, weight: 3 }
+  - { value: imam,        who: erkek, weight: 2, literacy: [mid, high] }
+  - { value: kâtip,       who: erkek, weight: 1, literacy: [high] }
+  - { value: muallim,     who: hepsi, weight: 1, literacy: [high] }
+  - { value: kayıkçı,     who: erkek, weight: 2 }
+  - { value: demirci,     who: erkek, weight: 2 }
+  - { value: dokumacı,    who: hepsi, weight: 3 }
+  - { value: ırgat, epithet: false,       who: hepsi, weight: 5 }
+  - { value: ev hanımı, epithet: false,   who: kadın, weight: 25 }
+  - { value: ebe,         who: kadın, weight: 2 }
+  - { value: çamaşırcı,   who: kadın, weight: 2 }
+  - { value: talebe, epithet: false,      who: hepsi, weight: 2, literacy: [mid, high] }
+
+# --- Konular ve saklanan şeyler (yöne göre) ---------------------------------------
+topics:
+  cepheden:
+    - "çorapların ve paketin geldiğini haber vermek"
+    - "hasadın kimin kaldıracağını sormak"
+    - "köydeki borcun nasıl ödeneceği"
+    - "nişanlısının beklemesini istemek"
+    - "kardeşinin askere alınmaması için çare aramak"
+    - "evin damının akmasından endişe"
+    - "çocuğunun mektebe gidip gitmediğini sormak"
+    - "bayramı uzakta geçirmek"
+    - "annesine sağ olduğunu bildirmek"
+    - "tarladaki öküzün satılıp satılmayacağı"
+    - "köyden aynı bölüğe düşen hemşehrisinden haber"
+    - "yemeklerin ve ekmeğin azlığı (üstü örtülü)"
+    - "yeni doğan çocuğuna ad koymak"
+    - "babasıyla eski bir dargınlığı gidermek"
+    - "izin alma umudu"
+    - "kış için odun kesilip kesilmediğini sormak"
+  cepheye:
+    - "köyden haberler, kim evlendi kim öldü"
+    - "hasadın kaldırıldığını bildirmek"
+    - "çocuğun ilk adımları"
+    - "paketle gönderilen şeyler"
+    - "borcun ödenmesi için ne yapılacağı"
+    - "evin geçimi, tarlanın kiraya verilmesi"
+    - "kardeşin de askere çağrılması"
+    - "bayramda sofrada boş kalan yer"
+    - "muska ve dualar"
+    - "köydeki salgın hastalık (üstü örtülü)"
+    - "nişanın bozulması tehlikesi"
+    - "mektup gelmediği için endişe"
+    - "komşunun oğlunun şehit haberi"
+    - "ineğin buzağılaması"
+    - "kış hazırlığı"
+    - "fiyatların artması, un bulunamaması"
+
+hidden:
+  cepheden:
+    - "yaralandığını"
+    - "hasta yattığını"
+    - "arkadaşının öldüğünü gördüğünü"
+    - "korktuğunu"
+    - "aç kaldıklarını"
+    - "izninin iptal edildiğini"
+    - "bir kavgaya karışıp ceza aldığını"
+    - "parasını kumarda kaybettiğini"
+    - "kaçmayı düşündüğünü"
+    - "ayağının donmak üzere olduğunu"
+    - "hiçbir şey saklamıyor"
+  cepheye:
+    - "babasının öldüğünü"
+    - "evin satıldığını"
+    - "çocuğun hasta olduğunu"
+    - "borç için tarlanın elden gittiğini"
+    - "kendisinin hastalandığını"
+    - "nişanlısının başkasıyla evlendirileceğini"
+    - "jandarmanın köye gelip hayvanları aldığını"
+    - "kardeşinin de cepheye gittiğini"
+    - "evde un kalmadığını"
+    - "hiçbir şey saklamıyor"
+
+# --- Paket (yalnızca cepheye giden mektuplar) ------------------------------------------
+package_chance: 0.3
+package_items: [ "yün çorap", "yün eldiven", "kuru dut", "pestil", "kuru üzüm", "tütün", "muska",
+                 "mektup kâğıdı", "bir parça sabun", "kuru ekmek", "leblebi", "el örgüsü atkı",
+                 "kurutulmuş nane", "bir çift çarık", "kuşburnu marmelatı" ]
+package_items_count: [1, 3]

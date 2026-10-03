@@ -1,0 +1,39 @@
+{
+  "entries": {
+    "0": {
+      "uid": 0,
+      "comment": "Dönem",
+      "content": "Yıl 1915, Rumi 1331.",
+      "key": [],
+      "constant": true,
+      "order": 20
+    },
+    "1": {
+      "uid": 1,
+      "comment": "Dil kuralları ve yasak kelimeler",
+      "content": "Modern kelime kullanma.\nYasak kelimeler: \"stres\", \"travma\", \"okey\"\nAyrıca yasak: depresyon, harika",
+      "key": [],
+      "constant": true,
+      "order": 10
+    },
+    "2": {
+      "uid": 2,
+      "comment": "Sivas",
+      "content": "Sivas'ta kış erken gelir.",
+      "key": [
+        "Sivas"
+      ],
+      "constant": false,
+      "order": 50
+    },
+    "3": {
+      "uid": 3,
+      "comment": "Kapalı",
+      "content": "Bu girdi kapalı.",
+      "key": [],
+      "constant": true,
+      "order": 1,
+      "disable": true
+    }
+  }
+}

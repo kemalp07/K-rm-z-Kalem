@@ -1,0 +1,41 @@
+# Tuning that is not content. Content lives in pools.yaml and in source/.
+
+sources:
+  card: source/Mektup_Atolyesi.json
+  lorebook: source/Kirmizi_Kalem_Dunyasi.json
+
+# What {{user}} and {{char}} become inside the card's texts.
+macros:
+  user: Kullanıcı
+  # empty: use the card's own name
+
+generation:
+  temperature: 0.9
+  max_output_tokens: 4096
+  concurrency: 4
+  retries: 5          # waits 2, 4, 8, 16, 32 s between attempts
+
+review:
+  temperature: 0.2
+  max_output_tokens: 4096
+  accept_min: 4       # every score >= this → accepted
+  reject_max: 2       # any score <= this → rejected; anything else → needs_review
+
+sampler:
+  name_max_uses: 4    # how many letters in the whole pool may use one first name
+
+checks:
+  length_warn: 0.30   # body words outside ±30% of the target → warn
+  length_fail: 0.50   # outside ±50% → fail
+  repeat_ngram: 6     # shared word sequence of this length with another letter → warn
+  # Words that must not appear when the sender's literacy is low
+  # (also for illiterate senders whose letter a comrade writes down as dictated).
+  low_literacy_words: [mühim, kelam, yahut, hürmet, zira, lakin, binaenaleyh, malum]
+  # Added to the list read from the lorebook's language-rules entry.
+  extra_forbidden: []
+  # Lorebook entries are found by their comment (title); matching ignores case.
+  forbidden_entry_title: "Dil kuralları ve yasak kelimeler"
+  military_header_prefix: "Ordu-yı Hümayun"
+
+export:
+  out: ../../content/pool_letters.json
