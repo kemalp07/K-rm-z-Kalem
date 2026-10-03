@@ -38,12 +38,14 @@ labels:
   woman_title_min_age: 16
   soldier_location: "cephede"
 
-# Mektubun yazıldığı gün (Rumi). Oyun 5 Mayıs 1331'de (18 Mayıs 1915) başlıyor.
+# Mektubun yazıldığı gün (Rumi). Oyun 5 Mayıs 1331'de (18 Mayıs 1915) başlıyor ve
+# birkaç hafta sürüyor (Mayıs–Haziran); mektuplar masaya gelmeden önce yazılmış olur.
 dates:
   year: 1331
   months:
-    - { value: Nisan, days: [15, 30], weight: 1 }
-    - { value: Mayıs, days: [1, 31],  weight: 2 }
+    - { value: Nisan,   days: [20, 30], weight: 1 }
+    - { value: Mayıs,   days: [1, 31],  weight: 3 }
+    - { value: Haziran, days: [1, 20],  weight: 2 }
 
 prev_state:
   - { value: "ilk mektup", weight: 35 }
@@ -157,12 +159,16 @@ names:
            Yusuf, Ömer, Salih, Bekir, Nuri, Şükrü, Tevfik, Cemal, Hakkı, Hamdi, Hilmi, Hulusi, İsmail,
            İsmet, Kadir, Kemal, Lütfi, Mahmut, Murat, Musa, Nazım, Necip, Niyazi, Recep, Ramazan, Reşit,
            Sabri, Sadık, Sait, Şaban, Şevket, Tahir, Talat, Veli, Yakup, Zeki, Arif, Asım, Bahri, Celal,
-           Dursun, Emin, Eyüp, Fehmi, Fikri, Hafız, Kâmil, Latif ]
+           Dursun, Emin, Eyüp, Fehmi, Fikri, Hafız, Kâmil, Latif,
+           Abdullah, Adem, Bayram, Cafer, Davut, Eşref, Hayri, İlyas, İzzet, Kerim, Mestan, Nail,
+           Rauf, Rüstem, Sefer, Server, Şakir, Tayyar, Zekeriya, Haydar ]
   kadın: [ Fatma, Ayşe, Emine, Hatice, Zeynep, Saadet, Şerife, Hanife, Naciye, Melek, Zehra, Gülsüm,
            Fadime, Pakize, Hayriye, Hacer, Havva, Esma, Rukiye, Safiye, Sabiha, Şükriye, Nazife, Nefise,
            Hüsniye, Münevver, Meryem, Medine, Makbule, Kadriye, Halime, Fikriye, Cemile, Behiye,
            Ümmühan, Zekiye, Raziye, Refika, Nadide, Nuriye, Seher, Sıdıka, Şadiye, Vesile, Zübeyde,
-           Zarife, Hamide, Habibe, Dürdane ]
+           Zarife, Hamide, Habibe, Dürdane,
+           Adile, Akile, Bedriye, Elif, Fevziye, Gülizar, Hamiyet, Kevser, Leman, Mükerrem,
+           Nazlı, Necibe, Remziye, Saliha, Selime, Sultan, Şefika, Ulviye, Hafize, Feride ]
 
 # --- Memleketler ---------------------------------------------------------------------
 # adj: lakap ("Sivaslı Hasan"). kind: village → kaza + karye; city → semt + mahalle.

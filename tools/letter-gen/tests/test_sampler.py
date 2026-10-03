@@ -132,7 +132,7 @@ def test_sensitive_hint_only_for_careless_soldiers(pools):
     assert len({r.sensitive_info for r in hinted}) >= 6
 
 
-def test_dates_fall_in_spring_1331(pools):
+def test_dates_fall_in_the_games_weeks(pools):
     for r in _many(pools, 200, seed=4):
         day, month, year = r.date.split()
-        assert year == "1331" and month in ("Nisan", "Mayıs")
+        assert year == "1331" and month in ("Nisan", "Mayıs", "Haziran")
