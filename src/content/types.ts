@@ -155,6 +155,19 @@ export interface Day {
 
 export type Tool = 'pen' | 'magnifier' | 'candle';
 
+/** A line on a morning paper; shown only when its condition holds. */
+export interface MorningLine {
+  text: string;
+  head?: string;
+  when?: Condition;
+}
+
+/** What lies on the desk each morning before work: the director's note, home, the paper. */
+export type MorningPaper =
+  | { kind: 'mudur'; body: MorningLine[] }
+  | { kind: 'family'; heading: string; body: MorningLine[]; sign: string }
+  | { kind: 'newspaper'; n: number; items: MorningLine[] };
+
 export type PenaltyKind = 'sensitiveMissed' | 'inkMissed' | 'forgeryMissed' | 'wrongMark' | 'wrongReason' | 'innocentStopped' | 'spyCaught';
 
 /** content/economy.json: the clerk's pay, what the Şube docks, what the house costs. */
@@ -164,7 +177,7 @@ export interface Economy {
   warningsToDismissal: number;
   penalties: Record<PenaltyKind, { amount: number; label: string; warning?: boolean }>;
   /** Paid in the evening; `days` limits one to those days (rent). */
-  expenses: { id: string; label: string; cost: number; note?: string; days?: number[] }[];
+  expenses: { id: string; label: string; cost: number; note?: string; days?: number[]; when?: Condition }[];
   /** Bought once; better tools from the next day on. */
   shop: { id: string; label: string; note: string; cost: number; day: number }[];
   text: Record<string, string>;

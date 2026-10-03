@@ -3,37 +3,114 @@
   "wage": 15,
   "warningsToDismissal": 3,
   "penalties": {
-    "sensitiveMissed": { "amount": -2, "label": "Karalanmadan geçen malûmat — {who}" },
-    "inkMissed": { "amount": -3, "label": "Görülmeyen gizli satır — {who}" },
-    "forgeryMissed": { "amount": -5, "label": "Yakalanmayan sahte evrak — {who}", "warning": true },
-    "wrongMark": { "amount": -1, "label": "Yersiz işaret — {who}" },
-    "wrongReason": { "amount": -2, "label": "Yanlış gerekçe — {who}" },
-    "innocentStopped": { "amount": -2, "label": "Zararsız mektup alıkonuldu — {who}" },
-    "spyCaught": { "amount": 5, "label": "İkramiye: şüpheli evrak yakalandı — {who}" }
+    "sensitiveMissed": {
+      "amount": -2,
+      "label": "Kesinti: karalanmamış malûmat ({who})"
+    },
+    "inkMissed": {
+      "amount": -3,
+      "label": "Kesinti: görülmeyen gizli satır ({who})"
+    },
+    "forgeryMissed": {
+      "amount": -5,
+      "label": "Kesinti: geçirilen sahte evrak ({who})",
+      "warning": true
+    },
+    "wrongMark": {
+      "amount": -1,
+      "label": "Kesinti: yersiz işaret ({who})"
+    },
+    "wrongReason": {
+      "amount": -2,
+      "label": "Kesinti: yanlış sebep ({who})"
+    },
+    "innocentStopped": {
+      "amount": -2,
+      "label": "Kesinti: zararsız mektup alıkonuldu ({who})"
+    },
+    "spyCaught": {
+      "amount": 5,
+      "label": "Mükâfat: şüpheli evrak yakalandı ({who})"
+    }
   },
   "expenses": [
-    { "id": "ekmek", "label": "Evin ekmeği", "cost": 5 },
-    { "id": "gaz", "label": "Lamba için gaz yağı", "cost": 3, "note": "Alınmazsa yarın lamba kısık yanar." },
-    { "id": "kira", "label": "Ev kirası (haftalık)", "cost": 20, "days": [4, 9, 14] }
+    {
+      "id": "ekmek",
+      "label": "Haneye havale (ekmek parası)",
+      "cost": 5
+    },
+    {
+      "id": "gaz",
+      "label": "Lamba için gaz yağı",
+      "cost": 3,
+      "note": "Alınmazsa yarın lamba kısık yanar."
+    },
+    {
+      "id": "kira",
+      "label": "Üsküdar'daki hanenin kirası",
+      "cost": 20,
+      "days": [
+        4,
+        9,
+        14
+      ]
+    },
+    {
+      "id": "ilac",
+      "label": "Ahmet'in ilacı",
+      "cost": 15,
+      "days": [
+        3
+      ],
+      "note": "Nazife Hanım'ın mektubunda istenmişti."
+    },
+    {
+      "id": "ilac",
+      "label": "Ahmet'in ilacı (hekim yeniden geldi)",
+      "cost": 20,
+      "days": [
+        4
+      ],
+      "when": {
+        "all": [
+          "d3:unpaid:ilac"
+        ]
+      }
+    }
   ],
   "shop": [
-    { "id": "buyutec", "label": "Bileme camlı büyüteç", "note": "Daha geniş, daha net görür.", "cost": 25, "day": 1 },
-    { "id": "mum", "label": "Kalın balmumu mum", "note": "Isısı daha uzağa vurur, mürekkep çabuk belirir.", "cost": 12, "day": 2 }
+    {
+      "id": "buyutec",
+      "label": "Bileme camlı büyüteç",
+      "note": "Daha geniş, daha net gösterir.",
+      "cost": 25,
+      "day": 1
+    },
+    {
+      "id": "mum",
+      "label": "Kalın balmumu şem'a",
+      "note": "Harareti daha uzağa vurur; mürekkep çabuk belirir.",
+      "cost": 12,
+      "day": 2
+    }
   ],
   "text": {
-    "title": "Akşam Hesabı",
+    "title": "MAAŞ VE MASRAF PUSULASI",
     "wage": "Yevmiye",
-    "today": "Bugünün hesabı",
-    "warning": "İhtar",
-    "purse": "Kesede",
-    "spend": "Masraflar",
+    "today": "Şube hesabı",
+    "warning": "ihtar",
+    "purse": "Bakiye",
+    "spend": "Hane masrafı",
     "shop": "Çarşıdan",
-    "done": "Akşamı bitir",
+    "done": "Hesabı kapa",
     "owned": "alındı",
-    "short": "Para yetmiyor",
-    "purseNote": "Kesede — {n} kuruş",
-    "warningsNote": "{n} ihtar",
+    "short": "Kese yetmiyor",
+    "purseNote": "Kese: {n} kr.",
+    "warningsNote": "İhtar: {n}",
     "dismissedTitle": "Azil",
-    "dismissed": "Şube Müdürü üçüncü ihtardan sonra seni memuriyetten azletti. Masana başka bir kâtip oturacak."
+    "dismissed": "Şube Müdürü üçüncü ihtardan sonra seni memuriyetten azletti. Masana başka bir kâtip oturacak.",
+    "office": "Kilitbahir Posta ve Telgraf Şubesi",
+    "left": "Kalan: {n} kuruş",
+    "seal": "ŞUBE MUHASEBESİ ★"
   }
 }

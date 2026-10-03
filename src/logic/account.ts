@@ -1,4 +1,5 @@
 import type { Economy, Letter, PenaltyKind } from '../content/types';
+import { matches } from './conditions';
 import type { LetterProgress } from './flags';
 
 export interface AccountLine {
@@ -46,7 +47,8 @@ export function reckon(decided: { letter: Letter; p: LetterProgress }[], eco: Ec
 }
 
 /** Costs due this evening: the daily ones, and rent on its days. */
-export const expensesFor = (day: number, eco: Economy) => eco.expenses.filter((e) => !e.days || e.days.includes(day));
+export const expensesFor = (day: number, eco: Economy, flags: ReadonlySet<string> = new Set()) =>
+  eco.expenses.filter((e) => (!e.days || e.days.includes(day)) && matches(e.when, flags));
 
 /** Tools on sale today that the clerk has not bought yet. */
 export const shopFor = (day: number, owned: readonly string[], eco: Economy) => eco.shop.filter((s) => s.day <= day && !owned.includes(s.id));

@@ -6,7 +6,8 @@ import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, with
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
-import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY } from '../content/loader';
+import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
+import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { eveningBill, flagsOf, purseOf } from '../logic/dayFlow';
@@ -209,6 +210,11 @@ export function DeskScreen() {
   const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
+  // The morning's papers come before the work; one at a time, a touch puts each away.
+  const papers = useMemo(() => morningPapers(state.day), [state.day]);
+  const [morningIdx, setMorningIdx] = useState(0);
+  const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
+  const morningIn = useSharedValue(0);
   /** The opened envelope turned over in the hand: front and back, larger. */
   const [envView, setEnvView] = useState(false);
   const envViewIn = useSharedValue(0);
@@ -480,17 +486,38 @@ export function DeskScreen() {
     }, 640);
   };
 
-  // The Şube's rules lie open on the desk the very first night.
+  // A new day's papers rise onto the desk.
   useEffect(() => {
-    if (state.phase !== 'desk' || seenHelp.includes('rules')) return;
+    setMorningIdx(0);
+    if (showMorning) morningIn.value = withTiming(1, { duration: 700, easing: SETTLE });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.day, showMorning]);
+
+  // The Şube's rules lie open on the desk the very first night, once the morning papers are read.
+  useEffect(() => {
+    if (state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
     const timer = setTimeout(() => openHelp('rules'), 900);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [showMorning]);
 
   const onBegin = (p: Point) => {
     const g = useGame.getState();
     const s = g.state;
+
+    if (showMorning) {
+      drag.current = null;
+      playSfx('paper', 0.5);
+      if (morningIdx + 1 < papers.length) {
+        morningIn.value = 0;
+        setMorningIdx(morningIdx + 1);
+        morningIn.value = withTiming(1, { duration: 500, easing: SETTLE });
+      } else {
+        morningIn.value = withTiming(0, { duration: 400, easing: GLIDE });
+        setTimeout(() => g.readMorning(), 400);
+      }
+      return;
+    }
 
     // The letter is back in its envelope: touching the envelope takes it out again.
     if (envView && openLetter && envRects(openLetter).some((r) => inRect(p, r, 4))) {
@@ -1076,8 +1103,9 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
+            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} />}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
-            {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} />}
+            {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
           </Group>

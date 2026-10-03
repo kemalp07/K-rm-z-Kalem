@@ -11,7 +11,7 @@
   },
   "noTitle": "OLMAZ",
   "pageLabel": "Sahife {n}",
-  "turnHint": "Sayfa çevirmek için kenarına dokun",
+  "turnHint": "Sahifeyi çevirmek için kenarına dokununuz",
   "pages": [
     {
       "id": "umumi",
@@ -40,7 +40,7 @@
         },
         {
           "t": "p",
-          "text": "DURDUR ve İSTİHBARAT kararlarında gerekçe pusulası doldurulur. Her karar deftere yazılır; kâtip yaptığından mesuldür."
+          "text": "DURDUR ve İSTİHBARAT kararlarında sebep pusulası doldurulur. Her karar deftere yazılır; kâtip yaptığından mesuldür."
         }
       ]
     },
@@ -470,8 +470,8 @@
     }
   ],
   "reasonSlip": {
-    "title": "GEREKÇE PUSULASI",
-    "hint": "Gerekçeyi işaretle"
+    "title": "SEBEP PUSULASI",
+    "hint": "Sebebini işaretleyiniz"
   },
   "reasons": [
     {

@@ -1,0 +1,333 @@
+{
+  "day": 4,
+  "calendar": {
+    "dayOfMonth": "25",
+    "month": "Mayıs",
+    "year": "1915",
+    "weekday": "Salı",
+    "rumi": "12 Mayıs 1331"
+  },
+  "sideLetters": 2,
+  "letters": [
+    {
+      "id": "d4_mehmet",
+      "threadId": "mehmet_hatice",
+      "day": 4,
+      "sender": "Onbaşı Mehmet",
+      "recipient": "Hatice Hanım",
+      "from": "Arıburnu",
+      "to": "Sivas, Hafik kazası",
+      "direction": "cepheden",
+      "kind": "mektup",
+      "hand": "hurried",
+      "dateLine": "Ordu-yı Hümayun, 10 Mayıs 331",
+      "heading": "Muhterem validem,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Evvela ellerinizden öperim. Yolladığınız dutları aldım, takımda herkese birer avuç verdim."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Pederime selam söyleyin; bağın hesabını ona bırakıyorum, Osman'a o baksın."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Taburdan otuz kişiyi Seddülbahir tarafına aldılar, yarın biz de gidiyormuşuz."
+        },
+        {
+          "id": "s4",
+          "kind": "sensitive",
+          "text": "Dün ölüleri gömmek için iki taraf da ateşi kesti; düşmanın askeri de bizimkiler gibi çocuk."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Ayşe'ye söyleyin, çakısını unutmadım."
+        }
+      ],
+      "signature": "Oğlunuz Mehmet",
+      "marks": [
+        {
+          "kind": "mud"
+        }
+      ],
+      "variants": [
+        {
+          "id": "knows_d1",
+          "when": {
+            "all": [
+              "d1_hatice:delivered"
+            ],
+            "none": [
+              "d1_hatice:censored:s2"
+            ]
+          },
+          "ops": [
+            {
+              "op": "replace",
+              "target": "s2",
+              "segment": {
+                "id": "s2",
+                "kind": "normal",
+                "text": "Babamın vefat haberini aldım. Siperde kimseye söylemedim, gece nöbetinde ağladım. Ruhuna bir Yasin okutun."
+              }
+            }
+          ]
+        },
+        {
+          "id": "knows_d3",
+          "when": {
+            "all": [
+              "d3_hatice:delivered"
+            ],
+            "none": [
+              "d3_hatice:censored:s1"
+            ]
+          },
+          "ops": [
+            {
+              "op": "replace",
+              "target": "s2",
+              "segment": {
+                "id": "s2",
+                "kind": "normal",
+                "text": "Babamın vefat haberini aldım. Siperde kimseye söylemedim, gece nöbetinde ağladım. Ruhuna bir Yasin okutun."
+              }
+            }
+          ]
+        }
+      ],
+      "reasons": [
+        "askeri",
+        "moral"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d4_mehmet:reported"
+            ]
+          },
+          "text": "Mehmet'in adı Şube'nin defterine geçti. Yarın Seddülbahir'e gidecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_mehmet:stopped"
+            ]
+          },
+          "text": "Hatice Hanım oğlundan haber alamayacak; Mehmet ertesi gün Seddülbahir'e gidecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_mehmet:held"
+            ]
+          },
+          "text": "Mehmet'in mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_mehmet:delivered"
+            ],
+            "none": [
+              "d4_mehmet:censored:s3"
+            ]
+          },
+          "text": "Taburun yürüyüşü Sivas'ta bir mektupta okunacak. Postada kimlerin elinden geçtiği belli değil."
+        },
+        {
+          "text": "Hatice Hanım oğlunun sağ olduğunu okuyacak; nereye gittiğini bilmeyecek."
+        }
+      ]
+    },
+    {
+      "id": "d4_emine",
+      "threadId": "riza_emine",
+      "day": 4,
+      "sender": "Emine Hanım",
+      "recipient": "Er Rıza",
+      "from": "İstanbul, Eyüp",
+      "to": "Ordu-yı Hümayun, 88. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "dictated",
+      "dateLine": "7 Mayıs 1331",
+      "heading": "Rıza'ma,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Bu mektubu yine İmam Efendi'ye yazdırıyorum. Evvela selam eder, gözlerinden öperim."
+        },
+        {
+          "id": "s2",
+          "kind": "sensitive",
+          "text": "Marmara'da bir İngiliz tahtelbahiri dolaşıyormuş; Mudanya vapuru işlemiyor, Köprü'de herkes korku içinde."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Fatma artık seni sorunca kapıyı gösteriyor."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hasan'ın anasına uğradım; oğlunun eli yüzü düzgün mü diye sordu, ne diyeceğimi bilemedim."
+        },
+        {
+          "id": "s5",
+          "kind": "sensitive",
+          "text": "Dikimevinde ücretleri yarıya indirdiler, yine de gidiyorum."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Sen kendine bak, gerisi Allah'ın."
+        }
+      ],
+      "signature": "Refikan Emine",
+      "reasons": [
+        "moral"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d4_emine:reported"
+            ]
+          },
+          "text": "Emine'nin mektubu Şube'ye gitti. Dikimevinin ustabaşısı yine çağrılacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_emine:stopped"
+            ]
+          },
+          "text": "Rıza bu hafta da evden haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_emine:held"
+            ]
+          },
+          "text": "Emine'nin sözleri bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_emine:delivered"
+            ],
+            "none": [
+              "d4_emine:censored:s2"
+            ]
+          },
+          "text": "Tahtelbahir haberi çadırdan çadıra dolaşacak; kimse evine mektup yazmak istemeyecek."
+        },
+        {
+          "text": "Hasan mektubu okurken karalı satırları atlayacak; Rıza bir şey sormayacak."
+        }
+      ]
+    },
+    {
+      "id": "d4_huesnue",
+      "threadId": "imzasiz_halil",
+      "day": 4,
+      "sender": "Kâtip Hüsnü",
+      "recipient": "Levazım Kâtibi Halil Efendi",
+      "from": "Sivas",
+      "fromAddress": "Sivas, Kale mahallesi",
+      "to": "Çanakkale, Kilitbahir, Levazım Deposu",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "careful",
+      "dateLine": "5 Mayıs 1331",
+      "heading": "Amcazadem Halil Efendi'ye,",
+      "postmark": {
+        "office": "İZMİR",
+        "date": "7 MAYIS 331"
+      },
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Evvela selam eder, hatırınızı sorarım. Sivas'ta havalar ısındı, bağlar uyandı."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "İncir sandıklarını aldınız mı? Fener ikinciden sonra kayıklar beklesin, biz haber veririz."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Validemiz ellerinizden öper, duanızı ister."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Cevabınızı malum adrese yollayınız."
+        }
+      ],
+      "signature": "Amcazadeniz Hüsnü",
+      "inspectables": [
+        {
+          "id": "postmark",
+          "target": "postmark",
+          "anomaly": true,
+          "note": "Gönderen Sivaslı, posta damgası İZMİR. Sivas'tan yazılan mektup İzmir'de damgalanmaz."
+        }
+      ],
+      "reasons": [
+        "damga",
+        "sahte",
+        "gizli"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d4_huesnue:reported",
+              "d4_huesnue:marked:postmark"
+            ]
+          },
+          "text": "Şube İzmir postanesine yazdı. Hüsnü diye bir Sivaslı bulunamayacak; İzmir'de biri aranacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_huesnue:reported"
+            ]
+          },
+          "text": "Mektup Şube'ye gitti, ama damganın İzmir olduğunu kimse not etmedi."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_huesnue:stopped"
+            ]
+          },
+          "text": "Halil Efendi bu hafta 'amcazadesinden' haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d4_huesnue:held"
+            ]
+          },
+          "text": "Mektup bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "text": "Halil Efendi mektubu okuyup sobaya atacak. Kayıklar fener ikinciden sonra bekleyecek."
+        }
+      ]
+    }
+  ]
+}

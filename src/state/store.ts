@@ -4,7 +4,7 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { getDay, getLetter, sideLetterCandidates } from '../content/loader';
 import { mixIntoStack, pickSideLetters } from '../logic/sideLetters';
 import type { Decision, HelpId } from '../content/types';
-import { addMark, advancePhase, clearCensor, closeLedger, decide, finishEvening, openEnvelope, setReason, startDay, type DayState } from '../logic/dayFlow';
+import { addMark, advancePhase, clearCensor, closeLedger, decide, finishEvening, openEnvelope, readMorning, setReason, startDay, type DayState } from '../logic/dayFlow';
 
 interface GameStore {
   state: DayState;
@@ -27,6 +27,8 @@ interface GameStore {
   reason: (letterId: string, reason: string) => void;
   stamp: (letterId: string, d: Decision) => void;
   advance: () => void;
+  /** The morning papers are put away; work begins. */
+  readMorning: () => void;
   /** Close the day's ledger: the Şube reckons the day into the purse. */
   closeLedger: () => void;
   /** Pay the chosen evening costs and purchases (ids) and end the day. */
@@ -67,6 +69,7 @@ export const useGame = create<GameStore>()(
       reason: (id, r) => set((g) => ({ state: setReason(g.state, id, r) })),
       stamp: (id, d) => set((g) => ({ state: decide(g.state, id, d) })),
       advance: () => set((g) => ({ state: advancePhase(g.state) })),
+      readMorning: () => set((g) => ({ state: readMorning(g.state) })),
       closeLedger: () => set((g) => ({ state: closeLedger(g.state, getLetter) })),
       finishEvening: (paid) => set((g) => ({ state: finishEvening(g.state, paid) })),
       nextDay: () =>

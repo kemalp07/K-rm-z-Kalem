@@ -25,6 +25,8 @@ export interface DayState {
   owned?: string[];
   /** Things that happened off the letters: "d2:unpaid:gaz", "d3:paid:kira"… They are flags too. */
   events?: string[];
+  /** The morning's papers have been read and put away. */
+  morningDone?: boolean;
   /** Today's reckoning, once the ledger is closed. */
   account?: Account;
 }
@@ -48,6 +50,7 @@ export function startDay(day: Day, previous?: DayState, stack?: string[]): DaySt
     warnings: previous?.warnings ?? 0,
     owned: previous?.owned ?? [],
     events: previous?.events ?? [],
+    morningDone: false,
   };
 }
 
@@ -115,9 +118,14 @@ export function closeLedger(s: DayState, letterOf: (id: string) => Letter | unde
   });
   const account = reckon(decided, economy);
   const warnings = (s.warnings ?? 0) + account.warnings;
+  // How the day went, for the director's note next morning.
+  const docked = account.lines.some((l) => l.amount < 0);
+  const rewarded = account.lines.some((l) => l.kind === 'spyCaught');
+  const verdict = [account.warnings ? 'warned' : '', rewarded ? 'rewarded' : '', docked ? 'docked' : '', !docked ? 'clean' : ''].filter(Boolean);
   return {
     ...s,
     account,
+    events: [...(s.events ?? []), ...verdict.map((v) => `d${s.day}:${v}`)],
     purse: purseOf(s) + account.total,
     warnings,
     phase: warnings >= economy.warningsToDismissal ? 'dismissed' : 'evening',
@@ -126,7 +134,7 @@ export function closeLedger(s: DayState, letterOf: (id: string) => Letter | unde
 
 /** What is due this evening and what is for sale. */
 export function eveningBill(s: DayState) {
-  return { expenses: expensesFor(s.day, economy), shop: shopFor(s.day, s.owned ?? [], economy) };
+  return { expenses: expensesFor(s.day, economy, flagsOf(s)), shop: shopFor(s.day, s.owned ?? [], economy) };
 }
 
 /**
@@ -142,6 +150,8 @@ export function finishEvening(s: DayState, paid: readonly string[]): DayState {
   const bought = shop.filter((x) => paid.includes(x.id)).map((x) => x.id);
   return { ...s, purse: purseOf(s) - cost, events, owned: [...(s.owned ?? []), ...bought], phase: 'continued' };
 }
+
+export const readMorning = (s: DayState): DayState => ({ ...s, morningDone: true });
 
 export function flagsOf(s: DayState): Set<string> {
   const flags = collectFlags(s.letters);
