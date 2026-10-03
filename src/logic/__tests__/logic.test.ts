@@ -3,7 +3,7 @@ import type { Day, Letter } from '../../content/types';
 import { matches } from '../conditions';
 import { resolveSegments } from '../variants';
 import { pickOutcome } from '../outcomes';
-import { advancePhase, addMark, clearCensor, decide, flagsOf, openEnvelope, setReason, startDay } from '../dayFlow';
+import { advancePhase, addMark, clearCensor, closeLedger, decide, finishEvening, flagsOf, openEnvelope, setReason, startDay } from '../dayFlow';
 import { flagsForLetter, emptyProgress } from '../flags';
 
 const day = day01 as Day;
@@ -89,7 +89,7 @@ describe('flags and outcomes', () => {
 });
 
 describe('day flow', () => {
-  test('a full day runs desk → dusk → ledger → continued', () => {
+  test('a full day runs desk → dusk → ledger → evening → continued', () => {
     let s = startDay(day);
     expect(s.stack).toHaveLength(5);
     for (const id of [...s.stack]) {
@@ -101,7 +101,9 @@ describe('day flow', () => {
     expect(s.done).toHaveLength(5);
     s = advancePhase(s);
     expect(s.phase).toBe('ledger');
-    s = advancePhase(s);
+    s = closeLedger(s, (id) => day.letters.find((l) => l.id === id));
+    expect(s.phase).toBe('evening');
+    s = finishEvening(s, []);
     expect(s.phase).toBe('continued');
   });
 

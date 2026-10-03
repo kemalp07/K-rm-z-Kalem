@@ -9,8 +9,11 @@ import * as Haptics from 'expo-haptics';
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY } from '../content/loader';
 import type { Decision, HelpId } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
-import { flagsOf } from '../logic/dayFlow';
-import { DEFAULT_REVEAL, heatTarget, stepHeat } from '../logic/reveal';
+import { eveningBill, flagsOf, purseOf } from '../logic/dayFlow';
+import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
+
+/** The market's thick beeswax candle: its heat reaches further and works faster. */
+const STRONG_CANDLE: RevealTuning = { ...DEFAULT_REVEAL, near: 40, far: 175, rise: 0.8 };
 import { resolveSegments } from '../logic/variants';
 import { useGame } from '../state/store';
 import { loopSfx, playSfx } from '../sfx/sfx';
@@ -25,6 +28,7 @@ import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
 import { postmarkOf } from '../content/postmark';
 import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
+import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
 import { layoutLetter, markTargets, type LaidSegment } from '../objects/letterLayout';
@@ -175,6 +179,8 @@ export function DeskScreen() {
   const stampY = useSharedValue(0);
   const imprintIn = useSharedValue(0);
   const slipIn = useSharedValue(0);
+  const eveningIn = useSharedValue(state.phase === 'evening' ? 1 : 0);
+  const dismissedIn = useSharedValue(state.phase === 'dismissed' ? 1 : 0);
   const helpIn = useSharedValue(0);
   const eraserRub = useSharedValue(0);
   const eraserLift = useSharedValue(0);
@@ -188,11 +194,18 @@ export function DeskScreen() {
   const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
+  /** Evening costs and purchases ticked so far; all due costs start ticked. */
+  const [paid, setPaid] = useState<string[]>(() => eveningBill(state).expenses.map((e) => e.id));
   /** A DURDUR or İSTİHBARAT stamp waits on its reason slip before the letter leaves. */
   const [slip, setSlip] = useState<{ id: string; d: Decision; chosen: string | null } | null>(null);
   const reasons = useMemo(() => slipReasons(state.day), [state.day]);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
   const hasCandle = hasTool('candle', state.day);
+  const lowOil = (state.events ?? []).includes(`d${state.day - 1}:unpaid:gaz`);
+  // Bought at the market: a wider, sharper glass and a thick beeswax candle.
+  const lensK = (state.owned ?? []).includes('buyutec') ? 1.35 : 1;
+  const lensZoom = lensK > 1 ? 2.4 : 1.9;
+  const reveal = (state.owned ?? []).includes('mum') ? STRONG_CANDLE : DEFAULT_REVEAL;
   const hasMagnifier = hasTool('magnifier', state.day);
   // A tool's note lies on the desk only once the tool does.
   const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : true));
@@ -236,7 +249,10 @@ export function DeskScreen() {
     let timer: ReturnType<typeof setTimeout> | undefined;
     switch (state.phase) {
       case 'desk':
-        lampLevel.value = withTiming(1, { duration: 1400, easing: GLIDE });
+        // No oil bought last night: the lamp burns low all day.
+        lampLevel.value = withTiming(lowOil ? 0.62 : 1, { duration: 1400, easing: GLIDE });
+        eveningIn.value = 0;
+        dismissedIn.value = 0;
         ledgerY.value = 640;
         continueOpacity.value = withTiming(0, { duration: 900, easing: GLIDE });
         break;
@@ -250,7 +266,19 @@ export function DeskScreen() {
         playSfx('paper', 0.7);
         ledgerY.value = withTiming(0, { duration: T.ledger, easing: SETTLE });
         break;
+      case 'evening':
+        setPaid(eveningBill(useGame.getState().state).expenses.map((e) => e.id));
+        ledgerY.value = withTiming(640, { duration: 600, easing: GLIDE });
+        eveningIn.value = withTiming(1, { duration: 700, easing: SETTLE });
+        playSfx('paper', 0.6);
+        break;
+      case 'dismissed':
+        ledgerY.value = withTiming(640, { duration: 600, easing: GLIDE });
+        lampLevel.value = withTiming(0.04, { duration: 2000, easing: GLIDE });
+        dismissedIn.value = withTiming(1, { duration: 2000, easing: GLIDE });
+        break;
       case 'continued':
+        eveningIn.value = withTiming(0, { duration: 500, easing: GLIDE });
         lampLevel.value = withTiming(0.04, { duration: 2000, easing: GLIDE });
         continueOpacity.value = withTiming(1, { duration: 2000, easing: GLIDE });
         break;
@@ -258,7 +286,7 @@ export function DeskScreen() {
     return () => {
       if (timer) clearTimeout(timer);
     };
-  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity]);
+  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn, lowOil]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // --- candle heat: a slow 20 Hz tick on the JS side --------
   useEffect(() => {
@@ -276,13 +304,13 @@ export function DeskScreen() {
           const local = toLocalFrame(c, s, s.tilt, s.skew);
           const d = Math.min(...s.lines.map((l) => distToRect(local, l)));
           const before = next[s.seg.id] ?? 0;
-          const after = stepHeat(before, heatTarget(d), TICK_MS / 1000);
+          const after = stepHeat(before, heatTarget(d, reveal), TICK_MS / 1000, reveal);
           if (after !== before) {
             next[s.seg.id] = after;
             changed = true;
           }
           const p = useGame.getState().state.letters[id];
-          if (after >= DEFAULT_REVEAL.readAt && p && !p.revealed.includes(s.seg.id)) {
+          if (after >= reveal.readAt && p && !p.revealed.includes(s.seg.id)) {
             useGame.getState().reveal(id, s.seg.id);
             haptic(Haptics.ImpactFeedbackStyle.Soft);
           }
@@ -478,6 +506,22 @@ export function DeskScreen() {
       drag.current = { kind: 'ledger' };
       return;
     }
+    if (s.phase === 'evening') {
+      drag.current = null;
+      const ev = eveningLayout(s);
+      const row = ev.rows.find((x) => inRect(p, x.rect, 3));
+      if (row) {
+        setPaid((cur) => (cur.includes(row.id) ? cur.filter((x) => x !== row.id) : [...cur, row.id]));
+        playSfx('pen', 0.3);
+      } else if (inRect(p, ev.button, 6)) {
+        g.finishEvening(paid);
+      }
+      return;
+    }
+    if (s.phase === 'dismissed') {
+      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : null;
+      return;
+    }
     if (s.phase === 'continued') {
       drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady && inRect(p, NEXT_RECT, 10) ? { kind: 'next' } : null;
       return;
@@ -496,8 +540,8 @@ export function DeskScreen() {
     }
 
     const lens = { x: magX.value, y: magY.value };
-    const handleEnd = { x: lens.x + MAG_HANDLE_END.x, y: lens.y + MAG_HANDLE_END.y };
-    if (hasMagnifier && (dist(p, lens) < LENS_R + 6 || distToSegment(p, lens, handleEnd) < 14)) {
+    const handleEnd = { x: lens.x + MAG_HANDLE_END.x * lensK, y: lens.y + MAG_HANDLE_END.y * lensK };
+    if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
       if (introduce('magnifier')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
@@ -677,7 +721,7 @@ export function DeskScreen() {
     const g = useGame.getState();
     switch (d.kind) {
       case 'ledger':
-        if (inRect(p, LAYOUT.ledger)) g.advance();
+        if (inRect(p, LAYOUT.ledger)) g.closeLedger();
         break;
       case 'next':
         if (inRect(p, NEXT_RECT, 10)) g.nextDay();
@@ -796,15 +840,15 @@ export function DeskScreen() {
   const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value));
   const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
-    return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R - 2).build();
-  });
+    return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R * lensK - 2).build();
+  }, [lensK]);
   const lensTransform = useDerivedValue(() => [
     { translateX: magX.value },
     { translateY: magY.value },
-    { scale: 1.9 },
+    { scale: lensZoom },
     { translateX: -magX.value },
     { translateY: -magY.value },
-  ]);
+  ], [lensZoom]);
   const ledgerTransform = useDerivedValue(() => [{ translateY: ledgerY.value }]);
 
   const stackIds = state.stack;
@@ -862,13 +906,13 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   // Split by how often each part changes, so opening a letter redoes only small images.
-  const deskKey = [day.day, showSlips, seenHelp.join(',')].join('|');
+  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0].join('|');
   const desk_ = useBaked(
     <FontsBridge fonts={fonts}>
       <DeskSurface />
       <NightWindow />
       <CalendarLeaf calendar={day.calendar} />
-      <MoneyNote purse={day.purse} />
+      <MoneyNote kurus={purseOf(state)} warnings={state.warnings ?? 0} />
       <BrassPlate rank={desk.rank} />
       <LockedTray />
       {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
@@ -946,10 +990,10 @@ export function DeskScreen() {
                 {letterNode}
                 {cardNode}
               </Group>
-              <Circle cx={magX} cy={magY} r={LENS_R} color="rgba(255,230,190,0.04)" />
+              <Circle cx={magX} cy={magY} r={LENS_R * lensK} color="rgba(255,230,190,0.04)" />
             </Group>}
             {state.phase === 'desk' && <Eraser rub={eraserRub} lift={eraserLift} />}
-            {hasMagnifier && <MagnifierFrame x={magX} y={magY} lift={magLift} />}
+            {hasMagnifier && <MagnifierFrame x={magX} y={magY} lift={magLift} scale={lensK} />}
             {hasCandle && <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />}
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
             {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
@@ -957,9 +1001,11 @@ export function DeskScreen() {
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
-            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} />
+            <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
+            {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} />}
+            {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
           </Group>
         </FontsBridge>

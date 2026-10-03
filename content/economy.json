@@ -1,0 +1,39 @@
+{
+  "start": 37,
+  "wage": 15,
+  "warningsToDismissal": 3,
+  "penalties": {
+    "sensitiveMissed": { "amount": -2, "label": "Karalanmadan geçen malûmat — {who}" },
+    "inkMissed": { "amount": -3, "label": "Görülmeyen gizli satır — {who}" },
+    "forgeryMissed": { "amount": -5, "label": "Yakalanmayan sahte evrak — {who}", "warning": true },
+    "wrongMark": { "amount": -1, "label": "Yersiz işaret — {who}" },
+    "wrongReason": { "amount": -2, "label": "Yanlış gerekçe — {who}" },
+    "innocentStopped": { "amount": -2, "label": "Zararsız mektup alıkonuldu — {who}" },
+    "spyCaught": { "amount": 5, "label": "İkramiye: şüpheli evrak yakalandı — {who}" }
+  },
+  "expenses": [
+    { "id": "ekmek", "label": "Evin ekmeği", "cost": 5 },
+    { "id": "gaz", "label": "Lamba için gaz yağı", "cost": 3, "note": "Alınmazsa yarın lamba kısık yanar." },
+    { "id": "kira", "label": "Ev kirası (haftalık)", "cost": 20, "days": [4, 9, 14] }
+  ],
+  "shop": [
+    { "id": "buyutec", "label": "Bileme camlı büyüteç", "note": "Daha geniş, daha net görür.", "cost": 25, "day": 1 },
+    { "id": "mum", "label": "Kalın balmumu mum", "note": "Isısı daha uzağa vurur, mürekkep çabuk belirir.", "cost": 12, "day": 2 }
+  ],
+  "text": {
+    "title": "Akşam Hesabı",
+    "wage": "Yevmiye",
+    "today": "Bugünün hesabı",
+    "warning": "İhtar",
+    "purse": "Kesede",
+    "spend": "Masraflar",
+    "shop": "Çarşıdan",
+    "done": "Akşamı bitir",
+    "owned": "alındı",
+    "short": "Para yetmiyor",
+    "purseNote": "Kesede — {n} kuruş",
+    "warningsNote": "{n} ihtar",
+    "dismissedTitle": "Azil",
+    "dismissed": "Şube Müdürü üçüncü ihtardan sonra seni memuriyetten azletti. Masana başka bir kâtip oturacak."
+  }
+}

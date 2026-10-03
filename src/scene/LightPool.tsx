@@ -15,6 +15,8 @@ interface Props {
   dimmed: boolean;
   /** Whether there is a candle on the desk yet. */
   candle: boolean;
+  /** How far the candle's warm circle reaches. */
+  candleReach: number;
 }
 
 // The pool is centred below-left of the lamp: that is where the chimney throws its light.
@@ -26,13 +28,13 @@ const GLOW_C = vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125);
  * dark is laid over it with a hole where the lamp reaches. A warm screen pass
  * on top gives the paper its yellow.
  */
-export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed, candle }: Props) {
+export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed, candle, candleReach }: Props) {
   const radius = useDerivedValue(() => 640 * (0.45 + 0.55 * level.value) * (0.985 + (flicker.value - 1) * 0.9));
   const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
   const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
   const night = useDerivedValue(() => (1 - level.value) * 0.55);
   const candleC = useDerivedValue(() => vec(candleX.value + candleOffset.dx, candleY.value + candleOffset.dy));
-  const candleR = useDerivedValue(() => 120 * candleFlicker.value);
+  const candleR = useDerivedValue(() => candleReach * candleFlicker.value);
   const center = vec(POOL.x, POOL.y);
 
   return (

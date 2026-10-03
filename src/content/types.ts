@@ -145,7 +145,6 @@ export interface Thread {
 export interface Day {
   day: number;
   calendar: { dayOfMonth: string; month: string; year: string; weekday: string; rumi: string };
-  purse: { kurus: number; line: string };
   /** Order envelopes sit in the stack, top first. */
   letters: Letter[];
   /** How many one-off side letters (content/pool_letters.json) join the day's stack. */
@@ -153,6 +152,21 @@ export interface Day {
 }
 
 export type Tool = 'pen' | 'magnifier' | 'candle';
+
+export type PenaltyKind = 'sensitiveMissed' | 'inkMissed' | 'forgeryMissed' | 'wrongMark' | 'wrongReason' | 'innocentStopped' | 'spyCaught';
+
+/** content/economy.json: the clerk's pay, what the Şube docks, what the house costs. */
+export interface Economy {
+  start: number;
+  wage: number;
+  warningsToDismissal: number;
+  penalties: Record<PenaltyKind, { amount: number; label: string; warning?: boolean }>;
+  /** Paid in the evening; `days` limits one to those days (rent). */
+  expenses: { id: string; label: string; cost: number; note?: string; days?: number[] }[];
+  /** Bought once; better tools from the next day on. */
+  shop: { id: string; label: string; note: string; cost: number; day: number }[];
+  text: Record<string, string>;
+}
 
 export interface Desk {
   rank: { name: string; title: string };

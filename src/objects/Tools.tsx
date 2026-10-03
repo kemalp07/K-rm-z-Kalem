@@ -275,9 +275,9 @@ const MAG = (() => {
 })();
 
 /** Frame and handle only; the lens content is drawn separately by the screen. */
-export function MagnifierFrame({ x, y, lift }: Pose & { lift: SharedValue<number> }) {
+export function MagnifierFrame({ x, y, lift, scale = 1 }: Pose & { lift: SharedValue<number>; scale?: number }) {
   const { R } = MAG;
-  const transform = useDerivedValue(() => [{ translateX: x.value }, { translateY: y.value }]);
+  const transform = useDerivedValue(() => [{ translateX: x.value }, { translateY: y.value }, { scale }]);
   const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -5 - lift.value * 14 }, { translateY: 7 + lift.value * 18 }]);
   const shadowBlur = useDerivedValue(() => 4 + lift.value * 5);
   return (

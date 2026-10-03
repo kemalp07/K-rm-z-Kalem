@@ -1,7 +1,11 @@
-import type { Day, Decision } from '../content/types';
+import economyJson from '../../content/economy.json';
+import type { Day, Decision, Economy, Letter } from '../content/types';
+import { expensesFor, reckon, shopFor, type Account } from './account';
 import { collectFlags, emptyProgress, type LetterProgress } from './flags';
 
-export type Phase = 'desk' | 'dusk' | 'ledger' | 'continued';
+export type Phase = 'desk' | 'dusk' | 'ledger' | 'evening' | 'continued' | 'dismissed';
+
+export const economy = economyJson as Economy;
 
 export interface DayState {
   day: number;
@@ -13,7 +17,19 @@ export interface DayState {
   /** Decided letters in the order they were stamped. */
   done: string[];
   letters: Record<string, LetterProgress>;
+  /** Kuruş in the clerk's purse. Absent in saves from before money: the starting sum. */
+  purse?: number;
+  /** Warnings from the Şube; enough of them and the clerk is dismissed. */
+  warnings?: number;
+  /** Better tools bought at the market (economy.json `shop` ids). */
+  owned?: string[];
+  /** Things that happened off the letters: "d2:unpaid:gaz", "d3:paid:kira"… They are flags too. */
+  events?: string[];
+  /** Today's reckoning, once the ledger is closed. */
+  account?: Account;
 }
+
+export const purseOf = (s: DayState) => s.purse ?? economy.start;
 
 /** `stack` overrides the order (top first), e.g. with side letters mixed in. */
 export function startDay(day: Day, previous?: DayState, stack?: string[]): DayState {
@@ -28,6 +44,10 @@ export function startDay(day: Day, previous?: DayState, stack?: string[]): DaySt
     stack: [...held, ...(stack ?? day.letters.map((l) => l.id))],
     done: [],
     letters,
+    purse: previous ? purseOf(previous) : economy.start,
+    warnings: previous?.warnings ?? 0,
+    owned: previous?.owned ?? [],
+    events: previous?.events ?? [],
   };
 }
 
@@ -81,10 +101,50 @@ export function decide(s: DayState, id: string, decision: Decision): DayState {
 }
 
 export function advancePhase(s: DayState): DayState {
-  const next: Record<Phase, Phase> = { desk: 'desk', dusk: 'ledger', ledger: 'continued', continued: 'continued' };
+  const next: Record<Phase, Phase> = { desk: 'desk', dusk: 'ledger', ledger: 'ledger', evening: 'evening', continued: 'continued', dismissed: 'dismissed' };
   return { ...s, phase: next[s.phase] };
 }
 
+/** The ledger is closed: the day is reckoned, paid into the purse, and warnings counted. */
+export function closeLedger(s: DayState, letterOf: (id: string) => Letter | undefined): DayState {
+  if (s.phase !== 'ledger') return s;
+  const decided = s.done.flatMap((id) => {
+    const letter = letterOf(id);
+    const p = s.letters[id];
+    return letter && p ? [{ letter, p }] : [];
+  });
+  const account = reckon(decided, economy);
+  const warnings = (s.warnings ?? 0) + account.warnings;
+  return {
+    ...s,
+    account,
+    purse: purseOf(s) + account.total,
+    warnings,
+    phase: warnings >= economy.warningsToDismissal ? 'dismissed' : 'evening',
+  };
+}
+
+/** What is due this evening and what is for sale. */
+export function eveningBill(s: DayState) {
+  return { expenses: expensesFor(s.day, economy), shop: shopFor(s.day, s.owned ?? [], economy) };
+}
+
+/**
+ * The evening's choices: `paid` holds expense and shop ids. Unpaid expenses are remembered
+ * ("d3:unpaid:gaz") and shape the next days; refused if the purse cannot cover them.
+ */
+export function finishEvening(s: DayState, paid: readonly string[]): DayState {
+  if (s.phase !== 'evening') return s;
+  const { expenses, shop } = eveningBill(s);
+  const cost = [...expenses, ...shop].filter((x) => paid.includes(x.id)).reduce((a, x) => a + x.cost, 0);
+  if (cost > purseOf(s)) return s;
+  const events = [...(s.events ?? []), ...expenses.map((e) => `d${s.day}:${paid.includes(e.id) ? 'paid' : 'unpaid'}:${e.id}`)];
+  const bought = shop.filter((x) => paid.includes(x.id)).map((x) => x.id);
+  return { ...s, purse: purseOf(s) - cost, events, owned: [...(s.owned ?? []), ...bought], phase: 'continued' };
+}
+
 export function flagsOf(s: DayState): Set<string> {
-  return collectFlags(s.letters);
+  const flags = collectFlags(s.letters);
+  for (const e of s.events ?? []) flags.add(e);
+  return flags;
 }

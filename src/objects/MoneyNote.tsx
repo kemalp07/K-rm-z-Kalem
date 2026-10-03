@@ -1,18 +1,18 @@
 import { useMemo } from 'react';
 import { Circle, FontWeight, Group, Path, RadialGradient, Shadow, vec } from '@shopify/react-native-skia';
 import { ArtSlot } from '../art/ArtSlot';
-import type { Day } from '../content/types';
+import { economy } from '../logic/dayFlow';
 import { Para } from '../scene/Para';
 import { roughRect } from '../scene/rough';
 import { LAYOUT } from '../scene/world';
 
 /** The clerk's own scrap of reckoning, with what is left in coin beside it. */
-export function MoneyNote({ purse }: { purse: Day['purse'] }) {
+export function MoneyNote({ kurus, warnings }: { kurus: number; warnings: number }) {
   const r = LAYOUT.purse;
   const shape = useMemo(() => roughRect(r, 'purse-note', 1.1, true), [r]);
   // Coins: a mecidiye-sized silver and a few coppers. Count follows the purse loosely.
   const coins = useMemo(() => {
-    const n = Math.min(5, Math.max(1, Math.round(purse.kurus / 10)));
+    const n = Math.min(5, Math.max(kurus > 0 ? 1 : 0, Math.round(kurus / 10)));
     const spots = [
       { dx: -24, dy: 62, r: 13, silver: true },
       { dx: -2, dy: 84, r: 9, silver: false },
@@ -21,7 +21,7 @@ export function MoneyNote({ purse }: { purse: Day['purse'] }) {
       { dx: 38, dy: 86, r: 8, silver: false },
     ];
     return spots.slice(0, n);
-  }, [purse.kurus]);
+  }, [kurus]);
 
   return (
     <Group>
@@ -31,7 +31,7 @@ export function MoneyNote({ purse }: { purse: Day['purse'] }) {
             <Shadow dx={-3} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
           </Path>
         </ArtSlot>
-        <Para text={purse.line} x={r.x + 16} y={r.y + 14} width={r.w - 26} family="Caveat" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
+        <Para text={[economy.text.purseNote!.replace('{n}', String(kurus)), warnings ? economy.text.warningsNote!.replace('{n}', String(warnings)) : ''].filter(Boolean).join('\n')} x={r.x + 16} y={r.y + 14} width={r.w - 26} family="Caveat" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
       </Group>
       {coins.map((c, i) => (
         <ArtSlot key={i} slot={c.silver ? 'coin_silver' : 'coin'} shadow rect={{ x: r.x + c.dx - c.r * 1.2, y: r.y + c.dy - c.r * 1.2, w: c.r * 2.4, h: c.r * 2.4 }}>
