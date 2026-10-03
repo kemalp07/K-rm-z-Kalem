@@ -54,6 +54,8 @@ export const LAYOUT = {
   bookletOpen: { x: 137, y: 14, w: 726, h: 530 },
   /** The reason slip that comes with DURDUR and İSTİHBARAT, beside the letter. */
   reasonSlip: { x: 668, y: 186, w: 206 },
+  /** The opened envelope, put aside at the bottom left while its letter is read. */
+  openedEnvelope: { x: 50, y: 468, w: 104, h: 73, scale: 0.62, rot: -0.05 },
   /** The opened sheet, centred over the desk. */
   helpSheet: { x: 280, y: 60, w: 440, h: 430 },
   /** Rubber eraser, beside the pencil. */

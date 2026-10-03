@@ -104,6 +104,8 @@ export interface Letter {
   recipient: string;
   /** Where it was posted, as written on the envelope. */
   from: string;
+  /** The sender's address on the back flap, when it differs from `from` (a forger's slip, say). */
+  fromAddress?: string;
   to: string;
   direction: Direction;
   kind: LetterKind;

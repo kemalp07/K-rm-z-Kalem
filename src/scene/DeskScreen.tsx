@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useWindowDimensions } from 'react-native';
-import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
+import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d, Rect } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
@@ -21,7 +21,9 @@ import { loopSfx, playSfx } from '../sfx/sfx';
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
 import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
-import { EnvelopeAddress, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
+import { Para } from './Para';
+import { t } from '../content/strings';
+import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
@@ -68,6 +70,8 @@ type Drag =
   | { kind: 'next' };
 
 const PEN_IN_HAND_ANGLE = 0.5;
+/** How large the turned-over envelope is shown. */
+const ENV_ZOOM = 2.3;
 const STAMP_HOLD_MS = 450;
 /** How long a carried stamp must rest over the paper before it starts to come down. */
 const STAMP_REST_MS = 140;
@@ -102,7 +106,7 @@ function smoothPath(pts: Point[]): SkPath {
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
 /** Cheap content fingerprint for cache keys. */
-const PILE_REGION = { x: LAYOUT.stack.x - 50, y: LAYOUT.stack.y - 50, w: LAYOUT.stack.w + 100, h: LAYOUT.stack.h + 100 };
+const PILE_REGION = { x: LAYOUT.stack.x - 50, y: LAYOUT.stack.y - 50, w: LAYOUT.stack.w + 100, h: WORLD.h - LAYOUT.stack.y + 50 };
 const STAMPS_REGION = { x: LAYOUT.stamps.x - 24, y: LAYOUT.stamps.y - 20, w: LAYOUT.stamps.w + 48, h: LAYOUT.stamps.h + 40 };
 
 const hash = (parts: string[]) => {
@@ -194,6 +198,9 @@ export function DeskScreen() {
   const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
   const [spread, setSpread] = useState(0);
+  /** The opened envelope turned over in the hand: front and back, larger. */
+  const [envView, setEnvView] = useState(false);
+  const envViewIn = useSharedValue(0);
   /** Evening costs and purchases ticked so far; all due costs start ticked. */
   const [paid, setPaid] = useState<string[]>(() => eveningBill(state).expenses.map((e) => e.id));
   /** A DURDUR or İSTİHBARAT stamp waits on its reason slip before the letter leaves. */
@@ -466,6 +473,13 @@ export function DeskScreen() {
     const g = useGame.getState();
     const s = g.state;
 
+    if (envView) {
+      drag.current = null;
+      envViewIn.value = withTiming(0, { duration: 300, easing: GLIDE });
+      setTimeout(() => setEnvView(false), 300);
+      return;
+    }
+
     if (help) {
       drag.current = null;
       // The booklet turns a page when its edge is tapped; anywhere else closes it.
@@ -577,6 +591,14 @@ export function DeskScreen() {
       cardRot.value = withTiming(0.02, { duration: T.lift + 80, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       playSfx('paper', 0.3);
+      return;
+    }
+
+    const oe = LAYOUT.openedEnvelope;
+    if (s.open && openLetter?.kind !== 'paket' && inRect(p, oe, 4) && !penInHand.current) {
+      setEnvView(true);
+      envViewIn.value = withTiming(1, { duration: 450, easing: SETTLE });
+      playSfx('paper', 0.4);
       return;
     }
 
@@ -941,15 +963,22 @@ export function DeskScreen() {
           const pose = stackPose(l, i, LAYOUT.stack);
           return (
             <Group key={id} transform={[{ translateX: pose.x }, { translateY: pose.y }, { rotate: pose.angle }]}>
-              <EnvelopeBody letter={l} />
+              <EnvelopeBody letter={l} postmark={postmarkOf(l, day.calendar.rumi)} />
               <EnvelopeAddress letter={l} />
             </Group>
           );
         })}
+      {/* The envelope of the letter being read, put aside face up */}
+      {openLetter && openLetter.kind !== 'paket' && (
+        <Group transform={[{ translateX: LAYOUT.openedEnvelope.x }, { translateY: LAYOUT.openedEnvelope.y }, { rotate: LAYOUT.openedEnvelope.rot }, { scale: LAYOUT.openedEnvelope.scale }]}>
+          <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
+          <EnvelopeAddress letter={openLetter} />
+        </Group>
+      )}
     </FontsBridge>,
     PILE_REGION,
     fit.scale,
-    `pile:${stackIds.join(',')}|${dragId}`,
+    `pile:${stackIds.join(',')}|${dragId}|${state.open}`,
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
@@ -976,7 +1005,7 @@ export function DeskScreen() {
             {draggedLetter && (
               <Group transform={envTransform}>
                 <LiftShadow {...envelopeSize(draggedLetter)} />
-                <EnvelopeBody letter={draggedLetter} />
+                <EnvelopeBody letter={draggedLetter} postmark={postmarkOf(draggedLetter, day.calendar.rumi)} />
                 <EnvelopeAddress letter={draggedLetter} />
               </Group>
             )}
@@ -1003,6 +1032,20 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
+            {envView && openLetter && (
+              <Fade opacity={envViewIn}>
+                <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="rgba(5,4,3,0.55)" />
+                {/* Front on the left, back on the right, as if turned over in the hand */}
+                <Group transform={[{ translateX: WORLD.w / 2 - envelopeSize(openLetter).w * ENV_ZOOM - 16 }, { translateY: 150 }, { scale: ENV_ZOOM }]}>
+                  <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
+                  <EnvelopeAddress letter={openLetter} />
+                </Group>
+                <Group transform={[{ translateX: WORLD.w / 2 + 16 }, { translateY: 150 }, { scale: ENV_ZOOM }]}>
+                  <EnvelopeBack letter={openLetter} />
+                </Group>
+                <Para text={t('envelope.close')} x={0} y={150 + envelopeSize(openLetter).h * ENV_ZOOM + 24} width={WORLD.w} family="Caveat" size={16} color="rgba(232,218,190,0.75)" align="center" />
+              </Fade>
+            )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
