@@ -9,9 +9,9 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 
 | Gün | Rumi | Frenk | Gelen | Cephede / şehirde |
 |---|---|---|---|---|
-| 1 | 5 Mayıs 1331, Salı | 18 Mayıs | Kalem, Talimatname, mühür kartı | Büyük taarruz hazırlığı |
-| 2 | 7 Mayıs, Perşembe | 20 Mayıs | Büyüteç | 6 Mayıs gecesi taarruzu: ağır kayıp |
-| 3 | 9 Mayıs, Cumartesi | 22 Mayıs | Mum (kâğıdın her yerinde) | |
+| 1 | 5 Mayıs 1331, Salı | 18 Mayıs | Kalem, büyüteç, Talimatname, numune kartı | Büyük taarruz hazırlığı |
+| 2 | 7 Mayıs, Perşembe | 20 Mayıs | Mum (kâğıdın her yerinde) | 6 Mayıs gecesi taarruzu: ağır kayıp |
+| 3 | 9 Mayıs, Cumartesi | 22 Mayıs | — (büyüteç ve mumla karışık) | |
 | 4 | 12 Mayıs, Salı | 25 Mayıs | Sayfa 3, 4, 8 (posta yolu, damga, adres) | 11 Mayıs ölü gömme mütarekesi; İngiliz denizaltısı Dersaadet önünde |
 | 5 | 14 Mayıs, Perşembe | 27 Mayıs | Buhar çaydanlığı, pul sayfası | Triumph ve Majestic zırhlıları batırıldı |
 | 6 | 17 Mayıs, Pazar | 30 Mayıs | — | |
@@ -49,14 +49,14 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 ### İmzasız ağ (her yeni aletin asıl sınandığı hat)
 - **Kaynak:** Levazım Kâtibi Halil Efendi. İkmal kayıklarının gün ve saatini sızdırıyor.
 - **Posta kutusu:** Galata'da olmayan "Şark Ticaret Kumpanyası".
-- **Cephedeki aracı:** Maydos menzil postanesinde memur Rasim Efendi. Cepheden gelen askerlerin mektuplarına, onlar bilmeden, limon suyuyla satır ekliyor. İlk gizli satır, mum geldiği gün (3. gün) Rıza'nın mektubunun kenarında çıkar.
+- **Cephedeki aracı:** Maydos menzil postanesinde memur Rasim Efendi. Cepheden gelen askerlerin mektuplarına, onlar bilmeden, limon suyuyla satır ekliyor. İlk gizli satır, mum geldiği gün (2. gün) Mehmet'in mektubunun kenarında çıkar; 3. gün Rıza'nın imzasının altında bir tane daha.
 - Ağ, oyuncunun yakaladıklarına göre yöntem değiştirir. Mum mürekkebi yakalanırsa kimyasal mürekkebe geçer; kumpanya mühürleri yakalanırsa sahte antetli kâğıda geçer.
 
 | Gün | Ağın mektubu | Yakalayan alet ya da sayfa |
 |---|---|---|
-| 1 | Ayna mühürlü kumpanya mektubu | Talimatname, mühür kartı |
-| 2 | Halkada fazla harf ("TİCARRET") | Büyüteç + mühür kartı |
-| 3 | Rıza'nın mektubunun kenar boşluğunda gizli satır | Mum (her yerde) |
+| 1 | Ayna gibi ters kazınmış kumpanya mührü | Büyüteç + numune kartı |
+| 2 | Halkada fazla harf ("TİCARRET"); Mehmet'in mektubunun kenarında gizli satır | Büyüteç, mum |
+| 3 | Rıza'nın imzasının altında gizli satır | Mum (her yerde) |
 | 4 | Sivas'tan diye gelen mektupta İzmir damgası; askerî adreste yer adı | Sayfa 4, 8 |
 | 5 | Halil'e giden zarfta pulun altında yazı | Buhar |
 | 7 | Filigransız "kumpanya" kâğıdı | Işık |
@@ -66,7 +66,7 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 | 15 | Şifreli satır; anahtar gazetenin ilan sütununda | Şifre çarkı |
 
 ## Bedeller ve gazete
-- **3. gün gizli satır kaçarsa** ("salı gecesi · iskele · iki mavna"): 4. gün gazetesinde "Kilitbahir iskelesine gece taarruzu, mavnalardan biri batırıldı" haberi çıkar. Defterde de bir satır olur.
+- **2. gün gizli satır kaçarsa** ("salı gecesi · iskele · iki mavna"): 4. gün (salı gecesinin ertesi) gazetesinde "Kilitbahir iskelesine gece taarruzu, mavnalardan biri batırıldı" haberi çıkar. Defterde de bir satır olur.
 - **Ağın mektupları doğru gerekçeyle istihbarata verilirse:** dosya kabarır. 8. gün Halil Efendi "tebdil-i mekân" ile başka yere alınır, 12. gün tevkif edilir. 15. gün gazetesi: "Bir casus şebekesi meydana çıkarıldı."
 - **Çoğu kaçarsa:** 14. gün iskele yine vurulur, 15. gün Şube'ye müfettiş gelir. Son defterde kâtip hakkında tahkikat açılır.
 - **Aile hatlarında aşırı karalama:** aileler "mektuplarımız kapkara geliyor" diye yazar. Şube ise "fazla gayret" der ve kâtipten memnun kalır. İkisi arasındaki gerilim bilerek bırakıldı.
@@ -79,3 +79,6 @@ Mehmet 74. Alay (Arıburnu), Rıza 88. Alay (Seddülbahir), Mülazım Nuri Efend
 
 ## Not
 - Mühürler ve Takvim sayfaları 1. günde kalıyor: ayna mühür gözle görülür, büyüteç ise 2. gündeki küçük harf hatası için gelir.
+
+## Alet kuralı
+Her alet geldiği günden itibaren kullanılır: o günün mektupları yeni aleti, sonraki günlerinkiler eski ve yeni aletleri birlikte ister. Büyüteç 1. günden masadadır (mühür ve damgalar küçüktür).

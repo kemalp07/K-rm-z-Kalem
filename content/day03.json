@@ -50,9 +50,9 @@
         {
           "id": "s5",
           "kind": "hiddenInk",
-          "text": "salı gecesi · iskele · iki mavna · fener sönük",
+          "text": "çarşamba · erzak iskelesi · fener ikinci",
           "revealBy": "mum",
-          "place": "margin"
+          "place": "foot"
         },
         {
           "id": "s6",
@@ -79,7 +79,7 @@
               "d3_riza:revealed:s5"
             ]
           },
-          "text": "Şube kenardaki satırı okudu. Salı gecesi iskeleye fazladan nöbetçi konacak."
+          "text": "Şube imzanın altındaki satırı okudu. Çarşamba gecesi erzak iskelesine fazladan nöbetçi konacak."
         },
         {
           "when": {
@@ -87,7 +87,7 @@
               "d3_riza:reported"
             ]
           },
-          "text": "Rıza'nın mektubu Şube'ye gitti. Kenarda ne yazdığını kimse bilmiyor; Rıza da bilmiyor."
+          "text": "Rıza'nın mektubu Şube'ye gitti. İmzanın altında ne yazdığını kimse bilmiyor; Rıza da bilmiyor."
         },
         {
           "when": {
@@ -112,7 +112,7 @@
               "d3_riza:revealed:s5"
             ]
           },
-          "text": "Kenardaki satırı gördün ve geçirdin. Mektup Eyüp'e, satır başka birine gidecek."
+          "text": "İmzanın altındaki satırı gördün ve geçirdin. Mektup Eyüp'e, satır başka birine gidecek."
         },
         {
           "when": {
@@ -121,10 +121,10 @@
               "d3_riza:censored:s2"
             ]
           },
-          "text": "Emine kocasının hasta olduğunu bilmeyecek. Kenardaki boşluğa kimse bakmayacak."
+          "text": "Emine kocasının hasta olduğunu bilmeyecek. İmzanın altındaki boşluğa kimse bakmayacak."
         },
         {
-          "text": "Emine mektubu imama okutacak. Kenardaki boşlukta bir şey olduğunu kimse fark etmeyecek."
+          "text": "Emine mektubu imama okutacak. İmzanın altında bir şey olduğunu kimse fark etmeyecek."
         }
       ]
     },

@@ -48,6 +48,13 @@
           "text": "Kumanya iki gündür gelmedi, mataralarda su da azaldı."
         },
         {
+          "id": "s7",
+          "kind": "hiddenInk",
+          "text": "salı gecesi · iskele · iki mavna · fener sönük",
+          "revealBy": "mum",
+          "place": "margin"
+        },
+        {
           "id": "s5",
           "kind": "normal",
           "text": "Ayşe'ye söyleyin, abisi ona bir çakı getirecek."
@@ -67,16 +74,35 @@
       ],
       "reasons": [
         "askeri",
-        "moral"
+        "moral",
+        "gizli"
       ],
       "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:reported",
+              "d2_mehmet:revealed:s7"
+            ]
+          },
+          "text": "Şube kenardaki satırı okudu. Salı gecesi iskeleye fazladan nöbetçi konacak."
+        },
         {
           "when": {
             "all": [
               "d2_mehmet:reported"
             ]
           },
-          "text": "Mehmet'in adı Şube'nin defterine geçti. Mektubunda casusluk yoktu, korku vardı."
+          "text": "Mehmet'in adı Şube'nin defterine geçti. Kenarda ne yazdığını kimse bilmiyor; Mehmet de bilmiyor."
+        },
+        {
+          "when": {
+            "all": [
+              "d2_mehmet:delivered",
+              "d2_mehmet:revealed:s7"
+            ]
+          },
+          "text": "Kenardaki satırı gördün ve geçirdin. Mektup Sivas'a, satır başka birine gidecek."
         },
         {
           "when": {
