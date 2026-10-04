@@ -455,6 +455,35 @@
           ]
         }
       ]
+    },
+    {
+      "id": "zarf_pul",
+      "n": 5.5,
+      "label": "5 (ek)",
+      "day": 5,
+      "title": "ZARF VE PUL",
+      "blocks": [
+        {
+          "t": "p",
+          "text": "Pul altına yazı yazmak casusların usulüdür. Mektup zarfına konur; pul buhar çaydanlığıyla yumuşatılıp kaldırılır."
+        },
+        {
+          "t": "dash",
+          "items": [
+            "Pulun kenarı kabarık ya da kesikse altına bakılır.",
+            "Pul kaldırılınca zamk izinden başka bir şey görülmemelidir.",
+            "Cepheden gelen asker mektubu pulsuzdur; üzerinde \"Sahra Postası · Meccanen\" kaşesi bulunur."
+          ]
+        },
+        {
+          "t": "no",
+          "items": [
+            "Asker mektubunda pul.",
+            "Pul altında yazı ya da işaret.",
+            "Ters yapıştırılmış pul."
+          ]
+        }
+      ]
     }
   ],
   "cards": [

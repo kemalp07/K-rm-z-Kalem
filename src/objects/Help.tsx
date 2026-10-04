@@ -12,7 +12,7 @@ import { Para } from '../scene/Para';
 import { roughRect, shakyLine } from '../scene/rough';
 import { LAYOUT, WORLD } from '../scene/world';
 
-export const HELP_IDS: HelpId[] = ['rules', 'pen', 'candle', 'magnifier', 'stamps'];
+export const HELP_IDS: HelpId[] = ['rules', 'pen', 'candle', 'magnifier', 'stamps', 'kettle'];
 
 /**
  * A folded note on the desk. The Şube's rules are a proper printed sheet; the tool notes

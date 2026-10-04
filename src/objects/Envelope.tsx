@@ -1,38 +1,23 @@
-import { memo, useMemo } from "react";
-import {
-  BlurMask,
-  Circle,
-  FontWeight,
-  Group,
-  Line,
-  Paragraph,
-  Path,
-  Rect,
-  Shadow,
-  vec,
-} from "@shopify/react-native-skia";
-import { makeParagraph, useSceneFonts } from "../scene/fonts";
-import { ArtSlot } from "../art/ArtSlot";
-import type { Letter, Postmark } from "../content/types";
-import { MARK_R, RoundMark } from "./RoundMark";
-import { t } from "../content/strings";
-import { C } from "../scene/palette";
-import { Para } from "../scene/Para";
-import { between, rng } from "../scene/rand";
-import { roughRect, shakyLine } from "../scene/rough";
+import { memo, useMemo } from 'react';
+import { BlurMask, Circle, FontWeight, Group, Line, Paragraph, Path, Rect, Shadow, vec } from '@shopify/react-native-skia';
+import { makeParagraph, useSceneFonts } from '../scene/fonts';
+import { ArtSlot } from '../art/ArtSlot';
+import type { ArtSlotId } from '../art/slots';
+import type { Letter, Postmark, StampKind } from '../content/types';
+import { MARK_R, RoundMark } from './RoundMark';
+import { t } from '../content/strings';
+import { C } from '../scene/palette';
+import { Para } from '../scene/Para';
+import { between, rng } from '../scene/rand';
+import { roughRect, shakyLine } from '../scene/rough';
 
 export const ENVELOPE = { w: 168, h: 117 };
 export const PACKAGE = { w: 176, h: 117 };
 
-export const envelopeSize = (l: Letter) =>
-  l.kind === "paket" ? PACKAGE : ENVELOPE;
+export const envelopeSize = (l: Letter) => (l.kind === 'paket' ? PACKAGE : ENVELOPE);
 
 /** Resting place of the i-th envelope in the stack (0 = top). Seeded, so the pile never reshuffles. */
-export function stackPose(
-  l: Letter,
-  index: number,
-  stack: { x: number; y: number },
-) {
+export function stackPose(l: Letter, index: number, stack: { x: number; y: number }) {
   const r = rng(`pose-${l.id}`);
   return {
     x: stack.x + 12 + between(r, -10, 10) + index * 2,
@@ -41,37 +26,19 @@ export function stackPose(
   };
 }
 
-const STAMP_COLORS = ["#6b3d2a", "#3e5a3a", "#5c4a7a", "#7a6430"];
+const STAMP_COLORS = ['#6b3d2a', '#3e5a3a', '#5c4a7a', '#7a6430'];
 
 /** Drawn with its top-left at (0,0); the caller positions and rotates it. */
-function EnvelopeImpl({
-  letter,
-  postmark,
-}: {
-  letter: Letter;
-  postmark?: Postmark;
-}) {
+function EnvelopeImpl({ letter, postmark, steamed }: { letter: Letter; postmark?: Postmark; steamed?: boolean }) {
   const { w, h } = envelopeSize(letter);
-  const isPackage = letter.kind === "paket";
+  const isPackage = letter.kind === 'paket';
   const r = rng(`env-${letter.id}`);
-  const body = useMemo(
-    () =>
-      roughRect(
-        { x: 0, y: 0, w, h },
-        `envb-${letter.id}`,
-        isPackage ? 1.8 : 0.8,
-      ),
-    [w, h, letter.id, isPackage],
-  );
+  const body = useMemo(() => roughRect({ x: 0, y: 0, w, h }, `envb-${letter.id}`, isPackage ? 1.8 : 0.8), [w, h, letter.id, isPackage]);
   const stampColor = STAMP_COLORS[Math.floor(r() * STAMP_COLORS.length)]!;
-  const fromFront = letter.direction === "cepheden";
+  const fromFront = letter.direction === 'cepheden';
 
   if (isPackage) {
-    const label = roughRect(
-      { x: 30, y: 30, w: 116, h: 54 },
-      `lbl-${letter.id}`,
-      0.8,
-    );
+    const label = roughRect({ x: 30, y: 30, w: 116, h: 54 }, `lbl-${letter.id}`, 0.8);
     return (
       <ArtSlot slot="envelope_package" rect={{ x: 0, y: 0, w, h }} shadow>
         <Group>
@@ -79,32 +46,12 @@ function EnvelopeImpl({
             <Shadow dx={-4} dy={6} blur={6} color="rgba(0,0,0,0.6)" />
           </Path>
           {/* Wrapping folds */}
-          <Path
-            path={shakyLine(0, 18, w, 14, `pf1${letter.id}`, 1)}
-            style="stroke"
-            strokeWidth={1}
-            color="rgba(60,40,20,0.35)"
-          />
-          <Path
-            path={shakyLine(8, h, 22, 0, `pf2${letter.id}`, 1)}
-            style="stroke"
-            strokeWidth={1}
-            color="rgba(60,40,20,0.25)"
-          />
+          <Path path={shakyLine(0, 18, w, 14, `pf1${letter.id}`, 1)} style="stroke" strokeWidth={1} color="rgba(60,40,20,0.35)" />
+          <Path path={shakyLine(8, h, 22, 0, `pf2${letter.id}`, 1)} style="stroke" strokeWidth={1} color="rgba(60,40,20,0.25)" />
           <Path path={label} color="#e8dcc0" />
           {/* String, crossed, knotted off-centre */}
-          <Path
-            path={shakyLine(0, h * 0.55, w, h * 0.5, `ps1${letter.id}`, 0.8)}
-            style="stroke"
-            strokeWidth={2.2}
-            color="#cbb68a"
-          />
-          <Path
-            path={shakyLine(w * 0.38, 0, w * 0.42, h, `ps2${letter.id}`, 0.8)}
-            style="stroke"
-            strokeWidth={2.2}
-            color="#cbb68a"
-          />
+          <Path path={shakyLine(0, h * 0.55, w, h * 0.5, `ps1${letter.id}`, 0.8)} style="stroke" strokeWidth={2.2} color="#cbb68a" />
+          <Path path={shakyLine(w * 0.38, 0, w * 0.42, h, `ps2${letter.id}`, 0.8)} style="stroke" strokeWidth={2.2} color="#cbb68a" />
           <Circle cx={w * 0.4} cy={h * 0.53} r={4} color="#b9a274" />
         </Group>
       </ArtSlot>
@@ -116,28 +63,15 @@ function EnvelopeImpl({
     <>
       <ArtSlot slot="envelope" rect={{ x: 0, y: 0, w, h }} shadow>
         <Group>
-          <Path path={body} color={fromFront ? "#d8cba8" : "#e7dcc2"}>
+          <Path path={body} color={fromFront ? '#d8cba8' : '#e7dcc2'}>
             <Shadow dx={-3} dy={5} blur={5} color="rgba(0,0,0,0.6)" />
           </Path>
           {/* Back flap seam glimpsed through the paper */}
-          <Path
-            path={shakyLine(0, 0, w / 2, h * 0.48, `fl1${letter.id}`, 0.5)}
-            style="stroke"
-            strokeWidth={0.8}
-            color="rgba(90,70,40,0.25)"
-          />
-          <Path
-            path={shakyLine(w / 2, h * 0.48, w, 0, `fl2${letter.id}`, 0.5)}
-            style="stroke"
-            strokeWidth={0.8}
-            color="rgba(90,70,40,0.25)"
-          />
+          <Path path={shakyLine(0, 0, w / 2, h * 0.48, `fl1${letter.id}`, 0.5)} style="stroke" strokeWidth={0.8} color="rgba(90,70,40,0.25)" />
+          <Path path={shakyLine(w / 2, h * 0.48, w, 0, `fl2${letter.id}`, 0.5)} style="stroke" strokeWidth={0.8} color="rgba(90,70,40,0.25)" />
           {/* Postage stamp with perforations; soldiers' letters from the front go free */}
           {!fromFront && (
-            <Group
-              transform={[{ rotate: between(r, -0.08, 0.08) }]}
-              origin={{ x: w - 26, y: 24 }}
-            >
+            <Group transform={[{ rotate: between(r, -0.08, 0.08) }]} origin={{ x: w - 26, y: 24 }}>
               <Rect x={w - 42} y={8} width={30} height={34} color="#f0e6d0" />
               {Array.from({ length: 7 }, (_, i) => (
                 <Group key={i}>
@@ -145,69 +79,69 @@ function EnvelopeImpl({
                   <Circle cx={w - 42 + i * 5} cy={42} r={1.2} color="#d8cba8" />
                 </Group>
               ))}
-              <Rect
-                x={w - 39}
-                y={11}
-                width={24}
-                height={28}
-                color={stampColor}
-                opacity={0.85}
-              />
-              <Circle
-                cx={w - 27}
-                cy={25}
-                r={7}
-                style="stroke"
-                strokeWidth={1}
-                color="rgba(240,230,210,0.6)"
-              />
+              <Rect x={w - 39} y={11} width={24} height={28} color={stampColor} opacity={0.85} />
+              <Circle cx={w - 27} cy={25} r={7} style="stroke" strokeWidth={1} color="rgba(240,230,210,0.6)" />
             </Group>
           )}
           {/* Cancellation: the postmark, and wavy bars across the stamp */}
           <Group opacity={0.55}>
-            {!fromFront &&
-              [0, 5, 10].map((dy) => (
-                <Path
-                  key={dy}
-                  path={shakyLine(
-                    w - 40,
-                    22 + dy,
-                    w - 4,
-                    20 + dy,
-                    `wav${dy}${letter.id}`,
-                    1.4,
-                  )}
-                  style="stroke"
-                  strokeWidth={1}
-                  color="#2a2420"
-                />
-              ))}
+            {!fromFront && [0, 5, 10].map((dy) => <Path key={dy} path={shakyLine(w - 40, 22 + dy, w - 4, 20 + dy, `wav${dy}${letter.id}`, 1.4)} style="stroke" strokeWidth={1} color="#2a2420" />)}
           </Group>
           {fromFront && (
             // Field post: a triangle cut in the corner, as soldiers' letters were folded
-            <Line
-              p1={vec(0, 22)}
-              p2={vec(22, 0)}
-              strokeWidth={1}
-              color="rgba(80,60,30,0.45)"
-            />
+            <Line p1={vec(0, 22)} p2={vec(22, 0)} strokeWidth={1} color="rgba(80,60,30,0.45)" />
           )}
         </Group>
       </ArtSlot>
+      <StampCorner letter={letter} w={w} steamed={!!steamed} />
       {/* The postmark goes on top of the illustration too, half over the stamp corner */}
-      {postmark && (
-        <RoundMark
-          cx={w - 50}
-          cy={34}
-          scale={15 / MARK_R}
-          rotate={pmTilt}
-          color={postmark.color ?? "#1f1a17"}
-          legend={`${postmark.office} ★`}
-          center={postmark.date}
-          opacity={0.72}
-        />
-      )}
+      {postmark && <RoundMark cx={w - 50} cy={34} scale={15 / MARK_R} rotate={pmTilt} color={postmark.color ?? '#1f1a17'} legend={`${postmark.office} ★`} center={postmark.date} opacity={0.72} />}
     </>
+  );
+}
+
+/** Where the stamp sits on the envelope (over the illustration's own). */
+export const STAMP_AT = { dx: -24, cy: 26, w: 44, h: 34 };
+
+export const stampOf = (l: Letter): StampKind | 'none' => l.stamp ?? (l.direction === 'cepheden' ? 'none' : 'kirmizi');
+
+/**
+ * The stamp corner: a real stamp, or the field post's free-post cachet on soldiers'
+ * letters. Steamed, the stamp is lifted aside and whatever was under it shows.
+ */
+function StampCorner({ letter, w, steamed }: { letter: Letter; w: number; steamed: boolean }) {
+  const kind = stampOf(letter);
+  const cx = w + STAMP_AT.dx;
+  const rect = { x: cx - STAMP_AT.w / 2, y: STAMP_AT.cy - STAMP_AT.h / 2, w: STAMP_AT.w, h: STAMP_AT.h };
+  if (kind === 'none') {
+    // Field post: no stamp, a violet cachet instead (and it hides the drawing's printed stamp).
+    return (
+      <Group>
+        <Rect x={rect.x - 2} y={rect.y - 4} width={rect.w + 4} height={rect.h + 8} color="#e5d9bd" />
+        <Rect x={rect.x + 1} y={rect.y + 1} width={rect.w - 2} height={rect.h - 2} style="stroke" strokeWidth={1.1} color="rgba(80,60,120,0.75)" />
+        <Para text={t('envelope.fieldPost')} x={rect.x + 1} y={rect.y + 6} width={rect.w - 2} family="Cormorant" size={7.5} color="rgba(80,60,120,0.85)" weight={FontWeight.Bold} align="center" lineHeight={0.95} />
+      </Group>
+    );
+  }
+  const stamp = (
+    <ArtSlot slot={`pul_${kind}` as ArtSlotId} rect={rect}>
+      <Rect x={rect.x} y={rect.y} width={rect.w} height={rect.h} color="#9c3b2e" />
+    </ArtSlot>
+  );
+  return (
+    <Group>
+      {/* Paper patch: the illustration's printed stamp never shows from under ours */}
+      <Rect x={rect.x + 3} y={rect.y - 1} width={rect.w - 6} height={rect.h + 2} color="#e6dcc4" />
+      {steamed && (
+        <Group>
+          <Rect x={rect.x + 1} y={rect.y + 1} width={rect.w - 2} height={rect.h - 2} color="rgba(190,170,120,0.35)" />
+          {letter.underStamp && <Para text={letter.underStamp} x={rect.x + 2} y={rect.y + 3} width={rect.w - 4} family="Caveat" size={6.5} color="#3a2a1c" align="center" lineHeight={0.9} />}
+        </Group>
+      )}
+      <Group transform={steamed ? [{ translateX: -30 }, { translateY: 26 }, { rotate: -0.5 }] : letter.stampFlipped ? [{ rotate: Math.PI }] : []} origin={{ x: cx, y: STAMP_AT.cy }}>
+        {stamp}
+      </Group>
+    </Group>
   );
 }
 
@@ -215,9 +149,9 @@ function EnvelopeImpl({
 function AddressImpl({ letter }: { letter: Letter }) {
   const { provider } = useSceneFonts();
   const { w, h } = envelopeSize(letter);
-  const isPackage = letter.kind === "paket";
-  const ink = letter.hand === "elegant" ? C.inkBlue : C.ink;
-  const family = letter.hand === "clerical" ? "Cormorant" : "Caveat";
+  const isPackage = letter.kind === 'paket';
+  const ink = letter.hand === 'elegant' ? C.inkBlue : C.ink;
+  const family = letter.hand === 'clerical' ? 'Cormorant' : 'Caveat';
   const left = isPackage ? 36 : 18;
   const top = isPackage ? 34 : h * 0.4;
   const width = w - left - (isPackage ? 30 : 10);
@@ -229,7 +163,7 @@ function AddressImpl({ letter }: { letter: Letter }) {
         letter.recipient,
         {
           family,
-          size: family === "Caveat" ? 17 : 13,
+          size: family === 'Caveat' ? 17 : 13,
           color: ink,
           weight: FontWeight.Medium,
           lineHeight: 0.95,
@@ -241,29 +175,8 @@ function AddressImpl({ letter }: { letter: Letter }) {
   return (
     <Group>
       <Paragraph paragraph={name} x={left} y={top} width={width} />
-      <Para
-        text={letter.to}
-        x={left + 10}
-        y={top + name.getHeight() - 1}
-        width={width - 10}
-        family={family}
-        size={family === "Caveat" ? 14 : 11}
-        color={ink}
-        italic={family === "Cormorant"}
-      />
-      {isPackage && (
-        <Para
-          text={t("envelope.package")}
-          x={4}
-          y={h - 18}
-          width={60}
-          family="Cormorant"
-          size={10}
-          color="rgba(40,25,10,0.7)"
-          weight={FontWeight.Bold}
-          letterSpacing={1.4}
-        />
-      )}
+      <Para text={letter.to} x={left + 10} y={top + name.getHeight() - 1} width={width - 10} family={family} size={family === 'Caveat' ? 14 : 11} color={ink} italic={family === 'Cormorant'} />
+      {isPackage && <Para text={t('envelope.package')} x={4} y={h - 18} width={60} family="Cormorant" size={10} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1.4} />}
     </Group>
   );
 }
@@ -271,69 +184,30 @@ function AddressImpl({ letter }: { letter: Letter }) {
 /** The back of an opened envelope: torn flap, and the sender's name and address. */
 function BackImpl({ letter }: { letter: Letter }) {
   const { w, h } = envelopeSize(letter);
-  const body = useMemo(
-    () => roughRect({ x: 0, y: 0, w, h }, `envk-${letter.id}`, 0.8),
-    [w, h, letter.id],
-  );
-  const ink = letter.hand === "elegant" ? C.inkBlue : C.ink;
-  const family = letter.hand === "clerical" ? "Cormorant" : "Caveat";
-  const fromFront = letter.direction === "cepheden";
+  const body = useMemo(() => roughRect({ x: 0, y: 0, w, h }, `envk-${letter.id}`, 0.8), [w, h, letter.id]);
+  const ink = letter.hand === 'elegant' ? C.inkBlue : C.ink;
+  const family = letter.hand === 'clerical' ? 'Cormorant' : 'Caveat';
+  const fromFront = letter.direction === 'cepheden';
   return (
     <Group>
-      <Path path={body} color={fromFront ? "#d3c6a2" : "#e2d7bc"}>
+      <Path path={body} color={fromFront ? '#d3c6a2' : '#e2d7bc'}>
         <Shadow dx={-3} dy={5} blur={5} color="rgba(0,0,0,0.6)" />
       </Path>
       {/* The flap, slit open by the clerk's knife */}
-      <Path
-        path={shakyLine(0, 0, w / 2, h * 0.46, `bk1${letter.id}`, 0.6)}
-        style="stroke"
-        strokeWidth={1}
-        color="rgba(90,70,40,0.45)"
-      />
-      <Path
-        path={shakyLine(w / 2, h * 0.46, w, 0, `bk2${letter.id}`, 0.6)}
-        style="stroke"
-        strokeWidth={1}
-        color="rgba(90,70,40,0.45)"
-      />
-      <Path
-        path={shakyLine(2, 3, w - 2, 2, `bk3${letter.id}`, 1.6)}
-        style="stroke"
-        strokeWidth={1.4}
-        color="rgba(60,40,20,0.5)"
-      />
+      <Path path={shakyLine(0, 0, w / 2, h * 0.46, `bk1${letter.id}`, 0.6)} style="stroke" strokeWidth={1} color="rgba(90,70,40,0.45)" />
+      <Path path={shakyLine(w / 2, h * 0.46, w, 0, `bk2${letter.id}`, 0.6)} style="stroke" strokeWidth={1} color="rgba(90,70,40,0.45)" />
+      <Path path={shakyLine(2, 3, w - 2, 2, `bk3${letter.id}`, 1.6)} style="stroke" strokeWidth={1.4} color="rgba(60,40,20,0.5)" />
+      <Para text={t('envelope.sender')} x={14} y={h * 0.52} width={60} family="Cormorant" size={9} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1} />
+      <Para text={letter.sender} x={14} y={h * 0.6} width={w - 24} family={family} size={family === 'Caveat' ? 15 : 12} color={ink} weight={FontWeight.Medium} />
       <Para
-        text={t("envelope.sender")}
-        x={14}
-        y={h * 0.52}
-        width={60}
-        family="Cormorant"
-        size={9}
-        color="rgba(40,25,10,0.7)"
-        weight={FontWeight.Bold}
-        letterSpacing={1}
-      />
-      <Para
-        text={letter.sender}
-        x={14}
-        y={h * 0.6}
-        width={w - 24}
-        family={family}
-        size={family === "Caveat" ? 15 : 12}
-        color={ink}
-        weight={FontWeight.Medium}
-      />
-      <Para
-        text={
-          letter.fromAddress ?? (fromFront ? t("envelope.field") : letter.from)
-        }
+        text={letter.fromAddress ?? (fromFront ? t('envelope.field') : letter.from)}
         x={22}
         y={h * 0.6 + 17}
         width={w - 30}
         family={family}
-        size={family === "Caveat" ? 13 : 10.5}
+        size={family === 'Caveat' ? 13 : 10.5}
         color={ink}
-        italic={family === "Cormorant"}
+        italic={family === 'Cormorant'}
       />
     </Group>
   );

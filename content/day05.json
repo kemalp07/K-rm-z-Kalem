@@ -1,0 +1,290 @@
+{
+  "day": 5,
+  "calendar": {
+    "dayOfMonth": "27",
+    "month": "Mayıs",
+    "year": "1915",
+    "weekday": "Perşembe",
+    "rumi": "14 Mayıs 1331"
+  },
+  "sideLetters": 2,
+  "letters": [
+    {
+      "id": "d5_kirkor",
+      "threadId": "imzasiz_halil",
+      "day": 5,
+      "sender": "Bakkal Kirkor",
+      "recipient": "Levazım Kâtibi Halil Efendi",
+      "from": "İstanbul, Kumkapı",
+      "to": "Çanakkale, Kilitbahir, Levazım Deposu",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "clerical",
+      "dateLine": "11 Mayıs 1331",
+      "heading": "Muhterem Efendim,",
+      "underStamp": "cuma gecesi · Maydos · fener üç",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Siparişiniz olan on teneke zeytinyağı ile iki çuval nohut hazırdır."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Bedelini evvelki gibi malum kimseye teslim ediniz."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Mektubunuzu aldık; dediğiniz gün yükleme yapılacaktır."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hürmetlerimizle efendim."
+        }
+      ],
+      "signature": "Kirkor",
+      "reasons": [
+        "gizli",
+        "sahte"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d5_kirkor:reported",
+              "d5_kirkor:revealed:stamp"
+            ]
+          },
+          "text": "Şube pulun altındaki satırı okudu. Cuma gecesi Maydos iskelesine pusu kurulacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_kirkor:reported"
+            ]
+          },
+          "text": "Bakkal Kirkor'un mektubu Şube'ye gitti. Pulun altına kimse bakmadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_kirkor:stopped"
+            ]
+          },
+          "text": "Halil Efendi bu hafta Kumkapı'dan haber alamayacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_kirkor:held"
+            ]
+          },
+          "text": "Mektup bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_kirkor:delivered",
+              "d5_kirkor:revealed:stamp"
+            ]
+          },
+          "text": "Pulun altındaki satırı gördün ve geçirdin. Cuma gecesi Maydos'ta bir fener üç kez yanıp sönecek."
+        },
+        {
+          "text": "Halil Efendi mektubu okuyup pulu tırnağıyla kaldıracak."
+        }
+      ]
+    },
+    {
+      "id": "d5_ali",
+      "threadId": "imzasiz_halil",
+      "day": 5,
+      "sender": "Er Ali",
+      "recipient": "Fatma Hanım",
+      "from": "Seddülbahir",
+      "to": "Konya, Ereğli kazası",
+      "direction": "cepheden",
+      "kind": "mektup",
+      "hand": "dictated",
+      "dateLine": "Ordu-yı Hümayun, 12 Mayıs 331",
+      "heading": "Anacığım Fatma Hanım'a,",
+      "stamp": "kirmizi",
+      "underStamp": "Rasim'e: paket Maydos'ta, salı",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Bu mektubu bölüğün yazıcısına yazdırıyorum. Evvela ellerinizden öperim."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Ben sağım, ayağımdaki yara iyileşti, yine yürüyorum."
+        },
+        {
+          "id": "s3",
+          "kind": "sensitive",
+          "text": "Bizim siperin önündeki dere kurudu, su iki saat öteden geliyor."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Harmana yetişemem, emmime söyleyin buğdayı o kaldırsın."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Duanızı eksik etmeyin."
+        }
+      ],
+      "signature": "Oğlunuz Ali",
+      "inspectables": [
+        {
+          "id": "stamp",
+          "target": "stamp",
+          "anomaly": true,
+          "note": "Cepheden gelen asker mektubunda pul olmaz; birisi sonradan yapıştırmış."
+        }
+      ],
+      "reasons": [
+        "pul",
+        "gizli",
+        "askeri"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d5_ali:reported",
+              "d5_ali:revealed:stamp"
+            ]
+          },
+          "text": "Şube pulun altındaki satırı okudu: Maydos'ta Rasim diye biri aranacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_ali:reported"
+            ]
+          },
+          "text": "Ali'nin mektubu Şube'ye gitti. Pulun neden orada olduğunu kimse sormadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_ali:stopped"
+            ]
+          },
+          "text": "Fatma Hanım oğlundan haber alamayacak; Ali bunun nedenini hiç bilmeyecek."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_ali:held"
+            ]
+          },
+          "text": "Ali'nin mektubu bir gece daha çekmecede bekleyecek."
+        },
+        {
+          "text": "Mektup Konya'ya, pulun altındaki satır başka birine gidecek. Ali'nin hiçbir şeyden haberi yok."
+        }
+      ]
+    },
+    {
+      "id": "d5_saadet",
+      "threadId": "saadet_nuri",
+      "day": 5,
+      "sender": "Saadet",
+      "recipient": "Mülazım Nuri Efendi",
+      "from": "İzmir, Karataş",
+      "to": "Ordu-yı Hümayun, 61. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "elegant",
+      "dateLine": "8 Mayıs 1331",
+      "heading": "Aziz Nuri'm,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "İki mektubunuzu birden aldım; okurken ellerim titredi."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Nişanımızın yıl dönümünde valideniz bize geldi, sizi andık."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Cumbadan denizi seyrederken vapurların düdüğünü sayıyorum."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "İzmir'de herkes sizden haber soruyor, ben de bir şey diyemiyorum."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Rabbim sizi bana bağışlasın."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Gözlerinizden öperim."
+        }
+      ],
+      "signature": "Saadet",
+      "marks": [
+        {
+          "kind": "jasmine"
+        }
+      ],
+      "meta": {
+        "acrostic": {
+          "segmentIds": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "word": "İNCİR"
+        }
+      },
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d5_saadet:reported"
+            ]
+          },
+          "text": "Bir aşk mektubu daha Şube'nin dosyasına girdi. Dosyada üç mektup var; satır başlarına kimse bakmadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_saadet:stopped"
+            ]
+          },
+          "text": "Saadet cevap gelmeyince bir mektup daha yazacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d5_saadet:held"
+            ]
+          },
+          "text": "Mektup bir gece daha çekmecede kalacak."
+        },
+        {
+          "text": "Nuri Efendi mektubu göğüs cebine koyacak; satır başlarını okuyan bir başkası olacak."
+        }
+      ]
+    }
+  ]
+}

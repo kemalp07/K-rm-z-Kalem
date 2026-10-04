@@ -10,7 +10,7 @@ import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } fr
 import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
-import { eveningBill, flagsOf, purseOf } from '../logic/dayFlow';
+import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
 
 /** The market's thick beeswax candle: its heat reaches further and works faster. */
@@ -24,7 +24,8 @@ import { CalendarLeaf } from '../objects/CalendarLeaf';
 import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
 import { Para } from './Para';
 import { t } from '../content/strings';
-import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, stackPose } from '../objects/Envelope';
+import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
+import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
@@ -56,6 +57,7 @@ import { fitWorld, inRect, LAYOUT, toWorld, WORLD } from './world';
 type Drag =
   | { kind: 'envelope'; id: string; ox: number; oy: number }
   | { kind: 'candle'; ox: number; oy: number }
+  | { kind: 'kettle'; ox: number; oy: number }
   | { kind: 'magnifier'; ox: number; oy: number }
   | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
@@ -178,6 +180,11 @@ export function DeskScreen() {
   const candleY = useSharedValue<number>(LAYOUT.rest.candle.y);
   const candleLift = useSharedValue(0);
 
+  const kettleX = useSharedValue<number>(LAYOUT.rest.kettle.x);
+  const kettleY = useSharedValue<number>(LAYOUT.rest.kettle.y);
+  const kettleLift = useSharedValue(0);
+  const kettlePuff = useSharedValue(0);
+
   const magX = useSharedValue<number>(LAYOUT.rest.magnifier.x);
   const magY = useSharedValue<number>(LAYOUT.rest.magnifier.y);
   const magLift = useSharedValue(0);
@@ -215,6 +222,10 @@ export function DeskScreen() {
   const [morningIdx, setMorningIdx] = useState(0);
   const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
   const morningIn = useSharedValue(0);
+  // The director opens with a promotion when yesterday earned one.
+  const morningLead = (state.events ?? []).includes(`d${state.day - 1}:promoted`)
+    ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
+    : [];
   /** The opened envelope turned over in the hand: front and back, larger. */
   const [envView, setEnvView] = useState(false);
   const envViewIn = useSharedValue(0);
@@ -225,6 +236,7 @@ export function DeskScreen() {
   const reasons = useMemo(() => slipReasons(state.day), [state.day]);
   const pages = useMemo(() => bookletPages(state.day), [state.day]);
   const hasCandle = hasTool('candle', state.day);
+  const hasKettle = hasTool('kettle', state.day);
   const lowOil = (state.events ?? []).includes(`d${state.day - 1}:unpaid:gaz`);
   // Bought at the market: a wider, sharper glass and a thick beeswax candle.
   const lensK = (state.owned ?? []).includes('buyutec') ? 1.35 : 1;
@@ -232,7 +244,7 @@ export function DeskScreen() {
   const reveal = (state.owned ?? []).includes('mum') ? STRONG_CANDLE : DEFAULT_REVEAL;
   const hasMagnifier = hasTool('magnifier', state.day);
   // A tool's note lies on the desk only once the tool does.
-  const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : true));
+  const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : id === 'kettle' ? hasKettle : true));
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
@@ -313,6 +325,27 @@ export function DeskScreen() {
       if (timer) clearTimeout(timer);
     };
   }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn, lowOil]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // --- steam: held over the stamp of a folded-away letter, it lifts the stamp ----------
+  useEffect(() => {
+    if (!hasKettle || !envView || !openLetter) return;
+    const id = openLetter.id;
+    const front = envRects(openLetter)[0]!;
+    const stamp = { x: front.x + (envelopeSize(openLetter).w + STAMP_AT.dx) * ENV_ZOOM, y: front.y + STAMP_AT.cy * ENV_ZOOM };
+    let steam = 0;
+    const tick = setInterval(() => {
+      const p = useGame.getState().state.letters[id];
+      if (!p || p.revealed.includes('stamp') || kettleLift.value < 0.5) return;
+      const spout = { x: kettleX.value + SPOUT.dx, y: kettleY.value + SPOUT.dy };
+      steam = dist(spout, stamp) < 38 ? steam + 0.1 : Math.max(0, steam - 0.05);
+      if (steam >= 1.2) {
+        useGame.getState().reveal(id, 'stamp');
+        haptic(Haptics.ImpactFeedbackStyle.Soft);
+        playSfx('paper', 0.4);
+      }
+    }, 100);
+    return () => clearInterval(tick);
+  }, [hasKettle, envView, openLetter, kettleX, kettleY, kettleLift]);
 
   // --- candle heat: a slow 20 Hz tick on the JS side --------
   useEffect(() => {
@@ -599,6 +632,17 @@ export function DeskScreen() {
       return;
     }
 
+    if (hasKettle && dist(p, { x: kettleX.value, y: kettleY.value }) < KETTLE_R) {
+      if (introduce('kettle')) return;
+      if (penInHand.current) penHome();
+      drag.current = { kind: 'kettle', ox: kettleX.value - p.x, oy: kettleY.value - p.y };
+      kettleLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
+      kettlePuff.value = 0;
+      kettlePuff.value = withRepeat(withTiming(1, { duration: 1100, easing: Easing.linear }), -1, false);
+      haptic(Haptics.ImpactFeedbackStyle.Light);
+      return;
+    }
+
     const lens = { x: magX.value, y: magY.value };
     const handleEnd = { x: lens.x + MAG_HANDLE_END.x * lensK, y: lens.y + MAG_HANDLE_END.y * lensK };
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
@@ -713,6 +757,12 @@ export function DeskScreen() {
         envX.value = p.x + d.ox;
         envY.value = p.y + d.oy;
         break;
+      case 'kettle': {
+        const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 30);
+        kettleX.value = c.x;
+        kettleY.value = c.y;
+        break;
+      }
       case 'candle': {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 20);
         candleX.value = c.x;
@@ -825,6 +875,14 @@ export function DeskScreen() {
           envAngle.value = withTiming(pose.angle, { duration: 600, easing: SETTLE });
           setTimeout(() => setDragId((cur) => (cur === d.id ? null : cur)), 700);
         }
+        break;
+      }
+      case 'kettle': {
+        // A hot kettle goes back to its place rather than sit on the papers.
+        const home = { duration: T.home, easing: GLIDE };
+        kettleLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
+        kettleX.value = withTiming(LAYOUT.rest.kettle.x, home);
+        kettleY.value = withTiming(LAYOUT.rest.kettle.y, home);
         break;
       }
       case 'candle':
@@ -983,14 +1041,14 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   // Split by how often each part changes, so opening a letter redoes only small images.
-  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0].join('|');
+  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
   const desk_ = useBaked(
     <FontsBridge fonts={fonts}>
       <DeskSurface />
       <NightWindow />
       <CalendarLeaf calendar={day.calendar} />
       <MoneyNote kurus={purseOf(state)} warnings={state.warnings ?? 0} />
-      <BrassPlate rank={desk.rank} />
+      <BrassPlate rank={{ name: rankOf(state).name, title: desk.rank.title }} />
       <LockedTray />
       {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
       {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
@@ -1015,7 +1073,7 @@ export function DeskScreen() {
           <Group key={side} transform={[{ translateX: r.x }, { translateY: r.y }, { scale: ENV_ZOOM }]}>
             {side === 0 ? (
               <>
-                <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} />
+                <EnvelopeBody letter={openLetter} postmark={postmarkOf(openLetter, day.calendar.rumi)} steamed={!!progress?.revealed.includes('stamp')} />
                 <EnvelopeAddress letter={openLetter} />
               </>
             ) : (
@@ -1095,6 +1153,7 @@ export function DeskScreen() {
             {state.phase === 'desk' && <Eraser rub={eraserRub} lift={eraserLift} />}
             {hasMagnifier && <MagnifierFrame x={magX} y={magY} lift={magLift} scale={lensK} />}
             {hasCandle && <Candle x={candleX} y={candleY} flicker={candleFlicker} lift={candleLift} />}
+            {hasKettle && state.phase === 'desk' && <Kettle x={kettleX} y={kettleY} lift={kettleLift} puff={kettlePuff} />}
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
             {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
 
@@ -1103,7 +1162,7 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} />}
+            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} />}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}

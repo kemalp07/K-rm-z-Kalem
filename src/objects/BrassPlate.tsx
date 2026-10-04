@@ -24,8 +24,8 @@ export function BrassPlate({ rank }: { rank: Desk['rank'] }) {
         ))}
       </ArtSlot>
       {/* Engraving: dark fill with a lit lower lip, so the letters read as cut. */}
-      <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x + 16} y={r.y + r.h * 0.22 + 0.6} width={r.w - 32} family="Cormorant" size={13} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={1.4} />
-      <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x + 16} y={r.y + r.h * 0.22} width={r.w - 32} family="Cormorant" size={13} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={1.4} />
+      <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x + 16} y={r.y + r.h * 0.22 + 0.6} width={r.w - 32} family="Cormorant" size={rank.name.length > 14 ? 10.5 : 13} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={rank.name.length > 14 ? 0.6 : 1.4} />
+      <Para text={rank.name.toLocaleUpperCase('tr')} x={r.x + 16} y={r.y + r.h * 0.22} width={r.w - 32} family="Cormorant" size={rank.name.length > 14 ? 10.5 : 13} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={rank.name.length > 14 ? 0.6 : 1.4} />
       <Para text={rank.title} x={r.x} y={r.y + r.h * 0.55} width={r.w} family="Cormorant" size={10} color="#2e1f06" align="center" italic weight={FontWeight.SemiBold} letterSpacing={0.4} />
     </Group>
   );

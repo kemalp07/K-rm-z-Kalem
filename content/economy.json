@@ -111,6 +111,33 @@
     "dismissed": "Şube Müdürü üçüncü ihtardan sonra seni memuriyetten azletti. Masana başka bir kâtip oturacak.",
     "office": "Kilitbahir Posta ve Telgraf Şubesi",
     "left": "Kalan: {n} kuruş",
-    "seal": "ŞUBE MUHASEBESİ ★"
+    "seal": "ŞUBE MUHASEBESİ ★",
+    "promoted": "Gösterdiğiniz dikkat Müdüriyetçe takdir edilmiş, {rank} rütbesine terfiiniz münasip görülmüştür. Yevmiyeniz {wage} kuruşa çıkarılmıştır.",
+    "meritLine": "Sicil: {n} kusursuz gün ve yakalanan evrak"
+  },
+  "ranks": [
+    {
+      "id": "katip",
+      "name": "Sansür Kâtibi",
+      "wage": 15,
+      "merit": 0
+    },
+    {
+      "id": "baskatip",
+      "name": "Sansür Başkâtibi",
+      "wage": 20,
+      "merit": 4
+    },
+    {
+      "id": "mumeyyiz",
+      "name": "Sansür Mümeyyizi",
+      "wage": 25,
+      "merit": 9
+    }
+  ],
+  "merit": {
+    "cleanDay": 1,
+    "spyCaught": 1,
+    "warning": -2
   }
 }

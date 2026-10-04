@@ -49,6 +49,7 @@ export const LAYOUT = {
     candle: { x: 738, y: 296, w: 62, h: 30, rot: -0.05 },
     magnifier: { x: 690, y: 434, w: 62, h: 30, rot: 0.04 },
     stamps: { x: 236, y: 412, w: 60, h: 30, rot: -0.07 },
+    kettle: { x: 196, y: 520, w: 66, h: 30, rot: 0.05 },
   },
   /** The Talimatname opened over the desk (booklet_open.png is 827×604). */
   bookletOpen: { x: 137, y: 14, w: 726, h: 530 },
@@ -62,5 +63,7 @@ export const LAYOUT = {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },
     magnifier: { x: 704, y: 384 },
+    /** The steam kettle, bottom left beside the pile. */
+    kettle: { x: 132, y: 505 },
   },
 } as const;

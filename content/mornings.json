@@ -1,24 +1,44 @@
 {
   "hint": "Okuyup bırakmak için dokununuz",
-  "newspaper": { "title": "CERİDE-İ HAVÂDİS-İ HARBİYE", "line": "Numara {n} · {date} · Nüshası 10 para" },
-  "mudur": { "head": "KİLİTBAHİR POSTA VE TELGRAF ŞUBESİ", "sub": "Müdüriyet", "to": "Sansür Kâtibi Efendi'ye", "sign": "Şube Müdürü" },
+  "newspaper": {
+    "title": "CERİDE-İ HAVÂDİS-İ HARBİYE",
+    "line": "Numara {n} · {date} · Nüshası 10 para"
+  },
+  "mudur": {
+    "head": "KİLİTBAHİR POSTA VE TELGRAF ŞUBESİ",
+    "sub": "Müdüriyet",
+    "to": "Sansür Kâtibi Efendi'ye",
+    "sign": "Şube Müdürü"
+  },
   "days": {
     "1": [
       {
         "kind": "mudur",
         "body": [
-          { "text": "Şubemizin sansür kalemine tayininiz tebrik olunur." },
-          { "text": "Cepheye giden ve cepheden gelen mektuplar masanıza bırakılacaktır. Talimatname ile büyüteç zimmetinize verilmiştir; mühür ve damga numuneleri masanızdadır." },
-          { "text": "Yevmiyeniz on beş kuruştur. Kusurlarınız yevmiyenizden kesilir; sahte evrak geçirmek ihtar sebebidir. Üç ihtar, memuriyetten azil sebebidir." }
+          {
+            "text": "Şubemizin sansür kalemine tayininiz tebrik olunur."
+          },
+          {
+            "text": "Cepheye giden ve cepheden gelen mektuplar masanıza bırakılacaktır. Talimatname ile büyüteç zimmetinize verilmiştir; mühür ve damga numuneleri masanızdadır."
+          },
+          {
+            "text": "Yevmiyeniz on beş kuruştur. Kusurlarınız yevmiyenizden kesilir; sahte evrak geçirmek ihtar sebebidir. Üç ihtar, memuriyetten azil sebebidir."
+          }
         ]
       },
       {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
-          { "text": "Allah'a şükür Üsküdar'a sağ salim vardık. Ev küçük ama temiz, valideniz alt odada yatıyor." },
-          { "text": "Çarşıda ekmeğin fiatı yine artmış, kuyruk sabah ezanından başlıyor. Ahmet her akşam babam ne zaman gelecek diye soruyor, Zehra'nın dişi çıktı." },
-          { "text": "Havalenizi bekleriz. Kendinize iyi bakınız." }
+          {
+            "text": "Allah'a şükür Üsküdar'a sağ salim vardık. Ev küçük ama temiz, valideniz alt odada yatıyor."
+          },
+          {
+            "text": "Çarşıda ekmeğin fiatı yine artmış, kuyruk sabah ezanından başlıyor. Ahmet her akşam babam ne zaman gelecek diye soruyor, Zehra'nın dişi çıktı."
+          },
+          {
+            "text": "Havalenizi bekleriz. Kendinize iyi bakınız."
+          }
         ],
         "sign": "Zevceniz Nazife"
       }
@@ -27,21 +47,76 @@
       {
         "kind": "mudur",
         "body": [
-          { "when": { "all": ["d1:warned"] }, "text": "Dünkü defterinizde sahte bir evrakın geçirildiği görülmüştür. İhtar olunur; bir daha tekerrüründe azil sebebidir." },
-          { "when": { "all": ["d1:rewarded"], "none": ["d1:warned"] }, "text": "Galata'dan gelen sahte mühürlü evrakı yakalamanız takdirle karşılanmıştır." },
-          { "when": { "all": ["d1:docked"], "none": ["d1:warned", "d1:rewarded"] }, "text": "Dünkü işinizde bazı kusurlar görülmüştür. Dikkatinizi celbederim." },
-          { "when": { "all": ["d1:clean"] }, "text": "Dünkü işiniz kusursuz bulunmuştur." },
-          { "text": "Maydos menzil postanesinde limon suyuyla yazılmış satırlar yakalanmıştır. Zimmetinize bir şem'a gönderilmiştir. Satır aralarını, kenarları, imza altlarını yoklayınız; kâğıdı yakmayınız." }
+          {
+            "when": {
+              "all": [
+                "d1:warned"
+              ]
+            },
+            "text": "Dünkü defterinizde sahte bir evrakın geçirildiği görülmüştür. İhtar olunur; bir daha tekerrüründe azil sebebidir."
+          },
+          {
+            "when": {
+              "all": [
+                "d1:rewarded"
+              ],
+              "none": [
+                "d1:warned"
+              ]
+            },
+            "text": "Galata'dan gelen sahte mühürlü evrakı yakalamanız takdirle karşılanmıştır."
+          },
+          {
+            "when": {
+              "all": [
+                "d1:docked"
+              ],
+              "none": [
+                "d1:warned",
+                "d1:rewarded"
+              ]
+            },
+            "text": "Dünkü işinizde bazı kusurlar görülmüştür. Dikkatinizi celbederim."
+          },
+          {
+            "when": {
+              "all": [
+                "d1:clean"
+              ]
+            },
+            "text": "Dünkü işiniz kusursuz bulunmuştur."
+          },
+          {
+            "text": "Maydos menzil postanesinde limon suyuyla yazılmış satırlar yakalanmıştır. Zimmetinize bir şem'a gönderilmiştir. Satır aralarını, kenarları, imza altlarını yoklayınız; kâğıdı yakmayınız."
+          }
         ]
       },
       {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
-          { "when": { "all": ["d1:paid:ekmek"] }, "text": "Havaleniz geldi, Allah razı olsun. Bakkal Yorgi'nin borcunu kapattık." },
-          { "when": { "all": ["d1:unpaid:ekmek"] }, "text": "Bu hafta havaleniz gelmedi. Komşu Şerife Hanım'dan borç ekmek aldık; utandım." },
-          { "text": "Ahmet iki gündür öksürüyor, gece uyuyamıyor. Valideniz ıhlamur kaynatıyor." },
-          { "text": "Köprüde asker kafileleri geçiyor, kadınlar ağlaşıyor. Siz sağ olun da gerisi kolay." }
+          {
+            "when": {
+              "all": [
+                "d1:paid:ekmek"
+              ]
+            },
+            "text": "Havaleniz geldi, Allah razı olsun. Bakkal Yorgi'nin borcunu kapattık."
+          },
+          {
+            "when": {
+              "all": [
+                "d1:unpaid:ekmek"
+              ]
+            },
+            "text": "Bu hafta havaleniz gelmedi. Komşu Şerife Hanım'dan borç ekmek aldık; utandım."
+          },
+          {
+            "text": "Ahmet iki gündür öksürüyor, gece uyuyamıyor. Valideniz ıhlamur kaynatıyor."
+          },
+          {
+            "text": "Köprüde asker kafileleri geçiyor, kadınlar ağlaşıyor. Siz sağ olun da gerisi kolay."
+          }
         ],
         "sign": "Zevceniz Nazife"
       }
@@ -50,20 +125,68 @@
       {
         "kind": "mudur",
         "body": [
-          { "when": { "all": ["d2:warned"] }, "text": "Dün yine sahte evrak geçirilmiştir. İhtar olunur." },
-          { "when": { "all": ["d2:rewarded"], "none": ["d2:warned"] }, "text": "Dünkü yakaladığınız evrak Dersaadet'e bildirilmiştir; dikkatiniz takdir olunur." },
-          { "when": { "all": ["d2:docked"], "none": ["d2:warned", "d2:rewarded"] }, "text": "Dünkü defterinizde kusurlar vardır. Dikkatinizi celbederim." },
-          { "when": { "all": ["d2:clean"] }, "text": "Dünkü işiniz kusursuz bulunmuştur." },
-          { "text": "Limon suyu yalnız satır aralarına yazılmaz; imza altlarına ve kenar boşluklarına da yazılır. Şem'ayı kâğıdın her yerinde gezdiriniz." }
+          {
+            "when": {
+              "all": [
+                "d2:warned"
+              ]
+            },
+            "text": "Dün yine sahte evrak geçirilmiştir. İhtar olunur."
+          },
+          {
+            "when": {
+              "all": [
+                "d2:rewarded"
+              ],
+              "none": [
+                "d2:warned"
+              ]
+            },
+            "text": "Dünkü yakaladığınız evrak Dersaadet'e bildirilmiştir; dikkatiniz takdir olunur."
+          },
+          {
+            "when": {
+              "all": [
+                "d2:docked"
+              ],
+              "none": [
+                "d2:warned",
+                "d2:rewarded"
+              ]
+            },
+            "text": "Dünkü defterinizde kusurlar vardır. Dikkatinizi celbederim."
+          },
+          {
+            "when": {
+              "all": [
+                "d2:clean"
+              ]
+            },
+            "text": "Dünkü işiniz kusursuz bulunmuştur."
+          },
+          {
+            "text": "Limon suyu yalnız satır aralarına yazılmaz; imza altlarına ve kenar boşluklarına da yazılır. Şem'ayı kâğıdın her yerinde gezdiriniz."
+          }
         ]
       },
       {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
-          { "text": "Ahmet ateşlendi. Mahallenin hekimi geldi, göğsünü dinledi, bir ilaç yazdı. Eczacı on beş kuruş istiyor." },
-          { "when": { "all": ["d2:unpaid:ekmek"] }, "text": "Havaleniz bu hafta da gelmedi. Valideniz bileziğini satmaya kalktı, bırakmadım." },
-          { "text": "Size zahmet, ilacın parasını gönderebilir misiniz? Allah sizi başımızdan eksik etmesin." }
+          {
+            "text": "Ahmet ateşlendi. Mahallenin hekimi geldi, göğsünü dinledi, bir ilaç yazdı. Eczacı on beş kuruş istiyor."
+          },
+          {
+            "when": {
+              "all": [
+                "d2:unpaid:ekmek"
+              ]
+            },
+            "text": "Havaleniz bu hafta da gelmedi. Valideniz bileziğini satmaya kalktı, bırakmadım."
+          },
+          {
+            "text": "Size zahmet, ilacın parasını gönderebilir misiniz? Allah sizi başımızdan eksik etmesin."
+          }
         ],
         "sign": "Zevceniz Nazife"
       }
@@ -72,30 +195,235 @@
       {
         "kind": "mudur",
         "body": [
-          { "when": { "all": ["d3:warned"] }, "text": "Dün yine sahte evrak geçirilmiştir. İhtar olunur." },
-          { "when": { "all": ["d3:docked"], "none": ["d3:warned"] }, "text": "Dünkü defterinizde kusurlar vardır." },
-          { "when": { "all": ["d3:clean"] }, "text": "Dünkü işiniz kusursuz bulunmuştur." },
-          { "text": "Talimatnameye Posta Yolu ile Adresler sahifeleri eklenmiştir. Bundan böyle zarfın arkasındaki gönderen ile posta damgası birbirine tutmalıdır; tutmayan evrakı daire içine alınız." }
+          {
+            "when": {
+              "all": [
+                "d3:warned"
+              ]
+            },
+            "text": "Dün yine sahte evrak geçirilmiştir. İhtar olunur."
+          },
+          {
+            "when": {
+              "all": [
+                "d3:docked"
+              ],
+              "none": [
+                "d3:warned"
+              ]
+            },
+            "text": "Dünkü defterinizde kusurlar vardır."
+          },
+          {
+            "when": {
+              "all": [
+                "d3:clean"
+              ]
+            },
+            "text": "Dünkü işiniz kusursuz bulunmuştur."
+          },
+          {
+            "text": "Talimatnameye Posta Yolu ile Adresler sahifeleri eklenmiştir. Bundan böyle zarfın arkasındaki gönderen ile posta damgası birbirine tutmalıdır; tutmayan evrakı daire içine alınız."
+          }
         ]
       },
       {
         "kind": "newspaper",
         "n": 112,
         "items": [
-          { "head": "ARIBURNU'NDA DÜŞMANA AĞIR DARBE", "text": "Ordumuzun 6 Mayıs gecesi icra ettiği hücumda düşman siperlerine ağır zayiat verdirilmiştir. Şehitlerimize Cenab-ı Hak'tan rahmet dileriz." },
-          { "when": { "none": ["d2_mehmet:revealed:s7"] }, "head": "KİLİTBAHİR İSKELESİNE GECE BASKINI", "text": "Salı gecesi düşman gemilerinden açılan ateşle iskelede bulunan iki mavnadan biri batırılmıştır. Düşmanın iskeleyi nasıl bildiği tahkik olunmaktadır." },
-          { "when": { "all": ["d2_mehmet:revealed:s7"] }, "head": "İSKELEDE TEDBİR", "text": "Salı gecesi iskeleye yaklaşmak isteyen bir düşman filikası nöbetçilerimizin ateşiyle geri püskürtülmüştür." },
-          { "head": "DERSAADET'TE EKMEK", "text": "Şehremaneti ekmek narhını yeniden tespit etmiştir. Fırınlar önünde intizamı bozanlar hakkında takibat yapılacaktır." },
-          { "head": "İLÂN", "text": "Galata'da Şark Ticaret Kumpanyası namına muamele yapan bir dükkân bulunmadığı Ticaret Odası'nca ilan olunur." }
+          {
+            "head": "ARIBURNU'NDA DÜŞMANA AĞIR DARBE",
+            "text": "Ordumuzun 6 Mayıs gecesi icra ettiği hücumda düşman siperlerine ağır zayiat verdirilmiştir. Şehitlerimize Cenab-ı Hak'tan rahmet dileriz."
+          },
+          {
+            "when": {
+              "none": [
+                "d2_mehmet:revealed:s7"
+              ]
+            },
+            "head": "KİLİTBAHİR İSKELESİNE GECE BASKINI",
+            "text": "Salı gecesi düşman gemilerinden açılan ateşle iskelede bulunan iki mavnadan biri batırılmıştır. Düşmanın iskeleyi nasıl bildiği tahkik olunmaktadır."
+          },
+          {
+            "when": {
+              "all": [
+                "d2_mehmet:revealed:s7"
+              ]
+            },
+            "head": "İSKELEDE TEDBİR",
+            "text": "Salı gecesi iskeleye yaklaşmak isteyen bir düşman filikası nöbetçilerimizin ateşiyle geri püskürtülmüştür."
+          },
+          {
+            "head": "DERSAADET'TE EKMEK",
+            "text": "Şehremaneti ekmek narhını yeniden tespit etmiştir. Fırınlar önünde intizamı bozanlar hakkında takibat yapılacaktır."
+          },
+          {
+            "head": "İLÂN",
+            "text": "Galata'da Şark Ticaret Kumpanyası namına muamele yapan bir dükkân bulunmadığı Ticaret Odası'nca ilan olunur."
+          }
         ]
       },
       {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
-          { "when": { "all": ["d3:paid:ilac"] }, "text": "İlacın parası yetişti. Ahmet'in ateşi düştü, dün akşam bir tas çorba içti. Elinizden öper." },
-          { "when": { "all": ["d3:unpaid:ilac"] }, "text": "İlacı alamadık. Ahmet'in ateşi düşmedi; mahallenin ebesi sülük koydu. Hekim tekrar geldi, şimdi yirmi kuruş istiyor." },
-          { "text": "Ev sahibi kiranın vakti geldiğini hatırlattı." }
+          {
+            "when": {
+              "all": [
+                "d3:paid:ilac"
+              ]
+            },
+            "text": "İlacın parası yetişti. Ahmet'in ateşi düştü, dün akşam bir tas çorba içti. Elinizden öper."
+          },
+          {
+            "when": {
+              "all": [
+                "d3:unpaid:ilac"
+              ]
+            },
+            "text": "İlacı alamadık. Ahmet'in ateşi düşmedi; mahallenin ebesi sülük koydu. Hekim tekrar geldi, şimdi yirmi kuruş istiyor."
+          },
+          {
+            "text": "Ev sahibi kiranın vakti geldiğini hatırlattı."
+          }
+        ],
+        "sign": "Zevceniz Nazife"
+      }
+    ],
+    "5": [
+      {
+        "kind": "mudur",
+        "body": [
+          {
+            "when": {
+              "all": [
+                "d4:warned"
+              ]
+            },
+            "text": "Dün yine sahte evrak geçirilmiştir. İhtar olunur."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:rewarded"
+              ],
+              "none": [
+                "d4:warned"
+              ]
+            },
+            "text": "İzmir damgalı evrakı yakalamanız takdir olunmuştur; İzmir postanesinde tahkikat açılmıştır."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:docked"
+              ],
+              "none": [
+                "d4:warned",
+                "d4:rewarded"
+              ]
+            },
+            "text": "Dünkü defterinizde kusurlar vardır."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:clean"
+              ]
+            },
+            "text": "Dünkü işiniz kusursuz bulunmuştur."
+          },
+          {
+            "text": "Pul altlarına yazı yazıldığı haber alınmıştır. Zimmetinize bir buhar çaydanlığı verilmiştir. Mektubu zarfına koyunuz, pulu buharla kaldırınız."
+          },
+          {
+            "text": "Talimatnameye Pullar sahifesi eklenmiştir. Cepheden gelen asker mektubunda pul bulunmaz; bulunursa dikkat ediniz."
+          }
+        ]
+      },
+      {
+        "kind": "newspaper",
+        "n": 113,
+        "items": [
+          {
+            "head": "TRİUMPH ZIRHLISI BATIRILDI",
+            "text": "Arıburnu açıklarında bulunan İngiliz zırhlısı Triumph, Salı günü bir tahtelbahir tarafından torpillenerek batırılmıştır."
+          },
+          {
+            "head": "TOPHANE ÖNÜNDE",
+            "text": "Düşmanın bir tahtelbahiri Tophane önündeki bir vapura torpil atmış ise de hasar cüz'idir. Halkın sükûnetle işine bakması rica olunur."
+          },
+          {
+            "when": {
+              "all": [
+                "d4_huesnue:reported"
+              ]
+            },
+            "head": "İZMİR'DE TAHKİKAT",
+            "text": "İzmir postanesinde bir memur, şüpheli evrakı damgaladığı iddiasıyla isticvap olunmaktadır."
+          },
+          {
+            "when": {
+              "none": [
+                "d4_huesnue:reported"
+              ]
+            },
+            "head": "İZMİR'DEN",
+            "text": "İzmir'de incir mahsulünün bu sene bereketli olacağı bildirilmektedir."
+          },
+          {
+            "head": "İLÂN",
+            "text": "Hilâl-i Ahmer Cemiyeti, cepheye gönderilmek üzere yün çorap ve kuru meyve kabul etmektedir."
+          }
+        ]
+      },
+      {
+        "kind": "family",
+        "heading": "Efendim,",
+        "body": [
+          {
+            "when": {
+              "all": [
+                "d4:paid:kira"
+              ]
+            },
+            "text": "Kirayı ödedik; ev sahibi Hristo Efendi size selam söyledi."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:unpaid:kira"
+              ]
+            },
+            "text": "Kirayı veremedik. Ev sahibi ay başına kadar bekleyeceğini, sonra çıkmamız lazım geleceğini söyledi."
+          },
+          {
+            "when": {
+              "all": [
+                "d3:paid:ilac"
+              ]
+            },
+            "text": "Ahmet iyileşti, sokağa çıkıp mahallenin çocuklarıyla asker oyunu oynuyor."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:paid:ilac"
+              ]
+            },
+            "text": "İkinci ilaç iyi geldi. Ahmet'in ateşi düştü, ama çok zayıfladı."
+          },
+          {
+            "when": {
+              "all": [
+                "d4:unpaid:ilac"
+              ]
+            },
+            "text": "Ahmet'i Gureba Hastanesi'ne götürdük. Hekimler bakacaklarını söylediler; para istemediler, Allah razı olsun."
+          },
+          {
+            "text": "Tophane'de bir vapur vurulmuş, herkes sahile koştu. Valideniz bütün gece uyumadı."
+          }
         ],
         "sign": "Zevceniz Nazife"
       }

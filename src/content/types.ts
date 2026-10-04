@@ -29,7 +29,10 @@ export interface PackageItem {
   note?: string;
 }
 
-export type InspectTarget = 'seal' | 'date' | 'postmark';
+export type InspectTarget = 'seal' | 'date' | 'postmark' | 'stamp';
+
+/** Postage stamps of 1331 (Talimatname, page 5). */
+export type StampKind = 'kirmizi' | 'yesil' | 'kahve' | 'mavi' | 'mor';
 
 /** The post office's round black stamp: office round the ring, date in the middle. */
 export interface Postmark {
@@ -121,6 +124,15 @@ export interface Letter {
   seal?: Seal;
   /** Set only to override the ordinary one (src/content/postmark.ts), e.g. a forgery. */
   postmark?: Postmark;
+  /**
+   * The stamp on the envelope. Soldiers' letters from the front go free ('none');
+   * everything else carries a red 20 para unless set otherwise.
+   */
+  stamp?: StampKind | 'none';
+  /** Stuck on upside down: the spies' sign (Talimatname, page 5). */
+  stampFlipped?: boolean;
+  /** Written under the stamp; the steam kettle lifts it. */
+  underStamp?: string;
   inspectables?: Inspectable[];
   marks?: PaperMark[];
   variants?: Variant[];
@@ -153,7 +165,7 @@ export interface Day {
   sideLetters?: number;
 }
 
-export type Tool = 'pen' | 'magnifier' | 'candle';
+export type Tool = 'pen' | 'magnifier' | 'candle' | 'kettle';
 
 /** A line on a morning paper; shown only when its condition holds. */
 export interface MorningLine {
@@ -180,6 +192,10 @@ export interface Economy {
   expenses: { id: string; label: string; cost: number; note?: string; days?: number[]; when?: Condition }[];
   /** Bought once; better tools from the next day on. */
   shop: { id: string; label: string; note: string; cost: number; day: number }[];
+  /** Rank ladder: reached by merit, never lost; each pays its own wage. */
+  ranks: { id: string; name: string; wage: number; merit: number }[];
+  /** Merit gained or lost: a day without fault, a spy letter caught, a warning. */
+  merit: { cleanDay: number; spyCaught: number; warning: number };
   text: Record<string, string>;
 }
 
@@ -189,7 +205,7 @@ export interface Desk {
   tools: Record<Tool, number>;
 }
 
-export type HelpId = 'rules' | 'pen' | 'candle' | 'magnifier' | 'stamps';
+export type HelpId = 'rules' | 'pen' | 'candle' | 'magnifier' | 'stamps' | 'kettle';
 
 /** An instruction sheet on the desk: the Şube's rules, or the note left beside a tool. */
 export interface HelpSheet {

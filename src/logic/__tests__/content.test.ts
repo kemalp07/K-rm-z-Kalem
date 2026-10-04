@@ -50,7 +50,7 @@ test('every tool has an instruction sheet', () => {
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const help = require('../../../content/help.json') as { sheets: { id: string; lines: string[] }[] };
   const ids = help.sheets.map((s) => s.id).sort();
-  expect(ids).toEqual(['candle', 'magnifier', 'pen', 'rules', 'stamps']);
+  expect(ids).toEqual(['candle', 'kettle', 'magnifier', 'pen', 'rules', 'stamps']);
   for (const s of help.sheets) expect(s.lines.length).toBeGreaterThan(0);
 });
 

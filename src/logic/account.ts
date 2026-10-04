@@ -27,6 +27,8 @@ export function judge(letter: Letter, p: LetterProgress): PenaltyKind[] {
   const passed = d === 'delivered';
   if (passed && letter.segments.some((s) => s.kind === 'sensitive' && !p.censored.includes(s.id))) out.push('sensitiveMissed');
   if (passed && letter.segments.some((s) => s.kind === 'hiddenInk' && !p.revealed.includes(s.id))) out.push('inkMissed');
+  // Writing under the stamp counts as hidden too, once the kettle is on the desk to find it.
+  if (passed && letter.underStamp && !p.revealed.includes('stamp')) out.push('inkMissed');
   if (passed && letter.inspectables?.some((i) => i.anomaly)) out.push('forgeryMissed');
   for (let i = 0; i < (p.wrongMarked ?? []).length; i++) out.push('wrongMark');
   if (p.reason && letter.reasons && !letter.reasons.includes(p.reason)) out.push('wrongReason');
@@ -35,8 +37,8 @@ export function judge(letter: Letter, p: LetterProgress): PenaltyKind[] {
   return out;
 }
 
-export function reckon(decided: { letter: Letter; p: LetterProgress }[], eco: Economy): Account {
-  const lines: AccountLine[] = [{ kind: 'wage', amount: eco.wage }];
+export function reckon(decided: { letter: Letter; p: LetterProgress }[], eco: Economy, wage = eco.wage): Account {
+  const lines: AccountLine[] = [{ kind: 'wage', amount: wage }];
   for (const { letter, p } of decided) {
     for (const kind of judge(letter, p)) {
       const rule = eco.penalties[kind];

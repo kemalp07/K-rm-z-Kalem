@@ -27,6 +27,12 @@ export const ART_SLOTS = {
   ledger: { w: 520, h: 512, note: 'Gün sonu defteri, açık sayfa, yazısız.' },
   booklet: { w: 70, h: 129, note: 'Kapalı Talimatname: bordo cilt, boş kâğıt etiket (yazı kodla), kurdele.' },
   booklet_open: { w: 726, h: 530, note: 'Açık Talimatname, iki boş sayfa, çerçeveli. Yazı ve resimler kodla.' },
+  pul_kirmizi: { w: 44, h: 34, note: 'Pul: kırmızı, gemiler (20 para, mektup).' },
+  pul_yesil: { w: 44, h: 34, note: 'Pul: yeşil, kale (10 para, kartpostal).' },
+  pul_kahve: { w: 44, h: 34, note: 'Pul: kahverengi, ay-yıldız (5 para, matbua).' },
+  pul_mavi: { w: 44, h: 34, note: 'Pul: mavi, şehir (1 kuruş, ağır mektup).' },
+  pul_mor: { w: 44, h: 34, note: 'Pul: mor, köprü (2 kuruş, paket).' },
+  kettle: { w: 110, h: 82, note: 'Bakır buhar çaydanlığı, tepeden; ağzı sağda.' },
   item_corap: { w: 112, h: 60, note: 'Paketten çıkan yün çorap.' },
   item_dut: { w: 74, h: 52, note: 'Bez kesede kuru dut.' },
 } as const;

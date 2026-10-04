@@ -18,6 +18,7 @@
   "envelope.package": "Paket",
   "envelope.sender": "GÖNDEREN",
   "envelope.field": "Ordu-yı Hümayun",
+  "envelope.fieldPost": "SAHRA POSTASI\nMeccanen",
   "envelope.close": "Mektubu çıkarmak için zarfa dokununuz",
   "tray.locked": "Sonra zimmetlenecek âlet",
   "letter.close": "Zarfa koy",

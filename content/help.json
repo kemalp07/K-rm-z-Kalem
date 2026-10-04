@@ -60,6 +60,17 @@
         "Mektuba basmadan bırakırsan mühür kartına geri döner.",
         "DURDUR ve İSTİHBARAT'ta sebep pusulası gelir; sebebini işaretle. Akşam defter sebebin tutup tutmadığını yazar."
       ]
+    },
+    {
+      "id": "kettle",
+      "tag": "Çaydanlık",
+      "title": "Buhar Çaydanlığı",
+      "lines": [
+        "Mektubu köşesinden zarfına koy; zarf önüyle masaya gelir.",
+        "Çaydanlığı sürükleyip ağzını pulun üstüne tut. Buhar zamkı yumuşatınca pul kalkar.",
+        "Pulun altına yazı yazılmışsa görünür. Görülen yazı deftere geçer.",
+        "Cepheden gelen asker mektubunda pul olmaz; olursa dikkat."
+      ]
     }
   ]
 }

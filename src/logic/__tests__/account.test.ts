@@ -1,7 +1,7 @@
 import day01 from '../../../content/day01.json';
 import type { Day } from '../../content/types';
 import { judge } from '../account';
-import { closeLedger, decide, economy, eveningBill, finishEvening, flagsOf, openEnvelope, purseOf, setReason, startDay } from '../dayFlow';
+import { closeLedger, decide, economy, eveningBill, finishEvening, flagsOf, openEnvelope, purseOf, setReason, startDay, type DayState } from '../dayFlow';
 import { emptyProgress } from '../flags';
 
 const day = day01 as Day;
@@ -39,5 +39,23 @@ describe('the Şube reckons', () => {
   it('refuses an evening the purse cannot pay', () => {
     const s = { ...startDay(day), phase: 'evening' as const, purse: 3 };
     expect(finishEvening(s, ['ekmek'])).toBe(s);
+  });
+});
+
+describe('rank', () => {
+  it('rises with clean days and pays more', () => {
+    let s: DayState = { ...startDay(day), merit: 3, phase: 'ledger', done: [] };
+    s = closeLedger(s, () => undefined);
+    expect(s.rank).toBe(1);
+    expect(flagsOf(s).has('d1:promoted')).toBe(true);
+    expect(s.account?.lines[0]?.amount).toBe(economy.ranks[0]!.wage);
+  });
+});
+
+describe('under the stamp', () => {
+  it('counts writing under a stamp let through unseen', () => {
+    const l = { ...letter('d1_saadet'), underStamp: 'x' };
+    expect(judge(l, { ...emptyProgress(), decision: 'delivered' })).toContain('inkMissed');
+    expect(judge(l, { ...emptyProgress(), revealed: ['stamp'], decision: 'delivered' })).not.toContain('inkMissed');
   });
 });
