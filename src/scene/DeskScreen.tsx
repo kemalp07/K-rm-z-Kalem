@@ -224,11 +224,24 @@ export function DeskScreen() {
   const papers = useMemo(() => morningPapers(state.day), [state.day]);
   const [morningIdx, setMorningIdx] = useState(0);
   const skipOpen = useRef(false);
+  const plateTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [openPlate, setOpenPlate] = useState(() => {
     const s = useGame.getState().state;
     return s.phase === 'desk' && !s.morningDone;
   });
   const openVeil = useSharedValue(1);
+  const dismissPlate = useCallback(() => {
+    if (plateTimer.current) clearTimeout(plateTimer.current);
+    plateTimer.current = null;
+    openVeil.value = withTiming(0, { duration: 260, easing: GLIDE });
+    setTimeout(() => setOpenPlate(false), 260);
+  }, [openVeil]);
+  const raisePlate = useCallback(() => {
+    if (plateTimer.current) clearTimeout(plateTimer.current);
+    openVeil.value = 1;
+    setOpenPlate(true);
+    plateTimer.current = setTimeout(dismissPlate, 2600);
+  }, [dismissPlate, openVeil]);
   const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0 && !openPlate;
   const morningIn = useSharedValue(0);
   // The director opens with a promotion when yesterday earned one.
@@ -310,6 +323,8 @@ export function DeskScreen() {
   useEffect(() => {
     if (skipOpen.current) {
       skipOpen.current = false;
+      if (plateTimer.current) clearTimeout(plateTimer.current);
+      plateTimer.current = null;
       setOpenPlate(false);
       openVeil.value = 0;
       return;
@@ -318,9 +333,11 @@ export function DeskScreen() {
       setOpenPlate(false);
       return;
     }
-    openVeil.value = 1;
-    setOpenPlate(true);
-  }, [state.day, openVeil]); // eslint-disable-line react-hooks/exhaustive-deps
+    raisePlate();
+    return () => {
+      if (plateTimer.current) clearTimeout(plateTimer.current);
+    };
+  }, [state.day, openVeil, raisePlate]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
@@ -575,11 +592,11 @@ export function DeskScreen() {
 
   // The Şube's rules lie open on the desk the very first night, once the morning papers are read.
   useEffect(() => {
-    if (state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
+    if (state.phase !== 'desk' || showMorning || openPlate || seenHelp.includes('rules')) return;
     const timer = setTimeout(() => openHelp('rules'), 900);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showMorning]);
+  }, [showMorning, openPlate]);
 
   const onBegin = (p: Point) => {
     const g = useGame.getState();
@@ -669,8 +686,7 @@ export function DeskScreen() {
     }
     if (openPlate && s.phase === 'desk') {
       drag.current = null;
-      openVeil.value = withTiming(0, { duration: 220, easing: GLIDE });
-      setTimeout(() => setOpenPlate(false), 220);
+      dismissPlate();
       return;
     }
 
@@ -908,8 +924,7 @@ export function DeskScreen() {
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
-          openVeil.value = 1;
-          setOpenPlate(true);
+          raisePlate();
           penHome();
           const home = { duration: T.home, easing: GLIDE };
           candleX.value = withTiming(LAYOUT.rest.candle.x, home);
