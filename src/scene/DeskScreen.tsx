@@ -3,7 +3,7 @@ import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
-import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
+import { ARRIVE, GLIDE, RETURN_SPRING, SETTLE, SLAM, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
@@ -30,11 +30,13 @@ import { Ledger } from '../objects/Ledger';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
+import { dossierCount, lessonOf, lessonSpread, morningAsides, pinsOf } from '../logic/pulse';
 import { postmarkOf } from '../content/postmark';
 import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
-import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
+import { imprintPoint, Letter, LetterMarks, LetterStill, ReadingGlance, letterRegion, type ImprintAt } from '../objects/Letter';
+import { PinRail } from '../objects/PinRail';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
@@ -169,6 +171,12 @@ export function DeskScreen() {
 
   const letterIn = useSharedValue(state.open ? 1 : 0);
   const letterOut = useSharedValue(0);
+  /** 0→1 as the lamp's glance travels down a letter that just landed. */
+  const inkIn = useSharedValue(state.open ? 1 : 0);
+  /** The desk flinches when a stamp bites. */
+  const shake = useSharedValue(0);
+  /** The top envelope lifts a little while the desk is waiting. */
+  const bob = useSharedValue(0);
   const exitDir = useSharedValue(EXIT.delivered);
 
   const penX = useSharedValue<number>(LAYOUT.rest.pen.x);
@@ -223,9 +231,27 @@ export function DeskScreen() {
   const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
   const morningIn = useSharedValue(0);
   // The director opens with a promotion when yesterday earned one.
-  const morningLead = (state.events ?? []).includes(`d${state.day - 1}:promoted`)
-    ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
-    : [];
+  const asides = useMemo(
+    () => morningAsides(state.day, state.events ?? [], dossierCount(state.letters, getLetter)),
+    [state.day, state.events, state.letters],
+  );
+  const morningLead = [
+    ...((state.events ?? []).includes(`d${state.day - 1}:promoted`)
+      ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
+      : []),
+    ...asides.mudur,
+  ];
+  const lesson = useMemo(() => {
+    if (state.phase !== 'ledger') return null;
+    const decided = state.done.flatMap((id) => {
+      const letter = getLetter(id);
+      const p = state.letters[id];
+      return letter && p?.decision ? [{ letter, p }] : [];
+    });
+    return lessonOf(decided);
+  }, [state.phase, state.done, state.letters]);
+  const pins = useMemo(() => pinsOf(state.letters, getLetter), [state.letters]);
+  const dossier = useMemo(() => dossierCount(state.letters, getLetter), [state.letters]);
   /** The opened envelope turned over in the hand: front and back, larger. */
   const [envView, setEnvView] = useState(false);
   const envViewIn = useSharedValue(0);
@@ -281,14 +307,16 @@ export function DeskScreen() {
     if (hasCandle) loopSfx('flame', 0.12);
   }, [hasCandle]);
 
+  useEffect(() => {
+    bob.value = withRepeat(withSequence(withTiming(1, { duration: 900, easing: GLIDE }), withTiming(0, { duration: 900, easing: GLIDE })), -1, false);
+  }, [bob]);
+
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | undefined;
     switch (state.phase) {
       case 'desk':
-        // No oil bought last night: the lamp burns low all day.
-        lampLevel.value = withTiming(lowOil ? 0.62 : 1, { duration: 1400, easing: GLIDE });
         eveningIn.value = 0;
         dismissedIn.value = 0;
         ledgerY.value = 640;
@@ -324,7 +352,15 @@ export function DeskScreen() {
     return () => {
       if (timer) clearTimeout(timer);
     };
-  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn, lowOil]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // No oil last night: the flame sags, and on the last letter it nearly goes out.
+  const lettersLeft = state.stack.length + (state.open ? 1 : 0);
+  useEffect(() => {
+    if (state.phase !== 'desk') return;
+    const dim = lowOil && lettersLeft <= 1 ? 0.22 : lowOil ? 0.55 : 1;
+    lampLevel.value = withTiming(dim, { duration: 900, easing: GLIDE });
+  }, [state.phase, lowOil, lettersLeft, lampLevel]);
 
   // --- steam: held over the stamp of a folded-away letter, it lifts the stamp ----------
   useEffect(() => {
@@ -421,11 +457,12 @@ export function DeskScreen() {
         useGame.getState().stamp(id, d);
         letterOut.value = 0;
         letterIn.value = 0;
+        inkIn.value = 0;
         setImprint(null);
         exiting.current = false;
       }, after + T.leave + 50);
     },
-    [exitDir, letterOut, letterIn],
+    [exitDir, letterOut, letterIn, inkIn],
   );
 
   const finishStamp = useCallback(
@@ -435,10 +472,11 @@ export function DeskScreen() {
       exiting.current = true;
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
-      // A hand never stamps quite straight.
+      // A hand never stamps quite straight. The desk takes the blow.
       setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
-      imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
+      imprintIn.value = withTiming(1, { duration: 150, easing: SLAM });
+      shake.value = withSequence(withTiming(6, { duration: 32 }), withTiming(-4, { duration: 42 }), withTiming(2, { duration: 36 }), withTiming(0, { duration: 70 }));
       setTimeout(() => stampBack(d), 200);
       if (d === 'stopped' || d === 'reported') {
         // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
@@ -451,7 +489,7 @@ export function DeskScreen() {
       }
       sendOff(id, d, T.stampRest);
     },
-    [layout, stampBack, imprintIn, slipIn, sendOff],
+    [layout, stampBack, imprintIn, shake, slipIn, sendOff],
   );
 
   /** Over the paper and holding still: the stamp starts to come down. */
@@ -467,13 +505,13 @@ export function DeskScreen() {
   // --- gesture handlers (JS thread; positions go out through shared values) ------
   // --- instruction sheets ---------------------------------------------------------
   const openHelp = useCallback(
-    (id: HelpId) => {
+    (id: HelpId, at = 0) => {
       if (penInHand.current) penHome();
       useGame.getState().markHelpSeen(id);
       setHelp(id);
-      setSpread(0);
+      setSpread(id === 'rules' ? at : 0);
       helpIn.value = 0;
-      helpIn.value = withTiming(1, { duration: 600, easing: SETTLE });
+      helpIn.value = withTiming(1, { duration: 420, easing: SETTLE });
       playSfx('paper', 0.6);
     },
     [helpIn, penHome],
@@ -596,6 +634,11 @@ export function DeskScreen() {
     }
 
     if (s.phase === 'ledger') {
+      if (lesson && inRect(p, LAYOUT.lesson, 4)) {
+        drag.current = null;
+        openHelp('rules', lessonSpread(pages, lesson.pageId));
+        return;
+      }
       drag.current = { kind: 'ledger' };
       return;
     }
@@ -864,8 +907,11 @@ export function DeskScreen() {
           g.open(d.id);
           setDragId(null);
           letterIn.value = 0;
-          letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
+          letterIn.value = withSpring(1, ARRIVE);
+          inkIn.value = 0;
+          inkIn.value = withTiming(1, { duration: T.read, easing: GLIDE });
           playSfx('envelope_tear');
+          playSfx('paper', 0.55);
           haptic(Haptics.ImpactFeedbackStyle.Medium);
         } else {
           const i = g.state.stack.indexOf(d.id);
@@ -949,6 +995,7 @@ export function DeskScreen() {
 
   // --- derived transforms ---------------------------------------------------------
   const boardTransform = [{ translateX: fit.ox }, { translateY: fit.oy }, { scale: fit.scale }];
+  const shakeTransform = useDerivedValue<Transforms3d>(() => [{ translateX: shake.value }, { translateY: shake.value * 0.25 }]);
   const letterTransform = useDerivedValue<Transforms3d>(() => {
     const o = { x: LAYOUT.letter.x + LAYOUT.letter.w / 2, y: LAYOUT.letter.y };
     const v = letterIn.value;
@@ -987,6 +1034,14 @@ export function DeskScreen() {
   const ledgerTransform = useDerivedValue(() => [{ translateY: ledgerY.value }]);
 
   const stackIds = state.stack;
+  const bobTop = state.phase === 'desk' && !state.open && !dragId && stackIds.length > 0;
+  const topId = bobTop ? stackIds[0] : undefined;
+  const topPose = useMemo(() => {
+    if (!topId) return null;
+    const l = getLetter(topId);
+    return l ? stackPose(l, 0, LAYOUT.stack) : null;
+  }, [topId]);
+  const topLift = useDerivedValue<Transforms3d>(() => [{ translateY: -bob.value * 5 }]);
   const draggedLetter = dragId ? getLetter(dragId) : undefined;
   const nextDay = state.day + 1;
   const nextReady = nextDay <= LAST_AUTHORED_DAY;
@@ -1034,6 +1089,7 @@ export function DeskScreen() {
           still={letterStill?.key === stillKey ? <BakedImage baked={letterStill} /> : undefined}
           marks={marksNode}
         />
+        <ReadingGlance paper={layout.paper} sweep={inkIn} />
       </Fade>
     ) : null;
 
@@ -1041,7 +1097,7 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   // Split by how often each part changes, so opening a letter redoes only small images.
-  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
+  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0, pins.map((p) => p.id).join(','), dossier].join('|');
   const desk_ = useBaked(
     <FontsBridge fonts={fonts}>
       <DeskSurface />
@@ -1052,6 +1108,7 @@ export function DeskScreen() {
       <LockedTray />
       {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
       {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
+      {showSlips && <PinRail pins={pins} dossier={dossier} />}
     </FontsBridge>,
     DESK_REGION,
     fit.scale,
@@ -1091,7 +1148,7 @@ export function DeskScreen() {
       {[...stackIds]
         .map((id, i) => ({ id, i }))
         .reverse()
-        .filter(({ id }) => id !== dragId)
+        .filter(({ id }) => id !== dragId && id !== topId)
         .map(({ id, i }) => {
           const l = getLetter(id)!;
           const pose = stackPose(l, i, LAYOUT.stack);
@@ -1105,7 +1162,7 @@ export function DeskScreen() {
     </FontsBridge>,
     PILE_REGION,
     fit.scale,
-    `pile:${stackIds.join(',')}|${dragId}`,
+    `pile:${stackIds.join(',')}|${dragId}|${topId ?? ''}`,
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
@@ -1116,13 +1173,26 @@ export function DeskScreen() {
     `stamps:${stampsEnabled}:${pressing}`,
   );
 
+  const topLetter = topId ? getLetter(topId) : undefined;
+  const topNode =
+    topLetter && topPose ? (
+      <Group transform={[{ translateX: topPose.x }, { translateY: topPose.y }, { rotate: topPose.angle }]}>
+        <Group transform={topLift}>
+          <EnvelopeBody letter={topLetter} postmark={postmarkOf(topLetter, day.calendar.rumi)} />
+          <EnvelopeAddress letter={topLetter} />
+        </Group>
+      </Group>
+    ) : null;
+
   return (
     <GestureDetector gesture={gesture}>
       <Canvas style={{ flex: 1, backgroundColor: C.deskDark }}>
         <FontsBridge fonts={fonts}>
           <Group transform={boardTransform}>
+            <Group transform={shakeTransform}>
             <BakedImage baked={desk_} />
             <BakedImage baked={pile} />
+            {topNode}
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
             {letterNode}
@@ -1143,6 +1213,7 @@ export function DeskScreen() {
               <Group transform={lensTransform}>
                 <BakedImage baked={desk_} />
                 <BakedImage baked={pile} />
+                {topNode}
                 <BakedImage baked={stampCards} />
                 {letterNode}
                 {envNode}
@@ -1157,16 +1228,19 @@ export function DeskScreen() {
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
             {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
 
-            {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
+            {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} lesson={lesson} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} />}
+            {showMorning && papers[morningIdx] && (
+              <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} aside={asides.family} />
+            )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
+            </Group>
           </Group>
         </FontsBridge>
       </Canvas>

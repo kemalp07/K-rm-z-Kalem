@@ -126,15 +126,33 @@ export function closeLedger(s: DayState, letterOf: (id: string) => Letter | unde
     return letter && p ? [{ letter, p }] : [];
   });
   const rank = s.rank ?? 0;
-  const account = reckon(decided, economy, economy.ranks[rank]?.wage ?? economy.wage);
-  const warnings = (s.warnings ?? 0) + account.warnings;
+  const reckoned = reckon(decided, economy, economy.ranks[rank]?.wage ?? economy.wage);
+  // The first forgery is a lesson: the money is docked, the warning is not. The ledger opens the page.
+  const taught = (s.events ?? []).some((e) => e.endsWith(':lesson'));
+  const firstLesson = !taught && reckoned.warnings > 0;
+  const countedWarnings = firstLesson ? reckoned.warnings - 1 : reckoned.warnings;
+  let waived = false;
+  const account = firstLesson
+    ? {
+        ...reckoned,
+        warnings: countedWarnings,
+        lines: reckoned.lines.map((l) => {
+          if (!waived && l.warning) {
+            waived = true;
+            return { ...l, warning: false };
+          }
+          return l;
+        }),
+      }
+    : reckoned;
+  const warnings = (s.warnings ?? 0) + countedWarnings;
   // How the day went, for the director's note next morning.
   const docked = account.lines.some((l) => l.amount < 0);
   const rewarded = account.lines.some((l) => l.kind === 'spyCaught');
-  const verdict = [account.warnings ? 'warned' : '', rewarded ? 'rewarded' : '', docked ? 'docked' : '', !docked ? 'clean' : ''].filter(Boolean);
+  const verdict = [countedWarnings ? 'warned' : '', firstLesson ? 'lesson' : '', rewarded ? 'rewarded' : '', docked ? 'docked' : '', !docked ? 'clean' : ''].filter(Boolean);
   // Standing: clean days and spies caught raise it, warnings cut it; rank follows, never back.
   const caught = account.lines.filter((l) => l.kind === 'spyCaught').length;
-  const merit = Math.max(0, (s.merit ?? 0) + (docked ? 0 : economy.merit.cleanDay) + caught * economy.merit.spyCaught + account.warnings * economy.merit.warning);
+  const merit = Math.max(0, (s.merit ?? 0) + (docked ? 0 : economy.merit.cleanDay) + caught * economy.merit.spyCaught + countedWarnings * economy.merit.warning);
   const reached = economy.ranks.reduce((best, r, i) => (merit >= r.merit ? i : best), 0);
   const newRank = Math.max(rank, reached);
   if (newRank > rank) verdict.push('promoted');

@@ -41,6 +41,10 @@ export const LAYOUT = {
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 398, w: 120, h: 93 },
   ledger: { x: 240, y: 28, w: 520, h: 512 },
+  /** The lesson line on the ledger; a tap opens the Talimatname there. */
+  lesson: { x: 268, y: 462, w: 270, h: 40 },
+  /** Cork and string beside the purse: what the clerk has ringed in red. */
+  pins: { x: 808, y: 328, w: 172, h: 66 },
   /** Instruction slips on the desk; the tool ones sit partly under their tool. */
   help: {
     /** The Talimatname, closed, where the rules sheet used to lie. */

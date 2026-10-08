@@ -22,6 +22,13 @@ export function bookletPages(day: number, source: Booklet = booklet): BookletPag
     }));
 }
 
+/** Which open spread shows `pageId`. The cover is spread 0; an unknown page stays there. */
+export function spreadFor(pages: { id: string }[], pageId: string): number {
+  const i = pages.findIndex((p) => p.id === pageId);
+  if (i < 0) return 0;
+  return Math.floor((i + 1) / 2);
+}
+
 /** Pages that arrived on exactly this day; the booklet opens on the first of them. */
 export const newPages = (day: number, source: Booklet = booklet) =>
   day > 1 ? bookletPages(day, source).filter((p) => p.day === day) : [];

@@ -22,11 +22,25 @@ describe('side letters', () => {
     expect(pickSideLetters(pool, '30 Mayıs 1331', 2, 9)).toEqual(pickSideLetters(pool, '30 Mayıs 1331', 2, 9));
   });
 
-  test('side letters go under the first authored letter, authored order kept', () => {
-    const stack = mixIntoStack(['m1', 'm2', 'm3'], ['x', 'y'], 3);
-    expect(stack[0]).toBe('m1');
-    expect(stack.filter((id) => id.startsWith('m'))).toEqual(['m1', 'm2', 'm3']);
-    expect(stack).toHaveLength(5);
+  test('the first two authored letters stay on top; the rest keep their order', () => {
+    for (const seed of [1, 3, 9, 42, 99]) {
+      const stack = mixIntoStack(['m1', 'm2', 'm3', 'm4'], ['x', 'y'], seed);
+      expect(stack.slice(0, 2)).toEqual(['m1', 'm2']);
+      expect(stack.filter((id) => id.startsWith('m'))).toEqual(['m1', 'm2', 'm3', 'm4']);
+      expect(stack).toHaveLength(6);
+    }
+  });
+
+  test('a side letter is a glance: news, a detail, and anything that must be censored', () => {
+    const words = poolLetters.map((l) => l.segments.reduce((n, s) => n + s.text.split(/\s+/).length, 0)).sort((a, b) => a - b);
+    const mid = words[Math.floor(words.length / 2)]!;
+    expect(mid).toBeLessThan(55);
+    expect(words[words.length - 1]).toBeLessThan(120);
+    for (const l of poolLetters) {
+      const normals = l.segments.filter((s) => s.kind === 'normal').length;
+      expect(normals).toBeLessThanOrEqual(2);
+      expect(l.segments.length).toBeGreaterThan(0);
+    }
   });
 
   test('every exported letter is a playable Letter', () => {

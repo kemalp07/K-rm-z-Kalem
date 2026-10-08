@@ -38,13 +38,13 @@ function MudurNote({ paper, flags, date, lead }: { paper: Extract<MorningPaper, 
 }
 
 /** A letter from home, in Nazife's careful hand. */
-function FamilyLetter({ paper, flags }: { paper: Extract<MorningPaper, { kind: 'family' }>; flags: ReadonlySet<string> }) {
+function FamilyLetter({ paper, flags, aside }: { paper: Extract<MorningPaper, { kind: 'family' }>; flags: ReadonlySet<string>; aside?: string | null }) {
   const r = SHEET;
-  const body = shown(paper.body, flags);
+  const body = [...shown(paper.body, flags).map((l) => l.text), aside].filter((l): l is string => !!l);
   return (
     <Group>
       <Para text={paper.heading} x={r.x + 40} y={r.y + 40} width={300} family="Caveat" size={22} color={C.inkBlue} />
-      <Para text={body.map((l) => l.text).join('\n\n')} x={r.x + 48} y={r.y + 80} width={r.w - 90} family="Caveat" size={19} color={C.inkBlue} lineHeight={1.02} />
+      <Para text={body.join('\n\n')} x={r.x + 48} y={r.y + 80} width={r.w - 90} family="Caveat" size={19} color={C.inkBlue} lineHeight={1.02} />
       <Para text={paper.sign} x={r.x + r.w - 240} y={r.y + r.h - 70} width={200} family="Caveat" size={20} color={C.inkBlue} align="right" />
     </Group>
   );
@@ -80,7 +80,7 @@ function Newspaper({ paper, flags, date }: { paper: Extract<MorningPaper, { kind
 }
 
 /** The morning's papers, one at a time over the desk; a touch puts each away. */
-export function MorningPapers({ paper, flags, date, opacity, lead = [] }: { paper: MorningPaper; flags: ReadonlySet<string>; date: string; opacity: SharedValue<number>; lead?: string[] }) {
+export function MorningPapers({ paper, flags, date, opacity, lead = [], aside = null }: { paper: MorningPaper; flags: ReadonlySet<string>; date: string; opacity: SharedValue<number>; lead?: string[]; aside?: string | null }) {
   const isNews = paper.kind === 'newspaper';
   const r = isNews ? PAPER : SHEET;
   const shape = useMemo(() => roughRect(r, `morning-${paper.kind}`, 0.9), [r, paper.kind]);
@@ -98,7 +98,7 @@ export function MorningPapers({ paper, flags, date, opacity, lead = [] }: { pape
           </Path>
         )}
         {paper.kind === 'mudur' && <MudurNote paper={paper} flags={flags} date={date} lead={lead} />}
-        {paper.kind === 'family' && <FamilyLetter paper={paper} flags={flags} />}
+        {paper.kind === 'family' && <FamilyLetter paper={paper} flags={flags} aside={aside} />}
         {paper.kind === 'newspaper' && <Newspaper paper={paper} flags={flags} date={date} />}
         <Para text={mornings.hint} x={0} y={r.y + r.h + 12} width={WORLD.w} family="Cormorant" size={14} color="rgba(232,218,190,0.75)" italic align="center" />
       </Group>
