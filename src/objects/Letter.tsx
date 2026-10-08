@@ -512,23 +512,6 @@ function Imprint({ imprint, letter, imprintIn, today }: { imprint: ImprintAt; le
   );
 }
 
-/** A warm bar travelling down a page just opened, the way a lamp finds the writing. */
-export function ReadingGlance({ paper, sweep }: { paper: R; sweep: SharedValue<number> }) {
-  const transform = useDerivedValue<Transforms3d>(() => [{ translateY: sweep.value * Math.max(48, paper.h - 64) }]);
-  const color = useDerivedValue(() => {
-    const v = sweep.value;
-    const a = v <= 0.04 || v >= 0.96 ? 0 : Math.sin(v * Math.PI) * 0.28;
-    return `rgba(255, 214, 150, ${a})`;
-  });
-  return (
-    <Group transform={transform}>
-      <Rect x={paper.x + 16} y={paper.y + 30} width={paper.w - 32} height={26} color={color}>
-        <BlurMask blur={12} style="normal" />
-      </Rect>
-    </Group>
-  );
-}
-
 /** Where a stamp pressed at p lands: wholly on the paper. */
 export function imprintPoint(paper: R, p: { x: number; y: number }) {
   const mx = IMPRINT.w / 2 + 6;

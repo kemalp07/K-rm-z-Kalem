@@ -3,7 +3,7 @@ import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
-import { ARRIVE, GLIDE, RETURN_SPRING, SETTLE, SLAM, T } from './motion';
+import { GLIDE, RETURN_SPRING, SETTLE, SLAM, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
@@ -35,7 +35,7 @@ import { postmarkOf } from '../content/postmark';
 import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
-import { imprintPoint, Letter, LetterMarks, LetterStill, ReadingGlance, letterRegion, type ImprintAt } from '../objects/Letter';
+import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
 import { PinRail } from '../objects/PinRail';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
@@ -171,12 +171,6 @@ export function DeskScreen() {
 
   const letterIn = useSharedValue(state.open ? 1 : 0);
   const letterOut = useSharedValue(0);
-  /** 0→1 as the lamp's glance travels down a letter that just landed. */
-  const inkIn = useSharedValue(state.open ? 1 : 0);
-  /** The desk flinches when a stamp bites. */
-  const shake = useSharedValue(0);
-  /** The top envelope lifts a little while the desk is waiting. */
-  const bob = useSharedValue(0);
   const exitDir = useSharedValue(EXIT.delivered);
 
   const penX = useSharedValue<number>(LAYOUT.rest.pen.x);
@@ -306,10 +300,6 @@ export function DeskScreen() {
   useEffect(() => {
     if (hasCandle) loopSfx('flame', 0.12);
   }, [hasCandle]);
-
-  useEffect(() => {
-    bob.value = withRepeat(withSequence(withTiming(1, { duration: 900, easing: GLIDE }), withTiming(0, { duration: 900, easing: GLIDE })), -1, false);
-  }, [bob]);
 
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
@@ -457,12 +447,11 @@ export function DeskScreen() {
         useGame.getState().stamp(id, d);
         letterOut.value = 0;
         letterIn.value = 0;
-        inkIn.value = 0;
         setImprint(null);
         exiting.current = false;
       }, after + T.leave + 50);
     },
-    [exitDir, letterOut, letterIn, inkIn],
+    [exitDir, letterOut, letterIn],
   );
 
   const finishStamp = useCallback(
@@ -476,7 +465,6 @@ export function DeskScreen() {
       setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
       imprintIn.value = withTiming(1, { duration: 150, easing: SLAM });
-      shake.value = withSequence(withTiming(6, { duration: 32 }), withTiming(-4, { duration: 42 }), withTiming(2, { duration: 36 }), withTiming(0, { duration: 70 }));
       setTimeout(() => stampBack(d), 200);
       if (d === 'stopped' || d === 'reported') {
         // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
@@ -489,7 +477,7 @@ export function DeskScreen() {
       }
       sendOff(id, d, T.stampRest);
     },
-    [layout, stampBack, imprintIn, shake, slipIn, sendOff],
+    [layout, stampBack, imprintIn, slipIn, sendOff],
   );
 
   /** Over the paper and holding still: the stamp starts to come down. */
@@ -735,7 +723,7 @@ export function DeskScreen() {
       return;
     }
 
-    const slipHit = slipIds.find((id) => inRect(p, LAYOUT.help[id], 4));
+    const slipHit = slipIds.find((id) => (id === 'rules' || !seenHelp.includes(id)) && inRect(p, LAYOUT.help[id], 4));
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
       return;
@@ -907,9 +895,7 @@ export function DeskScreen() {
           g.open(d.id);
           setDragId(null);
           letterIn.value = 0;
-          letterIn.value = withSpring(1, ARRIVE);
-          inkIn.value = 0;
-          inkIn.value = withTiming(1, { duration: T.read, easing: GLIDE });
+          letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
           playSfx('envelope_tear');
           playSfx('paper', 0.55);
           haptic(Haptics.ImpactFeedbackStyle.Medium);
@@ -995,7 +981,6 @@ export function DeskScreen() {
 
   // --- derived transforms ---------------------------------------------------------
   const boardTransform = [{ translateX: fit.ox }, { translateY: fit.oy }, { scale: fit.scale }];
-  const shakeTransform = useDerivedValue<Transforms3d>(() => [{ translateX: shake.value }, { translateY: shake.value * 0.25 }]);
   const letterTransform = useDerivedValue<Transforms3d>(() => {
     const o = { x: LAYOUT.letter.x + LAYOUT.letter.w / 2, y: LAYOUT.letter.y };
     const v = letterIn.value;
@@ -1003,7 +988,7 @@ export function DeskScreen() {
     const e = exitDir.value;
     return [
       { translateX: o.x + e.dx * out },
-      { translateY: o.y + e.dy * out + (1 - v) * 22 },
+      { translateY: o.y + e.dy * out + (1 - v) * 8 },
       { rotate: e.rot * out + (1 - v) * -0.02 },
       // Folded back into the envelope: it shrinks down toward it and is gone.
       { translateY: envViewIn.value * 150 },
@@ -1034,14 +1019,6 @@ export function DeskScreen() {
   const ledgerTransform = useDerivedValue(() => [{ translateY: ledgerY.value }]);
 
   const stackIds = state.stack;
-  const bobTop = state.phase === 'desk' && !state.open && !dragId && stackIds.length > 0;
-  const topId = bobTop ? stackIds[0] : undefined;
-  const topPose = useMemo(() => {
-    if (!topId) return null;
-    const l = getLetter(topId);
-    return l ? stackPose(l, 0, LAYOUT.stack) : null;
-  }, [topId]);
-  const topLift = useDerivedValue<Transforms3d>(() => [{ translateY: -bob.value * 5 }]);
   const draggedLetter = dragId ? getLetter(dragId) : undefined;
   const nextDay = state.day + 1;
   const nextReady = nextDay <= LAST_AUTHORED_DAY;
@@ -1089,7 +1066,6 @@ export function DeskScreen() {
           still={letterStill?.key === stillKey ? <BakedImage baked={letterStill} /> : undefined}
           marks={marksNode}
         />
-        <ReadingGlance paper={layout.paper} sweep={inkIn} />
       </Fade>
     ) : null;
 
@@ -1106,8 +1082,8 @@ export function DeskScreen() {
       <MoneyNote kurus={purseOf(state)} warnings={state.warnings ?? 0} />
       <BrassPlate rank={{ name: rankOf(state).name, title: desk.rank.title }} />
       <LockedTray />
-      {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
-      {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
+      {showSlips && slipIds.filter((id) => id !== 'rules' && !seenHelp.includes(id)).map((id) => <HelpSlip key={id} id={id} />)}
+      {showSlips && <BookletOnDesk />}
       {showSlips && <PinRail pins={pins} dossier={dossier} />}
     </FontsBridge>,
     DESK_REGION,
@@ -1139,7 +1115,6 @@ export function DeskScreen() {
           </Group>
         );
       })}
-      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Caveat" size={17} color="rgba(236,222,192,0.85)" align="center" />
     </Fade>
   ) : null;
   const pile = useBaked(
@@ -1148,7 +1123,7 @@ export function DeskScreen() {
       {[...stackIds]
         .map((id, i) => ({ id, i }))
         .reverse()
-        .filter(({ id }) => id !== dragId && id !== topId)
+        .filter(({ id }) => id !== dragId)
         .map(({ id, i }) => {
           const l = getLetter(id)!;
           const pose = stackPose(l, i, LAYOUT.stack);
@@ -1162,7 +1137,7 @@ export function DeskScreen() {
     </FontsBridge>,
     PILE_REGION,
     fit.scale,
-    `pile:${stackIds.join(',')}|${dragId}|${topId ?? ''}`,
+    `pile:${stackIds.join(',')}|${dragId ?? ''}`,
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
@@ -1173,26 +1148,13 @@ export function DeskScreen() {
     `stamps:${stampsEnabled}:${pressing}`,
   );
 
-  const topLetter = topId ? getLetter(topId) : undefined;
-  const topNode =
-    topLetter && topPose ? (
-      <Group transform={[{ translateX: topPose.x }, { translateY: topPose.y }, { rotate: topPose.angle }]}>
-        <Group transform={topLift}>
-          <EnvelopeBody letter={topLetter} postmark={postmarkOf(topLetter, day.calendar.rumi)} />
-          <EnvelopeAddress letter={topLetter} />
-        </Group>
-      </Group>
-    ) : null;
-
   return (
     <GestureDetector gesture={gesture}>
       <Canvas style={{ flex: 1, backgroundColor: C.deskDark }}>
         <FontsBridge fonts={fonts}>
           <Group transform={boardTransform}>
-            <Group transform={shakeTransform}>
             <BakedImage baked={desk_} />
             <BakedImage baked={pile} />
-            {topNode}
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
             {letterNode}
@@ -1213,7 +1175,6 @@ export function DeskScreen() {
               <Group transform={lensTransform}>
                 <BakedImage baked={desk_} />
                 <BakedImage baked={pile} />
-                {topNode}
                 <BakedImage baked={stampCards} />
                 {letterNode}
                 {envNode}
@@ -1240,7 +1201,6 @@ export function DeskScreen() {
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
-            </Group>
           </Group>
         </FontsBridge>
       </Canvas>

@@ -100,7 +100,6 @@ export function MorningPapers({ paper, flags, date, opacity, lead = [], aside = 
         {paper.kind === 'mudur' && <MudurNote paper={paper} flags={flags} date={date} lead={lead} />}
         {paper.kind === 'family' && <FamilyLetter paper={paper} flags={flags} aside={aside} />}
         {paper.kind === 'newspaper' && <Newspaper paper={paper} flags={flags} date={date} />}
-        <Para text={mornings.hint} x={0} y={r.y + r.h + 12} width={WORLD.w} family="Cormorant" size={14} color="rgba(232,218,190,0.75)" italic align="center" />
       </Group>
     </Fade>
   );
