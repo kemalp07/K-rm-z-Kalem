@@ -8,29 +8,8 @@ import type { HelpId } from '../content/types';
 import { Fade } from '../scene/Fade';
 import { C } from '../scene/palette';
 import { Para } from '../scene/Para';
-import { roughRect, shakyLine } from '../scene/rough';
+import { roughRect } from '../scene/rough';
 import { LAYOUT, WORLD } from '../scene/world';
-
-export const HELP_IDS: HelpId[] = ['rules', 'pen', 'candle', 'magnifier', 'stamps', 'kettle'];
-
-/**
- * A scrap left under a tool the clerk has not yet been shown. No name on it:
- * it is a note, and once it has been read it leaves the desk.
- */
-export function HelpSlip({ id }: { id: HelpId }) {
-  const r = LAYOUT.help[id];
-  const shape = useMemo(() => roughRect(r, `help-${id}`, 0.7, true), [r, id]);
-  return (
-    <Group transform={[{ rotate: r.rot }]} origin={{ x: r.x + r.w / 2, y: r.y + r.h / 2 }}>
-      <Path path={shape} color="#d9cdb4">
-        <Shadow dx={-1} dy={2} blur={2} color="rgba(0,0,0,0.45)" />
-      </Path>
-      {[0, 1].map((i) => (
-        <Path key={i} path={shakyLine(r.x + 8, r.y + 11 + i * 8, r.x + r.w - 10, r.y + 11 + i * 8, `hs${id}${i}`, 0.35)} style="stroke" strokeWidth={0.7} color="rgba(43,33,24,0.28)" />
-      ))}
-    </Group>
-  );
-}
 
 /** The note opened up over the desk. Any touch puts it back. */
 export function HelpSheetView({ id, opacity }: { id: HelpId; opacity: SharedValue<number> }) {

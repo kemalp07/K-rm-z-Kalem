@@ -27,7 +27,7 @@ import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
 import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
-import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
+import { HelpSheetView } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
 import { dossierCount, lessonOf, lessonSpread, morningAsides, pinsOf } from '../logic/pulse';
@@ -263,8 +263,6 @@ export function DeskScreen() {
   const lensZoom = lensK > 1 ? 2.4 : 1.9;
   const reveal = (state.owned ?? []).includes('mum') ? STRONG_CANDLE : DEFAULT_REVEAL;
   const hasMagnifier = hasTool('magnifier', state.day);
-  // A tool's note lies on the desk only once the tool does.
-  const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : id === 'kettle' ? hasKettle : true));
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
@@ -723,7 +721,7 @@ export function DeskScreen() {
       return;
     }
 
-    const slipHit = slipIds.find((id) => (id === 'rules' || !seenHelp.includes(id)) && inRect(p, LAYOUT.help[id], 4));
+    const slipHit = inRect(p, LAYOUT.help.rules, 4) ? 'rules' : undefined;
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
       return;
@@ -1082,7 +1080,6 @@ export function DeskScreen() {
       <MoneyNote kurus={purseOf(state)} warnings={state.warnings ?? 0} />
       <BrassPlate rank={{ name: rankOf(state).name, title: desk.rank.title }} />
       <LockedTray />
-      {showSlips && slipIds.filter((id) => id !== 'rules' && !seenHelp.includes(id)).map((id) => <HelpSlip key={id} id={id} />)}
       {showSlips && <BookletOnDesk />}
       {showSlips && <PinRail pins={pins} dossier={dossier} />}
     </FontsBridge>,
