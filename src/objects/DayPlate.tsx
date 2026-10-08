@@ -67,7 +67,7 @@ export function DayPlate({
         <Fade opacity={rest}>
           <Para text={rumi} x={0} y={268} width={WORLD.w} family="Cormorant" size={22} color="#c4b496" align="center" letterSpacing={1.5} />
           <Para text={weekday} x={0} y={298} width={WORLD.w} family="Cormorant" size={15} color="#8d7f68" align="center" italic letterSpacing={3} />
-          <Rect x={ruleX} y={336} width={ruleW} height={1.5} color="#7a221c" />
+          <Rect x={ruleX} y={336} width={ruleW} height={1} color="#6b5c48" />
           <Para text={post.toLocaleUpperCase('tr')} x={0} y={352} width={WORLD.w} family="Cormorant" size={15} color="#d9cbb0" align="center" weight={FontWeight.SemiBold} letterSpacing={3} />
           <Para text={office} x={0} y={376} width={WORLD.w} family="Cormorant" size={13} color="#7d7160" align="center" italic />
           {warnings > 0 && (

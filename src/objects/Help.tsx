@@ -36,7 +36,7 @@ export function HelpSheetView({ id, opacity }: { id: HelpId; opacity: SharedValu
         {sheet.subtitle && <Para text={sheet.subtitle} x={r.x} y={r.y + 60} width={r.w} family="Cormorant" size={14} color={C.inkFaded} italic align="center" />}
         {sheet.lines.map((line, i) => (
           <Group key={i}>
-            <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + pad} y={lineTop + i * gap} width={24} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 16 : 18} color={isRules ? C.censor : C.inkFaded} weight={FontWeight.Bold} />
+            <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + pad} y={lineTop + i * gap} width={24} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 16 : 18} color={C.ink} weight={FontWeight.Bold} />
             <Para text={line} x={r.x + pad + 26} y={lineTop + i * gap} width={r.w - pad * 2 - 26} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 15.5 : 19} color={C.ink} lineHeight={isRules ? 1.05 : 1} weight={isRules ? FontWeight.SemiBold : FontWeight.Normal} />
           </Group>
         ))}

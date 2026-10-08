@@ -56,7 +56,7 @@ function layoutPage(provider: SkTypefaceFontProvider, page: BookletPage, r: Box)
       y += text(b.text, BODY, r.x, y, r.w) + 6;
     } else if (b.t === 'num' || b.t === 'dash') {
       b.items.forEach((it, i) => {
-        text(b.t === 'num' ? `${i + 1}.` : '—', { ...BODY, color: b.t === 'num' ? RED : C.inkFaded, weight: FontWeight.Bold }, r.x + 2, y, 16);
+        text(b.t === 'num' ? `${i + 1}.` : '—', { ...BODY, color: C.ink, weight: FontWeight.Bold }, r.x + 2, y, 16);
         y += text(itemText(it), BODY, r.x + 18, y, r.w - 18) + 3;
       });
       y += 4;
@@ -170,7 +170,6 @@ export function BookletView({ pages, spread, opacity }: { pages: BookletPage[]; 
   const rise = useDerivedValue(() => [{ translateY: (1 - opacity.value) * 16 }]);
   const left = spread === 0 ? null : pages[spread * 2 - 1];
   const right = pages[spread * 2];
-  const last = spreadCount(pages.length) - 1;
   return (
     <Fade opacity={opacity}>
       <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="rgba(5,4,3,0.6)" />
@@ -180,8 +179,6 @@ export function BookletView({ pages, spread, opacity }: { pages: BookletPage[]; 
         </ArtSlot>
         {spread === 0 ? <CoverPage r={frames.left} /> : left && <PageView page={left} r={frames.left} />}
         {right && <PageView page={right} r={frames.right} />}
-        {spread > 0 && <Para text="‹" x={r.x + 14} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={22} color="rgba(60,45,30,0.35)" />}
-        {spread < last && <Para text="›" x={r.x + r.w - 32} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={22} color="rgba(60,45,30,0.35)" />}
       </Group>
     </Fade>
   );
