@@ -21,7 +21,8 @@ import { loopSfx, playSfx } from '../sfx/sfx';
 
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
-import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
+import { ContinueCard, RESTART_RECT } from '../objects/ContinueCard';
+import { DayPlate } from '../objects/DayPlate';
 import { Para } from './Para';
 import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
@@ -222,7 +223,13 @@ export function DeskScreen() {
   // The morning's papers come before the work; one at a time, a touch puts each away.
   const papers = useMemo(() => morningPapers(state.day), [state.day]);
   const [morningIdx, setMorningIdx] = useState(0);
-  const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
+  const skipOpen = useRef(false);
+  const [openPlate, setOpenPlate] = useState(() => {
+    const s = useGame.getState().state;
+    return s.phase === 'desk' && !s.morningDone;
+  });
+  const openVeil = useSharedValue(1);
+  const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0 && !openPlate;
   const morningIn = useSharedValue(0);
   // The director opens with a promotion when yesterday earned one.
   const asides = useMemo(
@@ -299,6 +306,22 @@ export function DeskScreen() {
     if (hasCandle) loopSfx('flame', 0.12);
   }, [hasCandle]);
 
+  // The day opens on its own plate. Coming from that plate at night does not show it twice.
+  useEffect(() => {
+    if (skipOpen.current) {
+      skipOpen.current = false;
+      setOpenPlate(false);
+      openVeil.value = 0;
+      return;
+    }
+    if (state.morningDone || state.phase !== 'desk') {
+      setOpenPlate(false);
+      return;
+    }
+    openVeil.value = 1;
+    setOpenPlate(true);
+  }, [state.day, openVeil]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
   useEffect(() => {
@@ -334,7 +357,7 @@ export function DeskScreen() {
       case 'continued':
         eveningIn.value = withTiming(0, { duration: 500, easing: GLIDE });
         lampLevel.value = withTiming(0.04, { duration: 2000, easing: GLIDE });
-        continueOpacity.value = withTiming(1, { duration: 2000, easing: GLIDE });
+        continueOpacity.value = withTiming(1, { duration: 180, easing: SETTLE });
         break;
     }
     return () => {
@@ -644,8 +667,15 @@ export function DeskScreen() {
       drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : null;
       return;
     }
+    if (openPlate && s.phase === 'desk') {
+      drag.current = null;
+      openVeil.value = withTiming(0, { duration: 220, easing: GLIDE });
+      setTimeout(() => setOpenPlate(false), 220);
+      return;
+    }
+
     if (s.phase === 'continued') {
-      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady && inRect(p, NEXT_RECT, 10) ? { kind: 'next' } : null;
+      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady ? { kind: 'next' } : null;
       return;
     }
     if (s.phase !== 'desk' || exiting.current) return;
@@ -871,11 +901,15 @@ export function DeskScreen() {
         if (inRect(p, LAYOUT.ledger)) g.closeLedger();
         break;
       case 'next':
-        if (inRect(p, NEXT_RECT, 10)) g.nextDay();
+        skipOpen.current = true;
+        setOpenPlate(false);
+        g.nextDay();
         break;
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
+          openVeil.value = 1;
+          setOpenPlate(true);
           penHome();
           const home = { duration: T.home, easing: GLIDE };
           candleX.value = withTiming(LAYOUT.rest.candle.x, home);
@@ -1191,13 +1225,27 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
+            {openPlate && state.phase === 'desk' && (
+              <DayPlate n={state.day} rumi={day.calendar.rumi} weekday={day.calendar.weekday} post={rankOf(state).name} office={desk.rank.title} warnings={state.warnings ?? 0} opacity={openVeil} />
+            )}
             {showMorning && papers[morningIdx] && (
               <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} aside={asides.family} />
             )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
-            {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
+            {state.phase === 'continued' && (
+              <ContinueCard
+                nextDay={nextDay}
+                ready={nextReady}
+                opacity={continueOpacity}
+                rumi={getDay(nextDay)?.calendar.rumi ?? ''}
+                weekday={getDay(nextDay)?.calendar.weekday ?? ''}
+                post={rankOf(state).name}
+                office={desk.rank.title}
+                warnings={state.warnings ?? 0}
+              />
+            )}
           </Group>
         </FontsBridge>
       </Canvas>

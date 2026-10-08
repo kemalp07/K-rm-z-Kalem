@@ -34,6 +34,8 @@
   "envelope.field": "Ordu-yı Hümayun",
   "envelope.fieldPost": "SAHRA POSTASI\nMeccanen",
   "letter.close": "Zarfa koy",
+  "plate.day": "{n}. GÜN",
+  "plate.warn": "İhtar {n}",
   "continue.day": "{day}. Gün",
   "continue.text": "mâbâdı var",
   "continue.next": "Ertesi sabah",
