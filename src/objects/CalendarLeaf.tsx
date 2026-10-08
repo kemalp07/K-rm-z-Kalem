@@ -31,7 +31,7 @@ export function CalendarLeaf({ calendar }: { calendar: Day['calendar'] }) {
       </ArtSlot>
       <Para text={calendar.weekday} x={r.x} y={r.y + 12 + DY} width={r.w} family="Cormorant" size={12} color={C.ink} align="center" weight={FontWeight.SemiBold} />
       {/* An Ottoman office calendar leads with the Rumi date; the Frankish one is the small print. */}
-      <Para text={rumiDay} x={r.x} y={r.y + 18 + DY * 0.8} width={r.w} family="Cormorant" size={42} color={C.censor} align="center" weight={FontWeight.Bold} />
+      <Para text={rumiDay} x={r.x} y={r.y + 18 + DY * 0.8} width={r.w} family="Cormorant" size={42} color={C.ink} align="center" weight={FontWeight.Bold} />
       <Para text={rumiRest} x={r.x} y={r.y + 75 + DY * 0.5} width={r.w} family="Cormorant" size={11.5} color={C.ink} align="center" letterSpacing={0.6} weight={FontWeight.SemiBold} />
       <Para text={`${calendar.dayOfMonth} ${calendar.month} ${calendar.year}`} x={r.x} y={r.y + 93 + DY * 0.3} width={r.w} family="Cormorant" size={10} color={C.inkFaded} align="center" italic />
     </Group>

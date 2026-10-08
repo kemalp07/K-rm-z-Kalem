@@ -496,13 +496,17 @@ export interface ImprintAt {
 const IMPRINT_SCALE = 1.2;
 const IMPRINT = { w: MARK_R * 2 * IMPRINT_SCALE, h: MARK_R * 2 * IMPRINT_SCALE };
 
-/** The decision stamp landing on the letter: it settles from slightly larger and the ink comes up. */
+/** The decision stamp landing on the letter: it drops, bites, and the ink comes up. */
 function Imprint({ imprint, letter, imprintIn, today }: { imprint: ImprintAt; letter: LetterData; imprintIn: SharedValue<number>; today?: string }) {
   const { d, x: cx, y: cy, rot } = imprint;
-  const transform = useDerivedValue<Transforms3d>(() => [{ translateX: cx }, { translateY: cy }, { scale: 1.1 - 0.1 * imprintIn.value }, { translateX: -cx }, { translateY: -cy }]);
+  const opacity = useDerivedValue(() => Math.min(1, Math.max(0, imprintIn.value)));
+  const transform = useDerivedValue<Transforms3d>(() => {
+    const scale = Math.max(0.86, 1.7 - 0.7 * imprintIn.value);
+    return [{ translateX: cx }, { translateY: cy }, { scale }, { translateX: -cx }, { translateY: -cy }];
+  });
   const worn = useMemo(() => [...letter.id].reduce((a, c) => a + c.charCodeAt(0), 7) % 97, [letter.id]);
   return (
-    <Fade opacity={imprintIn} transform={transform}>
+    <Fade opacity={opacity} transform={transform}>
       <RoundMark cx={cx} cy={cy} scale={IMPRINT_SCALE} rotate={rot} color={STAMP_INK[d]} legend={t('imprint.ring')} band={t(`decision.${d}`)} foot={today} double worn={worn} opacity={0.9} />
     </Fade>
   );

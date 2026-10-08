@@ -12,6 +12,9 @@ test('day 1 content passes validation', () => {
 
 test('day 1 holds the five envelopes the brief asks for', () => {
   expect(day.letters).toHaveLength(5);
+  // The pile opens on a letter to read, then the seal the glass can catch.
+  expect(day.letters[0]!.id).toBe('d1_mehmet');
+  expect(day.letters[1]!.id).toBe('d1_imzasiz');
   expect(day.letters.filter((l) => l.kind === 'paket')).toHaveLength(1);
   const kinds = day.letters.flatMap((l) => l.segments.map((s) => s.kind));
   expect(kinds).toContain('sensitive');
