@@ -6,11 +6,38 @@ import { between, rng } from './rand';
 import { shakyLine } from './rough';
 import { LAYOUT } from './world';
 
+const FRAME = 9;
+
+function windowBox() {
+  const { x, y, w, h } = LAYOUT.window;
+  const inner = { x: x + FRAME, y: y + FRAME, w: w - FRAME * 2 - 4, h: h - FRAME * 2 - 14 };
+  return { x, y, w, h, inner, midX: inner.x + inner.w / 2, midY: inner.y + inner.h * 0.48 };
+}
+
+/**
+ * The wooden mullions, drawn again above whoever is standing at the glass
+ * so a visitor is inside the window rather than pasted on the frame.
+ */
+export function WindowMullions() {
+  const { x, y, w, h, inner, midX, midY } = windowBox();
+  return (
+    <Group>
+      <Group color="#3b2516">
+        <Rect x={x} y={y} width={w - 4} height={FRAME} />
+        <Rect x={x} y={y} width={FRAME} height={h - 14} />
+        <Rect x={x + w - FRAME - 4} y={y} width={FRAME} height={h - 14} />
+        <Rect x={midX - 3} y={inner.y} width={6} height={inner.h} />
+        <Rect x={inner.x} y={midY - 3} width={inner.w} height={6} />
+      </Group>
+      <Rect x={x} y={y + h - 16} width={w} height={14} color="#4a2f1b" />
+    </Group>
+  );
+}
+
 /** Night window on the left: sky, the strait, one far light across the water. */
 export function NightWindow() {
-  const { x, y, w, h } = LAYOUT.window;
-  const frame = 9;
-  const inner = { x: x + frame, y: y + frame, w: w - frame * 2 - 4, h: h - frame * 2 - 14 };
+  const { x, y, w, h, inner, midX, midY } = windowBox();
+  const frame = FRAME;
   const parts = useMemo(() => {
     const r = rng('window-stars');
     const stars = Array.from({ length: 16 }, (_, i) => ({
@@ -37,9 +64,6 @@ export function NightWindow() {
     );
     return { stars, ridge, horizon, ripples };
   }, [inner.x, inner.y, inner.w, inner.h]);
-
-  const midX = inner.x + inner.w / 2;
-  const midY = inner.y + inner.h * 0.48;
 
   return (
     <>

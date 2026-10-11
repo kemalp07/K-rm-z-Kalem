@@ -2,8 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
-import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
+import { Easing, useDerivedValue, useSharedValue, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
+import { GLIDE, RETURN_SPRING, SETTLE, SLAM, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
@@ -19,22 +19,27 @@ import { resolveSegments } from '../logic/variants';
 import { useGame } from '../state/store';
 import { loopSfx, playSfx } from '../sfx/sfx';
 
+import { CALLER_AT, Caller, CallerSpeech } from '../objects/Caller';
+import { callerScript } from '../logic/caller';
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
-import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
+import { ContinueCard, RESTART_RECT } from '../objects/ContinueCard';
+import { DayPlate } from '../objects/DayPlate';
 import { Para } from './Para';
 import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
 import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
-import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
+import { HelpSheetView } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
+import { dossierCount, lessonOf, lessonSpread, morningAsides, pinsOf } from '../logic/pulse';
 import { postmarkOf } from '../content/postmark';
 import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
+import { PinRail } from '../objects/PinRail';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
@@ -51,7 +56,7 @@ import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
 import { useFlicker } from './useFlicker';
-import { NightWindow } from './Window';
+import { NightWindow, WindowMullions } from './Window';
 import { fitWorld, inRect, LAYOUT, toWorld, WORLD } from './world';
 
 type Drag =
@@ -210,22 +215,68 @@ export function DeskScreen() {
   const marksFade = useSharedValue(1);
   const ledgerY = useSharedValue(state.phase === 'ledger' ? 0 : 640);
   const continueOpacity = useSharedValue(state.phase === 'continued' ? 1 : 0);
+  const callerX = useSharedValue<number>(CALLER_AT.away.x);
+  const callerY = useSharedValue<number>(CALLER_AT.away.y);
+  const callerS = useSharedValue<number>(CALLER_AT.away.s);
+  const callerO = useSharedValue(0);
+  const talk = useSharedValue(0);
 
   // --- React state for things that change what is drawn, not where -------------
   const [dragId, setDragId] = useState<string | null>(null);
   const [pressing, setPressing] = useState<Decision | null>(null);
   const [imprint, setImprint] = useState<ImprintAt | null>(null);
   const [help, setHelp] = useState<HelpId | null>(null);
+  const [callerSay, setCallerSay] = useState<{ line: string; where: 'counter' | 'hatch' } | null>(null);
+  const callerExit = useRef(false);
+  const callerSpot = useRef<'away' | 'counter' | 'hatch' | 'out'>('away');
+  const callerSeen = useRef<string | null>(null);
   const [spread, setSpread] = useState(0);
   // The morning's papers come before the work; one at a time, a touch puts each away.
   const papers = useMemo(() => morningPapers(state.day), [state.day]);
   const [morningIdx, setMorningIdx] = useState(0);
-  const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
+  const skipOpen = useRef(false);
+  const plateTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [openPlate, setOpenPlate] = useState(() => {
+    const s = useGame.getState().state;
+    return s.phase === 'desk' && !s.morningDone;
+  });
+  const openVeil = useSharedValue(1);
+  const dismissPlate = useCallback(() => {
+    if (plateTimer.current) clearTimeout(plateTimer.current);
+    plateTimer.current = null;
+    openVeil.value = withTiming(0, { duration: 260, easing: GLIDE });
+    setTimeout(() => setOpenPlate(false), 260);
+  }, [openVeil]);
+  const raisePlate = useCallback(() => {
+    if (plateTimer.current) clearTimeout(plateTimer.current);
+    openVeil.value = 1;
+    setOpenPlate(true);
+    plateTimer.current = setTimeout(dismissPlate, 2600);
+  }, [dismissPlate, openVeil]);
+  const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0 && !openPlate;
   const morningIn = useSharedValue(0);
   // The director opens with a promotion when yesterday earned one.
-  const morningLead = (state.events ?? []).includes(`d${state.day - 1}:promoted`)
-    ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
-    : [];
+  const asides = useMemo(
+    () => morningAsides(state.day, state.events ?? [], dossierCount(state.letters, getLetter)),
+    [state.day, state.events, state.letters],
+  );
+  const morningLead = [
+    ...((state.events ?? []).includes(`d${state.day - 1}:promoted`)
+      ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
+      : []),
+    ...asides.mudur,
+  ];
+  const lesson = useMemo(() => {
+    if (state.phase !== 'ledger') return null;
+    const decided = state.done.flatMap((id) => {
+      const letter = getLetter(id);
+      const p = state.letters[id];
+      return letter && p?.decision ? [{ letter, p }] : [];
+    });
+    return lessonOf(decided);
+  }, [state.phase, state.done, state.letters]);
+  const pins = useMemo(() => pinsOf(state.letters, getLetter), [state.letters]);
+  const dossier = useMemo(() => dossierCount(state.letters, getLetter), [state.letters]);
   /** The opened envelope turned over in the hand: front and back, larger. */
   const [envView, setEnvView] = useState(false);
   const envViewIn = useSharedValue(0);
@@ -243,8 +294,6 @@ export function DeskScreen() {
   const lensZoom = lensK > 1 ? 2.4 : 1.9;
   const reveal = (state.owned ?? []).includes('mum') ? STRONG_CANDLE : DEFAULT_REVEAL;
   const hasMagnifier = hasTool('magnifier', state.day);
-  // A tool's note lies on the desk only once the tool does.
-  const slipIds = HELP_IDS.filter((id) => (id === 'candle' ? hasCandle : id === 'magnifier' ? hasMagnifier : id === 'kettle' ? hasKettle : true));
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
@@ -281,14 +330,32 @@ export function DeskScreen() {
     if (hasCandle) loopSfx('flame', 0.12);
   }, [hasCandle]);
 
+  // The day opens on its own plate. Coming from that plate at night does not show it twice.
+  useEffect(() => {
+    if (skipOpen.current) {
+      skipOpen.current = false;
+      if (plateTimer.current) clearTimeout(plateTimer.current);
+      plateTimer.current = null;
+      setOpenPlate(false);
+      openVeil.value = 0;
+      return;
+    }
+    if (state.morningDone || state.phase !== 'desk') {
+      setOpenPlate(false);
+      return;
+    }
+    raisePlate();
+    return () => {
+      if (plateTimer.current) clearTimeout(plateTimer.current);
+    };
+  }, [state.day, openVeil, raisePlate]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // --- day phases ---------------------------------------------------------------
   const advance = actions.advance;
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | undefined;
     switch (state.phase) {
       case 'desk':
-        // No oil bought last night: the lamp burns low all day.
-        lampLevel.value = withTiming(lowOil ? 0.62 : 1, { duration: 1400, easing: GLIDE });
         eveningIn.value = 0;
         dismissedIn.value = 0;
         ledgerY.value = 640;
@@ -318,13 +385,21 @@ export function DeskScreen() {
       case 'continued':
         eveningIn.value = withTiming(0, { duration: 500, easing: GLIDE });
         lampLevel.value = withTiming(0.04, { duration: 2000, easing: GLIDE });
-        continueOpacity.value = withTiming(1, { duration: 2000, easing: GLIDE });
+        continueOpacity.value = withTiming(1, { duration: 180, easing: SETTLE });
         break;
     }
     return () => {
       if (timer) clearTimeout(timer);
     };
-  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn, lowOil]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [state.phase, advance, lampLevel, ledgerY, continueOpacity, eveningIn, dismissedIn]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // No oil last night: the flame sags, and on the last letter it nearly goes out.
+  const lettersLeft = state.stack.length + (state.open ? 1 : 0);
+  useEffect(() => {
+    if (state.phase !== 'desk') return;
+    const dim = lowOil && lettersLeft <= 1 ? 0.22 : lowOil ? 0.55 : 1;
+    lampLevel.value = withTiming(dim, { duration: 900, easing: GLIDE });
+  }, [state.phase, lowOil, lettersLeft, lampLevel]);
 
   // --- steam: held over the stamp of a folded-away letter, it lifts the stamp ----------
   useEffect(() => {
@@ -410,9 +485,31 @@ export function DeskScreen() {
     [stampX, stampY, stampProgress],
   );
 
+  const moveCaller = useCallback(
+    (p: { x: number; y: number; s: number }, ms: number, fade: 'in' | 'out' | 'stay', delay = 0) => {
+      const opt = { duration: ms, easing: GLIDE };
+      const go = (v: number) => (delay > 0 ? withDelay(delay, withTiming(v, opt)) : withTiming(v, opt));
+      callerX.value = go(p.x);
+      callerY.value = go(p.y);
+      callerS.value = go(p.s);
+      if (fade === 'in') callerO.value = withDelay(delay, withTiming(1, { duration: Math.min(320, ms), easing: SETTLE }));
+      else if (fade === 'out') callerO.value = withDelay(delay + Math.round(ms * 0.35), withTiming(0, { duration: Math.round(ms * 0.65), easing: GLIDE }));
+      else callerO.value = withTiming(1, { duration: 180, easing: SETTLE });
+    },
+    [callerX, callerY, callerS, callerO],
+  );
+
   /** The stamped letter goes its way and the decision is written down. */
   const sendOff = useCallback(
     (id: string, d: Decision, after: number) => {
+      const letter = getLetter(id);
+      if (letter) {
+        callerExit.current = true;
+        callerSpot.current = 'out';
+        setCallerSay({ line: callerScript(letter).leave[d], where: 'hatch' });
+        talk.value = withTiming(1, { duration: 90 });
+        moveCaller(CALLER_AT.out, T.leave, 'out', T.stampRest);
+      }
       exitDir.value = EXIT[d];
       setTimeout(() => {
         letterOut.value = withTiming(1, { duration: T.leave, easing: GLIDE });
@@ -425,7 +522,7 @@ export function DeskScreen() {
         exiting.current = false;
       }, after + T.leave + 50);
     },
-    [exitDir, letterOut, letterIn],
+    [exitDir, letterOut, letterIn, moveCaller, talk],
   );
 
   const finishStamp = useCallback(
@@ -435,10 +532,10 @@ export function DeskScreen() {
       exiting.current = true;
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
-      // A hand never stamps quite straight.
+      // A hand never stamps quite straight. The desk takes the blow.
       setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
-      imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
+      imprintIn.value = withTiming(1, { duration: 150, easing: SLAM });
       setTimeout(() => stampBack(d), 200);
       if (d === 'stopped' || d === 'reported') {
         // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
@@ -467,13 +564,13 @@ export function DeskScreen() {
   // --- gesture handlers (JS thread; positions go out through shared values) ------
   // --- instruction sheets ---------------------------------------------------------
   const openHelp = useCallback(
-    (id: HelpId) => {
+    (id: HelpId, at = 0) => {
       if (penInHand.current) penHome();
       useGame.getState().markHelpSeen(id);
       setHelp(id);
-      setSpread(0);
+      setSpread(id === 'rules' ? at : 0);
       helpIn.value = 0;
-      helpIn.value = withTiming(1, { duration: 600, easing: SETTLE });
+      helpIn.value = withTiming(1, { duration: 420, easing: SETTLE });
       playSfx('paper', 0.6);
     },
     [helpIn, penHome],
@@ -528,11 +625,78 @@ export function DeskScreen() {
 
   // The Şube's rules lie open on the desk the very first night, once the morning papers are read.
   useEffect(() => {
-    if (state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
+    if (state.phase !== 'desk' || showMorning || openPlate || seenHelp.includes('rules')) return;
     const timer = setTimeout(() => openHelp('rules'), 900);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showMorning]);
+  }, [showMorning, openPlate]);
+
+  const topId = state.stack[0] ?? null;
+  const rulesSeen = seenHelp.includes('rules');
+  const rulesOpen = help === 'rules';
+  // Someone steps up with the next letter, waits at the window while it is read, and leaves with the stamp.
+  useEffect(() => {
+    const desk = state.phase === 'desk' && !showMorning && !openPlate;
+    const id = desk ? (state.open ?? topId) : null;
+    const opened = state.open != null && state.open === id;
+
+    if (!id) {
+      if (!callerExit.current && callerSpot.current !== 'away') {
+        callerSpot.current = 'away';
+        talk.value = withTiming(0, { duration: 160 });
+        moveCaller(CALLER_AT.away, 360, 'out');
+      }
+      callerSeen.current = null;
+      return;
+    }
+
+    const letter = getLetter(id);
+    if (!letter) return;
+    const script = callerScript(letter);
+    // The first morning the Talimatname is open on the blotter. The visitor waits until it is shut.
+    if (!opened && (rulesOpen || !rulesSeen) && !callerExit.current) return;
+
+    if (callerSeen.current !== id) {
+      callerExit.current = false;
+      callerSeen.current = id;
+      if (opened) {
+        callerSpot.current = 'hatch';
+        callerX.value = CALLER_AT.hatch.x;
+        callerY.value = CALLER_AT.hatch.y;
+        callerS.value = CALLER_AT.hatch.s;
+        callerO.value = 1;
+        talk.value = 0;
+        setCallerSay(null);
+      } else {
+        callerSpot.current = 'counter';
+        setCallerSay({ line: script.arrive, where: 'counter' });
+        callerX.value = CALLER_AT.away.x;
+        callerY.value = CALLER_AT.away.y;
+        callerS.value = CALLER_AT.away.s;
+        callerO.value = 0;
+        moveCaller(CALLER_AT.counter, 760, 'in');
+        talk.value = 0;
+        talk.value = withDelay(420, withTiming(1, { duration: 260 }));
+      }
+      return;
+    }
+
+    if (callerExit.current) return;
+
+    if (opened) {
+      if (callerSpot.current === 'hatch') return;
+      callerSpot.current = 'hatch';
+      talk.value = withTiming(0, { duration: 160 });
+      moveCaller(CALLER_AT.hatch, 520, 'stay');
+      return;
+    }
+
+    if (callerSpot.current === 'counter') return;
+    callerSpot.current = 'counter';
+    setCallerSay({ line: script.arrive, where: 'counter' });
+    moveCaller(CALLER_AT.counter, 520, 'stay');
+    talk.value = withDelay(180, withTiming(1, { duration: 220 }));
+  }, [state.phase, state.open, topId, showMorning, openPlate, rulesOpen, rulesSeen, moveCaller, talk, callerX, callerY, callerS, callerO]);
 
   const onBegin = (p: Point) => {
     const g = useGame.getState();
@@ -596,6 +760,11 @@ export function DeskScreen() {
     }
 
     if (s.phase === 'ledger') {
+      if (lesson && inRect(p, LAYOUT.lesson, 4)) {
+        drag.current = null;
+        openHelp('rules', lessonSpread(pages, lesson.pageId));
+        return;
+      }
       drag.current = { kind: 'ledger' };
       return;
     }
@@ -615,8 +784,14 @@ export function DeskScreen() {
       drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : null;
       return;
     }
+    if (openPlate && s.phase === 'desk') {
+      drag.current = null;
+      dismissPlate();
+      return;
+    }
+
     if (s.phase === 'continued') {
-      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady && inRect(p, NEXT_RECT, 10) ? { kind: 'next' } : null;
+      drag.current = inRect(p, RESTART_RECT, 10) ? { kind: 'restart' } : nextReady ? { kind: 'next' } : null;
       return;
     }
     if (s.phase !== 'desk' || exiting.current) return;
@@ -692,7 +867,7 @@ export function DeskScreen() {
       return;
     }
 
-    const slipHit = slipIds.find((id) => inRect(p, LAYOUT.help[id], 4));
+    const slipHit = inRect(p, LAYOUT.help.rules, 4) ? 'rules' : undefined;
     if (slipHit && !(penInHand.current && s.open && inRect(p, LAYOUT.letter))) {
       openHelp(slipHit);
       return;
@@ -842,11 +1017,14 @@ export function DeskScreen() {
         if (inRect(p, LAYOUT.ledger)) g.closeLedger();
         break;
       case 'next':
-        if (inRect(p, NEXT_RECT, 10)) g.nextDay();
+        skipOpen.current = true;
+        setOpenPlate(false);
+        g.nextDay();
         break;
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
+          raisePlate();
           penHome();
           const home = { duration: T.home, easing: GLIDE };
           candleX.value = withTiming(LAYOUT.rest.candle.x, home);
@@ -866,6 +1044,7 @@ export function DeskScreen() {
           letterIn.value = 0;
           letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
           playSfx('envelope_tear');
+          playSfx('paper', 0.55);
           haptic(Haptics.ImpactFeedbackStyle.Medium);
         } else {
           const i = g.state.stack.indexOf(d.id);
@@ -956,7 +1135,7 @@ export function DeskScreen() {
     const e = exitDir.value;
     return [
       { translateX: o.x + e.dx * out },
-      { translateY: o.y + e.dy * out + (1 - v) * 22 },
+      { translateY: o.y + e.dy * out + (1 - v) * 8 },
       { rotate: e.rot * out + (1 - v) * -0.02 },
       // Folded back into the envelope: it shrinks down toward it and is gone.
       { translateY: envViewIn.value * 150 },
@@ -987,6 +1166,10 @@ export function DeskScreen() {
   const ledgerTransform = useDerivedValue(() => [{ translateY: ledgerY.value }]);
 
   const stackIds = state.stack;
+  const callerId = state.phase === 'desk' && !showMorning && !openPlate ? (state.open ?? topId) : null;
+  const callerLetter = callerId ? getLetter(callerId) : undefined;
+  const caller = callerLetter ? callerScript(callerLetter) : null;
+  const speechOp = useDerivedValue(() => Math.min(talk.value, callerO.value));
   const draggedLetter = dragId ? getLetter(dragId) : undefined;
   const nextDay = state.day + 1;
   const nextReady = nextDay <= LAST_AUTHORED_DAY;
@@ -1041,7 +1224,7 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   // Split by how often each part changes, so opening a letter redoes only small images.
-  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
+  const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0, pins.map((p) => p.id).join(','), dossier].join('|');
   const desk_ = useBaked(
     <FontsBridge fonts={fonts}>
       <DeskSurface />
@@ -1050,8 +1233,8 @@ export function DeskScreen() {
       <MoneyNote kurus={purseOf(state)} warnings={state.warnings ?? 0} />
       <BrassPlate rank={{ name: rankOf(state).name, title: desk.rank.title }} />
       <LockedTray />
-      {showSlips && slipIds.filter((id) => id !== 'rules').map((id) => <HelpSlip key={id} id={id} unread={!seenHelp.includes(id)} />)}
-      {showSlips && <BookletOnDesk unread={!seenHelp.includes('rules')} />}
+      {showSlips && <BookletOnDesk />}
+      {showSlips && <PinRail pins={pins} dossier={dossier} />}
     </FontsBridge>,
     DESK_REGION,
     fit.scale,
@@ -1082,7 +1265,6 @@ export function DeskScreen() {
           </Group>
         );
       })}
-      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Caveat" size={17} color="rgba(236,222,192,0.85)" align="center" />
     </Fade>
   ) : null;
   const pile = useBaked(
@@ -1105,7 +1287,7 @@ export function DeskScreen() {
     </FontsBridge>,
     PILE_REGION,
     fit.scale,
-    `pile:${stackIds.join(',')}|${dragId}`,
+    `pile:${stackIds.join(',')}|${dragId ?? ''}`,
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
@@ -1122,6 +1304,11 @@ export function DeskScreen() {
         <FontsBridge fonts={fonts}>
           <Group transform={boardTransform}>
             <BakedImage baked={desk_} />
+            <Caller script={caller} x={callerX} y={callerY} scale={callerS} opacity={callerO} talk={talk} />
+            <WindowMullions />
+            {caller && callerSay && (
+              <CallerSpeech line={callerSay.line} where={callerSay.where} tilt={(caller.salt - 0.5) * 0.07} opacity={speechOp} />
+            )}
             <BakedImage baked={pile} />
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
@@ -1157,16 +1344,32 @@ export function DeskScreen() {
             <RedPen x={penX} y={penY} angle={penAngle} lift={penLift} />
             {slip && <ReasonSlip decision={slip.d} reasons={reasons} chosen={slip.chosen} opacity={slipIn} />}
 
-            {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
+            {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} lesson={lesson} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} />}
+            {openPlate && state.phase === 'desk' && (
+              <DayPlate n={state.day} rumi={day.calendar.rumi} weekday={day.calendar.weekday} post={rankOf(state).name} office={desk.rank.title} warnings={state.warnings ?? 0} opacity={openVeil} />
+            )}
+            {showMorning && papers[morningIdx] && (
+              <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} aside={asides.family} />
+            )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
-            {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
+            {state.phase === 'continued' && (
+              <ContinueCard
+                nextDay={nextDay}
+                ready={nextReady}
+                opacity={continueOpacity}
+                rumi={getDay(nextDay)?.calendar.rumi ?? ''}
+                weekday={getDay(nextDay)?.calendar.weekday ?? ''}
+                post={rankOf(state).name}
+                office={desk.rank.title}
+                warnings={state.warnings ?? 0}
+              />
+            )}
           </Group>
         </FontsBridge>
       </Canvas>

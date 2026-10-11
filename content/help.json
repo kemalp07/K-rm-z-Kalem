@@ -13,18 +13,16 @@
         "Mühürde, tarihte, kâğıtta tutarsızlık varsa büyüteçle bak.",
         "Kararını mühürle: İLET, BEKLET, DURDUR ya da İSTİHBARAT."
       ],
-      "footer": "Her kararın bir sonucu vardır. — Kilitbahir Posta Şubesi"
+      "footer": "Karar geri alınmaz. — Kilitbahir Posta Şubesi"
     },
     {
       "id": "pen",
       "tag": "Kalem",
       "title": "Kırmızı Kalem",
       "lines": [
-        "Kaleme dokun, eline al.",
-        "Karalanacak satırın üzerinden parmağınla geç. Satır baştan sona kapanınca karalanmış sayılır.",
-        "Şüphelendiğin yeri (mühür, tarih) etrafına halka çizerek işaretle. Gün sonunda defter, işaretin doğru çıkıp çıkmadığını yazar.",
-        "Kalemi bırakmak için ona yeniden dokun.",
-        "Yanlış karaladıysan kalemin yanındaki silgiye dokun; o mektuptaki kırmızı kalem izlerinin hepsi silinir."
+        "Satırın üzerinden geçiniz. Baştan sona kapanınca karalanmış sayılır.",
+        "Şüpheli mühür, tarih, damga ya da pulun etrafına halka çizilir.",
+        "Yanlış iz silgiyle kalkar."
       ]
     },
     {
@@ -32,9 +30,8 @@
       "tag": "Mum",
       "title": "Mum",
       "lines": [
-        "Mumu sürükleyip mektubun üstüne getir.",
-        "Alevi satır aralarına yaklaştır. Limon suyu ya da sütle yazılmış satırlar ısınınca kahverengileşip belirir.",
-        "Bıraktığın yerde yanmaya devam eder."
+        "Mumu kâğıdın üstüne tutunuz.",
+        "Isı, satır arasında ve imza altında gizli yazıyı kahverengi çıkarır."
       ]
     },
     {
@@ -42,9 +39,8 @@
       "tag": "Büyüteç",
       "title": "Büyüteç",
       "lines": [
-        "Büyüteci sürükleyip mektubun üstünde gezdir; altındaki her şey büyür.",
-        "Mühür halkasındaki yazıya, tarihe, silinmiş izlere dikkatle bak.",
-        "Gördüğünü Talimatname'deki örneklerle karşılaştır. Neyin yanlış olduğuna sen karar verirsin."
+        "Camı kâğıdın üstünde gezdiriniz.",
+        "Gördüğünüzü Talimatname'deki numune ile karşılaştırınız."
       ]
     },
     {
@@ -52,13 +48,9 @@
       "tag": "Mühürler",
       "title": "Karar Mühürleri",
       "lines": [
-        "İLET — mektup yoluna devam eder.",
-        "BEKLET — bir gün çekmecede kalır.",
-        "DURDUR — mektup hiç gitmez.",
-        "İSTİHBARAT — Şube'ye gönderilir.",
-        "Mührü kartından al, parmağını kaldırmadan mektubun üstüne götür ve bir an bastır. Kâğıda inince karar verilmiş olur; geri dönüşü yoktur.",
-        "Mektuba basmadan bırakırsan mühür kartına geri döner.",
-        "DURDUR ve İSTİHBARAT'ta sebep pusulası gelir; sebebini işaretle. Akşam defter sebebin tutup tutmadığını yazar."
+        "Mührü kâğıdın üstünde bir an basılı tutunuz. Kalkınca karar yazılmıştır.",
+        "İLET yoluna gider. BEKLET çekmecede kalır. DURDUR gitmez. İSTİHBARAT Şube'ye iner.",
+        "DURDUR ve İSTİHBARAT'ta sebep sorulur. Sebep tutmazsa defter yazar."
       ]
     },
     {
@@ -66,10 +58,9 @@
       "tag": "Çaydanlık",
       "title": "Buhar Çaydanlığı",
       "lines": [
-        "Mektubu köşesinden zarfına koy; zarf önüyle masaya gelir.",
-        "Çaydanlığı sürükleyip ağzını pulun üstüne tut. Buhar zamkı yumuşatınca pul kalkar.",
-        "Pulun altına yazı yazılmışsa görünür. Görülen yazı deftere geçer.",
-        "Cepheden gelen asker mektubunda pul olmaz; olursa dikkat."
+        "Mektup köşesinden zarfına konur.",
+        "Ağız pulun üstüne tutulursa zamk yumuşar, pul kalkar.",
+        "Pulun altındaki yazı deftere geçer. Cephe mektubunda pul olmaz."
       ]
     }
   ]

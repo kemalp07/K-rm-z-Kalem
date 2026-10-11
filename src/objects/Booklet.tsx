@@ -4,7 +4,6 @@ import type { SharedValue } from 'react-native-reanimated';
 import { useDerivedValue } from 'react-native-reanimated';
 import { ArtSlot } from '../art/ArtSlot';
 import { booklet, itemText } from '../content/booklet';
-import { t } from '../content/strings';
 import type { BookletPage, BookletSeal } from '../content/types';
 import { Fade } from '../scene/Fade';
 import { RoundMark } from './RoundMark';
@@ -57,7 +56,7 @@ function layoutPage(provider: SkTypefaceFontProvider, page: BookletPage, r: Box)
       y += text(b.text, BODY, r.x, y, r.w) + 6;
     } else if (b.t === 'num' || b.t === 'dash') {
       b.items.forEach((it, i) => {
-        text(b.t === 'num' ? `${i + 1}.` : '—', { ...BODY, color: b.t === 'num' ? RED : C.inkFaded, weight: FontWeight.Bold }, r.x + 2, y, 16);
+        text(b.t === 'num' ? `${i + 1}.` : '—', { ...BODY, color: C.ink, weight: FontWeight.Bold }, r.x + 2, y, 16);
         y += text(itemText(it), BODY, r.x + 18, y, r.w - 18) + 3;
       });
       y += 4;
@@ -149,7 +148,7 @@ function CoverPage({ r }: { r: Box }) {
 }
 
 /** The closed booklet lying on the desk, with its paper label. */
-export function BookletOnDesk({ unread }: { unread: boolean }) {
+export function BookletOnDesk() {
   const r = LAYOUT.help.rules;
   const label = { x: r.x + r.w * (88 / 380), y: r.y + r.h * (178 / 701), w: r.w * (220 / 380), h: r.h * (112 / 701) };
   const fallback = useMemo(() => roughRect(r, 'booklet', 0.6), [r]);
@@ -160,12 +159,6 @@ export function BookletOnDesk({ unread }: { unread: boolean }) {
         <Rect x={label.x} y={label.y} width={label.w} height={label.h} color="#e4d6b4" />
       </ArtSlot>
       <Para text={booklet.cover.label} x={label.x - 6} y={label.y + label.h / 2 - 4} width={label.w + 12} family="Cormorant" size={5.4} color={C.ink} weight={FontWeight.Bold} align="center" />
-      {unread && (
-        <Group>
-          <Circle cx={r.x + r.w - 8} cy={r.y + 8} r={3.4} color={C.censor} />
-          <Circle cx={r.x + r.w - 9} cy={r.y + 7} r={1} color="rgba(255,220,200,0.6)" />
-        </Group>
-      )}
     </Group>
   );
 }
@@ -177,7 +170,6 @@ export function BookletView({ pages, spread, opacity }: { pages: BookletPage[]; 
   const rise = useDerivedValue(() => [{ translateY: (1 - opacity.value) * 16 }]);
   const left = spread === 0 ? null : pages[spread * 2 - 1];
   const right = pages[spread * 2];
-  const last = spreadCount(pages.length) - 1;
   return (
     <Fade opacity={opacity}>
       <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="rgba(5,4,3,0.6)" />
@@ -187,11 +179,6 @@ export function BookletView({ pages, spread, opacity }: { pages: BookletPage[]; 
         </ArtSlot>
         {spread === 0 ? <CoverPage r={frames.left} /> : left && <PageView page={left} r={frames.left} />}
         {right && <PageView page={right} r={frames.right} />}
-        {spread > 0 && <Para text="‹" x={r.x + 14} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={30} color="rgba(60,45,30,0.5)" />}
-        {spread < last && <Para text="›" x={r.x + r.w - 32} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={30} color="rgba(60,45,30,0.5)" />}
-        {/* Either side of the ribbon. */}
-        <Para text={booklet.turnHint} x={frames.left.x} y={r.y + r.h * 0.86} width={frames.left.w} family="Caveat" size={15} color="rgba(232,218,190,0.75)" align="center" />
-        <Para text={t('help.close')} x={frames.right.x} y={r.y + r.h * 0.86} width={frames.right.w} family="Caveat" size={15} color="rgba(232,218,190,0.75)" align="center" />
       </Group>
     </Fade>
   );

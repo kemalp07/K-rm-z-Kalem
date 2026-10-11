@@ -4,6 +4,7 @@ import type { SharedValue } from 'react-native-reanimated';
 import { reasonLabel } from '../content/booklet';
 import { getLetter } from '../content/loader';
 import { t } from '../content/strings';
+import type { Lesson } from '../logic/pulse';
 import type { Day, Letter as LetterData } from '../content/types';
 import type { DayState } from '../logic/dayFlow';
 import { pickOutcome } from '../logic/outcomes';
@@ -22,7 +23,7 @@ function harmless(letter: LetterData, censored: string[]) {
   return censored.filter((id) => all.find((s) => s.id === id)?.kind === 'normal').length;
 }
 
-export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide: SharedValue<{ translateY: number }[]> }) {
+export function Ledger({ state, day, slide, lesson }: { state: DayState; day: Day; slide: SharedValue<{ translateY: number }[]>; lesson?: Lesson | null }) {
   const r = LAYOUT.ledger;
   const page = useMemo(() => roughRect(r, 'ledger', 0.7), [r]);
   const flags = useMemo(() => flagsOf(state), [state]);
@@ -115,6 +116,9 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         );
       })}
 
+      {lesson && (
+        <Para text={`${lesson.text}  ${t('ledger.lessonHint')}`} x={LAYOUT.lesson.x} y={LAYOUT.lesson.y} width={LAYOUT.lesson.w} family="Caveat" size={13} color={C.censor} />
+      )}
       <Para text={t('ledger.close')} x={r.x + r.w - 206} y={r.y + r.h - 34} width={160} family="Caveat" size={15} color="rgba(60,45,30,0.6)" align="right" />
     </Group>
   );

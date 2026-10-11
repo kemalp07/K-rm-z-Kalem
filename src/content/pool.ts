@@ -46,21 +46,22 @@ function personName(p: PoolPerson): string {
 /** "Sivas, Hafik kazası, Kızılca karyesi" → "Sivas, Hafik kazası": what fits under the name. */
 const shortPlace = (place: string) => place.split(',').slice(0, 2).join(',').trim();
 
-/** The writer's sentences, joined back into paragraphs; anything to censor stays its own block. */
+/**
+ * A side letter is a glance, not a chapter: one piece of news, one detail, and any line
+ * that has to be censored. The salutation and the signature sit outside the body.
+ */
 function segmentsOf(r: PoolRecord): Segment[] {
+  const normals = r.segments.filter((s) => s.kind === 'normal');
+  const sensitive = r.segments.filter((s) => s.kind === 'sensitive');
+  const news = normals[0];
+  const detail = normals.find((s) => news && s.para !== news.para) ?? normals[1];
   const out: Segment[] = [];
-  let para: number | undefined;
-  for (const s of r.segments) {
-    const last = out[out.length - 1];
-    if (s.kind === 'normal' && last && last.kind === 'normal' && s.para === para) {
-      last.text += ` ${s.text}`;
-    } else {
-      out.push({ id: '', text: s.text, kind: s.kind });
-    }
-    para = s.para;
-  }
-  out.push({ id: '', text: r.closing, kind: 'normal' });
-  if (r.note) out.push({ id: '', text: t('pool.note', { text: r.note.text }), kind: r.note.sensitive ? 'sensitive' : 'normal' });
+  if (news) out.push({ id: '', text: news.text, kind: 'normal' });
+  if (detail && detail !== news) out.push({ id: '', text: detail.text, kind: 'normal' });
+  for (const s of sensitive) out.push({ id: '', text: s.text, kind: 'sensitive' });
+  if (r.note?.sensitive) out.push({ id: '', text: t('pool.note', { text: r.note.text }), kind: 'sensitive' });
+  else if (out.filter((s) => s.kind === 'normal').length < 2 && r.closing) out.push({ id: '', text: r.closing, kind: 'normal' });
+  if (out.length === 0) out.push({ id: '', text: r.closing || r.salutation, kind: 'normal' });
   return out.map((s, i) => ({ ...s, id: `s${i + 1}` }));
 }
 

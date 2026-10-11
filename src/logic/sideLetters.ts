@@ -39,10 +39,14 @@ export function pickSideLetters(pool: Candidate[], dayRumi: string, count: numbe
   return picked;
 }
 
-/** The authored letters keep their order; side letters slip in between them. */
+/**
+ * The day's first two authored letters stay on top, so the pile opens on the story
+ * and not on a stranger. Side letters slip in under them; authored order is kept.
+ */
 export function mixIntoStack(authored: string[], side: string[], seed: number): string[] {
   const rand = rng(seed ^ 0x9e3779b9);
   const out = [...authored];
-  for (const id of side) out.splice(1 + Math.floor(rand() * out.length), 0, id);
+  const head = Math.min(2, out.length);
+  for (const id of side) out.splice(head + Math.floor(rand() * (out.length - head + 1)), 0, id);
   return out;
 }

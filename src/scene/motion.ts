@@ -7,18 +7,20 @@ import { Easing } from 'react-native-reanimated';
 export const SETTLE = Easing.bezier(0.22, 0.61, 0.36, 1);
 /** Glide: eases in and out — things carried across the desk on their own. */
 export const GLIDE = Easing.bezier(0.45, 0.05, 0.25, 1);
+/** A rubber stamp: it drops and bites, then the ink sits. */
+export const SLAM = Easing.bezier(0.05, 1.4, 0.2, 1);
 
 export const T = {
   /** Picking a tool up off the desk. */
   lift: 280,
   /** A tool going back to its place. */
   home: 650,
-  /** A letter unfolding after the envelope is opened. */
-  unfold: 950,
+  /** A letter laid on the blotter. It settles; it does not bounce. */
+  unfold: 460,
   /** Pause after the stamp lands, before the letter leaves. */
-  stampRest: 650,
+  stampRest: 380,
   /** The decided letter leaving the desk. */
-  leave: 900,
+  leave: 560,
   /** The note slipped beside the magnifier. */
   slipIn: 500,
   slipOut: 900,

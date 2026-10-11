@@ -105,6 +105,113 @@
       ]
     },
     {
+      "id": "d1_imzasiz",
+      "threadId": "imzasiz_halil",
+      "day": 1,
+      "sender": "İmzasız",
+      "recipient": "Levazım Kâtibi Halil Efendi",
+      "from": "İstanbul, Galata",
+      "to": "Çanakkale, Kilitbahir",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "clerical",
+      "letterhead": "ŞARK TİCARET KUMPANYASI · GALATA",
+      "dateLine": "3 Mayıs 1331",
+      "heading": "Muhterem Efendim,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Siparişiniz olan on iki sandık kuru incir ile dört top bez hazırdır."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Bedeli evvelce kararlaştırıldığı vechiledir; teslimat malum mahalde icra olunacaktır."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Mallar pazartesi akşamı yola çıkarılacaktır."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Hürmetlerimizle efendim."
+        }
+      ],
+      "seal": {
+        "legend": "ŞARK TİCARET · GALATA",
+        "color": "#5b2e4a",
+        "symbol": "anchor",
+        "double": true,
+        "mirrored": true
+      },
+      "inspectables": [
+        {
+          "id": "seal",
+          "target": "seal",
+          "anomaly": true,
+          "note": "Halkadaki yazı ayna gibi ters okunuyor; mühür ters kazınmış. Bir kumpanya kendi mührünü böyle yaptırmaz."
+        },
+        {
+          "id": "date",
+          "target": "date",
+          "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış."
+        }
+      ],
+      "reasons": [
+        "sahte"
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:reported",
+              "d1_imzasiz:marked:seal"
+            ]
+          },
+          "text": "Şube Galata'daki adresi arayacak. O adreste bir kumpanya yok."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:reported"
+            ]
+          },
+          "text": "Mektup Şube'ye gitti. İçinde incirden başka bir şey bulunmadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:stopped"
+            ]
+          },
+          "text": "Pazartesi akşamı bir yük yola çıkmayacak. Belki de çıkacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:held"
+            ]
+          },
+          "text": "Mühür bir gece daha masanda, ters yüzüyle duracak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_imzasiz:delivered",
+              "d1_imzasiz:marked:seal"
+            ]
+          },
+          "text": "Halil Efendi mektubu okuyup yakacak. Mührü sen de gördün."
+        },
+        {
+          "text": "Halil Efendi mektubu okuyup yakacak."
+        }
+      ]
+    },
+    {
       "id": "d1_saadet",
       "threadId": "saadet_nuri",
       "day": 1,
@@ -389,113 +496,6 @@
         },
         {
           "text": "Mehmet babasının haberini siperde, çoraplar elinde okuyacak."
-        }
-      ]
-    },
-    {
-      "id": "d1_imzasiz",
-      "threadId": "imzasiz_halil",
-      "day": 1,
-      "sender": "İmzasız",
-      "recipient": "Levazım Kâtibi Halil Efendi",
-      "from": "İstanbul, Galata",
-      "to": "Çanakkale, Kilitbahir",
-      "direction": "cepheye",
-      "kind": "mektup",
-      "hand": "clerical",
-      "letterhead": "ŞARK TİCARET KUMPANYASI · GALATA",
-      "dateLine": "3 Mayıs 1331",
-      "heading": "Muhterem Efendim,",
-      "segments": [
-        {
-          "id": "s1",
-          "kind": "normal",
-          "text": "Siparişiniz olan on iki sandık kuru incir ile dört top bez hazırdır."
-        },
-        {
-          "id": "s2",
-          "kind": "normal",
-          "text": "Bedeli evvelce kararlaştırıldığı vechiledir; teslimat malum mahalde icra olunacaktır."
-        },
-        {
-          "id": "s3",
-          "kind": "normal",
-          "text": "Mallar pazartesi akşamı yola çıkarılacaktır."
-        },
-        {
-          "id": "s4",
-          "kind": "normal",
-          "text": "Hürmetlerimizle efendim."
-        }
-      ],
-      "seal": {
-        "legend": "ŞARK TİCARET · GALATA",
-        "color": "#5b2e4a",
-        "symbol": "anchor",
-        "double": true,
-        "mirrored": true
-      },
-      "inspectables": [
-        {
-          "id": "seal",
-          "target": "seal",
-          "anomaly": true,
-          "note": "Halkadaki yazı ayna gibi ters okunuyor; mühür ters kazınmış. Bir kumpanya kendi mührünü böyle yaptırmaz."
-        },
-        {
-          "id": "date",
-          "target": "date",
-          "note": "3 Mayıs 1331. Daktilo yeni, şeridi hiç yorulmamış."
-        }
-      ],
-      "reasons": [
-        "sahte"
-      ],
-      "outcomes": [
-        {
-          "when": {
-            "all": [
-              "d1_imzasiz:reported",
-              "d1_imzasiz:marked:seal"
-            ]
-          },
-          "text": "Şube Galata'daki adresi arayacak. O adreste bir kumpanya yok."
-        },
-        {
-          "when": {
-            "all": [
-              "d1_imzasiz:reported"
-            ]
-          },
-          "text": "Mektup Şube'ye gitti. İçinde incirden başka bir şey bulunmadı."
-        },
-        {
-          "when": {
-            "all": [
-              "d1_imzasiz:stopped"
-            ]
-          },
-          "text": "Pazartesi akşamı bir yük yola çıkmayacak. Belki de çıkacak."
-        },
-        {
-          "when": {
-            "all": [
-              "d1_imzasiz:held"
-            ]
-          },
-          "text": "Mühür bir gece daha masanda, ters yüzüyle duracak."
-        },
-        {
-          "when": {
-            "all": [
-              "d1_imzasiz:delivered",
-              "d1_imzasiz:marked:seal"
-            ]
-          },
-          "text": "Halil Efendi mektubu okuyup yakacak. Mührü sen de gördün."
-        },
-        {
-          "text": "Halil Efendi mektubu okuyup yakacak."
         }
       ]
     }

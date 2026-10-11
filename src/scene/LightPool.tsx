@@ -29,9 +29,9 @@ const GLOW_C = vec(LAYOUT.lamp.cx - 120, LAMP_FLAME_Y + 125);
  * on top gives the paper its yellow.
  */
 export function LightPool({ flicker, level, candleX, candleY, candleFlicker, candleOffset, dimmed, candle, candleReach }: Props) {
-  const radius = useDerivedValue(() => 640 * (0.45 + 0.55 * level.value) * (0.985 + (flicker.value - 1) * 0.9));
-  const glowRadius = useDerivedValue(() => 520 * (0.4 + 0.6 * level.value) * flicker.value);
-  const glowOpacity = useDerivedValue(() => 0.32 * level.value * (0.9 + (flicker.value - 1) * 2));
+  const radius = useDerivedValue(() => 720 * (0.72 + 0.28 * level.value) * (0.99 + (flicker.value - 1) * 0.4));
+  const glowRadius = useDerivedValue(() => 380 * (0.6 + 0.4 * level.value) * flicker.value);
+  const glowOpacity = useDerivedValue(() => 0.07 * level.value);
   const night = useDerivedValue(() => (1 - level.value) * 0.55);
   const candleC = useDerivedValue(() => vec(candleX.value + candleOffset.dx, candleY.value + candleOffset.dy));
   const candleR = useDerivedValue(() => candleReach * candleFlicker.value);
@@ -42,19 +42,19 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
       {/* Cold window spill on the left, under the dark so the lamp can still win */}
       <Group blendMode="screen">
         {/* Gradients are drawn only over the area they light: fewer pixels each frame. */}
-        <Circle cx={70} cy={250} r={260}>
-          <RadialGradient c={vec(70, 250)} r={260} colors={['rgba(70,100,160,0.22)', 'rgba(40,60,110,0.08)', 'rgba(0,0,0,0)']} />
+        <Circle cx={70} cy={250} r={200}>
+          <RadialGradient c={vec(70, 250)} r={200} colors={['rgba(40,58,90,0.08)', 'rgba(0,0,0,0)']} />
         </Circle>
       </Group>
 
       <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400}>
-        <RadialGradient c={center} r={radius} colors={['rgba(0,0,0,0)', 'rgba(10,6,3,0.32)', 'rgba(6,4,3,0.78)', 'rgba(3,2,2,0.94)']} positions={[0, 0.42, 0.78, 1]} />
+        <RadialGradient c={center} r={radius} colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(12,8,4,0.22)', 'rgba(6,4,2,0.55)']} positions={[0, 0.72, 0.9, 1]} />
       </Rect>
       {dimmed && <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="#05070c" opacity={night} />}
 
       <Group blendMode="screen" opacity={glowOpacity}>
         <Circle c={GLOW_C} r={glowRadius}>
-          <RadialGradient c={GLOW_C} r={glowRadius} colors={['rgba(255,210,122,0.85)', 'rgba(255,190,100,0.35)', 'rgba(0,0,0,0)']} positions={[0, 0.45, 1]} />
+          <RadialGradient c={GLOW_C} r={glowRadius} colors={['rgba(255,214,150,0.55)', 'rgba(0,0,0,0)']} positions={[0, 1]} />
         </Circle>
       </Group>
 
@@ -71,7 +71,7 @@ export function LightPool({ flicker, level, candleX, candleY, candleFlicker, can
 export function Vignette() {
   return (
     <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400}>
-      <RadialGradient c={vec(WORLD.w * 0.52, WORLD.h * 0.5)} r={760} colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0.55)', 'rgba(0,0,0,0.9)']} positions={[0, 0.5, 0.8, 1]} />
+      <RadialGradient c={vec(WORLD.w * 0.5, WORLD.h * 0.5)} r={820} colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0)', 'rgba(0,0,0,0.18)', 'rgba(0,0,0,0.45)']} positions={[0, 0.78, 0.92, 1]} />
     </Rect>
   );
 }

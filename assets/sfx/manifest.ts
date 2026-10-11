@@ -2,4 +2,11 @@
 /* eslint-disable */
 
 export const sfxFiles: Partial<Record<string, number>> = {
+  "candle": require('./candle.wav'),
+  "drawer": require('./drawer.wav'),
+  "envelope_tear": require('./envelope_tear.wav'),
+  "flame": require('./flame.wav'),
+  "paper": require('./paper.wav'),
+  "pen": require('./pen.wav'),
+  "stamp": require('./stamp.wav'),
 };
