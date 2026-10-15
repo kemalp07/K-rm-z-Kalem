@@ -4,7 +4,7 @@ name: Web build
 
 on:
   push:
-    branches: [main, claude/cool-planck-qgak53]
+    branches: [main, claude/cool-planck-qgak53, cursor/desk-feel-3261]
   workflow_dispatch:
 
 permissions:
