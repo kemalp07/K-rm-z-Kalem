@@ -42,7 +42,7 @@ test('validator catches broken variants and missing threads', () => {
 });
 
 test('every decision has a UI label', () => {
-  for (const d of ['delivered', 'held', 'stopped', 'reported']) {
+  for (const d of ['delivered', 'held', 'stopped', 'reported', 'burned']) {
     expect(tr).toHaveProperty([`decision.${d}`]);
     expect(tr).toHaveProperty([`ledger.${d}`]);
   }

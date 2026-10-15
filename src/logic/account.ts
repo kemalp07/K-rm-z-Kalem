@@ -22,7 +22,7 @@ const SPY_THREAD = 'imzasiz_halil';
 /** What the clerk got wrong (or right) on one decided letter, by the Şube's rules. */
 export function judge(letter: Letter, p: LetterProgress): PenaltyKind[] {
   const d = p.decision;
-  if (!d || d === 'held') return [];
+  if (!d || d === 'held' || d === 'burned') return [];
   const out: PenaltyKind[] = [];
   const passed = d === 'delivered';
   if (passed && letter.segments.some((s) => s.kind === 'sensitive' && !p.censored.includes(s.id))) out.push('sensitiveMissed');

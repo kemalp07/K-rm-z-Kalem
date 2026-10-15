@@ -5,7 +5,7 @@ export type Direction = 'cepheden' | 'cepheye';
 export type LetterKind = 'mektup' | 'paket';
 export type SegmentKind = 'normal' | 'sensitive' | 'hiddenInk';
 export type RevealTool = 'mum';
-export type Decision = 'delivered' | 'held' | 'stopped' | 'reported';
+export type Decision = 'delivered' | 'held' | 'stopped' | 'reported' | 'burned';
 
 /** How the letter was written. Drives font, slant, ink colour and wobble. */
 export type Hand = 'careful' | 'hurried' | 'dictated' | 'elegant' | 'clerical';
@@ -112,6 +112,8 @@ export interface Letter {
   to: string;
   direction: Direction;
   kind: LetterKind;
+  /** This sheet can be thrown into the ashtray. The ledger does not judge it. */
+  burnable?: boolean;
   /** Printed header on business paper. */
   letterhead?: string;
   /** Date as the writer put it; the magnifier's "date" target. */

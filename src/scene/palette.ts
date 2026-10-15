@@ -29,4 +29,5 @@ export const STAMP_INK = {
   held: '#8a6a22',
   stopped: C.censor,
   reported: '#3b3566',
+  burned: '#7a3b28',
 } as const;

@@ -15,6 +15,7 @@ describe('the Şube reckons', () => {
     expect(judge(letter('d1_imzasiz'), { ...emptyProgress(), reason: 'sahte', decision: 'reported' })).toEqual(['spyCaught']);
     expect(judge(letter('d1_imzasiz'), { ...emptyProgress(), reason: 'moral', decision: 'reported' })).toEqual(['wrongReason']);
     expect(judge(letter('d1_mehmet'), { ...emptyProgress(), decision: 'held' })).toEqual([]);
+    expect(judge({ ...letter('d1_mehmet'), burnable: true }, { ...emptyProgress(), decision: 'burned' })).toEqual([]);
   });
 
   it('pays the day into the purse, then the evening out of it', () => {

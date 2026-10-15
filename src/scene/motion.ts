@@ -13,8 +13,8 @@ export const T = {
   lift: 280,
   /** A tool going back to its place. */
   home: 650,
-  /** A letter unfolding after the envelope is opened. */
-  unfold: 950,
+  /** A letter unfolding after the envelope is laid down. */
+  unfold: 1080,
   /** Pause after the stamp lands, before the letter leaves. */
   stampRest: 650,
   /** The decided letter leaving the desk. */
@@ -27,4 +27,4 @@ export const T = {
 };
 
 /** An envelope that was let go away from the centre drifts back to the pile. */
-export const RETURN_SPRING = { damping: 26, stiffness: 120, mass: 1 };
+export const RETURN_SPRING = { damping: 22, stiffness: 86, mass: 1.15 };

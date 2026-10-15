@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { Easing, useAnimatedReaction, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
+import { Easing, useAnimatedReaction, useDerivedValue, useSharedValue, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
@@ -41,7 +41,8 @@ import { underGlass } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
-import { StampPress, Stamps, stampHome, stampSlots } from '../objects/Stamps';
+import { Ashtray } from '../objects/Ashtray';
+import { DECISIONS, StampPress, Stamps, stampHome, stampSlots } from '../objects/Stamps';
 import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
@@ -69,6 +70,8 @@ type Drag =
    * (`still` waits for that, `timer` for the press to finish); lifting early puts it back.
    */
   | { kind: 'stamp'; d: Decision; pressAt: Point | null; still?: ReturnType<typeof setTimeout>; timer?: ReturnType<typeof setTimeout>; done: boolean }
+  /** A burnable letter, carried toward the ashtray. */
+  | { kind: 'letter'; ox: number; oy: number }
   | { kind: 'ledger' }
   | { kind: 'restart' }
   | { kind: 'next' };
@@ -98,6 +101,7 @@ const EXIT: Record<Decision, { dx: number; dy: number; rot: number }> = {
   held: { dx: 0, dy: 520, rot: -0.05 }, // into the drawer
   stopped: { dx: -520, dy: 260, rot: -0.22 }, // onto the refused pile
   reported: { dx: 120, dy: -560, rot: 0.1 }, // up to the Şube's folder
+  burned: { dx: 0, dy: 0, rot: 0.4 }, // the ashtray takes it; this slide is not used
 };
 
 
@@ -158,6 +162,13 @@ export function DeskScreen() {
 
   const letterIn = useSharedValue(state.open ? 1 : 0);
   const letterOut = useSharedValue(0);
+  /** Offset while a burnable letter is carried, and how far it has gone into the fire. */
+  const letterDx = useSharedValue(0);
+  const letterDy = useSharedValue(0);
+  const burn = useSharedValue(0);
+  const ashFlare = useSharedValue(0);
+  /** The envelope stays visible while the sheet opens out of it. */
+  const envFade = useSharedValue(1);
   const exitDir = useSharedValue(EXIT.delivered);
 
   const penX = useSharedValue<number>(LAYOUT.rest.pen.x);
@@ -413,9 +424,12 @@ export function DeskScreen() {
   };
 
   /** The stamp goes back onto its card, then is no longer drawn in hand. */
+  const stampChoicesRef = useRef<readonly Decision[]>(DECISIONS);
+  stampChoicesRef.current = openLetter?.burnable ? ['delivered'] : DECISIONS;
+
   const stampBack = useCallback(
     (d: Decision) => {
-      const home = stampHome(d);
+      const home = stampHome(d, stampChoicesRef.current);
       stampX.value = withTiming(home.x, { duration: T.home, easing: GLIDE });
       stampY.value = withTiming(home.y, { duration: T.home, easing: GLIDE });
       stampProgress.value = withTiming(0, { duration: 260, easing: SETTLE });
@@ -423,6 +437,30 @@ export function DeskScreen() {
     },
     [stampX, stampY, stampProgress],
   );
+
+  /** The sheet slides into the dish, dwindles, and the fire takes it. */
+  const burnIntoAsh = (id: string) => {
+    const paper = layout?.paper;
+    if (!paper) return;
+    exiting.current = true;
+    const dish = LAYOUT.ashtray;
+    const glide = { duration: 640, easing: SETTLE };
+    letterDx.value = withTiming(dish.x - (paper.x + paper.w / 2), glide);
+    letterDy.value = withTiming(dish.y - (paper.y + paper.h / 2), glide);
+    burn.value = withTiming(1, { duration: 880, easing: SETTLE });
+    ashFlare.value = withDelay(320, withSequence(withTiming(1, { duration: 180, easing: SETTLE }), withTiming(0.15, { duration: 720, easing: GLIDE })));
+    haptic(Haptics.ImpactFeedbackStyle.Medium);
+    playSfx('paper', 0.5);
+    setTimeout(() => {
+      useGame.getState().stamp(id, 'burned');
+      letterDx.value = 0;
+      letterDy.value = 0;
+      burn.value = 0;
+      letterIn.value = 0;
+      ashFlare.value = withTiming(0, { duration: 480, easing: GLIDE });
+      exiting.current = false;
+    }, 900);
+  };
 
   /** The stamped letter goes its way and the decision is written down. */
   const sendOff = useCallback(
@@ -741,7 +779,7 @@ export function DeskScreen() {
     }
 
     if (s.open && layout) {
-      const slot = envView ? undefined : stampSlots().find((sl) => inRect(p, sl.rect, 4));
+      const slot = envView ? undefined : stampSlots(stampChoicesRef.current).find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
         if (introduce('stamps')) return;
         if (penInHand.current) penHome();
@@ -751,6 +789,10 @@ export function DeskScreen() {
         stampY.value = p.y;
         drag.current = { kind: 'stamp', d: slot.d, pressAt: null, done: false };
         haptic(Haptics.ImpactFeedbackStyle.Light);
+        return;
+      }
+      if (openLetter?.burnable && !penInHand.current && !envView && inRect(p, layout.paper)) {
+        drag.current = { kind: 'letter', ox: letterDx.value - p.x, oy: letterDy.value - p.y };
         return;
       }
     }
@@ -768,6 +810,7 @@ export function DeskScreen() {
           envY.value = pose.y;
           envAngle.value = pose.angle;
           envAngle.value = withTiming(pose.angle * 0.3, { duration: 500, easing: SETTLE });
+          envFade.value = 1;
           drag.current = { kind: 'envelope', id, ox: pose.x - p.x, oy: pose.y - p.y };
           setDragId(id);
           haptic(Haptics.ImpactFeedbackStyle.Light);
@@ -866,6 +909,10 @@ export function DeskScreen() {
         if (!d.pressAt && layout && inRect(p, layout.paper)) d.still = setTimeout(() => pressStamp(d, p), STAMP_REST_MS);
         break;
       }
+      case 'letter':
+        letterDx.value = p.x + d.ox;
+        letterDy.value = p.y + d.oy;
+        break;
     }
   };
 
@@ -899,11 +946,20 @@ export function DeskScreen() {
         const center = { x: p.x + d.ox + w / 2, y: p.y + d.oy + h / 2 };
         if (inRect(center, LAYOUT.dropZone) && !g.state.open) {
           g.open(d.id);
-          setDragId(null);
+          const lay = { duration: 760, easing: SETTLE };
+          envX.value = withTiming(LAYOUT.letter.x + (LAYOUT.letter.w - w) / 2, lay);
+          envY.value = withTiming(LAYOUT.letter.y + 30, lay);
+          envAngle.value = withTiming(0.02, lay);
+          envFade.value = withDelay(260, withTiming(0, { duration: 640, easing: GLIDE }));
+          letterDx.value = 0;
+          letterDy.value = 0;
+          burn.value = 0;
           letterIn.value = 0;
-          letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
-          playSfx('envelope_tear');
-          haptic(Haptics.ImpactFeedbackStyle.Medium);
+          letterIn.value = withDelay(200, withTiming(1, { duration: T.unfold, easing: SETTLE }));
+          playSfx('paper', 0.45);
+          setTimeout(() => playSfx('envelope_tear'), 240);
+          haptic(Haptics.ImpactFeedbackStyle.Light);
+          setTimeout(() => setDragId((cur) => (cur === d.id ? null : cur)), T.unfold + 240);
         } else {
           const i = g.state.stack.indexOf(d.id);
           const pose = stackPose(l, Math.max(0, i), LAYOUT.stack);
@@ -981,6 +1037,23 @@ export function DeskScreen() {
           stampBack(d.d);
         }
         break;
+      case 'letter': {
+        const id = g.state.open;
+        const paper = layout?.paper;
+        const dish = LAYOUT.ashtray;
+        if (id && paper && openLetter?.burnable) {
+          const cx = paper.x + paper.w / 2 + letterDx.value;
+          const cy = paper.y + paper.h / 2 + letterDy.value;
+          if (Math.hypot(cx - dish.x, cy - dish.y) < dish.r + 36) {
+            burnIntoAsh(id);
+            break;
+          }
+        }
+        const back = { duration: 560, easing: SETTLE };
+        letterDx.value = withTiming(0, back);
+        letterDy.value = withTiming(0, back);
+        break;
+      }
     }
   };
 
@@ -1008,18 +1081,24 @@ export function DeskScreen() {
     const v = letterIn.value;
     const out = letterOut.value;
     const e = exitDir.value;
+    const laid = v * v * (3 - 2 * v);
     return [
-      { translateX: o.x + e.dx * out },
-      { translateY: o.y + e.dy * out + (1 - v) * 22 },
-      { rotate: e.rot * out + (1 - v) * -0.02 },
+      { translateX: o.x + e.dx * out + letterDx.value },
+      { translateY: o.y + e.dy * out + (1 - laid) * 64 + letterDy.value },
+      { rotate: e.rot * out + (1 - laid) * -0.05 + burn.value * 0.35 },
       // Folded back into the envelope: it shrinks down toward it and is gone.
       { translateY: envViewIn.value * 150 },
-      { scale: (0.96 + 0.04 * v) * (1 - 0.6 * envViewIn.value) },
+      { scaleY: (0.46 + 0.54 * laid) * (1 - 0.6 * envViewIn.value) * (1 - burn.value * 0.82) },
+      { scaleX: (0.7 + 0.3 * laid) * (1 - 0.6 * envViewIn.value) * (1 - burn.value * 0.82) },
       { translateX: -o.x },
       { translateY: -o.y },
     ];
   });
-  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value) * (1 - envViewIn.value));
+  const letterOpacity = useDerivedValue(() => {
+    const v = letterIn.value;
+    const laid = v * v * (3 - 2 * v);
+    return laid * (1 - letterOut.value * letterOut.value) * (1 - envViewIn.value) * (1 - burn.value);
+  });
   const envTurn = useDerivedValue<Transforms3d>(() => [
     { translateX: WORLD.w / 2 },
     { translateY: ENV_TOP + 120 },
@@ -1027,7 +1106,7 @@ export function DeskScreen() {
     { translateX: -WORLD.w / 2 },
     { translateY: -(ENV_TOP + 120) },
   ]);
-  const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
+  const envTransform = useDerivedValue<Transforms3d>(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
     return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R * lensK - 2).build();
   }, [lensK]);
@@ -1163,11 +1242,11 @@ export function DeskScreen() {
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
-      <Stamps enabled={stampsEnabled} carried={pressing} />
+      <Stamps enabled={stampsEnabled} carried={pressing} decisions={openLetter?.burnable ? ['delivered'] : DECISIONS} />
     </FontsBridge>,
     STAMPS_REGION,
     fit.scale,
-    `stamps:${stampsEnabled}:${pressing}`,
+    `stamps:${stampsEnabled}:${pressing}:${openLetter?.burnable ? 'burn' : 'all'}`,
   );
 
   return (
@@ -1179,17 +1258,18 @@ export function DeskScreen() {
             <BakedImage baked={pile} />
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
+            <Ashtray flicker={flicker} flare={ashFlare} />
             {letterNode}
             {envNode}
             {cardNode}
             <StampPress pressing={pressing} progress={stampProgress} x={stampX} y={stampY} />
 
             {draggedLetter && (
-              <Group transform={envTransform}>
+              <Fade opacity={envFade} transform={envTransform}>
                 <LiftShadow {...envelopeSize(draggedLetter)} />
                 <EnvelopeBody letter={draggedLetter} postmark={postmarkOf(draggedLetter, day.calendar.rumi)} />
                 <EnvelopeAddress letter={draggedLetter} />
-              </Group>
+              </Fade>
             )}
 
             {/* What the glass sees: the same desk, larger */}
@@ -1198,6 +1278,7 @@ export function DeskScreen() {
                 <BakedImage baked={desk_} />
                 <BakedImage baked={pile} />
                 <BakedImage baked={stampCards} />
+                <Ashtray flicker={flicker} flare={ashFlare} />
                 {letterNode}
                 {envNode}
                 {cardNode}

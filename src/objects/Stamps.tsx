@@ -15,11 +15,11 @@ export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'
 const KNOB_DY = 28;
 const PLATE = { w: 86, h: 28, dy: 58 };
 
-/** The four rubber stamps in a row under the letter, each above a small brass plate naming it. */
-export function stampSlots(): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
+/** The rubber stamps in a row under the letter, each above a small brass plate naming it. */
+export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
   const { x, y, w } = LAYOUT.stamps;
-  const sw = w / 4;
-  return DECISIONS.map((d, i) => {
+  const sw = w / decisions.length;
+  return decisions.map((d, i) => {
     const cx = x + sw * (i + 0.5);
     return {
       d,
@@ -51,8 +51,8 @@ function Plate({ r, label }: { r: Rect; label: string }) {
  * The stamps standing in their row. A ring of the stamp's ink on the wood shows where
  * each one stands, and stays when it is picked up.
  */
-export function Stamps({ enabled, carried }: { enabled: boolean; carried: Decision | null }) {
-  const slots = useMemo(stampSlots, []);
+export function Stamps({ enabled, carried, decisions = DECISIONS }: { enabled: boolean; carried: Decision | null; decisions?: readonly Decision[] }) {
+  const slots = useMemo(() => stampSlots(decisions), [decisions]);
   return (
     <Fade opacity={enabled ? 1 : 0.45}>
       {slots.map((s) => (
@@ -87,7 +87,7 @@ export function StampPress({ pressing, progress, x, y }: { pressing: Decision | 
 }
 
 /** Where a stamp rests on its card. */
-export const stampHome = (d: Decision) => stampSlots().find((s) => s.d === d)!.knob;
+export const stampHome = (d: Decision, decisions: readonly Decision[] = DECISIONS) => stampSlots(decisions).find((s) => s.d === d)!.knob;
 
 const STAMP_ART = placed('stamp');
 
