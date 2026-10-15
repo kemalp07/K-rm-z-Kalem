@@ -1,6 +1,6 @@
 // Censoring is measured, not guessed: each line the pen must cover is cut into
-// narrow columns. One sweep of the nib marks a column once. The words stay until
-// the nib has come back over them enough times for the wax to close.
+// narrow columns. One slow sweep of the nib marks a column. A fast, thin stroke
+// is told not to count, so the words stay.
 
 export interface Rect {
   x: number;
@@ -26,8 +26,8 @@ export interface LineCoverage {
 
 export const COLUMN_WIDTH = 6;
 export const COVERED_RATIO = 0.9;
-/** Sweeps across a column before the wax has buried the words. */
-export const PASSES_TO_BURY = 3;
+/** One slow pass lays enough wax. The desk only counts a stroke this fat. */
+export const PASSES_TO_BURY = 1;
 
 export function makeCoverage(rects: Rect[], columnWidth = COLUMN_WIDTH): LineCoverage[] {
   return rects.map((rect) => {
@@ -45,10 +45,12 @@ export function makeCoverage(rects: Rect[], columnWidth = COLUMN_WIDTH): LineCov
  * Marks every column the segment a→b passes over. `reach` is how far from a
  * line's centre the nib may wander and still hit it (pen thickness + slack).
  * A column counts once per sweep: the nib must leave it, or reverse direction,
- * before the next pass counts. Mutates in place; returns true when a column
- * gained a pass.
+ * before the next pass counts. `counts` is false for a thin, rushed stroke:
+ * the wax is on the paper, but the line is not censored. Mutates in place;
+ * returns true when a column gained a pass.
  */
-export function strokeOver(lines: LineCoverage[], a: Point, b: Point, reach: number): boolean {
+export function strokeOver(lines: LineCoverage[], a: Point, b: Point, reach: number, counts = true): boolean {
+  if (!counts) return false;
   const dx = b.x - a.x;
   if (Math.abs(dx) > 0.4) {
     const dir = dx > 0 ? 1 : -1;

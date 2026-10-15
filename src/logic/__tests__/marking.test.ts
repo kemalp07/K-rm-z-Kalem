@@ -1,4 +1,4 @@
-import { inside, isClosedLoop, ringed } from '../marking';
+import { inside, isClosedLoop, ringed, underGlass } from '../marking';
 
 const circle = (cx: number, cy: number, r: number, n = 24, close = 0.95) =>
   Array.from({ length: n }, (_, i) => {
@@ -21,9 +21,19 @@ describe('red pencil rings', () => {
     expect(inside(ring, { x: 100, y: 105 })).toBe(true);
     expect(inside(ring, { x: 160, y: 100 })).toBe(false);
     const targets = [
-      { target: 'seal', x: 100, y: 100, anomaly: true },
-      { target: 'date', x: 300, y: 40, anomaly: false },
+      { target: 'seal', x: 100, y: 100, anomaly: true, r: 28 },
+      { target: 'date', x: 300, y: 40, anomaly: false, r: 22 },
     ];
     expect(ringed(ring, targets).map((t) => t.target)).toEqual(['seal']);
+  });
+
+  test('the glass marks whatever sits under the lens', () => {
+    const targets = [
+      { target: 'seal', x: 100, y: 100, anomaly: true, r: 28 },
+      { target: 'date', x: 300, y: 40, anomaly: false, r: 22 },
+    ];
+    expect(underGlass({ x: 110, y: 108 }, 38, targets)?.target).toBe('seal');
+    expect(underGlass({ x: 290, y: 48 }, 38, targets)?.target).toBe('date');
+    expect(underGlass({ x: 200, y: 80 }, 30, targets)).toBeNull();
   });
 });

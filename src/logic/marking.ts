@@ -46,6 +46,22 @@ export interface MarkTarget extends Pt {
   target: string;
   /** True when the thing is really wrong. */
   anomaly: boolean;
+  /** Outer radius of the thin red ring the clerk stamps around it. */
+  r: number;
+}
+
+/** The mark whose centre sits under the lens. The nearest one, when several do. */
+export function underGlass(lens: Pt, radius: number, targets: MarkTarget[]): MarkTarget | null {
+  let best: MarkTarget | null = null;
+  let bestD = radius;
+  for (const t of targets) {
+    const d = Math.hypot(t.x - lens.x, t.y - lens.y);
+    if (d < bestD) {
+      best = t;
+      bestD = d;
+    }
+  }
+  return best;
 }
 
 /** Targets whose centre the ring encloses. */

@@ -255,16 +255,17 @@ function attempt(
 /** The folded corner at the paper's bottom right that puts the letter back in its envelope. */
 export const closeCorner = (paper: Rect): Rect => ({ x: paper.x + paper.w - 34, y: paper.y + paper.h - 34, w: 34, h: 34 });
 
-/** What the red pencil can ring on this letter; `anomaly` from the letter's inspectables. */
+/** What the magnifier can ring on this letter; `anomaly` from the letter's inspectables. */
 export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] {
   const wrong = new Set((letter.inspectables ?? []).filter((i) => i.anomaly).map((i) => i.target));
   const out: MarkTarget[] = [];
   if (layout.date) {
     const d = layout.date.rect;
-    out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date') });
+    const span = Math.max(d.h, Math.min(d.w, d.h * 3.2));
+    out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date'), r: span / 2 + 7 });
   }
-  if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal') });
-  if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark') });
+  if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal'), r: layout.seal.r + 10 });
+  if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark'), r: layout.postmark.r + 10 });
   return out;
 }
 

@@ -1,28 +1,26 @@
 import { coverageRatio, isBlackedOut, makeCoverage, strokeOver } from '../censor';
 import { DEFAULT_REVEAL, displayedHeat, heatTarget, stepHeat } from '../reveal';
 
-/** Sweeps that reverse direction, the way a hand goes back over a line. */
-function sweeps(lines: ReturnType<typeof makeCoverage>, y: number, from: number, to: number, times: number) {
-  for (let i = 0; i < times; i++) {
-    const ltr = i % 2 === 0;
-    strokeOver(lines, { x: ltr ? from : to, y }, { x: ltr ? to : from, y }, 4);
-  }
+/** One deliberate pass, the way a slow hand crosses a line. */
+function sweep(lines: ReturnType<typeof makeCoverage>, y: number, from: number, to: number) {
+  strokeOver(lines, { x: from, y }, { x: to, y }, 4);
 }
 
 describe('censor coverage', () => {
   const rects = [{ x: 0, y: 0, w: 300, h: 20 }];
 
-  test('one sweep crosses the line and leaves the words', () => {
+  test('one slow sweep buries the line', () => {
     const lines = makeCoverage(rects);
-    strokeOver(lines, { x: -5, y: 10 }, { x: 310, y: 10 }, 4);
+    sweep(lines, 10, -5, 310);
     expect(coverageRatio(lines)).toBeGreaterThan(0.9);
-    expect(isBlackedOut(lines)).toBe(false);
+    expect(isBlackedOut(lines)).toBe(true);
   });
 
-  test('three sweeps bury the line', () => {
+  test('a fast stroke leaves the words', () => {
     const lines = makeCoverage(rects);
-    sweeps(lines, 10, -5, 310, 3);
-    expect(isBlackedOut(lines)).toBe(true);
+    strokeOver(lines, { x: -5, y: 10 }, { x: 310, y: 10 }, 4, false);
+    expect(coverageRatio(lines)).toBe(0);
+    expect(isBlackedOut(lines)).toBe(false);
   });
 
   test('half a sweep does not', () => {
@@ -41,9 +39,9 @@ describe('censor coverage', () => {
 
   test('wrapped segment needs every line buried', () => {
     const lines = makeCoverage([...rects, { x: 0, y: 24, w: 120, h: 20 }]);
-    sweeps(lines, 10, 0, 300, 3);
+    sweep(lines, 10, 0, 300);
     expect(isBlackedOut(lines)).toBe(false);
-    sweeps(lines, 34, 0, 125, 3);
+    sweep(lines, 34, 0, 125);
     expect(isBlackedOut(lines)).toBe(true);
   });
 });

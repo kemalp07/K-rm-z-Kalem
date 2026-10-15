@@ -9,13 +9,19 @@ export interface WaxPoint {
 /**
  * How fat this bit of grease pencil is. A slow hand leaves a short gap between
  * samples and lays down thick wax; a fast hand leaves a thin, broken line.
+ * Wax at least `BURY_RADIUS` wide is a deliberate stroke and buries the line.
  */
+export const BURY_RADIUS = 6.4;
+
 export function waxRadius(gap: number): number {
   if (gap < 3.5) return 8.4;
-  if (gap < 7) return 6.4;
+  if (gap < 7) return BURY_RADIUS;
   if (gap < 12) return 4.6;
   return 3.1;
 }
+
+/** A slow hand. A thinner stroke stays on the paper and does not censor. */
+export const waxBuries = (radius: number): boolean => radius >= BURY_RADIUS;
 
 /** A gap wider than this splits the stroke, so a rushed line breaks. */
 const BREAK = 16;
@@ -28,6 +34,13 @@ function circle(b: ReturnType<typeof Skia.PathBuilder.Make>, x: number, y: numbe
   b.cubicTo(x - k, y + r, x - r, y + k, x - r, y);
   b.cubicTo(x - r, y - k, x - k, y - r, x, y - r);
   b.close();
+}
+
+/** Centreline of the clerk's ring. Drawn as a stroke, so the middle stays open. */
+export function waxRing(cx: number, cy: number, r: number): SkPath {
+  const b = Skia.PathBuilder.Make();
+  circle(b, cx, cy, r);
+  return b.build();
 }
 
 /** The pencil's own mark: a filled ribbon, thick where the hand was slow. */

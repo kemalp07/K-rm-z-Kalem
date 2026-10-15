@@ -40,6 +40,8 @@ export interface LetterProps {
   layout: LetterLayout;
   revealed: string[];
   strokes: SkPath[];
+  /** Thin rings the magnifier stamped. They stay when the eraser lifts the wax. */
+  rings?: SkPath[];
   /** The stroke being drawn right now, if any. */
   livePath?: SharedValue<SkPath>;
   /** Today's date as the decision stamp prints it ("7 MAYIS 331"). */
@@ -298,23 +300,28 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
 }
 
 /**
- * Grease pencil on the paper. While the hand is down the wax is wet and thin
- * enough that the words survive; once it is put down it dries matte, and the
- * paper's tooth breaks it up. Several passes, not a filled bar, bury the line.
+ * Grease pencil on the paper. While the hand is down the wax is wet and the
+ * words still show; once it is put down a slow stroke dries matte and covers
+ * them. A fast stroke stays a thin line. The paper's tooth only dusts the wax.
  */
 export function CensorStroke({ path, wet = false }: { path: SkPath | SharedValue<SkPath>; wet?: boolean }) {
   return (
     <Group layer={<Paint />}>
-      <Path path={path} color={wet ? '#c44738' : C.censor} opacity={wet ? 0.4 : 0.56}>
+      <Path path={path} color={wet ? '#c44738' : C.censor} opacity={wet ? 0.42 : 1}>
         <BlurMask blur={wet ? 1.6 : 0.35} style="normal" />
       </Path>
       {!wet && (
-        <Path path={path} color="#000" opacity={0.45} blendMode="dstOut">
+        <Path path={path} color="#000" opacity={0.12} blendMode="dstOut">
           <FractalNoise freqX={0.85} freqY={0.4} octaves={2} seed={11} />
         </Path>
       )}
     </Group>
   );
+}
+
+/** The clerk's ring around a seal, a date or a postmark: thin, closed, hollow. */
+export function MarkRing({ path }: { path: SkPath }) {
+  return <Path path={path} style="stroke" strokeWidth={2.4} color={C.censor} />;
 }
 
 /** Everything on the sheet that only changes when a new letter is opened. */
@@ -409,7 +416,7 @@ function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<Pen
 /** Area a letter can paint on, shadow included — what gets rasterised. */
 export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
 
-function LetterImpl({ letter, layout, revealed, strokes, livePath, hint, today, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
+function LetterImpl({ letter, layout, revealed, strokes, rings, livePath, hint, today, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
   return (
     <Group>
       {still ?? <LetterStill letter={letter} layout={layout} />}
@@ -421,6 +428,9 @@ function LetterImpl({ letter, layout, revealed, strokes, livePath, hint, today, 
           <LetterMarks strokes={strokes} />
         </Fade>
       )}
+      {rings?.map((path, i) => (
+        <MarkRing key={i} path={path} />
+      ))}
       {hint && <SentenceHints segments={layout.segments} hint={hint} />}
       {livePath && <CensorStroke path={livePath} wet />}
       {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} imprintIn={imprintIn} today={today} />}

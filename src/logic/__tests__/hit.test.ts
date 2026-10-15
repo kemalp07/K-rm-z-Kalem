@@ -1,4 +1,4 @@
-import { distToRect, distToSegment, inRotatedRect, stickEnd, toLocalFrame } from '../../scene/hit';
+import { distToRect, distToSegment, GRIP_FROM_NIB, inRotatedRect, nibFromGrip, stickEnd, toLocalFrame } from '../../scene/hit';
 
 test('distance to a segment clamps at the ends', () => {
   expect(distToSegment({ x: 5, y: 3 }, { x: 0, y: 0 }, { x: 10, y: 0 })).toBe(3);
@@ -21,6 +21,17 @@ test('a pen turned half round points its body downward', () => {
   const end = stickEnd({ x: 0, y: 0 }, Math.PI, 100);
   expect(end.x).toBeCloseTo(0);
   expect(end.y).toBeCloseTo(100);
+});
+
+test('the nib sits down-right of the fingers and the grip lands back on them', () => {
+  const grip = { x: 100, y: 80 };
+  const angle = -0.62;
+  const nib = nibFromGrip(grip, angle);
+  expect(nib.x).toBeGreaterThan(grip.x);
+  expect(nib.y).toBeGreaterThan(grip.y);
+  const back = stickEnd(nib, angle, GRIP_FROM_NIB);
+  expect(back.x).toBeCloseTo(grip.x);
+  expect(back.y).toBeCloseTo(grip.y);
 });
 
 test('toLocalFrame undoes tilt and shear about the origin', () => {

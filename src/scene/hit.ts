@@ -34,6 +34,21 @@ export const stickEnd = (nib: Point, angle: number, length: number): Point => ({
   y: nib.y - Math.cos(angle) * length,
 });
 
+/** How far up the barrel the fingers sit, so the nib stays ahead of them. */
+export const GRIP_FROM_NIB = 72;
+/** In the hand the pencil leans with the writing; the nib sits down-right of the fingers. */
+export const PEN_WRITE_ANGLE = -0.62;
+/** Flatter on the paper while a line is being drawn. */
+export const PEN_DRAW_ANGLE = -0.95;
+
+/** The nib, given the fingers and the pencil's angle. Inverse of `stickEnd` at `gripDist`. */
+export function nibFromGrip(grip: Point, angle: number, gripDist = GRIP_FROM_NIB): Point {
+  return {
+    x: grip.x - Math.sin(angle) * gripDist,
+    y: grip.y + Math.cos(angle) * gripDist,
+  };
+}
+
 /**
  * Undo a block's handwriting transform (shear, then tilt, about its top-left) so a
  * board point can be compared with the block's own, upright line boxes.

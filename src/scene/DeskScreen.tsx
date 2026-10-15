@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
+import { Easing, useAnimatedReaction, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
@@ -35,9 +35,9 @@ import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
-import { waxRadius, waxRibbon } from '../objects/wax';
+import { waxBuries, waxRadius, waxRibbon, waxRing } from '../objects/wax';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
-import { isClosedLoop, ringed } from '../logic/marking';
+import { underGlass } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
@@ -47,7 +47,7 @@ import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, Magnifi
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
-import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd, toLocalFrame } from './hit';
+import { clampTo, dist, distToRect, distToSegment, GRIP_FROM_NIB, inRotatedRect, nibFromGrip, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
 import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
@@ -59,7 +59,7 @@ type Drag =
   | { kind: 'envelope'; id: string; ox: number; oy: number }
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'kettle'; ox: number; oy: number }
-  | { kind: 'magnifier'; ox: number; oy: number }
+  | { kind: 'magnifier'; ox: number; oy: number; start: Point }
   | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
@@ -73,7 +73,6 @@ type Drag =
   | { kind: 'restart' }
   | { kind: 'next' };
 
-const PEN_IN_HAND_ANGLE = 0.5;
 /** How large the envelope is shown when its letter is folded back in. */
 const ENV_ZOOM = 1.75;
 const ENV_TOP = 120;
@@ -121,6 +120,7 @@ export function DeskScreen() {
 
   const state = useGame((g) => g.state);
   const savedStrokes = useGame((g) => g.strokes);
+  const savedRings = useGame((g) => g.rings);
   const seenHelp = useGame((g) => g.seenHelp);
   const actions = useGame.getState();
 
@@ -142,6 +142,10 @@ export function DeskScreen() {
     () => (state.open ? (savedStrokes[state.open] ?? []).map((s) => Skia.Path.MakeFromSVGString(s)).filter((p): p is SkPath => !!p) : []),
     [savedStrokes, state.open],
   );
+  const rings = useMemo(
+    () => (state.open ? ((savedRings ?? {})[state.open] ?? []).map((s) => Skia.Path.MakeFromSVGString(s)).filter((p): p is SkPath => !!p) : []),
+    [savedRings, state.open],
+  );
 
   // --- animated values -------------------------------------------------------
   const flicker = useFlicker();
@@ -160,6 +164,10 @@ export function DeskScreen() {
   const penY = useSharedValue<number>(LAYOUT.rest.pen.y);
   const penAngle = useSharedValue<number>(LAYOUT.rest.pen.angle);
   const penLift = useSharedValue(0);
+  /** Fingers, while the pencil is held. The nib is this far down the barrel. */
+  const gripX = useSharedValue(0);
+  const gripY = useSharedValue(0);
+  const gripOn = useSharedValue(0);
 
   const candleX = useSharedValue<number>(LAYOUT.rest.candle.x);
   const candleY = useSharedValue<number>(LAYOUT.rest.candle.y);
@@ -379,12 +387,30 @@ export function DeskScreen() {
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
     penInHand.current = false;
+    gripOn.value = 0;
     const home = { duration: T.home, easing: GLIDE };
     penX.value = withTiming(LAYOUT.rest.pen.x, home);
     penY.value = withTiming(LAYOUT.rest.pen.y, home);
     penAngle.value = withTiming(LAYOUT.rest.pen.angle, home);
     penLift.value = withTiming(0, home);
-  }, [penX, penY, penAngle, penLift]);
+  }, [gripOn, penX, penY, penAngle, penLift]);
+
+  // The fingers stay put. The nib follows them as the pencil turns.
+  useAnimatedReaction(
+    () => ({ on: gripOn.value, angle: penAngle.value, x: gripX.value, y: gripY.value }),
+    (cur) => {
+      if (!cur.on) return;
+      penX.value = cur.x - Math.sin(cur.angle) * GRIP_FROM_NIB;
+      penY.value = cur.y + Math.cos(cur.angle) * GRIP_FROM_NIB;
+    },
+  );
+
+  const holdPen = (p: Point, angle: number) => {
+    gripX.value = p.x;
+    gripY.value = p.y;
+    gripOn.value = 1;
+    penAngle.value = angle;
+  };
 
   /** The stamp goes back onto its card, then is no longer drawn in hand. */
   const stampBack = useCallback(
@@ -650,10 +676,26 @@ export function DeskScreen() {
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
       if (introduce('magnifier')) return;
       if (penInHand.current) penHome();
-      drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
+      drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y, start: p };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
+    }
+
+    // Already in hand: a touch draws from the nib, which sits ahead of the fingers.
+    // The fingers rest on the barrel, so this has to win over picking the pencil up.
+    if (penInHand.current && s.open && !envView) {
+      const tip = nibFromGrip(p, PEN_DRAW_ANGLE);
+      if (inRect(tip, LAYOUT.letter)) {
+        holdPen(p, PEN_DRAW_ANGLE);
+        penLift.value = withTiming(0.2, { duration: 120, easing: SETTLE });
+        drag.current = { kind: 'pen-stroke', last: tip, points: [tip], radii: [waxRadius(2)], done: [] };
+        livePath.value = waxRibbon([{ x: tip.x, y: tip.y, r: waxRadius(2) }]);
+        penHint.value = { hover: '', done: [] };
+        setDrawing(true);
+        playSfx('pen', 0.5);
+        return;
+      }
     }
 
     const nib = { x: penX.value, y: penY.value };
@@ -661,10 +703,8 @@ export function DeskScreen() {
       if (introduce('pen')) return;
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
-      penLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
-      penAngle.value = withTiming(PEN_IN_HAND_ANGLE, { duration: T.lift + 120, easing: SETTLE });
-      penX.value = withTiming(p.x, { duration: T.lift, easing: SETTLE });
-      penY.value = withTiming(p.y, { duration: T.lift, easing: SETTLE });
+      holdPen(p, PEN_WRITE_ANGLE);
+      penLift.value = withTiming(0.72, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
     }
@@ -701,16 +741,6 @@ export function DeskScreen() {
     }
 
     if (s.open && layout) {
-      if (penInHand.current && !envView && inRect(p, LAYOUT.letter)) {
-        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [] };
-        livePath.value = waxRibbon([{ x: p.x, y: p.y, r: waxRadius(2) }]);
-        penHint.value = { hover: '', done: [] };
-        setDrawing(true);
-        penX.value = p.x;
-        penY.value = p.y;
-        playSfx('pen', 0.5);
-        return;
-      }
       const slot = envView ? undefined : stampSlots().find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
         if (introduce('stamps')) return;
@@ -786,30 +816,32 @@ export function DeskScreen() {
       }
       case 'pen-carry': {
         const c = clampTo(p, BOARD, 4);
-        penX.value = c.x;
-        penY.value = c.y;
+        gripX.value = c.x;
+        gripY.value = c.y;
         break;
       }
       case 'pen-stroke': {
         const id = useGame.getState().state.open;
         if (!id) return;
+        const c = clampTo(p, BOARD, 4);
+        gripX.value = c.x;
+        gripY.value = c.y;
+        const tip = nibFromGrip(c, PEN_DRAW_ANGLE);
         // The finger reports jagged points; the pencil draws the curve through them.
         const prev = d.points[d.points.length - 1]!;
-        if (Math.hypot(p.x - prev.x, p.y - prev.y) < 1.5) break;
-        const gap = Math.hypot(p.x - prev.x, p.y - prev.y);
-        d.points.push(p);
+        if (Math.hypot(tip.x - prev.x, tip.y - prev.y) < 1.5) break;
+        const gap = Math.hypot(tip.x - prev.x, tip.y - prev.y);
+        d.points.push(tip);
         d.radii.push(waxRadius(gap));
         livePath.value = waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) })));
-        penX.value = p.x;
-        penY.value = p.y;
         // Covering a sentence is felt at once but recorded when the pen lifts: a store
         // update mid-stroke re-renders and re-rasterises the letter, which stutters.
         let hover = '';
         for (const [segId, { lines, laid }] of coverage.current) {
           const local = (q: Point) => toLocalFrame(q, laid, laid.tilt, laid.skew);
-          const at = local(p);
+          const at = local(tip);
           if (!hover && lines.some(({ rect: r }) => at.x >= r.x - 4 && at.x <= r.x + r.w + 4 && at.y >= r.y - 3 && at.y <= r.y + r.h + 3)) hover = segId;
-          if (!strokeOver(lines, local(d.last), at, 5)) continue;
+          if (!strokeOver(lines, local(d.last), at, 5, waxBuries(d.radii[d.radii.length - 1] ?? 0))) continue;
           const already = d.done.includes(segId) || useGame.getState().state.letters[id]?.censored.includes(segId);
           if (!already && isBlackedOut(lines)) {
             d.done.push(segId);
@@ -817,7 +849,7 @@ export function DeskScreen() {
           }
         }
         if (hover !== penHint.value.hover || d.done.length !== penHint.value.done.length) penHint.value = { hover, done: [...d.done] };
-        d.last = p;
+        d.last = tip;
         break;
       }
       case 'stamp': {
@@ -893,9 +925,23 @@ export function DeskScreen() {
       case 'candle':
         candleLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
         break;
-      case 'magnifier':
+      case 'magnifier': {
         magLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
+        // A tap, not a drag: the glass is already on a seal, a date or a postmark.
+        const id = g.state.open;
+        if (id && openLetter && layout && !envView && dist(p, d.start) < 8) {
+          const lens = { x: magX.value, y: magY.value };
+          const hit = underGlass(lens, LENS_R * lensK, markTargets(openLetter, layout));
+          const prog = g.state.letters[id];
+          const already = !!hit && ((prog?.marked ?? []).includes(hit.target) || (prog?.wrongMarked ?? []).includes(hit.target));
+          if (hit && !already) {
+            g.mark(id, hit.target, hit.anomaly);
+            g.addRing(id, waxRing(hit.x, hit.y, hit.r).toSVGString());
+            haptic(Haptics.ImpactFeedbackStyle.Medium);
+          }
+        }
         break;
+      }
       case 'card':
         // Put back near its place, it tucks itself away again.
         if (dist({ x: cardX.value, y: cardY.value }, CARD_HOME) < 90) {
@@ -920,14 +966,12 @@ export function DeskScreen() {
             waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) }))).toSVGString(),
           );
         }
-        // A closed ring marks whatever it encloses as suspicious; the ledger judges it.
-        if (id && openLetter && layout && isClosedLoop(d.points)) {
-          const hits = ringed(d.points, markTargets(openLetter, layout));
-          for (const t of hits) g.mark(id, t.target, t.anomaly);
-          if (hits.length) haptic(Haptics.ImpactFeedbackStyle.Medium);
-        }
         livePath.value = Skia.Path.Make();
         setDrawing(false);
+        if (penInHand.current) {
+          holdPen(p, PEN_WRITE_ANGLE);
+          penLift.value = withTiming(0.72, { duration: 160, easing: SETTLE });
+        }
         break;
       }
       case 'stamp':
@@ -1032,6 +1076,7 @@ export function DeskScreen() {
           layout={layout}
           revealed={progress.revealed}
           strokes={strokes}
+          rings={rings}
           livePath={drawing ? livePath : undefined}
           hint={drawing ? penHint : undefined}
           today={stampDate}

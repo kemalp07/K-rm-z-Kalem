@@ -10,6 +10,8 @@ interface GameStore {
   state: DayState;
   /** Pen strokes as SVG path strings, per letter — so a reopened app shows the same scrawl. */
   strokes: Record<string, string[]>;
+  /** Thin rings the magnifier stamped, per letter. The eraser does not lift them. */
+  rings: Record<string, string[]>;
   hydrated: boolean;
   /** Instruction sheets the player has already been shown once. */
   seenHelp: HelpId[];
@@ -21,6 +23,7 @@ interface GameStore {
   /** A red ring around `target`; `wrong` places are recorded so the ledger can say so. */
   mark: (letterId: string, target: string, isAnomaly: boolean) => void;
   addStroke: (letterId: string, svg: string) => void;
+  addRing: (letterId: string, svg: string) => void;
   /** Rub out the pen work on a letter still on the desk. */
   erase: (letterId: string) => void;
   /** The reason ticked on the slip; must come before `stamp`. */
@@ -54,6 +57,7 @@ export const useGame = create<GameStore>()(
     (set) => ({
       state: firstDay(),
       strokes: {},
+      rings: {},
       hydrated: false,
       seenHelp: [],
 
@@ -64,6 +68,11 @@ export const useGame = create<GameStore>()(
       mark: (id, target, isAnomaly) => set((g) => ({ state: addMark(g.state, id, isAnomaly ? 'marked' : 'wrongMarked', target) })),
       addStroke: (id, svg) =>
         set((g) => ({ strokes: { ...g.strokes, [id]: [...(g.strokes[id] ?? []), svg] } })),
+      addRing: (id, svg) =>
+        set((g) => {
+          const rings = g.rings ?? {};
+          return { rings: { ...rings, [id]: [...(rings[id] ?? []), svg] } };
+        }),
       erase: (id) =>
         set((g) => (g.state.letters[id]?.decision ? g : { state: clearCensor(g.state, id), strokes: { ...g.strokes, [id]: [] } })),
       reason: (id, r) => set((g) => ({ state: setReason(g.state, id, r) })),
@@ -81,14 +90,14 @@ export const useGame = create<GameStore>()(
           const side = pickSideLetters(sideLetterCandidates, day.calendar.rumi, day.sideLetters ?? 0, seed, seen);
           return { state: startDay(day, g.state, mixIntoStack(day.letters.map((l) => l.id), side, seed)) };
         }),
-      restart: () => set({ state: firstDay(), strokes: {} }),
+      restart: () => set({ state: firstDay(), strokes: {}, rings: {} }),
       markHelpSeen: (id) => set((g) => (g.seenHelp.includes(id) ? g : { seenHelp: [...g.seenHelp, id] })),
     }),
     {
       name: 'kirmizi-kalem/save',
       version: 1,
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: (g) => ({ state: g.state, strokes: g.strokes, seenHelp: g.seenHelp }),
+      partialize: (g) => ({ state: g.state, strokes: g.strokes, rings: g.rings, seenHelp: g.seenHelp }),
       onRehydrateStorage: () => () => useGame.setState({ hydrated: true }),
     },
   ),
