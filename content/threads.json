@@ -2,5 +2,6 @@
   { "id": "mehmet_hatice", "front": "Onbaşı Mehmet", "home": "Hatice Hanım", "homePlace": "Sivas" },
   { "id": "saadet_nuri", "front": "Mülazım Nuri Efendi", "home": "Saadet", "homePlace": "İzmir" },
   { "id": "riza_emine", "front": "Er Rıza", "home": "Emine Hanım", "homePlace": "İstanbul" },
-  { "id": "imzasiz_halil", "front": "Levazım Kâtibi Halil Efendi", "home": "—", "homePlace": "İstanbul" }
+  { "id": "imzasiz_halil", "front": "Levazım Kâtibi Halil Efendi", "home": "—", "homePlace": "İstanbul" },
+  { "id": "ibrahim_anne", "front": "Er İbrahim", "home": "Fatma Hanım", "homePlace": "Biga" }
 ]
