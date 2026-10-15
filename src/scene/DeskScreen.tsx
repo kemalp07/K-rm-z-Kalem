@@ -35,6 +35,7 @@ import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
+import { waxRadius, waxRibbon } from '../objects/wax';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
 import { isClosedLoop, ringed } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
@@ -62,7 +63,7 @@ type Drag =
   | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
-  | { kind: 'pen-stroke'; last: Point; points: Point[]; done: string[] }
+  | { kind: 'pen-stroke'; last: Point; points: Point[]; radii: number[]; done: string[] }
   /**
    * A rubber stamp in hand. It comes down once the finger rests over the paper
    * (`still` waits for that, `timer` for the press to finish); lifting early puts it back.
@@ -100,22 +101,6 @@ const EXIT: Record<Decision, { dx: number; dy: number; rot: number }> = {
   reported: { dx: 120, dy: -560, rot: 0.1 }, // up to the Şube's folder
 };
 
-
-/** Quadratic curve through the midpoints of a finger's track: no corners, no jitter. */
-function smoothPath(pts: Point[]): SkPath {
-  const b = Skia.PathBuilder.Make();
-  const first = pts[0]!;
-  b.moveTo(first.x, first.y);
-  if (pts.length === 1) return b.lineTo(first.x + 0.1, first.y).build();
-  for (let i = 1; i < pts.length - 1; i++) {
-    const a = pts[i]!;
-    const c = pts[i + 1]!;
-    b.quadTo(a.x, a.y, (a.x + c.x) / 2, (a.y + c.y) / 2);
-  }
-  const last = pts[pts.length - 1]!;
-  b.lineTo(last.x, last.y);
-  return b.build();
-}
 
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
@@ -222,6 +207,9 @@ export function DeskScreen() {
   const [morningIdx, setMorningIdx] = useState(0);
   const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
   const morningIn = useSharedValue(0);
+  /** 0 while the morning paper is still folded, 1 once it has opened. */
+  const newsSpread = useSharedValue(1);
+  const [newsOpen, setNewsOpen] = useState(true);
   // The director opens with a promotion when yesterday earned one.
   const morningLead = (state.events ?? []).includes(`d${state.day - 1}:promoted`)
     ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
@@ -522,6 +510,9 @@ export function DeskScreen() {
   // A new day's papers rise onto the desk.
   useEffect(() => {
     setMorningIdx(0);
+    const folded = papers[0]?.kind === 'newspaper';
+    setNewsOpen(!folded);
+    newsSpread.value = folded ? 0 : 1;
     if (showMorning) morningIn.value = withTiming(1, { duration: 700, easing: SETTLE });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.day, showMorning]);
@@ -540,8 +531,19 @@ export function DeskScreen() {
 
     if (showMorning) {
       drag.current = null;
+      const paper = papers[morningIdx];
+      if (paper?.kind === 'newspaper' && !newsOpen) {
+        setNewsOpen(true);
+        newsSpread.value = withTiming(1, { duration: 720, easing: SETTLE });
+        playSfx('paper', 0.65);
+        return;
+      }
       playSfx('paper', 0.5);
       if (morningIdx + 1 < papers.length) {
+        const next = papers[morningIdx + 1];
+        const folded = next?.kind === 'newspaper';
+        setNewsOpen(!folded);
+        newsSpread.value = folded ? 0 : 1;
         morningIn.value = 0;
         setMorningIdx(morningIdx + 1);
         morningIn.value = withTiming(1, { duration: 500, easing: SETTLE });
@@ -700,7 +702,8 @@ export function DeskScreen() {
 
     if (s.open && layout) {
       if (penInHand.current && !envView && inRect(p, LAYOUT.letter)) {
-        drag.current = { kind: 'pen-stroke', last: p, points: [p], done: [] };
+        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [] };
+        livePath.value = waxRibbon([{ x: p.x, y: p.y, r: waxRadius(2) }]);
         penHint.value = { hover: '', done: [] };
         setDrawing(true);
         penX.value = p.x;
@@ -793,8 +796,10 @@ export function DeskScreen() {
         // The finger reports jagged points; the pencil draws the curve through them.
         const prev = d.points[d.points.length - 1]!;
         if (Math.hypot(p.x - prev.x, p.y - prev.y) < 1.5) break;
+        const gap = Math.hypot(p.x - prev.x, p.y - prev.y);
         d.points.push(p);
-        livePath.value = smoothPath(d.points);
+        d.radii.push(waxRadius(gap));
+        livePath.value = waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) })));
         penX.value = p.x;
         penY.value = p.y;
         // Covering a sentence is felt at once but recorded when the pen lifts: a store
@@ -909,7 +914,12 @@ export function DeskScreen() {
       case 'pen-stroke': {
         const id = g.state.open;
         if (id) for (const segId of d.done) g.censor(id, segId);
-        if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
+        if (id && d.points.length > 2) {
+          g.addStroke(
+            id,
+            waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) }))).toSVGString(),
+          );
+        }
         // A closed ring marks whatever it encloses as suspicious; the ledger judges it.
         if (id && openLetter && layout && isClosedLoop(d.points)) {
           const hits = ringed(d.points, markTargets(openLetter, layout));
@@ -995,9 +1005,9 @@ export function DeskScreen() {
   const region = layout ? letterRegion(layout.paper) : LAYOUT.letter;
   const stillKey = openLetter ? `still:${openLetter.id}` : '';
   const letterStill = useBaked(openLetter && layout ? <FontsBridge fonts={fonts}><LetterStill letter={openLetter} layout={layout} /></FontsBridge> : null, region, fit.scale, stillKey);
-  const marksKey = openLetter && progress ? `marks:${openLetter.id}:${progress.censored.join(',')}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
+  const marksKey = openLetter && progress ? `marks:${openLetter.id}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
   const hasMarks = !!progress && (progress.censored.length > 0 || strokes.length > 0);
-  const letterMarks = useBaked(layout && progress && hasMarks ? <LetterMarks layout={layout} censored={progress.censored} strokes={strokes} /> : null, region, fit.scale, marksKey);
+  const letterMarks = useBaked(layout && progress && hasMarks ? <LetterMarks strokes={strokes} /> : null, region, fit.scale, marksKey);
 
   let marksNode: ReactNode = undefined; // undefined: draw the marks live until recorded
   if (!hasMarks) marksNode = null;
@@ -1020,7 +1030,6 @@ export function DeskScreen() {
         <Letter
           letter={openLetter}
           layout={layout}
-          censored={progress.censored}
           revealed={progress.revealed}
           strokes={strokes}
           livePath={drawing ? livePath : undefined}
@@ -1162,7 +1171,17 @@ export function DeskScreen() {
             <Lamp flicker={flicker} level={lampLevel} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} />}
+            {showMorning && papers[morningIdx] && (
+              <MorningPapers
+                paper={papers[morningIdx]!}
+                flags={flagsOf(state)}
+                date={day.calendar.rumi}
+                opacity={morningIn}
+                lead={morningLead}
+                spread={newsSpread}
+                opened={newsOpen}
+              />
+            )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}

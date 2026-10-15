@@ -54,7 +54,7 @@ describe('rank', () => {
 
 describe('under the stamp', () => {
   it('counts writing under a stamp let through unseen', () => {
-    const l = { ...letter('d1_saadet'), underStamp: 'x' };
+    const l = { ...letter('d1_mehmet'), underStamp: 'x' };
     expect(judge(l, { ...emptyProgress(), decision: 'delivered' })).toContain('inkMissed');
     expect(judge(l, { ...emptyProgress(), revealed: ['stamp'], decision: 'delivered' })).not.toContain('inkMissed');
   });

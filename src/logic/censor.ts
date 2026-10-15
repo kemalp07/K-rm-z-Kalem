@@ -1,5 +1,6 @@
 // Censoring is measured, not guessed: each line the pen must cover is cut into
-// narrow columns, and a column counts once the stroke has passed over it.
+// narrow columns. One sweep of the nib marks a column once. The words stay until
+// the nib has come back over them enough times for the wax to close.
 
 export interface Rect {
   x: number;
@@ -15,25 +16,48 @@ export interface Point {
 
 export interface LineCoverage {
   rect: Rect;
-  cols: boolean[];
+  /** How many separate sweeps have crossed this column. */
+  cols: number[];
+  /** The nib is on this column during the sweep in progress. */
+  down: boolean[];
+  /** +1 when the current sweep runs to the right, −1 to the left. */
+  dir: number;
 }
 
 export const COLUMN_WIDTH = 6;
 export const COVERED_RATIO = 0.9;
+/** Sweeps across a column before the wax has buried the words. */
+export const PASSES_TO_BURY = 3;
 
 export function makeCoverage(rects: Rect[], columnWidth = COLUMN_WIDTH): LineCoverage[] {
-  return rects.map((rect) => ({
-    rect,
-    cols: new Array<boolean>(Math.max(1, Math.ceil(rect.w / columnWidth))).fill(false),
-  }));
+  return rects.map((rect) => {
+    const n = Math.max(1, Math.ceil(rect.w / columnWidth));
+    return {
+      rect,
+      cols: new Array<number>(n).fill(0),
+      down: new Array<boolean>(n).fill(false),
+      dir: 0,
+    };
+  });
 }
 
 /**
  * Marks every column the segment a→b passes over. `reach` is how far from a
  * line's centre the nib may wander and still hit it (pen thickness + slack).
- * Mutates in place; returns true when something new was covered.
+ * A column counts once per sweep: the nib must leave it, or reverse direction,
+ * before the next pass counts. Mutates in place; returns true when a column
+ * gained a pass.
  */
 export function strokeOver(lines: LineCoverage[], a: Point, b: Point, reach: number): boolean {
+  const dx = b.x - a.x;
+  if (Math.abs(dx) > 0.4) {
+    const dir = dx > 0 ? 1 : -1;
+    for (const line of lines) {
+      if (line.dir !== 0 && line.dir !== dir) line.down.fill(false);
+      line.dir = dir;
+    }
+  }
+
   let changed = false;
   const steps = Math.max(1, Math.ceil(Math.hypot(b.x - a.x, b.y - a.y) / 2));
   for (let s = 0; s <= steps; s++) {
@@ -41,16 +65,21 @@ export function strokeOver(lines: LineCoverage[], a: Point, b: Point, reach: num
     const x = a.x + (b.x - a.x) * t;
     const y = a.y + (b.y - a.y) * t;
     for (const line of lines) {
-      const { rect, cols } = line;
+      const { rect, cols, down } = line;
       const cy = rect.y + rect.h / 2;
-      if (Math.abs(y - cy) > rect.h / 2 + reach) continue;
+      const onLine = Math.abs(y - cy) <= rect.h / 2 + reach;
       const colW = rect.w / cols.length;
-      const from = Math.floor((x - reach - rect.x) / colW);
-      const to = Math.floor((x + reach - rect.x) / colW);
-      for (let c = Math.max(0, from); c <= Math.min(cols.length - 1, to); c++) {
-        if (!cols[c]) {
-          cols[c] = true;
-          changed = true;
+      for (let c = 0; c < cols.length; c++) {
+        const cx = rect.x + (c + 0.5) * colW;
+        const hit = onLine && Math.abs(x - cx) <= colW / 2 + reach;
+        if (hit) {
+          if (!down[c]) {
+            cols[c] = (cols[c] ?? 0) + 1;
+            down[c] = true;
+            changed = true;
+          }
+        } else if (down[c]) {
+          down[c] = false;
         }
       }
     }
@@ -58,17 +87,26 @@ export function strokeOver(lines: LineCoverage[], a: Point, b: Point, reach: num
   return changed;
 }
 
+/** Share of columns the nib has crossed at least once. */
 export function coverageRatio(lines: LineCoverage[]): number {
   let total = 0;
   let hit = 0;
   for (const { cols } of lines) {
     total += cols.length;
-    for (const c of cols) if (c) hit++;
+    for (const c of cols) if (c >= 1) hit++;
   }
   return total === 0 ? 0 : hit / total;
 }
 
+function buryRatio(line: LineCoverage): number {
+  const n = line.cols.length;
+  if (n === 0) return 0;
+  let buried = 0;
+  for (const c of line.cols) if (c >= PASSES_TO_BURY) buried++;
+  return buried / n;
+}
+
 export function isBlackedOut(lines: LineCoverage[], threshold = COVERED_RATIO): boolean {
-  // Every line must be mostly covered, not just the sum — one untouched line leaks.
-  return lines.length > 0 && lines.every((l) => coverageRatio([l]) >= threshold);
+  // Every line must be buried, not just the sum — one untouched line leaks.
+  return lines.length > 0 && lines.every((l) => buryRatio(l) >= threshold);
 }

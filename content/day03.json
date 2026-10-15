@@ -7,8 +7,108 @@
     "weekday": "Cumartesi",
     "rumi": "9 Mayıs 1331"
   },
-  "sideLetters": 2,
+  "sideLetters": 1,
   "letters": [
+    {
+      "id": "d1_saadet",
+      "threadId": "saadet_nuri",
+      "day": 3,
+      "sender": "Saadet",
+      "recipient": "Mülazım Nuri Efendi",
+      "from": "İzmir, Karataş",
+      "to": "Ordu-yı Hümayun, 61. Alay",
+      "direction": "cepheye",
+      "kind": "mektup",
+      "hand": "elegant",
+      "dateLine": "Pazar akşamı",
+      "heading": "Aziz Nuri'm,",
+      "segments": [
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Kalbim hep sizdedir; bu satırları yazarken pencereden körfeze bakıyorum."
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Akşamları valideniz ile oturup sizin için dua ediyoruz."
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "Yasemin bu sene erkenden açtı; bir dalını kurutup zarfın içine koydum."
+        },
+        {
+          "id": "s4",
+          "kind": "normal",
+          "text": "Işıklar söndükten sonra mektuplarınızı yeniden okuyorum."
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Kına gecemizi düşünmekten başka bir şey gelmiyor elimden."
+        },
+        {
+          "id": "s6",
+          "kind": "normal",
+          "text": "Sizi bekliyorum. Her gün, her akşam."
+        }
+      ],
+      "signature": "Saadet",
+      "inspectables": [
+        {
+          "id": "date",
+          "target": "date",
+          "note": "Tarih yok. Yalnızca 'Pazar akşamı' yazılmış."
+        }
+      ],
+      "marks": [
+        {
+          "kind": "jasmine"
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "all": [
+              "d1_saadet:reported"
+            ]
+          },
+          "text": "Bir aşk mektubu Şube'nin dosyalarına girdi. Ne aradığını kimse sormadı."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_saadet:stopped"
+            ]
+          },
+          "text": "Saadet cevap gelmeyince bir mektup daha yazacak."
+        },
+        {
+          "when": {
+            "all": [
+              "d1_saadet:held"
+            ]
+          },
+          "text": "Kurumuş yasemin bir gece daha masanda kalacak."
+        },
+        {
+          "text": "Nuri Efendi mektubu göğüs cebinde taşıyacak."
+        }
+      ],
+      "meta": {
+        "acrostic": {
+          "segmentIds": [
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5"
+          ],
+          "word": "KAYIK"
+        }
+      }
+    },
     {
       "id": "d3_riza",
       "threadId": "riza_emine",

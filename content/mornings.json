@@ -1,5 +1,6 @@
 {
   "hint": "Okuyup bırakmak için dokununuz",
+  "openHint": "Açmak için dokununuz",
   "newspaper": {
     "title": "CERİDE-İ HAVÂDİS-İ HARBİYE",
     "line": "Numara {n} · {date} · Nüshası 10 para"
@@ -92,6 +93,42 @@
         ]
       },
       {
+        "kind": "newspaper",
+        "n": 110,
+        "items": [
+          {
+            "head": "ARIBURNU'NDA MUHAREBE",
+            "text": "6 Mayıs gecesi ordumuz düşman siperlerine karşı hücuma kalkmış, şiddetli bir müsademe vuku bulmuştur. Şehitlerimize rahmet dileriz."
+          },
+          {
+            "head": "EKMEK",
+            "text": "Dersaadet'te ekmeğin fiatı yine artmıştır. Fırın önlerinde sabah ezanından itibaren kuyruk teşekkül etmektedir."
+          },
+          {
+            "when": {
+              "all": [
+                "d1_imzasiz:reported"
+              ]
+            },
+            "head": "GALATA'DA TAHKİKAT",
+            "text": "Şark Ticaret Kumpanyası namına gelen bir evrak üzerine Galata'da tahkikat açılmıştır."
+          },
+          {
+            "when": {
+              "none": [
+                "d1_imzasiz:reported"
+              ]
+            },
+            "head": "İLÂN",
+            "text": "Hilâl-i Ahmer Cemiyeti, cepheye gönderilmek üzere yün çorap ve kuru meyve kabul etmektedir."
+          },
+          {
+            "head": "POSTA",
+            "text": "Kilitbahir ile Dersaadet arasında vapur işlemektedir. Asker mektupları pulsuz taşınır."
+          }
+        ]
+      },
+      {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
@@ -170,6 +207,44 @@
         ]
       },
       {
+        "kind": "newspaper",
+        "n": 111,
+        "items": [
+          {
+            "head": "CEPHEDEN",
+            "text": "Arıburnu ve Seddülbahir hatlarında gece sükûnetle geçmiştir. Resmî tebliğ bundan ibarettir."
+          },
+          {
+            "head": "KÖPRÜ'DE",
+            "text": "Dersaadet'te asker kafileleri Köprü'den geçmekte, halk sükûnetle işine bakmağa davet olunmaktadır."
+          },
+          {
+            "when": {
+              "any": [
+                "d1_mehmet:stopped",
+                "d1_hatice:stopped"
+              ]
+            },
+            "head": "POSTALARDA TEHİR",
+            "text": "Kilitbahir şubesinden çıkan mektuplarda bir iki günlük tehir olduğu bildirilmektedir."
+          },
+          {
+            "when": {
+              "none": [
+                "d1_mehmet:stopped",
+                "d1_hatice:stopped"
+              ]
+            },
+            "head": "POSTA",
+            "text": "Kilitbahir postası vaktinde çıkmıştır. Mektuplar gecikmeksizin yola verilmektedir."
+          },
+          {
+            "head": "İLÂN",
+            "text": "Üsküdar'da bir hane, kirası peşin alınmak üzere kiraya verilecektir. Müracaat iskeledeki yazıcıya."
+          }
+        ]
+      },
+      {
         "kind": "family",
         "heading": "Efendim,",
         "body": [
@@ -232,8 +307,8 @@
         "n": 112,
         "items": [
           {
-            "head": "ARIBURNU'NDA DÜŞMANA AĞIR DARBE",
-            "text": "Ordumuzun 6 Mayıs gecesi icra ettiği hücumda düşman siperlerine ağır zayiat verdirilmiştir. Şehitlerimize Cenab-ı Hak'tan rahmet dileriz."
+            "head": "ÖLÜLER GÖMÜLDÜ",
+            "text": "11 Mayıs'ta iki taraf ateşi kesmiş, ölüler defnolunmuştur. Harp tebliği bundan ibarettir."
           },
           {
             "when": {

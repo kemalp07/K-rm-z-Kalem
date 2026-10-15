@@ -6,7 +6,6 @@ import {
   Circle,
   ColorMatrix,
   DashPathEffect,
-  DiscretePathEffect,
   FractalNoise,
   Group,
   Line,
@@ -39,7 +38,6 @@ const PALE = [0.09, 0.09, 0.09, 0, 0.74, 0.09, 0.09, 0.09, 0, 0.74, 0.09, 0.09, 
 export interface LetterProps {
   letter: LetterData;
   layout: LetterLayout;
-  censored: string[];
   revealed: string[];
   strokes: SkPath[];
   /** The stroke being drawn right now, if any. */
@@ -300,73 +298,21 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
 }
 
 /**
- * A censored line, done the way a clerk does it: the red pencil dragged back and forth
- * across the words until they are gone, over a first heavy pass that leaves nothing legible.
+ * Grease pencil on the paper. While the hand is down the wax is wet and thin
+ * enough that the words survive; once it is put down it dries matte, and the
+ * paper's tooth breaks it up. Several passes, not a filled bar, bury the line.
  */
-function CensorBars({ segments, censored }: { segments: LaidSegment[]; censored: string[] }) {
-  const blocks = useMemo(
-    () =>
-      segments
-        .filter((s) => censored.includes(s.seg.id))
-        .map((s) => ({
-          laid: s,
-          beds: s.lines.map((l, i) => roughRect({ x: l.x - 2, y: l.y + 2, w: l.w + 4, h: l.h - 3 }, `bed-${s.seg.id}-${i}`, 1.6)),
-          scribbles: s.lines.map((l, i) => scribble(l, `scr-${s.seg.id}-${i}`)),
-        })),
-    [segments, censored],
-  );
+export function CensorStroke({ path, wet = false }: { path: SkPath | SharedValue<SkPath>; wet?: boolean }) {
   return (
-    <Group>
-      {blocks.map(({ laid, beds, scribbles }) => (
-        <Group key={laid.seg.id} transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
-          {beds.map((b, i) => (
-            <Path key={`b${i}`} path={b} color={C.censor} opacity={0.88}>
-              <DiscretePathEffect length={5} deviation={1.4} seed={i} />
-            </Path>
-          ))}
-          {scribbles.map((sc, i) => (
-            <CensorStroke key={`s${i}`} path={sc} width={7} />
-          ))}
-        </Group>
-      ))}
-    </Group>
-  );
-}
-
-/** Back-and-forth pencil marks across a line box, with rounded turns and a hand's unevenness. */
-function scribble(r: R, seed: string): SkPath {
-  const rand = rng(seed);
-  const b = Skia.PathBuilder.Make();
-  const top = r.y + 3;
-  const bottom = r.y + r.h - 3;
-  let x = r.x - 3;
-  let up = false;
-  b.moveTo(x, bottom);
-  while (x < r.x + r.w + 3) {
-    const step = between(rand, 3.2, 5.4);
-    const nx = x + step;
-    const ny = (up ? bottom : top) + between(rand, -1.5, 1.5);
-    b.quadTo(x + step * 0.5, ny + (up ? 2 : -2), nx, ny);
-    x = nx;
-    up = !up;
-  }
-  return b.build();
-}
-
-/**
- * Red grease pencil on paper: a soft waxy body, the paper's tooth breaking it up into
- * grain, and a darker vein where the pencil pressed hardest.
- */
-export function CensorStroke({ path, width = 9 }: { path: SkPath | SharedValue<SkPath>; width?: number }) {
-  return (
-    <Group layer={<Paint blendMode="multiply" />}>
-      <Path path={path} style="stroke" strokeWidth={width} strokeCap="round" strokeJoin="round" color={C.censor} opacity={0.9}>
-        <BlurMask blur={0.7} style="normal" />
+    <Group layer={<Paint />}>
+      <Path path={path} color={wet ? '#c44738' : C.censor} opacity={wet ? 0.4 : 0.56}>
+        <BlurMask blur={wet ? 1.6 : 0.35} style="normal" />
       </Path>
-      <Path path={path} style="stroke" strokeWidth={width + 1} strokeCap="round" strokeJoin="round" blendMode="dstOut" opacity={0.5}>
-        <FractalNoise freqX={0.9} freqY={0.35} octaves={2} seed={11} />
-      </Path>
-      <Path path={path} style="stroke" strokeWidth={width * 0.3} strokeCap="round" strokeJoin="round" color={C.censorDark} opacity={0.35} transform={[{ translateX: 0.6 }, { translateY: 0.8 }]} />
+      {!wet && (
+        <Path path={path} color="#000" opacity={0.45} blendMode="dstOut">
+          <FractalNoise freqX={0.85} freqY={0.4} octaves={2} seed={11} />
+        </Path>
+      )}
     </Group>
   );
 }
@@ -417,11 +363,10 @@ function CloseCorner({ paper }: { paper: R }) {
   );
 }
 
-/** The red pencil's finished work: bars over censored lines and the strokes themselves. */
-export function LetterMarks({ layout, censored, strokes }: { layout: LetterLayout; censored: string[]; strokes: SkPath[] }) {
+/** The red pencil's finished work: the strokes the clerk actually drew. */
+export function LetterMarks({ strokes }: { strokes: SkPath[] }) {
   return (
     <Group>
-      <CensorBars segments={layout.segments} censored={censored} />
       {strokes.map((s, i) => (
         <CensorStroke key={i} path={s} />
       ))}
@@ -432,8 +377,9 @@ export function LetterMarks({ layout, censored, strokes }: { layout: LetterLayou
 export type PenHint = { hover: string; done: string[] };
 
 /**
- * While the pen is down, a faint rule under the sentence it is over shows what one
- * stroke of censoring takes in; a covered sentence's rule turns red.
+ * While the pen is down, a faint rule under the sentence it is over shows which
+ * line this pass is crossing. The wax itself is the mark; the rule goes away
+ * once the line is buried.
  */
 function SentenceHints({ segments, hint }: { segments: LaidSegment[]; hint: SharedValue<PenHint> }) {
   return (
@@ -450,14 +396,12 @@ function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<Pen
     for (const l of laid.lines) b.moveTo(l.x, l.y + l.h - 1).lineTo(l.x + l.w, l.y + l.h - 1);
     return b.build();
   }, [laid]);
-  const over = useDerivedValue(() => (hint.value.hover === id && !hint.value.done.includes(id) ? 0.55 : 0));
-  const done = useDerivedValue(() => (hint.value.done.includes(id) ? 0.85 : 0));
+  const over = useDerivedValue(() => (hint.value.hover === id && !hint.value.done.includes(id) ? 0.45 : 0));
   return (
     <Group transform={[{ rotate: laid.tilt }, { skewY: laid.skew }]} origin={{ x: laid.x, y: laid.y }}>
       <Path path={path} style="stroke" strokeWidth={1.2} color={C.inkFaded} opacity={over}>
         <DashPathEffect intervals={[4, 3]} />
       </Path>
-      <Path path={path} style="stroke" strokeWidth={2} color={C.censor} opacity={done} />
     </Group>
   );
 }
@@ -465,7 +409,7 @@ function SentenceHint({ laid, hint }: { laid: LaidSegment; hint: SharedValue<Pen
 /** Area a letter can paint on, shadow included — what gets rasterised. */
 export const letterRegion = (paper: R): R => ({ x: paper.x - 40, y: paper.y - 30, w: paper.w + 80, h: paper.h + 70 });
 
-function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hint, today, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
+function LetterImpl({ letter, layout, revealed, strokes, livePath, hint, today, heat, warm, imprint, imprintIn, marksFade, still, marks }: LetterProps) {
   return (
     <Group>
       {still ?? <LetterStill letter={letter} layout={layout} />}
@@ -474,11 +418,11 @@ function LetterImpl({ letter, layout, censored, revealed, strokes, livePath, hin
       )}
       {marks !== undefined ? marks : (
         <Fade opacity={marksFade ?? 1}>
-          <LetterMarks layout={layout} censored={censored} strokes={strokes} />
+          <LetterMarks strokes={strokes} />
         </Fade>
       )}
       {hint && <SentenceHints segments={layout.segments} hint={hint} />}
-      {livePath && <CensorStroke path={livePath} />}
+      {livePath && <CensorStroke path={livePath} wet />}
       {imprint && imprintIn && <Imprint imprint={imprint} letter={letter} imprintIn={imprintIn} today={today} />}
     </Group>
   );
