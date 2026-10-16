@@ -24,4 +24,7 @@ export const artPlacement: Record<string, ArtPlacement> = {
   // Glass radius in the image is ~154 px; drawn so it matches the game's LENS_R (38).
   magnifier: { size: [532, 735], anchor: [184, 186], width: 131, points: { handleEnd: [507, 718] } },
   stamp: { size: [213, 215], anchor: [106, 107], width: 57 },
+  // The rubber's middle, not the crumbs. A coal sits on one charred butt.
+  eraser: { size: [420, 217], anchor: [189.5, 97.8], width: 62 },
+  ashtray: { size: [480, 493], anchor: [239.9, 246.3], width: 72, points: { coal: [185.9, 216.2] } },
 };

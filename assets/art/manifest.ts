@@ -2,6 +2,7 @@
 /* eslint-disable */
 
 export const artFiles: Partial<Record<string, number>> = {
+  "ashtray": require('./ashtray.png'),
   "booklet": require('./booklet.png'),
   "booklet_open": require('./booklet_open.png'),
   "brass_plate": require('./brass_plate.png'),
@@ -16,6 +17,7 @@ export const artFiles: Partial<Record<string, number>> = {
   "desk": require('./desk.png'),
   "envelope": require('./envelope.png'),
   "envelope_package": require('./envelope_package.png'),
+  "eraser": require('./eraser.png'),
   "item_corap": require('./item_corap.png'),
   "item_dut": require('./item_dut.png'),
   "kettle": require('./kettle.png'),

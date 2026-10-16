@@ -91,14 +91,14 @@ describe('flags and outcomes', () => {
 describe('day flow', () => {
   test('a full day runs desk → dusk → ledger → evening → continued', () => {
     let s = startDay(day);
-    expect(s.stack).toHaveLength(5);
+    expect(s.stack).toHaveLength(3);
     for (const id of [...s.stack]) {
       s = openEnvelope(s, id);
       expect(s.open).toBe(id);
       s = decide(s, id, 'delivered');
     }
     expect(s.phase).toBe('dusk');
-    expect(s.done).toHaveLength(5);
+    expect(s.done).toHaveLength(3);
     s = advancePhase(s);
     expect(s.phase).toBe('ledger');
     s = closeLedger(s, (id) => day.letters.find((l) => l.id === id));
@@ -110,7 +110,7 @@ describe('day flow', () => {
   test('only one envelope open at a time; decisions are final', () => {
     let s = startDay(day);
     s = openEnvelope(s, 'd1_mehmet');
-    expect(openEnvelope(s, 'd1_riza')).toBe(s);
+    expect(openEnvelope(s, 'd1_hatice')).toBe(s);
     s = addMark(s, 'd1_mehmet', 'censored', 's3');
     s = addMark(s, 'd1_mehmet', 'censored', 's3');
     expect(s.letters.d1_mehmet!.censored).toEqual(['s3']);
@@ -148,14 +148,14 @@ describe('reason slip', () => {
 
 describe('next day', () => {
   it('brings held letters back first, remembering they were held', () => {
-    let s = openEnvelope(startDay(day), 'd1_saadet');
-    s = decide(s, 'd1_saadet', 'held');
+    let s = openEnvelope(startDay(day), 'd1_mehmet');
+    s = decide(s, 'd1_mehmet', 'held');
     const next = startDay({ ...day, day: 2, letters: [] }, s, ['x']);
-    expect(next.stack).toEqual(['d1_saadet', 'x']);
-    expect(next.letters.d1_saadet?.decision).toBeUndefined();
-    expect(flagsOf(next).has('d1_saadet:held')).toBe(true);
-    const again = decide(openEnvelope(next, 'd1_saadet'), 'd1_saadet', 'delivered');
-    expect(flagsOf(again).has('d1_saadet:delivered')).toBe(true);
-    expect(flagsOf(again).has('d1_saadet:held')).toBe(true);
+    expect(next.stack).toEqual(['d1_mehmet', 'x']);
+    expect(next.letters.d1_mehmet?.decision).toBeUndefined();
+    expect(flagsOf(next).has('d1_mehmet:held')).toBe(true);
+    const again = decide(openEnvelope(next, 'd1_mehmet'), 'd1_mehmet', 'delivered');
+    expect(flagsOf(again).has('d1_mehmet:delivered')).toBe(true);
+    expect(flagsOf(again).has('d1_mehmet:held')).toBe(true);
   });
 });

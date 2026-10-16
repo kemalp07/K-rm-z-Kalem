@@ -10,39 +10,42 @@ import { Para } from '../scene/Para';
 import { LAYOUT } from '../scene/world';
 import { Fade } from '../scene/Fade';
 
-export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'];
+/** Stamps on the desk. Holding a letter overnight is not one of them. */
+export const DECISIONS: Decision[] = ['delivered', 'stopped', 'reported'];
 
 const KNOB_DY = 28;
-const PLATE = { w: 86, h: 28, dy: 58 };
+const PLATE = { h: 36, dy: 52 };
 
-/** The four rubber stamps in a row under the letter, each above a small brass plate naming it. */
-export function stampSlots(): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
+/** The rubber stamps in a row under the letter, each above a small brass plate naming it. */
+export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
   const { x, y, w } = LAYOUT.stamps;
-  const sw = w / 4;
-  return DECISIONS.map((d, i) => {
+  const sw = w / decisions.length;
+  const plateW = Math.min(118, sw - 14);
+  return decisions.map((d, i) => {
     const cx = x + sw * (i + 0.5);
     return {
       d,
-      rect: { x: cx - 40, y, w: 80, h: PLATE.dy + PLATE.h },
+      rect: { x: cx - plateW / 2, y, w: plateW, h: PLATE.dy + PLATE.h },
       knob: { x: cx, y: y + KNOB_DY },
-      plate: { x: cx - PLATE.w / 2, y: y + PLATE.dy, w: PLATE.w, h: PLATE.h },
+      plate: { x: cx - plateW / 2, y: y + PLATE.dy, w: plateW, h: PLATE.h },
     };
   });
 }
 
-/** Brass plate, the small kind: one engraved word. */
+/** Brass plate under each stamp. The word sits on a pale band so it stays readable. */
 function Plate({ r, label }: { r: Rect; label: string }) {
+  const long = label.length > 8;
+  const size = long ? (r.w >= 108 ? 15 : 13) : 17;
   return (
     <Group>
       <ArtSlot slot="brass_plate" rect={r} shadow>
-        <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={2}>
+        <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={3}>
           <LinearGradient start={vec(r.x, r.y)} end={vec(r.x + r.w * 0.6, r.y + r.h)} colors={[C.brassLight, C.brass, C.brassDark, C.brass]} positions={[0, 0.35, 0.7, 1]} />
           <Shadow dx={-1.5} dy={2} blur={2} color="rgba(0,0,0,0.6)" />
         </RoundedRect>
       </ArtSlot>
-      {/* Engraving: dark fill with a lit lower lip, so the letters read as cut. */}
-      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 5.6} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
-      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 6.2} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
+      <RoundedRect x={r.x + 4} y={r.y + 5} width={r.w - 8} height={r.h - 10} r={2} color="#f6e7c4" />
+      <Para text={label} x={r.x + 2} y={r.y + (r.h - size) / 2 - 1} width={r.w - 4} family="Cormorant" size={size} color="#1a1006" align="center" weight={FontWeight.Bold} letterSpacing={long ? 0 : 0.6} />
     </Group>
   );
 }
@@ -51,8 +54,8 @@ function Plate({ r, label }: { r: Rect; label: string }) {
  * The stamps standing in their row. A ring of the stamp's ink on the wood shows where
  * each one stands, and stays when it is picked up.
  */
-export function Stamps({ enabled, carried }: { enabled: boolean; carried: Decision | null }) {
-  const slots = useMemo(stampSlots, []);
+export function Stamps({ enabled, carried, decisions = DECISIONS }: { enabled: boolean; carried: Decision | null; decisions?: readonly Decision[] }) {
+  const slots = useMemo(() => stampSlots(decisions), [decisions]);
   return (
     <Fade opacity={enabled ? 1 : 0.45}>
       {slots.map((s) => (
@@ -87,7 +90,7 @@ export function StampPress({ pressing, progress, x, y }: { pressing: Decision | 
 }
 
 /** Where a stamp rests on its card. */
-export const stampHome = (d: Decision) => stampSlots().find((s) => s.d === d)!.knob;
+export const stampHome = (d: Decision, decisions: readonly Decision[] = DECISIONS) => stampSlots(decisions).find((s) => s.d === d)!.knob;
 
 const STAMP_ART = placed('stamp');
 

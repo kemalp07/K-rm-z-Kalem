@@ -5,7 +5,7 @@ export type Direction = 'cepheden' | 'cepheye';
 export type LetterKind = 'mektup' | 'paket';
 export type SegmentKind = 'normal' | 'sensitive' | 'hiddenInk';
 export type RevealTool = 'mum';
-export type Decision = 'delivered' | 'held' | 'stopped' | 'reported';
+export type Decision = 'delivered' | 'held' | 'stopped' | 'reported' | 'burned';
 
 /** How the letter was written. Drives font, slant, ink colour and wobble. */
 export type Hand = 'careful' | 'hurried' | 'dictated' | 'elegant' | 'clerical';
@@ -49,6 +49,8 @@ export interface Inspectable {
   note: string;
   /** True when what the magnifier shows is wrong — it becomes a flag. */
   anomaly?: boolean;
+  /** An underline here is a fair note. It does not make the letter a forgery. */
+  line?: boolean;
 }
 
 export interface Seal {
@@ -112,6 +114,8 @@ export interface Letter {
   to: string;
   direction: Direction;
   kind: LetterKind;
+  /** This sheet can be thrown into the ashtray. The ledger does not judge it. */
+  burnable?: boolean;
   /** Printed header on business paper. */
   letterhead?: string;
   /** Date as the writer put it; the magnifier's "date" target. */
@@ -259,11 +263,14 @@ export interface SampleCard {
   pages: string[];
 }
 
-/** One line of the reason slip that comes with DURDUR and İSTİHBARAT. */
+/** One entry of the reason slip that comes with DURDUR and İSTİHBARAT. */
 export interface Reason {
   id: string;
   day: number;
+  /** Short name. The ledger prints this. */
   label: string;
+  /** What the clerk actually saw, written out on the slip under the name. */
+  detail: string;
 }
 
 export interface Booklet {

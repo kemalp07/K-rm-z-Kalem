@@ -1,19 +1,33 @@
 import { coverageRatio, isBlackedOut, makeCoverage, strokeOver } from '../censor';
 import { DEFAULT_REVEAL, displayedHeat, heatTarget, stepHeat } from '../reveal';
 
+/** One deliberate pass, the way a slow hand crosses a line. */
+function sweep(lines: ReturnType<typeof makeCoverage>, y: number, from: number, to: number) {
+  strokeOver(lines, { x: from, y }, { x: to, y }, 4);
+}
+
 describe('censor coverage', () => {
   const rects = [{ x: 0, y: 0, w: 300, h: 20 }];
 
-  test('a full sweep blacks a line out', () => {
+  test('one slow sweep buries the line', () => {
     const lines = makeCoverage(rects);
-    strokeOver(lines, { x: -5, y: 10 }, { x: 310, y: 10 }, 4);
+    sweep(lines, 10, -5, 310);
+    expect(coverageRatio(lines)).toBeGreaterThan(0.9);
     expect(isBlackedOut(lines)).toBe(true);
+  });
+
+  test('a fast stroke leaves the words', () => {
+    const lines = makeCoverage(rects);
+    strokeOver(lines, { x: -5, y: 10 }, { x: 310, y: 10 }, 4, false);
+    expect(coverageRatio(lines)).toBe(0);
+    expect(isBlackedOut(lines)).toBe(false);
   });
 
   test('half a sweep does not', () => {
     const lines = makeCoverage(rects);
     strokeOver(lines, { x: 0, y: 10 }, { x: 150, y: 10 }, 4);
     expect(coverageRatio(lines)).toBeGreaterThan(0.4);
+    expect(coverageRatio(lines)).toBeLessThan(0.7);
     expect(isBlackedOut(lines)).toBe(false);
   });
 
@@ -23,11 +37,11 @@ describe('censor coverage', () => {
     expect(coverageRatio(lines)).toBe(0);
   });
 
-  test('wrapped segment needs every line covered', () => {
+  test('wrapped segment needs every line buried', () => {
     const lines = makeCoverage([...rects, { x: 0, y: 24, w: 120, h: 20 }]);
-    strokeOver(lines, { x: 0, y: 10 }, { x: 300, y: 10 }, 4);
+    sweep(lines, 10, 0, 300);
     expect(isBlackedOut(lines)).toBe(false);
-    strokeOver(lines, { x: 0, y: 34 }, { x: 125, y: 34 }, 4);
+    sweep(lines, 34, 0, 125);
     expect(isBlackedOut(lines)).toBe(true);
   });
 });

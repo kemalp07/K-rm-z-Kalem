@@ -362,30 +362,32 @@ export function Eraser({ rub, lift }: { rub: SharedValue<number>; lift: SharedVa
   const shadow = useDerivedValue<Transforms3d>(() => [{ translateX: -2 - lift.value * 4 }, { translateY: 3 + lift.value * 6 }]);
   return (
     <Group>
-      <Group transform={[{ translateX: x + w / 2 }, { translateY: y + h / 2 }, { rotate: rot }]}>
-        {ERASER.crumbs.map((c, i) => (
-          <Path key={i} path={c} color="rgba(150,110,100,0.55)" />
-        ))}
-      </Group>
       <Group transform={transform}>
-        <Group transform={shadow} opacity={0.55}>
-          <Path path={ERASER.body} color="#000">
-            <BlurMask blur={3} style="normal" />
-          </Path>
-        </Group>
-        <Path path={ERASER.body}>
-          <LinearGradient start={vec(0, -h / 2)} end={vec(0, h / 2)} colors={['#c9a59a', '#b38a7f', '#9a7268']} />
-        </Path>
-        <Group clip={ERASER.body}>
-          <Path path={ERASER.worn} color="rgba(90,70,64,0.35)">
-            <BlurMask blur={2} style="normal" />
-          </Path>
-          <Path path={ERASER.smudge} color="rgba(163,36,27,0.35)">
-            <BlurMask blur={1.5} style="normal" />
-          </Path>
-        </Group>
-        <Path path={ERASER.body} style="stroke" strokeWidth={0.8} color="rgba(60,35,30,0.55)" />
-        <Rect x={-w / 2 + 3} y={-h / 2 + 1.5} width={w - 8} height={1.2} color="rgba(255,235,225,0.25)" />
+        <PlacedArt slot="eraser" shadow={{ transform: shadow, opacity: 0.55, restBlur: 3 }}>
+          <Group>
+            <Group transform={shadow} opacity={0.55}>
+              <Path path={ERASER.body} color="#000">
+                <BlurMask blur={3} style="normal" />
+              </Path>
+            </Group>
+            <Path path={ERASER.body}>
+              <LinearGradient start={vec(0, -h / 2)} end={vec(0, h / 2)} colors={['#c9a59a', '#b38a7f', '#9a7268']} />
+            </Path>
+            <Group clip={ERASER.body}>
+              <Path path={ERASER.worn} color="rgba(90,70,64,0.35)">
+                <BlurMask blur={2} style="normal" />
+              </Path>
+              <Path path={ERASER.smudge} color="rgba(163,36,27,0.35)">
+                <BlurMask blur={1.5} style="normal" />
+              </Path>
+            </Group>
+            <Path path={ERASER.body} style="stroke" strokeWidth={0.8} color="rgba(60,35,30,0.55)" />
+            <Rect x={-w / 2 + 3} y={-h / 2 + 1.5} width={w - 8} height={1.2} color="rgba(255,235,225,0.25)" />
+            {ERASER.crumbs.map((c, i) => (
+              <Path key={i} path={c} color="rgba(150,110,100,0.55)" />
+            ))}
+          </Group>
+        </PlacedArt>
       </Group>
     </Group>
   );

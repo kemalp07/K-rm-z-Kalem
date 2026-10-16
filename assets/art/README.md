@@ -47,7 +47,9 @@ Görsel üretim aracından tek sayfada birden çok eşya geldiyse:
 | `envelope_package.png` | 176×117 | 528×351 px | Kâğıda sarılmış, iple bağlanmış paket. |
 | `paper.png` | 360×410 | 1080×1230 px | Mektup kâğıdı. Yazısız; el yazısı kodla yerleşir. |
 | `pen.png` | 18×170 | 54×510 px | Kırmızı sansür kalemi, uç aşağıda. |
-| `candle.png` | 80×90 | 240×270 px | Kulplu pirinç şamdanda mum, tam tepeden. Alev kodla çizilir. |
+| `candle.png` | 80×90 | 240×270 px | Kulplu pirinç şamdanda mum, tam tepeden. Alev kodla çizilir. Gizli yazıyı ısıtır; mektup buraya atılmaz. |
+| `eraser.png` | 64×28 | 192×84 px | Eski kauçuk silgi, tepeden. Bir ucu kırmızı mumla kirli, köşesi aşınmış. |
+| `ashtray.png` | 90×90 | 270×270 px | Yuvarlak pirinç küllük, tepeden. İçinde kül ve ezilmiş sigara izmariti. Köz ve mektup alevi kodla çizilir. |
 | `magnifier.png` | 120×120 | 360×360 px | Büyüteç, sap sağ-aşağı. Cam kısmı saydam olsun. |
 | `card_1.png` | 92×60 | 276×180 px | İLET kartı: boş, eski kalın kâğıt. Yazı ve baskı kodla. |
 | `card_2.png` | 92×60 | 276×180 px | BEKLET kartı. |

@@ -44,7 +44,6 @@ dayanan sahtelik de masaya gelmez: ters pul 5. günden, yanlış damga 4. günde
 4. Mühür, damga, pul ve tarih bu defterdeki örneklerle karşılaştırılır.
 5. Karar mühürle verilir:
    - **İLET** — mektup yoluna devam eder.
-   - **BEKLET** — bir gün çekmecede kalır; yarın yeniden bakılır.
    - **DURDUR** — mektup alıcıya gitmez.
    - **İSTİHBARAT** — mektup ve gönderen Şube'ye bildirilir.
 6. Her karar deftere yazılır. Kâtip yaptığından mesuldür.

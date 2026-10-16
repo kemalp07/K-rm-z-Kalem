@@ -25,6 +25,8 @@ export function getHelp(id: HelpId): HelpSheet {
 
 export const mornings = morningsJson as unknown as {
   hint: string;
+  /** Shown while the gazette is still folded. */
+  openHint: string;
   newspaper: { title: string; line: string };
   mudur: { head: string; sub: string; to: string; sign: string };
   days: Record<string, MorningPaper[]>;

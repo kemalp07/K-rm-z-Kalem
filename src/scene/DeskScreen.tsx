@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } fro
 import { useWindowDimensions } from 'react-native';
 import { Canvas, Circle, Group, Skia, type SkPath, type Transforms3d } from '@shopify/react-native-skia';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { Easing, useDerivedValue, useSharedValue, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
+import { Easing, useAnimatedReaction, useDerivedValue, useSharedValue, withDelay, withRepeat, withSequence, withSpring, withTiming } from 'react-native-reanimated';
 import { GLIDE, RETURN_SPRING, SETTLE, T } from './motion';
 import * as Haptics from 'expo-haptics';
 
@@ -11,6 +11,7 @@ import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
+import { guideCards, guideStep, type GuideHold, type GuideStep } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
 
 /** The market's thick beeswax candle: its heat reaches further and works faster. */
@@ -19,6 +20,7 @@ import { resolveSegments } from '../logic/variants';
 import { useGame } from '../state/store';
 import { loopSfx, playSfx } from '../sfx/sfx';
 
+import { BEGIN_RECT, BeginAgain } from '../objects/BeginAgain';
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
 import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
@@ -27,6 +29,7 @@ import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
 import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
+import { GuideCallout } from '../objects/Guide';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
@@ -35,18 +38,20 @@ import { ReasonSlip, reasonRows } from '../objects/ReasonSlip';
 import { DismissedCard, EveningSheet, eveningLayout } from '../objects/EveningSheet';
 import { CARD_HOME, CARD_REGION, SampleCardFace, onCard, useCardTransform } from '../objects/SampleCard';
 import { imprintPoint, Letter, LetterMarks, LetterStill, letterRegion, type ImprintAt } from '../objects/Letter';
+import { waxBuries, waxRadius, waxRibbon, waxRing } from '../objects/wax';
 import { layoutLetter, markTargets, type LaidSegment, closeCorner } from '../objects/letterLayout';
-import { isClosedLoop, ringed } from '../logic/marking';
+import { underGlass } from '../logic/marking';
 import { LockedTray } from '../objects/LockedTray';
 import { MoneyNote } from '../objects/MoneyNote';
 import { PackageItems } from '../objects/PackageItems';
-import { StampPress, Stamps, stampHome, stampSlots } from '../objects/Stamps';
+import { Ashtray } from '../objects/Ashtray';
+import { DECISIONS, StampPress, Stamps, stampHome, stampSlots } from '../objects/Stamps';
 import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, MagnifierFrame, PEN_LENGTH, RedPen } from '../objects/Tools';
 
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
-import { clampTo, dist, distToRect, distToSegment, inRotatedRect, stickEnd, toLocalFrame } from './hit';
+import { clampTo, dist, distToRect, distToSegment, fromLocalFrame, inRotatedRect, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
 import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
@@ -58,21 +63,23 @@ type Drag =
   | { kind: 'envelope'; id: string; ox: number; oy: number }
   | { kind: 'candle'; ox: number; oy: number }
   | { kind: 'kettle'; ox: number; oy: number }
-  | { kind: 'magnifier'; ox: number; oy: number }
+  | { kind: 'magnifier'; ox: number; oy: number; start: Point }
   | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
-  | { kind: 'pen-stroke'; last: Point; points: Point[]; done: string[] }
+  | { kind: 'pen-stroke'; last: Point; points: Point[]; radii: number[]; done: string[]; dateDone: boolean }
   /**
    * A rubber stamp in hand. It comes down once the finger rests over the paper
    * (`still` waits for that, `timer` for the press to finish); lifting early puts it back.
    */
   | { kind: 'stamp'; d: Decision; pressAt: Point | null; still?: ReturnType<typeof setTimeout>; timer?: ReturnType<typeof setTimeout>; done: boolean }
+  /** A burnable letter, carried toward the ashtray. */
+  | { kind: 'letter'; ox: number; oy: number }
   | { kind: 'ledger' }
   | { kind: 'restart' }
+  | { kind: 'begin' }
   | { kind: 'next' };
 
-const PEN_IN_HAND_ANGLE = 0.5;
 /** How large the envelope is shown when its letter is folded back in. */
 const ENV_ZOOM = 1.75;
 const ENV_TOP = 120;
@@ -87,6 +94,10 @@ const envRects = (l: LetterContent) => {
   ];
 };
 const STAMP_HOLD_MS = 450;
+/** How long the glass must sit on a date or a seal before the lesson counts it read. */
+const LOOK_MS = 1100;
+/** A scrap stays at least this long, so the next one does not replace it unread. */
+const GUIDE_READ_MS = 1700;
 /** How long a carried stamp must rest over the paper before it starts to come down. */
 const STAMP_REST_MS = 140;
 const TICK_MS = 50;
@@ -98,24 +109,9 @@ const EXIT: Record<Decision, { dx: number; dy: number; rot: number }> = {
   held: { dx: 0, dy: 520, rot: -0.05 }, // into the drawer
   stopped: { dx: -520, dy: 260, rot: -0.22 }, // onto the refused pile
   reported: { dx: 120, dy: -560, rot: 0.1 }, // up to the Şube's folder
+  burned: { dx: 0, dy: 0, rot: 0.4 }, // the ashtray takes it; this slide is not used
 };
 
-
-/** Quadratic curve through the midpoints of a finger's track: no corners, no jitter. */
-function smoothPath(pts: Point[]): SkPath {
-  const b = Skia.PathBuilder.Make();
-  const first = pts[0]!;
-  b.moveTo(first.x, first.y);
-  if (pts.length === 1) return b.lineTo(first.x + 0.1, first.y).build();
-  for (let i = 1; i < pts.length - 1; i++) {
-    const a = pts[i]!;
-    const c = pts[i + 1]!;
-    b.quadTo(a.x, a.y, (a.x + c.x) / 2, (a.y + c.y) / 2);
-  }
-  const last = pts[pts.length - 1]!;
-  b.lineTo(last.x, last.y);
-  return b.build();
-}
 
 const haptic = (style: Haptics.ImpactFeedbackStyle) => Haptics.impactAsync(style).catch(() => {});
 
@@ -136,6 +132,7 @@ export function DeskScreen() {
 
   const state = useGame((g) => g.state);
   const savedStrokes = useGame((g) => g.strokes);
+  const savedRings = useGame((g) => g.rings);
   const seenHelp = useGame((g) => g.seenHelp);
   const actions = useGame.getState();
 
@@ -157,6 +154,10 @@ export function DeskScreen() {
     () => (state.open ? (savedStrokes[state.open] ?? []).map((s) => Skia.Path.MakeFromSVGString(s)).filter((p): p is SkPath => !!p) : []),
     [savedStrokes, state.open],
   );
+  const rings = useMemo(
+    () => (state.open ? ((savedRings ?? {})[state.open] ?? []).map((s) => Skia.Path.MakeFromSVGString(s)).filter((p): p is SkPath => !!p) : []),
+    [savedRings, state.open],
+  );
 
   // --- animated values -------------------------------------------------------
   const flicker = useFlicker();
@@ -169,12 +170,23 @@ export function DeskScreen() {
 
   const letterIn = useSharedValue(state.open ? 1 : 0);
   const letterOut = useSharedValue(0);
+  /** Offset while a burnable letter is carried, and how far it has gone into the fire. */
+  const letterDx = useSharedValue(0);
+  const letterDy = useSharedValue(0);
+  const burn = useSharedValue(0);
+  const ashFlare = useSharedValue(0);
+  /** The envelope stays visible while the sheet opens out of it. */
+  const envFade = useSharedValue(1);
   const exitDir = useSharedValue(EXIT.delivered);
 
   const penX = useSharedValue<number>(LAYOUT.rest.pen.x);
   const penY = useSharedValue<number>(LAYOUT.rest.pen.y);
   const penAngle = useSharedValue<number>(LAYOUT.rest.pen.angle);
   const penLift = useSharedValue(0);
+  /** The pointer, while the pencil is held. The nib sits on it; the barrel trails behind. */
+  const gripX = useSharedValue(0);
+  const gripY = useSharedValue(0);
+  const gripOn = useSharedValue(0);
 
   const candleX = useSharedValue<number>(LAYOUT.rest.candle.x);
   const candleY = useSharedValue<number>(LAYOUT.rest.candle.y);
@@ -222,6 +234,9 @@ export function DeskScreen() {
   const [morningIdx, setMorningIdx] = useState(0);
   const showMorning = state.phase === 'desk' && state.morningDone === false && papers.length > 0;
   const morningIn = useSharedValue(0);
+  /** 0 while the morning paper is still folded, 1 once it has opened. */
+  const newsSpread = useSharedValue(1);
+  const [newsOpen, setNewsOpen] = useState(true);
   // The director opens with a promotion when yesterday earned one.
   const morningLead = (state.events ?? []).includes(`d${state.day - 1}:promoted`)
     ? [economy.text.promoted!.replace('{rank}', rankOf(state).name).replace('{wage}', String(rankOf(state).wage))]
@@ -248,6 +263,13 @@ export function DeskScreen() {
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
+  /** Day-1 guide: the pen or the glass is already in hand, so the next label can show. */
+  const [guideHold, setGuideHold] = useState<GuideHold>(null);
+  /** The scrap on the desk. It lags the real step so a finished action does not wipe the words. */
+  const [guideShown, setGuideShown] = useState<GuideStep | null>(null);
+  const guideShownAt = useRef(0);
+  /** When the lens first covered the thing the clerk is being asked to read. */
+  const lookDwell = useRef<{ key: string; since: number } | null>(null);
   const [warm, setWarm] = useState(false);
   // While the eraser works the marks fade, which needs a layer; otherwise they draw plain.
   const [rubbing, setRubbing] = useState(false);
@@ -258,12 +280,15 @@ export function DeskScreen() {
   const penInHand = useRef(false);
   const exiting = useRef(false);
   const coverage = useRef(new Map<string, { lines: LineCoverage[]; laid: LaidSegment }>());
+  /** Columns across the date sentence. A censor stroke fills them, the same as any line. */
+  const dateLine = useRef<LineCoverage[] | null>(null);
   const heatLocal = useRef<Record<string, number>>({});
 
   const resetCoverage = useCallback(() => {
     coverage.current = new Map(
       (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
+    dateLine.current = layout?.date ? makeCoverage(layout.date.lines) : null;
   }, [layout]);
 
   // Fresh coverage and heat for each letter that lands on the desk.
@@ -391,17 +416,39 @@ export function DeskScreen() {
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
     penInHand.current = false;
+    setGuideHold((h) => (h === 'pen' ? null : h));
+    gripOn.value = 0;
     const home = { duration: T.home, easing: GLIDE };
     penX.value = withTiming(LAYOUT.rest.pen.x, home);
     penY.value = withTiming(LAYOUT.rest.pen.y, home);
     penAngle.value = withTiming(LAYOUT.rest.pen.angle, home);
     penLift.value = withTiming(0, home);
-  }, [penX, penY, penAngle, penLift]);
+  }, [gripOn, penX, penY, penAngle, penLift]);
+
+  // The nib stays under the pointer. Turning the pencil swings the barrel, not the line.
+  useAnimatedReaction(
+    () => ({ on: gripOn.value, x: gripX.value, y: gripY.value }),
+    (cur) => {
+      if (!cur.on) return;
+      penX.value = cur.x;
+      penY.value = cur.y;
+    },
+  );
+
+  const holdPen = (p: Point, angle: number) => {
+    gripX.value = p.x;
+    gripY.value = p.y;
+    gripOn.value = 1;
+    penAngle.value = angle;
+  };
 
   /** The stamp goes back onto its card, then is no longer drawn in hand. */
+  const stampChoicesRef = useRef<readonly Decision[]>(DECISIONS);
+  stampChoicesRef.current = openLetter?.burnable ? ['delivered'] : DECISIONS;
+
   const stampBack = useCallback(
     (d: Decision) => {
-      const home = stampHome(d);
+      const home = stampHome(d, stampChoicesRef.current);
       stampX.value = withTiming(home.x, { duration: T.home, easing: GLIDE });
       stampY.value = withTiming(home.y, { duration: T.home, easing: GLIDE });
       stampProgress.value = withTiming(0, { duration: 260, easing: SETTLE });
@@ -409,6 +456,30 @@ export function DeskScreen() {
     },
     [stampX, stampY, stampProgress],
   );
+
+  /** The sheet slides into the dish, dwindles, and the fire takes it. */
+  const burnIntoAsh = (id: string) => {
+    const paper = layout?.paper;
+    if (!paper) return;
+    exiting.current = true;
+    const dish = LAYOUT.ashtray;
+    const glide = { duration: 640, easing: SETTLE };
+    letterDx.value = withTiming(dish.x - (paper.x + paper.w / 2), glide);
+    letterDy.value = withTiming(dish.y - (paper.y + paper.h / 2), glide);
+    burn.value = withTiming(1, { duration: 880, easing: SETTLE });
+    ashFlare.value = withDelay(320, withSequence(withTiming(1, { duration: 180, easing: SETTLE }), withTiming(0.15, { duration: 720, easing: GLIDE })));
+    haptic(Haptics.ImpactFeedbackStyle.Medium);
+    playSfx('paper', 0.5);
+    setTimeout(() => {
+      useGame.getState().stamp(id, 'burned');
+      letterDx.value = 0;
+      letterDy.value = 0;
+      burn.value = 0;
+      letterIn.value = 0;
+      ashFlare.value = withTiming(0, { duration: 480, easing: GLIDE });
+      exiting.current = false;
+    }, 900);
+  };
 
   /** The stamped letter goes its way and the decision is written down. */
   const sendOff = useCallback(
@@ -419,10 +490,9 @@ export function DeskScreen() {
       }, after);
       setTimeout(() => {
         useGame.getState().stamp(id, d);
-        letterOut.value = 0;
-        letterIn.value = 0;
         setImprint(null);
         exiting.current = false;
+        // Leave it off the desk. Resetting the slide here popped the stamp back for a moment.
       }, after + T.leave + 50);
     },
     [exitDir, letterOut, letterIn],
@@ -432,6 +502,11 @@ export function DeskScreen() {
     (d: Decision, at: Point) => {
       const id = useGame.getState().state.open;
       if (!id || !layout) return;
+      const taught = guideStep(useGame.getState().state, (lid) => getLetter(lid));
+      if (taught && taught !== 'stamp') {
+        stampBack(d);
+        return;
+      }
       exiting.current = true;
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
@@ -439,7 +514,8 @@ export function DeskScreen() {
       setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
       imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
-      setTimeout(() => stampBack(d), 200);
+      // The ink is the mark. Sending the handle back across the sheet looked like a second stamp.
+      setTimeout(() => setPressing((cur) => (cur === d ? null : cur)), 160);
       if (d === 'stopped' || d === 'reported') {
         // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
         setTimeout(() => {
@@ -494,6 +570,8 @@ export function DeskScreen() {
     openHelp(id);
     return true;
   };
+  /** Day 1's voice is already telling them what to do, so the tool itself should work. */
+  const teaching = () => guideStep(useGame.getState().state, (id) => getLetter(id)) != null;
 
   /** The eraser rubs the open letter's pen work away; found ink and anomalies stay found. */
   const erasing = useRef(false);
@@ -522,13 +600,16 @@ export function DeskScreen() {
   // A new day's papers rise onto the desk.
   useEffect(() => {
     setMorningIdx(0);
+    const folded = papers[0]?.kind === 'newspaper';
+    setNewsOpen(!folded);
+    newsSpread.value = folded ? 0 : 1;
     if (showMorning) morningIn.value = withTiming(1, { duration: 700, easing: SETTLE });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.day, showMorning]);
 
   // The Şube's rules lie open on the desk the very first night, once the morning papers are read.
   useEffect(() => {
-    if (state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
+    if (state.day === 1 || state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
     const timer = setTimeout(() => openHelp('rules'), 900);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -538,10 +619,26 @@ export function DeskScreen() {
     const g = useGame.getState();
     const s = g.state;
 
+    if (inRect(p, BEGIN_RECT, 6)) {
+      drag.current = { kind: 'begin' };
+      return;
+    }
+
     if (showMorning) {
       drag.current = null;
+      const paper = papers[morningIdx];
+      if (paper?.kind === 'newspaper' && !newsOpen) {
+        setNewsOpen(true);
+        newsSpread.value = withTiming(1, { duration: 720, easing: SETTLE });
+        playSfx('paper', 0.65);
+        return;
+      }
       playSfx('paper', 0.5);
       if (morningIdx + 1 < papers.length) {
+        const next = papers[morningIdx + 1];
+        const folded = next?.kind === 'newspaper';
+        setNewsOpen(!folded);
+        newsSpread.value = folded ? 0 : 1;
         morningIn.value = 0;
         setMorningIdx(morningIdx + 1);
         morningIn.value = withTiming(1, { duration: 500, easing: SETTLE });
@@ -646,30 +743,46 @@ export function DeskScreen() {
     const lens = { x: magX.value, y: magY.value };
     const handleEnd = { x: lens.x + MAG_HANDLE_END.x * lensK, y: lens.y + MAG_HANDLE_END.y * lensK };
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
-      if (introduce('magnifier')) return;
+      if (!teaching() && introduce('magnifier')) return;
       if (penInHand.current) penHome();
-      drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y };
+      const taught = guideStep(useGame.getState().state, (id) => getLetter(id));
+      if (taught === 'glass' || taught === 'seal') setGuideHold('glass');
+      drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y, start: p };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
     }
 
+    // Already in hand: the wax comes out under the pointer, so a touch on the
+    // letter draws there. This has to win over picking the pencil up again.
+    if (penInHand.current && s.open && !envView) {
+      if (inRect(p, LAYOUT.letter)) {
+        holdPen(p, PEN_DRAW_ANGLE);
+        penLift.value = withTiming(0.2, { duration: 120, easing: SETTLE });
+        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [], dateDone: false };
+        livePath.value = waxRibbon([{ x: p.x, y: p.y, r: waxRadius(2) }]);
+        penHint.value = { hover: '', done: [] };
+        setDrawing(true);
+        playSfx('pen', 0.5);
+        return;
+      }
+    }
+
     const nib = { x: penX.value, y: penY.value };
     if (distToSegment(p, nib, stickEnd(nib, penAngle.value, PEN_LENGTH)) < 16) {
-      if (introduce('pen')) return;
+      if (!teaching() && introduce('pen')) return;
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
-      penLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
-      penAngle.value = withTiming(PEN_IN_HAND_ANGLE, { duration: T.lift + 120, easing: SETTLE });
-      penX.value = withTiming(p.x, { duration: T.lift, easing: SETTLE });
-      penY.value = withTiming(p.y, { duration: T.lift, easing: SETTLE });
+      setGuideHold('pen');
+      holdPen(p, PEN_WRITE_ANGLE);
+      penLift.value = withTiming(0.72, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
       return;
     }
 
     const e = LAYOUT.eraser;
     if (dist(p, { x: e.x + e.w / 2, y: e.y + e.h / 2 }) < 28) {
-      if (introduce('pen')) return;
+      if (!teaching() && introduce('pen')) return;
       erase();
       return;
     }
@@ -699,18 +812,9 @@ export function DeskScreen() {
     }
 
     if (s.open && layout) {
-      if (penInHand.current && !envView && inRect(p, LAYOUT.letter)) {
-        drag.current = { kind: 'pen-stroke', last: p, points: [p], done: [] };
-        penHint.value = { hover: '', done: [] };
-        setDrawing(true);
-        penX.value = p.x;
-        penY.value = p.y;
-        playSfx('pen', 0.5);
-        return;
-      }
-      const slot = envView ? undefined : stampSlots().find((sl) => inRect(p, sl.rect, 4));
+      const slot = envView ? undefined : stampSlots(stampChoicesRef.current).find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
-        if (introduce('stamps')) return;
+        if (!teaching() && introduce('stamps')) return;
         if (penInHand.current) penHome();
         setPressing(slot.d);
         stampProgress.value = 0;
@@ -718,6 +822,10 @@ export function DeskScreen() {
         stampY.value = p.y;
         drag.current = { kind: 'stamp', d: slot.d, pressAt: null, done: false };
         haptic(Haptics.ImpactFeedbackStyle.Light);
+        return;
+      }
+      if (openLetter?.burnable && !penInHand.current && !envView && inRect(p, layout.paper)) {
+        drag.current = { kind: 'letter', ox: letterDx.value - p.x, oy: letterDy.value - p.y };
         return;
       }
     }
@@ -735,7 +843,9 @@ export function DeskScreen() {
           envY.value = pose.y;
           envAngle.value = pose.angle;
           envAngle.value = withTiming(pose.angle * 0.3, { duration: 500, easing: SETTLE });
+          envFade.value = 1;
           drag.current = { kind: 'envelope', id, ox: pose.x - p.x, oy: pose.y - p.y };
+          setGuideHold('letter');
           setDragId(id);
           haptic(Haptics.ImpactFeedbackStyle.Light);
           playSfx('paper', 0.4);
@@ -745,6 +855,17 @@ export function DeskScreen() {
     }
 
     if (penInHand.current) penHome();
+  };
+
+  /** True once the lens has stayed on this one thing long enough to read it. */
+  const heldLook = (key: string, over: boolean, seen: boolean) => {
+    if (!over || seen) {
+      if (lookDwell.current?.key === key) lookDwell.current = null;
+      return false;
+    }
+    const now = Date.now();
+    if (lookDwell.current?.key !== key) lookDwell.current = { key, since: now };
+    return now - lookDwell.current.since >= LOOK_MS;
   };
 
   const onMove = (p: Point) => {
@@ -779,40 +900,74 @@ export function DeskScreen() {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 10);
         magX.value = c.x;
         magY.value = c.y;
+        const openId = useGame.getState().state.open;
+        const date = layout?.date;
+        const job = openLetter?.inspectables?.find((i) => i.target === 'date' && i.line);
+        if (openId && date && job) {
+          const at = toLocalFrame(c, { x: date.x, y: date.y }, date.tilt, date.skew);
+          const reach = LENS_R * lensK;
+          const over = date.lines.some((r) => {
+            const cx = Math.max(r.x, Math.min(at.x, r.x + r.w));
+            const cy = Math.max(r.y, Math.min(at.y, r.y + r.h));
+            return Math.hypot(at.x - cx, at.y - cy) <= reach;
+          });
+          const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
+          if (heldLook(`date:${job.id}`, over, seen.includes(job.id))) useGame.getState().inspect(openId, job.id);
+        }
+        const sealJob = openLetter?.inspectables?.find((i) => i.target === 'seal' && i.anomaly);
+        const sealAt = layout?.seal;
+        if (openId && sealAt && sealJob) {
+          const overSeal = Math.hypot(c.x - sealAt.cx, c.y - sealAt.cy) <= LENS_R * lensK;
+          const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
+          if (heldLook(`seal:${sealJob.id}`, overSeal, seen.includes(sealJob.id))) useGame.getState().inspect(openId, sealJob.id);
+        }
         break;
       }
       case 'pen-carry': {
         const c = clampTo(p, BOARD, 4);
-        penX.value = c.x;
-        penY.value = c.y;
+        gripX.value = c.x;
+        gripY.value = c.y;
         break;
       }
       case 'pen-stroke': {
         const id = useGame.getState().state.open;
         if (!id) return;
+        const c = clampTo(p, BOARD, 4);
+        gripX.value = c.x;
+        gripY.value = c.y;
+        const tip = c;
         // The finger reports jagged points; the pencil draws the curve through them.
         const prev = d.points[d.points.length - 1]!;
-        if (Math.hypot(p.x - prev.x, p.y - prev.y) < 1.5) break;
-        d.points.push(p);
-        livePath.value = smoothPath(d.points);
-        penX.value = p.x;
-        penY.value = p.y;
+        if (Math.hypot(tip.x - prev.x, tip.y - prev.y) < 1.5) break;
+        const gap = Math.hypot(tip.x - prev.x, tip.y - prev.y);
+        d.points.push(tip);
+        d.radii.push(waxRadius(gap));
+        livePath.value = waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) })));
         // Covering a sentence is felt at once but recorded when the pen lifts: a store
         // update mid-stroke re-renders and re-rasterises the letter, which stutters.
         let hover = '';
         for (const [segId, { lines, laid }] of coverage.current) {
           const local = (q: Point) => toLocalFrame(q, laid, laid.tilt, laid.skew);
-          const at = local(p);
+          const at = local(tip);
           if (!hover && lines.some(({ rect: r }) => at.x >= r.x - 4 && at.x <= r.x + r.w + 4 && at.y >= r.y - 3 && at.y <= r.y + r.h + 3)) hover = segId;
-          if (!strokeOver(lines, local(d.last), at, 5)) continue;
+          if (!strokeOver(lines, local(d.last), at, 5, waxBuries(gap))) continue;
           const already = d.done.includes(segId) || useGame.getState().state.letters[id]?.censored.includes(segId);
           if (!already && isBlackedOut(lines)) {
             d.done.push(segId);
             Haptics.selectionAsync().catch(() => {});
           }
         }
+        if (layout?.date && dateLine.current) {
+          const origin = { x: layout.date.x, y: layout.date.y };
+          const atDate = (q: Point) => toLocalFrame(q, origin, layout.date!.tilt, layout.date!.skew);
+          const counts = waxBuries(gap);
+          if (strokeOver(dateLine.current, atDate(d.last), atDate(tip), 5, counts) && !d.dateDone && isBlackedOut(dateLine.current)) {
+            d.dateDone = true;
+            Haptics.selectionAsync().catch(() => {});
+          }
+        }
         if (hover !== penHint.value.hover || d.done.length !== penHint.value.done.length) penHint.value = { hover, done: [...d.done] };
-        d.last = p;
+        d.last = tip;
         break;
       }
       case 'stamp': {
@@ -829,6 +984,10 @@ export function DeskScreen() {
         if (!d.pressAt && layout && inRect(p, layout.paper)) d.still = setTimeout(() => pressStamp(d, p), STAMP_REST_MS);
         break;
       }
+      case 'letter':
+        letterDx.value = p.x + d.ox;
+        letterDy.value = p.y + d.oy;
+        break;
     }
   };
 
@@ -844,6 +1003,9 @@ export function DeskScreen() {
       case 'next':
         if (inRect(p, NEXT_RECT, 10)) g.nextDay();
         break;
+      case 'begin':
+        if (inRect(p, BEGIN_RECT, 8)) g.restart();
+        break;
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
           g.restart();
@@ -856,17 +1018,28 @@ export function DeskScreen() {
         }
         break;
       case 'envelope': {
+        setGuideHold((h) => (h === 'letter' ? null : h));
         const l = getLetter(d.id)!;
         const { w, h } = envelopeSize(l);
         // Where the finger put it, not where the trailing animation has got to yet.
         const center = { x: p.x + d.ox + w / 2, y: p.y + d.oy + h / 2 };
         if (inRect(center, LAYOUT.dropZone) && !g.state.open) {
           g.open(d.id);
-          setDragId(null);
+          const lay = { duration: 760, easing: SETTLE };
+          envX.value = withTiming(LAYOUT.letter.x + (LAYOUT.letter.w - w) / 2, lay);
+          envY.value = withTiming(LAYOUT.letter.y + 30, lay);
+          envAngle.value = withTiming(0.02, lay);
+          envFade.value = withDelay(260, withTiming(0, { duration: 640, easing: GLIDE }));
+          letterDx.value = 0;
+          letterDy.value = 0;
+          burn.value = 0;
+          letterOut.value = 0;
           letterIn.value = 0;
-          letterIn.value = withTiming(1, { duration: T.unfold, easing: SETTLE });
-          playSfx('envelope_tear');
-          haptic(Haptics.ImpactFeedbackStyle.Medium);
+          letterIn.value = withDelay(200, withTiming(1, { duration: T.unfold, easing: SETTLE }));
+          playSfx('paper', 0.45);
+          setTimeout(() => playSfx('envelope_tear'), 240);
+          haptic(Haptics.ImpactFeedbackStyle.Light);
+          setTimeout(() => setDragId((cur) => (cur === d.id ? null : cur)), T.unfold + 240);
         } else {
           const i = g.state.stack.indexOf(d.id);
           const pose = stackPose(l, Math.max(0, i), LAYOUT.stack);
@@ -888,9 +1061,24 @@ export function DeskScreen() {
       case 'candle':
         candleLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
         break;
-      case 'magnifier':
+      case 'magnifier': {
         magLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
+        setGuideHold((h) => (h === 'glass' ? null : h));
+        // A tap, not a drag: the glass is already on a seal, a date or a postmark.
+        const id = g.state.open;
+        if (id && openLetter && layout && !envView && dist(p, d.start) < 8) {
+          const lens = { x: magX.value, y: magY.value };
+          const hit = underGlass(lens, LENS_R * lensK, markTargets(openLetter, layout));
+          const prog = g.state.letters[id];
+          const already = !!hit && ((prog?.marked ?? []).includes(hit.target) || (prog?.wrongMarked ?? []).includes(hit.target));
+          if (hit && !already) {
+            g.mark(id, hit.target, hit.anomaly);
+            g.addRing(id, waxRing(hit.x, hit.y, hit.r).toSVGString());
+            haptic(Haptics.ImpactFeedbackStyle.Medium);
+          }
+        }
         break;
+      }
       case 'card':
         // Put back near its place, it tucks itself away again.
         if (dist({ x: cardX.value, y: cardY.value }, CARD_HOME) < 90) {
@@ -909,15 +1097,24 @@ export function DeskScreen() {
       case 'pen-stroke': {
         const id = g.state.open;
         if (id) for (const segId of d.done) g.censor(id, segId);
-        if (id && d.points.length > 2) g.addStroke(id, smoothPath(d.points).toSVGString());
-        // A closed ring marks whatever it encloses as suspicious; the ledger judges it.
-        if (id && openLetter && layout && isClosedLoop(d.points)) {
-          const hits = ringed(d.points, markTargets(openLetter, layout));
-          for (const t of hits) g.mark(id, t.target, t.anomaly);
-          if (hits.length) haptic(Haptics.ImpactFeedbackStyle.Medium);
+        if (id && openLetter && d.dateDone) {
+          const insp = openLetter.inspectables?.find((i) => i.target === 'date');
+          const prog = g.state.letters[id];
+          const already = (prog?.marked ?? []).includes('date') || (prog?.wrongMarked ?? []).includes('date');
+          if (insp && !already) g.mark(id, 'date', insp.anomaly === true || insp.line === true);
+        }
+        if (id && d.points.length > 2) {
+          g.addStroke(
+            id,
+            waxRibbon(d.points.map((pt, i) => ({ x: pt.x, y: pt.y, r: d.radii[i] ?? waxRadius(2) }))).toSVGString(),
+          );
         }
         livePath.value = Skia.Path.Make();
         setDrawing(false);
+        if (penInHand.current) {
+          holdPen(p, PEN_WRITE_ANGLE);
+          penLift.value = withTiming(0.72, { duration: 160, easing: SETTLE });
+        }
         break;
       }
       case 'stamp':
@@ -927,6 +1124,23 @@ export function DeskScreen() {
           stampBack(d.d);
         }
         break;
+      case 'letter': {
+        const id = g.state.open;
+        const paper = layout?.paper;
+        const dish = LAYOUT.ashtray;
+        if (id && paper && openLetter?.burnable) {
+          const cx = paper.x + paper.w / 2 + letterDx.value;
+          const cy = paper.y + paper.h / 2 + letterDy.value;
+          if (Math.hypot(cx - dish.x, cy - dish.y) < dish.r + 36) {
+            burnIntoAsh(id);
+            break;
+          }
+        }
+        const back = { duration: 560, easing: SETTLE };
+        letterDx.value = withTiming(0, back);
+        letterDy.value = withTiming(0, back);
+        break;
+      }
     }
   };
 
@@ -954,18 +1168,24 @@ export function DeskScreen() {
     const v = letterIn.value;
     const out = letterOut.value;
     const e = exitDir.value;
+    const laid = v * v * (3 - 2 * v);
     return [
-      { translateX: o.x + e.dx * out },
-      { translateY: o.y + e.dy * out + (1 - v) * 22 },
-      { rotate: e.rot * out + (1 - v) * -0.02 },
+      { translateX: o.x + e.dx * out + letterDx.value },
+      { translateY: o.y + e.dy * out + (1 - laid) * 64 + letterDy.value },
+      { rotate: e.rot * out + (1 - laid) * -0.05 + burn.value * 0.35 },
       // Folded back into the envelope: it shrinks down toward it and is gone.
       { translateY: envViewIn.value * 150 },
-      { scale: (0.96 + 0.04 * v) * (1 - 0.6 * envViewIn.value) },
+      { scaleY: (0.46 + 0.54 * laid) * (1 - 0.6 * envViewIn.value) * (1 - burn.value * 0.82) },
+      { scaleX: (0.7 + 0.3 * laid) * (1 - 0.6 * envViewIn.value) * (1 - burn.value * 0.82) },
       { translateX: -o.x },
       { translateY: -o.y },
     ];
   });
-  const letterOpacity = useDerivedValue(() => Math.min(1, letterIn.value * 1.4) * (1 - letterOut.value * letterOut.value) * (1 - envViewIn.value));
+  const letterOpacity = useDerivedValue(() => {
+    const v = letterIn.value;
+    const laid = v * v * (3 - 2 * v);
+    return laid * (1 - letterOut.value * letterOut.value) * (1 - envViewIn.value) * (1 - burn.value);
+  });
   const envTurn = useDerivedValue<Transforms3d>(() => [
     { translateX: WORLD.w / 2 },
     { translateY: ENV_TOP + 120 },
@@ -973,7 +1193,7 @@ export function DeskScreen() {
     { translateX: -WORLD.w / 2 },
     { translateY: -(ENV_TOP + 120) },
   ]);
-  const envTransform = useDerivedValue(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
+  const envTransform = useDerivedValue<Transforms3d>(() => [{ translateX: envX.value }, { translateY: envY.value }, { rotate: envAngle.value }]);
   const lensClip = useDerivedValue(() => {
     return Skia.PathBuilder.Make().addCircle(magX.value, magY.value, LENS_R * lensK - 2).build();
   }, [lensK]);
@@ -995,9 +1215,9 @@ export function DeskScreen() {
   const region = layout ? letterRegion(layout.paper) : LAYOUT.letter;
   const stillKey = openLetter ? `still:${openLetter.id}` : '';
   const letterStill = useBaked(openLetter && layout ? <FontsBridge fonts={fonts}><LetterStill letter={openLetter} layout={layout} /></FontsBridge> : null, region, fit.scale, stillKey);
-  const marksKey = openLetter && progress ? `marks:${openLetter.id}:${progress.censored.join(',')}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
+  const marksKey = openLetter && progress ? `marks:${openLetter.id}:${hash(savedStrokes[openLetter.id] ?? [])}` : '';
   const hasMarks = !!progress && (progress.censored.length > 0 || strokes.length > 0);
-  const letterMarks = useBaked(layout && progress && hasMarks ? <LetterMarks layout={layout} censored={progress.censored} strokes={strokes} /> : null, region, fit.scale, marksKey);
+  const letterMarks = useBaked(layout && progress && hasMarks ? <LetterMarks strokes={strokes} /> : null, region, fit.scale, marksKey);
 
   let marksNode: ReactNode = undefined; // undefined: draw the marks live until recorded
   if (!hasMarks) marksNode = null;
@@ -1020,9 +1240,9 @@ export function DeskScreen() {
         <Letter
           letter={openLetter}
           layout={layout}
-          censored={progress.censored}
           revealed={progress.revealed}
           strokes={strokes}
+          rings={rings}
           livePath={drawing ? livePath : undefined}
           hint={drawing ? penHint : undefined}
           today={stampDate}
@@ -1040,6 +1260,67 @@ export function DeskScreen() {
   // Everything that sits still, rasterised once per change (see useBakedLayer).
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
+  const guide = guideStep(state, (id) => getLetter(id));
+  useEffect(() => {
+    guideShownAt.current = Date.now();
+  }, [guideHold]);
+  useEffect(() => {
+    if (guide === guideShown) return;
+    const elapsed = guideShown == null ? GUIDE_READ_MS : Date.now() - guideShownAt.current;
+    const wait = Math.max(0, GUIDE_READ_MS - elapsed);
+    const timer = setTimeout(() => {
+      guideShownAt.current = Date.now();
+      setGuideShown(guide);
+    }, wait);
+    return () => clearTimeout(timer);
+  }, [guide, guideShown, guideHold]);
+  const guideList = (() => {
+    if (!guideShown || help || envView) return [];
+    const top = state.stack[0];
+    const piled = top ? getLetter(top) : undefined;
+    const pose = piled ? stackPose(piled, 0, LAYOUT.stack) : null;
+    const size = piled ? envelopeSize(piled) : null;
+    const censored = new Set(state.open ? (state.letters[state.open]?.censored ?? []) : []);
+    const laid = layout?.segments.find((s) => s.seg.kind === 'sensitive' && !censored.has(s.seg.id) && (s.lines?.length ?? 0) > 0);
+    const rails = (block: { x: number; y: number; tilt: number; skew: number }, rects: { x: number; y: number; w: number; h: number }[], yOf: (r: { y: number; h: number }) => number) =>
+      rects.map((r) => {
+        const origin = { x: block.x, y: block.y };
+        const y = yOf(r);
+        return {
+          a: fromLocalFrame({ x: r.x, y }, origin, block.tilt, block.skew),
+          b: fromLocalFrame({ x: r.x + r.w, y }, origin, block.tilt, block.skew),
+        };
+      });
+    const lineAlong = laid ? rails(laid, laid.lines, (r) => r.y + r.h / 2) : [];
+    const mid = lineAlong[Math.floor(lineAlong.length / 2)];
+    const line = mid ? { x: (mid.a.x + mid.b.x) / 2, y: (mid.a.y + mid.b.y) / 2 } : null;
+    const anomaly = openLetter?.inspectables?.find((i) => i.anomaly);
+    const dateRails = layout?.date ? rails(layout.date, layout.date.lines, (r) => r.y + r.h / 2) : [];
+    const dateTip = dateRails[dateRails.length - 1];
+    const mark =
+      anomaly?.target === 'seal' && layout?.seal
+        ? { x: layout.seal.cx, y: layout.seal.cy, kind: 'seal' as const }
+        : dateTip
+          ? { x: (dateTip.a.x + dateTip.b.x) / 2, y: (dateTip.a.y + dateTip.b.y) / 2, kind: 'date' as const }
+          : null;
+    const wanted = openLetter?.reasons?.find((id) => reasons.some((r) => r.id === id));
+    const row = slip && wanted ? reasonRows(reasons).find((r) => r.r.id === wanted) : undefined;
+    const rest = LAYOUT.rest.pen;
+    return guideCards({
+      step: guideShown,
+      hold: guideHold,
+      letterId: state.open ?? null,
+      envelope: pose && size ? { x: pose.x, y: pose.y, w: size.w, h: size.h } : null,
+      pen: stickEnd(rest, rest.angle, 70),
+      line,
+      lineAlong,
+      lens: { x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y },
+      mark,
+      markAlong: mark?.kind === 'date' ? dateRails : undefined,
+      reason: row && wanted ? { x: row.rect.x + 6, y: row.rect.y + 4, id: wanted } : null,
+      stamps: { x: LAYOUT.stamps.x + LAYOUT.stamps.w / 2, y: LAYOUT.stamps.y + 28 },
+    });
+  })();
   // Split by how often each part changes, so opening a letter redoes only small images.
   const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
   const desk_ = useBaked(
@@ -1109,11 +1390,11 @@ export function DeskScreen() {
   );
   const stampCards = useBaked(
     <FontsBridge fonts={fonts}>
-      <Stamps enabled={stampsEnabled} carried={pressing} />
+      <Stamps enabled={stampsEnabled} carried={pressing} decisions={openLetter?.burnable ? ['delivered'] : DECISIONS} />
     </FontsBridge>,
     STAMPS_REGION,
     fit.scale,
-    `stamps:${stampsEnabled}:${pressing}`,
+    `stamps:${stampsEnabled}:${pressing}:${openLetter?.burnable ? 'burn' : 'all'}`,
   );
 
   return (
@@ -1131,11 +1412,11 @@ export function DeskScreen() {
             <StampPress pressing={pressing} progress={stampProgress} x={stampX} y={stampY} />
 
             {draggedLetter && (
-              <Group transform={envTransform}>
+              <Fade opacity={envFade} transform={envTransform}>
                 <LiftShadow {...envelopeSize(draggedLetter)} />
                 <EnvelopeBody letter={draggedLetter} postmark={postmarkOf(draggedLetter, day.calendar.rumi)} />
                 <EnvelopeAddress letter={draggedLetter} />
-              </Group>
+              </Fade>
             )}
 
             {/* What the glass sees: the same desk, larger */}
@@ -1160,13 +1441,28 @@ export function DeskScreen() {
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
+            <Ashtray flicker={flicker} flare={ashFlare} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
-            {showMorning && papers[morningIdx] && <MorningPapers paper={papers[morningIdx]!} flags={flagsOf(state)} date={day.calendar.rumi} opacity={morningIn} lead={morningLead} />}
+            {showMorning && papers[morningIdx] && (
+              <MorningPapers
+                paper={papers[morningIdx]!}
+                flags={flagsOf(state)}
+                date={day.calendar.rumi}
+                opacity={morningIn}
+                lead={morningLead}
+                spread={newsSpread}
+                opened={newsOpen}
+              />
+            )}
+            {guideList.map((card) => (
+              <GuideCallout key={`${card.what}:${card.tip.x}:${card.tip.y}`} card={card} />
+            ))}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
+            <BeginAgain />
           </Group>
         </FontsBridge>
       </Canvas>

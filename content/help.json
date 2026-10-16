@@ -11,7 +11,7 @@
         "Cepheye moral bozucu haber, cepheden bozgunculuk geçmez.",
         "Satır aralarını mumla yokla; görünmez mürekkep ısıyla belirir.",
         "Mühürde, tarihte, kâğıtta tutarsızlık varsa büyüteçle bak.",
-        "Kararını mühürle: İLET, BEKLET, DURDUR ya da İSTİHBARAT."
+        "Kararını mühürle: İLET, DURDUR ya da İSTİHBARAT."
       ],
       "footer": "Her kararın bir sonucu vardır. — Kilitbahir Posta Şubesi"
     },
@@ -20,11 +20,10 @@
       "tag": "Kalem",
       "title": "Kırmızı Kalem",
       "lines": [
-        "Kaleme dokun, eline al.",
-        "Karalanacak satırın üzerinden parmağınla geç. Satır baştan sona kapanınca karalanmış sayılır.",
-        "Şüphelendiğin yeri (mühür, tarih) etrafına halka çizerek işaretle. Gün sonunda defter, işaretin doğru çıkıp çıkmadığını yazar.",
+        "Kaleme dokun, eline al. Uç imlecin altındadır; çizgi oradan çıkar.",
+        "Karalanacak satırın üzerinden bir kez yavaşça geç. Mum kuruyunca satırı örter. Acele çizgi ince kalır, yazı durur, satır karalanmış sayılmaz.",
         "Kalemi bırakmak için ona yeniden dokun.",
-        "Yanlış karaladıysan kalemin yanındaki silgiye dokun; o mektuptaki kırmızı kalem izlerinin hepsi silinir."
+        "Yanlış karaladıysan kalemin yanındaki silgiye dokun. Satırların üstündeki mum silinir. Mühre basılan halka durur."
       ]
     },
     {
@@ -44,6 +43,7 @@
       "lines": [
         "Büyüteci sürükleyip mektubun üstünde gezdir; altındaki her şey büyür.",
         "Mühür halkasındaki yazıya, tarihe, silinmiş izlere dikkatle bak.",
+        "Cam mühürün ya da damganın üstündeyken büyütece bir kez dokun. İnce kırmızı bir halka basılır. Tarihi halka basmaz: önce büyüteçle oku, sonra kırmızı kalemle o cümlenin üstünden geç. Gün sonunda defter, işaretin doğru çıkıp çıkmadığını yazar.",
         "Gördüğünü Talimatname'deki örneklerle karşılaştır. Neyin yanlış olduğuna sen karar verirsin."
       ]
     },
@@ -53,7 +53,6 @@
       "title": "Karar Mühürleri",
       "lines": [
         "İLET — mektup yoluna devam eder.",
-        "BEKLET — bir gün çekmecede kalır.",
         "DURDUR — mektup hiç gitmez.",
         "İSTİHBARAT — Şube'ye gönderilir.",
         "Mührü kartından al, parmağını kaldırmadan mektubun üstüne götür ve bir an bastır. Kâğıda inince karar verilmiş olur; geri dönüşü yoktur.",

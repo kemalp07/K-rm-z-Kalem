@@ -15,6 +15,7 @@ describe('the Şube reckons', () => {
     expect(judge(letter('d1_imzasiz'), { ...emptyProgress(), reason: 'sahte', decision: 'reported' })).toEqual(['spyCaught']);
     expect(judge(letter('d1_imzasiz'), { ...emptyProgress(), reason: 'moral', decision: 'reported' })).toEqual(['wrongReason']);
     expect(judge(letter('d1_mehmet'), { ...emptyProgress(), decision: 'held' })).toEqual([]);
+    expect(judge({ ...letter('d1_mehmet'), burnable: true }, { ...emptyProgress(), decision: 'burned' })).toEqual([]);
   });
 
   it('pays the day into the purse, then the evening out of it', () => {
@@ -54,7 +55,7 @@ describe('rank', () => {
 
 describe('under the stamp', () => {
   it('counts writing under a stamp let through unseen', () => {
-    const l = { ...letter('d1_saadet'), underStamp: 'x' };
+    const l = { ...letter('d1_mehmet'), underStamp: 'x' };
     expect(judge(l, { ...emptyProgress(), decision: 'delivered' })).toContain('inkMissed');
     expect(judge(l, { ...emptyProgress(), revealed: ['stamp'], decision: 'delivered' })).not.toContain('inkMissed');
   });

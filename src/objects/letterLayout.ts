@@ -110,7 +110,7 @@ export interface LaidSegment extends Laid {
 export interface LetterLayout {
   paper: Rect;
   letterhead?: Laid;
-  date?: Laid & { rect: Rect };
+  date?: Laid & { rect: Rect; /** One box per wrapped line of the place-and-date sentence. */ lines: Rect[] };
   heading: Laid;
   segments: LaidSegment[];
   signature?: Laid;
@@ -181,7 +181,8 @@ function attempt(
     // Right-aligned: the ink sits at the right end of the box, as wide as the longest line.
     const inkW = Math.min(dw, para.getLongestLine());
     const box = { x: dx + dw - inkW, y, w: inkW, h: para.getHeight() };
-    out.date = { para, x: dx, y, width: dw, tilt: 0, skew: hand.skew, rect: box };
+    const lines = lineRects(para, letter.dateLine.length, dx, y);
+    out.date = { para, x: dx, y, width: dw, tilt: 0, skew: hand.skew, rect: box, lines: lines.length > 0 ? lines : [box] };
     y += para.getHeight() + 2;
   }
 
@@ -255,16 +256,13 @@ function attempt(
 /** The folded corner at the paper's bottom right that puts the letter back in its envelope. */
 export const closeCorner = (paper: Rect): Rect => ({ x: paper.x + paper.w - 34, y: paper.y + paper.h - 34, w: 34, h: 34 });
 
-/** What the red pencil can ring on this letter; `anomaly` from the letter's inspectables. */
+/** What the magnifier can ring on this letter; `anomaly` from the letter's inspectables. */
 export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] {
   const wrong = new Set((letter.inspectables ?? []).filter((i) => i.anomaly).map((i) => i.target));
   const out: MarkTarget[] = [];
-  if (layout.date) {
-    const d = layout.date.rect;
-    out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date') });
-  }
-  if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal') });
-  if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark') });
+  // A date is underlined with the pen. The glass rings a seal or a postmark.
+  if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal'), r: layout.seal.r + 10 });
+  if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark'), r: layout.postmark.r + 10 });
   return out;
 }
 

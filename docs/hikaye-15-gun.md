@@ -74,8 +74,24 @@ Cephedeki gerçek olaylar yalnız arka plandır; mektuplarda dolaylı, gazetede 
 ## Oyunun sonu (15. gün)
 Üç son var: ağ çöktü, ağ kaçtı, yarım kaldı. Hangisinin geleceği, ağın mektuplarından kaçının doğru gerekçeyle yakalandığına bağlı. Aile hatlarının sonu kendi bayraklarına göre ayrıca yazılır.
 
+## Kâtibin kardeşi — İbrahim (Biga)
+
+Kâtip masada adsız kalır. Kardeşi Er İbrahim, anneleri Fatma Hanım'a yazar; köy Biga'dır, mektup bu masadan geçer. İbrahim, Mehmet'in, Rıza'nın ve Nuri'nin alayında değildir. Zarfta yer adı yoktur.
+
+Bu hat bir bilmece değildir. Şube, İbrahim'in kâtibin kardeşi olduğunu bilmez. Defter bu mektuplarda susar: ne ödül, ne uyarı.
+
+İç ses yalnız bu hatta, kenarda, bir cümle. Doğru mührü söylemez. Başka mektuplarda susar.
+
+- **6:** İbrahim'den annesine kısa, düzgün bir mektup. Ses: "İbrahim'in el yazısı. Annem bunu bekliyordur." Karalanacak bir şey yok. İLET yeter. Eli tanımak içindir.
+- **9:** Bir satır yer, hareket ya da sayı bildirir; talimat karalamayı ister. Ses: "Bunu karalarsam annem yerini bilmez." Karar oyuncunundur. Şube fazla karalamayı gene sever, anne mektubu kapkara alır.
+- **8. günün muharebesinde** İbrahim şehit düşer. Haber posta ile yetişmez.
+- **14:** Damgasız bir zarf, yığının üstünde, biraz ayrı durur. Sabah onu bir el bırakıp gitmiştir; yüz görünmez. İçinde İbrahim'in arkadaşı, annesine şehadeti yazar. Ses, mektup açılınca: "Bunu postane getirmedi." Mühür düşünülürken: "Bunu anneme ben mi basacağım." Bu mektupta masada yalnız İLET kalır. Diğer seçenek mühür değildir: kâğıt yığının önündeki küllüğe atılır. Tabakta kül ve sigara izmariti vardır; alev mektup düşünce yükselir. Şube'de nüsha kalmaz. Mum ayrıdır, gizli yazıyı ısıtır. Defter ikisini de suç saymaz.
+- **15, sabah:** İletildiyse ses bir kez: "Annem bugün okuyacak." Yakıldıysa: "Külü kaldı." Gazete o muharebenin ölülerini sayar, İbrahim'in adını basmaz.
+
+Masaya bırakılan kâğıt bütün oyunda iki kez olur. Biri bu zarftır. İkincisi, ağın sonuna doğru, gene yüzsüz bir elin bıraktığı kısa bir pusuladır. Pencerede duran bir yüzbaşı yoktur.
+
 ## Birlikler
-Mehmet 74. Alay (Arıburnu), Rıza 88. Alay (Seddülbahir), Mülazım Nuri Efendi 61. Alay. Zarflarda yer adı yok.
+Mehmet 74. Alay (Arıburnu), Rıza 88. Alay (Seddülbahir), Mülazım Nuri Efendi 61. Alay. İbrahim onların alayında değildir. Zarflarda yer adı yok.
 
 ## Not
 - Mühürler ve Takvim sayfaları 1. günde kalıyor: ayna mühür gözle görülür, büyüteç ise 2. gündeki küçük harf hatası için gelir.

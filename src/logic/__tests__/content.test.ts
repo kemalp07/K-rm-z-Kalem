@@ -1,4 +1,5 @@
 import day01 from '../../../content/day01.json';
+import day03 from '../../../content/day03.json';
 import threads from '../../../content/threads.json';
 import tr from '../../../content/strings/tr.json';
 import type { Day, Thread } from '../../content/types';
@@ -10,8 +11,9 @@ test('day 1 content passes validation', () => {
   expect(validateDay(day, threads as Thread[])).toEqual([]);
 });
 
-test('day 1 holds the five envelopes the brief asks for', () => {
-  expect(day.letters).toHaveLength(5);
+test('day 1 is three letters: a family letter, a package, a forgery', () => {
+  expect(day.letters).toHaveLength(3);
+  expect(day.sideLetters ?? 0).toBe(0);
   expect(day.letters.filter((l) => l.kind === 'paket')).toHaveLength(1);
   const kinds = day.letters.flatMap((l) => l.segments.map((s) => s.kind));
   expect(kinds).toContain('sensitive');
@@ -21,7 +23,7 @@ test('day 1 holds the five envelopes the brief asks for', () => {
 });
 
 test("Saadet's acrostic spells what meta says", () => {
-  const saadet = day.letters.find((l) => l.id === 'd1_saadet')!;
+  const saadet = (day03 as Day).letters.find((l) => l.id === 'd1_saadet')!;
   const meta = saadet.meta?.acrostic as { segmentIds: string[]; word: string };
   const word = meta.segmentIds
     .map((id) => saadet.segments.find((s) => s.id === id)!.text[0])
@@ -40,7 +42,7 @@ test('validator catches broken variants and missing threads', () => {
 });
 
 test('every decision has a UI label', () => {
-  for (const d of ['delivered', 'held', 'stopped', 'reported']) {
+  for (const d of ['delivered', 'held', 'stopped', 'reported', 'burned']) {
     expect(tr).toHaveProperty([`decision.${d}`]);
     expect(tr).toHaveProperty([`ledger.${d}`]);
   }

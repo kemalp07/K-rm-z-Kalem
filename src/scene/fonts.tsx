@@ -11,8 +11,8 @@ import {
   type SkTypefaceFontProvider,
 } from '@shopify/react-native-skia';
 
-/** Caveat is every human hand on the desk; Cormorant is print, brass and rubber. */
-export type Family = 'Caveat' | 'Cormorant';
+/** Caveat is every human hand on the desk; Cormorant is print, brass and rubber. Kalam is only the tutorial scrap. */
+export type Family = 'Caveat' | 'Cormorant' | 'Kalam';
 
 export interface TextSpec {
   family: Family;
@@ -52,6 +52,10 @@ const FONT_SOURCES = {
     src(require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf')),
     src(require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf')),
     src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')),
+  ],
+  Kalam: [
+    src(require('@expo-google-fonts/kalam/400Regular/Kalam_400Regular.ttf')),
+    src(require('@expo-google-fonts/kalam/700Bold/Kalam_700Bold.ttf')),
   ],
 };
 const SEAL_FONT = src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf'));

@@ -38,6 +38,8 @@ export const LAYOUT = {
   items: { x: 196, y: 458, w: 100, h: 90 },
   /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
   lamp: { cx: 905, baseY: 96, flameY: 96 },
+  /** Brass ashtray with cigarette butts, on the open wood in front of the pile. Letters burn here, not on the candle. */
+  ashtray: { x: 258, y: 508, r: 34 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 398, w: 120, h: 93 },
   ledger: { x: 240, y: 28, w: 520, h: 512 },
@@ -54,11 +56,11 @@ export const LAYOUT = {
   /** The Talimatname opened over the desk (booklet_open.png is 827×604). */
   bookletOpen: { x: 137, y: 14, w: 726, h: 530 },
   /** The reason slip that comes with DURDUR and İSTİHBARAT, beside the letter. */
-  reasonSlip: { x: 668, y: 186, w: 206 },
+  reasonSlip: { x: 668, y: 150, w: 268 },
   /** The opened sheet, centred over the desk. */
   helpSheet: { x: 280, y: 60, w: 440, h: 430 },
-  /** Rubber eraser, beside the pencil. */
-  eraser: { x: 776, y: 152, w: 46, h: 24, rot: 0.2 },
+  /** Rubber eraser, beside the pencil. The drawing is centred on this box. */
+  eraser: { x: 770, y: 148, w: 58, h: 32, rot: 0.2 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },

@@ -34,6 +34,21 @@ export const stickEnd = (nib: Point, angle: number, length: number): Point => ({
   y: nib.y - Math.cos(angle) * length,
 });
 
+/** A point this far up the barrel. The desk aims with the pointer on the nib, not from here. */
+export const GRIP_FROM_NIB = 72;
+/** In the hand the barrel trails up-left of the nib. */
+export const PEN_WRITE_ANGLE = -0.62;
+/** Flatter on the paper while a line is being drawn. */
+export const PEN_DRAW_ANGLE = -0.95;
+
+/** The nib, given the fingers and the pencil's angle. Inverse of `stickEnd` at `gripDist`. */
+export function nibFromGrip(grip: Point, angle: number, gripDist = GRIP_FROM_NIB): Point {
+  return {
+    x: grip.x - Math.sin(angle) * gripDist,
+    y: grip.y + Math.cos(angle) * gripDist,
+  };
+}
+
 /**
  * Undo a block's handwriting transform (shear, then tilt, about its top-left) so a
  * board point can be compared with the block's own, upright line boxes.
@@ -47,6 +62,17 @@ export function toLocalFrame(p: Point, origin: Point, tilt: number, skew: number
   const rx = dx * c - dy * s;
   const ry = dx * s + dy * c;
   return { x: origin.x + rx - Math.tan(skew) * ry, y: origin.y + ry };
+}
+
+/** Where an upright block point is drawn: shear, then tilt, about the block's top-left. */
+export function fromLocalFrame(p: Point, origin: Point, tilt: number, skew: number): Point {
+  const dx = p.x - origin.x;
+  const dy = p.y - origin.y;
+  const sx = dx + Math.tan(skew) * dy;
+  const sy = dy;
+  const c = Math.cos(tilt);
+  const s = Math.sin(tilt);
+  return { x: origin.x + sx * c - sy * s, y: origin.y + sx * s + sy * c };
 }
 
 export const clampTo = (p: Point, r: Rect, margin = 0): Point => ({
