@@ -31,6 +31,20 @@ test('a letter with nothing to censor goes straight to the glass', () => {
   expect(guideStep(s, of)).toBe('glass');
 });
 
+test('the false seal is taught after the first letter, then the ring, then the stamp', () => {
+  let s = ready({ ...startDay(day), done: ['d1_mehmet'], stack: ['d1_hatice', 'd1_imzasiz'] });
+  expect(guideStep(s, of)).toBeNull();
+  s = openEnvelope(s, 'd1_hatice');
+  expect(guideStep(s, of)).toBeNull();
+  s = ready({ ...startDay(day), done: ['d1_mehmet', 'd1_hatice'], stack: ['d1_imzasiz'] });
+  s = openEnvelope(s, 'd1_imzasiz');
+  expect(guideStep(s, of)).toBe('glass');
+  s = { ...s, letters: { ...s.letters, d1_imzasiz: { ...s.letters.d1_imzasiz!, inspected: ['seal'] } } };
+  expect(guideStep(s, of)).toBe('seal');
+  s = { ...s, letters: { ...s.letters, d1_imzasiz: { ...s.letters.d1_imzasiz!, marked: ['seal'] } } };
+  expect(guideStep(s, of)).toBe('stamp');
+});
+
 test('later days have no guide', () => {
   const s = ready({ ...startDay(day), day: 2 });
   expect(guideStep(s, of)).toBeNull();
@@ -95,13 +109,21 @@ test('the glass comes before the date, and the date is crossed like a sentence',
   expect(cross[0]!.along).toHaveLength(1);
 });
 
-test('the glass points at the lens, then at a false seal', () => {
+test('the glass points at the lens, then at the writing on a false seal', () => {
   const glass = guideCards({ ...place, step: 'glass', mark: null });
   expect(glass[0]!.tip).toEqual(place.lens);
+  const waiting = guideCards({ ...place, step: 'glass', mark: { x: 600, y: 360, kind: 'seal' } });
+  expect(waiting[0]!.tip).toEqual(place.lens);
+  expect(waiting[0]!.why).toMatch(/yazı/);
   const seal = guideCards({ ...place, step: 'glass', hold: 'glass', mark: { x: 600, y: 360, kind: 'seal' } });
   expect(seal[0]!.tip).toEqual({ x: 600, y: 360 });
-  expect(seal[0]!.why).toMatch(/mühür/i);
+  expect(seal[0]!.what).toMatch(/yazı/);
+  expect(seal[0]!.why).toMatch(/ters/);
   expect(seal[0]!.box.y + seal[0]!.box.h).toBeLessThan(360);
+  const tap = guideCards({ ...place, step: 'seal', hold: 'glass', mark: { x: 600, y: 360, kind: 'seal' } });
+  expect(tap[0]!.what).toMatch(/dokun/);
+  expect(tap[0]!.why).toMatch(/halka/);
+  expect(tap[0]!.tip).toEqual({ x: 600, y: 360 });
 });
 
 test('the reason slip points at the box that fits the letter', () => {

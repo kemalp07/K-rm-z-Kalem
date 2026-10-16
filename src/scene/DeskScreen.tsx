@@ -736,7 +736,8 @@ export function DeskScreen() {
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
       if (!teaching() && introduce('magnifier')) return;
       if (penInHand.current) penHome();
-      if (guideStep(useGame.getState().state, (id) => getLetter(id)) === 'glass') setGuideHold('glass');
+      const taught = guideStep(useGame.getState().state, (id) => getLetter(id));
+      if (taught === 'glass' || taught === 'seal') setGuideHold('glass');
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y, start: p };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
@@ -892,6 +893,13 @@ export function DeskScreen() {
           });
           const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
           if (over && !seen.includes(job.id)) useGame.getState().inspect(openId, job.id);
+        }
+        const sealJob = openLetter?.inspectables?.find((i) => i.target === 'seal' && i.anomaly);
+        const sealAt = layout?.seal;
+        if (openId && sealAt && sealJob) {
+          const overSeal = Math.hypot(c.x - sealAt.cx, c.y - sealAt.cy) <= LENS_R * lensK;
+          const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
+          if (overSeal && !seen.includes(sealJob.id)) useGame.getState().inspect(openId, sealJob.id);
         }
         break;
       }

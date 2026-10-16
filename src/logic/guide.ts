@@ -4,7 +4,7 @@ import type { DayState } from './dayFlow';
 import { LAYOUT } from '../scene/world';
 
 /** The first morning's voice. Each step waits until the clerk has done it. */
-export type GuideStep = 'pile' | 'pen' | 'glass' | 'date' | 'stamp';
+export type GuideStep = 'pile' | 'pen' | 'glass' | 'date' | 'seal' | 'stamp';
 
 type Taught =
   | {
@@ -14,26 +14,29 @@ type Taught =
   | undefined;
 
 /**
- * Day 1 only, and only until the first letter is decided.
- * The pen step is the open letter's sensitive lines; a letter with none goes on to the glass.
+ * Day 1 only. The first letter is taught through to the stamp.
+ * A later letter is quiet unless it carries a false seal: that one is still taught,
+ * first the writing in the ring, then the thin red circle.
  */
 export function guideStep(s: DayState, letterOf: (id: string) => Taught): GuideStep | null {
   if (s.day !== 1 || s.phase !== 'desk' || !s.morningDone) return null;
-  if (s.done.length > 0) return null;
-  if (!s.open) return 'pile';
+  const first = s.done.length === 0;
+  if (!s.open) return first ? 'pile' : null;
   const letter = letterOf(s.open);
   const prog = s.letters[s.open];
   const sensitive = letter?.segments.filter((seg) => seg.kind === 'sensitive').map((seg) => seg.id) ?? [];
   const censored = new Set(prog?.censored ?? []);
-  if (sensitive.some((id) => !censored.has(id))) return 'pen';
   const dateJob = letter?.inspectables?.find((i) => i.target === 'date' && i.line);
+  const sealJob = letter?.inspectables?.find((i) => i.target === 'seal' && i.anomaly);
   const seen = new Set(prog?.inspected ?? []);
   const marked = new Set([...(prog?.marked ?? []), ...(prog?.wrongMarked ?? [])]);
-  if (dateJob && !seen.has(dateJob.id)) return 'glass';
-  if (dateJob && !marked.has('date')) return 'date';
-  const seal = letter?.inspectables?.some((i) => i.target === 'seal' && i.anomaly);
-  if (seal && !marked.has('seal')) return 'glass';
-  return 'stamp';
+  if (first && sensitive.some((id) => !censored.has(id))) return 'pen';
+  if (first && dateJob && !seen.has(dateJob.id)) return 'glass';
+  if (first && dateJob && !marked.has('date')) return 'date';
+  if (sealJob && !seen.has(sealJob.id)) return 'glass';
+  if (sealJob && !marked.has('seal')) return 'seal';
+  if (first || sealJob) return 'stamp';
+  return null;
 }
 
 /** Which thing is in hand, so the next scrap can wait for it. */
@@ -130,25 +133,32 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
       const y = input.mark.y + 22;
       return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.look.what'), t('guide.look.why'))];
     }
+    if (input.mark?.kind === 'seal' && hold === 'glass') {
+      const w = 250;
+      const h = 58;
+      const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
+      const y = Math.max(28, input.mark.y - h - 18);
+      return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.seal.look.what'), t('guide.seal.look.why'))];
+    }
     if (hold === 'glass' && input.mark) {
-      const seal = input.mark.kind === 'seal';
       const w = 268;
       const h = 58;
       const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
-      const y = seal ? input.mark.y - h - 18 : input.mark.y + 26;
-      return [
-        card(
-          x,
-          Math.max(28, y),
-          w,
-          h,
-          { x: input.mark.x, y: input.mark.y },
-          t(seal ? 'guide.mark.seal.what' : 'guide.mark.what'),
-          t(seal ? 'guide.mark.seal.why' : 'guide.mark.why'),
-        ),
-      ];
+      const y = input.mark.y + 26;
+      return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.mark.what'), t('guide.mark.why'))];
     }
+    if (input.mark?.kind === 'seal') return [card(430, 300, 220, 58, input.lens, t('guide.glass.what'), t('guide.seal.pick.why'))];
     return [card(430, 300, 210, 58, input.lens, t('guide.glass.what'), t('guide.glass.why'))];
+  }
+  if (step === 'seal') {
+    if (hold === 'glass' && input.mark) {
+      const w = 248;
+      const h = 58;
+      const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
+      const y = Math.max(28, input.mark.y - h - 18);
+      return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.seal.what'), t('guide.seal.why'))];
+    }
+    return [card(430, 300, 230, 58, input.lens, t('guide.seal.glass.what'), t('guide.seal.glass.why'))];
   }
   if (step === 'date') {
     if (hold === 'pen' && input.mark) {
