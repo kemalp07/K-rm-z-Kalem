@@ -1,8 +1,14 @@
-import { FontWeight, Group, Line, Path, RoundedRect, Skia, vec, type SkPath } from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import { BlurMask, FontWeight, Group, Path, Shadow, Skia, type SkPath } from '@shopify/react-native-skia';
 import type { GuideCard } from '../logic/guide';
 import type { Point, Rect } from '../logic/censor';
 import { C } from '../scene/palette';
 import { Para } from '../scene/Para';
+import { between, rng } from '../scene/rand';
+import { roughRect, shakyLine } from '../scene/rough';
+
+/** A scrap torn off a sheet, a little yellower than the letter under it. */
+const SCRAP = '#e4d3b0';
 
 /** Where the arrow leaves the card: the edge facing the tip. */
 function edgeToward(box: Rect, tip: Point): Point {
@@ -29,27 +35,41 @@ function arrowHead(from: Point, to: Point, len = 11): SkPath {
 }
 
 /**
- * A paper label and an arrow. The arrow is cream with a dark edge so it
- * reads on the wood and on the letter.
+ * A torn scrap with the instruction on it, and a pencil line pointing at the thing.
+ * The top edge is torn, like a leaf pulled out of a notebook.
  */
 export function GuideCallout({ card }: { card: GuideCard }) {
   const { box, tip, what, why } = card;
+  const shape = useMemo(() => roughRect(box, `guide-${what}`, 1.35, true), [box.x, box.y, box.w, box.h, what]);
+  const tilt = useMemo(() => between(rng(`guide-tilt-${what}`), -0.03, 0.03), [what]);
   const from = edgeToward(box, tip);
   const ang = Math.atan2(tip.y - from.y, tip.x - from.x);
   const end = { x: tip.x - Math.cos(ang) * 9, y: tip.y - Math.sin(ang) * 9 };
+  const shaft = useMemo(
+    () => shakyLine(from.x, from.y, end.x, end.y, `guide-arrow-${what}`, 0.6),
+    [from.x, from.y, end.x, end.y, what],
+  );
   const head = arrowHead(from, tip, 12);
   const inner = arrowHead(from, { x: tip.x - Math.cos(ang) * 1.8, y: tip.y - Math.sin(ang) * 1.8 }, 8);
+  const origin = { x: box.x + box.w / 2, y: box.y + box.h / 2 };
   return (
     <Group>
-      <Line p1={vec(from.x, from.y)} p2={vec(end.x, end.y)} color="#1a100c" strokeWidth={5} />
-      <Line p1={vec(from.x, from.y)} p2={vec(end.x, end.y)} color={C.paper} strokeWidth={2.4} />
+      <Path path={shaft} style="stroke" strokeWidth={4.2} color="#1a100c" strokeCap="round" />
+      <Path path={shaft} style="stroke" strokeWidth={1.8} color={SCRAP} strokeCap="round" />
       <Path path={head} color="#1a100c" />
-      <Path path={inner} color={C.paper} />
-      <RoundedRect x={box.x + 2} y={box.y + 3} width={box.w} height={box.h} r={3} color="rgba(20,10,4,0.45)" />
-      <RoundedRect x={box.x} y={box.y} width={box.w} height={box.h} r={3} color={C.paper} />
-      <RoundedRect x={box.x} y={box.y} width={box.w} height={box.h} r={3} style="stroke" strokeWidth={1.2} color={C.ink} />
-      <Para text={what} x={box.x + 8} y={box.y + 5} width={box.w - 16} family="Cormorant" size={15} weight={FontWeight.SemiBold} color={C.ink} align="center" />
-      <Para text={why} x={box.x + 8} y={box.y + 26} width={box.w - 16} family="Cormorant" size={13} color={C.inkFaded} align="center" />
+      <Path path={inner} color={SCRAP} />
+      <Group origin={origin} transform={[{ rotate: tilt }]}>
+        <Path path={shape} color={SCRAP}>
+          <Shadow dx={1.5} dy={3} blur={5} color="rgba(20,10,4,0.4)" />
+        </Path>
+        <Group clip={shape}>
+          <Path path={shape} style="stroke" strokeWidth={14} color="rgba(120,78,32,0.28)">
+            <BlurMask blur={6} style="normal" />
+          </Path>
+          <Para text={what} x={box.x + 12} y={box.y + 10} width={box.w - 24} family="Cormorant" size={15} weight={FontWeight.SemiBold} color={C.ink} align="center" />
+          <Para text={why} x={box.x + 12} y={box.y + 30} width={box.w - 24} family="Cormorant" size={13} color={C.inkFaded} align="center" />
+        </Group>
+      </Group>
     </Group>
   );
 }
