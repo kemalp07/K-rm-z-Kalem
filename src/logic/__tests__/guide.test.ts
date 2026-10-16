@@ -18,7 +18,7 @@ test('Mehmet is taught in order: the line, the glass, then the stamp', () => {
   expect(guideStep(s, of)).toBe('pen');
   s = { ...s, letters: { ...s.letters, d1_mehmet: { ...s.letters.d1_mehmet!, censored: ['s3'] } } };
   expect(guideStep(s, of)).toBe('glass');
-  s = { ...s, letters: { ...s.letters, d1_mehmet: { ...s.letters.d1_mehmet!, wrongMarked: ['date'] } } };
+  s = { ...s, letters: { ...s.letters, d1_mehmet: { ...s.letters.d1_mehmet!, marked: ['date'] } } };
   expect(guideStep(s, of)).toBe('stamp');
   s = { ...s, done: ['d1_mehmet'] };
   expect(guideStep(s, of)).toBeNull();
@@ -67,8 +67,17 @@ test('the pen points at the pencil until it is in hand, then at the line', () =>
   expect(line[0]!.box.y).toBeGreaterThan(place.line!.y);
 });
 
+test('a wrong date is underlined, without waiting for the glass', () => {
+  const date = guideCards({ ...place, step: 'glass', mark: { x: 560, y: 80, kind: 'date' } });
+  expect(date).toHaveLength(1);
+  expect(date[0]!.tip).toEqual({ x: 560, y: 80 });
+  expect(date[0]!.what).toMatch(/altından/);
+  expect(date[0]!.why).toMatch(/31/);
+  expect(date[0]!.box.y).toBeGreaterThan(80);
+});
+
 test('the glass points at the lens, then at a false seal', () => {
-  const glass = guideCards({ ...place, step: 'glass' });
+  const glass = guideCards({ ...place, step: 'glass', mark: null });
   expect(glass[0]!.tip).toEqual(place.lens);
   const seal = guideCards({ ...place, step: 'glass', hold: 'glass', mark: { x: 600, y: 360, kind: 'seal' } });
   expect(seal[0]!.tip).toEqual({ x: 600, y: 360 });

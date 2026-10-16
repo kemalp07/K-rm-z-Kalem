@@ -9,7 +9,7 @@ import * as Haptics from 'expo-haptics';
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
 import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
-import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
+import { isBlackedOut, isUnderlined, makeCoverage, strokeOver, underlineBand, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
 import { guideCards, guideStep, type GuideHold } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
@@ -271,12 +271,15 @@ export function DeskScreen() {
   const penInHand = useRef(false);
   const exiting = useRef(false);
   const coverage = useRef(new Map<string, { lines: LineCoverage[]; laid: LaidSegment }>());
+  /** Columns along the bottom of the open letter's date. An underline fills them. */
+  const dateLine = useRef<LineCoverage[] | null>(null);
   const heatLocal = useRef<Record<string, number>>({});
 
   const resetCoverage = useCallback(() => {
     coverage.current = new Map(
       (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
+    dateLine.current = layout?.date ? makeCoverage([underlineBand(layout.date.rect)]) : null;
   }, [layout]);
 
   // Fresh coverage and heat for each letter that lands on the desk.
@@ -911,6 +914,11 @@ export function DeskScreen() {
             Haptics.selectionAsync().catch(() => {});
           }
         }
+        if (layout?.date && dateLine.current) {
+          const origin = { x: layout.date.x, y: layout.date.y };
+          const atDate = (q: Point) => toLocalFrame(q, origin, layout.date!.tilt, layout.date!.skew);
+          strokeOver(dateLine.current, atDate(d.last), atDate(tip), 4, true);
+        }
         if (hover !== penHint.value.hover || d.done.length !== penHint.value.done.length) penHint.value = { hover, done: [...d.done] };
         d.last = tip;
         break;
@@ -1039,6 +1047,12 @@ export function DeskScreen() {
       case 'pen-stroke': {
         const id = g.state.open;
         if (id) for (const segId of d.done) g.censor(id, segId);
+        if (id && openLetter && dateLine.current && isUnderlined(dateLine.current)) {
+          const insp = openLetter.inspectables?.find((i) => i.target === 'date');
+          const prog = g.state.letters[id];
+          const already = (prog?.marked ?? []).includes('date') || (prog?.wrongMarked ?? []).includes('date');
+          if (insp && !already) g.mark(id, 'date', insp.anomaly === true || insp.line === true);
+        }
         if (id && d.points.length > 2) {
           g.addStroke(
             id,
@@ -1212,7 +1226,7 @@ export function DeskScreen() {
       anomaly?.target === 'seal' && layout?.seal
         ? { x: layout.seal.cx, y: layout.seal.cy, kind: 'seal' as const }
         : layout?.date
-          ? { x: layout.date.rect.x + layout.date.rect.w / 2, y: layout.date.rect.y + layout.date.rect.h / 2, kind: 'date' as const }
+          ? { x: layout.date.rect.x + layout.date.rect.w / 2, y: layout.date.rect.y + layout.date.rect.h, kind: 'date' as const }
           : null;
     const rest = LAYOUT.rest.pen;
     return guideCards({

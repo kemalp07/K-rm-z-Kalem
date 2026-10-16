@@ -20,7 +20,7 @@
       "direction": "cepheden",
       "kind": "mektup",
       "hand": "hurried",
-      "dateLine": "Ordu-yı Hümayun, 1 Mayıs 331",
+      "dateLine": "Ordu-yı Hümayun, 31 Nisan 331",
       "heading": "Muhterem validem,",
       "segments": [
         {
@@ -54,7 +54,8 @@
         {
           "id": "date",
           "target": "date",
-          "note": "Tarih kurşun kalemle atılmış, sonra üstünden mürekkeple geçilmiş. Siperde mürekkep bulmak kolay değil."
+          "note": "Nisan otuz gün çeker. 31 Nisan diye bir gün yok.",
+          "line": true
         }
       ],
       "marks": [

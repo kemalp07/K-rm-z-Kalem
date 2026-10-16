@@ -259,11 +259,7 @@ export const closeCorner = (paper: Rect): Rect => ({ x: paper.x + paper.w - 34, 
 export function markTargets(letter: Letter, layout: LetterLayout): MarkTarget[] {
   const wrong = new Set((letter.inspectables ?? []).filter((i) => i.anomaly).map((i) => i.target));
   const out: MarkTarget[] = [];
-  if (layout.date) {
-    const d = layout.date.rect;
-    const span = Math.max(d.h, Math.min(d.w, d.h * 3.2));
-    out.push({ target: 'date', x: d.x + d.w / 2, y: d.y + d.h / 2, anomaly: wrong.has('date'), r: span / 2 + 7 });
-  }
+  // A date is underlined with the pen. The glass rings a seal or a postmark.
   if (layout.seal) out.push({ target: 'seal', x: layout.seal.cx, y: layout.seal.cy, anomaly: wrong.has('seal'), r: layout.seal.r + 10 });
   if (layout.postmark) out.push({ target: 'postmark', x: layout.postmark.cx, y: layout.postmark.cy, anomaly: wrong.has('postmark'), r: layout.postmark.r + 10 });
   return out;

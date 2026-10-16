@@ -49,6 +49,8 @@ export interface Inspectable {
   note: string;
   /** True when what the magnifier shows is wrong — it becomes a flag. */
   anomaly?: boolean;
+  /** An underline here is a fair note. It does not make the letter a forgery. */
+  line?: boolean;
 }
 
 export interface Seal {

@@ -112,3 +112,20 @@ export function isBlackedOut(lines: LineCoverage[], threshold = COVERED_RATIO): 
   // Every line must be buried, not just the sum — one untouched line leaks.
   return lines.length > 0 && lines.every((l) => buryRatio(l) >= threshold);
 }
+
+/** How much of an underline has to run under the words before it counts. */
+export const UNDERLINE_RATIO = 0.55;
+
+/**
+ * The strip just under a date, where a line is drawn. A tick through the
+ * words stays above it; a stroke along the feet of the letters lands in it.
+ */
+export function underlineBand(rect: Rect): Rect {
+  const h = 10;
+  return { x: rect.x - 6, y: rect.y + rect.h - 3, w: rect.w + 12, h };
+}
+
+/** True once the nib has travelled most of the way along the band. */
+export function isUnderlined(lines: LineCoverage[], threshold = UNDERLINE_RATIO): boolean {
+  return lines.length > 0 && coverageRatio(lines) >= threshold;
+}

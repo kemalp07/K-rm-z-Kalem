@@ -93,6 +93,13 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
     return [card(548, 300, 230, 58, input.pen, t('guide.pen.what'), t('guide.pen.why'))];
   }
   if (step === 'glass') {
+    // A wrong date is a line under the words, drawn as soon as the pen step is done.
+    if (input.mark?.kind === 'date') {
+      const w = 250;
+      const h = 58;
+      const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
+      return [card(x, input.mark.y + 16, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.mark.what'), t('guide.mark.why'))];
+    }
     if (hold === 'glass' && input.mark) {
       const seal = input.mark.kind === 'seal';
       const w = 268;
