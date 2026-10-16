@@ -19,3 +19,13 @@ test('a line along the date counts, a tick through the words does not', () => {
   strokeOver(tick, { x: band.x + band.w / 2, y: band.y - 30 }, { x: band.x + band.w / 2, y: band.y + band.h + 30 }, 4, true);
   expect(isUnderlined(tick)).toBe(false);
 });
+
+test('a sentence counts only when every line of it is underlined', () => {
+  const place = underlineBand({ x: 40, y: 20, w: 140, h: 18 });
+  const date = underlineBand({ x: 80, y: 42, w: 100, h: 18 });
+  const both = makeCoverage([place, date]);
+  strokeOver(both, { x: place.x + 2, y: place.y + 4 }, { x: place.x + place.w - 2, y: place.y + 5 }, 4, true);
+  expect(isUnderlined(both)).toBe(false);
+  strokeOver(both, { x: date.x + 2, y: date.y + 4 }, { x: date.x + date.w - 2, y: date.y + 5 }, 4, true);
+  expect(isUnderlined(both)).toBe(true);
+});

@@ -66,8 +66,9 @@ test('the pen points at the pencil until it is in hand, then at the line', () =>
   expect(pen[0]!.why).toMatch(/karalan/);
   const line = guideCards({ ...place, step: 'pen', hold: 'pen', letterId: 'd1_mehmet' });
   expect(line[0]!.tip).toEqual(place.line);
-  expect(line[0]!.what).toMatch(/Sırt/);
+  expect(line[0]!.what).toMatch(/cümle/);
   expect(line[0]!.why).toMatch(/gitmemeli/);
+  expect(line[0]!.along).toBeUndefined();
   expect(line[0]!.box.y).toBeGreaterThan(place.line!.y);
 });
 
@@ -75,7 +76,7 @@ test('a wrong date is underlined, without waiting for the glass', () => {
   const date = guideCards({ ...place, step: 'glass', mark: { x: 560, y: 80, kind: 'date' } });
   expect(date).toHaveLength(1);
   expect(date[0]!.tip).toEqual({ x: 560, y: 80 });
-  expect(date[0]!.what).toMatch(/altından/);
+  expect(date[0]!.what).toMatch(/yer/);
   expect(date[0]!.why).toMatch(/31/);
   expect(date[0]!.box.y).toBeGreaterThan(80);
 });
@@ -87,6 +88,15 @@ test('the glass points at the lens, then at a false seal', () => {
   expect(seal[0]!.tip).toEqual({ x: 600, y: 360 });
   expect(seal[0]!.why).toMatch(/mühür/i);
   expect(seal[0]!.box.y + seal[0]!.box.h).toBeLessThan(360);
+});
+
+test('the reason slip points at the box that fits the letter', () => {
+  const cards = guideCards({ ...place, step: 'stamp', reason: { x: 700, y: 220, id: 'askeri' } });
+  expect(cards).toHaveLength(1);
+  expect(cards[0]!.what).toMatch(/işaretle/);
+  expect(cards[0]!.why).toMatch(/yer/);
+  expect(cards[0]!.tip).toEqual({ x: 700, y: 226 });
+  expect(cards[0]!.box.x + cards[0]!.box.w).toBeLessThan(700);
 });
 
 test('the stamp card says what each seal does', () => {

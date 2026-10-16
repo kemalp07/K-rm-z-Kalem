@@ -91,14 +91,14 @@ export function RoundMark({ cx, cy, color, legend, symbol, center, band, foot, d
         <>
           <Line p1={vec(cx - chord, cy - 9)} p2={vec(cx + chord, cy - 9)} strokeWidth={1.2} color={color} />
           <Line p1={vec(cx - chord, cy + 9)} p2={vec(cx + chord, cy + 9)} strokeWidth={1.2} color={color} />
-          <Para text={band} x={cx - R} y={cy - 7} width={R * 2} family="Cormorant" size={band.length > 7 ? 9 : 11} color={color} weight={FontWeight.Bold} align="center" letterSpacing={band.length > 7 ? 0 : 0.6} />
-          {foot && <Para text={foot} x={cx - R} y={cy + 11} width={R * 2} family="Cormorant" size={6} color={color} weight={FontWeight.Bold} align="center" />}
+          <Para text={band} x={cx - R} y={cy - 7} width={R * 2} family="Newsreader" size={band.length > 7 ? 9 : 11} color={color} weight={FontWeight.Bold} align="center" letterSpacing={band.length > 7 ? 0 : 0.6} />
+          {foot && <Para text={foot} x={cx - R} y={cy + 11} width={R * 2} family="Newsreader" size={6} color={color} weight={FontWeight.Bold} align="center" />}
         </>
       ) : (
         <>
           <Circle cx={cx} cy={cy} r={R - 14} style="stroke" strokeWidth={1} color={color} />
           {sym && <Path path={sym} style={symbol === 'anchor' || symbol === 'wheat' ? 'stroke' : 'fill'} strokeWidth={1.4} color={color} />}
-          {center && <Para text={center} x={cx - 17} y={cy - 8} width={34} family="Cormorant" size={7.5} color={color} weight={FontWeight.Bold} align="center" lineHeight={0.9} />}
+          {center && <Para text={center} x={cx - 17} y={cy - 8} width={34} family="Newsreader" size={7.5} color={color} weight={FontWeight.Bold} align="center" lineHeight={0.9} />}
         </>
       )}
       {worn !== undefined && (

@@ -25,13 +25,13 @@ function MudurNote({ paper, flags, date, lead }: { paper: Extract<MorningPaper, 
   const body = [...lead.map((text) => ({ text })), ...shown(paper.body, flags)];
   return (
     <Group>
-      <Para text={m.head} x={r.x} y={r.y + 26} width={r.w} family="Cormorant" size={15} color={C.ink} weight={FontWeight.Bold} letterSpacing={2} align="center" />
-      <Para text={m.sub} x={r.x} y={r.y + 46} width={r.w} family="Cormorant" size={13} color={C.inkFaded} italic align="center" />
+      <Para text={m.head} x={r.x} y={r.y + 26} width={r.w} family="Newsreader" size={15} color={C.ink} weight={FontWeight.Bold} letterSpacing={2} align="center" />
+      <Para text={m.sub} x={r.x} y={r.y + 46} width={r.w} family="Newsreader" size={13} color={C.inkFaded} italic align="center" />
       <Line p1={vec(r.x + r.w * 0.3, r.y + 66)} p2={vec(r.x + r.w * 0.7, r.y + 66)} strokeWidth={0.8} color="rgba(43,33,24,0.45)" />
-      <Para text={date} x={r.x + r.w - 200} y={r.y + 74} width={170} family="Cormorant" size={13} color={C.ink} italic align="right" />
-      <Para text={m.to} x={r.x + 34} y={r.y + 96} width={300} family="Cormorant" size={15} color={C.ink} weight={FontWeight.Bold} />
-      <Para text={body.map((l) => l.text).join('\n\n')} x={r.x + 44} y={r.y + 126} width={r.w - 82} family="Cormorant" size={15} color={C.ink} weight={FontWeight.SemiBold} lineHeight={1.08} />
-      <Para text={m.sign} x={r.x + r.w - 220} y={r.y + r.h - 92} width={180} family="Cormorant" size={14} color={C.ink} italic align="right" />
+      <Para text={date} x={r.x + r.w - 200} y={r.y + 74} width={170} family="Newsreader" size={13} color={C.ink} italic align="right" />
+      <Para text={m.to} x={r.x + 34} y={r.y + 96} width={300} family="Newsreader" size={15} color={C.ink} weight={FontWeight.Bold} />
+      <Para text={body.map((l) => l.text).join('\n\n')} x={r.x + 44} y={r.y + 126} width={r.w - 82} family="Newsreader" size={15} color={C.ink} weight={FontWeight.SemiBold} lineHeight={1.08} />
+      <Para text={m.sign} x={r.x + r.w - 220} y={r.y + r.h - 92} width={180} family="Newsreader" size={14} color={C.ink} italic align="right" />
       <RoundMark cx={r.x + r.w - 110} cy={r.y + r.h - 50} scale={0.8} rotate={-0.2} color="#3b3566" legend="KİLİTBAHİR ŞUBESİ MÜDÜRİYETİ ★" symbol="crescent" opacity={0.6} />
     </Group>
   );
@@ -43,9 +43,9 @@ function FamilyLetter({ paper, flags }: { paper: Extract<MorningPaper, { kind: '
   const body = shown(paper.body, flags);
   return (
     <Group>
-      <Para text={paper.heading} x={r.x + 40} y={r.y + 40} width={300} family="Caveat" size={22} color={C.inkBlue} />
-      <Para text={body.map((l) => l.text).join('\n\n')} x={r.x + 48} y={r.y + 80} width={r.w - 90} family="Caveat" size={19} color={C.inkBlue} lineHeight={1.02} />
-      <Para text={paper.sign} x={r.x + r.w - 240} y={r.y + r.h - 70} width={200} family="Caveat" size={20} color={C.inkBlue} align="right" />
+      <Para text={paper.heading} x={r.x + 40} y={r.y + 40} width={300} family="Kalam" size={22} color={C.inkBlue} />
+      <Para text={body.map((l) => l.text).join('\n\n')} x={r.x + 48} y={r.y + 80} width={r.w - 90} family="Kalam" size={19} color={C.inkBlue} lineHeight={1.02} />
+      <Para text={paper.sign} x={r.x + r.w - 240} y={r.y + r.h - 70} width={200} family="Kalam" size={20} color={C.inkBlue} align="right" />
     </Group>
   );
 }
@@ -122,10 +122,10 @@ function Newspaper({ paper, flags, date }: { paper: Extract<MorningPaper, { kind
   const cut = { x: r.x + r.w / 2 - 48, y: r.y + 92, w: 96, h: 54 };
   return (
     <Group>
-      <Para text={n.title} x={r.x + 12} y={r.y + 16} width={r.w - 24} family="Cormorant" size={22} color={INK} weight={FontWeight.Bold} letterSpacing={1.4} align="center" />
+      <Para text={n.title} x={r.x + 12} y={r.y + 16} width={r.w - 24} family="Newsreader" size={22} color={INK} weight={FontWeight.Bold} letterSpacing={1.4} align="center" />
       <Line p1={vec(r.x + 16, r.y + 46)} p2={vec(r.x + r.w - 16, r.y + 46)} strokeWidth={1.6} color={INK} />
       <Line p1={vec(r.x + 16, r.y + 50)} p2={vec(r.x + r.w - 16, r.y + 50)} strokeWidth={0.6} color={INK} />
-      <Para text={n.line.replace('{n}', String(paper.n)).replace('{date}', date)} x={r.x + 16} y={r.y + 54} width={r.w - 32} family="Cormorant" size={11} color="#3a3128" italic align="center" />
+      <Para text={n.line.replace('{n}', String(paper.n)).replace('{date}', date)} x={r.x + 16} y={r.y + 54} width={r.w - 32} family="Newsreader" size={11} color="#3a3128" italic align="center" />
       <Line p1={vec(r.x + 16, r.y + 72)} p2={vec(r.x + r.w - 16, r.y + 72)} strokeWidth={0.6} color={INK} />
       <Woodcut n={paper.n} x={cut.x} y={cut.y} w={cut.w} h={cut.h} />
       <Line p1={vec(r.x + 16, r.y + 154)} p2={vec(r.x + r.w - 16, r.y + 154)} strokeWidth={0.7} color={INK} />
@@ -140,7 +140,7 @@ function Newspaper({ paper, flags, date }: { paper: Extract<MorningPaper, { kind
                   x={innerX + ci * (colW + gap)}
                   y={r.y + 162 + i * 150}
                   width={colW}
-                  family="Cormorant"
+                  family="Newsreader"
                   size={12}
                   color={INK}
                   weight={FontWeight.Bold}
@@ -153,7 +153,7 @@ function Newspaper({ paper, flags, date }: { paper: Extract<MorningPaper, { kind
                 x={innerX + ci * (colW + gap)}
                 y={r.y + 162 + i * 150 + (it.head ? 32 : 0)}
                 width={colW}
-                family="Cormorant"
+                family="Newsreader"
                 size={11}
                 color={INK}
                 weight={FontWeight.Medium}
@@ -254,7 +254,7 @@ export function MorningPapers({
           {paper.kind === 'newspaper' && <Newspaper paper={paper} flags={flags} date={date} />}
           {isNews && <Line p1={vec(r.x + r.w / 2, r.y + 8)} p2={vec(r.x + r.w / 2, r.y + r.h - 8)} strokeWidth={2} color="rgba(40,30,20,0.8)" opacity={crease} />}
         </Group>
-        <Para text={hint} x={0} y={(isNews && !opened ? FOLDED.y + FOLDED.h : r.y + r.h) + 12} width={WORLD.w} family="Cormorant" size={14} color="rgba(232,218,190,0.75)" italic align="center" />
+        <Para text={hint} x={0} y={(isNews && !opened ? FOLDED.y + FOLDED.h : r.y + r.h) + 12} width={WORLD.w} family="Newsreader" size={14} color="rgba(232,218,190,0.75)" italic align="center" />
       </Group>
     </Fade>
   );

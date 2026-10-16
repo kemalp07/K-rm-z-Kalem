@@ -31,7 +31,7 @@ export function MoneyNote({ kurus, warnings }: { kurus: number; warnings: number
             <Shadow dx={-3} dy={3} blur={3} color="rgba(0,0,0,0.5)" />
           </Path>
         </ArtSlot>
-        <Para text={[economy.text.purseNote!.replace('{n}', String(kurus)), warnings ? economy.text.warningsNote!.replace('{n}', String(warnings)) : ''].filter(Boolean).join('\n')} x={r.x + 16} y={r.y + 14} width={r.w - 26} family="Caveat" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
+        <Para text={[economy.text.purseNote!.replace('{n}', String(kurus)), warnings ? economy.text.warningsNote!.replace('{n}', String(warnings)) : ''].filter(Boolean).join('\n')} x={r.x + 16} y={r.y + 14} width={r.w - 26} family="Kalam" size={16} color="#3d3226" weight={FontWeight.Medium} lineHeight={0.95} />
       </Group>
       {coins.map((c, i) => (
         <ArtSlot key={i} slot={c.silver ? 'coin_silver' : 'coin'} shadow rect={{ x: r.x + c.dx - c.r * 1.2, y: r.y + c.dy - c.r * 1.2, w: c.r * 2.4, h: c.r * 2.4 }}>

@@ -36,14 +36,14 @@ export function HelpSlip({ id, unread }: { id: HelpId; unread: boolean }) {
       )}
       {isRules ? (
         <>
-          <Para text={sheet.title} x={r.x} y={r.y + 10} width={r.w} family="Cormorant" size={10.5} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} align="center" />
+          <Para text={sheet.title} x={r.x} y={r.y + 10} width={r.w} family="Newsreader" size={10.5} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} align="center" />
           {[0, 1, 2, 3, 4, 5].map((i) => (
             <Path key={i} path={shakyLine(r.x + 10, r.y + 34 + i * 10, r.x + r.w - 10 - (i % 3) * 8, r.y + 34 + i * 10, `rl${i}`, 0.4)} style="stroke" strokeWidth={1.4} color="rgba(43,33,24,0.35)" />
           ))}
           <Circle cx={r.x + r.w - 16} cy={r.y + r.h - 16} r={9} style="stroke" strokeWidth={1.2} color="rgba(91,46,74,0.5)" />
         </>
       ) : (
-        <Para text={sheet.tag} x={r.x} y={r.y + 6} width={r.w} family="Caveat" size={15} color="#3d3226" weight={FontWeight.Medium} align="center" />
+        <Para text={sheet.tag} x={r.x} y={r.y + 6} width={r.w} family="Kalam" size={15} color="#3d3226" weight={FontWeight.Medium} align="center" />
       )}
       {unread && (
         <Group>
@@ -66,7 +66,7 @@ const PLATE_BOTTOM = LAYOUT.stamps.y + 52 + 36;
  * and the long ones run into each other, and into "Kapamak için dokununuz".
  */
 function laySheet(provider: ReturnType<typeof useSceneFonts>['provider'], sheet: HelpSheet, isRules: boolean, textWidth: number) {
-  const family = isRules ? 'Cormorant' : 'Caveat';
+  const family = isRules ? 'Newsreader' : 'Kalam';
   const weight = isRules ? FontWeight.SemiBold : FontWeight.Normal;
   const sizes = isRules ? [15.5, 14.5, 13.5] : [17.5, 16, 15];
   const lineTop = sheet.subtitle ? 84 : 66;
@@ -122,21 +122,21 @@ export function HelpSheetView({ id, opacity }: { id: HelpId; opacity: SharedValu
             <Shadow dx={-6} dy={10} blur={12} color="rgba(0,0,0,0.6)" />
           </Path>
         )}
-        <Para text={sheet.title} x={r.x} y={r.y + 26} width={r.w} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 24 : 28} color={C.ink} weight={FontWeight.Bold} letterSpacing={isRules ? 2 : 0} align="center" />
-        {sheet.subtitle && <Para text={sheet.subtitle} x={r.x} y={r.y + 56} width={r.w} family="Cormorant" size={14} color={C.inkFaded} italic align="center" />}
+        <Para text={sheet.title} x={r.x} y={r.y + 26} width={r.w} family={isRules ? 'Newsreader' : 'Kalam'} size={isRules ? 24 : 28} color={C.ink} weight={FontWeight.Bold} letterSpacing={isRules ? 2 : 0} align="center" />
+        {sheet.subtitle && <Para text={sheet.subtitle} x={r.x} y={r.y + 56} width={r.w} family="Newsreader" size={14} color={C.inkFaded} italic align="center" />}
         {sheet.lines.map((line, i) => {
           const y = laid.ys[i] ?? 0;
           return (
             <Group key={i}>
-              <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + PAD} y={y} width={24} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 16 : laid.size} color={isRules ? C.censor : C.inkFaded} weight={FontWeight.Bold} />
-              <Para text={line} x={r.x + PAD + 26} y={y} width={textWidth} family={isRules ? 'Cormorant' : 'Caveat'} size={laid.size} color={C.ink} lineHeight={1.12} weight={isRules ? FontWeight.SemiBold : FontWeight.Normal} />
+              <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + PAD} y={y} width={24} family={isRules ? 'Newsreader' : 'Kalam'} size={isRules ? 16 : laid.size} color={isRules ? C.censor : C.inkFaded} weight={FontWeight.Bold} />
+              <Para text={line} x={r.x + PAD + 26} y={y} width={textWidth} family={isRules ? 'Newsreader' : 'Kalam'} size={laid.size} color={C.ink} lineHeight={1.12} weight={isRules ? FontWeight.SemiBold : FontWeight.Normal} />
             </Group>
           );
         })}
         {sheet.footer && laid.footerY != null && (
-          <Para text={sheet.footer} x={r.x + PAD} y={laid.footerY} width={r.w - PAD * 2} family="Cormorant" size={13} color={C.inkFaded} italic align="center" />
+          <Para text={sheet.footer} x={r.x + PAD} y={laid.footerY} width={r.w - PAD * 2} family="Newsreader" size={13} color={C.inkFaded} italic align="center" />
         )}
-        <Para text={t('help.close')} x={r.x} y={laid.closeY} width={r.w} family="Caveat" size={15} color="rgba(60,45,30,0.72)" align="center" />
+        <Para text={t('help.close')} x={r.x} y={laid.closeY} width={r.w} family="Kalam" size={15} color="rgba(60,45,30,0.72)" align="center" />
         {isRules && (
           // The Şube's stamp, slightly crooked, as on any order that came down the line.
           <Circle cx={r.x + r.w - 52} cy={laid.closeY + 6} r={20} style="stroke" strokeWidth={2} color="rgba(91,46,74,0.55)">

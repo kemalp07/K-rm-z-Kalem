@@ -38,14 +38,14 @@ export function ReasonSlip({ decision, reasons, chosen, opacity }: { decision: D
         <Path path={shape} color="#e8dcbf">
           <Shadow dx={-3} dy={5} blur={6} color="rgba(0,0,0,0.6)" />
         </Path>
-        <Para text={booklet.reasonSlip.title} x={s.x} y={s.y + 12} width={s.w} family="Cormorant" size={12} color={C.ink} weight={FontWeight.Bold} letterSpacing={0.8} align="center" />
-        <Para text={t(`decision.${decision}`)} x={s.x} y={s.y + 32} width={s.w} family="Cormorant" size={14} color={STAMP_INK[decision]} weight={FontWeight.Bold} letterSpacing={2} align="center" />
-        <Para text={booklet.reasonSlip.hint} x={s.x} y={s.y + 48} width={s.w} family="Caveat" size={13} color={C.inkFaded} align="center" />
+        <Para text={booklet.reasonSlip.title} x={s.x} y={s.y + 12} width={s.w} family="Newsreader" size={12} color={C.ink} weight={FontWeight.Bold} letterSpacing={0.8} align="center" />
+        <Para text={t(`decision.${decision}`)} x={s.x} y={s.y + 32} width={s.w} family="Newsreader" size={14} color={STAMP_INK[decision]} weight={FontWeight.Bold} letterSpacing={2} align="center" />
+        <Para text={booklet.reasonSlip.hint} x={s.x} y={s.y + 48} width={s.w} family="Kalam" size={13} color={C.inkFaded} align="center" />
         {rows.map(({ r, rect }) => (
           <Group key={r.id}>
             <Rect x={rect.x + 2} y={rect.y + 2} width={13} height={13} style="stroke" strokeWidth={1} color="rgba(43,33,24,0.7)" />
-            <Para text={r.label} x={rect.x + 22} y={rect.y} width={rect.w - 22} family="Cormorant" size={13.5} color={C.ink} weight={FontWeight.SemiBold} />
-            <Para text={r.detail} x={rect.x + 22} y={rect.y + 18} width={rect.w - 22} family="Cormorant" size={12} color={C.ink} />
+            <Para text={r.label} x={rect.x + 22} y={rect.y} width={rect.w - 22} family="Newsreader" size={13.5} color={C.ink} weight={FontWeight.SemiBold} />
+            <Para text={r.detail} x={rect.x + 22} y={rect.y + 18} width={rect.w - 22} family="Newsreader" size={12} color={C.ink} />
             {chosen === r.id && <Path path={tick(rect.x + 1, rect.y + 1)} style="stroke" strokeWidth={2.4} strokeCap="round" color={C.censor} />}
           </Group>
         ))}

@@ -29,12 +29,20 @@ export function guideStep(s: DayState, letterOf: (id: string) => Taught): GuideS
 /** Which thing is in hand, so the next scrap can wait for it. */
 export type GuideHold = 'letter' | 'pen' | 'glass' | null;
 
+/** A pencil stroke along one whole line of a sentence. */
+export interface GuideStroke {
+  a: Point;
+  b: Point;
+}
+
 export interface GuideCard {
   what: string;
   why: string;
   box: Rect;
   /** Where the arrow lands. */
   tip: Point;
+  /** The whole sentence, so the mark is not one word. */
+  along?: GuideStroke[];
 }
 
 export interface GuideCardInput {
@@ -48,15 +56,29 @@ export interface GuideCardInput {
   line: Point | null;
   lens: Point;
   mark: { x: number; y: number; kind: 'date' | 'seal' } | null;
+  /** Every line of the sentence the pen still has to cross. */
+  lineAlong?: GuideStroke[];
+  /** Every line of the place-and-date sentence. */
+  markAlong?: GuideStroke[];
+  /** The checkbox on the reason slip, once that slip is open. */
+  reason?: { x: number; y: number; id: string } | null;
   stamps: Point;
 }
 
-const card = (x: number, y: number, w: number, h: number, tip: Point, what: string, why: string): GuideCard => ({
+const card = (x: number, y: number, w: number, h: number, tip: Point, what: string, why: string, along?: GuideStroke[]): GuideCard => ({
   box: { x, y, w, h },
   tip,
   what,
   why,
+  along,
 });
+
+function reasonWhy(id: string): string {
+  if (id === 'askeri') return t('guide.reason.askeri');
+  if (id === 'moral') return t('guide.reason.moral');
+  if (id === 'sahte') return t('guide.reason.sahte');
+  return t('guide.reason.why');
+}
 
 function lineCopy(letterId: string | null): { what: string; why: string } {
   if (letterId === 'd1_mehmet') return { what: t('guide.line.mehmet.what'), why: t('guide.line.mehmet.why') };
@@ -81,22 +103,22 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
     if (hold === 'pen' && input.line) {
       const copy = lineCopy(input.letterId);
       const tip = input.line;
-      const w = 250;
-      const h = 58;
+      const w = 268;
+      const h = 72;
       const x = Math.max(308, Math.min(tip.x - w / 2, 650 - w));
       const below = tip.y + 20;
       const y = below + h < LAYOUT.letter.y + LAYOUT.letter.h - 8 ? below : tip.y - h - 14;
-      return [card(x, y, w, h, tip, copy.what, copy.why)];
+      return [card(x, y, w, h, tip, copy.what, copy.why, input.lineAlong)];
     }
     return [card(548, 300, 230, 58, input.pen, t('guide.pen.what'), t('guide.pen.why'))];
   }
   if (step === 'glass') {
     // A wrong date is a line under the words, drawn as soon as the pen step is done.
     if (input.mark?.kind === 'date') {
-      const w = 250;
-      const h = 58;
+      const w = 286;
+      const h = 74;
       const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
-      return [card(x, input.mark.y + 16, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.mark.what'), t('guide.mark.why'))];
+      return [card(x, input.mark.y + 16, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.mark.what'), t('guide.mark.why'), input.markAlong)];
     }
     if (hold === 'glass' && input.mark) {
       const seal = input.mark.kind === 'seal';
@@ -117,6 +139,12 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
       ];
     }
     return [card(430, 300, 210, 58, input.lens, t('guide.glass.what'), t('guide.glass.why'))];
+  }
+  if (input.reason) {
+    const r = input.reason;
+    const w = 214;
+    const h = 58;
+    return [card(Math.max(16, r.x - w - 18), r.y - 6, w, h, { x: r.x, y: r.y + 6 }, t('guide.reason.what'), reasonWhy(r.id))];
   }
   return [card(318, 364, 340, 64, input.stamps, t('guide.stamp.what'), t('guide.stamp.why'))];
 }

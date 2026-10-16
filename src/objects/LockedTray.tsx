@@ -66,7 +66,7 @@ export function LockedTray() {
       </Group>
 
       <Path path={tag} color="rgba(214,198,160,0.8)" />
-      <Para text={t('tray.locked')} x={r.x + 18} y={r.y + r.h - 25} width={r.w - 36} family="Caveat" size={14} color="#2e2418" align="center" />
+      <Para text={t('tray.locked')} x={r.x + 18} y={r.y + r.h - 25} width={r.w - 36} family="Kalam" size={14} color="#2e2418" align="center" />
     </Group>
   );
 }

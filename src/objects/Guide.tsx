@@ -51,9 +51,13 @@ export function GuideCallout({ card }: { card: GuideCard }) {
   );
   const head = arrowHead(from, tip, 12);
   const inner = arrowHead(from, { x: tip.x - Math.cos(ang) * 1.8, y: tip.y - Math.sin(ang) * 1.8 }, 8);
+  const rails = (card.along ?? []).map((s, i) => shakyLine(s.a.x, s.a.y, s.b.x, s.b.y, `guide-rail-${what}-${i}`, 0.45));
   const origin = { x: box.x + box.w / 2, y: box.y + box.h / 2 };
   return (
     <Group>
+      {rails.map((rail, i) => (
+        <Path key={i} path={rail} style="stroke" strokeWidth={2.4} color="#6b4423" strokeCap="round" />
+      ))}
       <Path path={shaft} style="stroke" strokeWidth={4.2} color="#1a100c" strokeCap="round" />
       <Path path={shaft} style="stroke" strokeWidth={1.8} color={SCRAP} strokeCap="round" />
       <Path path={head} color="#1a100c" />
@@ -66,8 +70,8 @@ export function GuideCallout({ card }: { card: GuideCard }) {
           <Path path={shape} style="stroke" strokeWidth={14} color="rgba(120,78,32,0.28)">
             <BlurMask blur={6} style="normal" />
           </Path>
-          <Para text={what} x={box.x + 12} y={box.y + 10} width={box.w - 24} family="Cormorant" size={15} weight={FontWeight.SemiBold} color={C.ink} align="center" />
-          <Para text={why} x={box.x + 12} y={box.y + 30} width={box.w - 24} family="Cormorant" size={13} color={C.inkFaded} align="center" />
+          <Para text={what} x={box.x + 12} y={box.y + 10} width={box.w - 24} family="Newsreader" size={15} weight={FontWeight.SemiBold} color={C.ink} align="center" />
+          <Para text={why} x={box.x + 12} y={box.y + 30} width={box.w - 24} family="Newsreader" size={13} color={C.inkFaded} align="center" />
         </Group>
       </Group>
     </Group>

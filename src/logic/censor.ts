@@ -125,7 +125,13 @@ export function underlineBand(rect: Rect): Rect {
   return { x: rect.x - 6, y: rect.y + rect.h - 3, w: rect.w + 12, h };
 }
 
-/** True once the nib has travelled most of the way along the band. */
+/** True once the nib has travelled most of the way along every line of the sentence. */
 export function isUnderlined(lines: LineCoverage[], threshold = UNDERLINE_RATIO): boolean {
-  return lines.length > 0 && coverageRatio(lines) >= threshold;
+  return lines.length > 0 && lines.every((line) => {
+    const n = line.cols.length;
+    if (n === 0) return false;
+    let hit = 0;
+    for (const c of line.cols) if (c >= 1) hit++;
+    return hit / n >= threshold;
+  });
 }

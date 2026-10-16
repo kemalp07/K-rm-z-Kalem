@@ -31,11 +31,11 @@ interface HandStyle {
   paper: PaperStyle;
 }
 
-const hiddenSpec = (size: number): TextSpec => ({ family: 'Caveat', size, color: '#7a3a12', weight: FontWeight.Medium });
+const hiddenSpec = (size: number): TextSpec => ({ family: 'Kalam', size, color: '#7a3a12', weight: FontWeight.Medium });
 
 const HANDS: Record<Hand, HandStyle> = {
   hurried: {
-    text: { family: 'Caveat', size: 19, color: C.ink, weight: FontWeight.Medium, lineHeight: 1.02 },
+    text: { family: 'Kalam', size: 19, color: C.ink, weight: FontWeight.Medium, lineHeight: 1.02 },
     hidden: hiddenSpec(16),
     skew: -0.1,
     drift: 3,
@@ -45,7 +45,7 @@ const HANDS: Record<Hand, HandStyle> = {
     paper: { color: '#e6dcc2', torn: true, wobble: 1.4, ruled: 'rgba(80,100,130,0.16)', grain: 0.22 },
   },
   elegant: {
-    text: { family: 'Caveat', size: 19, color: C.inkBlue, letterSpacing: 0.3, lineHeight: 1.05 },
+    text: { family: 'Kalam', size: 19, color: C.inkBlue, letterSpacing: 0.3, lineHeight: 1.05 },
     hidden: hiddenSpec(16),
     skew: -0.18,
     drift: 0.8,
@@ -55,7 +55,7 @@ const HANDS: Record<Hand, HandStyle> = {
     paper: { color: '#f1e6cc', torn: false, wobble: 0.5, border: 'rgba(150,80,80,0.35)', grain: 0.14 },
   },
   dictated: {
-    text: { family: 'Caveat', size: 19, color: '#1d1813', weight: FontWeight.SemiBold, lineHeight: 1.0 },
+    text: { family: 'Kalam', size: 19, color: '#1d1813', weight: FontWeight.SemiBold, lineHeight: 1.0 },
     hidden: hiddenSpec(16),
     skew: 0.05,
     drift: 4.5,
@@ -65,7 +65,7 @@ const HANDS: Record<Hand, HandStyle> = {
     paper: { color: C.paperCheap, torn: false, wobble: 1.8, grain: 0.3 },
   },
   careful: {
-    text: { family: 'Caveat', size: 19, color: '#3b2b1d', lineHeight: 1.04 },
+    text: { family: 'Kalam', size: 19, color: '#3b2b1d', lineHeight: 1.04 },
     hidden: hiddenSpec(16),
     skew: -0.03,
     drift: 1.2,
@@ -75,7 +75,7 @@ const HANDS: Record<Hand, HandStyle> = {
     paper: { color: C.paper, torn: false, wobble: 1.0, grain: 0.18 },
   },
   clerical: {
-    text: { family: 'Cormorant', size: 15.5, color: '#2a2522', letterSpacing: 0.5, weight: FontWeight.SemiBold, lineHeight: 1.12 },
+    text: { family: 'Newsreader', size: 15.5, color: '#2a2522', letterSpacing: 0.5, weight: FontWeight.SemiBold, lineHeight: 1.12 },
     hidden: hiddenSpec(15),
     skew: 0,
     drift: 0.3,
@@ -110,7 +110,7 @@ export interface LaidSegment extends Laid {
 export interface LetterLayout {
   paper: Rect;
   letterhead?: Laid;
-  date?: Laid & { rect: Rect };
+  date?: Laid & { rect: Rect; /** One box per wrapped line of the place-and-date sentence. */ lines: Rect[] };
   heading: Laid;
   segments: LaidSegment[];
   signature?: Laid;
@@ -168,7 +168,7 @@ function attempt(
   const out: LetterLayout = { paper } as LetterLayout;
 
   if (letter.letterhead) {
-    const para = makeParagraph(provider, letter.letterhead, { family: 'Cormorant', size: 12.5, color: '#3a2f2a', weight: FontWeight.Bold, letterSpacing: 1.6, align: 'center' }, width);
+    const para = makeParagraph(provider, letter.letterhead, { family: 'Newsreader', size: 12.5, color: '#3a2f2a', weight: FontWeight.Bold, letterSpacing: 1.6, align: 'center' }, width);
     out.letterhead = { para, x: left, y, width, tilt: 0, skew: 0 };
     y += para.getHeight() + 14;
   }
@@ -181,7 +181,8 @@ function attempt(
     // Right-aligned: the ink sits at the right end of the box, as wide as the longest line.
     const inkW = Math.min(dw, para.getLongestLine());
     const box = { x: dx + dw - inkW, y, w: inkW, h: para.getHeight() };
-    out.date = { para, x: dx, y, width: dw, tilt: 0, skew: hand.skew, rect: box };
+    const lines = lineRects(para, letter.dateLine.length, dx, y);
+    out.date = { para, x: dx, y, width: dw, tilt: 0, skew: hand.skew, rect: box, lines: lines.length > 0 ? lines : [box] };
     y += para.getHeight() + 2;
   }
 

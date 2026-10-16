@@ -365,7 +365,7 @@ function CloseCorner({ paper }: { paper: R }) {
       <Path path={flap} color="#e2d4b2">
         <Shadow dx={1.5} dy={1.5} blur={2} color="rgba(0,0,0,0.45)" />
       </Path>
-      <Para text={t('letter.close')} x={c.x - 64} y={c.y + c.h - 15} width={58} family="Caveat" size={12} color="rgba(60,45,30,0.7)" align="right" />
+      <Para text={t('letter.close')} x={c.x - 64} y={c.y + c.h - 15} width={58} family="Kalam" size={12} color="rgba(60,45,30,0.7)" align="right" />
     </Group>
   );
 }

@@ -45,7 +45,7 @@ function Plate({ r, label }: { r: Rect; label: string }) {
         </RoundedRect>
       </ArtSlot>
       <RoundedRect x={r.x + 4} y={r.y + 5} width={r.w - 8} height={r.h - 10} r={2} color="#f6e7c4" />
-      <Para text={label} x={r.x + 2} y={r.y + (r.h - size) / 2 - 1} width={r.w - 4} family="Cormorant" size={size} color="#1a1006" align="center" weight={FontWeight.Bold} letterSpacing={long ? 0 : 0.6} />
+      <Para text={label} x={r.x + 2} y={r.y + (r.h - size) / 2 - 1} width={r.w - 4} family="Newsreader" size={size} color="#1a1006" align="center" weight={FontWeight.Bold} letterSpacing={long ? 0 : 0.6} />
     </Group>
   );
 }

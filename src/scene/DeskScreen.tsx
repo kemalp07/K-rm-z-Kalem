@@ -279,7 +279,7 @@ export function DeskScreen() {
     coverage.current = new Map(
       (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
-    dateLine.current = layout?.date ? makeCoverage([underlineBand(layout.date.rect)]) : null;
+    dateLine.current = layout?.date ? makeCoverage(layout.date.lines.map(underlineBand)) : null;
   }, [layout]);
 
   // Fresh coverage and heat for each letter that lands on the desk.
@@ -1221,15 +1221,29 @@ export function DeskScreen() {
     const size = piled ? envelopeSize(piled) : null;
     const censored = new Set(state.open ? (state.letters[state.open]?.censored ?? []) : []);
     const laid = layout?.segments.find((s) => s.seg.kind === 'sensitive' && !censored.has(s.seg.id) && (s.lines?.length ?? 0) > 0);
-    const first = laid?.lines[0];
-    const line = laid && first ? fromLocalFrame({ x: first.x + first.w / 2, y: first.y + first.h / 2 }, { x: laid.x, y: laid.y }, laid.tilt, laid.skew) : null;
+    const rails = (block: { x: number; y: number; tilt: number; skew: number }, rects: { x: number; y: number; w: number; h: number }[], yOf: (r: { y: number; h: number }) => number) =>
+      rects.map((r) => {
+        const origin = { x: block.x, y: block.y };
+        const y = yOf(r);
+        return {
+          a: fromLocalFrame({ x: r.x, y }, origin, block.tilt, block.skew),
+          b: fromLocalFrame({ x: r.x + r.w, y }, origin, block.tilt, block.skew),
+        };
+      });
+    const lineAlong = laid ? rails(laid, laid.lines, (r) => r.y + r.h / 2) : [];
+    const mid = lineAlong[Math.floor(lineAlong.length / 2)];
+    const line = mid ? { x: (mid.a.x + mid.b.x) / 2, y: (mid.a.y + mid.b.y) / 2 } : null;
     const anomaly = openLetter?.inspectables?.find((i) => i.anomaly);
+    const dateRails = layout?.date ? rails(layout.date, layout.date.lines, (r) => r.y + r.h - 1) : [];
+    const dateTip = dateRails[dateRails.length - 1];
     const mark =
       anomaly?.target === 'seal' && layout?.seal
         ? { x: layout.seal.cx, y: layout.seal.cy, kind: 'seal' as const }
-        : layout?.date
-          ? { x: layout.date.rect.x + layout.date.rect.w / 2, y: layout.date.rect.y + layout.date.rect.h, kind: 'date' as const }
+        : dateTip
+          ? { x: (dateTip.a.x + dateTip.b.x) / 2, y: (dateTip.a.y + dateTip.b.y) / 2, kind: 'date' as const }
           : null;
+    const wanted = openLetter?.reasons?.find((id) => reasons.some((r) => r.id === id));
+    const row = slip && wanted ? reasonRows(reasons).find((r) => r.r.id === wanted) : undefined;
     const rest = LAYOUT.rest.pen;
     return guideCards({
       step: guide,
@@ -1238,8 +1252,11 @@ export function DeskScreen() {
       envelope: pose && size ? { x: pose.x, y: pose.y, w: size.w, h: size.h } : null,
       pen: stickEnd(rest, rest.angle, 70),
       line,
+      lineAlong,
       lens: { x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y },
       mark,
+      markAlong: mark?.kind === 'date' ? dateRails : undefined,
+      reason: row && wanted ? { x: row.rect.x + 6, y: row.rect.y + 4, id: wanted } : null,
       stamps: { x: LAYOUT.stamps.x + LAYOUT.stamps.w / 2, y: LAYOUT.stamps.y + 28 },
     });
   })();
@@ -1285,7 +1302,7 @@ export function DeskScreen() {
           </Group>
         );
       })}
-      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Caveat" size={17} color="rgba(236,222,192,0.85)" align="center" />
+      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Kalam" size={17} color="rgba(236,222,192,0.85)" align="center" />
     </Fade>
   ) : null;
   const pile = useBaked(
