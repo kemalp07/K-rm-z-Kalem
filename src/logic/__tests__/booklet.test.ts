@@ -30,6 +30,21 @@ describe('bookletPages', () => {
   });
 });
 
+describe('reasons', () => {
+  it('names what the clerk saw, in plain words', () => {
+    expect(booklet.reasons.map((r) => r.id)).toEqual(['askeri', 'bozgun', 'moral', 'sahte', 'gizli', 'damga', 'pul']);
+    for (const r of booklet.reasons) {
+      expect(r.label.length).toBeGreaterThan(3);
+      expect(r.detail.length).toBeGreaterThan(r.label.length);
+    }
+  });
+  it('does not tell the clerk to hold a letter', () => {
+    const help = require('../../../content/help.json') as { sheets: { lines: string[] }[] };
+    const said = JSON.stringify(help.sheets) + JSON.stringify(booklet.pages);
+    expect(said).not.toContain('BEKLET');
+  });
+});
+
 describe('sampleCards', () => {
   it('copies the seals of the page it names', () => {
     const [card] = sampleCards(1, booklet);

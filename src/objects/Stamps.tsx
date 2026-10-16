@@ -10,22 +10,24 @@ import { Para } from '../scene/Para';
 import { LAYOUT } from '../scene/world';
 import { Fade } from '../scene/Fade';
 
-export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'];
+/** Stamps on the desk. Holding a letter overnight is not one of them. */
+export const DECISIONS: Decision[] = ['delivered', 'stopped', 'reported'];
 
 const KNOB_DY = 28;
-const PLATE = { w: 90, h: 36, dy: 52 };
+const PLATE = { h: 36, dy: 52 };
 
 /** The rubber stamps in a row under the letter, each above a small brass plate naming it. */
 export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
   const { x, y, w } = LAYOUT.stamps;
   const sw = w / decisions.length;
+  const plateW = Math.min(118, sw - 14);
   return decisions.map((d, i) => {
     const cx = x + sw * (i + 0.5);
     return {
       d,
-      rect: { x: cx - 40, y, w: 80, h: PLATE.dy + PLATE.h },
+      rect: { x: cx - plateW / 2, y, w: plateW, h: PLATE.dy + PLATE.h },
       knob: { x: cx, y: y + KNOB_DY },
-      plate: { x: cx - PLATE.w / 2, y: y + PLATE.dy, w: PLATE.w, h: PLATE.h },
+      plate: { x: cx - plateW / 2, y: y + PLATE.dy, w: plateW, h: PLATE.h },
     };
   });
 }
@@ -33,7 +35,7 @@ export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Dec
 /** Brass plate under each stamp. The word sits on a pale band so it stays readable. */
 function Plate({ r, label }: { r: Rect; label: string }) {
   const long = label.length > 8;
-  const size = long ? 13 : 17;
+  const size = long ? (r.w >= 108 ? 15 : 13) : 17;
   return (
     <Group>
       <ArtSlot slot="brass_plate" rect={r} shadow>

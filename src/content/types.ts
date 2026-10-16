@@ -261,11 +261,14 @@ export interface SampleCard {
   pages: string[];
 }
 
-/** One line of the reason slip that comes with DURDUR and İSTİHBARAT. */
+/** One entry of the reason slip that comes with DURDUR and İSTİHBARAT. */
 export interface Reason {
   id: string;
   day: number;
+  /** Short name. The ledger prints this. */
   label: string;
+  /** What the clerk actually saw, written out on the slip under the name. */
+  detail: string;
 }
 
 export interface Booklet {
