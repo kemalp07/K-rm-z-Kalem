@@ -46,13 +46,17 @@ const place: GuideCardInput = {
   stamps: { x: 480, y: 468 },
 };
 
-test('the pile names the envelope and the place it is laid', () => {
+test('the pile names the envelope, and the place only once it is in hand', () => {
   const cards = guideCards(place);
-  expect(cards).toHaveLength(2);
+  expect(cards).toHaveLength(1);
   expect(cards[0]!.tip).toEqual({ x: 40 + 84, y: 320 + 58.5 });
   expect(cards[0]!.what).toMatch(/tut/);
-  expect(cards[1]!.what).toMatch(/bırak/i);
-  expect(cards[1]!.why.length).toBeGreaterThan(8);
+  expect(cards[0]!.why).toMatch(/Parmağını çekme/);
+  const drop = guideCards({ ...place, hold: 'letter' });
+  expect(drop).toHaveLength(1);
+  expect(drop[0]!.what).toMatch(/bırak/i);
+  expect(drop[0]!.why).toMatch(/açılır/);
+  expect(drop[0]!.tip).toEqual({ x: 480, y: 172 });
 });
 
 test('the pen points at the pencil until it is in hand, then at the line', () => {

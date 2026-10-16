@@ -26,8 +26,8 @@ export function guideStep(s: DayState, letterOf: (id: string) => Taught): GuideS
   return 'stamp';
 }
 
-/** Which hand is showing the next instruction. Taking the pen, then the line; the glass, then the mark. */
-export type GuideHold = 'pen' | 'glass' | null;
+/** Which thing is in hand, so the next scrap can wait for it. */
+export type GuideHold = 'letter' | 'pen' | 'glass' | null;
 
 export interface GuideCard {
   what: string;
@@ -65,8 +65,8 @@ function lineCopy(letterId: string | null): { what: string; why: string } {
 }
 
 /**
- * One step at a time. The pile names the envelope and the place it goes.
- * The pen and the glass each wait until that tool is in hand, then point at the spot.
+ * One scrap at a time. The pile points at the envelope until it is in hand,
+ * and only then at the place it goes. The pen and the glass do the same.
  */
 export function guideCards(input: GuideCardInput): GuideCard[] {
   const { step, hold } = input;
@@ -74,10 +74,8 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
     const e = input.envelope;
     const tip = { x: e.x + e.w / 2, y: e.y + e.h / 2 };
     const drop = { x: LAYOUT.letter.x + LAYOUT.letter.w / 2, y: LAYOUT.letter.y + 150 };
-    return [
-      card(e.x + e.w + 14, e.y + 6, 210, 58, tip, t('guide.pile.what'), t('guide.pile.why')),
-      card(drop.x - 118, 52, 236, 58, drop, t('guide.drop.what'), t('guide.drop.why')),
-    ];
+    if (hold === 'letter') return [card(drop.x - 118, 52, 236, 58, drop, t('guide.drop.what'), t('guide.drop.why'))];
+    return [card(e.x + e.w + 14, e.y + 6, 210, 58, tip, t('guide.pile.what'), t('guide.pile.why'))];
   }
   if (step === 'pen') {
     if (hold === 'pen' && input.line) {

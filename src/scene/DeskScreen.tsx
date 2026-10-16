@@ -835,6 +835,7 @@ export function DeskScreen() {
           envAngle.value = withTiming(pose.angle * 0.3, { duration: 500, easing: SETTLE });
           envFade.value = 1;
           drag.current = { kind: 'envelope', id, ox: pose.x - p.x, oy: pose.y - p.y };
+          setGuideHold('letter');
           setDragId(id);
           haptic(Haptics.ImpactFeedbackStyle.Light);
           playSfx('paper', 0.4);
@@ -971,6 +972,7 @@ export function DeskScreen() {
         }
         break;
       case 'envelope': {
+        setGuideHold((h) => (h === 'letter' ? null : h));
         const l = getLetter(d.id)!;
         const { w, h } = envelopeSize(l);
         // Where the finger put it, not where the trailing animation has got to yet.
