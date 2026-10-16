@@ -1258,7 +1258,6 @@ export function DeskScreen() {
             <BakedImage baked={pile} />
             {openLetter?.kind === 'paket' && openLetter.items && <PackageItems items={openLetter.items} />}
             <BakedImage baked={stampCards} />
-            <Ashtray flicker={flicker} flare={ashFlare} />
             {letterNode}
             {envNode}
             {cardNode}
@@ -1278,7 +1277,6 @@ export function DeskScreen() {
                 <BakedImage baked={desk_} />
                 <BakedImage baked={pile} />
                 <BakedImage baked={stampCards} />
-                <Ashtray flicker={flicker} flare={ashFlare} />
                 {letterNode}
                 {envNode}
                 {cardNode}
@@ -1295,6 +1293,7 @@ export function DeskScreen() {
             {(state.phase === 'ledger' || state.phase === 'continued') && <Ledger state={state} day={day} slide={ledgerTransform} />}
 
             <Lamp flicker={flicker} level={lampLevel} />
+            <Ashtray flicker={flicker} flare={ashFlare} />
             <LightPool flicker={flicker} level={lampLevel} candleX={candleX} candleY={candleY} candleFlicker={candleFlicker} candleOffset={CANDLE_FLAME} dimmed={state.phase !== 'desk'} candle={hasCandle} candleReach={reveal === DEFAULT_REVEAL ? 120 : 165} />
             <Vignette />
             {showMorning && papers[morningIdx] && (

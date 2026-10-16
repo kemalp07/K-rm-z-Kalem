@@ -13,7 +13,7 @@ import { Fade } from '../scene/Fade';
 export const DECISIONS: Decision[] = ['delivered', 'held', 'stopped', 'reported'];
 
 const KNOB_DY = 28;
-const PLATE = { w: 86, h: 28, dy: 58 };
+const PLATE = { w: 90, h: 36, dy: 52 };
 
 /** The rubber stamps in a row under the letter, each above a small brass plate naming it. */
 export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Decision; rect: Rect; knob: { x: number; y: number }; plate: Rect }[] {
@@ -30,19 +30,20 @@ export function stampSlots(decisions: readonly Decision[] = DECISIONS): { d: Dec
   });
 }
 
-/** Brass plate, the small kind: one engraved word. */
+/** Brass plate under each stamp. The word sits on a pale band so it stays readable. */
 function Plate({ r, label }: { r: Rect; label: string }) {
+  const long = label.length > 8;
+  const size = long ? 13 : 17;
   return (
     <Group>
       <ArtSlot slot="brass_plate" rect={r} shadow>
-        <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={2}>
+        <RoundedRect x={r.x} y={r.y} width={r.w} height={r.h} r={3}>
           <LinearGradient start={vec(r.x, r.y)} end={vec(r.x + r.w * 0.6, r.y + r.h)} colors={[C.brassLight, C.brass, C.brassDark, C.brass]} positions={[0, 0.35, 0.7, 1]} />
           <Shadow dx={-1.5} dy={2} blur={2} color="rgba(0,0,0,0.6)" />
         </RoundedRect>
       </ArtSlot>
-      {/* Engraving: dark fill with a lit lower lip, so the letters read as cut. */}
-      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 5.6} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="rgba(255,236,190,0.35)" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
-      <Para text={label} x={r.x + 4} y={r.y + r.h / 2 - 6.2} width={r.w - 8} family="Cormorant" size={label.length > 7 ? 8.4 : 10} color="#3a2808" align="center" weight={FontWeight.Bold} letterSpacing={label.length > 7 ? 0.2 : 0.8} />
+      <RoundedRect x={r.x + 4} y={r.y + 5} width={r.w - 8} height={r.h - 10} r={2} color="#f6e7c4" />
+      <Para text={label} x={r.x + 2} y={r.y + (r.h - size) / 2 - 1} width={r.w - 4} family="Cormorant" size={size} color="#1a1006" align="center" weight={FontWeight.Bold} letterSpacing={long ? 0 : 0.6} />
     </Group>
   );
 }

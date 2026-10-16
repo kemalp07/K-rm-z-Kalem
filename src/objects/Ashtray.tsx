@@ -3,7 +3,7 @@ import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
 import { teardrop } from '../scene/Lamp';
 import { LAYOUT } from '../scene/world';
 
-const FLAME = teardrop(5, 16);
+const FLAME = teardrop(7, 22);
 
 /**
  * A brass ashtray in front of the lamp, with a low fire in the ash.
@@ -26,7 +26,7 @@ export function Ashtray({ flicker, flare }: { flicker: SharedValue<number>; flar
       <Oval x={x - r + 5} y={y - r * 0.28} width={(r - 5) * 2} height={r * 0.62} color="#1a120c" />
       <Circle cx={x - 6} cy={y + 1} r={2.2} color="#3a3532" />
       <Circle cx={x + 7} cy={y + 2} r={1.6} color="#2c2826" />
-      <Circle cx={x + 1} cy={y - 1} r={14} color="rgba(255,140,40,0.18)">
+      <Circle cx={x + 1} cy={y - 4} r={18} color="rgba(255,140,40,0.22)">
         <BlurMask blur={6} style="normal" />
       </Circle>
       <Group transform={flame}>
