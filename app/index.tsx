@@ -7,6 +7,7 @@ import { useGame } from '../src/state/store';
 
 export default function Index() {
   const hydrated = useGame((g) => g.hydrated);
+  const boot = useGame((g) => g.boot);
   const { width, height } = useWindowDimensions();
   const dark = <View style={{ flex: 1, backgroundColor: C.night }} />;
   // The app locks landscape; a phone browser can't, so ask instead.
@@ -20,7 +21,7 @@ export default function Index() {
   if (!hydrated) return dark;
   return (
     <FontsProvider fallback={dark}>
-      <DeskScreen />
+      <DeskScreen key={boot} />
     </FontsProvider>
   );
 }

@@ -40,6 +40,8 @@ interface GameStore {
   nextDay: () => void;
   restart: () => void;
   markHelpSeen: (id: HelpId) => void;
+  /** Bumped on restart so the desk remounts and the morning begins again. */
+  boot: number;
 }
 
 const firstDay = (): DayState => {
@@ -54,12 +56,13 @@ const firstDay = (): DayState => {
 
 export const useGame = create<GameStore>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       state: firstDay(),
       strokes: {},
       rings: {},
       hydrated: false,
       seenHelp: [],
+      boot: 0,
 
       open: (id) => set((g) => ({ state: openEnvelope(g.state, id) })),
       censor: (id, seg) => set((g) => ({ state: addMark(g.state, id, 'censored', seg) })),
@@ -90,7 +93,7 @@ export const useGame = create<GameStore>()(
           const side = pickSideLetters(sideLetterCandidates, day.calendar.rumi, day.sideLetters ?? 0, seed, seen);
           return { state: startDay(day, g.state, mixIntoStack(day.letters.map((l) => l.id), side, seed)) };
         }),
-      restart: () => set({ state: firstDay(), strokes: {}, rings: {} }),
+      restart: () => set({ state: firstDay(), strokes: {}, rings: {}, seenHelp: [], boot: get().boot + 1 }),
       markHelpSeen: (id) => set((g) => (g.seenHelp.includes(id) ? g : { seenHelp: [...g.seenHelp, id] })),
     }),
     {

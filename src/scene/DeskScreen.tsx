@@ -20,6 +20,7 @@ import { resolveSegments } from '../logic/variants';
 import { useGame } from '../state/store';
 import { loopSfx, playSfx } from '../sfx/sfx';
 
+import { BEGIN_RECT, BeginAgain } from '../objects/BeginAgain';
 import { BrassPlate } from '../objects/BrassPlate';
 import { CalendarLeaf } from '../objects/CalendarLeaf';
 import { ContinueCard, NEXT_RECT, RESTART_RECT } from '../objects/ContinueCard';
@@ -76,6 +77,7 @@ type Drag =
   | { kind: 'letter'; ox: number; oy: number }
   | { kind: 'ledger' }
   | { kind: 'restart' }
+  | { kind: 'begin' }
   | { kind: 'next' };
 
 /** How large the envelope is shown when its letter is folded back in. */
@@ -605,6 +607,11 @@ export function DeskScreen() {
     const g = useGame.getState();
     const s = g.state;
 
+    if (inRect(p, BEGIN_RECT, 6)) {
+      drag.current = { kind: 'begin' };
+      return;
+    }
+
     if (showMorning) {
       drag.current = null;
       const paper = papers[morningIdx];
@@ -940,6 +947,9 @@ export function DeskScreen() {
         break;
       case 'next':
         if (inRect(p, NEXT_RECT, 10)) g.nextDay();
+        break;
+      case 'begin':
+        if (inRect(p, BEGIN_RECT, 8)) g.restart();
         break;
       case 'restart':
         if (inRect(p, RESTART_RECT, 10)) {
@@ -1358,6 +1368,7 @@ export function DeskScreen() {
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
             {state.phase === 'continued' && <ContinueCard nextDay={nextDay} ready={nextReady} opacity={continueOpacity} />}
+            <BeginAgain />
           </Group>
         </FontsBridge>
       </Canvas>
