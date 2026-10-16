@@ -38,7 +38,7 @@ export const LAYOUT = {
   items: { x: 196, y: 458, w: 100, h: 90 },
   /** Oil lamp drawn in three-quarter view: base on the desk, flame up in the chimney. */
   lamp: { cx: 905, baseY: 96, flameY: 96 },
-  /** Brass ashtray on the open wood in front of the pile, clear of the lamp. */
+  /** Brass ashtray with cigarette butts, on the open wood in front of the pile. Letters burn here, not on the candle. */
   ashtray: { x: 258, y: 508, r: 34 },
   tray: { x: 804, y: 196, w: 180, h: 120 },
   purse: { x: 836, y: 398, w: 120, h: 93 },

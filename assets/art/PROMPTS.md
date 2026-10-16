@@ -279,3 +279,19 @@ Landscape format, about 3:2. Very high resolution, fine crisp linework.
 | Pullar | `stamp_1` … `stamp_5` | |
 | Gazete | `newspaper_folded`, `newspaper_page` | Yazıları kod basar |
 | Gravürler | `engraving_1` … `engraving_4` | İsteğe bağlı |
+
+## 17) Silgi ve küllük — yeniden
+
+Masada resmi olmayan iki eşya. Silgi pembe bir dikdörtgen. Mektubun atıldığı yer mum alevi gibi duruyordu; o küllük, mum değil. Mum (gizli yazıyı ısıtan şamdan) duruyor, onu yeniden üretme.
+
+```
+Hand-drawn game asset illustration for a quiet historical drama set in 1915. Fine dark-brown ink linework with muted, slightly faded watercolour washes, like a detailed illustration in an old Ottoman-era book. Worn, real objects with many small imperfections: rubbed rubber, brass tarnish and green patina in the creases, fine scratches, grey cigarette ash. Muted palette: dull pink-grey rubber, dull brass, cream paper, grey ash, dark brown-black ink. Flat, soft, even lighting with no cast shadows and no shiny highlights. Plain flat light-grey background. No text, no letters, no numbers, no logos, no watermark. No flame, no glow, no smoke.
+
+Strict orthographic top-down view, camera directly above looking straight down, like a flat lay photograph. No side of any object is visible, only its top.
+
+A single sheet of two separate objects, evenly spaced, none touching, with generous empty space around each one:
+1. A small rectangular rubber eraser lying flat, the kind a clerk keeps beside a pencil. Soft dusty pink-grey rubber, corners rounded from use, one short end worn darker and stained with a smear of dull red pencil wax, a few tiny crumbs of rubber beside that end.
+2. A shallow round brass ashtray lying flat, seen straight from above so it is a circle, not a side view. Tarnished brass rim with a few green specks in the scratches. The inside is full of fine grey ash. Three crushed cigarette butts lie in the ash: cream paper tubes, a short tan cardboard mouthpiece on one end, the other end charred black and grey. No flame, no glowing coal, no candle, no candlestick.
+
+Very high resolution, fine crisp linework.
+```
