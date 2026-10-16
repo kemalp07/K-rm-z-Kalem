@@ -11,6 +11,7 @@ import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
+import { guideStep } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
 
 /** The market's thick beeswax candle: its heat reaches further and works faster. */
@@ -27,6 +28,7 @@ import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
 import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
+import { GuideMark, GuideNote } from '../objects/Guide';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
@@ -484,6 +486,11 @@ export function DeskScreen() {
     (d: Decision, at: Point) => {
       const id = useGame.getState().state.open;
       if (!id || !layout) return;
+      const taught = guideStep(useGame.getState().state, (lid) => getLetter(lid));
+      if (taught && taught !== 'stamp') {
+        stampBack(d);
+        return;
+      }
       exiting.current = true;
       haptic(Haptics.ImpactFeedbackStyle.Heavy);
       playSfx('stamp');
@@ -546,6 +553,8 @@ export function DeskScreen() {
     openHelp(id);
     return true;
   };
+  /** Day 1's voice is already telling them what to do, so the tool itself should work. */
+  const teaching = () => guideStep(useGame.getState().state, (id) => getLetter(id)) != null;
 
   /** The eraser rubs the open letter's pen work away; found ink and anomalies stay found. */
   const erasing = useRef(false);
@@ -583,7 +592,7 @@ export function DeskScreen() {
 
   // The Şube's rules lie open on the desk the very first night, once the morning papers are read.
   useEffect(() => {
-    if (state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
+    if (state.day === 1 || state.phase !== 'desk' || showMorning || seenHelp.includes('rules')) return;
     const timer = setTimeout(() => openHelp('rules'), 900);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -712,7 +721,7 @@ export function DeskScreen() {
     const lens = { x: magX.value, y: magY.value };
     const handleEnd = { x: lens.x + MAG_HANDLE_END.x * lensK, y: lens.y + MAG_HANDLE_END.y * lensK };
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
-      if (introduce('magnifier')) return;
+      if (!teaching() && introduce('magnifier')) return;
       if (penInHand.current) penHome();
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y, start: p };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
@@ -738,7 +747,7 @@ export function DeskScreen() {
 
     const nib = { x: penX.value, y: penY.value };
     if (distToSegment(p, nib, stickEnd(nib, penAngle.value, PEN_LENGTH)) < 16) {
-      if (introduce('pen')) return;
+      if (!teaching() && introduce('pen')) return;
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
       holdPen(p, PEN_WRITE_ANGLE);
@@ -749,7 +758,7 @@ export function DeskScreen() {
 
     const e = LAYOUT.eraser;
     if (dist(p, { x: e.x + e.w / 2, y: e.y + e.h / 2 }) < 28) {
-      if (introduce('pen')) return;
+      if (!teaching() && introduce('pen')) return;
       erase();
       return;
     }
@@ -781,7 +790,7 @@ export function DeskScreen() {
     if (s.open && layout) {
       const slot = envView ? undefined : stampSlots(stampChoicesRef.current).find((sl) => inRect(p, sl.rect, 4));
       if (slot) {
-        if (introduce('stamps')) return;
+        if (!teaching() && introduce('stamps')) return;
         if (penInHand.current) penHome();
         setPressing(slot.d);
         stampProgress.value = 0;
@@ -1173,6 +1182,27 @@ export function DeskScreen() {
   // Everything that sits still, rasterised once per change (see useBakedLayer).
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
+  const guide = guideStep(state, (id) => getLetter(id));
+  const guideMarks = (() => {
+    if (!guide || help) return [];
+    if (guide === 'pile') {
+      const top = state.stack[0];
+      const letter = top ? getLetter(top) : undefined;
+      if (!letter) return [];
+      const pose = stackPose(letter, 0, LAYOUT.stack);
+      return [{ x: pose.x + envelopeSize(letter).w / 2, y: pose.y + envelopeSize(letter).h / 2, r: 52 }];
+    }
+    if (guide === 'pen') return [{ x: LAYOUT.rest.pen.x, y: LAYOUT.rest.pen.y - 40, r: 22 }];
+    if (guide === 'glass') {
+      const at: { x: number; y: number; r: number }[] = [{ x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y, r: 30 }];
+      if (layout?.date) {
+        const d = layout.date.rect;
+        at.push({ x: d.x + d.w / 2, y: d.y + d.h / 2, r: 20 });
+      }
+      return at;
+    }
+    return [{ x: LAYOUT.stamps.x + LAYOUT.stamps.w / 2, y: LAYOUT.stamps.y + 24, r: 36 }];
+  })();
   // Split by how often each part changes, so opening a letter redoes only small images.
   const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
   const desk_ = useBaked(
@@ -1306,6 +1336,14 @@ export function DeskScreen() {
                 spread={newsSpread}
                 opened={newsOpen}
               />
+            )}
+            {guide && !help && (
+              <>
+                {guideMarks.map((m) => (
+                  <GuideMark key={`${m.x}:${m.y}`} x={m.x} y={m.y} r={m.r} />
+                ))}
+                <GuideNote step={guide} mehmet={state.open === 'd1_mehmet'} />
+              </>
             )}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
