@@ -4,9 +4,14 @@ import type { DayState } from './dayFlow';
 import { LAYOUT } from '../scene/world';
 
 /** The first morning's voice. Each step waits until the clerk has done it. */
-export type GuideStep = 'pile' | 'pen' | 'glass' | 'stamp';
+export type GuideStep = 'pile' | 'pen' | 'glass' | 'date' | 'stamp';
 
-type Taught = { segments: { id: string; kind: string }[] } | undefined;
+type Taught =
+  | {
+      segments: { id: string; kind: string }[];
+      inspectables?: { id: string; target: string; line?: boolean; anomaly?: boolean }[];
+    }
+  | undefined;
 
 /**
  * Day 1 only, and only until the first letter is decided.
@@ -21,8 +26,13 @@ export function guideStep(s: DayState, letterOf: (id: string) => Taught): GuideS
   const sensitive = letter?.segments.filter((seg) => seg.kind === 'sensitive').map((seg) => seg.id) ?? [];
   const censored = new Set(prog?.censored ?? []);
   if (sensitive.some((id) => !censored.has(id))) return 'pen';
-  const rang = (prog?.marked?.length ?? 0) + (prog?.wrongMarked?.length ?? 0) > 0;
-  if (!rang) return 'glass';
+  const dateJob = letter?.inspectables?.find((i) => i.target === 'date' && i.line);
+  const seen = new Set(prog?.inspected ?? []);
+  const marked = new Set([...(prog?.marked ?? []), ...(prog?.wrongMarked ?? [])]);
+  if (dateJob && !seen.has(dateJob.id)) return 'glass';
+  if (dateJob && !marked.has('date')) return 'date';
+  const seal = letter?.inspectables?.some((i) => i.target === 'seal' && i.anomaly);
+  if (seal && !marked.has('seal')) return 'glass';
   return 'stamp';
 }
 
@@ -113,12 +123,12 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
     return [card(548, 300, 230, 58, input.pen, t('guide.pen.what'), t('guide.pen.why'))];
   }
   if (step === 'glass') {
-    // A wrong date is a line under the words, drawn as soon as the pen step is done.
-    if (input.mark?.kind === 'date') {
-      const w = 286;
-      const h = 74;
+    if (input.mark?.kind === 'date' && hold === 'glass') {
+      const w = 250;
+      const h = 58;
       const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
-      return [card(x, input.mark.y + 16, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.mark.what'), t('guide.mark.why'), input.markAlong)];
+      const y = input.mark.y + 22;
+      return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.look.what'), t('guide.look.why'))];
     }
     if (hold === 'glass' && input.mark) {
       const seal = input.mark.kind === 'seal';
@@ -139,6 +149,17 @@ export function guideCards(input: GuideCardInput): GuideCard[] {
       ];
     }
     return [card(430, 300, 210, 58, input.lens, t('guide.glass.what'), t('guide.glass.why'))];
+  }
+  if (step === 'date') {
+    if (hold === 'pen' && input.mark) {
+      const w = 268;
+      const h = 72;
+      const x = Math.max(308, Math.min(input.mark.x - w / 2, 660 - w));
+      const below = input.mark.y + 18;
+      const y = below + h < LAYOUT.letter.y + LAYOUT.letter.h - 8 ? below : input.mark.y - h - 14;
+      return [card(x, y, w, h, { x: input.mark.x, y: input.mark.y }, t('guide.date.what'), t('guide.date.why'), input.markAlong)];
+    }
+    return [card(548, 300, 240, 58, input.pen, t('guide.date.pen.what'), t('guide.date.pen.why'))];
   }
   if (input.reason) {
     const r = input.reason;

@@ -9,7 +9,7 @@ import * as Haptics from 'expo-haptics';
 import { desk, getDay, getLetter, hasTool, LAST_AUTHORED_DAY, morningPapers } from '../content/loader';
 import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
-import { isBlackedOut, isUnderlined, makeCoverage, strokeOver, underlineBand, type LineCoverage, type Point } from '../logic/censor';
+import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
 import { guideCards, guideStep, type GuideHold } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
@@ -67,7 +67,7 @@ type Drag =
   | { kind: 'card'; ox: number; oy: number }
   | { kind: 'pen-carry'; start: Point; wasInHand: boolean }
   /** `done`: sentences this stroke has covered; they are written down when the pen lifts. */
-  | { kind: 'pen-stroke'; last: Point; points: Point[]; radii: number[]; done: string[] }
+  | { kind: 'pen-stroke'; last: Point; points: Point[]; radii: number[]; done: string[]; dateDone: boolean }
   /**
    * A rubber stamp in hand. It comes down once the finger rests over the paper
    * (`still` waits for that, `timer` for the press to finish); lifting early puts it back.
@@ -271,7 +271,7 @@ export function DeskScreen() {
   const penInHand = useRef(false);
   const exiting = useRef(false);
   const coverage = useRef(new Map<string, { lines: LineCoverage[]; laid: LaidSegment }>());
-  /** Columns along the bottom of the open letter's date. An underline fills them. */
+  /** Columns across the date sentence. A censor stroke fills them, the same as any line. */
   const dateLine = useRef<LineCoverage[] | null>(null);
   const heatLocal = useRef<Record<string, number>>({});
 
@@ -279,7 +279,7 @@ export function DeskScreen() {
     coverage.current = new Map(
       (layout?.segments ?? []).filter((s) => s.seg.kind !== 'hiddenInk').map((s) => [s.seg.id, { lines: makeCoverage(s.lines), laid: s }]),
     );
-    dateLine.current = layout?.date ? makeCoverage(layout.date.lines.map(underlineBand)) : null;
+    dateLine.current = layout?.date ? makeCoverage(layout.date.lines) : null;
   }, [layout]);
 
   // Fresh coverage and heat for each letter that lands on the desk.
@@ -749,7 +749,7 @@ export function DeskScreen() {
       if (inRect(p, LAYOUT.letter)) {
         holdPen(p, PEN_DRAW_ANGLE);
         penLift.value = withTiming(0.2, { duration: 120, easing: SETTLE });
-        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [] };
+        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [], dateDone: false };
         livePath.value = waxRibbon([{ x: p.x, y: p.y, r: waxRadius(2) }]);
         penHint.value = { hover: '', done: [] };
         setDrawing(true);
@@ -879,6 +879,20 @@ export function DeskScreen() {
         const c = clampTo({ x: p.x + d.ox, y: p.y + d.oy }, BOARD, 10);
         magX.value = c.x;
         magY.value = c.y;
+        const openId = useGame.getState().state.open;
+        const date = layout?.date;
+        const job = openLetter?.inspectables?.find((i) => i.target === 'date' && i.line);
+        if (openId && date && job) {
+          const at = toLocalFrame(c, { x: date.x, y: date.y }, date.tilt, date.skew);
+          const reach = LENS_R * lensK;
+          const over = date.lines.some((r) => {
+            const cx = Math.max(r.x, Math.min(at.x, r.x + r.w));
+            const cy = Math.max(r.y, Math.min(at.y, r.y + r.h));
+            return Math.hypot(at.x - cx, at.y - cy) <= reach;
+          });
+          const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
+          if (over && !seen.includes(job.id)) useGame.getState().inspect(openId, job.id);
+        }
         break;
       }
       case 'pen-carry': {
@@ -918,7 +932,11 @@ export function DeskScreen() {
         if (layout?.date && dateLine.current) {
           const origin = { x: layout.date.x, y: layout.date.y };
           const atDate = (q: Point) => toLocalFrame(q, origin, layout.date!.tilt, layout.date!.skew);
-          strokeOver(dateLine.current, atDate(d.last), atDate(tip), 4, true);
+          const counts = waxBuries(d.radii[d.radii.length - 1] ?? 0);
+          if (strokeOver(dateLine.current, atDate(d.last), atDate(tip), 5, counts) && !d.dateDone && isBlackedOut(dateLine.current)) {
+            d.dateDone = true;
+            Haptics.selectionAsync().catch(() => {});
+          }
         }
         if (hover !== penHint.value.hover || d.done.length !== penHint.value.done.length) penHint.value = { hover, done: [...d.done] };
         d.last = tip;
@@ -1016,6 +1034,7 @@ export function DeskScreen() {
         break;
       case 'magnifier': {
         magLift.value = withTiming(0, { duration: T.lift + 100, easing: SETTLE });
+        setGuideHold((h) => (h === 'glass' ? null : h));
         // A tap, not a drag: the glass is already on a seal, a date or a postmark.
         const id = g.state.open;
         if (id && openLetter && layout && !envView && dist(p, d.start) < 8) {
@@ -1049,7 +1068,7 @@ export function DeskScreen() {
       case 'pen-stroke': {
         const id = g.state.open;
         if (id) for (const segId of d.done) g.censor(id, segId);
-        if (id && openLetter && dateLine.current && isUnderlined(dateLine.current)) {
+        if (id && openLetter && d.dateDone) {
           const insp = openLetter.inspectables?.find((i) => i.target === 'date');
           const prog = g.state.letters[id];
           const already = (prog?.marked ?? []).includes('date') || (prog?.wrongMarked ?? []).includes('date');
@@ -1234,7 +1253,7 @@ export function DeskScreen() {
     const mid = lineAlong[Math.floor(lineAlong.length / 2)];
     const line = mid ? { x: (mid.a.x + mid.b.x) / 2, y: (mid.a.y + mid.b.y) / 2 } : null;
     const anomaly = openLetter?.inspectables?.find((i) => i.anomaly);
-    const dateRails = layout?.date ? rails(layout.date, layout.date.lines, (r) => r.y + r.h - 1) : [];
+    const dateRails = layout?.date ? rails(layout.date, layout.date.lines, (r) => r.y + r.h / 2) : [];
     const dateTip = dateRails[dateRails.length - 1];
     const mark =
       anomaly?.target === 'seal' && layout?.seal
