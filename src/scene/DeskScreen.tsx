@@ -50,7 +50,7 @@ import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, Magnifi
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
-import { clampTo, dist, distToRect, distToSegment, GRIP_FROM_NIB, inRotatedRect, nibFromGrip, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
+import { clampTo, dist, distToRect, distToSegment, inRotatedRect, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
 import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
@@ -177,7 +177,7 @@ export function DeskScreen() {
   const penY = useSharedValue<number>(LAYOUT.rest.pen.y);
   const penAngle = useSharedValue<number>(LAYOUT.rest.pen.angle);
   const penLift = useSharedValue(0);
-  /** Fingers, while the pencil is held. The nib is this far down the barrel. */
+  /** The pointer, while the pencil is held. The nib sits on it; the barrel trails behind. */
   const gripX = useSharedValue(0);
   const gripY = useSharedValue(0);
   const gripOn = useSharedValue(0);
@@ -408,13 +408,13 @@ export function DeskScreen() {
     penLift.value = withTiming(0, home);
   }, [gripOn, penX, penY, penAngle, penLift]);
 
-  // The fingers stay put. The nib follows them as the pencil turns.
+  // The nib stays under the pointer. Turning the pencil swings the barrel, not the line.
   useAnimatedReaction(
-    () => ({ on: gripOn.value, angle: penAngle.value, x: gripX.value, y: gripY.value }),
+    () => ({ on: gripOn.value, x: gripX.value, y: gripY.value }),
     (cur) => {
       if (!cur.on) return;
-      penX.value = cur.x - Math.sin(cur.angle) * GRIP_FROM_NIB;
-      penY.value = cur.y + Math.cos(cur.angle) * GRIP_FROM_NIB;
+      penX.value = cur.x;
+      penY.value = cur.y;
     },
   );
 
@@ -729,15 +729,14 @@ export function DeskScreen() {
       return;
     }
 
-    // Already in hand: a touch draws from the nib, which sits ahead of the fingers.
-    // The fingers rest on the barrel, so this has to win over picking the pencil up.
+    // Already in hand: the wax comes out under the pointer, so a touch on the
+    // letter draws there. This has to win over picking the pencil up again.
     if (penInHand.current && s.open && !envView) {
-      const tip = nibFromGrip(p, PEN_DRAW_ANGLE);
-      if (inRect(tip, LAYOUT.letter)) {
+      if (inRect(p, LAYOUT.letter)) {
         holdPen(p, PEN_DRAW_ANGLE);
         penLift.value = withTiming(0.2, { duration: 120, easing: SETTLE });
-        drag.current = { kind: 'pen-stroke', last: tip, points: [tip], radii: [waxRadius(2)], done: [] };
-        livePath.value = waxRibbon([{ x: tip.x, y: tip.y, r: waxRadius(2) }]);
+        drag.current = { kind: 'pen-stroke', last: p, points: [p], radii: [waxRadius(2)], done: [] };
+        livePath.value = waxRibbon([{ x: p.x, y: p.y, r: waxRadius(2) }]);
         penHint.value = { hover: '', done: [] };
         setDrawing(true);
         playSfx('pen', 0.5);
@@ -878,7 +877,7 @@ export function DeskScreen() {
         const c = clampTo(p, BOARD, 4);
         gripX.value = c.x;
         gripY.value = c.y;
-        const tip = nibFromGrip(c, PEN_DRAW_ANGLE);
+        const tip = c;
         // The finger reports jagged points; the pencil draws the curve through them.
         const prev = d.points[d.points.length - 1]!;
         if (Math.hypot(tip.x - prev.x, tip.y - prev.y) < 1.5) break;
@@ -1192,7 +1191,11 @@ export function DeskScreen() {
       const pose = stackPose(letter, 0, LAYOUT.stack);
       return [{ x: pose.x + envelopeSize(letter).w / 2, y: pose.y + envelopeSize(letter).h / 2, r: 52 }];
     }
-    if (guide === 'pen') return [{ x: LAYOUT.rest.pen.x, y: LAYOUT.rest.pen.y - 40, r: 22 }];
+    if (guide === 'pen') {
+      const rest = LAYOUT.rest.pen;
+      const on = stickEnd(rest, rest.angle, 48);
+      return [{ x: on.x, y: on.y, r: 26 }];
+    }
     if (guide === 'glass') {
       const at: { x: number; y: number; r: number }[] = [{ x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y, r: 30 }];
       if (layout?.date) {

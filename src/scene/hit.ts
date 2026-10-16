@@ -34,9 +34,9 @@ export const stickEnd = (nib: Point, angle: number, length: number): Point => ({
   y: nib.y - Math.cos(angle) * length,
 });
 
-/** How far up the barrel the fingers sit, so the nib stays ahead of them. */
+/** A point this far up the barrel. The desk aims with the pointer on the nib, not from here. */
 export const GRIP_FROM_NIB = 72;
-/** In the hand the pencil leans with the writing; the nib sits down-right of the fingers. */
+/** In the hand the barrel trails up-left of the nib. */
 export const PEN_WRITE_ANGLE = -0.62;
 /** Flatter on the paper while a line is being drawn. */
 export const PEN_DRAW_ANGLE = -0.95;
