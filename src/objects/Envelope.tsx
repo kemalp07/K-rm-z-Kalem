@@ -119,7 +119,7 @@ function StampCorner({ letter, w, steamed }: { letter: Letter; w: number; steame
       <Group>
         <Rect x={rect.x - 2} y={rect.y - 4} width={rect.w + 4} height={rect.h + 8} color="#e5d9bd" />
         <Rect x={rect.x + 1} y={rect.y + 1} width={rect.w - 2} height={rect.h - 2} style="stroke" strokeWidth={1.1} color="rgba(80,60,120,0.75)" />
-        <Para text={t('envelope.fieldPost')} x={rect.x + 1} y={rect.y + 6} width={rect.w - 2} family="Newsreader" size={7.5} color="rgba(80,60,120,0.85)" weight={FontWeight.Bold} align="center" lineHeight={0.95} />
+        <Para text={t('envelope.fieldPost')} x={rect.x + 1} y={rect.y + 6} width={rect.w - 2} family="Cormorant" size={7.5} color="rgba(80,60,120,0.85)" weight={FontWeight.Bold} align="center" lineHeight={0.95} />
       </Group>
     );
   }
@@ -135,7 +135,7 @@ function StampCorner({ letter, w, steamed }: { letter: Letter; w: number; steame
       {steamed && (
         <Group>
           <Rect x={rect.x + 1} y={rect.y + 1} width={rect.w - 2} height={rect.h - 2} color="rgba(190,170,120,0.35)" />
-          {letter.underStamp && <Para text={letter.underStamp} x={rect.x + 2} y={rect.y + 3} width={rect.w - 4} family="Kalam" size={6.5} color="#3a2a1c" align="center" lineHeight={0.9} />}
+          {letter.underStamp && <Para text={letter.underStamp} x={rect.x + 2} y={rect.y + 3} width={rect.w - 4} family="Caveat" size={6.5} color="#3a2a1c" align="center" lineHeight={0.9} />}
         </Group>
       )}
       <Group transform={steamed ? [{ translateX: -30 }, { translateY: 26 }, { rotate: -0.5 }] : letter.stampFlipped ? [{ rotate: Math.PI }] : []} origin={{ x: cx, y: STAMP_AT.cy }}>
@@ -151,7 +151,7 @@ function AddressImpl({ letter }: { letter: Letter }) {
   const { w, h } = envelopeSize(letter);
   const isPackage = letter.kind === 'paket';
   const ink = letter.hand === 'elegant' ? C.inkBlue : C.ink;
-  const family = letter.hand === 'clerical' ? 'Newsreader' : 'Kalam';
+  const family = letter.hand === 'clerical' ? 'Cormorant' : 'Caveat';
   const left = isPackage ? 36 : 18;
   const top = isPackage ? 34 : h * 0.4;
   const width = w - left - (isPackage ? 30 : 10);
@@ -163,7 +163,7 @@ function AddressImpl({ letter }: { letter: Letter }) {
         letter.recipient,
         {
           family,
-          size: family === 'Kalam' ? 17 : 13,
+          size: family === 'Caveat' ? 17 : 13,
           color: ink,
           weight: FontWeight.Medium,
           lineHeight: 0.95,
@@ -175,8 +175,8 @@ function AddressImpl({ letter }: { letter: Letter }) {
   return (
     <Group>
       <Paragraph paragraph={name} x={left} y={top} width={width} />
-      <Para text={letter.to} x={left + 10} y={top + name.getHeight() - 1} width={width - 10} family={family} size={family === 'Kalam' ? 14 : 11} color={ink} italic={family === 'Newsreader'} />
-      {isPackage && <Para text={t('envelope.package')} x={4} y={h - 18} width={60} family="Newsreader" size={10} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1.4} />}
+      <Para text={letter.to} x={left + 10} y={top + name.getHeight() - 1} width={width - 10} family={family} size={family === 'Caveat' ? 14 : 11} color={ink} italic={family === 'Cormorant'} />
+      {isPackage && <Para text={t('envelope.package')} x={4} y={h - 18} width={60} family="Cormorant" size={10} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1.4} />}
     </Group>
   );
 }
@@ -186,7 +186,7 @@ function BackImpl({ letter }: { letter: Letter }) {
   const { w, h } = envelopeSize(letter);
   const body = useMemo(() => roughRect({ x: 0, y: 0, w, h }, `envk-${letter.id}`, 0.8), [w, h, letter.id]);
   const ink = letter.hand === 'elegant' ? C.inkBlue : C.ink;
-  const family = letter.hand === 'clerical' ? 'Newsreader' : 'Kalam';
+  const family = letter.hand === 'clerical' ? 'Cormorant' : 'Caveat';
   const fromFront = letter.direction === 'cepheden';
   return (
     <Group>
@@ -197,17 +197,17 @@ function BackImpl({ letter }: { letter: Letter }) {
       <Path path={shakyLine(0, 0, w / 2, h * 0.46, `bk1${letter.id}`, 0.6)} style="stroke" strokeWidth={1} color="rgba(90,70,40,0.45)" />
       <Path path={shakyLine(w / 2, h * 0.46, w, 0, `bk2${letter.id}`, 0.6)} style="stroke" strokeWidth={1} color="rgba(90,70,40,0.45)" />
       <Path path={shakyLine(2, 3, w - 2, 2, `bk3${letter.id}`, 1.6)} style="stroke" strokeWidth={1.4} color="rgba(60,40,20,0.5)" />
-      <Para text={t('envelope.sender')} x={14} y={h * 0.52} width={60} family="Newsreader" size={9} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1} />
-      <Para text={letter.sender} x={14} y={h * 0.6} width={w - 24} family={family} size={family === 'Kalam' ? 15 : 12} color={ink} weight={FontWeight.Medium} />
+      <Para text={t('envelope.sender')} x={14} y={h * 0.52} width={60} family="Cormorant" size={9} color="rgba(40,25,10,0.7)" weight={FontWeight.Bold} letterSpacing={1} />
+      <Para text={letter.sender} x={14} y={h * 0.6} width={w - 24} family={family} size={family === 'Caveat' ? 15 : 12} color={ink} weight={FontWeight.Medium} />
       <Para
         text={letter.fromAddress ?? (fromFront ? t('envelope.field') : letter.from)}
         x={22}
         y={h * 0.6 + 17}
         width={w - 30}
         family={family}
-        size={family === 'Kalam' ? 13 : 10.5}
+        size={family === 'Caveat' ? 13 : 10.5}
         color={ink}
-        italic={family === 'Newsreader'}
+        italic={family === 'Cormorant'}
       />
     </Group>
   );

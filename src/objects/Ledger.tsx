@@ -64,9 +64,9 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
       const gap = 10 * k;
       let y = top;
       const out = texts.map((e) => {
-        const route = makeParagraph(provider, e.route, { family: 'Kalam', size: 17 * k, color: C.ink, weight: FontWeight.Medium, lineHeight: 0.95 }, width);
-        const act = makeParagraph(provider, e.act, { family: 'Kalam', size: 15 * k, color: e.color, weight: FontWeight.Bold, lineHeight: 0.95 }, width - 8);
-        const outcome = makeParagraph(provider, e.outcome, { family: 'Newsreader', size: 13.5 * k, color: '#4a3d30', italic: true, lineHeight: 0.95 }, width - 10);
+        const route = makeParagraph(provider, e.route, { family: 'Caveat', size: 17 * k, color: C.ink, weight: FontWeight.Medium, lineHeight: 0.95 }, width);
+        const act = makeParagraph(provider, e.act, { family: 'Caveat', size: 15 * k, color: e.color, weight: FontWeight.Bold, lineHeight: 0.95 }, width - 8);
+        const outcome = makeParagraph(provider, e.outcome, { family: 'Cormorant', size: 13.5 * k, color: '#4a3d30', italic: true, lineHeight: 0.95 }, width - 10);
         const at = y;
         y += route.getHeight() + act.getHeight() + outcome.getHeight() + gap;
         return { id: e.id, at, route, act, outcome, k };
@@ -89,13 +89,13 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         <Line p1={vec(r.x + 44, r.y + 8)} p2={vec(r.x + 44, r.y + r.h - 8)} strokeWidth={0.9} color="rgba(163,36,27,0.4)" />
       </ArtSlot>
 
-      <Para text={t('ledger.title')} x={r.x + L} y={r.y + 18} width={260} family="Newsreader" size={24} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} />
+      <Para text={t('ledger.title')} x={r.x + L} y={r.y + 18} width={260} family="Cormorant" size={24} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} />
       <Para
         text={t('ledger.dayLine', { rumi: day.calendar.rumi, weekday: day.calendar.weekday })}
         x={r.x + r.w - 236}
         y={r.y + 26}
         width={210}
-        family="Newsreader"
+        family="Cormorant"
         size={14}
         color={C.inkFaded}
         italic
@@ -107,7 +107,7 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         const y2 = y1 + e.act.getHeight();
         return (
           <Group key={e.id}>
-            <Para text={`${i + 1}.`} x={r.x + M - 28} y={e.at} width={26} family="Kalam" size={17 * e.k} color={C.inkFaded} />
+            <Para text={`${i + 1}.`} x={r.x + M - 28} y={e.at} width={26} family="Caveat" size={17 * e.k} color={C.inkFaded} />
             <Paragraph paragraph={e.route} x={r.x + L} y={e.at} width={e.route.getMaxWidth()} />
             <Paragraph paragraph={e.act} x={r.x + L + 8} y={y1} width={e.act.getMaxWidth()} />
             <Paragraph paragraph={e.outcome} x={r.x + L + 10} y={y2} width={e.outcome.getMaxWidth()} />
@@ -115,7 +115,7 @@ export function Ledger({ state, day, slide }: { state: DayState; day: Day; slide
         );
       })}
 
-      <Para text={t('ledger.close')} x={r.x + r.w - 206} y={r.y + r.h - 34} width={160} family="Kalam" size={15} color="rgba(60,45,30,0.6)" align="right" />
+      <Para text={t('ledger.close')} x={r.x + r.w - 206} y={r.y + r.h - 34} width={160} family="Caveat" size={15} color="rgba(60,45,30,0.6)" align="right" />
     </Group>
   );
 }

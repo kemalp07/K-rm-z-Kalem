@@ -30,7 +30,7 @@ function ItemTag({ items }: { items: PackageItem[] }) {
       <Path path={tag} color="#e6d9bc">
         <Shadow dx={-2} dy={2} blur={2} color="rgba(0,0,0,0.5)" />
       </Path>
-      <Para text={items.map((i) => i.name).join(' · ')} x={rect.x + 6} y={rect.y + 3} width={rect.w - 12} family="Kalam" size={14} color="#4a4038" />
+      <Para text={items.map((i) => i.name).join(' · ')} x={rect.x + 6} y={rect.y + 3} width={rect.w - 12} family="Caveat" size={14} color="#4a4038" />
     </Group>
   );
 }

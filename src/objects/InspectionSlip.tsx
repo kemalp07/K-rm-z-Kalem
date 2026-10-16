@@ -20,7 +20,7 @@ export function InspectionSlip({ note, x, y, opacity }: { note: string; x: numbe
       <Path path={shape} color="#e9dfc9">
         <Shadow dx={-3} dy={4} blur={4} color="rgba(0,0,0,0.55)" />
       </Path>
-      <Para text={note} x={left + 10} y={top + 8} width={SLIP_W - 20} family="Kalam" size={15} color={C.inkFaded} lineHeight={0.98} />
+      <Para text={note} x={left + 10} y={top + 8} width={SLIP_W - 20} family="Caveat" size={15} color={C.inkFaded} lineHeight={0.98} />
     </Group>
     </Fade>
   );

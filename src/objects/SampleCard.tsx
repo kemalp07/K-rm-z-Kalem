@@ -31,14 +31,14 @@ export function SampleCardFace({ card }: { card: Card & { seals: BookletSeal[] }
         <Shadow dx={-3} dy={4} blur={4} color="rgba(0,0,0,0.55)" />
       </Path>
       <Path path={inner} style="stroke" strokeWidth={0.8} color="rgba(43,33,24,0.45)" />
-      <Para text={card.title} x={0} y={13} width={CARD.w} family="Newsreader" size={11} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} align="center" />
+      <Para text={card.title} x={0} y={13} width={CARD.w} family="Cormorant" size={11} color={C.ink} weight={FontWeight.Bold} letterSpacing={1} align="center" />
       {card.seals.slice(0, 6).map((s, i) => {
         const cx = 10 + cellW * (i % 2) + cellW / 2;
         const top = 36 + Math.floor(i / 2) * rowH;
         return (
           <Group key={`${s.legend}${i}`}>
             <SealExample seal={s} cx={cx} cy={top + 28} scale={SEAL_SCALE} />
-            <Para text={s.caption} x={cx - cellW / 2} y={top + 59} width={cellW} family="Newsreader" size={10} color={C.inkFaded} italic align="center" />
+            <Para text={s.caption} x={cx - cellW / 2} y={top + 59} width={cellW} family="Cormorant" size={10} color={C.inkFaded} italic align="center" />
           </Group>
         );
       })}

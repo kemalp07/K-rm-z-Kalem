@@ -28,7 +28,7 @@ export function bookletFrames(r: Box) {
 /** Spread k shows the cover (k = 0) or page 2k-1 on the left, and page 2k on the right. */
 export const spreadCount = (pages: number) => Math.ceil((pages + 1) / 2);
 
-const BODY: TextSpec = { family: 'Newsreader', size: 12.5, color: C.ink, weight: FontWeight.SemiBold, lineHeight: 1.02 };
+const BODY: TextSpec = { family: 'Cormorant', size: 12.5, color: C.ink, weight: FontWeight.SemiBold, lineHeight: 1.02 };
 const SMALL: TextSpec = { ...BODY, size: 11.5 };
 const RED = '#8c2a1f';
 const SEAL_R = 32;
@@ -48,7 +48,7 @@ function layoutPage(provider: SkTypefaceFontProvider, page: BookletPage, r: Box)
     return p.getHeight();
   };
   let y = r.y + 4;
-  y += text(page.title, { family: 'Newsreader', size: 14.5, color: C.ink, weight: FontWeight.Bold, letterSpacing: 1.6, align: 'center' }, r.x, y, r.w) + 3;
+  y += text(page.title, { family: 'Cormorant', size: 14.5, color: C.ink, weight: FontWeight.Bold, letterSpacing: 1.6, align: 'center' }, r.x, y, r.w) + 3;
   out.push({ k: 'rule', x1: r.x + r.w * 0.3, x2: r.x + r.w * 0.7, y, color: 'rgba(43,33,24,0.5)' });
   y += 9;
 
@@ -125,7 +125,7 @@ function PageView({ page, r }: { page: BookletPage; r: Box }) {
         if (d.k === 'box') return <Rect key={i} x={d.r.x} y={d.r.y} width={d.r.w} height={d.r.h} style="stroke" strokeWidth={0.9} color="rgba(140,42,31,0.55)" />;
         return <SealExample key={i} seal={d.seal} cx={d.cx} cy={d.cy} />;
       })}
-      <Para text={label} x={r.x} y={r.y + r.h + 6} width={r.w} family="Newsreader" size={10} color={C.inkFaded} italic align="center" />
+      <Para text={label} x={r.x} y={r.y + r.h + 6} width={r.w} family="Cormorant" size={10} color={C.inkFaded} italic align="center" />
     </Group>
   );
 }
@@ -134,16 +134,16 @@ function CoverPage({ r }: { r: Box }) {
   const c = booklet.cover;
   return (
     <Group>
-      <Para text={c.title} x={r.x + 20} y={r.y + 56} width={r.w - 40} family="Newsreader" size={19} color={C.ink} weight={FontWeight.Bold} letterSpacing={2} align="center" lineHeight={1.1} />
+      <Para text={c.title} x={r.x + 20} y={r.y + 56} width={r.w - 40} family="Cormorant" size={19} color={C.ink} weight={FontWeight.Bold} letterSpacing={2} align="center" lineHeight={1.1} />
       <Line p1={vec(r.x + r.w * 0.25, r.y + 112)} p2={vec(r.x + r.w * 0.75, r.y + 112)} strokeWidth={0.8} color="rgba(43,33,24,0.5)" />
-      <Para text={c.subtitle} x={r.x} y={r.y + 120} width={r.w} family="Newsreader" size={14} color={C.inkFaded} italic align="center" />
+      <Para text={c.subtitle} x={r.x} y={r.y + 120} width={r.w} family="Cormorant" size={14} color={C.inkFaded} italic align="center" />
       {c.lines.map((l, i) => (
-        <Para key={i} text={l} x={r.x + 10} y={r.y + 168 + i * 20} width={r.w - 20} family="Newsreader" size={12.5} color={C.ink} weight={FontWeight.SemiBold} align="center" />
+        <Para key={i} text={l} x={r.x + 10} y={r.y + 168 + i * 20} width={r.w - 20} family="Cormorant" size={12.5} color={C.ink} weight={FontWeight.SemiBold} align="center" />
       ))}
       {/* The Şube's stamp, as on any book it issues. */}
       <Circle cx={r.x + r.w / 2} cy={r.y + 262} r={22} style="stroke" strokeWidth={2} color="rgba(91,46,74,0.5)" />
       <Circle cx={r.x + r.w / 2} cy={r.y + 262} r={15} style="stroke" strokeWidth={0.8} color="rgba(91,46,74,0.45)" />
-      <Para text={c.note} x={r.x + 10} y={r.y + r.h - 22} width={r.w - 20} family="Newsreader" size={10.5} color={C.inkFaded} italic align="center" />
+      <Para text={c.note} x={r.x + 10} y={r.y + r.h - 22} width={r.w - 20} family="Cormorant" size={10.5} color={C.inkFaded} italic align="center" />
     </Group>
   );
 }
@@ -159,7 +159,7 @@ export function BookletOnDesk({ unread }: { unread: boolean }) {
         <Path path={fallback} color="#5a2a24" />
         <Rect x={label.x} y={label.y} width={label.w} height={label.h} color="#e4d6b4" />
       </ArtSlot>
-      <Para text={booklet.cover.label} x={label.x - 6} y={label.y + label.h / 2 - 4} width={label.w + 12} family="Newsreader" size={5.4} color={C.ink} weight={FontWeight.Bold} align="center" />
+      <Para text={booklet.cover.label} x={label.x - 6} y={label.y + label.h / 2 - 4} width={label.w + 12} family="Cormorant" size={5.4} color={C.ink} weight={FontWeight.Bold} align="center" />
       {unread && (
         <Group>
           <Circle cx={r.x + r.w - 8} cy={r.y + 8} r={3.4} color={C.censor} />
@@ -187,11 +187,11 @@ export function BookletView({ pages, spread, opacity }: { pages: BookletPage[]; 
         </ArtSlot>
         {spread === 0 ? <CoverPage r={frames.left} /> : left && <PageView page={left} r={frames.left} />}
         {right && <PageView page={right} r={frames.right} />}
-        {spread > 0 && <Para text="‹" x={r.x + 14} y={r.y + r.h * 0.42} width={20} family="Newsreader" size={30} color="rgba(60,45,30,0.5)" />}
-        {spread < last && <Para text="›" x={r.x + r.w - 32} y={r.y + r.h * 0.42} width={20} family="Newsreader" size={30} color="rgba(60,45,30,0.5)" />}
+        {spread > 0 && <Para text="‹" x={r.x + 14} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={30} color="rgba(60,45,30,0.5)" />}
+        {spread < last && <Para text="›" x={r.x + r.w - 32} y={r.y + r.h * 0.42} width={20} family="Cormorant" size={30} color="rgba(60,45,30,0.5)" />}
         {/* Either side of the ribbon. */}
-        <Para text={booklet.turnHint} x={frames.left.x} y={r.y + r.h * 0.86} width={frames.left.w} family="Kalam" size={15} color="rgba(232,218,190,0.75)" align="center" />
-        <Para text={t('help.close')} x={frames.right.x} y={r.y + r.h * 0.86} width={frames.right.w} family="Kalam" size={15} color="rgba(232,218,190,0.75)" align="center" />
+        <Para text={booklet.turnHint} x={frames.left.x} y={r.y + r.h * 0.86} width={frames.left.w} family="Caveat" size={15} color="rgba(232,218,190,0.75)" align="center" />
+        <Para text={t('help.close')} x={frames.right.x} y={r.y + r.h * 0.86} width={frames.right.w} family="Caveat" size={15} color="rgba(232,218,190,0.75)" align="center" />
       </Group>
     </Fade>
   );

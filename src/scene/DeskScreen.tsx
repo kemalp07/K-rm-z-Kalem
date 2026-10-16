@@ -1302,7 +1302,7 @@ export function DeskScreen() {
           </Group>
         );
       })}
-      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Kalam" size={17} color="rgba(236,222,192,0.85)" align="center" />
+      <Para text={t('envelope.close')} x={0} y={ENV_TOP + envelopeSize(openLetter).h * ENV_ZOOM + 14} width={WORLD.w} family="Caveat" size={17} color="rgba(236,222,192,0.85)" align="center" />
     </Fade>
   ) : null;
   const pile = useBaked(

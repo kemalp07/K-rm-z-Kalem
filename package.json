@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@expo-google-fonts/caveat": "^0.4.2",
+    "@expo-google-fonts/cormorant-garamond": "^0.4.1",
     "@expo-google-fonts/kalam": "^0.4.1",
-    "@expo-google-fonts/newsreader": "^0.4.1",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@shopify/react-native-skia": "^2.6.2",
     "expo": "~57.0.26",

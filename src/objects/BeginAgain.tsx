@@ -16,7 +16,7 @@ export function BeginAgain() {
       <Path path={shape} color={C.paper}>
         <Shadow dx={1} dy={2} blur={3} color="rgba(0,0,0,0.5)" />
       </Path>
-      <Para text={t('desk.restart')} x={BEGIN_RECT.x + 6} y={BEGIN_RECT.y + 6} width={BEGIN_RECT.w - 12} family="Newsreader" size={13} weight={FontWeight.SemiBold} color={C.ink} align="center" />
+      <Para text={t('desk.restart')} x={BEGIN_RECT.x + 6} y={BEGIN_RECT.y + 6} width={BEGIN_RECT.w - 12} family="Cormorant" size={13} weight={FontWeight.SemiBold} color={C.ink} align="center" />
     </Group>
   );
 }

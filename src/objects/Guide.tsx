@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { BlurMask, FontWeight, Group, Path, Shadow, Skia, type SkPath } from '@shopify/react-native-skia';
+import { BlurMask, Group, Path, Shadow, Skia, type SkPath } from '@shopify/react-native-skia';
 import type { GuideCard } from '../logic/guide';
 import type { Point, Rect } from '../logic/censor';
 import { C } from '../scene/palette';
@@ -70,8 +70,8 @@ export function GuideCallout({ card }: { card: GuideCard }) {
           <Path path={shape} style="stroke" strokeWidth={14} color="rgba(120,78,32,0.28)">
             <BlurMask blur={6} style="normal" />
           </Path>
-          <Para text={what} x={box.x + 12} y={box.y + 10} width={box.w - 24} family="Newsreader" size={15} weight={FontWeight.SemiBold} color={C.ink} align="center" />
-          <Para text={why} x={box.x + 12} y={box.y + 30} width={box.w - 24} family="Newsreader" size={13} color={C.inkFaded} align="center" />
+          <Para text={what} x={box.x + 12} y={box.y + 10} width={box.w - 24} family="Kalam" size={15} color={C.ink} align="center" />
+          <Para text={why} x={box.x + 12} y={box.y + 30} width={box.w - 24} family="Kalam" size={13} color={C.inkFaded} align="center" />
         </Group>
       </Group>
     </Group>

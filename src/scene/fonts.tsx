@@ -11,8 +11,8 @@ import {
   type SkTypefaceFontProvider,
 } from '@shopify/react-native-skia';
 
-/** Kalam is every human hand on the desk; Newsreader is print, brass and rubber. */
-export type Family = 'Kalam' | 'Newsreader';
+/** Caveat is every human hand on the desk; Cormorant is print, brass and rubber. Kalam is only the tutorial scrap. */
+export type Family = 'Caveat' | 'Cormorant' | 'Kalam';
 
 export interface TextSpec {
   family: Family;
@@ -41,19 +41,24 @@ const src = (m: FontModule) => (typeof m === 'string' ? { uri: m } : m) as unkno
 // font whenever its source object changes, and a fresh { uri } on every render would
 // reload forever (each reload re-rendering the whole desk).
 const FONT_SOURCES = {
+  Caveat: [
+    src(require('@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf')),
+    src(require('@expo-google-fonts/caveat/500Medium/Caveat_500Medium.ttf')),
+    src(require('@expo-google-fonts/caveat/600SemiBold/Caveat_600SemiBold.ttf')),
+    src(require('@expo-google-fonts/caveat/700Bold/Caveat_700Bold.ttf')),
+  ],
+  Cormorant: [
+    src(require('@expo-google-fonts/cormorant-garamond/400Regular/CormorantGaramond_400Regular.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/400Regular_Italic/CormorantGaramond_400Regular_Italic.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/600SemiBold/CormorantGaramond_600SemiBold.ttf')),
+    src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf')),
+  ],
   Kalam: [
     src(require('@expo-google-fonts/kalam/400Regular/Kalam_400Regular.ttf')),
     src(require('@expo-google-fonts/kalam/700Bold/Kalam_700Bold.ttf')),
   ],
-  Newsreader: [
-    src(require('@expo-google-fonts/newsreader/400Regular/Newsreader_400Regular.ttf')),
-    src(require('@expo-google-fonts/newsreader/400Regular_Italic/Newsreader_400Regular_Italic.ttf')),
-    src(require('@expo-google-fonts/newsreader/500Medium/Newsreader_500Medium.ttf')),
-    src(require('@expo-google-fonts/newsreader/600SemiBold/Newsreader_600SemiBold.ttf')),
-    src(require('@expo-google-fonts/newsreader/700Bold/Newsreader_700Bold.ttf')),
-  ],
 };
-const SEAL_FONT = src(require('@expo-google-fonts/newsreader/700Bold/Newsreader_700Bold.ttf'));
+const SEAL_FONT = src(require('@expo-google-fonts/cormorant-garamond/700Bold/CormorantGaramond_700Bold.ttf'));
 
 export function FontsProvider({ children, fallback }: { children: ReactNode; fallback?: ReactNode }) {
   const provider = useFonts(FONT_SOURCES);
