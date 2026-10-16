@@ -5,8 +5,9 @@ import { useDerivedValue } from 'react-native-reanimated';
 import { hasArt, TintedArt } from '../art/ArtSlot';
 import { getHelp } from '../content/loader';
 import { t } from '../content/strings';
-import type { HelpId } from '../content/types';
+import type { HelpId, HelpSheet } from '../content/types';
 import { Fade } from '../scene/Fade';
+import { makeParagraph, useSceneFonts } from '../scene/fonts';
 import { C } from '../scene/palette';
 import { Para } from '../scene/Para';
 import { roughRect, shakyLine } from '../scene/rough';
@@ -56,16 +57,60 @@ export function HelpSlip({ id, unread }: { id: HelpId; unread: boolean }) {
   );
 }
 
+const PAD = 36;
+/** Stamp nameplates sit just under the old sheet and read as part of the note. Cover them. */
+const PLATE_BOTTOM = LAYOUT.stamps.y + 52 + 36;
+
+/**
+ * Each line is as tall as its own words. A fixed step made the short lines float
+ * and the long ones run into each other, and into "Kapamak için dokununuz".
+ */
+function laySheet(provider: ReturnType<typeof useSceneFonts>['provider'], sheet: HelpSheet, isRules: boolean, textWidth: number) {
+  const family = isRules ? 'Cormorant' : 'Caveat';
+  const weight = isRules ? FontWeight.SemiBold : FontWeight.Normal;
+  const sizes = isRules ? [15.5, 14.5, 13.5] : [17.5, 16, 15];
+  const lineTop = sheet.subtitle ? 84 : 66;
+  const gap = 13;
+  let chosen = sizes[sizes.length - 1]!;
+  let heights: number[] = [];
+  for (const size of sizes) {
+    chosen = size;
+    heights = sheet.lines.map(
+      (line) => makeParagraph(provider, line, { family, size, color: C.ink, weight, lineHeight: 1.12 }, textWidth).getHeight(),
+    );
+    const textH = heights.reduce((sum, h) => sum + h, 0) + gap * Math.max(0, heights.length - 1);
+    const footerH = sheet.footer ? 26 : 0;
+    const need = lineTop + textH + (footerH ? 12 + footerH : 0) + 18 + 22 + 20;
+    if (need <= 470 || size === sizes[sizes.length - 1]) break;
+  }
+  const ys: number[] = [];
+  let y = LAYOUT.helpSheet.y + lineTop;
+  for (const h of heights) {
+    ys.push(y);
+    y += h + gap;
+  }
+  const textBottom = y - gap;
+  const footerY = sheet.footer ? textBottom + 12 : null;
+  const after = footerY != null ? footerY + 24 : textBottom;
+  const closeY = after + 16;
+  // A note that already reaches the stamps grows over their nameplates, so the
+  // bottom edge is paper and one quiet line, not three brass plates.
+  const contentBottom = closeY + 28;
+  const paperBottom = contentBottom > PLATE_BOTTOM - 70 ? Math.max(contentBottom, PLATE_BOTTOM + 14) : contentBottom;
+  return { size: chosen, ys, footerY, closeY, paperBottom: Math.min(paperBottom, WORLD.h - 8) };
+}
+
 /** The note opened up over the desk. Any touch puts it back. */
 export function HelpSheetView({ id, opacity }: { id: HelpId; opacity: SharedValue<number> }) {
   const sheet = getHelp(id);
-  const r = LAYOUT.helpSheet;
+  const base = LAYOUT.helpSheet;
   const isRules = id === 'rules';
-  const page = useMemo(() => roughRect(r, `help-sheet-${id}`, 1.1, !isRules), [r, id, isRules]);
+  const { provider } = useSceneFonts();
+  const textWidth = base.w - PAD * 2 - 26;
+  const laid = useMemo(() => laySheet(provider, sheet, isRules, textWidth), [provider, sheet, isRules, textWidth]);
+  const r = { ...base, h: laid.paperBottom - base.y };
+  const page = useMemo(() => roughRect(r, `help-sheet-${id}`, 1.1, !isRules), [r.x, r.y, r.w, r.h, id, isRules]); // eslint-disable-line react-hooks/exhaustive-deps
   const rise = useDerivedValue(() => [{ translateY: (1 - opacity.value) * 16 }]);
-  const pad = 34;
-  const lineTop = r.y + (sheet.subtitle ? 92 : 74);
-  const gap = isRules ? 48 : 58;
   return (
     <Fade opacity={opacity}>
       <Rect x={-400} y={-200} width={WORLD.w + 800} height={WORLD.h + 400} color="rgba(5,4,3,0.55)" />
@@ -77,19 +122,24 @@ export function HelpSheetView({ id, opacity }: { id: HelpId; opacity: SharedValu
             <Shadow dx={-6} dy={10} blur={12} color="rgba(0,0,0,0.6)" />
           </Path>
         )}
-        <Para text={sheet.title} x={r.x} y={r.y + 30} width={r.w} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 24 : 28} color={C.ink} weight={FontWeight.Bold} letterSpacing={isRules ? 2 : 0} align="center" />
-        {sheet.subtitle && <Para text={sheet.subtitle} x={r.x} y={r.y + 60} width={r.w} family="Cormorant" size={14} color={C.inkFaded} italic align="center" />}
-        {sheet.lines.map((line, i) => (
-          <Group key={i}>
-            <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + pad} y={lineTop + i * gap} width={24} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 16 : 18} color={isRules ? C.censor : C.inkFaded} weight={FontWeight.Bold} />
-            <Para text={line} x={r.x + pad + 26} y={lineTop + i * gap} width={r.w - pad * 2 - 26} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 15.5 : 19} color={C.ink} lineHeight={isRules ? 1.05 : 1} weight={isRules ? FontWeight.SemiBold : FontWeight.Normal} />
-          </Group>
-        ))}
-        {sheet.footer && <Para text={sheet.footer} x={r.x + pad} y={r.y + r.h - 64} width={r.w - pad * 2} family="Cormorant" size={13} color={C.inkFaded} italic align="center" />}
-        <Para text={t('help.close')} x={r.x} y={r.y + r.h - 34} width={r.w} family="Caveat" size={14} color="rgba(60,45,30,0.55)" align="center" />
+        <Para text={sheet.title} x={r.x} y={r.y + 26} width={r.w} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 24 : 28} color={C.ink} weight={FontWeight.Bold} letterSpacing={isRules ? 2 : 0} align="center" />
+        {sheet.subtitle && <Para text={sheet.subtitle} x={r.x} y={r.y + 56} width={r.w} family="Cormorant" size={14} color={C.inkFaded} italic align="center" />}
+        {sheet.lines.map((line, i) => {
+          const y = laid.ys[i] ?? 0;
+          return (
+            <Group key={i}>
+              <Para text={isRules ? `${i + 1}.` : '—'} x={r.x + PAD} y={y} width={24} family={isRules ? 'Cormorant' : 'Caveat'} size={isRules ? 16 : laid.size} color={isRules ? C.censor : C.inkFaded} weight={FontWeight.Bold} />
+              <Para text={line} x={r.x + PAD + 26} y={y} width={textWidth} family={isRules ? 'Cormorant' : 'Caveat'} size={laid.size} color={C.ink} lineHeight={1.12} weight={isRules ? FontWeight.SemiBold : FontWeight.Normal} />
+            </Group>
+          );
+        })}
+        {sheet.footer && laid.footerY != null && (
+          <Para text={sheet.footer} x={r.x + PAD} y={laid.footerY} width={r.w - PAD * 2} family="Cormorant" size={13} color={C.inkFaded} italic align="center" />
+        )}
+        <Para text={t('help.close')} x={r.x} y={laid.closeY} width={r.w} family="Caveat" size={15} color="rgba(60,45,30,0.72)" align="center" />
         {isRules && (
           // The Şube's stamp, slightly crooked, as on any order that came down the line.
-          <Circle cx={r.x + r.w - 52} cy={r.y + r.h - 34} r={20} style="stroke" strokeWidth={2} color="rgba(91,46,74,0.55)">
+          <Circle cx={r.x + r.w - 52} cy={laid.closeY + 6} r={20} style="stroke" strokeWidth={2} color="rgba(91,46,74,0.55)">
             <BlurMask blur={0.4} style="solid" />
           </Circle>
         )}
