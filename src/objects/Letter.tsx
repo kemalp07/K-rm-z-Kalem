@@ -300,19 +300,16 @@ function Seal({ letter, at }: { letter: LetterData; at: NonNullable<LetterLayout
 }
 
 /**
- * Grease pencil on the paper. While the hand is down the wax is wet and the
- * words still show; once it is put down a slow stroke dries matte and covers
- * them. A fast stroke stays a thin line. The paper's tooth only dusts the wax.
+ * Colored pencil on the paper. The line stays a pencil's width: opaque red,
+ * with a little tooth once the hand lifts. A fast stroke stays a hairline.
  */
 export function CensorStroke({ path, wet = false }: { path: SkPath | SharedValue<SkPath>; wet?: boolean }) {
   return (
     <Group layer={<Paint />}>
-      <Path path={path} color={wet ? '#c44738' : C.censor} opacity={wet ? 0.42 : 1}>
-        <BlurMask blur={wet ? 1.6 : 0.35} style="normal" />
-      </Path>
+      <Path path={path} color={wet ? '#7a1e16' : C.censor} opacity={wet ? 0.9 : 1} />
       {!wet && (
-        <Path path={path} color="#000" opacity={0.12} blendMode="dstOut">
-          <FractalNoise freqX={0.85} freqY={0.4} octaves={2} seed={11} />
+        <Path path={path} color="#1a0806" opacity={0.2} blendMode="dstOut">
+          <FractalNoise freqX={1.15} freqY={0.6} octaves={2} seed={11} />
         </Path>
       )}
     </Group>

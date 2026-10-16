@@ -16,7 +16,7 @@ export const T = {
   /** A letter unfolding after the envelope is laid down. */
   unfold: 1080,
   /** Pause after the stamp lands, before the letter leaves. */
-  stampRest: 650,
+  stampRest: 280,
   /** The decided letter leaving the desk. */
   leave: 900,
   /** The note slipped beside the magnifier. */

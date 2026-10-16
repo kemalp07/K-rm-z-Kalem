@@ -7,21 +7,18 @@ export interface WaxPoint {
 }
 
 /**
- * How fat this bit of grease pencil is. A slow hand leaves a short gap between
- * samples and lays down thick wax; a fast hand leaves a thin, broken line.
- * Wax at least `BURY_RADIUS` wide is a deliberate stroke and buries the line.
+ * A colored pencil, not a marker. A slow hand leaves a short gap and a firm
+ * line; a fast hand leaves a hairline. The width stays a pencil's.
  */
-export const BURY_RADIUS = 6.4;
-
 export function waxRadius(gap: number): number {
-  if (gap < 3.5) return 8.4;
-  if (gap < 7) return BURY_RADIUS;
-  if (gap < 12) return 4.6;
-  return 3.1;
+  if (gap < 3.5) return 2.45;
+  if (gap < 7) return 1.95;
+  if (gap < 12) return 1.2;
+  return 0.75;
 }
 
-/** A slow hand. A thinner stroke stays on the paper and does not censor. */
-export const waxBuries = (radius: number): boolean => radius >= BURY_RADIUS;
+/** A slow hand. A rushed stroke stays on the paper and does not censor. */
+export const waxBuries = (gap: number): boolean => gap < 7;
 
 /** A gap wider than this splits the stroke, so a rushed line breaks. */
 const BREAK = 16;

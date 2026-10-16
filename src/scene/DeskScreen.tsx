@@ -11,7 +11,7 @@ import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
-import { guideCards, guideStep, type GuideHold } from '../logic/guide';
+import { guideCards, guideStep, type GuideHold, type GuideStep } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
 
 /** The market's thick beeswax candle: its heat reaches further and works faster. */
@@ -94,6 +94,10 @@ const envRects = (l: LetterContent) => {
   ];
 };
 const STAMP_HOLD_MS = 450;
+/** How long the glass must sit on a date or a seal before the lesson counts it read. */
+const LOOK_MS = 1100;
+/** A scrap stays at least this long, so the next one does not replace it unread. */
+const GUIDE_READ_MS = 1700;
 /** How long a carried stamp must rest over the paper before it starts to come down. */
 const STAMP_REST_MS = 140;
 const TICK_MS = 50;
@@ -261,6 +265,11 @@ export function DeskScreen() {
   const [drawing, setDrawing] = useState(false);
   /** Day-1 guide: the pen or the glass is already in hand, so the next label can show. */
   const [guideHold, setGuideHold] = useState<GuideHold>(null);
+  /** The scrap on the desk. It lags the real step so a finished action does not wipe the words. */
+  const [guideShown, setGuideShown] = useState<GuideStep | null>(null);
+  const guideShownAt = useRef(0);
+  /** When the lens first covered the thing the clerk is being asked to read. */
+  const lookDwell = useRef<{ key: string; since: number } | null>(null);
   const [warm, setWarm] = useState(false);
   // While the eraser works the marks fade, which needs a layer; otherwise they draw plain.
   const [rubbing, setRubbing] = useState(false);
@@ -481,10 +490,9 @@ export function DeskScreen() {
       }, after);
       setTimeout(() => {
         useGame.getState().stamp(id, d);
-        letterOut.value = 0;
-        letterIn.value = 0;
         setImprint(null);
         exiting.current = false;
+        // Leave it off the desk. Resetting the slide here popped the stamp back for a moment.
       }, after + T.leave + 50);
     },
     [exitDir, letterOut, letterIn],
@@ -506,7 +514,8 @@ export function DeskScreen() {
       setImprint({ d, ...imprintPoint(layout.paper, at), rot: -0.12 + Math.random() * 0.16 });
       imprintIn.value = 0;
       imprintIn.value = withTiming(1, { duration: 260, easing: SETTLE });
-      setTimeout(() => stampBack(d), 200);
+      // The ink is the mark. Sending the handle back across the sheet looked like a second stamp.
+      setTimeout(() => setPressing((cur) => (cur === d ? null : cur)), 160);
       if (d === 'stopped' || d === 'reported') {
         // The Şube wants to know why: the slip comes, and the letter leaves once it is ticked.
         setTimeout(() => {
@@ -848,6 +857,17 @@ export function DeskScreen() {
     if (penInHand.current) penHome();
   };
 
+  /** True once the lens has stayed on this one thing long enough to read it. */
+  const heldLook = (key: string, over: boolean, seen: boolean) => {
+    if (!over || seen) {
+      if (lookDwell.current?.key === key) lookDwell.current = null;
+      return false;
+    }
+    const now = Date.now();
+    if (lookDwell.current?.key !== key) lookDwell.current = { key, since: now };
+    return now - lookDwell.current.since >= LOOK_MS;
+  };
+
   const onMove = (p: Point) => {
     const d = drag.current;
     if (!d) return;
@@ -892,14 +912,14 @@ export function DeskScreen() {
             return Math.hypot(at.x - cx, at.y - cy) <= reach;
           });
           const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
-          if (over && !seen.includes(job.id)) useGame.getState().inspect(openId, job.id);
+          if (heldLook(`date:${job.id}`, over, seen.includes(job.id))) useGame.getState().inspect(openId, job.id);
         }
         const sealJob = openLetter?.inspectables?.find((i) => i.target === 'seal' && i.anomaly);
         const sealAt = layout?.seal;
         if (openId && sealAt && sealJob) {
           const overSeal = Math.hypot(c.x - sealAt.cx, c.y - sealAt.cy) <= LENS_R * lensK;
           const seen = useGame.getState().state.letters[openId]?.inspected ?? [];
-          if (overSeal && !seen.includes(sealJob.id)) useGame.getState().inspect(openId, sealJob.id);
+          if (heldLook(`seal:${sealJob.id}`, overSeal, seen.includes(sealJob.id))) useGame.getState().inspect(openId, sealJob.id);
         }
         break;
       }
@@ -930,7 +950,7 @@ export function DeskScreen() {
           const local = (q: Point) => toLocalFrame(q, laid, laid.tilt, laid.skew);
           const at = local(tip);
           if (!hover && lines.some(({ rect: r }) => at.x >= r.x - 4 && at.x <= r.x + r.w + 4 && at.y >= r.y - 3 && at.y <= r.y + r.h + 3)) hover = segId;
-          if (!strokeOver(lines, local(d.last), at, 5, waxBuries(d.radii[d.radii.length - 1] ?? 0))) continue;
+          if (!strokeOver(lines, local(d.last), at, 5, waxBuries(gap))) continue;
           const already = d.done.includes(segId) || useGame.getState().state.letters[id]?.censored.includes(segId);
           if (!already && isBlackedOut(lines)) {
             d.done.push(segId);
@@ -940,7 +960,7 @@ export function DeskScreen() {
         if (layout?.date && dateLine.current) {
           const origin = { x: layout.date.x, y: layout.date.y };
           const atDate = (q: Point) => toLocalFrame(q, origin, layout.date!.tilt, layout.date!.skew);
-          const counts = waxBuries(d.radii[d.radii.length - 1] ?? 0);
+          const counts = waxBuries(gap);
           if (strokeOver(dateLine.current, atDate(d.last), atDate(tip), 5, counts) && !d.dateDone && isBlackedOut(dateLine.current)) {
             d.dateDone = true;
             Haptics.selectionAsync().catch(() => {});
@@ -1013,6 +1033,7 @@ export function DeskScreen() {
           letterDx.value = 0;
           letterDy.value = 0;
           burn.value = 0;
+          letterOut.value = 0;
           letterIn.value = 0;
           letterIn.value = withDelay(200, withTiming(1, { duration: T.unfold, easing: SETTLE }));
           playSfx('paper', 0.45);
@@ -1240,8 +1261,21 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   const guide = guideStep(state, (id) => getLetter(id));
+  useEffect(() => {
+    guideShownAt.current = Date.now();
+  }, [guideHold]);
+  useEffect(() => {
+    if (guide === guideShown) return;
+    const elapsed = guideShown == null ? GUIDE_READ_MS : Date.now() - guideShownAt.current;
+    const wait = Math.max(0, GUIDE_READ_MS - elapsed);
+    const timer = setTimeout(() => {
+      guideShownAt.current = Date.now();
+      setGuideShown(guide);
+    }, wait);
+    return () => clearTimeout(timer);
+  }, [guide, guideShown, guideHold]);
   const guideList = (() => {
-    if (!guide || help || drawing || envView) return [];
+    if (!guideShown || help || envView) return [];
     const top = state.stack[0];
     const piled = top ? getLetter(top) : undefined;
     const pose = piled ? stackPose(piled, 0, LAYOUT.stack) : null;
@@ -1273,7 +1307,7 @@ export function DeskScreen() {
     const row = slip && wanted ? reasonRows(reasons).find((r) => r.r.id === wanted) : undefined;
     const rest = LAYOUT.rest.pen;
     return guideCards({
-      step: guide,
+      step: guideShown,
       hold: guideHold,
       letterId: state.open ?? null,
       envelope: pose && size ? { x: pose.x, y: pose.y, w: size.w, h: size.h } : null,
