@@ -1,4 +1,4 @@
-import { distToRect, distToSegment, GRIP_FROM_NIB, inRotatedRect, nibFromGrip, stickEnd, toLocalFrame } from '../../scene/hit';
+import { distToRect, distToSegment, fromLocalFrame, GRIP_FROM_NIB, inRotatedRect, nibFromGrip, stickEnd, toLocalFrame } from '../../scene/hit';
 
 test('distance to a segment clamps at the ends', () => {
   expect(distToSegment({ x: 5, y: 3 }, { x: 0, y: 0 }, { x: 10, y: 0 })).toBe(3);
@@ -46,4 +46,7 @@ test('toLocalFrame undoes tilt and shear about the origin', () => {
   const back = toLocalFrame(drawn, o, tilt, skew);
   expect(back.x).toBeCloseTo(q.x);
   expect(back.y).toBeCloseTo(q.y);
+  const forward = fromLocalFrame(q, o, tilt, skew);
+  expect(forward.x).toBeCloseTo(drawn.x);
+  expect(forward.y).toBeCloseTo(drawn.y);
 });

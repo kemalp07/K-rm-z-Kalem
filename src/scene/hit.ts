@@ -64,6 +64,17 @@ export function toLocalFrame(p: Point, origin: Point, tilt: number, skew: number
   return { x: origin.x + rx - Math.tan(skew) * ry, y: origin.y + ry };
 }
 
+/** Where an upright block point is drawn: shear, then tilt, about the block's top-left. */
+export function fromLocalFrame(p: Point, origin: Point, tilt: number, skew: number): Point {
+  const dx = p.x - origin.x;
+  const dy = p.y - origin.y;
+  const sx = dx + Math.tan(skew) * dy;
+  const sy = dy;
+  const c = Math.cos(tilt);
+  const s = Math.sin(tilt);
+  return { x: origin.x + sx * c - sy * s, y: origin.y + sx * s + sy * c };
+}
+
 export const clampTo = (p: Point, r: Rect, margin = 0): Point => ({
   x: Math.min(r.x + r.w - margin, Math.max(r.x + margin, p.x)),
   y: Math.min(r.y + r.h - margin, Math.max(r.y + margin, p.y)),

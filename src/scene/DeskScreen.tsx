@@ -11,7 +11,7 @@ import { MorningPapers } from '../objects/MorningPapers';
 import type { Decision, HelpId, Letter as LetterContent } from '../content/types';
 import { isBlackedOut, makeCoverage, strokeOver, type LineCoverage, type Point } from '../logic/censor';
 import { economy, eveningBill, flagsOf, purseOf, rankOf } from '../logic/dayFlow';
-import { guideStep } from '../logic/guide';
+import { guideCards, guideStep, type GuideHold } from '../logic/guide';
 import { DEFAULT_REVEAL, heatTarget, stepHeat, type RevealTuning } from '../logic/reveal';
 
 /** The market's thick beeswax candle: its heat reaches further and works faster. */
@@ -28,7 +28,7 @@ import { t } from '../content/strings';
 import { EnvelopeAddress, EnvelopeBack, EnvelopeBody, envelopeSize, LiftShadow, STAMP_AT, stackPose } from '../objects/Envelope';
 import { Kettle, KETTLE_R, SPOUT } from '../objects/Kettle';
 import { Ledger } from '../objects/Ledger';
-import { GuideMark, GuideNote } from '../objects/Guide';
+import { GuideCallout } from '../objects/Guide';
 import { HELP_IDS, HelpSheetView, HelpSlip } from '../objects/Help';
 import { BookletOnDesk, BookletView, spreadCount } from '../objects/Booklet';
 import { bookletPages, sampleCards, slipReasons } from '../content/booklet';
@@ -50,7 +50,7 @@ import { Candle, CANDLE_FLAME, CANDLE_R, Eraser, LENS_R, MAG_HANDLE_END, Magnifi
 import { BakedImage, DESK_REGION, DeskSurface, useBaked } from './DeskBoard';
 import { Fade } from './Fade';
 import { FontsBridge, useSceneFonts } from './fonts';
-import { clampTo, dist, distToRect, distToSegment, inRotatedRect, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
+import { clampTo, dist, distToRect, distToSegment, fromLocalFrame, inRotatedRect, PEN_DRAW_ANGLE, PEN_WRITE_ANGLE, stickEnd, toLocalFrame } from './hit';
 import { Lamp } from './Lamp';
 import { LightPool, Vignette } from './LightPool';
 import { C } from './palette';
@@ -257,6 +257,8 @@ export function DeskScreen() {
   const card = useMemo(() => sampleCards(state.day)[0], [state.day]);
   // The live stroke layer is costly even when empty, so it exists only mid-stroke.
   const [drawing, setDrawing] = useState(false);
+  /** Day-1 guide: the pen or the glass is already in hand, so the next label can show. */
+  const [guideHold, setGuideHold] = useState<GuideHold>(null);
   const [warm, setWarm] = useState(false);
   // While the eraser works the marks fade, which needs a layer; otherwise they draw plain.
   const [rubbing, setRubbing] = useState(false);
@@ -400,6 +402,7 @@ export function DeskScreen() {
   // --- tool helpers -------------------------------------------------------------
   const penHome = useCallback(() => {
     penInHand.current = false;
+    setGuideHold((h) => (h === 'pen' ? null : h));
     gripOn.value = 0;
     const home = { duration: T.home, easing: GLIDE };
     penX.value = withTiming(LAYOUT.rest.pen.x, home);
@@ -723,6 +726,7 @@ export function DeskScreen() {
     if (hasMagnifier && (dist(p, lens) < LENS_R * lensK + 6 || distToSegment(p, lens, handleEnd) < 14)) {
       if (!teaching() && introduce('magnifier')) return;
       if (penInHand.current) penHome();
+      if (guideStep(useGame.getState().state, (id) => getLetter(id)) === 'glass') setGuideHold('glass');
       drag.current = { kind: 'magnifier', ox: lens.x - p.x, oy: lens.y - p.y, start: p };
       magLift.value = withTiming(1, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
@@ -749,6 +753,7 @@ export function DeskScreen() {
       if (!teaching() && introduce('pen')) return;
       drag.current = { kind: 'pen-carry', start: p, wasInHand: penInHand.current };
       penInHand.current = true;
+      setGuideHold('pen');
       holdPen(p, PEN_WRITE_ANGLE);
       penLift.value = withTiming(0.72, { duration: T.lift, easing: SETTLE });
       haptic(Haptics.ImpactFeedbackStyle.Light);
@@ -1182,29 +1187,35 @@ export function DeskScreen() {
   const stampsEnabled = !!openLetter && state.phase === 'desk';
   const showSlips = state.phase === 'desk';
   const guide = guideStep(state, (id) => getLetter(id));
-  const guideMarks = (() => {
-    if (!guide || help) return [];
-    if (guide === 'pile') {
-      const top = state.stack[0];
-      const letter = top ? getLetter(top) : undefined;
-      if (!letter) return [];
-      const pose = stackPose(letter, 0, LAYOUT.stack);
-      return [{ x: pose.x + envelopeSize(letter).w / 2, y: pose.y + envelopeSize(letter).h / 2, r: 52 }];
-    }
-    if (guide === 'pen') {
-      const rest = LAYOUT.rest.pen;
-      const on = stickEnd(rest, rest.angle, 48);
-      return [{ x: on.x, y: on.y, r: 26 }];
-    }
-    if (guide === 'glass') {
-      const at: { x: number; y: number; r: number }[] = [{ x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y, r: 30 }];
-      if (layout?.date) {
-        const d = layout.date.rect;
-        at.push({ x: d.x + d.w / 2, y: d.y + d.h / 2, r: 20 });
-      }
-      return at;
-    }
-    return [{ x: LAYOUT.stamps.x + LAYOUT.stamps.w / 2, y: LAYOUT.stamps.y + 24, r: 36 }];
+  const guideList = (() => {
+    if (!guide || help || drawing || envView) return [];
+    const top = state.stack[0];
+    const piled = top ? getLetter(top) : undefined;
+    const pose = piled ? stackPose(piled, 0, LAYOUT.stack) : null;
+    const size = piled ? envelopeSize(piled) : null;
+    const censored = new Set(state.open ? (state.letters[state.open]?.censored ?? []) : []);
+    const laid = layout?.segments.find((s) => s.seg.kind === 'sensitive' && !censored.has(s.seg.id) && (s.lines?.length ?? 0) > 0);
+    const first = laid?.lines[0];
+    const line = laid && first ? fromLocalFrame({ x: first.x + first.w / 2, y: first.y + first.h / 2 }, { x: laid.x, y: laid.y }, laid.tilt, laid.skew) : null;
+    const anomaly = openLetter?.inspectables?.find((i) => i.anomaly);
+    const mark =
+      anomaly?.target === 'seal' && layout?.seal
+        ? { x: layout.seal.cx, y: layout.seal.cy, kind: 'seal' as const }
+        : layout?.date
+          ? { x: layout.date.rect.x + layout.date.rect.w / 2, y: layout.date.rect.y + layout.date.rect.h / 2, kind: 'date' as const }
+          : null;
+    const rest = LAYOUT.rest.pen;
+    return guideCards({
+      step: guide,
+      hold: guideHold,
+      letterId: state.open ?? null,
+      envelope: pose && size ? { x: pose.x, y: pose.y, w: size.w, h: size.h } : null,
+      pen: stickEnd(rest, rest.angle, 70),
+      line,
+      lens: { x: LAYOUT.rest.magnifier.x, y: LAYOUT.rest.magnifier.y },
+      mark,
+      stamps: { x: LAYOUT.stamps.x + LAYOUT.stamps.w / 2, y: LAYOUT.stamps.y + 28 },
+    });
   })();
   // Split by how often each part changes, so opening a letter redoes only small images.
   const deskKey = [day.day, showSlips, seenHelp.join(','), purseOf(state), state.warnings ?? 0, state.rank ?? 0].join('|');
@@ -1340,14 +1351,9 @@ export function DeskScreen() {
                 opened={newsOpen}
               />
             )}
-            {guide && !help && (
-              <>
-                {guideMarks.map((m) => (
-                  <GuideMark key={`${m.x}:${m.y}`} x={m.x} y={m.y} r={m.r} />
-                ))}
-                <GuideNote step={guide} mehmet={state.open === 'd1_mehmet'} />
-              </>
-            )}
+            {guideList.map((card) => (
+              <GuideCallout key={`${card.what}:${card.tip.x}:${card.tip.y}`} card={card} />
+            ))}
             {help === 'rules' ? <BookletView pages={pages} spread={spread} opacity={helpIn} /> : help && <HelpSheetView id={help} opacity={helpIn} />}
             {(state.phase === 'evening' || (state.phase === 'continued' && state.account)) && <EveningSheet state={state} paid={paid} opacity={eveningIn} today={day.calendar.rumi} />}
             {state.phase === 'dismissed' && <DismissedCard opacity={dismissedIn} />}
