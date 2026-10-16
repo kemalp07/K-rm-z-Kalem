@@ -59,8 +59,8 @@ export const LAYOUT = {
   reasonSlip: { x: 668, y: 150, w: 268 },
   /** The opened sheet, centred over the desk. */
   helpSheet: { x: 280, y: 60, w: 440, h: 430 },
-  /** Rubber eraser, beside the pencil. */
-  eraser: { x: 776, y: 152, w: 46, h: 24, rot: 0.2 },
+  /** Rubber eraser, beside the pencil. The drawing is centred on this box. */
+  eraser: { x: 770, y: 148, w: 58, h: 32, rot: 0.2 },
   rest: {
     pen: { x: 700, y: 118, angle: Math.PI - 0.22 },
     candle: { x: 790, y: 360 },

@@ -1,6 +1,6 @@
 import { BlurMask, Circle, Group, Oval, Path, RadialGradient, RoundedRect, vec } from '@shopify/react-native-skia';
 import { useDerivedValue, type SharedValue } from 'react-native-reanimated';
-import { PlacedArt } from '../art/ArtSlot';
+import { PlacedArt, placed } from '../art/ArtSlot';
 import { teardrop } from '../scene/Lamp';
 import { LAYOUT } from '../scene/world';
 
@@ -8,6 +8,10 @@ import { LAYOUT } from '../scene/world';
 const FLAME = teardrop(8, 14);
 
 const SHADOW = { transform: [{ translateX: -3 }, { translateY: 4 }], opacity: 0.45, restBlur: 4 };
+
+const ASH = placed('ashtray');
+/** Board offset of the live coal. On the drawing it sits on a charred tip. */
+const COAL = ASH?.point('coal') ?? { x: 4, y: -2 };
 
 /** One crushed cigarette, along +x. Cream paper, a cardboard mouthpiece, a charred tip. */
 function Butt({ x, y, rot, len }: { x: number; y: number; rot: number; len: number }) {
@@ -55,7 +59,7 @@ export function Ashtray({ flicker, flare }: { flicker: SharedValue<number>; flar
           </Group>
         </PlacedArt>
       </Group>
-      <Circle cx={x + 3} cy={y + 4} r={coal} color="#ff9a3c">
+      <Circle cx={x + COAL.x} cy={y + COAL.y} r={coal} color="#ff9a3c">
         <BlurMask blur={2.2} style="solid" />
       </Circle>
       <Group transform={flame} opacity={flameOpacity}>
